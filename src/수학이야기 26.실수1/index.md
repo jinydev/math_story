@@ -1,4 +1,4 @@
-# 수학이야기 07.기수법
+# 수학이야기 26.실수1
 
 ## 목차
 
@@ -174,25 +174,3 @@
 - [0169.md](extracted/md/0169.md)
 - [0170.md](extracted/md/0170.md)
 - [0171.md](extracted/md/0171.md)
-- [0172.md](extracted/md/0172.md)
-- [0173.md](extracted/md/0173.md)
-- [0174.md](extracted/md/0174.md)
-- [0175.md](extracted/md/0175.md)
-- [0176.md](extracted/md/0176.md)
-- [0177.md](extracted/md/0177.md)
-- [0178.md](extracted/md/0178.md)
-- [0179.md](extracted/md/0179.md)
-- [0180.md](extracted/md/0180.md)
-- [0181.md](extracted/md/0181.md)
-- [0182.md](extracted/md/0182.md)
-- [0183.md](extracted/md/0183.md)
-- [0184.md](extracted/md/0184.md)
-- [0185.md](extracted/md/0185.md)
-- [0186.md](extracted/md/0186.md)
-- [0187.md](extracted/md/0187.md)
-- [0188.md](extracted/md/0188.md)
-- [0189.md](extracted/md/0189.md)
-- [0190.md](extracted/md/0190.md)
-- [0191.md](extracted/md/0191.md)
-- [0192.md](extracted/md/0192.md)
-- [0193.md](extracted/md/0193.md)

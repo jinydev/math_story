@@ -1,4 +1,4 @@
-# 수학이야기 07.기수법
+# 수학이야기 20.좌표
 
 ## 목차
 
@@ -196,3 +196,5 @@
 - [0191.md](extracted/md/0191.md)
 - [0192.md](extracted/md/0192.md)
 - [0193.md](extracted/md/0193.md)
+- [0194.md](extracted/md/0194.md)
+- [0195.md](extracted/md/0195.md)
