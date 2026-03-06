@@ -1,0 +1,54 @@
+import os
+
+md_dir = '/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/extracted/md'
+target_dir = '/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산'
+
+chapters = [
+    (0, 3, '00_책정보.md', '책 정보'),
+    (4, 5, '01_추천사.md', '추천사'),
+    (6, 8, '02_책머리에.md', '책머리에'),
+    (9, 17, '03_차례_및_길라잡이.md', '차례 및 길라잡이'),
+    (18, 24, '04_비에트를_소개합니다.md', '비에트를 소개합니다'),
+    (25, 48, '05_첫_번째_수업_문자를_사용하여_식을_나타내_볼까요.md', '1. 첫 번째 수업: 문자를 사용하여 식을 나타내 볼까요?'),
+    (49, 76, '06_두_번째_수업_식에도_값이_있다고.md', '2. 두 번째 수업: 식에도 값이 있다고!'),
+    (77, 96, '07_세_번째_수업_일차식_간단하게_나타내기.md', '3. 세 번째 수업: 일차식 간단하게 나타내기'),
+    (97, 120, '08_네_번째_수업_지수법칙.md', '4. 네 번째 수업: 지수법칙'),
+    (121, 136, '09_다섯_번째_수업_다항식_간단하게_나타내기.md', '5. 다섯 번째 수업: 다항식 간단하게 나타내기'),
+    (137, 164, '10_여섯_번째_수업_곱셈공식.md', '6. 여섯 번째 수업: 곱셈공식'),
+    (165, 185, '11_일곱_번째_수업_문자_사용의_역사.md', '7. 일곱 번째 수업: 문자 사용의 역사'),
+    (186, 187, '12_저자_및_도서정보.md', '수학이야기 시리즈 및 도서 정보')
+]
+
+index_content = """# 수학자가 들려주는 수학 이야기 32 - 비에트가 들려주는 식의 계산 이야기
+
+이 책은 '대수학의 아버지'라 불리는 프랑스의 수학자 비에트가 학생들에게 수학의 식을 문자를 사용하여 나타내는 방법을 쉽고 재미있게 설명해 주는 형식으로 구성되어 있습니다. 우리가 흔히 접하는 수학 공식이나 복잡해 보이는 식이 어떻게, 그리고 왜 만들어졌는지를 이해하게 함으로써 문자를 사용한 식의 편리함과 수학적 사고의 깊이를 더해줍니다. 우리 주변의 실생활 예시들과 역사적 배경을 통해 수학의 수식이 결코 어려운 암기 대상이 아니라 생활 속의 약속이라는 것을 깨닫게 해줍니다.
+
+## 학습 목표
+* 수학에서 문자와 기호의 발달 역사와 필요성을 이해합니다.
+* 식의 값을 구하거나. 일차식, 다항식을 계산하는 규칙과 원리를 익힙니다.
+* 지수법칙과 곱셈공식을 통해 복잡한 식을 간단하고 체계적으로 다루는 방법을 배웁니다.
+
+## 목차
+"""
+
+for start, end, fname, title in chapters:
+    content_lines = []
+    for i in range(start, end + 1):
+        md_file = os.path.join(md_dir, f"{i:03d}.md")
+        if os.path.exists(md_file):
+            with open(md_file, 'r', encoding='utf-8') as f:
+                content = f.read().strip()
+                if content:
+                    content_lines.append(f"<!-- page: {i:03d}.jpg -->\n" + content)
+    
+    out_path = os.path.join(target_dir, fname)
+    with open(out_path, 'w', encoding='utf-8') as f:
+        f.write("\n\n<br><br>\n\n".join(content_lines))
+    
+    index_content += f"- [{title}](./{fname})\n"
+
+index_path = os.path.join(target_dir, 'index.md')
+with open(index_path, 'w', encoding='utf-8') as f:
+    f.write(index_content)
+
+print(f"Successfully created index.md and {len(chapters)} chapter files in {target_dir}")
