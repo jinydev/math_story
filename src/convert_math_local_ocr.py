@@ -11,22 +11,8 @@ from PIL import Image
 BASE_DIR = "/Users/hojin8/docs/070.강의/math_story/src"
 
 # 변환하고 싶은 챕터 목록 (모든 추가 요청 폴더 포함)
-TARGET_CHAPTERS = [
-    "수학이야기 07.기수법",
-    "수학이야기 20.좌표",
-    "수학이야기 26.실수1",
-    "수학이야기 36.복소수",
-    "수학이야기 41.정수★",
-    "수학이야기 62.자연수",
-    "수학이야기 63.실수2",
-    "수학이야기 83.적분2",
-    "수학이야기 84.유리수",
-    "수학이야기 02.집합",
-    "수학이야기 05.약수와배수1",
-    "수학이야기 33.약수와배수2",
-    "수학이야기 76.선택과 배열",
-    "수학이야기 77.근삿값과 오차"
-]
+# 변환하고 싶은 챕터 목록 (비워둘 시 전체 '수학이야기' 폴더 대상)
+TARGET_CHAPTERS = []
 
 def create_index_md(chapter_dir, chapter_name, md_files):
     # 챕터 폴더에 index.md 만들기
@@ -43,6 +29,8 @@ def create_index_md(chapter_dir, chapter_name, md_files):
         f.write(index_content)
     print(f"\n[완료] {chapter_name} 의 index.md 가 생성되었습니다.")
 
+import unicodedata
+
 def main():
     folders_to_process = []
     if TARGET_CHAPTERS:
@@ -50,7 +38,8 @@ def main():
     else:
         # 모든 '수학이야기' 폴더 작업 (지정하지 않을 경우)
         for item in sorted(os.listdir(BASE_DIR)):
-            if item.startswith("수학이야기") and os.path.isdir(os.path.join(BASE_DIR, item)):
+            normalized_item = unicodedata.normalize('NFC', item)
+            if normalized_item.startswith("수학이야기") and os.path.isdir(os.path.join(BASE_DIR, item)):
                 folders_to_process.append(os.path.join(BASE_DIR, item))
 
     for chapter_dir in folders_to_process:
