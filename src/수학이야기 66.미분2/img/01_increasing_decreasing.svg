@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748" />
+      <stop offset="100%" stop-color="#1A202C" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FC8181" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#63B3ED" />
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#68D391" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Title -->
+  <text x="400" y="45" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">미분 센서: 도함수 $f'(x)$ 의 증가와 감소</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">"플러스는 상승을, 마이너스는 추락을, 제로(0) 는 무중력 정상을 알린다!"</text>
+
+  <!-- Ground Grid Reference -->
+  <path d="M 50,350 L 750,350" stroke="#4A5568" stroke-width="2" stroke-dasharray="8,4" />
+
+  <!-- The Rollercoaster Curve f(x) -->
+  <path d="M 100,300 C 250,50 350,50 400,200 C 450,350 550,350 700,100" fill="none" stroke="#F6E05E" stroke-width="5" stroke-linecap="round" filter="url(#glow)" />
+
+  <!-- Section 1: Increasing (f'(x) > 0) -->
+  <!-- At x=200, slope is positive -->
+  <circle cx="200" cy="180" r="7" fill="#FC8181" filter="url(#glow)" />
+  <line x1="140" y1="260" x2="260" y2="100" stroke="#FC8181" stroke-width="3" marker-end="url(#arrowRed)" filter="url(#glow)" />
+  <!-- UI Box -->
+  <rect x="120" y="70" width="120" height="30" fill="rgba(252,129,129,0.2)" rx="5" stroke="#FC8181" stroke-width="1" />
+  <text x="180" y="90" font-family="'Courier New', monospace" font-size="14" font-weight="bold" fill="#FC8181" text-anchor="middle">f'(x) &gt; 0 (+오르막)</text>
+
+  <!-- Section 2: Decreasing (f'(x) < 0) -->
+  <!-- At x=400, slope is negative -->
+  <circle cx="400" cy="200" r="7" fill="#63B3ED" filter="url(#glow)" />
+  <line x1="360" y1="120" x2="440" y2="280" stroke="#63B3ED" stroke-width="3" marker-end="url(#arrowBlue)" filter="url(#glow)" />
+  <!-- UI Box -->
+  <rect x="420" y="270" width="120" height="30" fill="rgba(99,179,237,0.2)" rx="5" stroke="#63B3ED" stroke-width="1" />
+  <text x="480" y="290" font-family="'Courier New', monospace" font-size="14" font-weight="bold" fill="#63B3ED" text-anchor="middle">f'(x) &lt; 0 (-내리막)</text>
+
+  <!-- Section 3: Increasing again (f'(x) > 0) -->
+  <!-- At x=600, slope is positive -->
+  <circle cx="600" cy="265" r="7" fill="#FC8181" filter="url(#glow)" />
+  <line x1="560" y1="310" x2="640" y2="220" stroke="#FC8181" stroke-width="3" marker-end="url(#arrowRed)" filter="url(#glow)" />
+  
+  <!-- Critical Point (Peak!) f'(x) = 0 -->
+  <!-- Peak at around x=300, y=100 -->
+  <circle cx="300" cy="98" r="8" fill="#FFF" filter="url(#glow)" />
+  <line x1="240" y1="98" x2="360" y2="98" stroke="#FFF" stroke-width="4" stroke-dasharray="10,5" filter="url(#glow)" />
+  <!-- UI Box -->
+  <rect x="250" y="40" width="100" height="30" fill="rgba(255,255,255,0.2)" rx="5" stroke="#FFF" stroke-width="1" />
+  <text x="300" y="60" font-family="'Courier New', monospace" font-size="14" font-weight="bold" fill="#FFF" text-anchor="middle">f'(x) = 0 (정점!)</text>
+  
+  <!-- Explanation Bottom Box -->
+  <rect x="100" y="400" width="600" height="40" fill="rgba(0,0,0,0.6)" rx="5" />
+  <text x="400" y="425" font-family="'Inter', sans-serif" font-size="15" fill="#E2E8F0" text-anchor="middle">"센서가 +극을 띄면 엔진은 상향 가속, -극을 띄면 브레이크 없는 수직 다이브 상태다!"</text>
+
+</svg>

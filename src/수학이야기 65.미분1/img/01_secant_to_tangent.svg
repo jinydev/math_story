@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748" />
+      <stop offset="100%" stop-color="#1A202C" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Title -->
+  <text x="400" y="45" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">거리 $\Delta x$ 가 0으로 붕괴될 때: 평균(할선) $\to$ 순간(접선)</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">"카메라 B 가 카메라 A 쪽으로 미친 듯이 수렴(Limit) 할 때 터지는 미분 스파크"</text>
+
+  <!-- Parabolic Curve (Math Function f(x) = x^2 approx) -->
+  <!-- Let's map x -> pixel space -->
+  <path d="M 100,380 Q 400,380 700,50" fill="none" stroke="#63B3ED" stroke-width="4" stroke-linecap="round" filter="url(#glow)" />
+
+  <!-- Fixed Start Point A (The moment we want to find instantaneous speed) -->
+  <!-- At approx x=300, y=300 -->
+  <circle cx="300" cy="318" r="8" fill="#F6E05E" filter="url(#strongGlow)" />
+  <text x="260" y="325" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC">A (현재 위치)</text>
+
+  <!-- Secant Line 1 (Average Speed - Very Far) -->
+  <!-- Point B1 at x=600, y=140 -->
+  <circle cx="600" cy="140" r="6" fill="#A0AEC0" />
+  <line x1="150" y1="407" x2="720" y2="69" stroke="#A0AEC0" stroke-width="2" stroke-dasharray="8,4" />
+  <text x="620" y="135" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0">과거 1: 너무 먼 할선</text>
+
+  <!-- Secant Line 2 (Getting Closer) -->
+  <!-- Point B2 at x=450, y=235 -->
+  <circle cx="450" cy="235" r="6" fill="#FC8181" />
+  <line x1="180" y1="384" x2="630" y2="135" stroke="#FC8181" stroke-width="3" stroke-dasharray="6,4" filter="url(#glow)"/>
+  <text x="480" y="240" font-family="'Inter', sans-serif" font-size="14" fill="#FC8181">과거 2: 간격 축소 ($\Delta x \to 0$)</text>
+
+  <!-- The Tangent Line Laser (Instantaneous Speed!) -->
+  <!-- Touches ONLY at A(300, 318), Slope approx dy/dx at that point. -->
+  <line x1="50" y1="380" x2="600" y2="243" stroke="#F6E05E" stroke-width="5" stroke-linecap="round" filter="url(#strongGlow)" />
+  
+  <!-- "Zero" Delta Box UI -->
+  <rect x="180" y="330" width="120" height="25" fill="none" stroke="#68D391" stroke-width="2" stroke-dasharray="2,2"/>
+  <text x="240" y="347" font-family="'Inter', sans-serif" font-size="12" fill="#68D391" text-anchor="middle">Lim $\Delta x \to \mathbf{0}$</text>
+
+  <!-- Arrow motion indicating B sliding down into A -->
+  <path d="M 580,120 Q 450,220 330,300" fill="none" stroke="#FFF" stroke-width="3" stroke-dasharray="10,5" marker-end="url(#arrowWhite)" />
+
+  <defs>
+    <marker id="arrowWhite" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FFF" />
+    </marker>
+  </defs>
+
+  <!-- Callout Info Box -->
+  <g transform="translate(480, 20)">
+    <rect x="0" y="0" width="280" height="110" fill="rgba(0,0,0,0.7)" rx="10" stroke="#F6E05E" stroke-width="2" />
+    <text x="140" y="30" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC" text-anchor="middle">궁극의 접선 렌더링 (Tangent)</text>
+    <line x1="20" y1="40" x2="260" y2="40" stroke="#4A5568" stroke-width="1" />
+    <text x="20" y="65" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0">할선(두 점 꼬챙이)의 끝점을 멱살 잡고</text>
+    <text x="20" y="85" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0">A점 앞까지 무한히 0으로 밀착시키면,</text>
+    <text x="20" y="105" font-family="'Inter', sans-serif" font-size="14" font-weight="bold" fill="#F6E05E">오직 스치기만 하는 "접선" 레이저 폭발!</text>
+  </g>
+
+  <rect x="150" y="400" width="500" height="40" fill="rgba(0,0,0,0.6)" rx="5" />
+  <text x="400" y="425" font-family="'Inter', sans-serif" font-size="14" fill="#E2E8F0" text-anchor="middle">"카메라 구간 단속 거리를 무한대로 축소시켜, 찰나의 순간 속도를 해킹해 낸다!"</text>
+
+</svg>

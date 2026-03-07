@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+
+    <!-- Neon Glow Filters -->
+    <filter id="glowGreen">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowBlue">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowRed">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle">로켓 물리 엔진 3단 미분 트리 (Kinematics)</text>
+
+  <!-- Common X-Axis for all graphs (Time t) -->
+  <!-- Top Graph: Position x(t) -->
+  <g transform="translate(100, 80)">
+    <line x1="0" y1="120" x2="600" y2="120" stroke="#4A5568" stroke-width="2" />
+    <line x1="0" y1="0" x2="0" y2="140" stroke="#4A5568" stroke-width="2" />
+    <text x="-40" y="60" font-family="'Inter', sans-serif" font-size="14" fill="#68D391">위치 x(t)</text>
+    
+    <!-- Parabola Position Curve: Launch to Apex to Fall -->
+    <!-- Apex at t=300, max height 20 -->
+    <path d="M 0,120 Q 300,-80 600,120" fill="none" stroke="#68D391" stroke-width="4" filter="url(#glowGreen)" />
+    
+    <!-- Vertical dotted line at Apex -->
+    <line x1="300" y1="-30" x2="300" y2="480" stroke="#FFF" stroke-width="2" stroke-dasharray="6,4" opacity="0.4" />
+    <circle cx="300" cy="20" r="6" fill="#FFF" />
+    <text x="320" y="25" font-family="'Inter', sans-serif" font-size="12" fill="#FFF">최고점 (가장 높은 고도)</text>
+  </g>
+
+  <!-- Middle Graph: Velocity v(t) -->
+  <g transform="translate(100, 260)">
+    <line x1="0" y1="60" x2="600" y2="60" stroke="#4A5568" stroke-width="2" />
+    <line x1="0" y1="0" x2="0" y2="140" stroke="#4A5568" stroke-width="2" />
+    <text x="-40" y="60" font-family="'Inter', sans-serif" font-size="14" fill="#63B3ED">속도 v(t)</text>
+    <text x="-40" y="80" font-family="'Inter', sans-serif" font-size="10" fill="#63B3ED">(1차 미분)</text>
+    
+    <!-- Linear Velocity Curve: Positive -> Zero at Apex -> Negative -->
+    <line x1="0" y1="0" x2="600" y2="120" stroke="#63B3ED" stroke-width="4" filter="url(#glowBlue)" />
+    
+    <!-- Crucial Zero Velocity intersection -->
+    <circle cx="300" cy="60" r="6" fill="#FFF" />
+    <text x="320" y="55" font-family="'Inter', sans-serif" font-size="12" fill="#FFF">v = 0 (정지 찰나! 방향 턴!)</text>
+    
+    <text x="150" y="30" font-family="'Inter', sans-serif" font-size="12" fill="#63B3ED">+</text>
+    <text x="450" y="100" font-family="'Inter', sans-serif" font-size="12" fill="#63B3ED">-</text>
+  </g>
+
+  <!-- Bottom Graph: Acceleration a(t) -->
+  <g transform="translate(100, 440)">
+    <line x1="0" y1="20" x2="600" y2="20" stroke="#4A5568" stroke-width="2" />
+    <line x1="0" y1="0" x2="0" y2="100" stroke="#4A5568" stroke-width="2" />
+    <text x="-45" y="60" font-family="'Inter', sans-serif" font-size="14" fill="#FC8181">가속도 a(t)</text>
+    <text x="-40" y="80" font-family="'Inter', sans-serif" font-size="10" fill="#FC8181">(2차 미분)</text>
+    
+    <!-- Constant negative acceleration (Gravity) -->
+    <line x1="0" y1="80" x2="600" y2="80" stroke="#FC8181" stroke-width="4" filter="url(#glowRed)" />
+    
+    <text x="320" y="70" font-family="'Inter', sans-serif" font-size="12" fill="#FC8181">a = 일정 (항상 마이너스 중력 G 작용 중)</text>
+  </g>
+
+  <!-- Downward Logic Arrows -->
+  <path d="M 50,150 L 50,210" stroke="#A0AEC0" stroke-width="2" marker-end="url(#arrowBlue)" />
+  <text x="60" y="180" font-family="'Courier New', monospace" font-size="12" fill="#A0AEC0">diff()</text>
+
+  <path d="M 50,330 L 50,390" stroke="#A0AEC0" stroke-width="2" marker-end="url(#arrowRed)" />
+  <text x="60" y="360" font-family="'Courier New', monospace" font-size="12" fill="#A0AEC0">diff()</text>
+  
+  <!-- Explanation Bottom Box -->
+  <rect x="100" y="550" width="600" height="30" fill="rgba(0,0,0,0.6)" rx="5" />
+  <text x="400" y="570" font-family="'Inter', sans-serif" font-size="13" fill="#E2E8F0" text-anchor="middle">"최고점 높이 정점 스팟은 레이저 스피드가 0으로 꺼지는 찰나(v=0) 의 시간 t를 타겟팅하여 해킹한다!"</text>
+
+</svg>
