@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748" />
+      <stop offset="100%" stop-color="#1A202C" />
+    </linearGradient>
+    
+    <!-- Neon Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Pattern for 1 unit blocks -->
+    <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <rect width="30" height="30" fill="none" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="2,2"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="26" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">흩어진 덧셈 수식을 단단한 면적으로 결합하라 (인수분해)</text>
+  <text x="400" y="65" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">"x² + 5x + 6 이라는 파편 조각들을 곱셈의 그물인 하나의 직사각형 박스로 합체!"</text>
+
+  <!-- Left Side: Unfactored Polynomial (The Mess) -->
+  <g transform="translate(50, 100)">
+    <text x="120" y="0" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#FC8181" text-anchor="middle" filter="url(#glow)">x² + 5x + 6</text>
+    <text x="120" y="20" font-family="'Inter', sans-serif" font-size="13" fill="#E2E8F0" text-anchor="middle">(덧셈으로 떡진 슬라임 조각들)</text>
+    
+    <!-- x^2 block (Large blue square, e.g. 100x100) -->
+    <rect x="20" y="40" width="100" height="100" fill="rgba(66, 153, 225, 0.4)" stroke="#63B3ED" stroke-width="3" rx="5" filter="url(#glow)"/>
+    <text x="70" y="95" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#63B3ED" text-anchor="middle">x²</text>
+    
+    <!-- 5x blocks (Green tall rectangles, e.g. 100x20) -->
+    <g transform="translate(140, 40)">
+      <rect x="0" y="0" width="20" height="100" fill="rgba(72, 187, 120, 0.4)" stroke="#68D391" stroke-width="2" rx="3"/>
+      <rect x="30" y="0" width="20" height="100" fill="rgba(72, 187, 120, 0.4)" stroke="#68D391" stroke-width="2" rx="3"/>
+      <rect x="60" y="0" width="20" height="100" fill="rgba(72, 187, 120, 0.4)" stroke="#68D391" stroke-width="2" rx="3"/>
+      <rect x="90" y="0" width="20" height="100" fill="rgba(72, 187, 120, 0.4)" stroke="#68D391" stroke-width="2" rx="3"/>
+      <rect x="120" y="0" width="20" height="100" fill="rgba(72, 187, 120, 0.4)" stroke="#68D391" stroke-width="2" rx="3"/>
+    </g>
+    <text x="210" y="160" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#68D391" text-anchor="middle">5x</text>
+
+    <!-- 6 unit blocks (Yellow small squares 20x20) -->
+    <g transform="translate(50, 160)">
+      <rect x="0" y="0" width="20" height="20" fill="rgba(236, 201, 75, 0.4)" stroke="#F6E05E" stroke-width="2"/>
+      <rect x="30" y="0" width="20" height="20" fill="rgba(236, 201, 75, 0.4)" stroke="#F6E05E" stroke-width="2"/>
+      <rect x="60" y="0" width="20" height="20" fill="rgba(236, 201, 75, 0.4)" stroke="#F6E05E" stroke-width="2"/>
+      <rect x="0" y="30" width="20" height="20" fill="rgba(236, 201, 75, 0.4)" stroke="#F6E05E" stroke-width="2"/>
+      <rect x="30" y="30" width="20" height="20" fill="rgba(236, 201, 75, 0.4)" stroke="#F6E05E" stroke-width="2"/>
+      <rect x="60" y="30" width="20" height="20" fill="rgba(236, 201, 75, 0.4)" stroke="#F6E05E" stroke-width="2"/>
+    </g>
+    <text x="90" y="235" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#F6E05E" text-anchor="middle">+ 6</text>
+  </g>
+
+  <!-- Big Magical Transformation Arrow -->
+  <g transform="translate(360, 200)">
+    <path d="M 0 0 L 80 0 M 60 -15 L 80 0 L 60 15" fill="none" stroke="#D6BCFA" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+    <text x="40" y="-20" font-family="'Inter', sans-serif" font-size="14" font-weight="bold" fill="#D6BCFA" text-anchor="middle">인수분해 조립 마법!</text>
+  </g>
+
+  <!-- Right Side: Factored Polynomial (The Perfect Rectangular Box) -->
+  <g transform="translate(480, 100)">
+    <text x="130" y="0" font-family="'Inter', sans-serif" font-size="22" font-weight="bold" fill="#68D391" text-anchor="middle" filter="url(#glow)">(x + 2)(x + 3)</text>
+    <text x="130" y="20" font-family="'Inter', sans-serif" font-size="13" fill="#E2E8F0" text-anchor="middle">(단단한 곱셈 박스로 결합 완료!)</text>
+    
+    <!-- The organized Rectangle. x=100 units.
+         Width: (x + 3) = 100 + 60 = 160
+         Height: (x + 2) = 100 + 40 = 140
+    -->
+    <g transform="translate(50, 60)">
+      <!-- Main x^2 area -->
+      <rect x="0" y="0" width="100" height="100" fill="rgba(66, 153, 225, 0.4)" stroke="#63B3ED" stroke-width="2"/>
+      <text x="50" y="55" font-family="'Inter', sans-serif" font-size="22" font-weight="bold" fill="#63B3ED" text-anchor="middle">x²</text>
+      
+      <!-- Right 3x area (Width 60) -->
+      <rect x="100" y="0" width="60" height="100" fill="rgba(72, 187, 120, 0.4)" stroke="#68D391" stroke-width="2"/>
+      <text x="130" y="55" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#68D391" text-anchor="middle">3x</text>
+
+      <!-- Bottom 2x area (Height 40) -->
+      <rect x="0" y="100" width="100" height="40" fill="rgba(72, 187, 120, 0.4)" stroke="#68D391" stroke-width="2"/>
+      <text x="50" y="125" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#68D391" text-anchor="middle">2x</text>
+
+      <!-- Bottom Right 6 area (Width 60, Height 40 => 6 units) -->
+      <rect x="100" y="100" width="60" height="40" fill="url(#gridPattern)" stroke="#F6E05E" stroke-width="2" filter="url(#glow)"/>
+      <rect x="100" y="100" width="60" height="40" fill="rgba(236, 201, 75, 0.3)" />
+      <text x="130" y="125" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#F6E05E" text-anchor="middle">6</text>
+
+      <!-- Dimensions Lines & Texts -->
+      <!-- Height Dimension (x + 2) -->
+      <path d="M -15 0 L -25 0 M -20 0 L -20 140 M -15 140 L -25 140" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+      <text x="-35" y="75" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#FC8181" text-anchor="middle" transform="rotate(-90 -35 75)">(x + 2) 가로 세로</text>
+
+      <!-- Width Dimension (x + 3) -->
+      <path d="M 0 -15 L 0 -25 M 0 -20 L 160 -20 M 160 -15 L 160 -25" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+      <text x="80" y="-30" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#4FD1C5" text-anchor="middle">가로 (x + 3)</text>
+    </g>
+  </g>
+
+  <!-- Bottom Concept Text -->
+  <text x="400" y="380" font-family="'Inter', sans-serif" font-size="16" fill="#F7FAFC" text-anchor="middle">면적(Area) 수학의 위대한 결론:</text>
+  <text x="400" y="405" font-family="'Inter', sans-serif" font-size="16" fill="#68D391" text-anchor="middle">흩어진 파편들의 총합 (x² + 5x + 6) ＝ 결합된 거대 사각형의 가로 × 세로 길이 (x+2)(x+3)</text>
+
+</svg>

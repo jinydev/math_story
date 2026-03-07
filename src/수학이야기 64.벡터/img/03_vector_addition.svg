@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748" />
+      <stop offset="100%" stop-color="#1A202C" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FC8181" />
+    </marker>
+    
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#63B3ED" />
+    </marker>
+    
+    <marker id="arrowYellow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#F6E05E" />
+    </marker>
+
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Title -->
+  <text x="400" y="45" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">꼬리 잡기 렌더링: 벡터의 덧셈 (Head-to-Tail)</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">"앞놈 머리통에 뒷놈 꼬리를 물어라! 도착한 곳이 두 스파크의 최종 합체 파워!"</text>
+
+  <!-- Coordinate Grid Lines -->
+  <g stroke="rgba(255,255,255,0.05)" stroke-width="1">
+    <line x1="100" y1="350" x2="700" y2="350" />
+    <line x1="100" y1="250" x2="700" y2="250" />
+    <line x1="100" y1="150" x2="700" y2="150" />
+    
+    <line x1="200" y1="100" x2="200" y2="400" />
+    <line x1="300" y1="100" x2="300" y2="400" />
+    <line x1="400" y1="100" x2="400" y2="400" />
+    <line x1="500" y1="100" x2="500" y2="400" />
+    <line x1="600" y1="100" x2="600" y2="400" />
+  </g>
+
+  <!-- Step 1: Draw Vector A -->
+  <!-- Start (200, 350) -> End (400, 250) dx=200, dy=-100 -->
+  <circle cx="200" cy="350" r="5" fill="#FC8181" filter="url(#glow)" />
+  <line x1="200" y1="350" x2="395" y2="252" stroke="#FC8181" stroke-width="6" stroke-linecap="round" marker-end="url(#arrowRed)" filter="url(#glow)" />
+  <text x="300" y="320" font-family="'Courier New', monospace" font-size="22" font-weight="bold" fill="#FC8181">Vector A</text>
+  <text x="300" y="340" font-family="'Courier New', monospace" font-size="14" fill="#FC8181">[2, 1]</text>
+
+  <!-- Step 2: Draw Vector B (Tail glued to Head of A) -->
+  <!-- Start (400, 250) -> End (500, 150) dx=100, dy=-100 -->
+  <circle cx="400" cy="250" r="5" fill="#63B3ED" filter="url(#glow)" />
+  <line x1="400" y1="250" x2="495" y2="155" stroke="#63B3ED" stroke-width="6" stroke-linecap="round" marker-end="url(#arrowBlue)" filter="url(#glow)" />
+  <text x="470" y="220" font-family="'Courier New', monospace" font-size="22" font-weight="bold" fill="#63B3ED">Vector B</text>
+  <text x="460" y="240" font-family="'Courier New', monospace" font-size="14" fill="#63B3ED">[1, 1]</text>
+
+  <!-- Step 3: Resultant Vector C = A + B -->
+  <!-- Start Base (200, 350) -> Final Head (500, 150) dx=300, dy=-200 -->
+  <line x1="200" y1="350" x2="495" y2="153" stroke="#F6E05E" stroke-width="6" stroke-dasharray="8,8" stroke-linecap="round" marker-end="url(#arrowYellow)" filter="url(#glow)" />
+  <circle cx="500" cy="150" r="8" fill="#FFF" filter="url(#glow)" />
+  <text x="515" y="145" font-family="'Inter', sans-serif" font-size="14" fill="#FFF">최종 도달점 (Head)</text>
+
+  <!-- Label Resultant Vector -->
+  <rect x="230" y="200" width="160" height="40" fill="rgba(0,0,0,0.7)" rx="5" stroke="#F6E05E" stroke-width="1" />
+  <text x="310" y="226" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#F6E05E" text-anchor="middle" filter="url(#glow)">A + B (합력)</text>
+  
+  <text x="310" y="190" font-family="'Courier New', monospace" font-size="14" fill="#F6E05E" text-anchor="middle">[3, 2]</text>
+
+  <!-- Explanation Bottom Box -->
+  <rect x="100" y="400" width="600" height="40" fill="rgba(0,0,0,0.6)" rx="5" />
+  <text x="400" y="425" font-family="'Inter', sans-serif" font-size="15" fill="#E2E8F0" text-anchor="middle">"동쪽 2보, 북쪽 1보(A)" 가고 연달아 "동쪽 1보, 북쪽 1보(B)" 가면 최종결과는 "[3, 2]" 이다!</text>
+
+</svg>

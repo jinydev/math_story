@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748" />
+      <stop offset="100%" stop-color="#1A202C" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Glowing Strings -->
+    <linearGradient id="stringGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6E05E" />
+      <stop offset="100%" stop-color="#FC8181" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Title -->
+  <text x="400" y="45" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">타원(Ellipse)의 창조 원리: 두 개의 못과 실 (Two Foci and a String)</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">"두 중심(초점)으로부터의 거리를 '합친 길이(Sum)' 가 항상 일정한 점들의 우주적 궤적"</text>
+
+  <!-- Cartesian Coordinate Grid (Faint) -->
+  <g stroke="rgba(255,255,255,0.05)" stroke-width="1">
+    <line x1="0" y1="250" x2="800" y2="250" /> <!-- X axis -->
+    <line x1="400" y1="100" x2="400" y2="400" /> <!-- Y axis -->
+    <text x="780" y="240" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0">x 축</text>
+    <text x="410" y="110" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0">y 축</text>
+  </g>
+
+  <!-- The Ellipse Shape itself (Drawn as a faint glowing track) -->
+  <ellipse cx="400" cy="250" rx="250" ry="130" fill="none" stroke="rgba(104, 211, 145, 0.3)" stroke-width="4" stroke-dasharray="10,5" filter="url(#glow)" />
+  <ellipse cx="400" cy="250" rx="250" ry="130" fill="rgba(104, 211, 145, 0.05)" />
+  
+  <text x="660" y="270" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#68D391" font-style="italic">우주선의 타원 궤적 (Orbit)</text>
+
+  <!-- Foci (The Two Nails / Stars) -->
+  <!-- Left Focus (F') at x = 400 - 200 = 200 -->
+  <circle cx="200" cy="250" r="8" fill="#F6E05E" filter="url(#glow)"/>
+  <circle cx="200" cy="250" r="3" fill="#FFF"/>
+  <text x="180" y="280" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F6E05E">초점 F'(-c, 0)</text>
+
+  <!-- Right Focus (F) at x = 400 + 200 = 600 -->
+  <circle cx="600" cy="250" r="8" fill="#FC8181" filter="url(#glow)"/>
+  <circle cx="600" cy="250" r="3" fill="#FFF"/>
+  <text x="620" y="280" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#FC8181">초점 F(c, 0)</text>
+
+  <!-- The Pencil / Point P drawing the ellipse -->
+  <!-- Let's pick a point P on the ellipse. e.g. angle theta = 60 deg 
+       cx: 400 + 250*cos(60) = 400 + 125 = 525
+       cy: 250 - 130*sin(60) = 250 - 130*(0.866) = 250 - 112.58 = 137.42 -->
+  
+  <g transform="translate(525, 137.4)">
+    <!-- Point P -->
+    <circle cx="0" cy="0" r="6" fill="#63B3ED" filter="url(#glow)"/>
+    <!-- Pencil Icon (Stylized) -->
+    <polygon points="-5,-40 5,-40 5,-10 0,0 -5,-10" fill="#E2E8F0" />
+    <polygon points="-3,-40 3,-40 3,-15 -3,-15" fill="#2B6CB0" />
+    <text x="20" y="-10" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#63B3ED">점 P(x, y)</text>
+  </g>
+
+  <!-- The String (Line from F' to P, and from P to F) -->
+  <!-- Triangle sides -->
+  <line x1="200" y1="250" x2="525" y2="137.4" stroke="#F6E05E" stroke-width="3" filter="url(#glow)" />
+  <line x1="600" y1="250" x2="525" y2="137.4" stroke="#FC8181" stroke-width="3" filter="url(#glow)" />
+
+  <!-- Distance Labels on Strings -->
+  <!-- Distance 1 -->
+  <!-- Midpoint approx (200+525)/2=362, (250+137)/2=193 -->
+  <rect x="330" y="165" width="40" height="25" fill="#2D3748" rx="5" />
+  <text x="350" y="183" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#F6E05E" text-anchor="middle">d₁</text>
+
+  <!-- Distance 2 -->
+  <!-- Midpoint approx (600+525)/2=562, (250+137)/2=193 -->
+  <rect x="560" y="170" width="40" height="25" fill="#2D3748" rx="5" />
+  <text x="580" y="188" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#FC8181" text-anchor="middle">d₂</text>
+
+  <!-- Bottom Concept Formula Box -->
+  <rect x="150" y="380" width="500" height="40" fill="rgba(0,0,0,0.5)" rx="5" stroke="#4FD1C5" stroke-width="1"/>
+  <text x="400" y="405" font-family="'Inter', sans-serif" font-size="18" fill="#4FD1C5" text-anchor="middle" font-weight="bold">핵심 알고리즘 제약 조건: [ d₁ + d₂ = 일정한 길이(2a) ]</text>
+
+</svg>

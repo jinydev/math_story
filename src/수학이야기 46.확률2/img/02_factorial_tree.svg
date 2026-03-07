@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748" />
+      <stop offset="100%" stop-color="#1A202C" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Title -->
+  <text x="400" y="45" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">팩토리얼 (!) 시스템: 완전 탐색 기차놀이</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">"전체 원소 $N$개를 하나도 남김없이 한 줄로 전부 나열하는 무자비한 1다운 곱셈 루프"</text>
+
+  <!-- 5! Example Rendering (5 x 4 x 3 x 2 x 1) -->
+  <g transform="translate(400, 160)">
+    <text x="0" y="0" font-family="'Courier New', monospace" font-size="60" font-weight="bold" fill="#F6E05E" text-anchor="middle" filter="url(#glow)">5!</text>
+  </g>
+
+  <!-- The descending cascading multiplication boxes -->
+  <g transform="translate(60, 260)">
+    
+    <!-- Box 1 (5 choices) -->
+    <rect x="0" y="0" width="80" height="80" fill="#2B6CB0" rx="10" stroke="#63B3ED" stroke-width="3" filter="url(#glow)"/>
+    <text x="40" y="30" font-family="'Inter', sans-serif" font-size="14" fill="#E2E8F0" text-anchor="middle">1번 슬롯</text>
+    <text x="40" y="65" font-family="'Inter', sans-serif" font-size="36" font-weight="bold" fill="#FFF" text-anchor="middle">5</text>
+    <text x="40" y="110" font-family="'Inter', sans-serif" font-size="12" fill="#A0AEC0" text-anchor="middle">(전원 5명)</text>
+
+    <!-- Math multiply sign -->
+    <text x="110" y="55" font-family="'Inter', sans-serif" font-size="36" font-weight="bold" fill="#FC8181" text-anchor="middle">×</text>
+
+    <!-- Box 2 (4 choices left) -->
+    <rect x="140" y="0" width="80" height="80" fill="#2C5282" rx="10" stroke="#63B3ED" stroke-width="2" filter="url(#glow)"/>
+    <text x="180" y="30" font-family="'Inter', sans-serif" font-size="14" fill="#E2E8F0" text-anchor="middle">2번 슬롯</text>
+    <text x="180" y="65" font-family="'Inter', sans-serif" font-size="36" font-weight="bold" fill="#FFF" text-anchor="middle">4</text>
+    <text x="180" y="110" font-family="'Inter', sans-serif" font-size="12" fill="#A0AEC0" text-anchor="middle">(1명 제외)</text>
+
+    <!-- Math multiply sign -->
+    <text x="250" y="55" font-family="'Inter', sans-serif" font-size="36" font-weight="bold" fill="#FC8181" text-anchor="middle">×</text>
+
+    <!-- Box 3 (3 choices left) -->
+    <rect x="280" y="0" width="80" height="80" fill="#2A4365" rx="10" stroke="#63B3ED" stroke-width="2" filter="url(#glow)"/>
+    <text x="320" y="30" font-family="'Inter', sans-serif" font-size="14" fill="#E2E8F0" text-anchor="middle">3번 슬롯</text>
+    <text x="320" y="65" font-family="'Inter', sans-serif" font-size="36" font-weight="bold" fill="#FFF" text-anchor="middle">3</text>
+    <text x="320" y="110" font-family="'Inter', sans-serif" font-size="12" fill="#A0AEC0" text-anchor="middle">(2명 제외)</text>
+
+    <!-- Math multiply sign -->
+    <text x="390" y="55" font-family="'Inter', sans-serif" font-size="36" font-weight="bold" fill="#FC8181" text-anchor="middle">×</text>
+
+    <!-- Box 4 (2 choices left) -->
+    <rect x="420" y="0" width="80" height="80" fill="#1A365D" rx="10" stroke="#4FD1C5" stroke-width="2" />
+    <text x="460" y="30" font-family="'Inter', sans-serif" font-size="14" fill="#E2E8F0" text-anchor="middle">4번 슬롯</text>
+    <text x="460" y="65" font-family="'Inter', sans-serif" font-size="36" font-weight="bold" fill="#4FD1C5" text-anchor="middle">2</text>
+    <text x="460" y="110" font-family="'Inter', sans-serif" font-size="12" fill="#A0AEC0" text-anchor="middle">(3명 제외)</text>
+
+    <!-- Math multiply sign -->
+    <text x="530" y="55" font-family="'Inter', sans-serif" font-size="36" font-weight="bold" fill="#FC8181" text-anchor="middle">×</text>
+
+    <!-- Box 5 (1 choice left!) -->
+    <rect x="560" y="0" width="80" height="80" fill="#1A202C" rx="10" stroke="#F6E05E" stroke-width="3" filter="url(#strongGlow)"/>
+    <text x="600" y="30" font-family="'Inter', sans-serif" font-size="14" fill="#E2E8F0" text-anchor="middle">마지막 끝단</text>
+    <text x="600" y="65" font-family="'Inter', sans-serif" font-size="36" font-weight="bold" fill="#F6E05E" text-anchor="middle" filter="url(#glow)">1</text>
+    <text x="600" y="110" font-family="'Inter', sans-serif" font-size="12" fill="#A0AEC0" text-anchor="middle">(남은 1명 강제배정)</text>
+
+  </g>
+
+  <!-- Big Equals Result -->
+  <g transform="translate(680, 315)">
+    <text x="0" y="0" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle">=</text>
+    <text x="50" y="5" font-family="'Courier New', monospace" font-size="44" font-weight="bold" fill="#68D391" text-anchor="middle" filter="url(#glow)">120</text>
+  </g>
+
+  <!-- Explanation Bottom Box -->
+  <rect x="150" y="400" width="500" height="40" fill="rgba(0,0,0,0.6)" rx="5" />
+  <text x="400" y="425" font-family="'Inter', sans-serif" font-size="15" fill="#E2E8F0" text-anchor="middle">10! = 3,628,800. 단 10명만 줄을 세워도 우주 시나리오는 360만 개로 팩토리얼 대폭발한다!</text>
+
+</svg>

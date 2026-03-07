@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748" />
+      <stop offset="100%" stop-color="#1A202C" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Marker Arrow -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FFF" />
+    </marker>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Title -->
+  <text x="400" y="45" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">위대한 상수 π (원주율) 의 본질</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="15" fill="#A0AEC0" text-anchor="middle">"모든 원은 지름(Diameter)을 굽혀서 3바퀴를 굴리면, 약간의 꼬투리(0.14159...) 가 남는다."</text>
+
+  <!-- Giant Circle Unrolling Concept -->
+  <g transform="translate(150, 180)">
+    <!-- Actual Circle -->
+    <circle cx="0" cy="0" r="80" fill="rgba(66, 153, 225, 0.1)" stroke="#63B3ED" stroke-width="4" stroke-dasharray="10,5" filter="url(#glow)" />
+    
+    <!-- Diameter Line -->
+    <line x1="-80" y1="0" x2="80" y2="0" stroke="#FC8181" stroke-width="4" filter="url(#glow)" />
+    <circle cx="0" cy="0" r="4" fill="#FC8181" /> <!-- Center dot -->
+    <text x="0" y="-10" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#FC8181" text-anchor="middle">지름 (D)</text>
+  </g>
+
+  <!-- Unrolled Circumference Path / Mapping -->
+  <!-- D = 160. So Circumference C = 160 * Pi = 160 * 3.1415... = 502.6 -->
+  <!-- We'll draw 3 line segments each of length 160 (The diameter D), then a small one for the remainder -->
+
+  <!-- Start point for unrolling ground -->
+  <g transform="translate(150, 290)">
+    <!-- Ground line -->
+    <line x1="-30" y1="0" x2="600" y2="0" stroke="#A0AEC0" stroke-width="2" />
+    <text x="-30" y="30" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0">Start</text>
+    <circle cx="0" cy="0" r="5" fill="#E2E8F0" />
+    
+    <!-- First Segment (1 * D) -->
+    <!-- From 0 to 160 -->
+    <line x1="0" y1="-5" x2="160" y2="-5" stroke="#FC8181" stroke-width="8" stroke-linecap="round" filter="url(#glow)" />
+    <text x="80" y="-20" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#FC8181" text-anchor="middle">1 × 지름지팡이</text>
+    <line x1="160" y1="-15" x2="160" y2="15" stroke="#E2E8F0" stroke-width="2" />
+
+    <!-- Second Segment (2 * D) -->
+    <!-- From 160 to 320 -->
+    <line x1="160" y1="-5" x2="320" y2="-5" stroke="#FC8181" stroke-width="8" stroke-linecap="round" filter="url(#glow)" />
+    <text x="240" y="-20" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#FC8181" text-anchor="middle">2 × 지름지팡이</text>
+    <line x1="320" y1="-15" x2="320" y2="15" stroke="#E2E8F0" stroke-width="2" />
+
+    <!-- Third Segment (3 * D) -->
+    <!-- From 320 to 480 -->
+    <line x1="320" y1="-5" x2="480" y2="-5" stroke="#FC8181" stroke-width="8" stroke-linecap="round" filter="url(#glow)" />
+    <text x="400" y="-20" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#FC8181" text-anchor="middle">3 × 지름지팡이</text>
+    <line x1="480" y1="-15" x2="480" y2="15" stroke="#E2E8F0" stroke-width="2" />
+
+    <!-- The 0.14 remainder bit -->
+    <!-- From 480 to 502.6 -->
+    <line x1="480" y1="-5" x2="502" y2="-5" stroke="#F6E05E" stroke-width="8" stroke-linecap="round" filter="url(#glow)" />
+    <circle cx="502" cy="0" r="5" fill="#F6E05E" />
+    <line x1="502" y1="-15" x2="502" y2="15" stroke="#E2E8F0" stroke-width="2" />
+
+    <!-- Text for Pi remainder -->
+    <text x="502" y="-30" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#F6E05E" text-anchor="middle">+ 0.14159... 꼬투리</text>
+
+    <!-- Total Length Span -->
+    <path d="M 0 45 L 0 50 L 502 50 L 502 45" fill="none" stroke="#63B3ED" stroke-width="2" />
+    <text x="251" y="75" font-family="'Inter', sans-serif" font-size="22" font-weight="bold" fill="#63B3ED" text-anchor="middle" filter="url(#glow)">원껍데기 전체 길이 (원주 C) = 지름 × 3.14159...</text>
+  </g>
+
+  <!-- Big Pi Symbol overlay bottom right -->
+  <text x="650" y="240" font-family="'Times New Roman', serif" font-size="120" font-style="italic" font-weight="bold" fill="rgba(255, 255, 255, 0.05)">π</text>
+
+</svg>

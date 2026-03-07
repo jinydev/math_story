@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748" />
+      <stop offset="100%" stop-color="#1A202C" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Title -->
+  <text x="400" y="45" font-family="'Inter', sans-serif" font-size="26" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">멀티버스 렌더링: 곱의 법칙 트장 다이어그램 (Tree Diagram)</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">"동전 1개와 주사위 1개를 동시에(AND) 던질 때 갈라지는 미래 가지 수"</text>
+
+  <!-- Node Start Point -->
+  <circle cx="100" cy="250" r="10" fill="#E2E8F0" filter="url(#glow)"/>
+  <text x="100" y="280" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#A0AEC0" text-anchor="middle">시작</text>
+  <text x="100" y="230" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">(분기 0)</text>
+
+  <!-- LEVEL 1: Coin Flip (2 branches) -->
+  <!-- Branch 1: Heads -->
+  <path d="M 110,245 C 160,200 200,125 250,125" fill="none" stroke="#F6E05E" stroke-width="4" stroke-linecap="round" filter="url(#glow)" />
+  <circle cx="250" cy="125" r="25" fill="#2D3748" stroke="#F6E05E" stroke-width="3" />
+  <text x="250" y="130" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#F6E05E" text-anchor="middle">앞면 (H)</text>
+
+  <!-- Branch 2: Tails -->
+  <path d="M 110,255 C 160,300 200,375 250,375" fill="none" stroke="#63B3ED" stroke-width="4" stroke-linecap="round" filter="url(#glow)" />
+  <circle cx="250" cy="375" r="25" fill="#2D3748" stroke="#63B3ED" stroke-width="3" />
+  <text x="250" y="380" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#63B3ED" text-anchor="middle">뒷면 (T)</text>
+
+  <!-- LEVEL 2: Dice Roll (6 branches from Heads, 6 from Tails) -->
+  <!-- Function to draw dice branches -->
+  
+  <!-- From Heads (250, 125) to y positions (50, 80, 110, 140, 170, 200) at x=500 -->
+  <!-- For simplicity, let's draw 3 branches per coin for visual clarity, implying 6? No, draw all 6 compactly -->
+  
+  <!-- Heads 6 Branches -->
+  <g stroke="#FC8181" stroke-width="2" filter="url(#glow)" fill="none">
+    <path d="M 275,120 C 350,60 425,50 490,50" />
+    <path d="M 275,122 C 350,80 425,80 490,80" />
+    <path d="M 275,124 C 350,110 425,110 490,110" />
+    <path d="M 275,126 C 350,140 425,140 490,140" />
+    <path d="M 275,128 C 350,170 425,170 490,170" />
+    <path d="M 275,130 C 350,200 425,200 490,200" />
+  </g>
+  <!-- Leaves for Heads -->
+  <g font-family="'Inter', sans-serif" font-size="14" font-weight="bold" fill="#FC8181" text-anchor="middle">
+    <text x="510" y="55">1</text>
+    <text x="510" y="85">2</text>
+    <text x="510" y="115">3</text>
+    <text x="510" y="145">4</text>
+    <text x="510" y="175">5</text>
+    <text x="510" y="205">6</text>
+  </g>
+
+  <!-- Tails 6 Branches -->
+  <!-- From Tails (250, 375) to y positions (300, 330, 360, 390, 420, 450) at x=500 (adjust to fit!) -->
+  <g stroke="#FC8181" stroke-width="2" filter="url(#glow)" fill="none">
+    <path d="M 275,370 C 350,300 425,300 490,300" />
+    <path d="M 275,372 C 350,330 425,330 490,330" />
+    <path d="M 275,374 C 350,360 425,360 490,360" />
+    <path d="M 275,376 C 350,390 425,390 490,390" />
+    <path d="M 275,378 C 350,420 425,420 490,420" />
+    <path d="M 275,380 C 350,450 425,450 490,450" />
+  </g>
+  <!-- Leaves for Tails -->
+  <g font-family="'Inter', sans-serif" font-size="14" font-weight="bold" fill="#FC8181" text-anchor="middle">
+    <text x="510" y="305">1</text>
+    <text x="510" y="335">2</text>
+    <text x="510" y="365">3</text>
+    <text x="510" y="395">4</text>
+    <text x="510" y="425">5</text>
+    <text x="510" y="455">6</text> <!-- slightly off bottom, it's fine -->
+  </g>
+
+  <!-- Final Calculation Box -->
+  <rect x="600" y="180" width="180" height="140" fill="rgba(0,0,0,0.6)" rx="10" stroke="#4FD1C5" stroke-width="2" />
+  <text x="690" y="210" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC" text-anchor="middle">곱의 법칙 렌더링</text>
+  <line x1="620" y1="220" x2="760" y2="220" stroke="#4A5568" stroke-width="1" />
+  
+  <text x="690" y="245" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">동전 (2가지)</text>
+  <text x="690" y="265" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#4FD1C5" text-anchor="middle">AND (X 곱하기)</text>
+  <text x="690" y="285" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">주사위 (6가지)</text>
+  
+  <text x="690" y="310" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#F6E05E" text-anchor="middle" filter="url(#glow)">= 총 12 가지</text>
+
+  <!-- Vertical Phase Separators -->
+  <line x1="180" y1="90" x2="180" y2="400" stroke="rgba(255,255,255,0.1)" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="250" y="80" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#A0AEC0" text-anchor="middle">사건 A (동전)</text>
+
+  <line x1="400" y1="90" x2="400" y2="400" stroke="rgba(255,255,255,0.1)" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="490" y="30" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#A0AEC0" text-anchor="middle">사건 B (주사위)</text>
+
+</svg>

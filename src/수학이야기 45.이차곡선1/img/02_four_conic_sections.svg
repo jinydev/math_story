@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748" />
+      <stop offset="100%" stop-color="#1A202C" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Base Cone Gradient (Translucent White/Blue) -->
+    <linearGradient id="coneGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#63B3ED" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Title -->
+  <text x="400" y="45" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">원뿔을 조각내는 4가지 각도 (The 4 Conic Sections)</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">"수평, 약간 기울임, 빗변과 평행, 빗변보다 가파른 수직 썰기"</text>
+
+  <!-- We will draw 4 identical Double Cones but slice them differently, one by one. -->
+  
+  <!-- CONE 1: Circle (수평 절단) -->
+  <g transform="translate(100, 200)">
+    <!-- Bottom Cone -->
+    <polygon points="0,0 -40,100 40,100" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5" stroke-linejoin="round"/>
+    <ellipse cx="0" cy="100" rx="40" ry="12" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5"/>
+    <!-- Top Cone -->
+    <polygon points="0,0 -40,-100 40,-100" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5" stroke-linejoin="round"/>
+    <ellipse cx="0" cy="-100" rx="40" ry="12" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5"/>
+    
+    <!-- Slicing Plane (Horizontal) -->
+    <polygon points="-60,40 -20,30 60,40 20,50" fill="rgba(66, 153, 225, 0.4)" stroke="#63B3ED" stroke-width="2" filter="url(#glow)"/>
+    <!-- Resulting Intersection: Circle -->
+    <ellipse cx="0" cy="40" rx="16" ry="6" fill="rgba(255,255,255,0.7)" stroke="#EBF8FF" stroke-width="3" filter="url(#glow)"/>
+    
+    <text x="0" y="140" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#63B3ED" text-anchor="middle">원 (Circle)</text>
+    <text x="0" y="160" font-family="'Inter', sans-serif" font-size="13" fill="#A0AEC0" text-anchor="middle">"수평으로 반듯하게 자름"</text>
+  </g>
+
+  <!-- CONE 2: Ellipse (비스듬히 절단) -->
+  <g transform="translate(300, 200)">
+    <!-- Bottom Cone -->
+    <polygon points="0,0 -40,100 40,100" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5"/>
+    <ellipse cx="0" cy="100" rx="40" ry="12" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5"/>
+    <!-- Top Cone -->
+    <polygon points="0,0 -40,-100 40,-100" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-100" rx="40" ry="12" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5"/>
+    
+    <!-- Slicing Plane (Slightly tilted) -->
+    <polygon points="-60,30 -20,-10 60,60 20,100" fill="rgba(72, 187, 120, 0.4)" stroke="#68D391" stroke-width="2" filter="url(#glow)"/>
+    <!-- Resulting Intersection: Ellipse (tilted) -->
+    <ellipse cx="0" cy="45" rx="20" ry="8" fill="rgba(255,255,255,0.7)" stroke="#F0FFF4" stroke-width="3" transform="rotate(35 0 45)" filter="url(#glow)"/>
+
+    <text x="0" y="140" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#68D391" text-anchor="middle">타원 (Ellipse)</text>
+    <text x="0" y="160" font-family="'Inter', sans-serif" font-size="13" fill="#A0AEC0" text-anchor="middle">"비스듬하게, 한쪽 원뿔만 통과"</text>
+  </g>
+
+  <!-- CONE 3: Parabola (모선과 평행하게 절단) -->
+  <g transform="translate(500, 200)">
+    <!-- Bottom Cone -->
+    <polygon points="0,0 -40,100 40,100" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5"/>
+    <ellipse cx="0" cy="100" rx="40" ry="12" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5"/>
+    <!-- Top Cone -->
+    <polygon points="0,0 -40,-100 40,-100" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-100" rx="40" ry="12" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5"/>
+    
+    <!-- Slicing Plane (Parallel to the side / generatrix) slope = 100/40 = 2.5 -->
+    <polygon points="-70,90 -10,-10 50,140 -10,220" fill="rgba(236, 201, 75, 0.4)" stroke="#F6E05E" stroke-width="2" filter="url(#glow)"/>
+    
+    <!-- Resulting Intersection: Parabola -->
+    <path d="M -30,100 Q 15,30 25,100" fill="rgba(255,255,255,0.7)" stroke="#FFFFF0" stroke-width="3" filter="url(#glow)"/>
+
+    <text x="0" y="140" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#F6E05E" text-anchor="middle">포물선 (Parabola)</text>
+    <text x="0" y="160" font-family="'Inter', sans-serif" font-size="13" fill="#A0AEC0" text-anchor="middle">"원뿔의 빗변선과 완벽히 평행하게 자름"</text>
+  </g>
+
+  <!-- CONE 4: Hyperbola (수직에 가깝게 절단, 두 원뿔 모두 통과) -->
+  <g transform="translate(700, 200)">
+    <!-- Bottom Cone -->
+    <polygon points="0,0 -40,100 40,100" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5"/>
+    <ellipse cx="0" cy="100" rx="40" ry="12" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5"/>
+    <!-- Top Cone -->
+    <polygon points="0,0 -40,-100 40,-100" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-100" rx="40" ry="12" fill="url(#coneGlow)" stroke="#A0AEC0" stroke-width="1.5"/>
+    
+    <!-- Slicing Plane (Vertical) -->
+    <polygon points="10,-150 10,150 40,120 40,-130" fill="rgba(252, 129, 129, 0.4)" stroke="#FC8181" stroke-width="2" filter="url(#glow)"/>
+    
+    <!-- Resulting Intersection: Hyperbola (two curves) -->
+    <!-- Top curve -->
+    <path d="M 23,-100 Q 10,-80 23,-50" fill="none" stroke="#FFF5F5" stroke-width="3" filter="url(#glow)"/>
+    <!-- Bottom curve -->
+    <path d="M 23,100 Q 10,80 23,50" fill="none" stroke="#FFF5F5" stroke-width="3" filter="url(#glow)"/>
+
+    <text x="0" y="140" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#FC8181" text-anchor="middle">쌍곡선 (Hyperbola)</text>
+    <text x="0" y="160" font-family="'Inter', sans-serif" font-size="13" fill="#A0AEC0" text-anchor="middle">"거의 수직으로 내려, 위/아래 원뿔을 모두 통과"</text>
+  </g>
+
+</svg>
