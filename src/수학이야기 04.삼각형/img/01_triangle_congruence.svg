@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%">
+    <rect width="800" height="400" fill="#2d3436" />
+    
+    <!-- Title -->
+    <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#dfe6e9" text-anchor="middle">
+        삼각형 SAS 합동 조건 애니메이션 증명 (Congruence)
+    </text>
+
+    <!-- Base Instruction -->
+    <text x="400" y="370" font-family="Arial" font-size="18" fill="#ffeaa7" text-anchor="middle">
+        두 변의 길이와 그 사이 벌어진 각도가 고정되면, 세 번째 변의 궤적은 단 1개로 확정(Lock)됩니다.
+    </text>
+
+    <g transform="translate(100, 250)">
+        <!-- Fixed Side 1: Base -->
+        <line x1="0" y1="0" x2="300" y2="0" stroke="#74b9ff" stroke-width="8" stroke-linecap="round" />
+        <text x="150" y="30" font-family="Arial" font-size="20" font-weight="bold" fill="#74b9ff">Side 1 (고정)</text>
+
+        <!-- Fixed Angle Arc -->
+        <path d="M 50 0 A 50 50 0 0 0 35 -35" fill="none" stroke="#fdcb6e" stroke-width="3" />
+        <text x="60" y="-15" font-family="Arial" font-size="18" font-weight="bold" fill="#fdcb6e">Angle (45° 고정)</text>
+
+        <!-- Fixed Side 2 -->
+        <!-- Rotate -45 degrees => (length=200 * cos(-45), length=200 * sin(-45)) = (141.4, -141.4) -->
+        <line x1="0" y1="0" x2="141.4" y2="-141.4" stroke="#55efc4" stroke-width="8" stroke-linecap="round" />
+        <text x="30" y="-80" font-family="Arial" font-size="20" font-weight="bold" fill="#55efc4" transform="rotate(-45)">Side 2 (고정)</text>
+
+        <!-- The Unknown Third Side closing the gap automatically -->
+        <line x1="300" y1="0" x2="141.4" y2="-141.4" stroke="#ff7675" stroke-width="6" stroke-dasharray="10, 10">
+            <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite" />
+        </line>
+        <circle cx="141.4" cy="-141.4" r="8" fill="#ff7675">
+            <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite" />
+        </circle>
+        
+        <text x="250" y="-70" font-family="Arial" font-size="18" font-weight="bold" fill="#ff7675">
+            <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite" />
+            마지막 변은 자동 완성!
+        </text>
+
+    </g>
+    
+    <!-- Duplicate 2nd Triangle showing the clone -->
+    <g transform="translate(500, 250)">
+        <!-- Clone showing the final shape locked -->
+        <polygon points="0,0 300,0 141.4,-141.4" fill="#6c5ce7" fill-opacity="0.3" stroke="#a29bfe" stroke-width="4">
+            <animate attributeName="opacity" values="0;0;1;1" dur="4s" repeatCount="indefinite" />
+        </polygon>
+        <text x="150" y="-40" font-family="Arial" font-size="22" font-weight="bold" fill="#a29bfe" text-anchor="middle">
+            <animate attributeName="opacity" values="0;0;1;1" dur="4s" repeatCount="indefinite" />
+            완벽한 복제본 (합동 ≡)
+        </text>
+    </g>
+
+</svg>
