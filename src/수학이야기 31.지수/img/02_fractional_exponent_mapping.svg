@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="500">
+    <defs>
+        <style>
+            .bg {
+                fill: #0f172a;
+                rx: 12;
+                stroke: #1e293b;
+                stroke-width: 2;
+            }
+
+            /* Base Line */
+            .base-line {
+                stroke: #3b82f6;
+                stroke-width: 3;
+                stroke-dasharray: 6 4;
+                opacity: 0.5;
+            }
+
+            /* Boxes */
+            .box-root {
+                fill: #1e293b;
+                stroke: #10b981;
+                stroke-width: 3;
+                rx: 8;
+            }
+
+            .box-frac {
+                fill: #1e293b;
+                stroke: #ec4899;
+                stroke-width: 3;
+                rx: 8;
+            }
+
+            /* Text Base */
+            .math-base {
+                font-family: 'Courier New', monospace;
+                font-size: 55px;
+                font-weight: bold;
+                fill: #f8fafc;
+            }
+
+            .math-exponent {
+                font-family: 'Courier New', monospace;
+                font-size: 30px;
+                font-weight: bold;
+                fill: #ec4899;
+            }
+
+            .math-root {
+                font-family: 'Courier New', monospace;
+                font-size: 45px;
+                font-weight: bold;
+                fill: #10b981;
+            }
+
+            .math-root-index {
+                font-family: 'Courier New', monospace;
+                font-size: 25px;
+                font-weight: bold;
+                fill: #10b981;
+            }
+
+            /* Labels */
+            .title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 26px;
+                fill: #ffffff;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .subtitle {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 16px;
+                fill: #94a3b8;
+                font-weight: normal;
+                text-anchor: middle;
+            }
+
+            .info-text {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 15px;
+                fill: #cbd5e1;
+                text-anchor: middle;
+            }
+
+            /* Arrows */
+            .arrow-line {
+                fill: none;
+                stroke: #fcd34d;
+                stroke-width: 4;
+                stroke-linecap: round;
+            }
+
+            .arrow-head {
+                fill: #fcd34d;
+            }
+        </style>
+
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" class="arrow-head" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="45" class="title">차원 변환기: 분수 지수 ↔ 거듭제곱근 뿌리(Root)</text>
+    <text x="400" y="70" class="subtitle">지수의 방에 '분수'가 침입하는 순간, 그것은 무리수의 껍데기 기호(루트)로 돌변한다!</text>
+
+    <!-- Left Side: Fractional Exponent -->
+    <g transform="translate(100, 150)">
+        <rect x="0" y="0" width="220" height="180" class="box-frac" />
+
+        <text x="60" y="100" class="math-base">a</text>
+
+        <!-- Fraction m/n -->
+        <text x="95" y="75" class="math-exponent">m</text>
+        <line x1="95" y1="85" x2="115" y2="85" stroke="#ec4899" stroke-width="3" />
+        <text x="95" y="115" class="math-exponent">n</text>
+
+        <text x="110" y="150" class="info-text" fill="#f472b6">분수 형태의 지수</text>
+    </g>
+
+    <!-- Transformation Arrows -->
+    <g transform="translate(320, 240)">
+        <!-- Right pointing arrow -->
+        <path d="M 15,-15 L 140,-15" class="arrow-line" marker-end="url(#arrow)" />
+        <!-- Left pointing arrow -->
+        <path d="M 140,15 L 15,15" class="arrow-line" marker-end="url(#arrow)" />
+
+        <text x="80" y="-35" font-family="'Pretendard', sans-serif" font-size="20px" fill="#fbbf24" font-weight="bold"
+            text-anchor="middle">완벽한 일치 (=)</text>
+        <text x="80" y="45" font-family="'Pretendard', sans-serif" font-size="14px" fill="#cbd5e1"
+            text-anchor="middle">표현 양식만 다름</text>
+    </g>
+
+    <!-- Right Side: Radical (Root) Form -->
+    <g transform="translate(480, 150)">
+        <rect x="0" y="0" width="220" height="180" class="box-root" />
+
+        <!-- Radical symbol drawing -->
+        <path d="M 40,80 L 50,110 L 70,30 L 150,30" fill="none" stroke="#10b981" stroke-width="5"
+            stroke-linejoin="round" />
+        <text x="25" y="65" class="math-root-index">n</text>
+
+        <text x="90" y="100" class="math-base">a</text>
+        <text x="127" y="65" class="math-exponent" fill="#10b981">m</text>
+
+        <text x="110" y="150" class="info-text" fill="#34d399">거듭제곱근의 형태</text>
+    </g>
+
+    <!-- Component Explanation Mapping -->
+    <!-- Top: "m" connection -->
+    <path d="M 205,225 C 205,60 595,60 595,215" fill="none" stroke="#ec4899" stroke-width="2" stroke-dasharray="4 2" />
+    <circle cx="205" cy="225" r="4" fill="#ec4899" />
+    <circle cx="595" cy="215" r="4" fill="#ec4899" />
+    <rect x="360" y="115" width="80" height="24" rx="4" fill="#ec4899" />
+    <text x="400" y="132" font-family="'Pretendard', sans-serif" font-size="13px" font-weight="bold" fill="#ffffff"
+        text-anchor="middle">진짜 거듭제곱</text>
+
+    <!-- Bottom: "n" connection -->
+    <path d="M 205,265 C 205,430 515,430 515,215" fill="none" stroke="#10b981" stroke-width="2"
+        stroke-dasharray="4 2" />
+    <circle cx="205" cy="265" r="4" fill="#10b981" />
+    <circle cx="515" cy="215" r="4" fill="#10b981" />
+    <rect x="335" y="340" width="130" height="24" rx="4" fill="#10b981" />
+    <text x="400" y="357" font-family="'Pretendard', sans-serif" font-size="13px" font-weight="bold" fill="#ffffff"
+        text-anchor="middle">루트(방어막) 중첩 차수</text>
+
+
+    <!-- Bottom Info Panel -->
+    <rect x="50" y="440" width="700" height="40" rx="4" fill="#1e293b" />
+    <text x="400" y="465" font-family="'Pretendard', sans-serif" font-size="15px" fill="#93c5fd" font-weight="bold"
+        text-anchor="middle">
+        분모 "n"은 나를 감옥에 가두는 루트의 차수가 되고, 분자 "m"은 내 진짜 레벨(제곱)을 의미한다.
+    </text>
+</svg>

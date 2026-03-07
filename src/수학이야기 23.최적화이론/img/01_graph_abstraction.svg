@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="500">
+    <defs>
+        <style>
+            .bg {
+                fill: #0f172a;
+                rx: 10;
+                stroke: #334155;
+                stroke-width: 2;
+            }
+
+            /* Map / Geographical Features */
+            .river {
+                fill: rgba(56, 189, 248, 0.2);
+                stroke: none;
+            }
+
+            .land {
+                fill: rgba(16, 185, 129, 0.15);
+                stroke: #047857;
+                stroke-width: 2;
+                stroke-dasharray: 4 4;
+            }
+
+            .bridge-real {
+                fill: #94a3b8;
+                stroke: #475569;
+                stroke-width: 2;
+            }
+
+            /* Graph Theory Abstraction */
+            .edge {
+                stroke: #fbbf24;
+                stroke-width: 4;
+                fill: none;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+            }
+
+            .edge-glow {
+                stroke: rgba(251, 191, 36, 0.4);
+                stroke-width: 10;
+                fill: none;
+            }
+
+            .node {
+                fill: #ef4444;
+                stroke: #fca5a5;
+                stroke-width: 3;
+                r: 18;
+            }
+
+            .node-text {
+                font-family: 'Courier New', monospace;
+                font-size: 18px;
+                font-weight: bold;
+                fill: #ffffff;
+                text-anchor: middle;
+                dominant-baseline: middle;
+            }
+
+            /* Labels */
+            .title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 26px;
+                fill: #f8fafc;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .subtitle {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 16px;
+                fill: #94a3b8;
+                font-weight: normal;
+                text-anchor: middle;
+            }
+
+            .info-red {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 14px;
+                fill: #ef4444;
+                font-weight: bold;
+            }
+        </style>
+    </defs>
+
+    <!-- Background -->
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="45" class="title">차원 축소: 지리적 지도에서 추상 그래프로 변환</text>
+    <text x="400" y="70" class="subtitle">모리, 다리 길이 따위는 무시하라! 오직 점과 선만 남는다.</text>
+
+    <!-- ==============================================
+       LEFT: 쾨니히스베르크 물리적 지도 (Physical Map)
+       ============================================== -->
+    <g transform="translate(50, 150)">
+        <!-- River Base -->
+        <path d="M 0,50 C 100,20 150,80 300,50 L 300,250 C 150,280 100,220 0,250 Z" class="river" />
+
+        <!-- Island A (Center) -->
+        <ellipse cx="150" cy="150" rx="50" ry="30" class="land" />
+        <text x="150" y="155" fill="#10b981" font-weight="bold" font-family="'Pretendard', sans-serif"
+            text-anchor="middle">섬 (A)</text>
+
+        <!-- Top Land B -->
+        <path d="M 0,0 L 300,0 L 300,50 C 150,80 100,20 0,50 Z" class="land" />
+        <text x="150" y="30" fill="#10b981" font-weight="bold" font-family="'Pretendard', sans-serif"
+            text-anchor="middle">북쪽 육지 (B)</text>
+
+        <!-- Bottom Land C -->
+        <path d="M 0,300 L 300,300 L 300,250 C 150,280 100,220 0,250 Z" class="land" />
+        <text x="150" y="280" fill="#10b981" font-weight="bold" font-family="'Pretendard', sans-serif"
+            text-anchor="middle">남쪽 육지 (C)</text>
+
+        <!-- Right Land D (Eastern split) -->
+        <path d="M 230,80 L 300,80 L 300,220 L 230,220 C 200,150 200,150 230,80 Z" class="land" />
+        <text x="270" y="155" fill="#10b981" font-weight="bold" font-family="'Pretendard', sans-serif"
+            text-anchor="middle">동쪽 (D)</text>
+
+        <!-- 7 Bridges Physical -->
+        <!-- A to B (2 bridges) -->
+        <rect x="110" y="60" width="15" height="60" transform="rotate(10 117 90)" class="bridge-real" />
+        <rect x="160" y="60" width="15" height="60" transform="rotate(-10 167 90)" class="bridge-real" />
+
+        <!-- A to C (2 bridges) -->
+        <rect x="110" y="180" width="15" height="60" transform="rotate(-10 117 210)" class="bridge-real" />
+        <rect x="160" y="180" width="15" height="60" transform="rotate(10 167 210)" class="bridge-real" />
+
+        <!-- A to D (1 bridge) -->
+        <rect x="195" y="140" width="45" height="15" class="bridge-real" />
+
+        <!-- B to D (1 bridge) -->
+        <rect x="235" y="45" width="20" height="40" transform="rotate(45 245 65)" class="bridge-real" />
+
+        <!-- C to D (1 bridge) -->
+        <rect x="235" y="215" width="20" height="40" transform="rotate(-45 245 235)" class="bridge-real" />
+
+        <text x="150" y="-30" fill="#f8fafc" font-weight="bold" font-size="16px" font-family="'Pretendard', sans-serif"
+            text-anchor="middle">현실의 지도 (물리적 제약)</text>
+    </g>
+
+    <!-- Arrow Transition -->
+    <line x1="380" y1="300" x2="440" y2="300" stroke="#f8fafc" stroke-width="4" marker-end="url(#arrowhead)" />
+    <polygon points="435,290 455,300 435,310" fill="#f8fafc" />
+    <text x="415" y="280" font-family="'Pretendard', sans-serif" font-size="14px" fill="#cbd5e1"
+        text-anchor="middle">추상화 축출</text>
+
+    <!-- ==============================================
+       RIGHT: 오일러 그래프 (Graph Theory Abstraction)
+       ============================================== -->
+    <g transform="translate(480, 150)">
+
+        <text x="150" y="-30" fill="#fbbf24" font-weight="bold" font-size="16px" font-family="'Pretendard', sans-serif"
+            text-anchor="middle">오일러 그래프 (점과 선 연결망)</text>
+
+        <!-- Edges (7 Lines mapping to bridges) -->
+
+        <!-- A to B (2 lines via curves) -->
+        <path d="M 150,150 Q 110,90 150,30" class="edge-glow" />
+        <path d="M 150,150 Q 110,90 150,30" class="edge" />
+
+        <path d="M 150,150 Q 190,90 150,30" class="edge-glow" />
+        <path d="M 150,150 Q 190,90 150,30" class="edge" />
+
+        <!-- A to C (2 lines via curves) -->
+        <path d="M 150,150 Q 110,210 150,270" class="edge-glow" />
+        <path d="M 150,150 Q 110,210 150,270" class="edge" />
+
+        <path d="M 150,150 Q 190,210 150,270" class="edge-glow" />
+        <path d="M 150,150 Q 190,210 150,270" class="edge" />
+
+        <!-- A to D (1 line straight) -->
+        <line x1="150" y1="150" x2="250" y2="150" class="edge-glow" />
+        <line x1="150" y1="150" x2="250" y2="150" class="edge" />
+
+        <!-- B to D (1 line straight) -->
+        <line x1="150" y1="30" x2="250" y2="150" class="edge-glow" />
+        <line x1="150" y1="30" x2="250" y2="150" class="edge" />
+
+        <!-- C to D (1 line straight) -->
+        <line x1="150" y1="270" x2="250" y2="150" class="edge-glow" />
+        <line x1="150" y1="270" x2="250" y2="150" class="edge" />
+
+        <!-- Nodes (4 Vertices mapping to Land) -->
+        <circle cx="150" cy="150" class="node" /> <text x="150" y="152" class="node-text">A</text>
+        <circle cx="150" cy="30" class="node" /> <text x="150" y="32" class="node-text">B</text>
+        <circle cx="150" cy="270" class="node" /> <text x="150" y="272" class="node-text">C</text>
+        <circle cx="250" cy="150" class="node" /> <text x="250" y="152" class="node-text">D</text>
+
+        <!-- Info annotations -->
+        <text x="150" y="180" class="info-red" text-anchor="middle">선 5개 (차수:5)</text>
+        <text x="150" y="5" class="info-red" text-anchor="middle">선 3개 (차수:3)</text>
+        <text x="150" y="300" class="info-red" text-anchor="middle">선 3개 (차수:3)</text>
+        <text x="290" y="155" class="info-red">선 3개 (차수:3)</text>
+
+    </g>
+
+</svg>
