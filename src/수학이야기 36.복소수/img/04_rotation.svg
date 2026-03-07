@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">허수 i 곱셈의 정체 = 반시계 방향 90도 회전</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">복소수에 i 를 한 번 곱할 때마다 공간 전체가 축을 중심으로 정확히 90도씩 회전(Rotation)합니다.</text>
+
+  <!-- Central Coordinate System -->
+  <g transform="translate(400, 250)">
+    <!-- Circumference Circle -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#4A5568" stroke-width="2" stroke-dasharray="8,8"/>
+    
+    <!-- Axes -->
+    <line x1="-180" y1="0" x2="180" y2="0" stroke="#718096" stroke-width="2"/>
+    <text x="190" y="5" font-family="'Inter', sans-serif" font-size="14" fill="#718096">Real (x)</text>
+    
+    <line x1="0" y1="-180" x2="0" y2="180" stroke="#718096" stroke-width="2"/>
+    <text x="0" y="-190" font-family="'Inter', sans-serif" font-size="14" fill="#718096" text-anchor="middle">Imag (y)</text>
+
+    <!-- Point 1 (Start) -->
+    <line x1="0" y1="0" x2="120" y2="0" stroke="#4FD1C5" stroke-width="3"/>
+    <circle cx="120" cy="0" r="8" fill="#4FD1C5" filter="url(#glow)"/>
+    <text x="140" y="-15" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#4FD1C5">z = 1</text>
+
+    <!-- Arc 1 -->
+    <path d="M 120 0 A 120 120 0 0 0 0 -120" fill="none" stroke="#F6AD55" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="5,5"/>
+    <text x="70" y="-70" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#F6AD55">× i (90°)</text>
+
+    <!-- Point 2 -->
+    <line x1="0" y1="0" x2="0" y2="-120" stroke="#9F7AEA" stroke-width="3"/>
+    <circle cx="0" cy="-120" r="8" fill="#9F7AEA" filter="url(#glow)"/>
+    <text x="-45" y="-130" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#9F7AEA">1 × i = i</text>
+
+    <!-- Arc 2 -->
+    <path d="M 0 -120 A 120 120 0 0 0 -120 0" fill="none" stroke="#F6AD55" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="5,5"/>
+    <text x="-90" y="-70" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#F6AD55">× i (90°)</text>
+
+    <!-- Point 3 -->
+    <line x1="0" y1="0" x2="-120" y2="0" stroke="#FC8181" stroke-width="3"/>
+    <circle cx="-120" cy="0" r="8" fill="#FC8181" filter="url(#glow)"/>
+    <text x="-160" y="-15" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#FC8181">i × i = -1</text>
+
+    <!-- Arc 3 -->
+    <path d="M -120 0 A 120 120 0 0 0 0 120" fill="none" stroke="#F6AD55" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="5,5"/>
+    <text x="-90" y="80" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#F6AD55">× i (90°)</text>
+
+    <!-- Point 4 -->
+    <line x1="0" y1="0" x2="0" y2="120" stroke="#ECC94B" stroke-width="3"/>
+    <circle cx="0" cy="120" r="8" fill="#ECC94B" filter="url(#glow)"/>
+    <text x="-65" y="140" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#ECC94B">-1 × i = -i</text>
+
+    <!-- Arc 4 -->
+    <path d="M 0 120 A 120 120 0 0 0 120 0" fill="none" stroke="#F6AD55" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="5,5"/>
+    <text x="70" y="80" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#F6AD55">× i (90°)</text>
+
+  </g>
+
+  <!-- Left Side Explanation -->
+  <g transform="translate(30, 200)">
+    <rect x="0" y="0" width="200" height="130" fill="#1A202C" rx="8" stroke="#F6AD55" stroke-width="2"/>
+    <text x="100" y="30" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#F7FAFC" text-anchor="middle">i 의 4박자 사이클</text>
+    <text x="100" y="60" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">i¹ = i</text>
+    <text x="100" y="80" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">i² = -1 (180° 반전)</text>
+    <text x="100" y="100" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">i³ = -i (270°)</text>
+    <text x="100" y="120" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">i⁴ = 1 (원상 복구!)</text>
+  </g>
+</svg>

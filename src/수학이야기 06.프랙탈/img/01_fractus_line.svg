@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="300">
+    <rect width="800" height="300" fill="#2d3436" />
+    <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#dfe6e9" text-anchor="middle">
+        유클리드의 직선 vs 프랙탈의 부서진 곡선(Fractus)
+    </text>
+
+    <!-- Euclidean Line -->
+    <text x="100" y="100" font-family="Arial" font-size="16" fill="#74b9ff">유클리드 기하학 (매끄러운 선분)</text>
+    <line x1="100" y1="120" x2="700" y2="120" stroke="#74b9ff" stroke-width="4" />
+    
+    <!-- Zoom effect arrow -->
+    <path d="M 400 140 L 400 180" stroke="#fdcb6e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <text x="410" y="165" font-family="Arial" font-size="14" fill="#fdcb6e">끝없이 확대해도 계속 평평함</text>
+
+    <!-- Fractal Line -->
+    <text x="100" y="210" font-family="Arial" font-size="16" fill="#55efc4">프랙탈 기하학 (무한히 부서지는 거친 선분)</text>
+    <!-- Simulating random noise fractal line -->
+    <path d="M 100 240 Q 150 200, 200 240 T 300 230 T 400 260 T 500 220 T 600 240 T 700 240" fill="none" stroke="#55efc4" stroke-width="3">
+        <animate attributeName="d" values="
+        M 100 240 Q 150 200, 200 240 T 300 230 T 400 260 T 500 220 T 600 240 T 700 240;
+        M 100 240 Q 130 260, 200 220 T 300 260 T 400 210 T 500 250 T 600 210 T 700 240;
+        M 100 240 Q 150 200, 200 240 T 300 230 T 400 260 T 500 220 T 600 240 T 700 240" 
+        dur="2s" repeatCount="indefinite" />
+    </path>
+    <path d="M 100 240 L 120 230 L 140 250 L 160 210 L 180 260" fill="none" stroke="#ffeaa7" stroke-width="1" stroke-dasharray="2" opacity="0.6"/>
+    
+    <text x="100" y="280" font-family="Arial" font-size="14" fill="#55efc4">확대할수록 보이지 않던 거친 미세 톱니바퀴들이 계속 나타남</text>
+
+    <!-- Marker definition -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fdcb6e" />
+        </marker>
+    </defs>
+</svg>

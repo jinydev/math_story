@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">분모의 유리화 (Rationalization)</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">"땅바닥(분모)에 가시덤불(루트)이 있으면 안 된다!"</text>
+
+  <!-- Flow layout -->
+  
+  <!-- Step 1: Unstable fraction (Root in denominator) -->
+  <g transform="translate(100, 150)">
+    <text x="50" y="-30" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#FC8181" text-anchor="middle">1. 불안정한 상태</text>
+    
+    <rect x="-20" y="-10" width="140" height="120" fill="#2D3748" stroke="#FC8181" stroke-width="2" rx="10"/>
+
+    <text x="50" y="30" font-family="'Inter', sans-serif" font-size="30" font-weight="bold" fill="#F7FAFC" text-anchor="middle">1</text>
+    <!-- Fraction line -->
+    <line x1="10" y1="45" x2="90" y2="45" stroke="#F7FAFC" stroke-width="3"/>
+    
+    <text x="50" y="85" font-family="'Inter', sans-serif" font-size="30" font-weight="bold" fill="#F6AD55" text-anchor="middle">$\sqrt{2}$</text>
+    
+    <!-- Spikes / Danger below denominator -->
+    <path d="M 20 100 L 30 115 L 40 105 L 50 120 L 60 105 L 70 115 L 80 100" fill="none" stroke="#FC8181" stroke-width="2"/>
+    <text x="50" y="140" font-family="'Inter', sans-serif" font-size="14" fill="#FC8181" text-anchor="middle">지진! (1.414...)</text>
+  </g>
+
+  <!-- Transfer arrow -->
+  <path d="M 250 200 L 320 200" fill="none" stroke="#E2E8F0" stroke-width="4" marker-end="url(#arrow_right)"/>
+
+  <!-- Step 2: The Action (Multiply by 1 in disguise) -->
+  <g transform="translate(350, 150)">
+    <text x="60" y="-30" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#ECC94B" text-anchor="middle">2. 치료 (1을 곱하기)</text>
+
+    <!-- Original fraction -->
+    <text x="-10" y="30" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#F7FAFC">1</text>
+    <line x1="-30" y1="45" x2="10" y2="45" stroke="#F7FAFC" stroke-width="2"/>
+    <text x="-25" y="80" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#F6AD55">$\sqrt{2}$</text>
+    
+    <text x="30" y="55" font-family="'Inter', sans-serif" font-size="30" font-weight="bold" fill="#ECC94B" filter="url(#glow)">×</text>
+
+    <!-- Magic 1 in disguise -->
+    <rect x="50" y="-10" width="90" height="120" fill="rgba(236, 201, 75, 0.1)" stroke="#ECC94B" stroke-width="2" stroke-dasharray="5,5" rx="10"/>
+
+    <text x="95" y="30" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#4FD1C5" text-anchor="middle">$\sqrt{2}$</text>
+    <line x1="60" y1="45" x2="130" y2="45" stroke="#4FD1C5" stroke-width="2"/>
+    <text x="95" y="80" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#4FD1C5" text-anchor="middle">$\sqrt{2}$</text>
+    
+    <!-- Label -->
+    <text x="95" y="130" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#ECC94B" text-anchor="middle">(= 사실상 숫자 1)</text>
+  </g>
+
+  <path d="M 520 200 L 590 200" fill="none" stroke="#E2E8F0" stroke-width="4" marker-end="url(#arrow_right)"/>
+
+  <!-- Step 3: Stable fraction -->
+  <g transform="translate(620, 150)">
+    <text x="50" y="-30" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#4FD1C5" text-anchor="middle">3. 평온한 상태 (유리화)</text>
+
+    <rect x="-20" y="-10" width="140" height="120" fill="#2D3748" stroke="#4FD1C5" stroke-width="2" rx="10"/>
+
+    <text x="50" y="30" font-family="'Inter', sans-serif" font-size="30" font-weight="bold" fill="#F6AD55" text-anchor="middle">$\sqrt{2}$</text>
+    <!-- Fraction line -->
+    <line x1="10" y1="45" x2="90" y2="45" stroke="#F7FAFC" stroke-width="3"/>
+    
+    <text x="50" y="85" font-family="'Inter', sans-serif" font-size="30" font-weight="bold" fill="#E2E8F0" text-anchor="middle" filter="url(#glow)">2</text>
+    
+    <!-- Firm ground -->
+    <line x1="10" y1="105" x2="90" y2="105" stroke="#4FD1C5" stroke-width="4"/>
+    <text x="50" y="140" font-family="'Inter', sans-serif" font-size="14" fill="#4FD1C5" text-anchor="middle">안강한 대지! (유리수 2)</text>
+  </g>
+
+  <!-- Bottom Explanatory Concept -->
+  <g transform="translate(100, 370)">
+    <rect x="0" y="0" width="600" height="80" fill="#2D3748" rx="8" stroke="#4A5568" stroke-width="2"/>
+    <text x="300" y="25" font-family="'Inter', sans-serif" font-size="18" fill="#F7FAFC" text-anchor="middle">$\sqrt{2} \times \sqrt{2} = \sqrt{2^2} = 2$</text>
+    <text x="300" y="50" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">분모와 분자에 똑같은 무리수를 곱해서</text>
+    <text x="300" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">분모(바닥)에 있는 지저분한 소수점 거품을 터뜨려 깔끔한 정수로 만드는 마법!</text>
+  </g>
+</svg>

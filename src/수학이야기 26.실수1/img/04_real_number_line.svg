@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">실수(Real Numbers) = 유리수 + 무리수</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">분수들이 남긴 수직선의 미세한 구멍들을, 무리수들이 완벽히 메우다.</text>
+
+  <!-- Section 1: Incomplete Rational Line -->
+  <g transform="translate(100, 150)">
+    <text x="-40" y="0" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#4FD1C5">1. 숭숭 구멍난 유리수 선</text>
+    
+    <!-- Base dashed line to show incompleteness -->
+    <line x1="200" y1="-10" x2="600" y2="-10" stroke="#4A5568" stroke-width="4" stroke-dasharray="10,4"/>
+    
+    <!-- Rational dots (Fractions and Integers) -->
+    <circle cx="250" cy="-10" r="5" fill="#4FD1C5" /> <text x="250" y="15" font-family="'Inter', sans-serif" font-size="14" fill="#4FD1C5" text-anchor="middle">0</text>
+    <circle cx="350" cy="-10" r="5" fill="#4FD1C5" /> <text x="350" y="15" font-family="'Inter', sans-serif" font-size="14" fill="#4FD1C5" text-anchor="middle">1/2</text>
+    <circle cx="450" cy="-10" r="5" fill="#4FD1C5" /> <text x="450" y="15" font-family="'Inter', sans-serif" font-size="14" fill="#4FD1C5" text-anchor="middle">1</text>
+    <circle cx="550" cy="-10" r="5" fill="#4FD1C5" /> <text x="550" y="15" font-family="'Inter', sans-serif" font-size="14" fill="#4FD1C5" text-anchor="middle">1.5</text>
+    
+    <!-- The Gap -->
+    <circle cx="532.8" cy="-10" r="8" fill="none" stroke="#FC8181" stroke-width="2" />
+    <path d="M 532.8 -18 L 532.8 -40" fill="none" stroke="#FC8181" stroke-width="2" marker-end="url(#arrow_up)"/>
+    <text x="532.8" y="-50" font-family="'Inter', sans-serif" font-size="14" font-weight="bold" fill="#FC8181" text-anchor="middle">빈 구멍! ($\sqrt{2}$ 자리)</text>
+  </g>
+
+  <!-- Section 2: Integration of Irrationals -->
+  <g transform="translate(100, 300)">
+    <text x="-40" y="0" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F6AD55">2. 무리수로 메워진 완벽한 실수(Real) 선</text>
+
+    <!-- Solid un-broken line -->
+    <line x1="200" y1="-10" x2="600" y2="-10" stroke="#F6AD55" stroke-width="6" filter="url(#glow)"/>
+    
+    <!-- Rational dots -->
+    <circle cx="250" cy="-10" r="5" fill="#4FD1C5" /> <text x="250" y="15" font-family="'Inter', sans-serif" font-size="14" fill="#4FD1C5" text-anchor="middle">0</text>
+    <circle cx="450" cy="-10" r="5" fill="#4FD1C5" /> <text x="450" y="15" font-family="'Inter', sans-serif" font-size="14" fill="#4FD1C5" text-anchor="middle">1</text>
+    
+    <!-- Irrationals filling the gap (orange and purple) -->
+    <circle cx="532.8" cy="-10" r="6" fill="#9F7AEA" />
+    <text x="532.8" y="20" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#9F7AEA" text-anchor="middle">$\sqrt{2}$</text>
+    
+    <circle cx="370" cy="-10" r="4" fill="#FC8181" />
+    <text x="370" y="-20" font-family="'Inter', sans-serif" font-size="14" fill="#FC8181" text-anchor="middle">$\frac{\sqrt{3}}{3}$</text>
+  </g>
+
+  <!-- Equation Formula Box -->
+  <g transform="translate(620, 220)">
+    <rect x="-80" y="-40" width="160" height="90" fill="#2D3748" stroke="#A0AEC0" stroke-width="2" rx="10"/>
+    <text x="0" y="-15" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#E2E8F0" text-anchor="middle">Real Numbers</text>
+    <line x1="-60" y1="0" x2="60" y2="0" stroke="#4A5568" stroke-width="2"/>
+    <text x="0" y="25" font-family="'Inter', sans-serif" font-size="16" fill="#4FD1C5" text-anchor="middle">유리수</text>
+    <text x="0" y="32" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#E2E8F0" text-anchor="middle">+</text>
+    <text x="0" y="40" font-family="'Inter', sans-serif" font-size="16" fill="#9F7AEA" text-anchor="middle" transform="translate(0, -15)">무리수</text>
+    <!-- Adjust layout -->
+    <text x="-35" y="25" font-family="'Inter', sans-serif" font-size="16" fill="#4FD1C5" text-anchor="middle">유리수</text>
+    <text x="0" y="25" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#E2E8F0" text-anchor="middle">+</text>
+    <text x="35" y="25" font-family="'Inter', sans-serif" font-size="16" fill="#9F7AEA" text-anchor="middle">무리수</text>
+  </g>
+
+</svg>

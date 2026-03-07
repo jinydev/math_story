@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">눈금의 한계: 참값과 측정값</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">아무리 정밀한 자(Ruler)를 대더라도, 물체의 끝은 항상 눈금과 눈금 "사이"에 존재합니다.</text>
+
+  <!-- Physical Ruler Visual -->
+  <g transform="translate(100, 150)">
+    <!-- Ruler body -->
+    <rect x="0" y="0" width="600" height="50" fill="#E2E8F0" rx="5"/>
+    <rect x="0" y="0" width="600" height="15" fill="#CBD5E0" rx="5"/>
+    
+    <!-- Major ticks -->
+    <line x1="100" y1="0" x2="100" y2="30" stroke="#2D3748" stroke-width="3"/>
+    <text x="100" y="45" font-family="'Inter', sans-serif" font-size="14" fill="#2D3748" text-anchor="middle" font-weight="bold">1cm</text>
+    
+    <line x1="300" y1="0" x2="300" y2="30" stroke="#2D3748" stroke-width="3"/>
+    <text x="300" y="45" font-family="'Inter', sans-serif" font-size="14" fill="#2D3748" text-anchor="middle" font-weight="bold">2cm</text>
+    
+    <line x1="500" y1="0" x2="500" y2="30" stroke="#2D3748" stroke-width="3"/>
+    <text x="500" y="45" font-family="'Inter', sans-serif" font-size="14" fill="#2D3748" text-anchor="middle" font-weight="bold">3cm</text>
+
+    <!-- Minor ticks generation (0.1cm spacing) -->
+    <g stroke="#4A5568" stroke-width="1.5">
+      <!-- Between 1 and 2 -->
+      <line x1="120" y1="0" x2="120" y2="15"/><line x1="140" y1="0" x2="140" y2="15"/>
+      <line x1="160" y1="0" x2="160" y2="15"/><line x1="180" y1="0" x2="180" y2="15"/>
+      <line x1="200" y1="0" x2="200" y2="20" stroke-width="2"/> <!-- 1.5 cm -->
+      <line x1="220" y1="0" x2="220" y2="15"/><line x1="240" y1="0" x2="240" y2="15"/>
+      <line x1="260" y1="0" x2="260" y2="15"/><line x1="280" y1="0" x2="280" y2="15"/>
+    </g>
+  </g>
+
+  <!-- The True Object Line -->
+  <!-- Object ends exactly at 1.73cm (between 1.7 and 1.8) -->
+  <rect x="50" y="100" width="196" height="30" fill="#4FD1C5" rx="5"/>
+  <text x="148" y="120" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#1A202C" text-anchor="middle">어떤 물체의 실제 100% 참 길이 (True Value)</text>
+
+  <!-- Measurement Magnifying Area -->
+  <g transform="translate(100, 150)">
+    <!-- Red circle highlighting the end point -->
+    <circle cx="146" cy="15" r="30" fill="none" stroke="#FC8181" stroke-width="3" stroke-dasharray="4,2"/>
+    
+    <!-- Lines extending down to magnified view -->
+    <line x1="120" y1="40" x2="-20" y2="120" stroke="#FC8181" stroke-width="2" stroke-dasharray="5,5" opacity="0.6"/>
+    <line x1="172" y1="40" x2="300" y2="120" stroke="#FC8181" stroke-width="2" stroke-dasharray="5,5" opacity="0.6"/>
+  </g>
+
+  <!-- Magnified View Below -->
+  <g transform="translate(80, 270)">
+    <!-- Big zoomed area box -->
+    <rect x="-30" y="0" width="370" height="90" fill="#2D3748" rx="8" stroke="#4A5568" stroke-width="2"/>
+    
+    <!-- Big zoomed ruler ticks -->
+    <line x1="20" y1="0" x2="20" y2="30" stroke="#E2E8F0" stroke-width="4"/>
+    <text x="20" y="55" font-family="'Inter', sans-serif" font-size="18" fill="#E2E8F0" text-anchor="middle">1.7cm 눈금</text>
+
+    <line x1="290" y1="0" x2="290" y2="30" stroke="#E2E8F0" stroke-width="4"/>
+    <text x="290" y="55" font-family="'Inter', sans-serif" font-size="18" fill="#E2E8F0" text-anchor="middle">1.8cm 눈금</text>
+    
+    <!-- The True line end zoomed -->
+    <rect x="-30" y="-30" width="131" height="30" fill="#4FD1C5" rx="2"/>
+    <line x1="101" y1="-30" x2="101" y2="70" stroke="#4FD1C5" stroke-width="2" stroke-dasharray="4,4"/>
+    
+    <text x="155" y="0" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#F6AD55" text-anchor="middle">끝 구간이 1.7 과 1.8 "사이"에 위치!</text>
+    <text x="155" y="25" font-family="'Inter', sans-serif" font-size="14" fill="#FC8181" text-anchor="middle">-> 1.7에 더 가까우므로 "1.7cm" 로 측정 (근삿값)</text>
+    <text x="155" y="45" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">-> 진짜 참값은 1.73cm 일수도, 1.7342cm 일수도 모른다.</text>
+  </g>
+
+  <!-- Python Concept Box -->
+  <g transform="translate(480, 270)">
+    <rect x="0" y="0" width="280" height="90" fill="#1A202C" rx="8" stroke="#718096" stroke-width="2"/>
+    <text x="140" y="25" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#4FD1C5" text-anchor="middle">유효숫자와 측정 오차</text>
+    <text x="140" y="50" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">결국 인간이 읽을 수 있는 가장 작은</text>
+    <text x="140" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">"최소 눈금"이 측정값의 한계가 된다!</text>
+  </g>
+
+</svg>

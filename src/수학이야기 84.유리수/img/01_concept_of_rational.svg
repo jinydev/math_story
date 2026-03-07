@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <linearGradient id="numGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4FD1C5" />
+      <stop offset="100%" stop-color="#319795" />
+    </linearGradient>
+    <linearGradient id="denGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F6AD55" />
+      <stop offset="100%" stop-color="#DD6B20" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">유리수 (Rational Numbers) 의 구조</text>
+  <text x="400" y="80" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">Ratio (비율) 에서 파생된 단어 - a / b</text>
+
+  <!-- Fraction Representation -->
+  <g transform="translate(150, 200)">
+    <!-- Numerator -->
+    <rect x="-60" y="-80" width="120" height="60" rx="10" fill="url(#numGrad)" opacity="0.2" stroke="#4FD1C5" stroke-width="2"/>
+    <text x="0" y="-40" font-family="'Inter', sans-serif" font-size="40" font-weight="bold" fill="#4FD1C5" text-anchor="middle">a</text>
+    <text x="80" y="-45" font-family="'Inter', sans-serif" font-size="18" fill="#4FD1C5">분자 (Numerator)</text>
+    <text x="80" y="-25" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0">내가 가진 조각의 수</text>
+
+    <!-- Fraction Line -->
+    <line x1="-80" y1="0" x2="80" y2="0" stroke="#F7FAFC" stroke-width="6" stroke-linecap="round" filter="url(#glow)" />
+
+    <!-- Denominator -->
+    <rect x="-60" y="20" width="120" height="60" rx="10" fill="url(#denGrad)" opacity="0.2" stroke="#F6AD55" stroke-width="2"/>
+    <text x="0" y="65" font-family="'Inter', sans-serif" font-size="40" font-weight="bold" fill="#F6AD55" text-anchor="middle">b</text>
+    <text x="80" y="45" font-family="'Inter', sans-serif" font-size="18" fill="#F6AD55">분모 (Denominator)</text>
+    <text x="80" y="65" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0">전체를 나눈 총 조각 수 (b ≠ 0)</text>
+  </g>
+
+  <!-- Pie Chart Visualizations -->
+  <!-- 1/2 -->
+  <g transform="translate(550, 160)">
+    <circle cx="0" cy="0" r="40" fill="#2D3748" stroke="#4A5568" stroke-width="3"/>
+    <path d="M 0 0 L 0 -40 A 40 40 0 0 1 40 0 A 40 40 0 0 1 0 40 Z" fill="#4FD1C5" opacity="0.8"/>
+    <text x="0" y="65" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC" text-anchor="middle">1 / 2</text>
+  </g>
+
+  <!-- 3/4 -->
+  <g transform="translate(670, 160)">
+    <circle cx="0" cy="0" r="40" fill="#2D3748" stroke="#4A5568" stroke-width="3"/>
+    <path d="M 0 0 L 0 -40 A 40 40 0 1 1 -40 0 A 40 40 0 0 1 0 -40 Z" fill="#4FD1C5" opacity="0.8"/>
+    <path d="M 0 0 L -40 0 A 40 40 0 0 1 0 -40 Z" fill="#2D3748" />
+    <text x="0" y="65" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC" text-anchor="middle">3 / 4</text>
+  </g>
+
+  <!-- Real world translation box -->
+  <g transform="translate(150, 360)">
+    <rect x="-100" y="0" width="600" height="100" rx="10" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+    <text x="200" y="35" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F6AD55" text-anchor="middle">가장 중요한 규칙: b ≠ 0</text>
+    <text x="200" y="65" font-family="'Inter', sans-serif" font-size="16" fill="#E2E8F0" text-anchor="middle">"없는 것(0)으로 무언가를 나눌 수는 없습니다."</text>
+    <text x="200" y="85" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">이 규칙은 컴퓨터 프로그래밍에서 ZeroDivisionError 의 원인이 됩니다.</text>
+  </g>
+</svg>

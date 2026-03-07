@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="400">
+    <rect width="800" height="400" fill="#2d3436" />
+    <text x="400" y="40" font-family="Arial" font-size="28" font-weight="bold" fill="#dfe6e9" text-anchor="middle">
+        코흐 곡선의 재귀적 분열 (Koch Curve Generation)
+    </text>
+
+    <text x="400" y="380" font-family="Arial" font-size="16" fill="#b2bec3" text-anchor="middle">
+        무한히 확대해도 계속 똑같은 톱니바퀴가 솟아오르는 프랙탈 자기 유사성($1 \rightarrow 4$ 조각으로 끝없이 쪼개짐)
+    </text>
+
+    <!-- Stage 0 -->
+    <g transform="translate(100, 100)">
+        <text x="0" y="-15" font-family="Arial" font-size="16" fill="#74b9ff">Stage 0 (선분 1개)</text>
+        <line x1="0" y1="0" x2="600" y2="0" stroke="#74b9ff" stroke-width="4" />
+    </g>
+
+    <!-- Stage 1 -->
+    <g transform="translate(100, 180)">
+        <text x="0" y="-15" font-family="Arial" font-size="16" fill="#55efc4">Stage 1 (선분 4개로 분열)</text>
+        <path d="M 0 0 L 200 0 L 300 -173.2 L 400 0 L 600 0" fill="none" stroke="#55efc4" stroke-width="3" />
+    </g>
+
+    <!-- Stage 2 -->
+    <g transform="translate(100, 260)">
+        <text x="0" y="-15" font-family="Arial" font-size="16" fill="#ffeaa7">Stage 2 (선분 16개로 분열)</text>
+        <path d="
+            M 0 0 
+            L 66.6 0 L 100 -57.7 L 133.3 0 L 200 0 
+            L 233.3 -57.7 L 200 -115.4 L 266.6 -115.4 L 300 -173.2
+            L 333.3 -115.4 L 400 -115.4 L 366.6 -57.7 L 400 0
+            L 466.6 0 L 500 -57.7 L 533.3 0 L 600 0
+        " fill="none" stroke="#ffeaa7" stroke-width="2">
+            <!-- Animation rendering effect -->
+            <animate attributeName="stroke-dasharray" values="0, 1500; 1500, 0" dur="5s" repeatCount="indefinite" />
+        </path>
+    </g>
+</svg>

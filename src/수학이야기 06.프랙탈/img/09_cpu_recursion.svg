@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="300">
+    <rect width="800" height="300" fill="#2d3436" />
+    <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#dfe6e9" text-anchor="middle">
+        컴퓨터와 프랙탈의 만남: CPU 재귀(Recursion) 루프
+    </text>
+
+    <!-- Human Brain -->
+    <g transform="translate(150, 80)">
+        <ellipse cx="50" cy="50" rx="60" ry="40" fill="none" stroke="#fab1a0" stroke-width="4" />
+        <path d="M 10 50 Q 30 30, 50 50 T 90 50" fill="none" stroke="#fab1a0" stroke-width="2" />
+        <text x="50" y="-10" font-family="Arial" font-size="16" fill="#fab1a0" text-anchor="middle">인간의 두뇌</text>
+        <text x="50" y="120" font-family="Arial" font-size="14" fill="#dfe6e9" text-anchor="middle">창조엔 능하지만</text>
+        <text x="50" y="140" font-family="Arial" font-size="14" fill="#ff7675" text-anchor="middle">수작업 1만 번 반복시 포기</text>
+    </g>
+
+    <!-- Computer CPU -->
+    <g transform="translate(450, 80)">
+        <rect x="0" y="0" width="100" height="100" fill="none" stroke="#74b9ff" stroke-width="4" rx="10" />
+        <!-- Pins -->
+        <path d="M 0 10 L -10 10 M 0 30 L -10 30 M 0 50 L -10 50 M 0 70 L -10 70 M 0 90 L -10 90" stroke="#74b9ff" stroke-width="2" />
+        <path d="M 100 10 L 110 10 M 100 30 L 110 30 M 100 50 L 110 50 M 100 70 L 110 70 M 100 90 L 110 90" stroke="#74b9ff" stroke-width="2" />
+        <text x="50" y="40" font-family="Arial" font-size="20" font-weight="bold" fill="#74b9ff" text-anchor="middle">CPU</text>
+        
+        <text x="50" y="-10" font-family="Arial" font-size="16" fill="#74b9ff" text-anchor="middle">컴퓨터 프로세서</text>
+        <text x="50" y="120" font-family="Arial" font-size="14" fill="#dfe6e9" text-anchor="middle">창조성은 없지만</text>
+        <text x="50" y="140" font-family="Arial" font-size="14" fill="#55efc4" text-anchor="middle">수억 번의 반복 계산에 특화</text>
+        
+        <!-- Recursion Loop graphic over CPU -->
+        <path d="M 30 65 A 25 25 0 1 1 70 65 A 15 15 0 1 1 40 65 A 5 5 0 1 1 60 65" fill="none" stroke="#55efc4" stroke-width="3" />
+    </g>
+
+    <text x="350" y="130" font-family="Arial" font-size="20" fill="#dfe6e9" text-anchor="middle">VS</text>
+</svg>

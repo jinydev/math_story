@@ -13,3 +13,4 @@
 - [08. 여덟 번째 수업: 두 점 사이의 거리 (Distance Between Points)](08_distance_between_points.md)
 - [09. 아홉 번째 수업: 선분을 쪼개는 내분과 외분 (Dividing Segments)](09_dividing_line_segments.md)
 - [10. 열 번째 수업: 직선들의 방정식 (Equations of Lines)](10_equations_of_lines.md)
+- [11. 열한 번째 수업: 컴퓨터 메모리와 좌표계 (Memory and Coordinates)](11_memory_and_coordinates.md)

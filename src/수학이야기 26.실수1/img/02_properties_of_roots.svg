@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">절댓값의 마법: $\sqrt{x^2} = |x|$</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">음수가 제곱 통과를 거쳐 거름망(루트)에 걸러지면 어떻게 될까?</text>
+
+  <!-- Flow 1: Positive Number -->
+  <g transform="translate(150, 150)">
+    <text x="0" y="-30" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#4FD1C5" text-anchor="middle">1. 양수의 여정</text>
+    
+    <!-- Input 5 -->
+    <rect x="-40" y="0" width="80" height="50" fill="#2D3748" stroke="#4FD1C5" stroke-width="2" rx="5"/>
+    <text x="0" y="32" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#4FD1C5" text-anchor="middle">5</text>
+
+    <!-- Arrow down to square -->
+    <path d="M 0 50 L 0 80" fill="none" stroke="#4A5568" stroke-width="2" marker-end="url(#arrow_down)"/>
+    <text x="-40" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0">제곱 ($x^2$)</text>
+
+    <!-- Squared 25 -->
+    <rect x="-40" y="80" width="80" height="50" fill="#2D3748" stroke="#F6AD55" stroke-width="2" rx="5"/>
+    <text x="0" y="112" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#F6AD55" text-anchor="middle">25</text>
+
+    <!-- Arrow down to root -->
+    <path d="M 0 130 L 0 160" fill="none" stroke="#4A5568" stroke-width="2" marker-end="url(#arrow_down)"/>
+    <text x="-40" y="150" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0">루트 ($\sqrt{y}$)</text>
+
+    <!-- Output 5 -->
+    <rect x="-40" y="160" width="80" height="50" fill="#2D3748" stroke="#4FD1C5" stroke-width="2" rx="5"/>
+    <text x="0" y="192" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#4FD1C5" text-anchor="middle" filter="url(#glow)">5</text>
+  </g>
+
+  <!-- Flow 2: Negative Number -->
+  <g transform="translate(450, 150)">
+    <text x="0" y="-30" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#FC8181" text-anchor="middle">2. 음수의 배신 (세탁기)</text>
+    
+    <!-- Input -5 -->
+    <rect x="-40" y="0" width="80" height="50" fill="#2D3748" stroke="#FC8181" stroke-width="2" rx="5"/>
+    <text x="0" y="32" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#FC8181" text-anchor="middle">-5</text>
+
+    <!-- Arrow down to square -->
+    <path d="M 0 50 L 0 80" fill="none" stroke="#4A5568" stroke-width="2" marker-end="url(#arrow_down)"/>
+    <text x="40" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0">제곱 ($x^2$)</text>
+
+    <!-- Squared 25 -->
+    <rect x="-40" y="80" width="80" height="50" fill="#2D3748" stroke="#F6AD55" stroke-width="2" rx="5"/>
+    <text x="0" y="112" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#F6AD55" text-anchor="middle">25</text>
+    <text x="80" y="110" font-family="'Inter', sans-serif" font-size="14" fill="#F6AD55">음수가 죽음 (+)</text>
+
+    <!-- Arrow down to root -->
+    <path d="M 0 130 L 0 160" fill="none" stroke="#4A5568" stroke-width="2" marker-end="url(#arrow_down)"/>
+    <text x="40" y="150" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0">루트 ($\sqrt{y}$)</text>
+
+    <!-- Output 5 (Positive!) -->
+    <rect x="-40" y="160" width="80" height="50" fill="#2D3748" stroke="#4FD1C5" stroke-width="2" rx="5" stroke-dasharray="4,4"/>
+    <text x="0" y="192" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#4FD1C5" text-anchor="middle" filter="url(#glow)">5</text>
+    
+    <!-- Big Warning X -->
+    <text x="60" y="195" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#FC8181">← -5 로 돌아가지 않음!</text>
+  </g>
+
+  <!-- Summary Conclusion Box -->
+  <g transform="translate(650, 260)">
+    <rect x="-100" y="-80" width="200" height="150" fill="#2D3748" stroke="#E2E8F0" stroke-width="2" rx="10"/>
+    <text x="0" y="-50" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#E2E8F0" text-anchor="middle">핵심 원리</text>
+    <text x="0" y="-20" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#9F7AEA" text-anchor="middle" filter="url(#glow)">$\sqrt{x^2} = |x|$</text>
+    <text x="0" y="20" font-family="'Inter', sans-serif" font-size="12" fill="#A0AEC0" text-anchor="middle">제곱이라는 세탁기를 거치면,</text>
+    <text x="0" y="40" font-family="'Inter', sans-serif" font-size="12" fill="#A0AEC0" text-anchor="middle">모든 숫자의 부호(-)가 날아가고</text>
+    <text x="0" y="60" font-family="'Inter', sans-serif" font-size="12" fill="#A0AEC0" text-anchor="middle">무조건 "절댓값" 양수로 부활합니다.</text>
+  </g>
+</svg>

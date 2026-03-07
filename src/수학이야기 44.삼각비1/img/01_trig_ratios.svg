@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">삼각비의 3대장 비율 (SOH-CAH-TOA)</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">"세상의 모든 직각 삼각형은 각도가 같으면 비율도 똑같다!"</text>
+
+  <!-- Giant Right Triangle Diagram -->
+  <!-- Let's position a large triangle in the center-left. Base=300, Height=200 -->
+  <!-- Vertices: A(Top)=150,120, B(Right Angle)=150,320, C(Observer)=450,320 -->
+  <g transform="translate(0, 0)">
+    <!-- Base Bottom (Adjacent) -->
+    <line x1="150" y1="320" x2="450" y2="320" stroke="#4FD1C5" stroke-width="6" stroke-linecap="round"/>
+    <text x="300" y="345" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#4FD1C5" text-anchor="middle">밑변 (Adjacent)</text>
+    
+    <!-- Height (Opposite) -->
+    <line x1="150" y1="120" x2="150" y2="320" stroke="#FC8181" stroke-width="6" stroke-linecap="round"/>
+    <text x="135" y="220" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#FC8181" text-anchor="end">높이 (Opposite)</text>
+
+    <!-- Hypotenuse (Slant) -->
+    <line x1="150" y1="120" x2="450" y2="320" stroke="#9F7AEA" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+    <text x="320" y="210" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#F6AD55" text-anchor="start" filter="url(#glow)">빗변 (Hypotenuse)</text>
+
+    <!-- Right Angle Symbol at B(150,320) -->
+    <rect x="150" y="300" width="20" height="20" fill="none" stroke="#718096" stroke-width="3"/>
+
+    <!-- Theta Angle Arc at C(450,320) -->
+    <!-- Arc from (-40,0) around to the slope -->
+    <path d="M 400 320 A 50 50 0 0 1 405 290" fill="none" stroke="#F6AD55" stroke-width="4"/>
+    <text x="380" y="315" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#F6AD55">θ</text>
+    <text x="470" y="325" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0">(기준 관찰각)</text>
+  </g>
+
+  <!-- Formula Boxes Right Side -->
+  <!-- SOH (Sine) -->
+  <g transform="translate(520, 130)">
+    <rect x="0" y="0" width="230" height="60" fill="rgba(252, 129, 129, 0.15)" rx="8" stroke="#FC8181" stroke-width="2"/>
+    <text x="15" y="25" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC">SOH</text>
+    <text x="115" y="25" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#FC8181" text-anchor="middle" filter="url(#glow)">sin θ</text>
+    <text x="160" y="25" font-family="'Inter', sans-serif" font-size="18" fill="#F7FAFC">=</text>
+    <text x="195" y="25" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC" text-anchor="middle">O / H</text>
+    
+    <text x="115" y="50" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">높이 ÷ 빗변 (Opposite/Hypo)</text>
+  </g>
+
+  <!-- CAH (Cosine) -->
+  <g transform="translate(520, 210)">
+    <rect x="0" y="0" width="230" height="60" fill="rgba(79, 209, 197, 0.15)" rx="8" stroke="#4FD1C5" stroke-width="2"/>
+    <text x="15" y="25" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC">CAH</text>
+    <text x="115" y="25" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#4FD1C5" text-anchor="middle" filter="url(#glow)">cos θ</text>
+    <text x="160" y="25" font-family="'Inter', sans-serif" font-size="18" fill="#F7FAFC">=</text>
+    <text x="195" y="25" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC" text-anchor="middle">A / H</text>
+    
+    <text x="115" y="50" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">밑변 ÷ 빗변 (Adjacent/Hypo)</text>
+  </g>
+
+  <!-- TOA (Tangent) -->
+  <g transform="translate(520, 290)">
+    <rect x="0" y="0" width="230" height="60" fill="rgba(159, 122, 234, 0.15)" rx="8" stroke="#9F7AEA" stroke-width="2"/>
+    <text x="15" y="25" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC">TOA</text>
+    <text x="115" y="25" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#9F7AEA" text-anchor="middle" filter="url(#glow)">tan θ</text>
+    <text x="160" y="25" font-family="'Inter', sans-serif" font-size="18" fill="#F7FAFC">=</text>
+    <text x="195" y="25" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC" text-anchor="middle">O / A</text>
+    
+    <text x="115" y="50" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">높이 ÷ 밑변 (Opposite/Adj)</text>
+  </g>
+
+  <rect x="520" y="370" width="230" height="40" fill="#2D3748" rx="8" stroke="#F6AD55" stroke-width="1"/>
+  <text x="635" y="395" font-family="'Inter', sans-serif" font-size="14" fill="#E2E8F0" text-anchor="middle">⭐ 팁: S-O-H / C-A-H / T-O-A 로 외우자!</text>
+
+</svg>

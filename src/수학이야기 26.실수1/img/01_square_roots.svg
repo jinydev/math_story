@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">제곱근의 원리: 면적에서 변의 길이를 찾다</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">Root (뿌리) : 정사각형의 넓이에서 한 변의 뿌리를 파헤치는 역(Inverse) 연산</text>
+
+  <!-- Left: Original Square (Area 9) -->
+  <g transform="translate(150, 150)">
+    <rect x="-60" y="-60" width="120" height="120" fill="#2D3748" stroke="#4FD1C5" stroke-width="4" stroke-dasharray="8,4"/>
+    <!-- Grid inside 3x3 -->
+    <line x1="-20" y1="-60" x2="-20" y2="60" stroke="#4FD1C5" stroke-width="1" opacity="0.5"/>
+    <line x1="20" y1="-60" x2="20" y2="60" stroke="#4FD1C5" stroke-width="1" opacity="0.5"/>
+    <line x1="-60" y1="-20" x2="60" y2="-20" stroke="#4FD1C5" stroke-width="1" opacity="0.5"/>
+    <line x1="-60" y1="20" x2="60" y2="20" stroke="#4FD1C5" stroke-width="1" opacity="0.5"/>
+
+    <text x="0" y="5" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#4FD1C5" text-anchor="middle">넓이: 9</text>
+    <text x="0" y="90" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#F7FAFC" text-anchor="middle">?</text>
+    <text x="-85" y="5" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#F7FAFC" text-anchor="middle">?</text>
+  </g>
+
+  <!-- Forward Arrow (Squaring) -->
+  <path d="M 330 200 L 470 200" fill="none" stroke="#F6AD55" stroke-width="4" marker-end="url(#arrow_right)"/>
+  <text x="400" y="190" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#F6AD55" text-anchor="middle">제곱 (Square: $x^2$)</text>
+  <text x="400" y="225" font-family="'Inter', sans-serif" font-size="14" fill="#E2E8F0" text-anchor="middle">한 변 $x$ 를 알면 넓이를 구함</text>
+
+  <!-- Backward Arrow (Rooting) -->
+  <path d="M 470 140 L 330 140" fill="none" stroke="#9F7AEA" stroke-width="4" marker-end="url(#arrow_left)"/>
+  <text x="400" y="110" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#9F7AEA" text-anchor="middle">제곱근 (Root: $\sqrt{y}$)</text>
+  <text x="400" y="130" font-family="'Inter', sans-serif" font-size="14" fill="#E2E8F0" text-anchor="middle">넓이에서 한 변 길이(3)를 역추적</text>
+
+  <!-- Right: Result Root Square (Side 3) -->
+  <g transform="translate(650, 150)">
+    <rect x="-60" y="-60" width="120" height="120" fill="rgba(159, 122, 234, 0.2)" stroke="#9F7AEA" stroke-width="4"/>
+    <line x1="-60" y1="70" x2="60" y2="70" stroke="#9F7AEA" stroke-width="2"/>
+    <path d="M -60 65 L -60 75 M 60 65 L 60 75" fill="none" stroke="#9F7AEA" stroke-width="2"/>
+    <text x="0" y="90" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#9F7AEA" text-anchor="middle" filter="url(#glow)">3</text>
+    
+    <text x="0" y="5" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#A0AEC0" text-anchor="middle">$\sqrt{9} = 3$</text>
+  </g>
+
+  <!-- Bottom Explanatory Concept -->
+  <g transform="translate(100, 310)">
+    <rect x="0" y="0" width="600" height="60" fill="#2D3748" rx="8" stroke="#4A5568" stroke-width="2"/>
+    <text x="300" y="25" font-family="'Inter', sans-serif" font-size="16" fill="#F7FAFC" text-anchor="middle">파이썬의 마법: math.sqrt(9) = 3.0</text>
+    <text x="300" y="45" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">뿌리 근(根, Root)은 "제곱이라는 연산의 되감기(Undo) 버튼"과 같습니다.</text>
+  </g>
+</svg>

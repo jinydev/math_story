@@ -1,24 +1,26 @@
 ---
-layout: post
+layout: home
 title: "수학이야기 06. 프랙탈 (Fractals)"
-tags: [수학, 프랙탈, 자기유사성, 재귀, 파이썬코드, V3]
 ---
 
-# 프랙탈 (Fractals)
+# 06. 프랙탈 (Fractals: 자연을 그려내는 해상도 무한의 기하학)
 
-"구름은 구가 아니며, 산은 원뿔이 아니고, 해안선은 원핵이 아니다."
-자연의 불규칙한 아름다움 속에 숨겨진 끝없는 수학적 반복의 법칙. 그리고 파이썬(Python) 프로그래밍의 궁극기인 '재귀 함수(Recursion)'를 이용해 무한한 우주를 그리는 프랙탈 기하학의 신비를 탐험합니다.
+유클리드 기하학이 반듯한 원, 직선, 정삼각형 등 인간이 만들어낸 완벽한 모양을 연구했다면, **프랙탈(Fractal)**은 구불구불한 해안선, 뾰족한 산맥, 복잡하게 퍼져나가는 나뭇가지와 번개 등 **"거친 자연(Nature)의 모양"** 그 자체를 수학적으로 묘사하는 혁명적인 도구입니다.
+
+이 단원에서는 20세기 브누아 만델브로트(Benoit Mandelbrot)가 제창한 프랙탈의 개념인 **'자기 유사성(Self-Similarity)'**을 탐구합니다. 또한 V3.1 지침에 따라 프랙탈 구조가 컴퓨터 과학의 핵심인 **'재귀 함수(Recursion)'**와 어떻게 완벽히 일치하는지 파이썬(Python) 코드를 통해 증명하고, 차원(Dimension)이 정수가 아닌 실수(Float)로 쪼개지는 신비로운 과정을 그립니다.
+
+## 목차 (Chapters 00 ~ 09)
+
+- [00_intro: 도입 - 구름은 구가 아니고, 산은 원뿔이 아니다](./00_intro)
+- [01_what_is_fractal: 첫 번째 수업 - 해안선의 길이를 재어 볼까요?](./01_what_is_fractal)
+- [02_self_similarity: 두 번째 수업 - 내 안에 날 닮은 내가 또 있다 (자기 유사성)](./02_self_similarity)
+- [03_koch_and_sierpinski: 세 번째 수업 - 유한과 무한의 오묘한 조화](./03_koch_and_sierpinski)
+- [04_fractional_dimension: 네 번째 수업 - 차원이 다른, 프랙탈의 차원](./04_fractional_dimension)
+- [05_fractals_in_nature: 다섯 번째 수업 - 자연은 프랙탈을 선택했다고](./05_fractals_in_nature)
+- [06_fractals_in_art: 여섯 번째 수업 - 예술 속의 프랙탈](./06_fractals_in_art)
+- [07_fractals_in_daily_life: 일곱 번째 수업 - 우리 생활 속의 프랙탈](./07_fractals_in_daily_life)
+- [08_father_of_fractal_geometry: 여덟 번째 수업 - 프랙탈 기하학의 아버지](./08_father_of_fractal_geometry)
+- [09_computers_and_fractals: 아홉 번째 수업 - 컴퓨터와 프랙탈의 찰떡궁합](./09_computers_and_fractals)
 
 ---
-
-## 🎯 학습 목차 (Curriculum)
-
-* **[00_자연의 숨겨진 코드를 읽어낸 만델브로 (Intro)](00_intro.md)**
-* **[01_첫 번째 수업: 영원히 끝나지 않는 거울, 자기 유사성 (Self-Similarity)](01_self_similarity.md)**
-* **[02_두 번째 수업: 코드로 우주를 그리다, 파이썬 재귀 함수 (Recursion)](02_recursion_in_math_and_code.md)**
-* **[03_세 번째 수업: 차원의 한계를 부수다, 소수점 차원 (Fractional Dimension)](03_fractional_dimension.md)**
-
----
-
-**[v3 업데이트 사항]** 
-> 💡 기존의 스토리텔링 캐릭터 서술을 배제하고, 자연계의 프랙탈 패턴을 수학적 점화식과 파이썬 재귀(Recursion) 함수로 직접 구현해 보는 코딩-수학 융합 교재로 100% 완전 개정되었습니다. (만델브로 일러스트 및 코흐의 눈송이 증식 SVG 애니메이션 수록 완료)
+*V3.1 업데이트: 끝없이 자기 자신을 호출하는 '크기가 없는 기하학' 프랙탈과, 파이썬의 `def recursive()` 재귀 알고리즘 로직이 결합하여 생태계의 복제 원리를 탐구하는 내용이 추가되었습니다.*

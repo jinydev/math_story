@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">컴퓨터 부동소수점의 오차 (0.1 + 0.2 ≠ 0.3)</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">메모리(RAM)의 유한한 바이트 한계가 무한의 세계를 담지 못할 때 벌어지는 비극</text>
+
+  <!-- Title Section: Float memory representation -->
+  <g transform="translate(100, 120)">
+    <text x="-50" y="25" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#F6AD55">Float (64-bit)</text>
+    
+    <!-- Long bit sequence box to represent limited byte space -->
+    <rect x="120" y="0" width="500" height="30" fill="#4A5568" rx="5"/>
+    <text x="130" y="20" font-family="'Courier New', monospace" font-size="14" fill="#E2E8F0" letter-spacing="4">01001100110011001100110011001100</text>
+    <text x="590" y="20" font-family="'Courier New', monospace" font-size="14" fill="#FC8181" font-weight="bold" letter-spacing="2">...!</text>
+    
+    <!-- Cutoff indicator -->
+    <line x1="580" y1="-10" x2="580" y2="40" stroke="#FC8181" stroke-width="3" stroke-dasharray="5,5"/>
+    <text x="580" y="-20" font-family="'Inter', sans-serif" font-size="14" fill="#FC8181" text-anchor="middle">메모리 한계선(64bit)</text>
+    <text x="650" y="25" font-family="'Inter', sans-serif" font-size="14" fill="#FC8181">강제 반올림 ✂️</text>
+  </g>
+
+  <!-- Error display box -->
+  <g transform="translate(170, 200)">
+    <rect x="0" y="0" width="460" height="70" fill="#2D3748" stroke="#FC8181" stroke-width="2" rx="10"/>
+    <text x="30" y="40" font-family="'Courier New', monospace" font-size="22" font-weight="bold" fill="#FC8181">0.1 + 0.2 = 0.30000000000000004</text>
+  </g>
+
+  <!-- The Solution: Fraction object -->
+  <g transform="translate(100, 310)">
+    <text x="-50" y="30" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#4FD1C5">Fraction 객체</text>
+
+    <!-- Fraction logic memory representation -->
+    <rect x="120" y="10" width="50" height="30" fill="#2D3748" stroke="#4FD1C5" stroke-width="2" rx="5"/>
+    <text x="145" y="32" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#4FD1C5" text-anchor="middle">3</text>
+
+    <line x1="185" y1="25" x2="215" y2="25" stroke="#F7FAFC" stroke-width="4"/>
+
+    <rect x="230" y="10" width="50" height="30" fill="#2D3748" stroke="#4FD1C5" stroke-width="2" rx="5"/>
+    <text x="255" y="32" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#4FD1C5" text-anchor="middle">10</text>
+
+    <line x1="300" y1="25" x2="330" y2="25" stroke="#4FD1C5" stroke-width="3" marker-end="url(#arrow_right)"/>
+
+    <text x="360" y="32" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#4FD1C5">오류 없이 순수한 3/10 저장 (100% Exact)</text>
+  </g>
+
+  <!-- Connective logic arrow -->
+  <path d="M 400 270 L 400 300" fill="none" stroke="#A0AEC0" stroke-width="2" marker-end="url(#arrow_down)"/>
+</svg>

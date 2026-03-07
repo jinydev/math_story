@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="300">
+    <rect width="800" height="300" fill="#2d3436" />
+    <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#dfe6e9" text-anchor="middle">
+        생명력의 지표: 심장 박동(ECG)의 프랙탈 진동
+    </text>
+
+    <!-- Normal Heart ECG (Fractal noise, highly variable) -->
+    <text x="100" y="80" font-family="Arial" font-size="16" fill="#55efc4">건강한 심장 (프랙탈 노이즈, 높은 변동성)</text>
+    <polyline points="50,140 100,145 120,120 140,160 160,135 180,140 200,90 220,190 240,135 260,140 280,145 300,135 320,160 340,120 360,140 380,145" 
+              fill="none" stroke="#55efc4" stroke-width="3" stroke-linejoin="round"/>
+              
+    <!-- Zoom Box indicating self-similarity in heartbeat variance -->
+    <rect x="180" y="80" width="80" height="120" fill="none" stroke="#ffeaa7" stroke-width="2" stroke-dasharray="4" />
+    <path d="M 220 200 L 400 240" stroke="#ffeaa7" stroke-width="2" stroke-dasharray="4" opacity="0.6"/>
+    <path d="M 180 80 L 400 210" stroke="#ffeaa7" stroke-width="2" stroke-dasharray="4" opacity="0.6"/>
+
+    <!-- Zoomed Version showing exact same macro pattern -->
+    <text x="400" y="270" font-family="Arial" font-size="14" fill="#ffeaa7">확대해도 전체와 비슷한 거친 진동 패턴 반복</text>
+    <polyline points="400,225 450,230 470,205 490,245 510,220 530,225 550,175 570,275 590,220 610,225 630,230 650,220 670,245 690,205 710,225 730,230" 
+              fill="none" stroke="#ffeaa7" stroke-width="2" stroke-linejoin="round" opacity="0.8"/>
+
+
+    <!-- Dying Heart ECG (Loss of fractal variance, mechanistic) -->
+    <text x="100" y="210" font-family="Arial" font-size="16" fill="#ff7675">병든 심장 (프랙탈 차원 상실, 단순한 정현파)</text>
+    <polyline points="50,250 100,250 130,220 150,280 180,250 250,250 280,220 300,280 330,250 400,250" 
+              fill="none" stroke="#ff7675" stroke-width="3" stroke-linejoin="round"/>
+
+</svg>

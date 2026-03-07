@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">복소수의 덧셈 (벡터 합) &amp; 켤레복소수 쌍둥이</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">복소수의 덧셈은 물리학의 힘의 덧셈(평행사변형)과 같고, 켤레복소수는 실수 축을 기준으로 한 거울 반사입니다.</text>
+
+  <!-- Left Side: Vector Addition -->
+  <g transform="translate(180, 270)">
+    <!-- Axes -->
+    <line x1="-150" y1="0" x2="200" y2="0" stroke="#4A5568" stroke-width="2"/>
+    <line x1="0" y1="150" x2="0" y2="-180" stroke="#4A5568" stroke-width="2"/>
+    
+    <!-- Grid hint -->
+    <path d="M 0 -80 L 120 -80 L 120 0" fill="none" stroke="#718096" stroke-dasharray="4,4" opacity="0.5"/>
+    <path d="M 0 -40 L 40 -40 L 40 0" fill="none" stroke="#718096" stroke-dasharray="4,4" opacity="0.5"/>
+    <path d="M 120 -80 L 160 -120 L 40 -40" fill="none" stroke="#9F7AEA" stroke-width="2" stroke-dasharray="6,4" opacity="0.8"/>
+
+    <!-- Vectors -->
+    <line x1="0" y1="0" x2="120" y2="-80" stroke="#4FD1C5" stroke-width="3" marker-end="url(#arrow_c1)"/>
+    <circle cx="120" cy="-80" r="5" fill="#4FD1C5"/>
+    <text x="140" y="-85" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#4FD1C5">z₁ (3+2i)</text>
+
+    <line x1="0" y1="0" x2="40" y2="-40" stroke="#F6AD55" stroke-width="3" marker-end="url(#arrow_c2)"/>
+    <circle cx="40" cy="-40" r="5" fill="#F6AD55"/>
+    <text x="10" y="-45" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#F6AD55">z₂ (1+i)</text>
+
+    <!-- Result Vector -->
+    <line x1="0" y1="0" x2="160" y2="-120" stroke="#FC8181" stroke-width="4" filter="url(#glow)"/>
+    <circle cx="160" cy="-120" r="6" fill="#FC8181"/>
+    <text x="180" y="-125" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#FC8181">z₁ + z₂ (4+3i)</text>
+    
+    <text x="0" y="100" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#E2E8F0" text-anchor="middle">1. 덧셈 (평행사변형 법칙)</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="420" y1="120" x2="420" y2="450" stroke="#4A5568" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- Right Side: Complex Conjugate -->
+  <g transform="translate(600, 270)">
+    <!-- Axes -->
+    <line x1="-150" y1="0" x2="150" y2="0" stroke="#4FD1C5" stroke-width="3"/>
+    <text x="160" y="5" font-family="'Inter', sans-serif" font-size="14" font-weight="bold" fill="#4FD1C5">실수 축 (거울)</text>
+    
+    <line x1="0" y1="150" x2="0" y2="-150" stroke="#4A5568" stroke-width="2"/>
+    
+    <!-- Points -->
+    <path d="M 0 -100 L 100 -100 L 100 0" fill="none" stroke="#718096" stroke-dasharray="4,4"/>
+    <line x1="0" y1="0" x2="100" y2="-100" stroke="#ECC94B" stroke-width="3"/>
+    <circle cx="100" cy="-100" r="6" fill="#ECC94B" filter="url(#glow)"/>
+    <text x="120" y="-105" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#ECC94B">z (2 + 3i)</text>
+
+    <!-- Conjugate Point -->
+    <path d="M 0 100 L 100 100 L 100 0" fill="none" stroke="#718096" stroke-dasharray="4,4"/>
+    <line x1="0" y1="0" x2="100" y2="100" stroke="#FC8181" stroke-width="3" stroke-dasharray="4,4"/>
+    <circle cx="100" cy="100" r="6" fill="#FC8181" filter="url(#glow)"/>
+    <text x="120" y="105" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#FC8181">z̄ (2 - 3i)</text>
+
+    <!-- Mirror effect arrows -->
+    <path d="M 120 -80 Q 150 0 120 80" fill="none" stroke="#A0AEC0" stroke-width="2" marker-end="url(#arrow_mirror)" marker-start="url(#arrow_mirror)"/>
+    <text x="165" y="5" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="start">허수 부호만 반전!</text>
+
+    <text x="0" y="170" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#E2E8F0" text-anchor="middle">2. 켤레복소수 (거울 대칭)</text>
+  </g>
+</svg>

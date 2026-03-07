@@ -1,22 +1,27 @@
-# 적분(Integral)의 원리와 활용: 1부 기초부터 인공지능 시대까지
+---
+layout: default
+title: "수학이야기 01.적분1"
+parent: 수학이야기
+nav_order: 1
+has_children: true
+---
 
-이 강의 자료는 복잡한 수식과 계산 중심의 교육을 탈피하여, 적분이 등장하게 된 원리와 실생활 활용, 그리고 AI 시대의 필수적인 시각화를 통해 적분을 쉽고 직관적으로 이해할 수 있도록 재구성되었습니다. 
+# 수학이야기 01.적분1 (Integration 1)
 
-단순히 "수학 공식"을 외우는 것이 아니라, 둥근 모양의 넓이를 구하려는 소박한 인간의 열망에서 시작된 적분의 본질을 일곱 번의 수업을 통해 친절하게 안내합니다. 미적분을 처음 접하는 학생이나 기초 원리를 탄탄히 다지고 싶은 코딩 꿈나무, 중고등학생 모두에게 훌륭한 길라잡이가 될 것입니다.
+반듯한 사각형이나 삼각형의 넓이는 초등학생도 식을 세워 구할 수 있습니다. 
+하지만 구불구불한 강물의 면적이나, 불타오르는 불꽃의 부피, 호리병의 겉넓이 같이 **곡선으로 이루어진 불규칙한 모양의 크기**는 어떻게 계산해야 할까요?
 
-## 학습 목표
-* 실생활 활용 사례와 재미있는 비유(피자, 페인트 롤러 등)를 통해 적분의 기본 개념을 완벽하게 이해합니다.
-* 무한대와 극미($dx$)의 개념, 그리고 리만합의 논리적인 딜레마를 통해 한계 극복 문제들을 해결하는 수학적 사고를 기릅니다.
-* 파이썬(Python)의 시각화 도구와 기초 코드를 눈으로 직접 확인하며, 함수적 한계가 4차 산업혁명 시대의 인공지능과 데이터 분석에 어떻게 적용되는지 경험합니다.
+수천 년 전 고대 그리스의 천재 아르키메데스는 이 미치광이 같은 문제에 도전하여 "적분(Integration)"의 씨앗, 이른바 '실진법(Method of Exhaustion)'을 발명해 냈습니다. 조각내기(미분)의 반대말, **아주 잘게 쪼개어 무한히 쌓아 올리는 합체의 마법, 적분**의 장대한 세계가 시작됩니다.
+
+---
 
 ## 목차
-- [책 및 교재 정보](./00_%EC%B1%85%EC%A0%95%EB%B3%B4.md)
-- [추천사 및 머리말](./01_%EC%B6%94%EC%B2%9C%EC%82%AC.md)
-- [1. 우리는 적분을 왜 배울까? (What is Integral?)](./01_what_is_integral.md)
-- [2. 피자를 천만 조각으로 자르면 어떻게 될까? (The Principle of Integral)](./02_principle_of_integral.md)
-- [3. 롤러로 벽을 칠하며 깨닫는 적분 (Generalization of Area)](./03_generalization_of_area.md)
-- [4. 뱀처럼 생긴 적분 기호의 암호 해독 (Integral Symbol)](./04_integral_symbol.md)
-- [5. 0이라는 거야, 아니라는 거야? dx의 딜레마 (Dilemma of dx)](./05_dilemma_of_dx.md)
-- [6. 앗! 적분을 했더니 마이너스 넓이가 나왔다? (Integral and Area)](./06_integral_and_area.md)
-- [7. 층층이 쌓은 카드의 마술, 카발리에리의 원리 (Cavalieri's Principle)](./07_cavalieris_principle.md)
-- [저자 참고 정보](./12_%EC%A0%80%EC%9E%90_%EB%B0%8F_%EB%8F%84%EC%84%9C%EC%A0%95%EB%B3%B4.md)
+
+- [00. 인트로: 곡선을 정복하려는 인간의 집념 (Intro)](00_intro.md)
+- [01. 첫 번째 수업: 아르키메데스와 넓이의 비밀 (Area and Volume)](01_area_and_volume.md)
+- [02. 두 번째 수업: 리만 합, 직사각형 무한 러시 (Riemann Sums)](02_riemann_sums.md)
+- [03. 세 번째 수업: 유한에서 무한으로 건너뛰기, 정적분 (Definite Integrals)](03_definite_integrals.md)
+- [04. 네 번째 수업: 미적분학의 제1 기본 정리 (Fundamental Theorem)](04_fundamental_theorem.md)
+- [05. 다섯 번째 수업: 미분의 필름을 거꾸로 돌리다 (Antiderivatives)](05_antiderivatives.md)
+- [06. 여섯 번째 수업: 파괴된 정보의 복구비용 $C$ (Indefinite Integrals)](06_indefinite_integrals.md)
+- [07. 일곱 번째 수업: 파이썬 루프로 속도를 거리에 누적하다 (Physics & Code)](07_integration_in_physics.md)

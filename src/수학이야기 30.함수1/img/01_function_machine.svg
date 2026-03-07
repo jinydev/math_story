@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">함수 자판기의 세계 (Domain &amp; Codomain Mapping)</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">"모든 원인(X)은 반드시 출발하되, 절대 두 갈래(2개 결과)로 어긋나 쪼개지지 않는다!"</text>
+
+  <!-- Domain Set X -->
+  <g transform="translate(100, 150)">
+    <rect x="0" y="0" width="160" height="240" fill="rgba(66, 153, 225, 0.15)" rx="80" stroke="#63B3ED" stroke-width="3" filter="url(#glow)"/>
+    <text x="80" y="-15" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#63B3ED" text-anchor="middle">정의역 (Set X)</text>
+    <text x="80" y="30" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">입력 동전들</text>
+
+    <!-- X Elements -->
+    <circle cx="80" cy="70" r="18" fill="#2B6CB0"/>
+    <text x="80" y="76" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC" text-anchor="middle">1</text>
+    
+    <circle cx="80" cy="130" r="18" fill="#2B6CB0"/>
+    <text x="80" y="136" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC" text-anchor="middle">2</text>
+    
+    <circle cx="80" cy="190" r="18" fill="#2B6CB0"/>
+    <text x="80" y="196" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC" text-anchor="middle">3</text>
+  </g>
+
+  <!-- The Function Machine f -->
+  <g transform="translate(350, 200)">
+    <rect x="-30" y="0" width="100" height="130" fill="#2D3748" rx="15" stroke="#F6AD55" stroke-width="4" filter="url(#glow)"/>
+    <!-- Machine Gears -->
+    <circle cx="0" cy="40" r="12" fill="none" stroke="#F6AD55" stroke-width="2" stroke-dasharray="4,2"/>
+    <circle cx="40" cy="80" r="16" fill="none" stroke="#F6AD55" stroke-width="2" stroke-dasharray="5,2"/>
+    <text x="20" y="70" font-family="'Inter', sans-serif" font-size="34" font-weight="bold" fill="#F6AD55" text-anchor="middle">f</text>
+    <text x="20" y="115" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">함수 규칙</text>
+  </g>
+
+  <!-- Mapping Arrows (Input -> Machine -> Output) -->
+  <g stroke="#E2E8F0" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)">
+    <!-- Arr from 1 to A -->
+    <path d="M 270 220 Q 320 220 320 240 Q 370 240 540 200" fill="none" stroke="#FC8181" stroke-width="3"/>
+    
+    <!-- Arr from 2 to B -->
+    <path d="M 270 280 Q 320 280 320 260 Q 370 260 540 260" fill="none" stroke="#4FD1C5" stroke-width="3"/>
+    
+    <!-- Arr from 3 to B (Many-to-One rule allowed) -->
+    <path d="M 270 340 Q 320 340 320 280 Q 370 280 540 270" fill="none" stroke="#9F7AEA" stroke-width="3"/>
+  </g>
+
+  <!-- Defining Arrow marker definition locally if necessary or draw it manually at end of lines -->
+  <polygon points="535,195 545,200 535,205" fill="#FC8181"/>
+  <polygon points="535,255 545,260 535,265" fill="#4FD1C5"/>
+  <polygon points="535,265 545,270 535,275" fill="#9F7AEA"/>
+
+
+  <!-- Codomain Set Y & Range -->
+  <g transform="translate(540, 130)">
+    <rect x="0" y="0" width="160" height="280" fill="rgba(237, 137, 54, 0.15)" rx="80" stroke="#F6AD55" stroke-width="3"/>
+    <text x="80" y="-15" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#F6AD55" text-anchor="middle">공역 (Set Y)</text>
+    <text x="80" y="30" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">음료수 메뉴판</text>
+
+    <!-- Range subset highlighting -->
+    <rect x="20" y="45" width="120" height="155" fill="rgba(252, 129, 129, 0.2)" rx="20" stroke="#FC8181" stroke-width="2" stroke-dasharray="5,5" filter="url(#glow)"/>
+    <text x="145" y="60" font-family="'Inter', sans-serif" font-size="14" font-weight="bold" fill="#FC8181">치역(Range)</text>
+    <text x="145" y="75" font-family="'Inter', sans-serif" font-size="12" fill="#FC8181">(선택받은 자들)</text>
+
+    <!-- Y Elements -->
+    <circle cx="80" cy="70" r="18" fill="#C05621"/>
+    <text x="80" y="76" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC" text-anchor="middle">A</text>
+    
+    <circle cx="80" cy="130" r="18" fill="#C05621"/>
+    <text x="80" y="136" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC" text-anchor="middle">B</text>
+    
+    <!-- Element C is untouched (Not in Range, but in Codomain) -->
+    <circle cx="80" cy="220" r="18" fill="#718096"/>
+    <text x="80" y="226" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#A0AEC0" text-anchor="middle">C</text>
+    <text x="80" y="255" font-family="'Inter', sans-serif" font-size="12" fill="#A0AEC0" text-anchor="middle">선택 못 받음 (치역 x)</text>
+  </g>
+
+</svg>
