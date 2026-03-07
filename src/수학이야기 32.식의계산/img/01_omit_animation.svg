@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <style>
+      .hide-anim { animation: disappear 3s infinite alternate ease-in-out; }
+      .move-anim { animation: moveLeft 3s infinite alternate ease-in-out; }
+      @keyframes disappear {
+        0%, 30% { opacity: 1; transform: scale(1); }
+        70%, 100% { opacity: 0; transform: scale(0); }
+      }
+      @keyframes moveLeft {
+        0%, 30% { transform: translateX(0); }
+        70%, 100% { transform: translateX(-40px); }
+      }
+    </style>
+  </defs>
+
+  <rect width="800" height="300" fill="url(#bg)" rx="10"/>
+
+  <text x="400" y="50" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#f8fafc" text-anchor="middle">곱셈 기호 생략하기 애니메이션</text>
+  
+  <g transform="translate(150, 150)">
+    <!-- Original equation: 5 * x -->
+    <text x="0" y="0" font-family="'Courier New', monospace" font-size="60" font-weight="bold" fill="#38bdf8" text-anchor="middle">5</text>
+    
+    <!-- Multiplication sign disappears -->
+    <g class="hide-anim" transform-origin="100px -20px">
+      <text x="100" y="-5" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#ef4444" text-anchor="middle">×</text>
+    </g>
+
+    <!-- Variable moves left -->
+    <g class="move-anim">
+      <text x="200" y="0" font-family="'Courier New', monospace" font-size="60" font-weight="bold" fill="#facc15" text-anchor="middle">x</text>
+    </g>
+  </g>
+
+  <!-- division animation -->
+  <g transform="translate(450, 150)">
+    <!-- Original equation: y / 3 -->
+    <text x="0" y="0" font-family="'Courier New', monospace" font-size="60" font-weight="bold" fill="#facc15" text-anchor="middle">y</text>
+    
+    <g class="hide-anim" transform-origin="100px -20px">
+      <text x="100" y="-5" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#ef4444" text-anchor="middle">÷</text>
+    </g>
+
+    <g class="hide-anim" transform-origin="200px -20px">
+      <text x="200" y="0" font-family="'Courier New', monospace" font-size="60" font-weight="bold" fill="#38bdf8" text-anchor="middle">3</text>
+    </g>
+
+    <!-- Appears as fraction -->
+    <g style="animation: appear 3s infinite alternate ease-in-out;">
+      <text x="150" y="-30" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#facc15" text-anchor="middle">y</text>
+      <line x1="120" y1="-20" x2="180" y2="-20" stroke="#f8fafc" stroke-width="4"/>
+      <text x="150" y="20" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#38bdf8" text-anchor="middle">3</text>
+    </g>
+
+    <style>
+      @keyframes appear {
+        0%, 30% { opacity: 0; }
+        70%, 100% { opacity: 1; }
+      }
+    </style>
+  </g>
+</svg>

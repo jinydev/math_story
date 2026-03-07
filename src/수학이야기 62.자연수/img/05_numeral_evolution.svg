@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="100%">
+    <rect width="600" height="300" fill="#2d3436" />
+    
+    <!-- Title -->
+    <text x="300" y="40" font-family="Arial" font-size="22" font-weight="bold" fill="#dfe6e9" text-anchor="middle">
+        위치적 기수법의 마법: 기호 압축 (Data Compression)
+    </text>
+
+    <!-- Roman Numeral Example -->
+    <text x="300" y="100" font-family="Arial" font-size="20" fill="#fdcb6e" text-anchor="middle">고대 덧셈적 기수법 (로마 숫자)</text>
+    
+    <!-- The long, inefficient Roman String -->
+    <text x="300" y="140" font-family="Times New Roman" font-size="32" font-weight="bold" fill="#ff7675" text-anchor="middle" letter-spacing="3">
+        <animate attributeName="opacity" values="1; 1; 0; 0; 1" dur="5s" repeatCount="indefinite"/>
+        MMCCLXXXVIII
+    </text>
+    <text x="300" y="165" font-family="Arial" font-size="14" fill="#636e72" text-anchor="middle">
+        <animate attributeName="opacity" values="1; 1; 0; 0; 1" dur="5s" repeatCount="indefinite"/>
+        (1000+1000+100+100+50+10+10+10+5+1+1+1)
+    </text>
+
+    <!-- Transformation Arrow -->
+    <path d="M 280 190 L 320 190 L 310 180 M 320 190 L 310 200" stroke="#00b894" stroke-width="4" fill="none">
+        <animate attributeName="opacity" values="0; 1; 1; 0; 0" dur="5s" repeatCount="indefinite" />
+    </path>
+    <text x="300" y="210" font-family="Arial" font-size="14" font-weight="bold" fill="#00b894" text-anchor="middle">
+        <animate attributeName="opacity" values="0; 1; 1; 0; 0" dur="5s" repeatCount="indefinite" />
+        '위치'에 무게(가중치)를 곱하다!
+    </text>
+
+    <!-- Arabic Positional Example -->
+    <text x="300" y="250" font-family="Arial" font-size="48" font-weight="bold" fill="#74b9ff" text-anchor="middle" letter-spacing="10">
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0" dur="5s" repeatCount="indefinite"/>
+        2288
+    </text>
+    
+    <!-- Positional Weights -->
+    <g>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0" dur="5s" repeatCount="indefinite"/>
+        <text x="210" y="280" font-family="Arial" font-size="12" fill="#81ecec" text-anchor="middle">1000의 자리</text>
+        <text x="270" y="280" font-family="Arial" font-size="12" fill="#81ecec" text-anchor="middle">100의 자리</text>
+        <text x="330" y="280" font-family="Arial" font-size="12" fill="#81ecec" text-anchor="middle">10의 자리</text>
+        <text x="390" y="280" font-family="Arial" font-size="12" fill="#81ecec" text-anchor="middle">1의 자리</text>
+    </g>
+
+</svg>

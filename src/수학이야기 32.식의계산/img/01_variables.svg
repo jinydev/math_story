@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Box Glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Glowing Box Gradients -->
+    <linearGradient id="box-x-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <linearGradient id="box-y-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg-grad)" rx="15"/>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#f8fafc" text-anchor="middle">Math Variables as Data Boxes</text>
+  <text x="400" y="80" font-family="'Inter', sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle">Just like in programming, algebraic letters act as containers for unknown values.</text>
+
+  <!-- Box X Group -->
+  <g transform="translate(150, 150)">
+    <!-- Main Box -->
+    <rect x="0" y="0" width="160" height="160" rx="20" fill="url(#box-x-grad)" filter="url(#glow)"/>
+    <rect x="0" y="0" width="160" height="160" rx="20" fill="none" stroke="#60a5fa" stroke-width="4"/>
+    
+    <!-- Top Lid reflection -->
+    <path d="M 0 40 Q 80 10 160 40" fill="none" stroke="#93c5fd" stroke-width="2" opacity="0.5"/>
+
+    <!-- Variables inside X -->
+    <text x="80" y="90" font-family="'Courier New', monospace" font-size="60" font-weight="bold" fill="#ffffff" text-anchor="middle">x</text>
+    
+    <!-- Data slot -->
+    <rect x="40" y="110" width="80" height="30" rx="10" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2"/>
+    <text x="80" y="132" font-family="'Inter', sans-serif" font-size="18" fill="#93c5fd" text-anchor="middle">Value: ?</text>
+  </g>
+
+  <!-- Math Operator -->
+  <g transform="translate(370, 205)">
+    <!-- Plus Sign -->
+    <circle cx="20" cy="20" r="30" fill="#334155" stroke="#475569" stroke-width="3"/>
+    <line x1="20" y1="5" x2="20" y2="35" stroke="#cbd5e1" stroke-width="6" stroke-linecap="round"/>
+    <line x1="5" y1="20" x2="35" y2="20" stroke="#cbd5e1" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Box Y Group -->
+  <g transform="translate(490, 150)">
+    <!-- Main Box -->
+    <rect x="0" y="0" width="160" height="160" rx="20" fill="url(#box-y-grad)" filter="url(#glow)"/>
+    <rect x="0" y="0" width="160" height="160" rx="20" fill="none" stroke="#34d399" stroke-width="4"/>
+    
+    <!-- Top Lid reflection -->
+    <path d="M 0 40 Q 80 10 160 40" fill="none" stroke="#6ee7b7" stroke-width="2" opacity="0.5"/>
+
+    <!-- Variables inside Y -->
+    <text x="80" y="90" font-family="'Courier New', monospace" font-size="60" font-weight="bold" fill="#ffffff" text-anchor="middle">y</text>
+    
+    <!-- Data slot -->
+    <rect x="40" y="110" width="80" height="30" rx="10" fill="#064e3b" stroke="#10b981" stroke-width="2"/>
+    <text x="80" y="132" font-family="'Inter', sans-serif" font-size="18" fill="#6ee7b7" text-anchor="middle">Value: ?</text>
+  </g>
+
+  <!-- Formula at the bottom -->
+  <rect x="250" y="340" width="300" height="40" rx="10" fill="#0f172a" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="400" y="367" font-family="'Courier New', monospace" font-size="22" font-weight="bold" fill="#f8fafc" text-anchor="middle">x + y = The Unknown Sum</text>
+
+</svg>

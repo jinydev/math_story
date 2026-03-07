@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%">
+    <rect width="500" height="500" fill="#2c3e50"/>
+    <text x="250" y="40" font-family="Arial" font-size="20" font-weight="bold" fill="#ecf0f1" text-anchor="middle">두 점 사이의 거리 공식 (피타고라스)</text>
+    
+    <!-- Grid -->
+    <path d="M50 0 L50 500 M150 0 L150 500 M250 0 L250 500 M350 0 L350 500 M450 0 L450 500" stroke="#34495e" stroke-width="1"/>
+    <path d="M0 50 L500 50 M0 150 L500 150 M0 250 L500 250 M0 350 L500 350 M0 450 L500 450" stroke="#34495e" stroke-width="1"/>
+    
+    <!-- Point A and B -->
+    <circle cx="100" cy="350" r="8" fill="#e74c3c"/>
+    <text x="60" y="380" fill="#e74c3c" font-family="Arial" font-size="18" font-weight="bold">A (x₁, y₁)</text>
+    
+    <circle cx="400" cy="150" r="8" fill="#3498db"/>
+    <text x="420" y="140" fill="#3498db" font-family="Arial" font-size="18" font-weight="bold">B (x₂, y₂)</text>
+    
+    <!-- Right Triangle Guidelines -->
+    <line x1="100" y1="350" x2="400" y2="350" stroke="#f1c40f" stroke-width="3" stroke-dasharray="10">
+        <animate attributeName="stroke-dashoffset" values="40;0" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <text x="250" y="380" fill="#f1c40f" font-family="Arial" font-size="16">가로 거리 (x₂ - x₁)</text>
+    
+    <line x1="400" y1="350" x2="400" y2="150" stroke="#2ecc71" stroke-width="3" stroke-dasharray="10">
+        <animate attributeName="stroke-dashoffset" values="40;0" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <text x="420" y="250" fill="#2ecc71" font-family="Arial" font-size="16">세로 거리 (y₂ - y₁)</text>
+    
+    <!-- Hypotenuse -->
+    <line x1="100" y1="350" x2="400" y2="150" stroke="#ecf0f1" stroke-width="4">
+        <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.5;1" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <!-- Moving point along hypotenuse -->
+    <circle r="6" fill="#fff">
+        <animate attributeName="cx" values="100;400" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="350;150" dur="2s" repeatCount="indefinite"/>
+    </circle>
+</svg>

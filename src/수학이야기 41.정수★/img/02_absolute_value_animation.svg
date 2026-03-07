@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="100%">
+    <rect width="600" height="300" fill="#2d3436" />
+    
+    <!-- Title -->
+    <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#dfe6e9" text-anchor="middle">
+        절댓값: 원점으로부터의 순수한 거리 ( $|-x| = x$ )
+    </text>
+
+    <!-- Number Line Main Axis -->
+    <line x1="50" y1="200" x2="550" y2="200" stroke="#b2bec3" stroke-width="4" stroke-linecap="round"/>
+    <!-- Origin marker -->
+    <line x1="300" y1="180" x2="300" y2="220" stroke="#00cec9" stroke-width="4"/>
+    <text x="300" y="240" font-family="Arial" font-size="20" font-weight="bold" fill="#00cec9" text-anchor="middle">0</text>
+    
+    <!-- -3 Marker -->
+    <line x1="150" y1="190" x2="150" y2="210" stroke="#ff7675" stroke-width="3"/>
+    <text x="150" y="240" font-family="Arial" font-size="18" fill="#ff7675" text-anchor="middle">-3</text>
+
+    <!-- +3 Marker -->
+    <line x1="450" y1="190" x2="450" y2="210" stroke="#74b9ff" stroke-width="3"/>
+    <text x="450" y="240" font-family="Arial" font-size="18" fill="#74b9ff" text-anchor="middle">+3</text>
+
+    <!-- Absolute Value Bracket Left | -3 | = 3 -->
+    <g>
+        <animate attributeName="opacity" values="0; 1; 1; 0; 0" dur="8s" repeatCount="indefinite" />
+        <!-- Distance Line Left -->
+        <path d="M 300 150 Q 225 100 150 150" fill="none" stroke="#ff7675" stroke-width="3" stroke-dasharray="5,5">
+            <animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.5s" repeatCount="1" />
+        </path>
+        <circle cx="150" cy="200" r="10" fill="#ff7675">
+            <animate attributeName="cy" values="200; 150; 200" dur="2s" repeatCount="indefinite" />
+        </circle>
+        
+        <!-- Text equation -->
+        <text x="225" y="130" font-family="Arial" font-size="24" font-weight="bold" fill="#ff7675" text-anchor="middle">
+            |-3| = 3
+        </text>
+        <text x="225" y="100" font-family="Arial" font-size="14" fill="#dfe6e9" text-anchor="middle">
+            (왼쪽 거리는 3칸)
+        </text>
+    </g>
+
+    <!-- Absolute Value Bracket Right | +3 | = 3 -->
+    <g>
+        <animate attributeName="opacity" values="0; 0; 0; 1; 1; 0" dur="8s" repeatCount="indefinite" />
+        <!-- Distance Line Right -->
+        <path d="M 300 150 Q 375 100 450 150" fill="none" stroke="#74b9ff" stroke-width="3" stroke-dasharray="5,5" />
+        <circle cx="450" cy="200" r="10" fill="#74b9ff">
+            <animate attributeName="cy" values="200; 150; 200" dur="2s" repeatCount="indefinite" />
+        </circle>
+        
+        <!-- Text equation -->
+        <text x="375" y="130" font-family="Arial" font-size="24" font-weight="bold" fill="#74b9ff" text-anchor="middle">
+            |+3| = 3
+        </text>
+        <text x="375" y="100" font-family="Arial" font-size="14" fill="#dfe6e9" text-anchor="middle">
+            (오른쪽 거리도 3칸)
+        </text>
+    </g>
+</svg>

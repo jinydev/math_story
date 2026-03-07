@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%">
+    <rect width="500" height="500" fill="#1e1e24"/>
+    <text x="250" y="30" font-family="Arial" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle">이차함수 포물선: y = ax²</text>
+    
+    <!-- Axes -->
+    <line x1="0" y1="250" x2="500" y2="250" stroke="#576574" stroke-width="2"/>
+    <line x1="250" y1="50" x2="250" y2="500" stroke="#576574" stroke-width="2"/>
+    <text x="480" y="270" fill="#fff" font-family="Arial">x</text>
+    <text x="260" y="50" fill="#fff" font-family="Arial">y</text>
+    
+    <!-- Smile Parabola (y=x^2) -->
+    <path d="M100 50 Q250 450 400 50" fill="none" stroke="#2ed573" stroke-width="4" stroke-dasharray="800" stroke-dashoffset="800">
+        <animate attributeName="stroke-dashoffset" values="800;0;0" keyTimes="0;0.5;1" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <text x="380" y="80" fill="#2ed573" font-family="Arial" font-weight="bold" font-size="16">y = ax² (a > 0)</text>
+    
+    <!-- Frown Parabola (y=-x^2) -->
+    <path d="M100 450 Q250 50 400 450" fill="none" stroke="#ff4757" stroke-width="4" stroke-dasharray="800" stroke-dashoffset="800">
+        <animate attributeName="stroke-dashoffset" values="800;0;0" keyTimes="0;0.5;1" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <text x="380" y="420" fill="#ff4757" font-family="Arial" font-weight="bold" font-size="16">y = a²x (a < 0)</text>
+    
+    <!-- Moving object on parabola like a ball -->
+    <circle r="8" fill="#eccc68">
+        <animateMotion path="M100 450 Q250 50 400 450" dur="4s" repeatCount="indefinite"/>
+    </circle>
+</svg>

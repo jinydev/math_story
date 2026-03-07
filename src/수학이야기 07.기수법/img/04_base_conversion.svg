@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <style>
+      .step1 { animation: showStep1 8s infinite; }
+      .step2 { animation: showStep2 8s infinite; }
+      .step3 { animation: showStep3 8s infinite; }
+      .step4 { animation: showStep4 8s infinite; }
+      .read-result { animation: drawPath 8s infinite; }
+      .final-result { animation: showFinal 8s infinite; }
+      
+      @keyframes showStep1 {
+        0%, 10% { opacity: 0; } 15%, 90% { opacity: 1; } 95%, 100% { opacity: 0; }
+      }
+      @keyframes showStep2 {
+        0%, 25% { opacity: 0; } 30%, 90% { opacity: 1; } 95%, 100% { opacity: 0; }
+      }
+      @keyframes showStep3 {
+        0%, 40% { opacity: 0; } 45%, 90% { opacity: 1; } 95%, 100% { opacity: 0; }
+      }
+      @keyframes showStep4 {
+        0%, 55% { opacity: 0; } 60%, 90% { opacity: 1; } 95%, 100% { opacity: 0; }
+      }
+      @keyframes drawPath {
+        0%, 70% { opacity: 0; stroke-dashoffset: 400; } 
+        75%, 90% { opacity: 1; stroke-dashoffset: 0; } 
+        95%, 100% { opacity: 0; }
+      }
+      @keyframes showFinal {
+        0%, 80% { opacity: 0; transform: translateY(20px); } 
+        85%, 90% { opacity: 1; transform: translateY(0); } 
+        95%, 100% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bg)" rx="10"/>
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#f8fafc" text-anchor="middle">10진수 13을 2진수로 변환하기 (나눗셈 연쇄)</text>
+
+  <g transform="translate(300, 80)">
+    
+    <!-- Step 1: 13 / 2 -->
+    <g class="step1">
+      <text x="0" y="0" font-family="'Courier New', monospace" font-size="30" font-weight="bold" fill="#38bdf8" text-anchor="middle">2</text>
+      <polyline points="20,-5 20,20 -10,20 -10,-5" fill="none" stroke="#f8fafc" stroke-width="3" transform="rotate(180 5 7) translate(-30, -5)" />
+      <text x="50" y="0" font-family="'Courier New', monospace" font-size="30" font-weight="bold" fill="#f8fafc" text-anchor="middle">13</text>
+      <text x="130" y="0" font-family="'Courier New', monospace" font-size="30" font-weight="bold" fill="#facc15" text-anchor="middle">... 1</text>
+    </g>
+
+    <!-- Step 2: 6 / 2 -->
+    <g class="step2">
+      <text x="0" y="50" font-family="'Courier New', monospace" font-size="30" font-weight="bold" fill="#38bdf8" text-anchor="middle">2</text>
+      <polyline points="20,45 20,70 -10,70 -10,45" fill="none" stroke="#f8fafc" stroke-width="3" transform="rotate(180 5 57) translate(-30, -5)" />
+      <text x="50" y="50" font-family="'Courier New', monospace" font-size="30" font-weight="bold" fill="#f8fafc" text-anchor="middle">6</text>
+      <text x="130" y="50" font-family="'Courier New', monospace" font-size="30" font-weight="bold" fill="#facc15" text-anchor="middle">... 0</text>
+    </g>
+
+    <!-- Step 3: 3 / 2 -->
+    <g class="step3">
+      <text x="0" y="100" font-family="'Courier New', monospace" font-size="30" font-weight="bold" fill="#38bdf8" text-anchor="middle">2</text>
+      <polyline points="20,95 20,120 -10,120 -10,95" fill="none" stroke="#f8fafc" stroke-width="3" transform="rotate(180 5 107) translate(-30, -5)" />
+      <text x="50" y="100" font-family="'Courier New', monospace" font-size="30" font-weight="bold" fill="#f8fafc" text-anchor="middle">3</text>
+      <text x="130" y="100" font-family="'Courier New', monospace" font-size="30" font-weight="bold" fill="#facc15" text-anchor="middle">... 1</text>
+    </g>
+
+    <!-- Step 4: 1 (몫) -->
+    <g class="step4">
+      <text x="50" y="150" font-family="'Courier New', monospace" font-size="30" font-weight="bold" fill="#34d399" text-anchor="middle">1</text>
+    </g>
+
+    <!-- Arrow reading from bottom to top -->
+    <path d="M 40,165 Q 180,165 180,-10" fill="none" stroke="#ef4444" stroke-width="4" marker-end="url(#arrow)" stroke-dasharray="400" class="read-result"/>
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#ef4444" />
+      </marker>
+    </defs>
+
+    <!-- Final Result display -->
+    <g class="final-result" transform="translate(-100, 230)">
+      <text x="150" y="0" font-family="'Inter', sans-serif" font-size="40" font-weight="bold" fill="#34d399" text-anchor="middle">13₍₁₀₎ = 1101₍₂₎</text>
+    </g>
+  </g>
+</svg>

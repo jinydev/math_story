@@ -1,0 +1,30 @@
+<svg width="600" height="250" viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect width="600" height="250" fill="#f8edeb" rx="10"/>
+  
+  <!-- 현미경 (Microscope) 아이콘 심플화 -->
+  <path d="M 120 180 L 160 180 L 150 160 L 130 160 Z" fill="#6d6875"/>
+  <rect x="135" y="100" width="10" height="60" fill="#b5838d"/>
+  <circle cx="140" cy="110" r="15" fill="#e5989b"/>
+  <path d="M 140 100 Q 180 80 180 150 L 170 150 Q 170 90 140 110" fill="#6d6875"/>
+  <text x="140" y="210" font-family="sans-serif" font-size="20" font-weight="bold" fill="#6d6875" text-anchor="middle">🔎 dx 관찰</text>
+
+  <!-- 화살표 -->
+  <line x1="220" y1="125" x2="270" y2="125" stroke="#b5838d" stroke-width="4" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b5838d" />
+    </marker>
+  </defs>
+  
+  <!-- 확대된 뷰 -->
+  <circle cx="420" cy="125" r="100" fill="#fff" stroke="#ffb4a2" stroke-width="5"/>
+  <!-- 0이 아닌 아주 작은 폭 (dx) 표시 -->
+  <rect x="410" y="50" width="20" height="150" fill="#ffcdb2" stroke="#e5989b" stroke-width="2"/>
+  
+  <!-- 텍스트 -->
+  <line x1="435" y1="125" x2="520" y2="90" stroke="#6d6875" stroke-width="2"/>
+  <text x="500" y="80" font-family="sans-serif" font-size="16" font-weight="bold" fill="#333">이정도 두께 (dx) 존재!</text>
+  
+  <text x="420" y="250" font-family="sans-serif" font-size="14" fill="#6d6875" text-anchor="middle">두께가 0인 선이 아니라, 아주 얇은 직사각형이다!</text>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <style>
+      .step1 { animation: stepOne 6s infinite; }
+      .step2 { animation: stepTwo 6s infinite; }
+      .step3 { animation: stepThree 6s infinite; }
+      .step4 { animation: stepFour 6s infinite; }
+      .result { animation: showResult 6s infinite; }
+
+      @keyframes stepOne {
+        0%, 10% { opacity: 0; } 15%, 80% { opacity: 1; stroke-dashoffset: 0; } 90%, 100% { opacity: 0; }
+      }
+      @keyframes stepTwo {
+        0%, 25% { opacity: 0; } 30%, 80% { opacity: 1; } 90%, 100% { opacity: 0; }
+      }
+      @keyframes stepThree {
+        0%, 40% { opacity: 0; } 45%, 80% { opacity: 1; } 90%, 100% { opacity: 0; }
+      }
+      @keyframes stepFour {
+        0%, 55% { opacity: 0; } 60%, 80% { opacity: 1; } 90%, 100% { opacity: 0; }
+      }
+      @keyframes showResult {
+        0%, 75% { opacity: 0; } 80%, 90% { opacity: 1; } 100% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <rect width="800" height="300" fill="url(#bg)" rx="10"/>
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#f8fafc" text-anchor="middle">곱셈 전개 애니메이션 (FOIL Method)</text>
+
+  <g transform="translate(150, 100)">
+    <!-- Base text: (a + b)(a + b)-->
+    <text x="0" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#38bdf8" text-anchor="middle">(</text>
+    <text x="40" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#f8fafc" text-anchor="middle">a</text>
+    <text x="100" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#facc15" text-anchor="middle">+</text>
+    <text x="140" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#f8fafc" text-anchor="middle">b</text>
+    <text x="180" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#38bdf8" text-anchor="middle">)</text>
+
+    <text x="220" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#38bdf8" text-anchor="middle">(</text>
+    <text x="260" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#f8fafc" text-anchor="middle">a</text>
+    <text x="320" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#facc15" text-anchor="middle">+</text>
+    <text x="360" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#f8fafc" text-anchor="middle">b</text>
+    <text x="400" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#38bdf8" text-anchor="middle">)</text>
+
+    <!-- F: a to a -->
+    <path d="M 40,-40 Q 150,-100 260,-40" fill="none" stroke="#ef4444" stroke-width="4" stroke-dasharray="0" class="step1"/>
+    <!-- O: a to b -->
+    <path d="M 40,-30 Q 200,-150 360,-40" fill="none" stroke="#34d399" stroke-width="4" class="step2"/>
+    <!-- I: b to a -->
+    <path d="M 140,20 Q 200,60 260,20" fill="none" stroke="#38bdf8" stroke-width="4" class="step3"/>
+    <!-- L: b to b -->
+    <path d="M 140,30 Q 250,110 360,20" fill="none" stroke="#facc15" stroke-width="4" class="step4"/>
+
+    <!-- Final result box -->
+    <g transform="translate(20, 120)" class="result">
+      <text x="-50" y="0" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#34d399" text-anchor="middle">=</text>
+      <text x="30" y="0" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#ef4444" text-anchor="middle">a²</text>
+      <text x="140" y="0" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#34d399" text-anchor="middle">+ ab</text>
+      <text x="250" y="0" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#38bdf8" text-anchor="middle">+ ab</text>
+      <text x="360" y="0" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#facc15" text-anchor="middle">+ b²</text>
+      
+      <!-- Merge down -->
+      <text x="195" y="50" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#f8fafc" text-anchor="middle">= a² + 2ab + b²</text>
+    </g>
+  </g>
+
+</svg>

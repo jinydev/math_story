@@ -1,0 +1,22 @@
+<svg width="600" height="250" viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 하늘 -->
+  <rect width="600" height="250" fill="#0b132b"/>
+  <!-- 별 -->
+  <circle cx="100" cy="50" r="1" fill="#fff"/>
+  <circle cx="200" cy="150" r="2" fill="#fff" opacity="0.8"/>
+  <circle cx="450" cy="80" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="550" cy="200" r="1" fill="#fff"/>
+  <!-- 지구 라인 -->
+  <path d="M0 250 Q 300 200 600 250" fill="#1c2541"/>
+  <!-- 로켓 궤적 (적분 곡선) -->
+  <path d="M50 250 Q 200 50 500 100" fill="none" stroke="#fca311" stroke-width="4" stroke-dasharray="10,5">
+    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2s" repeatCount="indefinite"/>
+  </path>
+  <!-- 궤적 텍스트 -->
+  <text x="210" y="80" font-family="sans-serif" font-size="14" fill="#fca311" font-weight="bold">로켓의 궤도 누적 거리 (Integration!)</text>
+  <!-- 불타는 로켓 -->
+  <polygon points="500,100 480,90 480,110" fill="#e63946"/>
+  <polygon points="480,95 470,100 480,105" fill="#ffb703"/>
+  <!-- 지상 관제소 텍스트 -->
+  <text x="50" y="235" font-family="sans-serif" font-size="12" fill="#fff">지상 관제소 (Ground Control)</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg width="600" height="250" viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- 좌표계 축 -->
+  <line x1="50" y1="125" x2="550" y2="125" stroke="#333" stroke-width="2"/> <!-- x축 (땅바닥) -->
+  <line x1="100" y1="20" x2="100" y2="230" stroke="#333" stroke-width="2"/> <!-- y축 -->
+  
+  <text x="540" y="145" font-family="sans-serif" font-size="16" font-weight="bold" fill="#333">x 축 (땅)</text>
+  <text x="110" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#333">y 축</text>
+  
+  <!-- 양수 면적 영역 (하늘) -->
+  <path d="M 120 125 Q 180 20 250 125" fill="#4ea8de" opacity="0.6"/>
+  <path d="M 120 125 Q 180 20 250 125" fill="none" stroke="#0077b6" stroke-width="3"/>
+  <text x="185" y="100" font-family="sans-serif" font-size="20" font-weight="bold" fill="#03045e" text-anchor="middle">+</text>
+  <text x="185" y="80" font-family="sans-serif" font-size="12" font-weight="bold" fill="#03045e" text-anchor="middle">양수 넓이</text>
+
+  <!-- 음수 면적 영역 (지하) -->
+  <path d="M 250 125 Q 350 220 450 125" fill="#e07a5f" opacity="0.6"/>
+  <path d="M 250 125 Q 350 220 450 125" fill="none" stroke="#c1121f" stroke-width="3"/>
+  <text x="350" y="170" font-family="sans-serif" font-size="20" font-weight="bold" fill="#780000" text-anchor="middle">-</text>
+  <text x="350" y="190" font-family="sans-serif" font-size="12" font-weight="bold" fill="#780000" text-anchor="middle">음수 넓이 (지하)</text>
+
+  <!-- 화살표 및 설명 -->
+  <line x1="430" y1="180" x2="480" y2="150" stroke="#333" stroke-width="2" stroke-dasharray="4"/>
+  <text x="490" y="145" font-family="sans-serif" font-size="14" fill="#333" text-anchor="middle">기계는 이 부분도</text>
+  <text x="490" y="165" font-family="sans-serif" font-size="14" font-weight="bold" fill="#c1121f" text-anchor="middle">마이너스(-)로 계산한다!</text>
+</svg>

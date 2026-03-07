@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <style>
+      .dist-anim1 { animation: distribute1 5s infinite ease-in-out; }
+      .dist-anim2 { animation: distribute2 5s infinite ease-in-out; }
+      .dist-anim3 { animation: distribute3 5s infinite ease-in-out; }
+      .result-anim { animation: appearResult 5s infinite ease-in-out; }
+
+      @keyframes distribute1 {
+        0%, 10% { opacity: 0; transform: translate(0,0); }
+        20%, 80% { opacity: 1; transform: translate(110px, 30px); }
+        90%, 100% { opacity: 0; transform: translate(110px, 30px); }
+      }
+      @keyframes distribute2 {
+        0%, 30% { opacity: 0; transform: translate(0,0); }
+        40%, 80% { opacity: 1; transform: translate(260px, 30px); }
+        90%, 100% { opacity: 0; transform: translate(260px, 30px); }
+      }
+      @keyframes distribute3 {
+        0%, 50% { opacity: 0; transform: translate(0,0); }
+        60%, 80% { opacity: 1; transform: translate(400px, 30px); }
+        90%, 100% { opacity: 0; transform: translate(400px, 30px); }
+      }
+      @keyframes appearResult {
+        0%, 70% { opacity: 0; }
+        80%, 90% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <rect width="800" height="300" fill="url(#bg)" rx="10"/>
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#f8fafc" text-anchor="middle">파괴 광선! 분배법칙 (Distributive Property with Negative)</text>
+  
+  <g transform="translate(100, 100)">
+    <!-- Main base text -->
+    <text x="0" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#ef4444" text-anchor="middle">-1</text>
+    <text x="70" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#38bdf8" text-anchor="middle">(</text>
+    
+    <text x="140" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#f8fafc" text-anchor="middle">4x²</text>
+    <text x="210" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#f8fafc" text-anchor="middle">-</text>
+    <text x="280" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#f8fafc" text-anchor="middle">2x</text>
+    <text x="350" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#f8fafc" text-anchor="middle">+</text>
+    <text x="410" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#f8fafc" text-anchor="middle">1</text>
+    
+    <text x="470" y="0" font-family="'Courier New', monospace" font-size="50" font-weight="bold" fill="#38bdf8" text-anchor="middle">)</text>
+
+    <!-- Lasers distributing from -1 to targets -->
+    <path d="M 0,-30 Q 70,-80 140,-40" fill="none" stroke="#ef4444" stroke-width="4" stroke-dasharray="6 6" class="dist-anim1"/>
+    <path d="M 0,-40 Q 140,-110 280,-40" fill="none" stroke="#ef4444" stroke-width="4" stroke-dasharray="6 6" class="dist-anim2"/>
+    <path d="M 0,-50 Q 200,-140 410,-40" fill="none" stroke="#ef4444" stroke-width="4" stroke-dasharray="6 6" class="dist-anim3"/>
+
+    <!-- Mini -1s hitting the targets -->
+    <text x="0" y="-10" font-family="'Courier New', monospace" font-size="30" font-weight="bold" fill="#ef4444" text-anchor="middle" class="dist-anim1">×(-1)</text>
+    <text x="0" y="-10" font-family="'Courier New', monospace" font-size="30" font-weight="bold" fill="#ef4444" text-anchor="middle" class="dist-anim2">×(-1)</text>
+    <text x="0" y="-10" font-family="'Courier New', monospace" font-size="30" font-weight="bold" fill="#ef4444" text-anchor="middle" class="dist-anim3">×(-1)</text>
+
+    <!-- Final result box -->
+    <g transform="translate(140, 100)" class="result-anim">
+      <text x="-100" y="20" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#34d399" text-anchor="middle">=</text>
+      <text x="0" y="20" font-family="'Courier New', monospace" font-size="44" font-weight="bold" fill="#facc15" text-anchor="middle">-4x²</text>
+      <text x="140" y="20" font-family="'Courier New', monospace" font-size="44" font-weight="bold" fill="#facc15" text-anchor="middle">+ 2x</text>
+      <text x="270" y="20" font-family="'Courier New', monospace" font-size="44" font-weight="bold" fill="#facc15" text-anchor="middle">- 1</text>
+    </g>
+  </g>
+
+</svg>

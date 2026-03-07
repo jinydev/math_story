@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <style>
+      .move-x { animation: moveX 4s infinite ease-in-out; }
+      .move-y { animation: moveY 4s infinite ease-in-out; }
+      .result-appear { animation: resultFade 4s infinite ease-in-out; }
+      
+      @keyframes moveX {
+        0%, 20% { transform: translate(0, 0); }
+        40%, 80% { transform: translate(0, 80px); }
+        90%, 100% { transform: translate(0, 0); }
+      }
+      @keyframes moveY {
+        0%, 20% { transform: translate(0, 0); }
+        40%, 80% { transform: translate(-200px, 80px); }
+        90%, 100% { transform: translate(0, 0); }
+      }
+      @keyframes resultFade {
+        0%, 40% { opacity: 0; }
+        50%, 80% { opacity: 1; }
+        90%, 100% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <rect width="800" height="300" fill="url(#bg)" rx="10"/>
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#f8fafc" text-anchor="middle">동류항 모으기 (Collecting Like Terms)</text>
+  
+  <!-- Original Equation -->
+  <g transform="translate(150, 100)">
+    <g class="move-x">
+      <text x="0" y="0" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#ef4444" text-anchor="middle">3x</text>
+    </g>
+    <text x="60" y="0" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#f8fafc" text-anchor="middle">+</text>
+    <g class="move-y">
+      <text x="120" y="0" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#facc15" text-anchor="middle">2y</text>
+    </g>
+    <text x="180" y="0" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#f8fafc" text-anchor="middle">+</text>
+    <g class="move-x">
+      <text x="240" y="0" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#ef4444" text-anchor="middle">2x</text>
+    </g>
+    <text x="300" y="0" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#f8fafc" text-anchor="middle">+</text>
+    <g class="move-y">
+      <text x="360" y="0" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#facc15" text-anchor="middle">1y</text>
+    </g>
+  </g>
+
+  <!-- Collection Baskets Location -->
+  <g transform="translate(150, 200)">
+    <!-- X Basket -->
+    <rect x="-40" y="-10" width="320" height="50" rx="10" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="120" y="60" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#ef4444" text-anchor="middle" class="result-appear">= 5x</text>
+
+    <!-- Y Basket -->
+    <rect x="-240" y="-10" width="320" height="50" rx="10" fill="none" stroke="#facc15" stroke-width="2" stroke-dasharray="4 4" class="move-y-target"/> <!-- Actually just visual bounding box -->
+  </g>
+  
+  <g transform="translate(480, 200)">
+    <text x="0" y="60" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#facc15" text-anchor="middle" class="result-appear">+ 3y</text>
+  </g>
+</svg>
