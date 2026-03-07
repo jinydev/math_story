@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="400">
+    <defs>
+        <style>
+            .bg {
+                fill: #f1f5f9;
+                rx: 10;
+                stroke: #94a3b8;
+                stroke-width: 2;
+            }
+
+            /* Block styling */
+            .set-box-n {
+                fill: #e0f2fe;
+                stroke: #0284c7;
+                stroke-width: 3;
+                rx: 8;
+            }
+
+            /* Natural N */
+            .set-box-e {
+                fill: #fef08a;
+                stroke: #ca8a04;
+                stroke-width: 3;
+                rx: 8;
+            }
+
+            /* Even numbers */
+
+            /* Arrows representing 1:1 mapping */
+            .arrow {
+                stroke: #ef4444;
+                stroke-width: 4;
+                stroke-linecap: round;
+                marker-end: url(#arrowhead);
+            }
+
+            .dashed-arrow {
+                stroke: #ef4444;
+                stroke-width: 4;
+                stroke-dasharray: 6 6;
+                stroke-linecap: round;
+                marker-end: url(#arrowhead);
+            }
+
+            /* Text styling */
+            .title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 22px;
+                fill: #0f172a;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .formula-text {
+                font-family: 'Courier New', monospace;
+                font-size: 24px;
+                font-weight: 800;
+                fill: #1e293b;
+                text-anchor: middle;
+                dominant-baseline: middle;
+            }
+
+            .set-title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 18px;
+                fill: #334155;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .desc-text {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 15px;
+                fill: #475569;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            /* Infinity symbol */
+            .infinity {
+                font-family: 'Courier New', monospace;
+                font-size: 40px;
+                font-weight: bold;
+                fill: #94a3b8;
+                text-anchor: middle;
+                dominant-baseline: middle;
+            }
+        </style>
+
+        <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#ef4444" />
+        </marker>
+    </defs>
+
+    <!-- Background -->
+    <rect width="100%" height="100%" class="bg" />
+
+    <!-- Main Title -->
+    <text x="300" y="40" class="title">갈릴레오의 역설: 부분(짝수)은 전체(자연수)와 같다!</text>
+
+    <!-- Top Set: Natural Numbers (N) -->
+    <g transform="translate(0, 100)">
+        <text x="80" y="30" class="set-title" fill="#0284c7">자연수 (전체)</text>
+
+        <!-- Boxes 1, 2, 3, 4 ... n -->
+        <rect x="150" y="5" width="50" height="50" class="set-box-n" />
+        <text x="175" y="30" class="formula-text">1</text>
+
+        <rect x="220" y="5" width="50" height="50" class="set-box-n" />
+        <text x="245" y="30" class="formula-text">2</text>
+
+        <rect x="290" y="5" width="50" height="50" class="set-box-n" />
+        <text x="315" y="30" class="formula-text">3</text>
+
+        <rect x="360" y="5" width="50" height="50" class="set-box-n" />
+        <text x="385" y="30" class="formula-text">4</text>
+
+        <text x="440" y="30" class="infinity">...</text>
+
+        <rect x="480" y="5" width="50" height="50" class="set-box-n" />
+        <text x="505" y="30" class="formula-text">n</text>
+    </g>
+
+    <!-- The 1:1 Mapping Arrows (f(x) = 2x) -->
+    <g transform="translate(0, 160)">
+        <line x1="175" y1="0" x2="175" y2="60" class="arrow" />
+        <line x1="245" y1="0" x2="245" y2="60" class="arrow" />
+        <line x1="315" y1="0" x2="315" y2="60" class="arrow" />
+        <line x1="385" y1="0" x2="385" y2="60" class="arrow" />
+        <line x1="505" y1="0" x2="505" y2="60" class="arrow" />
+
+        <!-- Mapping formula text -->
+        <text x="300" y="30" font-family="'Courier New', monospace" font-size="16px" fill="#ef4444" font-weight="bold"
+            text-anchor="middle" dominant-baseline="middle">x 2 (1:1 매핑 법칙)</text>
+    </g>
+
+    <!-- Bottom Set: Even Numbers (Even) -->
+    <g transform="translate(0, 230)">
+        <text x="80" y="30" class="set-title" fill="#ca8a04">짝수 (부분)</text>
+
+        <!-- Boxes 2, 4, 6, 8 ... 2n -->
+        <rect x="150" y="5" width="50" height="50" class="set-box-e" />
+        <text x="175" y="30" class="formula-text">2</text>
+
+        <rect x="220" y="5" width="50" height="50" class="set-box-e" />
+        <text x="245" y="30" class="formula-text">4</text>
+
+        <rect x="290" y="5" width="50" height="50" class="set-box-e" />
+        <text x="315" y="30" class="formula-text">6</text>
+
+        <rect x="360" y="5" width="50" height="50" class="set-box-e" />
+        <text x="385" y="30" class="formula-text">8</text>
+
+        <text x="440" y="30" class="infinity">...</text>
+
+        <rect x="480" y="5" width="50" height="50" class="set-box-e" />
+        <text x="505" y="30" class="formula-text">2n</text>
+    </g>
+
+    <!-- Bottom calculation / conclusion box -->
+    <rect x="50" y="310" width="500" height="70" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+    <text x="300" y="335" class="desc-text" fill="#0f172a">상식: 전체 자연수가 그 절반 지분인 짝수 집합보다 당연히 크다? (X)</text>
+    <text x="300" y="360" class="desc-text" fill="#b91c1c">무한 논리: 자연수 n마다 짝수 2n이 1:1로 영원히 생성되므로, 두 집합의 무한 크기는
+        동일하다!</text>
+</svg>

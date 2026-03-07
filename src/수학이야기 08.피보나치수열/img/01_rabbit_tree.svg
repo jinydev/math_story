@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 450" width="100%" height="450">
+  <defs>
+    <style>
+      .text-title { font-family: 'Pretendard', sans-serif; font-size: 18px; font-weight: bold; fill: #1D3557; }
+      .text-month { font-family: 'Pretendard', sans-serif; font-size: 15px; fill: #457B9D; }
+      .box-adult { fill: #A8DADC; stroke: #457B9D; stroke-width: 2; rx: 5; }
+      .box-baby { fill: #F1FAEE; stroke: #457B9D; stroke-width: 2; rx: 5; stroke-dasharray: 4; }
+      .line { stroke: #457B9D; stroke-width: 2; marker-end: url(#arrow); }
+      .text-label { font-family: 'Pretendard', sans-serif; font-size: 13px; fill: #1D3557; text-anchor: middle; alignment-baseline: middle; font-weight: bold; }
+      .bg { fill: #F8F9FA; rx: 10; stroke: #E9ECEF; stroke-width: 2;}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#457B9D" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" class="bg" />
+
+  <!-- Grid Lines -->
+  <line x1="130" y1="80" x2="800" y2="80" stroke="#DEE2E6" stroke-width="1" stroke-dasharray="5"/>
+  <line x1="130" y1="150" x2="800" y2="150" stroke="#DEE2E6" stroke-width="1" stroke-dasharray="5"/>
+  <line x1="130" y1="220" x2="800" y2="220" stroke="#DEE2E6" stroke-width="1" stroke-dasharray="5"/>
+  <line x1="130" y1="290" x2="800" y2="290" stroke="#DEE2E6" stroke-width="1" stroke-dasharray="5"/>
+  <line x1="130" y1="360" x2="800" y2="360" stroke="#DEE2E6" stroke-width="1" stroke-dasharray="5"/>
+
+  <!-- Month Labels -->
+  <text x="20" y="55" class="text-title">1개월</text><text x="20" y="75" class="text-month">1쌍 (1)</text>
+  <text x="20" y="125" class="text-title">2개월</text><text x="20" y="145" class="text-month">1쌍 (1)</text>
+  <text x="20" y="195" class="text-title">3개월</text><text x="20" y="215" class="text-month">2쌍 (2)</text>
+  <text x="20" y="265" class="text-title">4개월</text><text x="20" y="285" class="text-month">3쌍 (3)</text>
+  <text x="20" y="335" class="text-title">5개월</text><text x="20" y="355" class="text-month">5쌍 (5)</text>
+
+  <!-- M1 -->
+  <rect x="150" y="45" width="80" height="30" class="box-baby" />
+  <text x="190" y="60" class="text-label">🐰 새끼</text>
+  <line x1="190" y1="75" x2="190" y2="110" class="line"/>
+
+  <!-- M2 -->
+  <rect x="150" y="115" width="80" height="30" class="box-adult" />
+  <text x="190" y="130" class="text-label">🐇 어른</text>
+  <line x1="190" y1="145" x2="190" y2="180" class="line"/>
+  <line x1="190" y1="145" x2="330" y2="180" class="line"/>
+
+  <!-- M3 -->
+  <rect x="150" y="185" width="80" height="30" class="box-adult" />
+  <text x="190" y="200" class="text-label">🐇 어른</text>
+  
+  <rect x="290" y="185" width="80" height="30" class="box-baby" />
+  <text x="330" y="200" class="text-label">🐰 새끼</text>
+
+  <!-- Links M3->M4 -->
+  <line x1="190" y1="215" x2="190" y2="250" class="line"/>
+  <line x1="190" y1="215" x2="470" y2="250" class="line"/> <!-- M4 R3 baby position -->
+  <line x1="330" y1="215" x2="330" y2="250" class="line"/>
+
+  <!-- M4 -->
+  <!-- R1 (adult) -->
+  <rect x="150" y="255" width="80" height="30" class="box-adult" />
+  <text x="190" y="270" class="text-label">🐇 어른</text>
+  <!-- R2 (adult) -->
+  <rect x="290" y="255" width="80" height="30" class="box-adult" />
+  <text x="330" y="270" class="text-label">🐇 어른</text>
+  <!-- R3 (baby) from R1 -->
+  <rect x="430" y="255" width="80" height="30" class="box-baby" />
+  <text x="470" y="270" class="text-label">🐰 새끼</text>
+
+  <!-- Links M4->M5 -->
+  <!-- R1 -> R1(adult) & R4(baby) -->
+  <line x1="190" y1="285" x2="190" y2="320" class="line"/>
+  <line x1="190" y1="285" x2="610" y2="320" class="line"/>
+  <!-- R2 -> R2(adult) & R5(baby) -->
+  <line x1="330" y1="285" x2="330" y2="320" class="line"/>
+  <line x1="330" y1="285" x2="750" y2="320" class="line"/>
+  <!-- R3 -> R3(adult) -->
+  <line x1="470" y1="285" x2="470" y2="320" class="line"/>
+
+  <!-- M5 -->
+  <rect x="150" y="325" width="80" height="30" class="box-adult" />
+  <text x="190" y="340" class="text-label">🐇 어른</text>
+  
+  <rect x="290" y="325" width="80" height="30" class="box-adult" />
+  <text x="330" y="340" class="text-label">🐇 어른</text>
+
+  <rect x="430" y="325" width="80" height="30" class="box-adult" />
+  <text x="470" y="340" class="text-label">🐇 어른</text>
+
+  <rect x="570" y="325" width="80" height="30" class="box-baby" />
+  <text x="610" y="340" class="text-label">🐰 새끼</text>
+
+  <rect x="710" y="325" width="80" height="30" class="box-baby" />
+  <text x="750" y="340" class="text-label">🐰 새끼</text>
+
+  <!-- Info Note -->
+  <text x="150" y="420" class="text-month" style="font-size: 14px; fill: #6C757D;">
+    💡 새로 태어난 토끼(🐰)는 한 달 후 무조건 어른(🐇)이 되며, 어른 토끼는 매달 한 쌍의 새끼를 낳습니다.
+  </text>
+</svg>

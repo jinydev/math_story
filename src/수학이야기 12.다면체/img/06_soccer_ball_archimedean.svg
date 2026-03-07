@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="400">
+    <defs>
+        <style>
+            .bg {
+                fill: #f0fdf4;
+                rx: 10;
+                stroke: #86efac;
+                stroke-width: 2;
+            }
+
+            /* Phase 1: Pure Icosahedron (20 triangles) */
+            .ico-face {
+                fill: #fcd34d;
+                fill-opacity: 0.8;
+                stroke: #f59e0b;
+                stroke-width: 2;
+                stroke-linejoin: round;
+            }
+
+            /* Phase 2: Chopping process (red zones for cutting) */
+            .chop-zone {
+                fill: #ef4444;
+                fill-opacity: 0.6;
+                stroke: #b91c1c;
+                stroke-width: 1.5;
+            }
+
+            /* Phase 3: Truncated Icosahedron (Soccer Ball!) */
+            .soccer-pentagon {
+                fill: #334155;
+                fill-opacity: 0.95;
+                stroke: #1e293b;
+                stroke-width: 2.5;
+                stroke-linejoin: round;
+            }
+
+            .soccer-hexagon {
+                fill: #f8fafc;
+                fill-opacity: 0.95;
+                stroke: #94a3b8;
+                stroke-width: 2.5;
+                stroke-linejoin: round;
+            }
+
+            /* Arrow */
+            .arrow {
+                fill: none;
+                stroke: #64748b;
+                stroke-width: 4;
+                marker-end: url(#arrowhead);
+            }
+
+            .title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 20px;
+                fill: #064e3b;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .label {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 15px;
+                fill: #064e3b;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .desc {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 13px;
+                fill: #475569;
+                text-anchor: middle;
+            }
+        </style>
+        <!-- Arrowhead Marker -->
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="300" y="40" class="title">⚽ 축구공의 비밀: 정이십면체 무 자르기 (Truncated Icosahedron)</text>
+
+    <!-- Step 1: Base Icosahedron -->
+    <g transform="translate(100, 180) scale(1.2)">
+        <!-- A very simplified wireframe proxy of an icosahedron front view -->
+        <polygon points="0,-50 -45,-15 -25,40 25,40 45,-15" class="ico-face" />
+        <polygon points="0,-50 -25,10 25,10" class="ico-face" />
+        <polygon points="-45,-15 -25,10 -25,40" class="ico-face" />
+        <polygon points="45,-15 25,10 25,40" class="ico-face" />
+        <polygon points="-25,40 0,55 25,40" class="ico-face" />
+        <polygon points="-25,10 0,55 25,10" class="ico-face" />
+
+        <text x="0" y="80" class="label">1. 정이십면체</text>
+        <text x="0" y="95" class="desc">(정삼각형 20개)</text>
+    </g>
+
+    <!-- Flow Arrow -->
+    <line x1="170" y1="180" x2="210" y2="180" class="arrow" />
+
+    <!-- Step 2: Slicing the Vertices -->
+    <g transform="translate(290, 180) scale(1.2)">
+        <polygon points="0,-50 -45,-15 -25,40 25,40 45,-15" class="ico-face" />
+        <polygon points="0,-50 -25,10 25,10" class="ico-face" />
+        <!-- Show red triangles where the corners are being cut off using Japanese Katana-->
+        <!-- Top point chop -->
+        <polygon points="-10,-38 10,-38 0,-50" class="chop-zone" />
+        <!-- Bottom point chop -->
+        <polygon points="-10,43 10,43 0,55" class="chop-zone" />
+        <!-- Left point chop -->
+        <polygon points="-45,-15 -32,-3 -32,-27" class="chop-zone" />
+        <!-- Right point chop -->
+        <polygon points="45,-15 32,-3 32,-27" class="chop-zone" />
+
+        <text x="0" y="80" class="label">2. 꼭짓점 절단</text>
+        <text x="0" y="95" class="desc">(12개 뿔을 싹둑 자름)</text>
+    </g>
+
+    <!-- Flow Arrow -->
+    <line x1="365" y1="180" x2="405" y2="180" class="arrow" />
+
+    <!-- Step 3: Resulting Truncated Icosahedron (The Soccer Ball) -->
+    <g transform="translate(490, 180) scale(1.2)">
+        <!-- Background hexes pseudo -->
+        <polygon points="0,-45 -35,-25 -35,15 0,35 35,15 35,-25" class="soccer-hexagon" />
+
+        <!-- Central Black Pentagon -->
+        <polygon points="0,-15 -18,-2 -11,18 11,18 18,-2" class="soccer-pentagon" />
+
+        <!-- Surrounding Hexagons -->
+        <!-- Top Left -->
+        <polygon points="0,-15 -18,-2 -28,-18 -15,-35 8,-35 12,-20" class="soccer-hexagon" />
+        <!-- Top Right -->
+        <polygon points="0,-15 12,-20 28,-18 35,-5 28,10 18,-2" class="soccer-hexagon" />
+        <!-- Bottom Left -->
+        <polygon points="-18,-2 -28,8 -20,25 -5,35 0,22 -11,18" class="soccer-hexagon" />
+        <!-- Bottom Right -->
+        <polygon points="18,-2 28,10 20,25 5,35 0,22 11,18" class="soccer-hexagon" />
+        <!-- Very Top Black Pentagon edge peeking -->
+        <polygon points="-15,-35 8,-35 15,-45 -8,-45" class="soccer-pentagon" />
+        <!-- Left Black Pentagon edge peeking -->
+        <polygon points="-28,-18 -35,-5 -38,10 -28,8" class="soccer-pentagon" />
+
+        <text x="0" y="80" class="label">3. 깎은 정이십면체</text>
+        <text x="0" y="95" class="desc" fill="#b91c1c" font-weight="bold">(축구공: 오각형 12, 육각형 20)</text>
+    </g>
+
+    <text x="300" y="380" font-family="'Pretendard', sans-serif" font-size="14px" fill="#047857" text-anchor="middle">
+        잘려 나간 12개의 꼭짓점 자리에는 검정색 '오각형'이 생기고, 기존 삼각형 면은 꼭지가 파여 '육각형' 구장이 됩니다.
+    </text>
+</svg>

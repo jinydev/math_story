@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="500">
+    <defs>
+        <style>
+            .bg {
+                fill: #1e1e2f;
+            }
+
+            .disk-bg {
+                fill: #2d2b55;
+                stroke: #ff79c6;
+                stroke-width: 4;
+            }
+
+            /* Central main triangle */
+            .tri-center {
+                fill: #8be9fd;
+                fill-opacity: 0.8;
+                stroke: #50fa7b;
+                stroke-width: 2;
+            }
+
+            /* First layer of hyperbolic triangles */
+            .tri-layer1 {
+                fill: #bd93f9;
+                fill-opacity: 0.6;
+                stroke: #ffb86c;
+                stroke-width: 1.5;
+            }
+
+            /* Second layer, getting infinitely smaller towards the edge */
+            .tri-layer2 {
+                fill: #ff79c6;
+                fill-opacity: 0.4;
+                stroke: #f1fa8c;
+                stroke-width: 1;
+            }
+
+            .tri-layer3 {
+                fill: #50fa7b;
+                fill-opacity: 0.3;
+                stroke: #8be9fd;
+                stroke-width: 0.5;
+            }
+
+            .text-title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 22px;
+                fill: #f8f8f2;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .text-note {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 14px;
+                fill: #bd93f9;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="250" y="40" class="text-title">푸앵카레 원반 (Poincaré Disk Model)</text>
+    <text x="250" y="65" class="text-note">가장자리에 다가갈수록 모든 물체가 무한히 작게 수축되는 쌍곡 공간의 단면</text>
+
+    <!-- The boundary of the Hyperbolic Universe -->
+    <circle cx="250" cy="270" r="200" class="disk-bg" />
+
+    <!-- Center Triangle (Largest, angles < 180 degrees) -->
+    <path d="M 250 150 Q 180 230 150 290 Q 250 330 350 290 Q 320 230 250 150 Z" class="tri-center" />
+
+    <!-- Layer 1 Reflections (Curved) -->
+    <!-- Top Left -->
+    <path d="M 250 150 Q 180 230 150 290 Q 100 240 120 170 Q 180 140 250 150 Z" class="tri-layer1" />
+    <!-- Top Right -->
+    <path d="M 250 150 Q 320 230 350 290 Q 400 240 380 170 Q 320 140 250 150 Z" class="tri-layer1" />
+    <!-- Bottom -->
+    <path d="M 150 290 Q 250 330 350 290 Q 320 380 250 420 Q 180 380 150 290 Z" class="tri-layer1" />
+
+    <!-- Layer 2 Reflections (Even smaller and more curved towards the edge) -->
+    <path d="M 120 170 Q 100 240 150 290 Q 80 320 65 260 Q 70 180 120 170 Z" class="tri-layer2" />
+    <path d="M 380 170 Q 400 240 350 290 Q 420 320 435 260 Q 430 180 380 170 Z" class="tri-layer2" />
+
+    <path d="M 150 290 Q 180 380 250 420 Q 120 440 90 380 Q 100 320 150 290 Z" class="tri-layer2" />
+    <path d="M 350 290 Q 320 380 250 420 Q 380 440 410 380 Q 400 320 350 290 Z" class="tri-layer2" />
+
+    <path d="M 250 150 Q 180 140 120 170 Q 150 100 210 90 Q 230 120 250 150 Z" class="tri-layer2" />
+    <path d="M 250 150 Q 320 140 380 170 Q 350 100 290 90 Q 270 120 250 150 Z" class="tri-layer2" />
+
+    <!-- Layer 3 (Tiny shards near the boundary - Abstraction) -->
+    <path d="M 210 90 Q 150 100 120 170 Q 100 120 150 75 Q 190 75 210 90 Z" class="tri-layer3" />
+    <path d="M 290 90 Q 350 100 380 170 Q 400 120 350 75 Q 310 75 290 90 Z" class="tri-layer3" />
+    <path d="M 250 420 Q 180 380 150 290 Q 100 380 150 445 Q 200 450 250 420 Z" class="tri-layer3" />
+    <path d="M 250 420 Q 320 380 350 290 Q 400 380 350 445 Q 300 450 250 420 Z" class="tri-layer3" />
+
+    <text x="250" y="485" font-family="'Pretendard', sans-serif" font-size="14px" fill="#ffb86c" text-anchor="middle">
+        원반의 가장자리(경계)는 우주의 끝과 같아서 무한대의 거리를 갖습니다.
+    </text>
+</svg>

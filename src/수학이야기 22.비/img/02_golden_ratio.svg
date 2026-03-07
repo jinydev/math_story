@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="400">
+    <defs>
+        <style>
+            .bg {
+                fill: #1e293b;
+                rx: 10;
+                stroke: #475569;
+                stroke-width: 2;
+            }
+
+            /* Golden Ratio Rectangles */
+            .rect-main {
+                fill: none;
+                stroke: #fbbf24;
+                stroke-width: 3;
+                stroke-dasharray: 5 5;
+            }
+
+            /* Outer bounding box */
+            .rect-1 {
+                fill: rgba(251, 191, 36, 0.15);
+                stroke: #eab308;
+                stroke-width: 2;
+            }
+
+            /* Largest square */
+            .rect-2 {
+                fill: rgba(234, 179, 8, 0.2);
+                stroke: #ca8a04;
+                stroke-width: 2;
+            }
+
+            .rect-3 {
+                fill: rgba(202, 138, 4, 0.25);
+                stroke: #a16207;
+                stroke-width: 2;
+            }
+
+            .rect-4 {
+                fill: rgba(161, 98, 7, 0.3);
+                stroke: #854d0e;
+                stroke-width: 2;
+            }
+
+            .rect-5 {
+                fill: rgba(133, 77, 14, 0.35);
+                stroke: #713f12;
+                stroke-width: 2;
+            }
+
+            /* Spiral path */
+            .spiral {
+                fill: none;
+                stroke: #38bdf8;
+                stroke-width: 5;
+                stroke-linecap: round;
+            }
+
+            /* Measurement & Lines */
+            .measure-line {
+                stroke: #cbd5e1;
+                stroke-width: 2;
+                stroke-dasharray: 4 4;
+            }
+
+            .measure-text {
+                font-family: 'Courier New', monospace;
+                font-size: 18px;
+                font-weight: bold;
+                fill: #f8fafc;
+                text-anchor: middle;
+            }
+
+            .formula-text {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 24px;
+                font-weight: 800;
+                fill: #fbbf24;
+                text-anchor: middle;
+                dominant-baseline: middle;
+            }
+
+            /* Title */
+            .title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 24px;
+                fill: #f8fafc;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .subtitle {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 16px;
+                fill: #94a3b8;
+                font-weight: normal;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <!-- Background -->
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="300" y="45" class="title">완벽한 우주의 미학 스탯: 황금비 (Golden Ratio)</text>
+    <text x="300" y="70" class="subtitle">1 : 1.6180339887... 한 치의 오차도 없는 신의 비율</text>
+
+    <!-- Golden Rectangle System 
+       Width = ~323.6, Height = 200 (Scale Ratio ~1.618) 
+       Translate it to centerish -> x: 138.2, y: 120
+  -->
+    <g transform="translate(138.2, 110)">
+
+        <!-- Outer Bounding Box (Golden Rectangle) -->
+        <rect x="0" y="0" width="323.6" height="200" class="rect-main" />
+
+        <!-- 1. Left Largest Square (200 x 200) -->
+        <rect x="0" y="0" width="200" height="200" class="rect-1" />
+        <text x="100" y="105" font-family="'Courier New', monospace" font-size="28px" font-weight="bold" fill="#fde68a"
+            text-anchor="middle">A (1)</text>
+
+        <!-- 2. Right Top Square (123.6 x 123.6) -->
+        <rect x="200" y="0" width="123.6" height="123.6" class="rect-2" />
+        <text x="261.8" y="67" font-family="'Courier New', monospace" font-size="20px" font-weight="bold" fill="#fde68a"
+            text-anchor="middle">B</text>
+
+        <!-- 3. Right Bottom Left Square (76.4 x 76.4) -->
+        <rect x="247.2" y="123.6" width="76.4" height="76.4" class="rect-3" />
+
+        <!-- 4. Right Bottom Right Top Square (47.2 x 47.2) -->
+        <rect x="200" y="123.6" width="47.2" height="47.2" class="rect-4" />
+
+        <!-- 5. Right Bottom Right Bottom Square -> fractal limit -->
+        <rect x="200" y="170.8" width="29.2" height="29.2" class="rect-5" />
+
+        <!-- Logarithmic Spiral 
+         A continuous smooth curve approximation using SVG arc commands
+         From outer boundary curling inwards 
+    -->
+        <path d="M 0,200 
+             A 200,200 0 0,0 200,0
+             A 123.6,123.6 0 0,0 323.6,123.6
+             A 76.4,76.4 0 0,0 247.2,200
+             A 47.2,47.2 0 0,0 200,152.8
+             A 29.2,29.2 0 0,0 229.2,123.6" class="spiral" />
+    </g>
+
+    <!-- Measurements -->
+    <g transform="translate(138.2, 110)">
+        <!-- Width A (200) -->
+        <line x1="0" y1="-20" x2="200" y2="-20" class="measure-line" />
+        <line x1="0" y1="-25" x2="0" y2="-15" stroke="#cbd5e1" stroke-width="2" />
+        <line x1="200" y1="-25" x2="200" y2="-15" stroke="#cbd5e1" stroke-width="2" />
+        <text x="100" y="-30" class="measure-text">1.0</text>
+
+        <!-- Width B (123.6) -->
+        <line x1="200" y1="-20" x2="323.6" y2="-20" class="measure-line" />
+        <line x1="323.6" y1="-25" x2="323.6" y2="-15" stroke="#cbd5e1" stroke-width="2" />
+        <text x="261.8" y="-30" class="measure-text">0.618</text>
+
+        <!-- Total Width Target = 1.618 -->
+        <line x1="0" y1="230" x2="323.6" y2="230" class="measure-line" stroke="#38bdf8" />
+        <line x1="0" y1="225" x2="0" y2="235" stroke="#38bdf8" stroke-width="2" />
+        <line x1="323.6" y1="225" x2="323.6" y2="235" stroke="#38bdf8" stroke-width="2" />
+        <text x="161.8" y="255" font-family="'Courier New', monospace" font-size="22px" font-weight="bold"
+            fill="#38bdf8" text-anchor="middle">Total (A + B) = 1.618... (Golden Ratio)</text>
+    </g>
+
+</svg>

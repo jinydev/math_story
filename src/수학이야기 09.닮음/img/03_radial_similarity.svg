@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="400">
+    <defs>
+        <style>
+            .bg {
+                fill: #fdfbf7;
+                rx: 10;
+                stroke: #e0dcd3;
+                stroke-width: 2;
+            }
+
+            .triangle-small {
+                fill: #f4a261;
+                fill-opacity: 0.6;
+                stroke: #e76f51;
+                stroke-width: 2;
+            }
+
+            .triangle-large {
+                fill: none;
+                stroke: #2a9d8f;
+                stroke-width: 3;
+                stroke-dasharray: 6;
+            }
+
+            .line-ray {
+                stroke: #d4a373;
+                stroke-width: 1.5;
+                stroke-dasharray: 4;
+                marker-end: url(#arrow);
+            }
+
+            .text-label {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 14px;
+                fill: #264653;
+                font-weight: bold;
+            }
+
+            .point {
+                fill: #e76f51;
+            }
+
+            .point-center {
+                fill: #e63946;
+            }
+        </style>
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#d4a373" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <!-- Center of Similarity O -->
+    <circle cx="100" cy="200" r="4" class="point-center" />
+    <text x="80" y="215" class="text-label" fill="#e63946">점 O (닮음의 중심)</text>
+
+    <!-- Rays from O to A', B', C' -->
+    <!-- A: (250, 120), A': (400, 40) -->
+    <line x1="100" y1="200" x2="480" y2="-2" class="line-ray" />
+    <!-- B: (200, 250), B': (300, 300) -->
+    <line x1="100" y1="200" x2="350" y2="325" class="line-ray" />
+    <!-- C: (280, 240), C': (460, 280) -->
+    <line x1="100" y1="200" x2="550" y2="300" class="line-ray" />
+
+    <!-- Small Triangle ABC -->
+    <polygon points="250,120 200,250 280,240" class="triangle-small" />
+    <circle cx="250" cy="120" r="3" class="point" /><text x="240" y="110" class="text-label">A</text>
+    <circle cx="200" cy="250" r="3" class="point" /><text x="180" y="260" class="text-label">B</text>
+    <circle cx="280" cy="240" r="3" class="point" /><text x="290" y="250" class="text-label">C</text>
+
+    <!-- Large Triangle A'B'C' (Scale factor = 2 from center O) -->
+    <!-- A'(x) = 100 + (250-100)*2 = 400, A'(y) = 200 + (120-200)*2 = 40 -->
+    <!-- B'(x) = 100 + (200-100)*2 = 300, B'(y) = 200 + (250-200)*2 = 300 -->
+    <!-- C'(x) = 100 + (280-100)*2 = 460, C'(y) = 200 + (240-200)*2 = 280 -->
+    <polygon points="400,40 300,300 460,280" class="triangle-large" />
+    <circle cx="400" cy="40" r="3" class="point" /><text x="385" y="30" class="text-label">A'</text>
+    <circle cx="300" cy="300" r="3" class="point" /><text x="280" y="315" class="text-label">B'</text>
+    <circle cx="460" cy="280" r="3" class="point" /><text x="475" y="290" class="text-label">C'</text>
+
+    <!-- Ratio Annotations -->
+    <text x="140" y="140" class="text-label" font-size="12px" fill="#6c757d">1</text>
+    <text x="320" y="65" class="text-label" font-size="12px" fill="#6c757d">1</text>
+
+    <!-- Info Text -->
+    <text x="300" y="355" font-family="'Pretendard', sans-serif" font-size="16px" fill="#2a9d8f" text-anchor="middle"
+        font-weight="bold">
+        광원(O)에서 뿜어져 나오는 2배 확대 도형 작도법
+    </text>
+    <text x="300" y="380" font-family="'Pretendard', sans-serif" font-size="14px" fill="#264653" text-anchor="middle">
+        선분 OA : OA' = 1 : 2 이므로 작도된 큰 삼각형의 모든 변의 길이는 2배가 됩니다.
+    </text>
+</svg>
