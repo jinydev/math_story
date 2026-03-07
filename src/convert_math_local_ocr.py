@@ -29,6 +29,8 @@ def create_index_md(chapter_dir, chapter_name, md_files):
         f.write(index_content)
     print(f"\n[완료] {chapter_name} 의 index.md 가 생성되었습니다.")
 
+import unicodedata
+
 def main():
     folders_to_process = []
     if TARGET_CHAPTERS:
@@ -36,7 +38,8 @@ def main():
     else:
         # 모든 '수학이야기' 폴더 작업 (지정하지 않을 경우)
         for item in sorted(os.listdir(BASE_DIR)):
-            if item.startswith("수학이야기") and os.path.isdir(os.path.join(BASE_DIR, item)):
+            normalized_item = unicodedata.normalize('NFC', item)
+            if normalized_item.startswith("수학이야기") and os.path.isdir(os.path.join(BASE_DIR, item)):
                 folders_to_process.append(os.path.join(BASE_DIR, item))
 
     for chapter_dir in folders_to_process:
