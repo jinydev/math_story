@@ -8,7 +8,9 @@
 초등학교 시절, 우리의 머리를 아프게 했던 '알고리즘(Algorithm)'이라는 컴퓨터 용어의 어원이 누구인지 아시나요?
 바로 9세기 바그다드 «지혜의 전당»에서 활약했던 페르시아 출신의 수학자 **가장 위대한 아랍의 두뇌, 무하마드 이븐 무사 알콰리즈미(Al-Khwarizmi)** 입니다. (그의 라틴어 이름 'Algoritmi'에서 알고리즘이 탄생했습니다.)
 
-![중세 바그다드 지혜의 전당에서 대수학 수식을 집필하는 알콰리즈미](./img/00_ancient_arab_mathematician_al_khwarizmi.png)
+<div align="center">
+  <img src="./img/v3_14_ancient_arab_mathematician_al_khwarizmi_2d.png" alt="2D 웹툰 애니 판타지 스타일: 중세 바그다드의 웅장하고 은은한 등불이 켜진 '지혜의 전당(House of Wisdom)' 내부에서, 터번과 학자의 로브를 입은 전설적인 고대 아랍 수학자 알콰리즈미가 두꺼운 양피지 스크롤 위에 마법처럼 빛나는 대수학(Algebra) 수학 공식들을 깃펜으로 써 내려가는 모습" width="800" />
+</div>
 
 그가 쓴 전설적인 수학책 **<알 자브르 왈 무카발라(Al-jabr w'al-muqabala)>**는 서양으로 넘어가 수학계에 엄청난 빅뱅을 일으킵니다. 여기서 '알 자브르(Al-jabr)'가 바로 오늘날 **대수학(Algebra)**의 영어 어원이 되었죠.
 

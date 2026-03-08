@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#862e9c" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">네 번째 부등식: '교집합으로 살아남는 연립부등식'</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"적군(빨강 구역)과 아군(파랑 구역) 이 겹치는 최종 생존 벙커를
+        찾아라!"</text>
+
+    <!-- Left: Target Logic -->
+    <g transform="translate(60, 90)">
+        <rect x="0" y="0" width="160" height="130" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="80" y="25" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">시스템 방화벽 조건 2개</text>
+
+        <rect x="10" y="40" width="140" height="30" fill="#ffe3e3" />
+        <text x="80" y="58" fill="#c92a2a" font-size="11" font-weight="bold" font-family="monospace"
+            text-anchor="middle">① x² - 4 > 0</text>
+        <text x="80" y="73" fill="#c92a2a" font-size="9" text-anchor="middle">(x &lt; -2 또는 x &gt; 2)</text>
+
+        <rect x="10" y="80" width="140" height="30" fill="#e7f5ff" />
+        <text x="80" y="98" fill="#1864ab" font-size="11" font-weight="bold" font-family="monospace"
+            text-anchor="middle">② x² - 5x &lt; 0</text>
+        <text x="80" y="113" fill="#1864ab" font-size="9" text-anchor="middle">(0 &lt; x &lt; 5)</text>
+    </g>
+
+    <!-- Right: Overlap Number Line -->
+    <g transform="translate(260, 90)">
+        <rect x="0" y="0" width="310" height="130" fill="#fff" stroke="#adb5bd" rx="5" />
+
+        <!-- Coordinate Axis -->
+        <line x1="20" y1="90" x2="290" y2="90" stroke="#495057" stroke-width="2" /> <!-- x axis -->
+
+        <!-- Points -->
+        <circle cx="50" cy="90" r="3" fill="#fff" stroke="#495057" />
+        <text x="50" y="110" font-size="10" font-weight="bold" text-anchor="middle">-2</text>
+
+        <circle cx="110" cy="90" r="3" fill="#fff" stroke="#495057" />
+        <text x="110" y="110" font-size="10" font-weight="bold" text-anchor="middle">0</text>
+
+        <circle cx="170" cy="90" r="3" fill="#fff" stroke="#495057" />
+        <text x="170" y="110" font-size="10" font-weight="bold" text-anchor="middle">2</text>
+
+        <circle cx="260" cy="90" r="3" fill="#fff" stroke="#495057" />
+        <text x="260" y="110" font-size="10" font-weight="bold" text-anchor="middle">5</text>
+
+        <!-- Condition 1 (Red) : x < -2 or x > 2 -->
+        <!-- Left going line -->
+        <line x1="50" y1="40" x2="20" y2="40" stroke="#fa5252" stroke-width="2" marker-end="url(#arrow-red-left)" />
+        <line x1="50" y1="90" x2="50" y2="40" stroke="#fa5252" stroke-dasharray="2,2" />
+        <!-- Right going line -->
+        <line x1="170" y1="40" x2="290" y2="40" stroke="#fa5252" stroke-width="2" marker-end="url(#arrow-red-right)" />
+        <line x1="170" y1="90" x2="170" y2="40" stroke="#fa5252" stroke-dasharray="2,2" />
+
+        <!-- Condition 2 (Blue) : 0 < x < 5 -->
+        <line x1="110" y1="65" x2="260" y2="65" stroke="#339af0" stroke-width="2" />
+        <line x1="110" y1="90" x2="110" y2="65" stroke="#339af0" stroke-dasharray="2,2" />
+        <line x1="260" y1="90" x2="260" y2="65" stroke="#339af0" stroke-dasharray="2,2" />
+
+        <!-- Overlapping Area (Green) / Intersection -->
+        <rect x="170" y="40" width="90" height="50" fill="#b2f2bb" opacity="0.6" />
+
+        <!-- Final Output -->
+        <rect x="170" y="15" width="90" height="15" fill="#2b8a3e" rx="3" />
+        <text x="215" y="26" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">교집합: 2 &lt; x &lt;
+            5</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-red-left" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fa5252" />
+        </marker>
+        <marker id="arrow-red-right" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fa5252" />
+        </marker>
+    </defs>
+</svg>

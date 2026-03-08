@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#c92a2a" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">첫 번째 사다리 등반: "딱 눈치 눈치 한 쌍만 평행해봐!" (사다리꼴)</text>
+
+    <!-- Left: Generic Trapezoid -->
+    <g transform="translate(150, 150)">
+        <path d="M -60 40 L 40 40 L 20 -40 L -30 -40 Z" fill="#ffe3e3" stroke="#e03131" stroke-width="4"
+            stroke-linejoin="round" />
+
+        <!-- Parallel markings -->
+        <path d="M -10 -40 L -5 -45 M -10 -40 L -5 -35" fill="none" stroke="#e03131" stroke-width="2" />
+        <path d="M -10 40 L -5 35 M -10 40 L -5 45" fill="none" stroke="#e03131" stroke-width="2" />
+        <text x="-50" y="-10" fill="#e03131" font-size="12" font-weight="bold">안 평행!</text>
+        <text x="50" y="-10" fill="#e03131" font-size="12" font-weight="bold">안 평행!</text>
+
+        <text x="0" y="70" fill="#c92a2a" font-size="14" font-weight="bold" text-anchor="middle">일반 사다리꼴
+            (Trapezoid)</text>
+        <text x="0" y="85" fill="#495057" font-size="10" font-weight="bold" text-anchor="middle">위아래 뚜껑만 기찻길(평행)</text>
+    </g>
+
+    <!-- Plus -->
+    <text x="300" y="150" fill="#adb5bd" font-size="30" font-weight="bold" text-anchor="middle">+</text>
+
+    <!-- Right: Isosceles Trapezoid -->
+    <g transform="translate(450, 150)">
+        <!-- Perfect symmetric shape -->
+        <path d="M -50 40 L 50 40 L 30 -40 L -30 -40 Z" fill="#fff" stroke="#c92a2a" stroke-width="4"
+            stroke-linejoin="round" />
+
+        <!-- Parallel markings -->
+        <path d="M -5 -40 L 0 -45 M -5 -40 L 0 -35" fill="none" stroke="#c92a2a" stroke-width="2" />
+        <path d="M -5 40 L 0 35 M -5 40 L 0 45" fill="none" stroke="#c92a2a" stroke-width="2" />
+
+        <!-- Isosceles leg markings (Tic marks) -->
+        <line x1="-45" y1="-5" x2="-35" y2="5" stroke="#1864ab" stroke-width="3" />
+        <line x1="45" y1="-5" x2="35" y2="5" stroke="#1864ab" stroke-width="3" />
+        <text x="-70" y="-10" fill="#1864ab" font-size="12" font-weight="bold">길이 같음!</text>
+
+        <!-- Base angle marks -->
+        <path d="M -30 40 A 20 20 0 0 1 -40 20" fill="none" stroke="#f08c00" stroke-width="2" />
+        <path d="M 30 40 A 20 20 0 0 0 40 20" fill="none" stroke="#f08c00" stroke-width="2" />
+        <text x="-25" y="30" fill="#f08c00" font-size="10" font-weight="bold">각도 A</text>
+        <text x="25" y="30" fill="#f08c00" font-size="10" font-weight="bold">각도 A</text>
+
+        <!-- Diagonals equal -->
+        <path d="M -50 40 L 30 -40" fill="none" stroke="#adb5bd" stroke-width="1" stroke-dasharray="4,4" />
+        <path d="M 50 40 L -30 -40" fill="none" stroke="#adb5bd" stroke-width="1" stroke-dasharray="4,4" />
+
+        <text x="0" y="70" fill="#c92a2a" font-size="14" font-weight="bold" text-anchor="middle">등변사다리꼴
+            (Isosceles)</text>
+        <text x="0" y="85" fill="#495057" font-size="10" font-weight="bold" text-anchor="middle">대칭의 악마: 양옆 다리 길이
+            일치!</text>
+    </g>
+
+</svg>

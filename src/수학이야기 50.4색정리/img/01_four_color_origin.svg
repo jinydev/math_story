@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#c92a2a" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세계 지도를 지배하는 호기심: 4색 문제의 시작</text>
+
+    <!-- Map Concept -->
+    <g transform="translate(100, 150)">
+        <rect x="-80" y="-80" width="160" height="120" fill="#fff5f5" stroke="#fa5252" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">구스리의 질문 (1852년)</text>
+
+        <!-- Mini Map -->
+        <path d="M -50 -30 Q -60 -10 -40 10 Q -20 30 0 10 Q 0 -10 -20 -30 Z" fill="#ffd8a8" stroke="#343a40"
+            stroke-width="2" />
+        <text x="-25" y="-5" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold">A(빨)</text>
+
+        <path d="M -20 -30 Q 0 -10 30 -20 Q 50 0 30 20 Q 0 10 -40 10 Q -20 30 0 10 Q 0 -10 -20 -30 Z" fill="#b2f2bb"
+            stroke="#343a40" stroke-width="2" />
+        <text x="5" y="-5" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold">B(초)</text>
+
+        <path d="M 30 -20 Q 50 -40 60 -10 Q 50 0 30 -20 Z" fill="#a5d8ff" stroke="#343a40" stroke-width="2" />
+        <text x="45" y="-15" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold">C(파)</text>
+
+        <path d="M 0 10 Q 30 20 60 10 Q 40 40 10 30 Q -10 20 0 10 Z" fill="#ffec99" stroke="#343a40" stroke-width="2" />
+        <text x="30" y="25" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold">D(노)</text>
+
+        <!-- Rule Text -->
+        <text x="0" y="55" fill="#495057" font-size="11" font-family="sans-serif" text-anchor="middle">어떤 지도든 4가지
+            색상이면</text>
+        <text x="0" y="70" fill="#495057" font-size="11" font-family="sans-serif" text-anchor="middle">인접 구역을 구분할 수
+            있을까?</text>
+    </g>
+
+    <!-- Arrow -->
+    <path d="M 190 110 L 250 110" fill="none" stroke="#adb5bd" stroke-width="4" marker-end="url(#arrow-grey)" />
+
+    <!-- 130 Years of Failure -->
+    <g transform="translate(420, 150)">
+        <rect x="-140" y="-80" width="280" height="120" fill="#f1f3f5" stroke="#868e96" stroke-width="2" rx="8" />
+        <text x="0" y="-50" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">130년간 수학자 전원 패배</text>
+
+        <text x="0" y="-15" fill="#e03131" font-size="24" font-family="monospace" font-weight="bold"
+            text-anchor="middle">반례 X, 증명 X</text>
+
+        <rect x="-120" y="5" width="240" height="40" fill="#dee2e6" rx="5" />
+        <text x="0" y="22" fill="#343a40" font-size="11" font-family="sans-serif" text-anchor="middle">수학자: "초등학생도 이해하는
+            문제인데,"</text>
+        <text x="0" y="37" fill="#343a40" font-size="11" font-family="sans-serif" text-anchor="middle">"전 세계 천재가 100년 넘게
+            증명을 못한다고?"</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-grey" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .bg {
+                fill: #1e1e2e;
+            }
+
+            .text-title {
+                fill: #f9e2af;
+                font-family: 'Courier New', monospace;
+                font-size: 28px;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .text-symbol {
+                fill: #cdd6f4;
+                font-family: 'Times New Roman', serif;
+                font-size: 50px;
+                font-style: italic;
+            }
+
+            .text-desc {
+                fill: #cdd6f4;
+                font-family: sans-serif;
+                font-size: 18px;
+                text-anchor: middle;
+            }
+
+            .circle-b {
+                fill: #f38ba8;
+                fill-opacity: 0.3;
+                stroke: #f38ba8;
+                stroke-width: 4;
+            }
+
+            .circle-a {
+                fill: #89b4fa;
+                fill-opacity: 0.8;
+                stroke: #89b4fa;
+                stroke-width: 4;
+            }
+
+            .arrow {
+                stroke: #cdd6f4;
+                stroke-width: 3;
+                fill: none;
+                stroke-dasharray: 5;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="50" class="text-title">부분집합 (Subset) A ⊂ B</text>
+
+    <!-- Giant Set B -->
+    <circle cx="300" cy="220" r="140" class="circle-b" />
+    <text x="300" y="120" class="text-symbol">B</text>
+    <text x="300" y="150" class="text-desc" fill="#f38ba8">거대한 가문 (부모 집합)</text>
+
+    <!-- Small Set A inside B -->
+    <circle cx="280" cy="260" r="70" class="circle-a" />
+    <text x="280" y="250" class="text-symbol" fill="#1e1e2e">A</text>
+    <text x="280" y="280" class="text-desc" fill="#1e1e2e" font-weight="bold">부분집합</text>
+
+    <circle cx="260" cy="300" r="5" fill="#1e1e2e" />
+    <circle cx="290" cy="290" r="5" fill="#1e1e2e" />
+
+    <!-- External Elements to B -->
+    <circle cx="400" cy="280" r="5" fill="#f38ba8" />
+    <circle cx="200" cy="200" r="5" fill="#f38ba8" />
+
+    <rect x="520" y="150" width="220" height="150" fill="#313244" rx="10" />
+    <text x="630" y="200" class="text-symbol">A ⊂ B</text>
+    <text x="630" y="250" class="text-desc">A의 모든 원소는</text>
+    <text x="630" y="275" class="text-desc">B에도 속한다</text>
+</svg>

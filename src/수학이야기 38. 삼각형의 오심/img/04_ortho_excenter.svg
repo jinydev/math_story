@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#fff0f6" rx="10" />
+
+    <text x="300" y="30" fill="#a61e4d" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">또 다른 신비한 점들: 수심(Orthocenter)과 방심(Excenter)</text>
+
+    <!-- Left: Orthocenter (수심) -->
+    <g transform="translate(150, 160)">
+        <text x="0" y="-110" fill="#c2255c" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">1. 수심 (H) - 세 수선의 교점</text>
+
+        <!-- Triangle Base -->
+        <path d="M 0 -80 L -80 40 L 80 40 Z" fill="none" stroke="#d6336c" stroke-width="3" />
+
+        <!-- Altitudes (수선) -->
+        <!-- From top down -->
+        <line x1="0" y1="-80" x2="0" y2="40" stroke="#f06595" stroke-width="2" stroke-dasharray="4,4" />
+        <!-- From bottom left to right edge -->
+        <!-- Approximate perpendicular -->
+        <line x1="-80" y1="40" x2="24" y2="-44" stroke="#f06595" stroke-width="2" stroke-dasharray="4,4" />
+        <!-- From bottom right to left edge -->
+        <!-- Approximate perpendicular -->
+        <line x1="80" y1="40" x2="-24" y2="-44" stroke="#f06595" stroke-width="2" stroke-dasharray="4,4" />
+
+        <!-- Right angle markers -->
+        <path d="M 0 32 L 8 32 L 8 40" fill="none" stroke="#f06595" stroke-width="1.5" />
+
+        <!-- Orthocenter Point -->
+        <circle cx="0" cy="11" r="5" fill="#a61e4d" />
+        <text x="-15" y="15" fill="#a61e4d" font-size="14" font-family="sans-serif" font-weight="bold">H</text>
+    </g>
+
+    <!-- Right: Excenter (방심) -->
+    <g transform="translate(450, 150)">
+        <text x="0" y="-100" fill="#862e9c" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">2. 방심 (E) - 외각의 이등분선 교점</text>
+
+        <!-- Triangle -->
+        <path d="M 0 -60 L -40 20 L 40 20 Z" fill="#f3d9fa" stroke="#ae3ec9" stroke-width="3" />
+
+        <!-- Extended Lines -->
+        <line x1="-40" y1="20" x2="-80" y2="100" stroke="#ae3ec9" stroke-width="2" stroke-dasharray="4,4" />
+        <line x1="40" y1="20" x2="80" y2="100" stroke="#ae3ec9" stroke-width="2" stroke-dasharray="4,4" />
+
+        <!-- Excircle (방접원) -->
+        <circle cx="0" cy="80" r="53" fill="none" stroke="#eebefa" stroke-width="3" />
+
+        <!-- Excenter Point -->
+        <circle cx="0" cy="80" r="5" fill="#862e9c" />
+        <text x="-15" y="85" fill="#862e9c" font-size="14" font-family="sans-serif" font-weight="bold">E</text>
+    </g>
+
+</svg>

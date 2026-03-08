@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .grid {
+                fill: none;
+                stroke: #30363d;
+                stroke-width: 1;
+                stroke-dasharray: 4, 4;
+            }
+
+            .axis {
+                fill: none;
+                stroke: #ffffff;
+                stroke-width: 3;
+                marker-end: url(#arrowhead);
+            }
+
+            .parabola {
+                fill: none;
+                stroke: #0088ff;
+                stroke-width: 5;
+                stroke-linecap: round;
+            }
+
+            .root-point {
+                fill: #ff0000;
+                stroke: #ffffff;
+                stroke-width: 2;
+            }
+
+            .label-x {
+                fill: #ffffff;
+                font-size: 20px;
+                text-anchor: middle;
+            }
+
+            .label-y {
+                fill: #ffffff;
+                font-size: 20px;
+                alignment-baseline: central;
+            }
+
+            .math {
+                fill: #00ffff;
+                font-size: 24px;
+                text-anchor: middle;
+            }
+
+            .alert {
+                fill: #ff6464;
+                font-size: 18px;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+        </style>
+        <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#ffffff" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="400" y="40" class="title">대수학과 기하학의 통합: 포물선 스커지 (Parabola &amp; X-intercepts)</text>
+    <text x="400" y="65" class="desc">방정식의 해 = 포물선 우주선이 지평선(X축)에 남긴 두 개의 크레이터 스팟</text>
+
+    <!-- Coordinate System -->
+    <g transform="translate(400, 350)">
+
+        <!-- Grid -->
+        <path d="M -300 -50 L 300 -50 M -300 -100 L 300 -100 M -300 -150 L 300 -150 M -300 -200 L 300 -200"
+            class="grid" />
+        <path d="M -100 -250 L -100 50 M -200 -250 L -200 50 M 100 -250 L 100 50 M 200 -250 L 200 50" class="grid" />
+
+        <!-- Y-Axis -->
+        <line x1="0" y1="80" x2="0" y2="-250" class="axis" />
+        <text x="15" y="-240" class="label-y">y (높이)</text>
+
+        <!-- X-Axis -->
+        <line x1="-350" y1="0" x2="350" y2="0" class="axis" stroke="#ffaa44" />
+        <text x="330" y="-15" fill="#ffaa44" font-size="20">x 축 (땅바닥, y=0)</text>
+
+        <!-- The Parabola: y = x^2 - x - 6 -->
+        <!-- Roots at x = -2 (left 100px), x = 3 (right 150px). Let 50px = 1 unit -->
+        <!-- Vertex at x = 0.5 (25px), y = -6.25 (-312.5px... scaled let's say * 20px) -->
+        <!-- Let's draw purely via SVG arc/path approximation for visual -->
+        <path d="M -200 -200 Q 25 250 250 -200" class="parabola" />
+        <text x="-150" y="-210" fill="#0088ff" font-size="20" transform="rotate(-45 -150 -210)">y = ax² + bx + c</text>
+
+        <!-- Intersection Points (Roots) -->
+        <!-- Left Root (-1) -->
+        <circle cx="-100" cy="0" r="8" class="root-point" />
+        <text x="-100" y="30" class="label-x">Root 1</text>
+        <text x="-100" y="55" class="math">x = α</text>
+
+        <!-- Right Root (4) -->
+        <circle cx="150" cy="0" r="8" class="root-point" />
+        <text x="150" y="30" class="label-x">Root 2</text>
+        <text x="150" y="55" class="math">x = β</text>
+
+        <!-- Indicator box for intersection -->
+        <rect x="-10" y="100" width="300" height="60" fill="rgba(255, 100, 100, 0.1)" stroke="#ff6464" stroke-width="2"
+            rx="10" ry="10" transform="translate(-140)" />
+        <text x="10" y="125" class="alert">대수학: ax² + bx + c = 0</text>
+        <text x="10" y="145" fill="#ffaa64" font-size="16" text-anchor="middle">방정식을 푼다 = X절편 교차점을 찾는다</text>
+
+    </g>
+
+</svg>

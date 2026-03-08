@@ -9,6 +9,10 @@
 
 ## 1. 방정식의 뿌리 (Roots) 탐색 AI 가동
 
+![SymPy 해킹 엔진](./img/06_sympy_process.svg)
+
+![인공지능 코어 추출](./img/06_sympy_ai_python.png)
+
 5강에서 우리가 수기로 풀었던 극악 $3$차 방정식 다항식 몬스터 $x^3 - 4x^2 + x + 6$ 을 파이썬 기생수 엔진에 업로드시켜 봅시다.
 
 ```python

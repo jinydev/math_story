@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f4fce3" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세 마을을 공평하게 아우르는 점: 삼각형의 외심 (Circumcenter)</text>
+
+    <!-- Circumcircle -->
+    <g transform="translate(300, 140)">
+        <circle cx="0" cy="0" r="90" fill="#ebfbee" stroke="#40c057" stroke-width="2" stroke-dasharray="6,6" />
+
+        <!-- Triangle -->
+        <path d="M 0 -90 L -78 45 L 78 45 Z" fill="#d3f9d8" stroke="#2b8a3e" stroke-width="3" />
+
+        <!-- Circumcenter Point -->
+        <circle cx="0" cy="0" r="6" fill="#e03131" />
+        <text x="15" y="-10" fill="#e03131" font-size="16" font-family="sans-serif" font-weight="bold">O (외심)</text>
+
+        <!-- Distances to Vertices -->
+        <line x1="0" y1="0" x2="0" y2="-90" stroke="#f03e3e" stroke-width="2" stroke-dasharray="4,4" />
+        <line x1="0" y1="0" x2="-78" y2="45" stroke="#f03e3e" stroke-width="2" stroke-dasharray="4,4" />
+        <line x1="0" y1="0" x2="78" y2="45" stroke="#f03e3e" stroke-width="2" stroke-dasharray="4,4" />
+
+        <!-- Vertices -->
+        <circle cx="0" cy="-90" r="5" fill="#1971c2" />
+        <text x="0" y="-100" fill="#1971c2" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">A 마을</text>
+
+        <circle cx="-78" cy="45" r="5" fill="#1971c2" />
+        <text x="-95" y="65" fill="#1971c2" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">B 마을</text>
+
+        <circle cx="78" cy="45" r="5" fill="#1971c2" />
+        <text x="95" y="65" fill="#1971c2" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">C 마을</text>
+
+        <text x="25" y="-50" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold">R</text>
+        <text x="-40" y="10" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold">R</text>
+        <text x="35" y="10" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold">R</text>
+    </g>
+
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">그래프 이론(Graph Theory): 지도를 '선 잇기 퍼즐' 로 치환하다</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"모양도 크기도 쓸모없다! 오직 '이웃하고 있는가(Edge 간선)' 만이 우주의
+        진리다!"</text>
+
+    <!-- Left: The Original Map (Polygons) -->
+    <g transform="translate(40, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">원본 혼돈의 지도
+            (Map)</text>
+
+        <!-- 4 Regions Map -->
+        <path d="M 60 40 L 160 40 L 130 90 Z" fill="#fff3bf" stroke="#495057" stroke-width="2" />
+        <!-- Yellow Region 1 -->
+        <path d="M 60 40 L 40 100 L 100 130 L 130 90 Z" fill="#e7f5ff" stroke="#495057" stroke-width="2" />
+        <!-- Blue Region 2 -->
+        <path d="M 160 40 L 130 90 L 180 130 Z" fill="#ebfbee" stroke="#495057" stroke-width="2" />
+        <!-- Green Region 3 -->
+        <path d="M 100 130 L 130 90 L 180 130 L 140 145 Z" fill="#ffe3e3" stroke="#495057" stroke-width="2" />
+        <!-- Red Region 4 -->
+
+        <!-- Capital Dots in each region -->
+        <circle cx="115" cy="65" r="4" fill="#000" />
+        <circle cx="80" cy="95" r="4" fill="#000" />
+        <circle cx="150" cy="95" r="4" fill="#000" />
+        <circle cx="140" cy="125" r="4" fill="#000" />
+    </g>
+
+    <!-- Transform Arrow -->
+    <path d="M 270 145 C 285 110, 285 110, 300 145" fill="none" stroke="#2b8a3e" stroke-width="3" stroke-dasharray="4,2"
+        marker-end="url(#arrow-green)" />
+    <rect x="250" y="110" width="70" height="20" fill="#ebfbee" rx="3" />
+    <text x="285" y="124" fill="#0ca678" font-size="10" font-weight="bold" text-anchor="middle">추상화 변환</text>
+
+    <!-- Right: Planar Graph Representation -->
+    <g transform="translate(340, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">해석용 평면 그래프
+            (Graph)</text>
+
+        <!-- Edges -->
+        <line x1="115" y1="65" x2="80" y2="95" stroke="#495057" stroke-width="3" />
+        <line x1="115" y1="65" x2="150" y2="95" stroke="#495057" stroke-width="3" />
+        <line x1="80" y1="95" x2="150" y2="95" stroke="#495057" stroke-width="3" />
+        <line x1="80" y1="95" x2="140" y2="125" stroke="#495057" stroke-width="3" />
+        <line x1="150" y1="95" x2="140" y2="125" stroke="#495057" stroke-width="3" />
+
+        <!-- Nodes (Capital Dots) colored for 4-color problem -->
+        <circle cx="115" cy="65" r="12" fill="#fab005" stroke="#e67700" stroke-width="2" />
+        <text x="115" y="69" fill="#000" font-size="10" font-weight="bold" text-anchor="middle">Y</text>
+
+        <circle cx="80" cy="95" r="12" fill="#228be6" stroke="#1864ab" stroke-width="2" />
+        <text x="80" y="99" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">B</text>
+
+        <circle cx="150" cy="95" r="12" fill="#40c057" stroke="#2b8a3e" stroke-width="2" />
+        <text x="150" y="99" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">G</text>
+
+        <circle cx="140" cy="125" r="12" fill="#fa5252" stroke="#c92a2a" stroke-width="2" />
+        <text x="140" y="129" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">R</text>
+
+        <!-- Formula Check -->
+        <rect x="15" y="125" width="80" height="20" fill="#e6fcf5" rx="3" />
+        <text x="55" y="139" fill="#0ca678" font-size="9" font-weight="bold" text-anchor="middle">"점(Node)과
+            선(Edge)"</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+    </defs>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#e8590c" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">Z 변환(Standardization): 모든 우주를 하나의 절대 좌표계로</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"내 점수(X)에서 평균(m)을 빼서 0점을 맞추고, 편차(σ)로 나누어 칸
+        수를 센다!"</text>
+
+    <!-- Left: Original X Universe (Raw Score) -->
+    <g transform="translate(40, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">원시 점수 우주 (X)</text>
+
+        <line x1="10" y1="100" x2="210" y2="100" stroke="#adb5bd" stroke-width="2" />
+        <path d="M 20 100 C 60 100, 90 40, 110 40 C 130 40, 160 100, 200 100" fill="#fff4e6" fill-opacity="0.8"
+            stroke="#fd7e14" stroke-width="2" />
+
+        <!-- Mean -->
+        <line x1="110" y1="40" x2="110" y2="100" stroke="#fd7e14" stroke-dasharray="2,2" />
+        <text x="110" y="115" fill="#d9480f" font-size="12" font-weight="bold" text-anchor="middle">m = 60</text>
+
+        <!-- Standard Deviation unit -->
+        <path d="M 110 80 L 140 80" fill="none" stroke="#d9480f" stroke-width="2" marker-end="url(#arrow-orange)"
+            marker-start="url(#arrow-orange-rev)" />
+        <text x="125" y="75" fill="#d9480f" font-size="10" font-weight="bold" text-anchor="middle">σ = 10</text>
+
+        <!-- My Score X -->
+        <circle cx="170" cy="100" r="4" fill="#c92a2a" />
+        <text x="170" y="115" fill="#c92a2a" font-size="12" font-weight="bold" text-anchor="middle">X = 80</text>
+
+        <rect x="15" y="125" width="190" height="18" fill="#ffe3e3" rx="3" />
+        <text x="110" y="138" fill="#c92a2a" font-size="10" font-weight="bold" text-anchor="middle">우주마다 m 과 σ 가 전부
+            다름!</text>
+    </g>
+
+    <!-- The Magic Bridge (Z-Formula) -->
+    <path d="M 270 145 C 285 110, 285 110, 300 145" fill="none" stroke="#2b8a3e" stroke-width="3"
+        marker-end="url(#arrow-green)" />
+    <rect x="255" y="110" width="90" height="30" fill="#ebfbee" stroke="#2b8a3e" rx="5" />
+    <text x="300" y="123" fill="#0ca678" font-size="10" font-family="monospace" font-weight="bold"
+        text-anchor="middle">Z = (X - m)</text>
+    <line x1="265" y1="128" x2="335" y2="128" stroke="#0ca678" />
+    <text x="300" y="138" fill="#0ca678" font-size="10" font-family="monospace" font-weight="bold"
+        text-anchor="middle">σ</text>
+
+    <!-- Right: Standard Z Universe -->
+    <g transform="translate(340, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">가상 절대 우주 (Z)</text>
+
+        <line x1="10" y1="100" x2="210" y2="100" stroke="#adb5bd" stroke-width="2" />
+        <path d="M 20 100 C 60 100, 90 30, 110 30 C 130 30, 160 100, 200 100" fill="#e6fcf5" fill-opacity="0.8"
+            stroke="#2b8a3e" stroke-width="2" />
+
+        <!-- Standard Mean -->
+        <line x1="110" y1="30" x2="110" y2="100" stroke="#2b8a3e" stroke-dasharray="2,2" />
+        <text x="110" y="115" fill="#0ca678" font-size="12" font-weight="bold" text-anchor="middle">m = 0</text>
+
+        <!-- Standard Deviation unit -->
+        <path d="M 110 80 L 140 80" fill="none" stroke="#0ca678" stroke-width="2" marker-end="url(#arrow-green)"
+            marker-start="url(#arrow-green-rev)" />
+        <text x="125" y="75" fill="#0ca678" font-size="10" font-weight="bold" text-anchor="middle">σ = 1</text>
+
+        <!-- Z Score -->
+        <circle cx="170" cy="100" r="4" fill="#0b7285" />
+        <text x="170" y="115" fill="#0b7285" font-size="12" font-weight="bold" text-anchor="middle">Z = 2.0</text>
+
+        <rect x="15" y="125" width="190" height="18" fill="#e3fafc" rx="3" />
+        <text x="110" y="138" fill="#0b7285" font-size="9" font-weight="bold" text-anchor="middle">"내 점수가 평균에서 시그마 몇 칸
+            떨어졌나"</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+        <marker id="arrow-green-rev" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+        <marker id="arrow-orange" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#d9480f" />
+        </marker>
+        <marker id="arrow-orange-rev" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#d9480f" />
+        </marker>
+    </defs>
+</svg>

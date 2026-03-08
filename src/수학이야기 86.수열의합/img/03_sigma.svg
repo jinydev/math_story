@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#862e9c" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세 번째 합체: '무한 압축기 (Sigma, Σ) 와 거듭제곱'</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"더러운 나열식 코드를 한 줄짜리 For 루프(Loop) 로
+        압축하라!"</text>
+
+    <!-- Left: Messy addition (Spaghetti Code) -->
+    <g transform="translate(40, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">구식 나열 (원시인)</text>
+
+        <!-- Long expanding equation -->
+        <text x="20" y="60" fill="#1864ab" font-size="14" font-family="monospace">1² + 2² + 3² + 4² + 5²</text>
+        <text x="20" y="80" fill="#1864ab" font-size="14" font-family="monospace">+ 6² + 7² + 8² + 9²</text>
+        <text x="20" y="100" fill="#1864ab" font-size="14" font-family="monospace">+ ... + 100²</text>
+
+        <!-- Error/Frustration -->
+        <rect x="15" y="125" width="190" height="18" fill="#ffe3e3" />
+        <text x="110" y="138" fill="#c92a2a" font-size="10" font-weight="bold" text-anchor="middle">항이 1000개면 어떡할 건데?
+            (메모리 낭비)</text>
+    </g>
+
+    <!-- Divider Arrow -->
+    <path d="M 270 145 C 285 120, 285 170, 300 145" fill="none" stroke="#862e9c" stroke-width="3"
+        marker-end="url(#arrow-purple)" />
+    <text x="285" y="115" fill="#862e9c" font-size="14" font-weight="bold" text-anchor="middle">압축 (Σ)</text>
+
+    <!-- Right: Sigma Notation (For Loop) -->
+    <g transform="translate(320, 80)">
+        <rect x="0" y="0" width="240" height="150" fill="#fff" stroke="#862e9c" stroke-width="2" rx="5" />
+        <text x="120" y="25" fill="#862e9c" font-size="14" font-weight="bold" text-anchor="middle">압축 시스템 (Σ :
+            시그마)</text>
+
+        <!-- Large Sigma Symbol -->
+        <text x="30" y="105" fill="#eebefa" font-size="70" font-family="serif" font-weight="bold">∑</text>
+
+        <!-- Sigma parameters -->
+        <text x="45" y="55" fill="#d9480f" font-size="12" font-weight="bold">n=100 (종료 조건)</text>
+        <text x="45" y="125" fill="#2b8a3e" font-size="12" font-weight="bold">k=1 (시작점)</text>
+
+        <!-- General term -->
+        <text x="100" y="90" fill="#1864ab" font-size="28" font-family="serif" font-weight="bold">k²</text>
+
+        <!-- Code translation box -->
+        <rect x="120" y="60" width="105" height="50" fill="#212529" rx="3" />
+        <text x="130" y="75" fill="#339af0" font-size="9" font-family="monospace">for k in 1..100:</text>
+        <text x="140" y="95" fill="#ffc9c9" font-size="9" font-family="monospace">sum += k^2</text>
+
+        <!-- Formula output -->
+        <rect x="15" y="125" width="210" height="18" fill="#f3d9fa" />
+        <text x="120" y="138" fill="#862e9c" font-size="10" font-weight="bold" text-anchor="middle">단순 표기를 넘어 특수 공식을 가진
+            마법사</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-purple" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#862e9c" />
+        </marker>
+    </defs>
+</svg>

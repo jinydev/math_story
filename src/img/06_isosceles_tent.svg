@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .tent {
+                fill: rgba(0, 255, 255, 0.1);
+                stroke: #00ffff;
+                stroke-width: 4;
+                filter: drop-shadow(0 0 10px #00ffff);
+            }
+
+            .leg {
+                stroke: #ff6464;
+                stroke-width: 6;
+            }
+
+            .bisector {
+                stroke: #64ff64;
+                stroke-width: 3;
+                stroke-dasharray: 10, 10;
+            }
+
+            .base {
+                stroke: #00ffff;
+                stroke-width: 4;
+            }
+
+            .right-angle {
+                fill: none;
+                stroke: #64ff64;
+                stroke-width: 2;
+            }
+
+            .angle-base {
+                fill: rgba(255, 255, 0, 0.4);
+                stroke: #ffff00;
+                stroke-width: 3;
+            }
+
+            .glow-mark {
+                stroke: #ffffff;
+                stroke-width: 3;
+                filter: drop-shadow(0 0 3px #ffffff);
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#0d1117" />
+
+    <text x="300" y="50" fill="#00ffff" font-size="28" text-anchor="middle">이등변삼각형 (좌우 대칭의 절대 텐트)</text>
+
+    <!-- The Triangle -->
+    <g transform="translate(150, 100)">
+        <!-- Base -->
+        <line x1="0" y1="300" x2="300" y2="300" class="base" />
+
+        <!-- Bisector (Altitude from vertex) -->
+        <line x1="150" y1="0" x2="150" y2="300" class="bisector" />
+
+        <!-- Legs -->
+        <line x1="150" y1="0" x2="0" y2="300" class="leg" />
+        <line x1="150" y1="0" x2="300" y2="300" class="leg" />
+
+        <!-- Legend Box / Triangle background via fill if needed -->
+        <polygon points="150,0 0,300 300,300" class="tent" />
+
+        <!-- Marks for equal legs -->
+        <line x1="65" y1="150" x2="85" y2="150" class="glow-mark" transform="rotate(-63 75 150)" />
+        <line x1="215" y1="150" x2="235" y2="150" class="glow-mark" transform="rotate(63 225 150)" />
+        <text x="35" y="145" fill="#ff6464" font-size="20">길이 일치</text>
+        <text x="265" y="145" fill="#ff6464" font-size="20" text-anchor="end">길이 일치</text>
+
+        <!-- Angles -->
+        <path d="M 40 300 A 40 40 0 0 0 18 264" class="angle-base" />
+        <path d="M 260 300 A 40 40 0 0 1 282 264" class="angle-base" />
+        <text x="45" y="290" fill="#ffff00" font-size="20">밑각 동일</text>
+        <text x="255" y="290" fill="#ffff00" font-size="20" text-anchor="end">밑각 동일</text>
+
+        <!-- Right angles at the bisector -->
+        <polyline points="150,285 165,285 165,300" class="right-angle" />
+        <polyline points="150,285 135,285 135,300" class="right-angle" />
+        <text x="150" y="325" fill="#64ff64" font-size="20" text-anchor="middle">수직 (90°)</text>
+
+        <!-- Base bisected marks -->
+        <line x1="65" y1="305" x2="85" y2="295" stroke="#00ffff" stroke-width="3" />
+        <line x1="70" y1="305" x2="90" y2="295" stroke="#00ffff" stroke-width="3" />
+        <line x1="215" y1="305" x2="235" y2="295" stroke="#00ffff" stroke-width="3" />
+        <line x1="220" y1="305" x2="240" y2="295" stroke="#00ffff" stroke-width="3" />
+
+        <text x="150" y="360" fill="#00ffff" font-size="20" text-anchor="middle">이등분 (크램핑)</text>
+    </g>
+</svg>

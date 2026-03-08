@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+    <rect width="600" height="300" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">자연 속 프랙탈의 신비: 로그 나선 (Logarithmic Spiral)</text>
+
+    <!-- Snail Shell / Spiral representation -->
+    <g transform="translate(150, 160)">
+        <!-- Log spiral approximation with arcs -->
+        <!-- The radius grows exponentially representing e^(a*theta) -->
+        <path d="M 0 0 
+             A 5 5 0 0 1 -5 -5 
+             A 10 10 0 0 1 5 -15 
+             A 20 20 0 0 1 25 5 
+             A 40 40 0 0 1 -15 45 
+             A 80 80 0 0 1 -95 -35 
+             A 140 140 0 0 1 45 -175" fill="none" stroke="#40c057" stroke-width="4" stroke-linecap="round" />
+
+        <circle cx="0" cy="0" r="3" fill="#2b8a3e" />
+        <line x1="0" y1="0" x2="-95" y2="-35" stroke="#adb5bd" stroke-width="2" stroke-dasharray="4,4" />
+        <line x1="0" y1="0" x2="45" y2="-175" stroke="#adb5bd" stroke-width="2" stroke-dasharray="4,4" />
+
+        <text x="-50" y="-10" fill="#868e96" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">r = e^aθ</text>
+    </g>
+
+    <!-- Explanation text & Golden ratio box -->
+    <g transform="translate(380, 80)">
+        <rect x="-20" y="0" width="200" height="150" fill="#ebeeeb" stroke="#c3fae8" stroke-width="2" rx="8" />
+        <text x="80" y="30" fill="#2b8a3e" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">로그 나선의 특징</text>
+
+        <!-- Bullet points -->
+        <circle cx="-5" cy="55" r="4" fill="#20c997" />
+        <text x="5" y="60" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold">앵무조개 껍데기 패턴</text>
+
+        <circle cx="-5" cy="85" r="4" fill="#20c997" />
+        <text x="5" y="90" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold">은하수의 회전 팔</text>
+
+        <circle cx="-5" cy="115" r="4" fill="#20c997" />
+        <text x="5" y="120" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold">황금비율
+            (~1.618)</text>
+    </g>
+
+</svg>

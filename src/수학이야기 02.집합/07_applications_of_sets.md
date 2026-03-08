@@ -26,7 +26,7 @@
 마치 타노스가 손가락을 튕기면 모든 생명체 패턴이 정확히 절반의 안티물질로 역전되는 것 같은 통쾌한 규칙입니다.
 
 <div align="center">
-  <img src="./img/v3_02_lesson07_thanos_snap_2d.png" alt="우주적 존재가 손가락을 튕기자 U 기호가 n 기호로 뒤집히는 마법 같은 코스믹 웹툰" width="600" />
+  <img src="./img/07_demorgan_thanos_snap_python.png" alt="우주적 존재가 손가락을 튕기자 U 기호가 n 기호로 뒤집히는 마법 같은 코스믹 웹툰" width="600" />
 </div>
 
 <div align="center">

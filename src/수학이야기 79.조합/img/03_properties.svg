@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#f59f00" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세 번째 선택: '대칭의 우주 (조합의 성질)'</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"10명 중 합격자 8명을 뽑는 일 = 탈락자 2명을 지목하는 일 (nCr =
+        nCn-r)"</text>
+
+    <!-- Left Side: Picking Winners (8) -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="200" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="100" y="25" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">합격자 8명 뽑기
+            (10C8)</text>
+
+        <!-- 10 dots, 8 are blue, 2 are red -->
+        <circle cx="20" cy="50" r="8" fill="#339af0" />
+        <circle cx="45" cy="50" r="8" fill="#339af0" />
+        <circle cx="70" cy="50" r="8" fill="#339af0" />
+        <circle cx="95" cy="50" r="8" fill="#339af0" />
+        <circle cx="120" cy="50" r="8" fill="#339af0" />
+
+        <circle cx="20" cy="80" r="8" fill="#339af0" />
+        <circle cx="45" cy="80" r="8" fill="#339af0" />
+        <circle cx="70" cy="80" r="8" fill="#339af0" />
+        <circle cx="95" cy="80" r="8" fill="#ffe3e3" stroke="#fa5252" stroke-dasharray="2,2" />
+        <circle cx="120" cy="80" r="8" fill="#ffe3e3" stroke="#fa5252" stroke-dasharray="2,2" />
+
+        <text x="100" y="115" fill="#1864ab" font-size="16" font-weight="bold" text-anchor="middle">"아.. 너무 많다
+            헉헉"</text>
+        <path d="M 60 40 L 80 90" stroke="#1864ab" stroke-width="2" fill="none" />
+        <path d="M 30 70 L 100 60" stroke="#1864ab" stroke-width="2" fill="none" />
+    </g>
+
+    <!-- Equilibrium = -->
+    <text x="300" y="155" fill="#f59f00" font-size="30" font-weight="bold" text-anchor="middle">=</text>
+
+    <!-- Right Side: Picking Losers (2) -->
+    <g transform="translate(340, 80)">
+        <rect x="0" y="0" width="200" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="100" y="25" fill="#c92a2a" font-size="14" font-weight="bold" text-anchor="middle">탈락자 2명 뽑기
+            (10C2)</text>
+
+        <!-- 10 dots, 2 highlighted red -->
+        <circle cx="20" cy="50" r="8" fill="#e7f5ff" stroke="#339af0" stroke-dasharray="2,2" />
+        <circle cx="45" cy="50" r="8" fill="#e7f5ff" stroke="#339af0" stroke-dasharray="2,2" />
+        <circle cx="70" cy="50" r="8" fill="#e7f5ff" stroke="#339af0" stroke-dasharray="2,2" />
+        <circle cx="95" cy="50" r="8" fill="#e7f5ff" stroke="#339af0" stroke-dasharray="2,2" />
+        <circle cx="120" cy="50" r="8" fill="#e7f5ff" stroke="#339af0" stroke-dasharray="2,2" />
+
+        <circle cx="20" cy="80" r="8" fill="#e7f5ff" stroke="#339af0" stroke-dasharray="2,2" />
+        <circle cx="45" cy="80" r="8" fill="#e7f5ff" stroke="#339af0" stroke-dasharray="2,2" />
+        <circle cx="70" cy="80" r="8" fill="#e7f5ff" stroke="#339af0" stroke-dasharray="2,2" />
+        <circle cx="95" cy="80" r="8" fill="#fa5252" />
+        <circle cx="120" cy="80" r="8" fill="#fa5252" />
+
+        <text x="100" y="115" fill="#c92a2a" font-size="16" font-weight="bold" text-anchor="middle">"딱 2놈 버리면 끝!"</text>
+        <path d="M 95 80 L 120 80" stroke="#c92a2a" stroke-width="2" fill="none" />
+    </g>
+
+    <!-- Formula -->
+    <rect x="200" y="190" width="200" height="30" fill="#f1f3f5" rx="5" />
+    <text x="300" y="210" fill="#495057" font-size="14" font-family="monospace" font-weight="bold"
+        text-anchor="middle">10 C 8 == 10 C (10-8)</text>
+
+</svg>

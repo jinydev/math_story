@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .sphere {
+                fill: #161b22;
+                stroke: #30363d;
+                stroke-width: 3;
+            }
+
+            .equator {
+                fill: none;
+                stroke: #50667b;
+                stroke-width: 2;
+            }
+
+            .meridian {
+                fill: none;
+                stroke: #50667b;
+                stroke-width: 2;
+            }
+
+            .triangle-line {
+                fill: none;
+                stroke: #00ffff;
+                stroke-width: 5;
+            }
+
+            .triangle-fill {
+                fill: rgba(0, 255, 255, 0.2);
+            }
+
+            .angle-arc {
+                fill: rgba(255, 100, 100, 0.5);
+                stroke: #ff6464;
+                stroke-width: 2;
+            }
+
+            .label-text {
+                fill: #ffffff;
+                font-size: 20px;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="400" y="40" class="title">구면 기하학의 270도 거대 삼각형</text>
+    <text x="400" y="65" class="desc">팽창하는 구면에서는 삼각형의 세 내각의 90도가 모여 총합 270도를 형성한다</text>
+
+    <g transform="translate(400, 280)">
+        <!-- Sphere Base -->
+        <circle cx="0" cy="0" r="180" class="sphere" />
+
+        <!-- Equator -->
+        <ellipse cx="0" cy="0" rx="180" ry="40" class="equator" />
+
+        <!-- Meridian (Center Vertical) -->
+        <ellipse cx="0" cy="0" rx="40" ry="180" class="meridian" />
+
+        <!-- North pole (Top) -->
+        <circle cx="0" cy="-180" r="6" fill="#ffffff" />
+        <text x="0" y="-200" class="label-text" text-anchor="middle">A [북극점]</text>
+
+        <!-- Point B (Left on equator) -->
+        <circle cx="-180" cy="0" r="6" fill="#ffffff" />
+        <text x="-210" y="5" class="label-text" text-anchor="end">B [적도]</text>
+
+        <!-- Point C (Center on equator) -->
+        <circle cx="0" cy="40" r="6" fill="#ffffff" />
+        <text x="0" y="70" class="label-text" text-anchor="middle">C [적도]</text>
+
+        <!-- The Triangle Fill -->
+        <path d="M 0 -180 A 180 180 0 0 0 -180 0 A 180 40 0 0 0 0 40 A 40 180 0 0 1 0 -180" class="triangle-fill" />
+
+        <!-- The Triangle Lines -->
+        <!-- Line AB (Left arc) -->
+        <path d="M 0 -180 A 180 180 0 0 0 -180 0" class="triangle-line" />
+        <!-- Line BC (Equator front left arc) -->
+        <path d="M -180 0 A 180 40 0 0 0 0 40" class="triangle-line" />
+        <!-- Line CA (Center meridian arc) -->
+        <path d="M 0 40 A 40 180 0 0 1 0 -180" class="triangle-line" />
+
+        <!-- 90 Degree Angle Symbols -->
+        <!-- At A (North Pole): The angle between meridian and left outline is 90 deg theoretically. -->
+        <path d="M -30 -180 L -30 -150 A 30 30 0 0 0 0 -150 Z" class="angle-arc" />
+        <text x="-40" y="-130" fill="#ff6464" font-size="18">90°</text>
+        <rect x="-20" y="-170" width="10" height="10" fill="none" stroke="#fff" stroke-width="1.5" />
+
+        <!-- At B (Equator left edge): intersection of vertical circle and horizontal circle is 90 -->
+        <path d="M -180 -30 L -150 -30 A 30 30 0 0 0 -150 0 Z" class="angle-arc" />
+        <text x="-120" y="-20" fill="#ff6464" font-size="18">90°</text>
+        <rect x="-170" y="-15" width="10" height="10" fill="none" stroke="#fff" stroke-width="1.5" />
+
+        <!-- At C (Equator center): intersection of center meridian and equator is 90 -->
+        <!-- Center meridian goes straight up from equator front -->
+        <path d="M 0 10 L -30 10 A 30 30 0 0 0 -30 40 Z" class="angle-arc" />
+        <text x="-50" y="20" fill="#ff6464" font-size="18">90°</text>
+        <rect x="-15" y="15" width="10" height="10" fill="none" stroke="#fff" stroke-width="1.5" />
+
+        <!-- Summary Math -->
+        <rect x="220" y="-100" width="220" height="120" fill="#161b22" stroke="#64ff64" stroke-width="2" rx="10" />
+        <text x="330" y="-60" fill="#64ff64" font-size="22" text-anchor="middle">∠A = 90°</text>
+        <text x="330" y="-30" fill="#64ff64" font-size="22" text-anchor="middle">∠B = 90°</text>
+        <text x="330" y="0" fill="#64ff64" font-size="22" text-anchor="middle">∠C = 90°</text>
+        <text x="330" y="50" fill="#ffffff" font-size="26" text-anchor="middle">총합 = 270°</text>
+    </g>
+
+</svg>

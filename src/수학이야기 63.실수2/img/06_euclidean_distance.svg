@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400">
+    <rect width="700" height="400" fill="#e3fafc" rx="15" />
+
+    <text x="350" y="40" fill="#0b7285" font-size="22" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">피타고라스 정리와 유클리드 거리 (무리수 맵 생성)</text>
+
+    <!-- Grid lines -->
+    <line x1="50" y1="300" x2="650" y2="300" stroke="#adb5bd" stroke-width="2" />
+    <line x1="100" y1="350" x2="100" y2="50" stroke="#adb5bd" stroke-width="2" />
+
+    <!-- Coordinates labels -->
+    <text x="640" y="320" fill="#495057" font-size="16" font-family="monospace" font-weight="bold">x</text>
+    <text x="70" y="60" fill="#495057" font-size="16" font-family="monospace" font-weight="bold">y</text>
+
+    <!-- Point Mage (3, 4) mapped to pixel (250, 200) by logic: x=100+50*3, y=300-25*4 -->
+    <circle cx="250" cy="200" r="10" fill="#1c7ed6" />
+    <text x="250" y="180" fill="#1864ab" font-size="16" font-weight="bold" text-anchor="middle">마법사(3, 4)</text>
+
+    <!-- Point Goblin (5, 7) mapped to pixel (350, 125) by logic: x=100+50*5, y=300-25*7 -->
+    <circle cx="350" cy="125" r="10" fill="#f03e3e" />
+    <text x="350" y="105" fill="#c92a2a" font-size="16" font-weight="bold" text-anchor="middle">몬스터(5, 7)</text>
+
+    <!-- Straight Line (Distance) -->
+    <line x1="250" y1="200" x2="350" y2="125" stroke="#fcc419" stroke-width="5" />
+
+    <!-- Right Triangle legs -->
+    <line x1="250" y1="200" x2="350" y2="200" stroke="#15aabf" stroke-width="3" stroke-dasharray="6,4" />
+    <line x1="350" y1="200" x2="350" y2="125" stroke="#15aabf" stroke-width="3" stroke-dasharray="6,4" />
+
+    <!-- Leg lengths -->
+    <text x="300" y="220" fill="#0c8599" font-size="16" font-weight="bold" font-family="monospace"
+        text-anchor="middle">x 차이 = 2</text>
+    <text x="380" y="165" fill="#0c8599" font-size="16" font-weight="bold" font-family="monospace"
+        text-anchor="middle">y 차이 = 3</text>
+
+    <!-- Hypotenuse label -->
+    <rect x="230" y="130" width="90" height="30" fill="#fff" stroke="#fcc419" stroke-width="2" rx="5" />
+    <text x="275" y="150" fill="#d9480f" font-size="18" font-family="monospace" font-weight="bold"
+        text-anchor="middle">D = √13</text>
+
+    <!-- Equation box -->
+    <rect x="420" y="180" width="250" height="150" fill="#fff" stroke="#adb5bd" stroke-width="2" rx="10" />
+    <text x="545" y="210" fill="#343a40" font-size="16" font-weight="bold" text-anchor="middle">사거리 계산기</text>
+    <text x="545" y="240" fill="#f03e3e" font-size="18" font-family="monospace" font-weight="bold"
+        text-anchor="middle">D² = 2² + 3²</text>
+    <text x="545" y="270" fill="#f03e3e" font-size="18" font-family="monospace" font-weight="bold"
+        text-anchor="middle">D² = 4 + 9 = 13</text>
+    <text x="545" y="305" fill="#1864ab" font-size="20" font-family="monospace" font-weight="bold"
+        text-anchor="middle">∴ 사거리 = √13</text>
+
+</svg>

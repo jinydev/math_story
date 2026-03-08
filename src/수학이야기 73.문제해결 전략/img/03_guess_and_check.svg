@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#1864ab" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세 번째 전략: 무식하지만 매서운 '예상과 확인하기(Guess &amp; Check)'</text>
+
+    <!-- Problem Statement -->
+    <text x="300" y="60" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">닭과 돼지가 섞여 총 10마리. 다리 수를 다
+        세어보니 32개. 각각 몇 마리인가?</text>
+
+    <!-- Algorithm Process Graphic -->
+    <g transform="translate(50, 80)">
+
+        <!-- Guess 1 -->
+        <rect x="0" y="0" width="130" height="120" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="65" y="20" fill="#862e9c" font-size="12" font-weight="bold" text-anchor="middle">첫 번째 찍기 (Guess)</text>
+        <rect x="10" y="30" width="110" height="20" fill="#f3d9fa" rx="2" />
+        <text x="65" y="44" fill="#862e9c" font-size="10" font-weight="bold" text-anchor="middle">닭: 5마리 / 돼지:
+            5마리</text>
+
+        <text x="65" y="70" fill="#495057" font-size="11" text-anchor="middle">확인(Check)</text>
+        <text x="65" y="85" fill="#495057" font-size="10" text-anchor="middle">5x2 + 5x4 = 30개</text>
+
+        <rect x="10" y="95" width="110" height="18" fill="#ffe3e3" rx="2" />
+        <text x="65" y="108" fill="#e03131" font-size="10" font-weight="bold" text-anchor="middle">목표 32개 부족!
+            (오답)</text>
+    </g>
+
+    <!-- Logic adjustment arrow -->
+    <path d="M 190 140 L 230 140" fill="none" stroke="#adb5bd" stroke-width="3" stroke-dasharray="4,2"
+        marker-end="url(#arrow)" />
+    <text x="210" y="130" fill="#f08c00" font-size="10" font-weight="bold" text-anchor="middle">다리가 모자라!</text>
+    <text x="210" y="160" fill="#f08c00" font-size="10" font-weight="bold" text-anchor="middle">돼지를 늘려보자</text>
+
+    <g transform="translate(240, 80)">
+        <!-- Guess 2 -->
+        <rect x="0" y="0" width="130" height="120" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="65" y="20" fill="#f59f00" font-size="12" font-weight="bold" text-anchor="middle">두 번째 찍기 (Guess)</text>
+        <rect x="10" y="30" width="110" height="20" fill="#ffec99" rx="2" />
+        <text x="65" y="44" fill="#d9480f" font-size="10" font-weight="bold" text-anchor="middle">닭: 3마리 / 돼지:
+            7마리</text>
+
+        <text x="65" y="70" fill="#495057" font-size="11" text-anchor="middle">확인(Check)</text>
+        <text x="65" y="85" fill="#495057" font-size="10" text-anchor="middle">3x2 + 7x4 = 34개</text>
+
+        <rect x="10" y="95" width="110" height="18" fill="#ffe3e3" rx="2" />
+        <text x="65" y="108" fill="#e03131" font-size="10" font-weight="bold" text-anchor="middle">목표 32개 초과!
+            (오답)</text>
+    </g>
+
+    <path d="M 380 140 L 420 140" fill="none" stroke="#adb5bd" stroke-width="3" stroke-dasharray="4,2"
+        marker-end="url(#arrow)" />
+    <text x="400" y="130" fill="#f08c00" font-size="10" font-weight="bold" text-anchor="middle">다리가 너무 많다!</text>
+    <text x="400" y="160" fill="#f08c00" font-size="10" font-weight="bold" text-anchor="middle">돼지를 살짝 빼자</text>
+
+    <g transform="translate(430, 80)">
+        <!-- Guess 3 (Success) -->
+        <rect x="0" y="0" width="130" height="120" fill="#ebfbee" stroke="#2b8a3e" stroke-width="2" rx="5" />
+        <text x="65" y="20" fill="#2b8a3e" font-size="12" font-weight="bold" text-anchor="middle">세 번째 찍기 (Guess)</text>
+        <rect x="10" y="30" width="110" height="20" fill="#b2f2bb" rx="2" />
+        <text x="65" y="44" fill="#099268" font-size="10" font-weight="bold" text-anchor="middle">닭: 4마리 / 돼지:
+            6마리</text>
+
+        <text x="65" y="70" fill="#495057" font-size="11" text-anchor="middle">확인(Check)</text>
+        <text x="65" y="85" fill="#495057" font-size="10" text-anchor="middle">4x2 + 6x4 = 32개</text>
+
+        <rect x="10" y="95" width="110" height="18" fill="#8ce99a" rx="2" />
+        <text x="65" y="108" fill="#2b8a3e" font-size="10" font-weight="bold" text-anchor="middle">정답 빙고!!</text>
+    </g>
+
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

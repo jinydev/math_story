@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .box {
+                fill: #161b22;
+                stroke: #30363d;
+                stroke-width: 3;
+                rx: 10;
+                ry: 10;
+            }
+
+            .math {
+                font-size: 28px;
+                text-anchor: middle;
+                alignment-baseline: central;
+            }
+
+            .arrow {
+                fill: none;
+                stroke: #00ff00;
+                stroke-width: 5;
+                marker-end: url(#arrowhead);
+            }
+
+            .arrow-bad {
+                fill: none;
+                stroke: #ff6464;
+                stroke-width: 5;
+                marker-end: url(#arrowhead-bad);
+                stroke-dasharray: 6, 6;
+            }
+
+            .set-p {
+                fill: rgba(0, 255, 255, 0.15);
+                stroke: #00ffff;
+                stroke-width: 3;
+            }
+
+            .set-q {
+                fill: rgba(255, 100, 100, 0.15);
+                stroke: #ff6464;
+                stroke-width: 3;
+            }
+        </style>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#00ff00" />
+        </marker>
+        <marker id="arrowhead-bad" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ff6464" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="400" y="40" class="title">조건문의 스위치 변환 (Conditional Statements)</text>
+    <text x="400" y="65" class="desc">가정(p)이 결론(q)에 포함되면 (P ⊂ Q), 명제 p → q 는 무조건 참이다!</text>
+
+    <!-- Flowchart Side -->
+    <g transform="translate(150, 200)">
+        <!-- Conditions boxes -->
+        <rect x="-100" y="-40" width="120" height="80" class="box" stroke="#00ffff" />
+        <text x="-40" y="-10" class="math" fill="#00ffff">p</text>
+        <text x="-40" y="20" fill="#00ffff" text-anchor="middle">가정</text>
+
+        <rect x="140" y="-40" width="120" height="80" class="box" stroke="#ff6464" />
+        <text x="200" y="-10" class="math" fill="#ff6464">q</text>
+        <text x="200" y="20" fill="#ff6464" text-anchor="middle">결론</text>
+
+        <!-- True Arrow -->
+        <path d="M 30 -20 Q 80 -40 130 -20" class="arrow" />
+        <text x="80" y="-50" fill="#00ff00" font-size="20" text-anchor="middle">참 (P ⊂ Q)</text>
+
+        <!-- Warning Arrow (Counterexample) -->
+        <path d="M 30 20 Q 80 50 130 20" class="arrow-bad" />
+        <text x="80" y="70" fill="#ff6464" font-size="16" text-anchor="middle">거짓 (반례 존재)</text>
+    </g>
+
+    <!-- Venn Diagram Side (Proof of P in Q) -->
+    <g transform="translate(600, 200)">
+        <!-- Big Q Circle -->
+        <ellipse cx="0" cy="0" rx="140" ry="120" class="set-q" />
+        <text x="0" y="-80" class="math" fill="#ff6464">Q</text>
+        <text x="0" y="-55" fill="#ff6464" font-size="16" text-anchor="middle">(치마폭, 결론 집합)</text>
+
+        <!-- Small P Circle inside Q -->
+        <circle cx="0" cy="30" r="50" class="set-p" />
+        <text x="0" y="30" class="math" fill="#00ffff">P</text>
+    </g>
+
+    <!-- Counterexample alert -->
+    <rect x="200" y="350" width="400" height="70" fill="rgba(255, 255, 0, 0.1)" stroke="#ffff00" stroke-width="2"
+        rx="10" ry="10" />
+    <text x="400" y="380" fill="#ffff00" font-size="20" font-weight="bold" text-anchor="middle">🔥 반례 (Counterexample)
+        란?</text>
+    <text x="400" y="405" fill="#cccc00" font-size="16" text-anchor="middle">p 는 통과했지만 q 밖으로 삐져나온 단 1마리의 흑조!</text>
+
+    <circle cx="680" cy="200" r="12" fill="#ffff00" stroke="#000" stroke-width="2" />
+    <path d="M 680 200 L 730 250" stroke="#ffff00" stroke-width="2" />
+    <text x="730" y="270" fill="#ffff00" font-size="16" font-weight="bold">반례 구역</text>
+
+</svg>

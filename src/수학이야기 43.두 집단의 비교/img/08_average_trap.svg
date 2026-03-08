@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#f08c00" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">숫자에 속지 마라: 평균의 함정 (The Trap of Averages)</text>
+
+    <!-- Y-Axis Manipulation (Scale zooming) -->
+    <g transform="translate(100, 150)">
+        <rect x="-80" y="-80" width="160" height="150" fill="#fff" stroke="#adb5bd" stroke-width="2" rx="5" />
+        <text x="0" y="-55" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">[정상 그래프]</text>
+
+        <!-- Y-Axis (0 to 100) -->
+        <line x1="-50" y1="40" x2="-50" y2="-30" stroke="#868e96" stroke-width="2" />
+        <line x1="-50" y1="40" x2="60" y2="40" stroke="#868e96" stroke-width="2" />
+        <text x="-65" y="45" fill="#868e96" font-size="10">0</text>
+        <text x="-65" y="5" fill="#868e96" font-size="10">50</text>
+        <text x="-70" y="-30" fill="#868e96" font-size="10">100</text>
+
+        <!-- Bars (Tiny difference) -->
+        <rect x="-30" y="-5" width="20" height="45" fill="#339af0" /> <!-- 50 -->
+        <rect x="10" y="-10" width="20" height="50" fill="#e03131" /> <!-- 55 -->
+
+        <text x="-20" y="55" fill="#495057" font-size="10">A사</text>
+        <text x="20" y="55" fill="#495057" font-size="10">B사</text>
+
+        <text x="0" y="80" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">5% 차이 (미미함)</text>
+    </g>
+
+    <!-- Deceptive Graph (Zoomed in Y-axis) -->
+    <g transform="translate(350, 150)">
+        <rect x="-80" y="-80" width="160" height="150" fill="#fff4e6" stroke="#fa5252" stroke-width="2" rx="5" />
+        <text x="0" y="-55" fill="#f03e3e" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">[사기꾼의 그래프]</text>
+
+        <!-- Y-Axis (49 to 56) -->
+        <line x1="-50" y1="40" x2="-50" y2="-30" stroke="#fa5252" stroke-width="2" />
+        <line x1="-50" y1="40" x2="60" y2="40" stroke="#fa5252" stroke-width="2" />
+
+        <!-- Broken Axis Symbol -->
+        <path d="M -60 30 L -40 35 L -60 40 L -40 45" fill="none" stroke="#fa5252" stroke-width="2" />
+
+        <text x="-65" y="45" fill="#f03e3e" font-size="10">49</text>
+        <text x="-65" y="5" fill="#f03e3e" font-size="10">53</text>
+        <text x="-65" y="-30" fill="#f03e3e" font-size="10">56</text>
+
+        <!-- Bars (Looks like a huge difference) -->
+        <rect x="-30" y="30" width="20" height="10" fill="#339af0" /> <!-- 50 (Very short physically on this axis) -->
+        <rect x="10" y="-20" width="20" height="60" fill="#e03131" /> <!-- 55 (Huge bar) -->
+
+        <text x="-20" y="55" fill="#495057" font-size="10">A사</text>
+        <text x="20" y="55" fill="#495057" font-size="10">B사</text>
+
+        <text x="0" y="80" fill="#f03e3e" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">"우리 회사가 6배 압도!"</text>
+    </g>
+
+    <!-- Explanation -->
+    <path d="M 200 110 L 250 110" fill="none" stroke="#fa5252" stroke-width="4" marker-end="url(#arrow-red)" />
+    <text x="225" y="90" fill="#f03e3e" font-size="12" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">Y축 확대!</text>
+
+    <defs>
+        <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fa5252" />
+        </marker>
+    </defs>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">도넛 공장의 비밀: 파푸스-굴딘 정리 (Pappus's Centroid Theorem)</text>
+
+    <!-- 2D Shape (Circle to form a Torus) -->
+    <g transform="translate(150, 150)">
+        <!-- Axis of rotation -->
+        <line x1="-80" y1="60" x2="-80" y2="-100" stroke="#868e96" stroke-width="4" stroke-dasharray="8,4" />
+        <text x="-80" y="80" fill="#868e96" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">회전축</text>
+
+        <!-- Distance R from axis to centroid -->
+        <path d="M -80 0 L 0 0" fill="none" stroke="#2b8a3e" stroke-width="2" marker-start="url(#arrow-green)"
+            marker-end="url(#arrow-green)" />
+        <text x="-40" y="-10" fill="#2b8a3e" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">거리 r</text>
+
+        <!-- 2D Circle (cross section) -->
+        <circle cx="0" cy="0" r="30" fill="#ebfbee" stroke="#40c057" stroke-width="3" />
+        <circle cx="0" cy="0" r="4" fill="#c92a2a" /> <!-- Centroid -->
+        <text x="30" y="30" fill="#40c057" font-size="14" font-family="sans-serif" font-weight="bold">넓이 A</text>
+        <text x="10" y="-10" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold">G</text>
+
+        <!-- Rotation Path of Centroid -->
+        <path d="M 0 -10 Q 40 -80 0 -50" fill="none" stroke="#fa5252" stroke-width="3" stroke-dasharray="4,4" />
+        <text x="80" y="-40" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold">G가 도는
+            궤적(2πr)</text>
+    </g>
+
+    <!-- Formula Panel -->
+    <g transform="translate(350, 80)">
+        <rect x="0" y="0" width="220" height="120" fill="#fff9db" stroke="#fcc419" stroke-width="2" rx="8" />
+        <text x="110" y="30" fill="#d9480f" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">[파푸스의 마법 공식]</text>
+
+        <text x="110" y="60" fill="#495057" font-size="15" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">도넛(회전체)의 부피 =</text>
+
+        <text x="110" y="90" fill="#2b8a3e" font-size="18" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">넓이 A × (2 × π × r)</text>
+        <text x="110" y="110" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">단면 넓이 × 중심이 이동한 거리</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+    </defs>
+</svg>

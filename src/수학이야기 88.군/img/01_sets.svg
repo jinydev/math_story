@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#1864ab" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">첫 번째 구조: '모든 수학의 최하단 블록, 집합(Set)'</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"더 이상 쪼갤 수 없는 우주의 독립된 원소들을 큰 주머니(Set) 에 쓸어
+        담아라!"</text>
+
+    <!-- Left: Elements floating -> Set Box -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">원소의 묶음 창조
+            (Set)</text>
+
+        <!-- Big Set A outline -->
+        <path d="M 40 120 C 30 70, 70 40, 110 40 C 160 40, 190 70, 180 120 C 170 140, 50 140, 40 120 Z" fill="#e7f5ff"
+            stroke="#339af0" stroke-width="2" stroke-dasharray="4,2" />
+        <text x="50" y="60" fill="#1864ab" font-size="16" font-weight="bold">A</text>
+
+        <!-- Elements inside -->
+        <circle cx="80" cy="90" r="15" fill="#fff" stroke="#1864ab" />
+        <text x="80" y="95" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">1</text>
+
+        <circle cx="120" cy="70" r="15" fill="#fff" stroke="#1864ab" />
+        <text x="120" y="75" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">2</text>
+
+        <circle cx="150" cy="100" r="15" fill="#fff" stroke="#1864ab" />
+        <text x="150" y="105" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">3</text>
+
+        <!-- Formal Set definition -->
+        <rect x="15" y="125" width="190" height="18" fill="#d0ebff" rx="3" />
+        <text x="110" y="138" fill="#0b7285" font-size="12" font-weight="bold" font-family="monospace"
+            text-anchor="middle">A = { 1, 2, 3 }</text>
+    </g>
+
+    <!-- Divider Tool (Operation) -->
+    <path d="M 300 110 L 300 230" fill="none" stroke="#adb5bd" stroke-width="2" stroke-dasharray="2,2" />
+
+    <!-- Right: Set Operations (Union / Intersection) -->
+    <g transform="translate(320, 80)">
+        <rect x="0" y="0" width="240" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="120" y="25" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">집합 간의 렌더링 연산</text>
+
+        <!-- Set A and Set B intersection -->
+        <circle cx="90" cy="80" r="35" fill="#e7f5ff" fill-opacity="0.8" stroke="#339af0" />
+        <text x="65" y="65" fill="#1864ab" font-size="12" font-weight="bold">A</text>
+
+        <circle cx="140" cy="80" r="35" fill="#ffe3e3" fill-opacity="0.8" stroke="#fa5252" />
+        <text x="165" y="65" fill="#c92a2a" font-size="12" font-weight="bold">B</text>
+
+        <!-- Intersection highlight -->
+        <path d="M 115 55 A 35 35 0 0 1 115 105 A 35 35 0 0 1 115 55" fill="#ffec99" />
+        <circle cx="115" cy="80" r="2" fill="#212529" />
+        <text x="115" y="70" fill="#d9480f" font-size="10" font-weight="bold" text-anchor="middle">2</text>
+
+        <text x="80" y="90" fill="#1864ab" font-size="10" font-weight="bold" text-anchor="middle">1</text>
+        <text x="150" y="90" fill="#c92a2a" font-size="10" font-weight="bold" text-anchor="middle">4</text>
+
+        <!-- Operation Formula -->
+        <rect x="15" y="125" width="205" height="18" fill="#fff4e6" rx="3" />
+        <text x="115" y="137" fill="#e8590c" font-size="10" font-weight="bold" font-family="monospace"
+            text-anchor="middle">A ∪ B = {1,2,4} / A ∩ B = {2}</text>
+    </g>
+
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350">
+    <rect width="600" height="350" fill="#f1f3f5" rx="10" />
+    <text x="300" y="35" fill="#1864ab" font-size="22" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">타원의 수식 해체도 (Anatomy of an Ellipse)</text>
+
+    <rect x="180" y="55" width="240" height="40" fill="#fff" stroke="#adb5bd" stroke-width="2" rx="5" />
+    <text x="300" y="85" fill="#d9480f" font-size="24" font-family="monospace" font-weight="bold" text-anchor="middle">
+        x²/a² + y²/b² = 1
+    </text>
+
+    <!-- Plot Area -->
+    <line x1="100" y1="230" x2="500" y2="230" stroke="#868e96" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="300" y1="330" x2="300" y2="120" stroke="#868e96" stroke-width="2" marker-end="url(#arrow)" />
+    <text x="510" y="235" fill="#495057" font-weight="bold">X</text>
+    <text x="305" y="115" fill="#495057" font-weight="bold">Y</text>
+
+    <!-- Ellipse -->
+    <ellipse cx="300" cy="230" rx="160" ry="80" fill="#e3fafc" stroke="#0b7285" stroke-width="3" />
+
+    <!-- Radii a, b and focus c -->
+    <line x1="300" y1="230" x2="460" y2="230" stroke="#e03131" stroke-width="3" />
+    <text x="380" y="220" fill="#e03131" font-size="16" font-weight="bold">가로 반지름 'a'</text>
+
+    <line x1="300" y1="230" x2="300" y2="150" stroke="#f59f00" stroke-width="3" />
+    <text x="310" y="190" fill="#d9480f" font-size="16" font-weight="bold">세로 뼈대 'b'</text>
+
+    <circle cx="200" cy="230" r="5" fill="#2b8a3e" />
+    <circle cx="400" cy="230" r="5" fill="#2b8a3e" />
+
+    <line x1="300" y1="230" x2="400" y2="230" stroke="#2b8a3e" stroke-width="3" stroke-dasharray="4,2" />
+    <text x="340" y="250" fill="#2b8a3e" font-size="14" font-weight="bold">초점 거리 'c'</text>
+
+    <rect x="420" y="280" width="150" height="40" fill="#343a40" rx="5" />
+    <text x="495" y="305" fill="#fcc419" font-size="16" font-family="monospace" font-weight="bold"
+        text-anchor="middle">a² - b² = c²</text>
+
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#868e96" />
+        </marker>
+    </defs>
+</svg>

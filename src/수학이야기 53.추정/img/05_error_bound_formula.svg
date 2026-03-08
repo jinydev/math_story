@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#862e9c" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">"딜레마 해결사": 샘플 수(n) 가 깡패다</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"99% 의 신뢰도를 지키면서 그물 크기마저 줄이고 싶다면, 돈을 써서 n
+        개수를 늘려라(√n)!"</text>
+
+    <!-- Formula Highlight Box -->
+    <rect x="180" y="70" width="240" height="80" fill="#f3d9fa" stroke="#ae3ec9" rx="10" />
+    <text x="300" y="90" fill="#862e9c" font-size="14" font-weight="bold" text-anchor="middle">신뢰구간 오차 한계 (E)</text>
+    <text x="300" y="125" fill="#ae3ec9" font-size="24" font-weight="bold" font-family="monospace"
+        text-anchor="middle">Z × (σ / √n)</text>
+    <line x1="330" y1="130" x2="380" y2="130" stroke="#ae3ec9" stroke-width="2" />
+
+    <!-- Z parameter meaning -->
+    <rect x="50" y="95" width="100" height="40" fill="#fff" stroke="#adb5bd" rx="5" />
+    <text x="100" y="110" fill="#d9480f" font-size="10" font-weight="bold" text-anchor="middle">신뢰도 센서 (Z)</text>
+    <text x="100" y="125" fill="#495057" font-size="10" text-anchor="middle">95% (1.96), 99% (2.58)</text>
+    <path d="M 150 115 L 220 115" stroke="#adb5bd" stroke-width="2" stroke-dasharray="2,2"
+        marker-end="url(#arrow-gray)" />
+    <text x="185" y="110" fill="#d9480f" font-size="10" font-weight="bold" text-anchor="middle">비례 (커짐)</text>
+
+    <!-- n parameter meaning -->
+    <rect x="450" y="95" width="120" height="40" fill="#fff" stroke="#adb5bd" rx="5" />
+    <text x="510" y="110" fill="#1864ab" font-size="10" font-weight="bold" text-anchor="middle">조사 샘플 크기 (√n)</text>
+    <text x="510" y="125" fill="#495057" font-size="10" text-anchor="middle">설문조사 응답자 수</text>
+    <path d="M 450 128 L 390 128" stroke="#adb5bd" stroke-width="2" stroke-dasharray="2,2"
+        marker-end="url(#arrow-gray)" />
+    <text x="420" y="145" fill="#1864ab" font-size="10" font-weight="bold" text-anchor="middle">반비례 (상쇄)</text>
+
+    <!-- Dilemma Explanation -->
+    <rect x="30" y="170" width="540" height="50" fill="#e7f5ff" rx="5" />
+    <text x="300" y="190" fill="#0b7285" font-size="12" font-weight="bold" text-anchor="middle">"신뢰도를 99% 로 올리면(Z 증가)
+        그물망(E) 이 커져서 쓸데없는 정보가 된다."</text>
+    <text x="300" y="210" fill="#c92a2a" font-size="12" font-weight="bold" text-anchor="middle">"유일한 파훼법: 분모인 루트 n(√n) 에
+        돈과 시간을 막대하게 때려 부어 에러율(E)을 낮춰라!"</text>
+
+    <defs>
+        <marker id="arrow-gray" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

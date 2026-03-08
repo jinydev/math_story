@@ -1,62 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#212529" rx="10" />
+
+  <text x="300" y="40" fill="#69db7c" font-size="22" font-family="sans-serif" font-weight="bold"
+    text-anchor="middle">이차방정식 x² = 5 의 무리수 근(해)</text>
+
+  <!-- Axes -->
+  <line x1="50" y1="300" x2="550" y2="300" stroke="#495057" stroke-width="2" marker-end="url(#arrow-gray)" />
+  <text x="560" y="305" fill="#adb5bd" font-size="16" font-family="monospace" font-weight="bold">x</text>
+
+  <line x1="300" y1="350" x2="300" y2="50" stroke="#495057" stroke-width="2" marker-end="url(#arrow-gray)" />
+  <text x="300" y="35" fill="#adb5bd" font-size="16" font-family="monospace" font-weight="bold"
+    text-anchor="middle">y</text>
+
+  <!-- Graph y = x^2 -->
+  <!-- vertex at (300, 300), scale x by 40, scale y by 20. -->
+  <path d="M 120 70 Q 300 370 480 70" fill="none" stroke="#22b8cf" stroke-width="3" />
+  <text x="440" y="100" fill="#3bc9db" font-size="16" font-weight="bold" font-family="monospace">y = x²</text>
+
+  <!-- Line y = 5 -->
+  <line x1="100" y1="120" x2="500" y2="120" stroke="#e03131" stroke-width="3" stroke-dasharray="8,4" />
+  <text x="520" y="125" fill="#fa5252" font-size="16" font-weight="bold" font-family="monospace">y = 5</text>
+
+  <!-- Intersection points -->
+  <!-- roots are at y=120, x offset = sqrt(180/scale) approx 100 pixels -->
+  <circle cx="200" cy="120" r="6" fill="#fcc419" />
+  <line x1="200" y1="120" x2="200" y2="300" stroke="#fcc419" stroke-width="2" stroke-dasharray="4,2" />
+  <text x="200" y="330" fill="#ffd43b" font-size="18" font-family="monospace" font-weight="bold"
+    text-anchor="middle">-√5</text>
+  <rect x="160" y="340" width="80" height="25" fill="#343a40" rx="4" />
+  <text x="200" y="358" fill="#ffc9c9" font-size="14" font-family="monospace" font-weight="bold"
+    text-anchor="middle">-2.236...</text>
+
+  <circle cx="400" cy="120" r="6" fill="#fcc419" />
+  <line x1="400" y1="120" x2="400" y2="300" stroke="#fcc419" stroke-width="2" stroke-dasharray="4,2" />
+  <text x="400" y="330" fill="#ffd43b" font-size="18" font-family="monospace" font-weight="bold"
+    text-anchor="middle">+√5</text>
+  <rect x="360" y="340" width="80" height="25" fill="#343a40" rx="4" />
+  <text x="400" y="358" fill="#ffc9c9" font-size="14" font-family="monospace" font-weight="bold"
+    text-anchor="middle">+2.236...</text>
+
+  <!-- Text Box -->
+  <rect x="150" y="70" width="300" height="30" fill="#2b2b2b" stroke="#69db7c" stroke-width="2" rx="5" />
+  <text x="300" y="90" fill="#40c057" font-size="14" font-weight="bold" text-anchor="middle">제곱을 벗기면 반드시 좌우(±) 두 개의 세상이
+    연린다</text>
+
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1A202C" />
-      <stop offset="100%" stop-color="#2D3748" />
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+      orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#495057" />
+    </marker>
   </defs>
-
-  <rect width="800" height="400" fill="url(#bgGrad)" rx="15" />
-
-  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">이차방정식과 두 개의 무리수 해 (Roots)</text>
-  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">$x^2 = k$ : 제곱이라는 방을 탈출하려면 항상 2개의 열쇠(+, -)가 필요함</text>
-
-  <!-- Central Equation Graphic -->
-  <g transform="translate(400, 160)">
-    
-    <!-- Central X squared box -->
-    <rect x="-80" y="-40" width="160" height="80" fill="#2D3748" stroke="#E2E8F0" stroke-width="2" rx="10"/>
-    <text x="0" y="10" font-family="'Inter', sans-serif" font-size="40" font-weight="bold" fill="#E2E8F0" text-anchor="middle">$x^2 = 5$</text>
-
-    <!-- Arrow up/right to positive root -->
-    <path d="M 60 -40 Q 150 -100 200 -70" fill="none" stroke="#4FD1C5" stroke-width="4" stroke-dasharray="6,4" marker-end="url(#arrow_right)"/>
-    
-    <!-- Positive Result -->
-    <rect x="200" y="-100" width="100" height="60" fill="#2D3748" stroke="#4FD1C5" stroke-width="2" rx="8"/>
-    <text x="250" y="-60" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#4FD1C5" text-anchor="middle">$\sqrt{5}$</text>
-    <text x="250" y="-30" font-family="'Inter', sans-serif" font-size="14" font-weight="bold" fill="#4FD1C5" text-anchor="middle">양의 제곱근</text>
-
-    <!-- Arrow down/right to negative root -->
-    <path d="M 60 40 Q 150 100 200 70" fill="none" stroke="#FC8181" stroke-width="4" stroke-dasharray="6,4" marker-end="url(#arrow_right)"/>
-    
-    <!-- Negative Result -->
-    <rect x="200" y="40" width="100" height="60" fill="#2D3748" stroke="#FC8181" stroke-width="2" rx="8"/>
-    <text x="250" y="80" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#FC8181" text-anchor="middle">$-\sqrt{5}$</text>
-    <text x="250" y="110" font-family="'Inter', sans-serif" font-size="14" font-weight="bold" fill="#FC8181" text-anchor="middle">음의 제곱근</text>
-
-    <!-- Parabola visualization on left -->
-    <path d="M -300 -100 Q -200 100 -100 -100" fill="none" stroke="#9F7AEA" stroke-width="3"/>
-    <!-- Axes -->
-    <line x1="-320" y1="0" x2="-80" y2="0" stroke="#718096" stroke-width="2"/>
-    <line x1="-200" y1="-120" x2="-200" y2="40" stroke="#718096" stroke-width="2"/>
-    
-    <!-- Intersections corresponding to roots -->
-    <!-- Line y = 5 -->
-    <line x1="-320" y1="-60" x2="-80" y2="-60" stroke="#ECC94B" stroke-width="2" stroke-dasharray="4,4"/>
-    <text x="-310" y="-70" font-family="'Inter', sans-serif" font-size="14" fill="#ECC94B">y = 5 (목표 높이)</text>
-    
-    <!-- Intersection points -->
-    <circle cx="-275" cy="-60" r="5" fill="#FC8181" filter="url(#glow)"/>
-    <circle cx="-125" cy="-60" r="5" fill="#4FD1C5" filter="url(#glow)"/>
-    
-    <text x="-275" y="-40" font-family="'Inter', sans-serif" font-size="14" fill="#FC8181" text-anchor="middle">$-\sqrt{5}$</text>
-    <text x="-125" y="-40" font-family="'Inter', sans-serif" font-size="14" fill="#4FD1C5" text-anchor="middle">$+\sqrt{5}$</text>
-  </g>
 </svg>

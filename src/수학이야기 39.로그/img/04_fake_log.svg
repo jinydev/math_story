@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#fff5f5" rx="10" />
+
+    <text x="300" y="30" fill="#e03131" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">가짜 로그를 걸러내는 엄격한 규칙: 밑과 진수의 조건</text>
+
+    <!-- Base Condition -->
+    <g transform="translate(150, 100)">
+        <rect x="-100" y="-30" width="200" height="120" fill="#ffe3e3" stroke="#ff8787" stroke-width="2" rx="8" />
+        <text x="0" y="0" fill="#c92a2a" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">밑 (Base) 의 자격</text>
+
+        <text x="-60" y="30" fill="#e03131" font-size="20" font-family="monospace" font-weight="bold">a &gt; 0</text>
+        <text x="-60" y="55" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold">(양수여야 해!)</text>
+
+        <text x="60" y="30" fill="#e03131" font-size="20" font-family="monospace" font-weight="bold">a ≠ 1</text>
+        <text x="60" y="55" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold">(1은 절대 안돼!)</text>
+
+        <!-- X mark for negative / 1 -->
+        <text x="0" y="75" fill="#c92a2a" font-size="30" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">✖</text>
+    </g>
+
+    <!-- Argument Condition -->
+    <g transform="translate(450, 100)">
+        <rect x="-100" y="-30" width="200" height="120" fill="#e3fafc" stroke="#66d9e8" stroke-width="2" rx="8" />
+        <text x="0" y="0" fill="#0b7285" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">진수 (Argument) 의 자격</text>
+
+        <text x="0" y="40" fill="#0c8599" font-size="24" font-family="monospace" font-weight="bold"
+            text-anchor="middle">N &gt; 0</text>
+        <text x="0" y="70" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">무조건 무조건 0보다 크다!</text>
+    </g>
+
+    <g transform="translate(300, 160)">
+        <text x="0" y="70" fill="#868e96" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">이 보안 검색대를 통과해야 '진짜' 로그가 성립된다.</text>
+    </g>
+</svg>

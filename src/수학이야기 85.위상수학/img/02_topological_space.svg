@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#0b7285" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">두 번째 공간: '위상공간 (Topological Space)'</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"거리가 사라진 우주에서, 나와 가장 '친밀하게 이웃해 있는 녀석(열린 집합)'
+        의 구조를 짠다"</text>
+
+    <!-- Left: Metric Space (Distance) -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">거리 공간 (Metric
+            Space)</text>
+
+        <!-- Coordinate system -->
+        <line x1="30" y1="120" x2="190" y2="120" stroke="#ced4da" stroke-width="1" />
+        <line x1="40" y1="130" x2="40" y2="40" stroke="#ced4da" stroke-width="1" />
+
+        <!-- Points and Distance -->
+        <circle cx="80" cy="90" r="5" fill="#1864ab" />
+        <text x="70" y="80" fill="#1864ab" font-size="12" font-weight="bold">A</text>
+
+        <circle cx="150" cy="50" r="5" fill="#e8590c" />
+        <text x="140" y="40" fill="#e8590c" font-size="12" font-weight="bold">B</text>
+
+        <!-- Distance measurement -->
+        <line x1="80" y1="90" x2="150" y2="50" stroke="#868e96" stroke-width="2" stroke-dasharray="4,2" />
+        <text x="125" y="85" fill="#212529" font-size="11" font-weight="bold" transform="rotate(-30 115 70)">d(A,B) =
+            3.5m</text>
+
+        <!-- Rule -->
+        <rect x="15" y="125" width="190" height="15" fill="#f1f3f5" />
+        <text x="110" y="136" fill="#495057" font-size="10" font-weight="bold" text-anchor="middle">기준: "누가 몇 미터 더
+            가까운가?"</text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="300" y1="80" x2="300" y2="230" stroke="#adb5bd" stroke-dasharray="4,4" />
+
+    <!-- Right: Topological Space (Neighborhoods) -->
+    <g transform="translate(320, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#00a8cc" stroke-width="1.5" rx="5" />
+        <text x="110" y="25" fill="#0b7285" font-size="14" font-weight="bold" text-anchor="middle">위상 공간 (Topological
+            Space)</text>
+
+        <!-- Abstract blobs / Open Sets -->
+        <!-- Large Blob U -->
+        <path d="M 50 110 C 20 50, 100 30, 140 50 C 180 70, 200 120, 140 130 C 90 140, 70 140, 50 110 Z" fill="#e3fafc"
+            stroke="#00a8cc" stroke-width="1" stroke-dasharray="2,2" />
+        <text x="175" y="75" fill="#00a8cc" font-size="10" font-weight="bold">열린 집합 U</text>
+
+        <!-- Small Blob V -->
+        <path d="M 120 100 C 100 80, 140 60, 160 80 C 170 100, 140 120, 120 100 Z" fill="#b2f2bb" stroke="#2b8a3e"
+            stroke-width="1" stroke-dasharray="2,2" opacity="0.6" />
+        <text x="150" y="90" fill="#2b8a3e" font-size="10" font-weight="bold">V</text>
+
+        <!-- Points without coordinates -->
+        <circle cx="80" cy="90" r="5" fill="#1864ab" />
+        <text x="70" y="80" fill="#1864ab" font-size="12" font-weight="bold">A</text>
+
+        <circle cx="130" cy="85" r="5" fill="#e8590c" />
+        <text x="120" y="75" fill="#e8590c" font-size="12" font-weight="bold">B</text>
+
+        <!-- Rule -->
+        <rect x="15" y="125" width="190" height="15" fill="#e3fafc" />
+        <text x="110" y="136" fill="#0b7285" font-size="9" font-weight="bold" text-anchor="middle">기준: "A와 B가 같은 이웃
+            주머니(U)에 들어있는가?"</text>
+    </g>
+
+</svg>

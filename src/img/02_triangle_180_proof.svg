@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .triangle {
+                fill: rgba(0, 255, 255, 0.1);
+                stroke: #00ffff;
+                stroke-width: 4;
+            }
+
+            .parallel {
+                stroke: #ffff00;
+                stroke-width: 3;
+                stroke-dasharray: 10, 10;
+            }
+
+            .angle-a {
+                fill: rgba(255, 100, 100, 0.5);
+                stroke: #ff6464;
+                stroke-width: 2;
+            }
+
+            .angle-b {
+                fill: rgba(100, 255, 100, 0.5);
+                stroke: #64ff64;
+                stroke-width: 2;
+            }
+
+            .angle-c {
+                fill: rgba(100, 100, 255, 0.5);
+                stroke: #6464ff;
+                stroke-width: 2;
+            }
+
+            .arc-path {
+                animation: draw-arc 2s ease-in-out forwards;
+                stroke-dasharray: 200;
+                stroke-dashoffset: 200;
+            }
+
+            @keyframes draw-arc {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+
+            .st-line {
+                stroke: #ffffff;
+                stroke-width: 6;
+                stroke-linecap: round;
+                filter: drop-shadow(0 0 10px #ffffff);
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#0d1117" />
+
+    <text x="400" y="50" fill="#00ffff" font-size="28" text-anchor="middle">삼각형 내각의 합 증명 (180° 평각)</text>
+    <text x="400" y="80" fill="#a0a0a0" font-size="16" text-anchor="middle">평행선의 동위각과 엇각을 이용한 완벽한 180도 직선 변환</text>
+
+    <g transform="translate(0, 50)">
+        <!-- Base Line (parallel 1) -->
+        <line x1="100" y1="250" x2="700" y2="250" class="parallel" />
+
+        <!-- Top Line (parallel 2) -->
+        <line x1="100" y1="50" x2="700" y2="50" class="parallel" />
+
+        <!-- Left Transversal -->
+        <line x1="200" y1="300" x2="450" y2="0" stroke="#444" stroke-width="2" />
+
+        <!-- Right Transversal -->
+        <line x1="600" y1="300" x2="350" y2="0" stroke="#444" stroke-width="2" />
+
+        <!-- Triangle -->
+        <polygon points="400,50 242,250 517,250" class="triangle" />
+
+        <!-- Bottom Angles -->
+        <!-- Angle B (Left) -->
+        <path d="M 292 250 A 50 50 0 0 0 272 212" class="angle-b arc-path" />
+        <text x="290" y="240" fill="#64ff64" font-size="24">B</text>
+
+        <!-- Angle C (Right) -->
+        <path d="M 467 250 A 50 50 0 0 1 487 212" class="angle-c arc-path" />
+        <text x="460" y="240" fill="#6464ff" font-size="24">C</text>
+
+        <!-- Top Angle (Inside Triangle) -->
+        <!-- Angle A -->
+        <path d="M 368 90 A 50 50 0 0 0 432 90" class="angle-a arc-path" />
+        <text x="390" y="110" fill="#ff6464" font-size="24">A</text>
+
+        <!-- Alternating Angles on Top Line -->
+        <!-- Alternate B -->
+        <path d="M 350 50 A 50 50 0 0 0 368 90" class="angle-b arc-path" />
+        <text x="330" y="85" fill="#64ff64" font-size="24">B</text>
+        <polyline points="330 30 310 90 280 230" fill="none" stroke="#64ff64" stroke-width="2" stroke-dasharray="5,5" />
+
+        <!-- Alternate C -->
+        <path d="M 432 90 A 50 50 0 0 0 450 50" class="angle-c arc-path" />
+        <text x="450" y="85" fill="#6464ff" font-size="24">C</text>
+
+        <!-- 180 Degree Arch at Top -->
+        <path d="M 350 50 A 50 50 0 0 1 450 50" fill="none" class="st-line" />
+        <text x="400" y="30" fill="#ffffff" font-size="20" text-anchor="middle">A + B + C = 180°</text>
+
+    </g>
+</svg>

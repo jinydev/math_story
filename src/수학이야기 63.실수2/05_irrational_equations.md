@@ -26,6 +26,8 @@ $$
   <img src="./img/05_irrational_equations.svg" alt="x^2=5 방정식에서 포물선 그래프와 교차하는 루트 5와 마이너스 루트 5의 위치를 시각화한 대수 기하학적 SVG" width="800" />
 </div>
 
+![루트 감옥 탈출 사이버 해커](./img/05_square_root_prison_python.png)
+
 ## 2. 응용: 완전제곱식 감옥 탈출
 
 만약 $x$가 아니라 덩어리에 제곱이 씌워져 있다면 어떨까요?

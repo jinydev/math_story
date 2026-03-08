@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .face {
+                fill: rgba(0, 255, 255, 0.15);
+                stroke: #00ffff;
+                stroke-width: 2;
+            }
+
+            .face-active {
+                fill: rgba(255, 100, 100, 0.6);
+                stroke: #ff6464;
+                stroke-width: 3;
+            }
+
+            .label {
+                fill: #ffffff;
+                font-size: 18px;
+                text-anchor: middle;
+                alignment-baseline: middle;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 24px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .arrow {
+                fill: none;
+                stroke: #8b949e;
+                stroke-width: 3;
+                stroke-dasharray: 6, 4;
+                marker-end: url(#arrowhead);
+            }
+        </style>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#8b949e" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="400" y="40" class="title">3차원 정육면체의 2차원 평면 전개도 (Net)</text>
+    <text x="400" y="65" class="desc">3D 공간의 폴리곤 뼈대를 칼로 자르면 2D 배열 형태의 좌표로 펼쳐진다</text>
+
+    <!-- Left: 3D Cube Isometric -->
+    <g transform="translate(180, 240)">
+        <!-- Back faces hidden -->
+        <path d="M-50 -50 L0 -80 L50 -50 L0 -20 Z" class="face" />
+        <path d="M-50 -50 L-50 20 L0 50 L0 -20 Z" class="face" />
+        <path d="M0 -20 L50 -50 L50 20 L0 50 Z" class="face" />
+
+        <!-- Front faces visible -->
+        <!-- Top -->
+        <polygon points="-50,-50 0,-80 50,-50 0,-20" fill="rgba(0,255,255,0.4)" stroke="#00ffff" stroke-width="2" />
+        <text x="0" y="-55" class="label" fill="#fff" font-size="14" transform="skewX(30) skewY(-20)">Top</text>
+
+        <!-- Left Front -->
+        <polygon points="-50,-50 0,-20 0,50 -50,20" fill="rgba(255,255,0,0.4)" stroke="#00ffff" stroke-width="2" />
+        <text x="-25" y="15" class="label" fill="#fff" font-size="14" transform="skewY(30)">Left</text>
+
+        <!-- Right Front -->
+        <polygon points="0,-20 50,-50 50,20 0,50" fill="rgba(255,100,100,0.6)" stroke="#00ffff" stroke-width="2" />
+        <text x="25" y="15" class="label" fill="#fff" font-size="14" transform="skewY(-30)">Front</text>
+
+        <!-- Cut lines represented -->
+        <path d="M0 -80 L50 -50 M50 -50 L50 20 M-50 -50 L-50 20" stroke="#ff0000" stroke-width="4"
+            stroke-dasharray="8,4" />
+        <text x="0" y="90" fill="#fff" font-size="16" text-anchor="middle">3D 공간 구조체</text>
+    </g>
+
+    <!-- Middle: Arrow -->
+    <path d="M 300 220 L 410 220" class="arrow" />
+    <text x="355" y="200" fill="#8b949e" font-size="14" text-anchor="middle">오려서 쫙 펴기</text>
+
+    <!-- Right: 2D Unfolded Net -->
+    <g transform="translate(580, 220)">
+        <!-- 11 kinds, this is the classic cross -->
+        <rect x="-40" y="-120" width="80" height="80" class="face" />
+        <text x="0" y="-80" class="label">Top</text>
+
+        <rect x="-120" y="-40" width="80" height="80" class="face" />
+        <rect x="-120" y="-40" width="80" height="80" fill="rgba(255,255,0,0.2)" />
+        <text x="-80" y="0" class="label">Left</text>
+
+        <rect x="-40" y="-40" width="80" height="80" class="face-active" />
+        <text x="0" y="0" class="label">Front</text>
+
+        <rect x="40" y="-40" width="80" height="80" class="face" />
+        <text x="80" y="0" class="label">Right</text>
+
+        <rect x="120" y="-40" width="80" height="80" class="face" />
+        <text x="160" y="0" class="label">Back</text>
+
+        <rect x="-40" y="40" width="80" height="80" class="face" />
+        <text x="0" y="80" class="label">Bottom</text>
+
+        <!-- Grid lines around it to show array mapping -->
+        <rect x="-140" y="-140" width="360" height="280" fill="none" stroke="#30363d" stroke-dasharray="4,4" />
+        <text x="0" y="170" fill="#fff" font-size="16" text-anchor="middle">2D 십자가 전개도 (행렬 배열 매핑)</text>
+    </g>
+
+</svg>

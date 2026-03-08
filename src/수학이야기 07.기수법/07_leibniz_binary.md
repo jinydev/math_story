@@ -47,6 +47,10 @@ if engine_switch_1 or engine_switch_2:
     print("💡 강제 시동 (1 OR 0): 1의 불빛 생존으로 비상 대피소 전원 ON!")
 ```
 
+<div align="center">
+  <img src="./img/07_boolean_logic_gates.svg" alt="AND, OR 부울 논리 게이트 SVG 시각화: 1(True/ON)과 0(False/OFF)의 전기 스위치 신호 조작으로 구성되는 파이썬 소프트웨어 조건문의 물리적 하드웨어 원리" width="800" />
+</div>
+
 놀랍게도 인간의 if-else 사고방식 뒤에는 라이프니츠의 동양 진흙 판에서 본 0과 1의 주역 점괘 패턴들이 AND 회로망 수갑과 OR 회로 배리어스위치로 무한 루프를 돌고 있었습니다! 
 
 ## 3. Module 07 최종 정리

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#e3fafc" rx="10" />
+
+    <text x="300" y="40" fill="#0b7285" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">등비수열 (Geometric Sequence) : 폭발적으로 증가하는 마법</text>
+
+    <g transform="translate(50, 100)">
+        <!-- Circles growing in size visually representing geometric growth -->
+
+        <circle cx="30" cy="50" r="15" fill="#3bc9db" />
+        <text x="30" y="55" fill="#fff" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">2</text>
+        <text x="30" y="80" fill="#0b7285" font-size="14" font-family="sans-serif" text-anchor="middle">a1</text>
+
+        <circle cx="120" cy="50" r="23" fill="#22b8cf" />
+        <text x="120" y="56" fill="#fff" font-size="18" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">6</text>
+        <text x="120" y="90" fill="#0b7285" font-size="14" font-family="sans-serif" text-anchor="middle">a2</text>
+
+        <circle cx="230" cy="50" r="32" fill="#15aabf" />
+        <text x="230" y="58" fill="#fff" font-size="22" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">18</text>
+        <text x="230" y="100" fill="#0b7285" font-size="14" font-family="sans-serif" text-anchor="middle">a3</text>
+
+        <circle cx="360" cy="50" r="45" fill="#1098ad" />
+        <text x="360" y="60" fill="#fff" font-size="28" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">54</text>
+        <text x="360" y="115" fill="#0b7285" font-size="14" font-family="sans-serif" text-anchor="middle">a4</text>
+
+        <circle cx="510" cy="50" r="60" fill="#0c8599" />
+        <text x="510" y="62" fill="#fff" font-size="34" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">162</text>
+        <text x="510" y="130" fill="#0b7285" font-size="14" font-family="sans-serif" text-anchor="middle">a5</text>
+
+    </g>
+
+    <!-- Add lines and 공차 -->
+    <g fill="none" stroke="#e8590c" stroke-width="3" stroke-linecap="round">
+        <path d="M 100 120 Q 125 70 150 120" marker-end="url(#arrow-orange)" />
+        <path d="M 200 120 Q 240 60 280 120" marker-end="url(#arrow-orange)" />
+        <path d="M 330 120 Q 380 40 430 120" marker-end="url(#arrow-orange)" />
+    </g>
+
+    <g fill="#e8590c" font-size="18" font-family="sans-serif" font-weight="bold" text-anchor="middle">
+        <text x="125" y="65">x 3</text>
+        <text x="240" y="55">x 3</text>
+        <text x="380" y="30">x 3</text>
+    </g>
+
+    <rect x="20" y="200" width="180" height="40" fill="#e8590c" rx="5" />
+    <text x="110" y="226" fill="white" font-size="18" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">an = 2 * 3^(n-1)</text>
+
+    <defs>
+        <marker id="arrow-orange" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#e8590c" />
+        </marker>
+    </defs>
+
+</svg>

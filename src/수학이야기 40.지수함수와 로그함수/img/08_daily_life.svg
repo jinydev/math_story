@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">보이지 않는 일상의 지배자: 현실 세계의 지수와 로그 (Daily Life)</text>
+
+    <!-- Sound Decibel -->
+    <g transform="translate(100, 150)">
+        <rect x="-80" y="-80" width="160" height="120" fill="#ebfbee" stroke="#40c057" stroke-width="2" rx="8" />
+        <text x="0" y="-50" fill="#2b8a3e" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">데시벨 (소리)</text>
+
+        <text x="-40" y="-20" fill="#e03131" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">+10 dB</text>
+        <path d="M 0 -25 L 30 -25" fill="none" stroke="#adb5bd" stroke-width="2" marker-end="url(#arrow-grey)" />
+        <text x="0" y="5" fill="#c92a2a" font-size="18" font-family="monospace" font-weight="bold"
+            text-anchor="middle">10배 증폭!</text>
+
+        <text x="0" y="30" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">로그 스케일의 마술사</text>
+    </g>
+
+    <!-- Earthquake Richter -->
+    <g transform="translate(300, 150)">
+        <rect x="-80" y="-80" width="160" height="120" fill="#fff4e6" stroke="#f59f00" stroke-width="2" rx="8" />
+        <text x="0" y="-50" fill="#d9480f" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">리히터 규모 (지진)</text>
+
+        <text x="-40" y="-20" fill="#e03131" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">+1.0</text>
+        <path d="M 0 -25 L 30 -25" fill="none" stroke="#adb5bd" stroke-width="2" marker-end="url(#arrow-grey)" />
+        <text x="0" y="5" fill="#d9480f" font-size="18" font-family="monospace" font-weight="bold"
+            text-anchor="middle">31.6배 파괴력!</text>
+
+        <text x="0" y="30" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">에너지의 지수 폭발</text>
+    </g>
+
+    <!-- pH Acidity -->
+    <g transform="translate(500, 150)">
+        <rect x="-80" y="-80" width="160" height="120" fill="#e3fafc" stroke="#0c8599" stroke-width="2" rx="8" />
+        <text x="0" y="-50" fill="#0b7285" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">pH 농도 (산성도)</text>
+
+        <text x="-40" y="-20" fill="#1864ab" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">-1 pH</text>
+        <path d="M 0 -25 L 30 -25" fill="none" stroke="#adb5bd" stroke-width="2" marker-end="url(#arrow-grey)" />
+        <text x="0" y="5" fill="#0b7285" font-size="18" font-family="monospace" font-weight="bold"
+            text-anchor="middle">10배 더 시다!</text>
+
+        <text x="0" y="30" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">수소 이온의 마이너스 로그</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-grey" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

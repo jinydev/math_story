@@ -9,6 +9,10 @@
 
 ## 1. 징그러운 $4$차식의 연막
 
+![복이차식 연쇄 폭발](./img/03_biquadratic_unmasking.svg)
+
+![이중 폭탄 해체](./img/03_double_bomb_python.png)
+
 수식: $x^4 - 13x^2 + 36$
 
 어, 1강에서 배운 **치환(Substitution)** 스킬이 찌릿하고 떠오르지 않습니까?

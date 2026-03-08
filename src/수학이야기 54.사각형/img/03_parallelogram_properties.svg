@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#1864ab" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">평행사변형 (Parallelogram) 의 5대 마법 스킬</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"두 쌍의 대변이 평행하다는 1가지 계약만 맺으면, 무려 4개의 추가 스킬이
+        자동 해금된다!"</text>
+
+    <!-- Parallelogram Base -->
+    <g transform="translate(100, 80)">
+        <!-- Main Shape -->
+        <path d="M 60 20 L 260 20 L 200 120 L 0 120 Z" fill="#e7f5ff" stroke="#1864ab" stroke-width="3" />
+
+        <!-- Skill 1: Two pairs of parallel lines -->
+        <path d="M 150 15 L 160 20 L 150 25" fill="none" stroke="#fa5252" stroke-width="2" />
+        <path d="M 90 115 L 100 120 L 90 125" fill="none" stroke="#fa5252" stroke-width="2" />
+
+        <path d="M 25 65 L 35 70 L 25 75" fill="none" stroke="#fa5252" stroke-width="2" />
+        <path d="M 20 70 L 30 75 L 20 80" fill="none" stroke="#fa5252" stroke-width="2" />
+
+        <path d="M 225 65 L 235 70 L 225 75" fill="none" stroke="#fa5252" stroke-width="2" />
+        <path d="M 220 70 L 230 75 L 220 80" fill="none" stroke="#fa5252" stroke-width="2" />
+
+        <!-- Skill 2: Opposite sides equal -->
+        <line x1="160" y1="10" x2="160" y2="30" stroke="#1864ab" stroke-width="2" />
+        <line x1="100" y1="110" x2="100" y2="130" stroke="#1864ab" stroke-width="2" />
+
+        <line x1="25" y1="65" x2="35" y2="75" stroke="#1864ab" stroke-width="2" />
+        <line x1="20" y1="65" x2="30" y2="75" stroke="#1864ab" stroke-width="2" />
+        <line x1="225" y1="65" x2="235" y2="75" stroke="#1864ab" stroke-width="2" />
+        <line x1="220" y1="65" x2="230" y2="75" stroke="#1864ab" stroke-width="2" />
+
+        <!-- Skill 3: Opposite angles equal -->
+        <path d="M 80 20 A 20 20 0 0 0 50 35" fill="none" stroke="#2b8a3e" stroke-width="2" />
+        <path d="M 180 120 A 20 20 0 0 0 210 105" fill="none" stroke="#2b8a3e" stroke-width="2" />
+        <text x="75" y="45" fill="#2b8a3e" font-size="12" font-weight="bold">θ₁</text>
+        <text x="185" y="105" fill="#2b8a3e" font-size="12" font-weight="bold">θ₁</text>
+
+        <path d="M 20 120 A 20 20 0 0 1 10 105" fill="none" stroke="#f59f00" stroke-width="2" />
+        <path d="M 240 20 A 20 20 0 0 1 250 35" fill="none" stroke="#f59f00" stroke-width="2" />
+        <text x="25" y="105" fill="#d9480f" font-size="12" font-weight="bold">θ₂</text>
+        <text x="235" y="45" fill="#d9480f" font-size="12" font-weight="bold">θ₂</text>
+
+        <!-- Skill 4: Consecutive angles add to 180 -->
+        <text x="130" y="150" fill="#e8590c" font-size="12" font-weight="bold" text-anchor="middle">θ₁ + θ₂ =
+            180°</text>
+
+        <!-- Skill 5: Diagonals bisect each other -->
+        <line x1="60" y1="20" x2="200" y2="120" stroke="#862e9c" stroke-width="1.5" stroke-dasharray="3,3" />
+        <line x1="0" y1="120" x2="260" y2="20" stroke="#862e9c" stroke-width="1.5" stroke-dasharray="3,3" />
+        <circle cx="130" cy="70" r="4" fill="#ae3ec9" />
+
+        <text x="130" y="60" fill="#862e9c" font-size="10" font-weight="bold" text-anchor="middle">대각선 이등분</text>
+    </g>
+
+    <!-- Skill Tree List -->
+    <g transform="translate(380, 80)">
+        <rect x="0" y="0" width="180" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="90" y="25" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">패시브 스킬 5종</text>
+
+        <text x="10" y="50" fill="#c92a2a" font-size="11" font-weight="bold">1. 두 쌍 대변 평행 (Core)</text>
+        <text x="10" y="70" fill="#1864ab" font-size="11" font-weight="bold">2. 두 쌍 대변 길이 동일</text>
+        <text x="10" y="90" fill="#0ca678" font-size="11" font-weight="bold">3. 두 쌍 마주보는 각 동일</text>
+        <text x="10" y="110" fill="#d9480f" font-size="11" font-weight="bold">4. 이웃 각 합치면 180도</text>
+        <text x="10" y="130" fill="#862e9c" font-size="11" font-weight="bold">5. 대각선이 서로를 반토막</text>
+    </g>
+
+</svg>

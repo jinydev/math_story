@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350">
+    <rect width="700" height="350" fill="#f8f9fa" rx="15" />
+
+    <text x="350" y="40" fill="#495057" font-size="22" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">스칼라 곱셈: 벡터 엔진 부스터 &amp; 백기어 렌더링</text>
+
+    <!-- Title / Base section -->
+    <rect x="50" y="70" width="180" height="80" fill="#fff" stroke="#adb5bd" stroke-width="2" rx="8" />
+    <text x="140" y="100" fill="#868e96" font-size="16" font-weight="bold" text-anchor="middle">원본 노말 엔진 (k=1)</text>
+
+    <!-- Original Vector v -->
+    <line x1="80" y1="130" x2="200" y2="130" stroke="#1c7ed6" stroke-width="5" marker-end="url(#arrow-blue)" />
+    <text x="140" y="120" fill="#1864ab" font-size="20" font-family="monospace" font-weight="bold"
+        text-anchor="middle">v</text>
+
+    <!-- Scenario 1: k > 1 (Expansion) -->
+    <rect x="250" y="70" width="400" height="80" fill="#fff9db" stroke="#fcc419" stroke-width="3" rx="8" />
+    <text x="450" y="100" fill="#f08c00" font-size="16" font-weight="bold" text-anchor="middle">엔진 스칼라 부스트 (k=3)</text>
+
+    <!-- Vector 3v -->
+    <line x1="280" y1="130" x2="640" y2="130" stroke="#fcc419" stroke-width="8" marker-end="url(#arrow-yellow)" />
+    <line x1="280" y1="130" x2="400" y2="130" stroke="#1c7ed6" stroke-width="2" stroke-dasharray="2,2" />
+    <text x="450" y="120" fill="#e67700" font-size="22" font-family="monospace" font-weight="bold"
+        text-anchor="middle">3v (크기가 3배 팽창, 방향 고정)</text>
+
+    <!-- Scenario 2: k = 1/2 (Compression) -->
+    <rect x="50" y="190" width="280" height="80" fill="#e3fafc" stroke="#3bc9db" stroke-width="2" rx="8" />
+    <text x="190" y="220" fill="#0b7285" font-size="16" font-weight="bold" text-anchor="middle">엔진 다운그레이드 (k=0.5)</text>
+
+    <!-- Vector 0.5v -->
+    <line x1="80" y1="250" x2="140" y2="250" stroke="#3bc9db" stroke-width="4" marker-end="url(#arrow-cyan)" />
+    <line x1="80" y1="250" x2="200" y2="250" stroke="#adb5bd" stroke-width="2" stroke-dasharray="2,2" />
+    <text x="110" y="240" fill="#0c8599" font-size="18" font-family="monospace" font-weight="bold"
+        text-anchor="middle">0.5v</text>
+    <text x="190" y="270" fill="#0b7285" font-size="12" font-weight="bold" text-anchor="middle">(크기 반토막)</text>
+
+    <!-- Scenario 3: k < 0 (Reversal) -->
+    <rect x="350" y="190" width="300" height="80" fill="#ffe3e3" stroke="#fa5252" stroke-width="3" rx="8" />
+    <text x="500" y="220" fill="#c92a2a" font-size="16" font-weight="bold" text-anchor="middle">리버스 백기어 감염 (k=-2)</text>
+
+    <!-- Vector -2v -->
+    <!-- Tail at 590, Head at 350. Arrow points left -->
+    <line x1="620" y1="250" x2="380" y2="250" stroke="#fa5252" stroke-width="6" marker-end="url(#arrow-red)" />
+    <!-- Outline to show original direction starting from where tail is now. -->
+    <line x1="620" y1="250" x2="620" y2="210" stroke="#adb5bd" stroke-width="1" stroke-dasharray="2,2" />
+    <text x="500" y="240" fill="#c92a2a" font-size="22" font-family="monospace" font-weight="bold"
+        text-anchor="middle">-2v</text>
+    <text x="500" y="270" fill="#f03e3e" font-size="12" font-weight="bold" text-anchor="middle">(대가리 180도 리버스 + 2배
+        팽창)</text>
+
+    <!-- Text at bottom -->
+    <text x="350" y="320" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">스칼라(숫자)를 벡터에 곱하면, 화살표의
+        앵글 선로는 그대로 유지한 채 고무줄처럼 크기만 스케일링된다!</text>
+
+    <defs>
+        <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#1c7ed6" />
+        </marker>
+        <marker id="arrow-yellow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fcc419" />
+        </marker>
+        <marker id="arrow-cyan" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#3bc9db" />
+        </marker>
+        <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fa5252" />
+        </marker>
+    </defs>
+</svg>

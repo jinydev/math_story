@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <rect width="800" height="400" fill="#f1f3f5" rx="15" />
+
+    <text x="400" y="45" fill="#343a40" font-size="24" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">정적분 공식 해부도 (Definite Integral Parsing)</text>
+
+    <!-- Big Formula -->
+    <text x="380" y="160" fill="#212529" font-size="80" font-family="serif" font-weight="bold" font-style="italic"
+        text-anchor="middle">∫</text>
+    <text x="380" y="100" fill="#1c7ed6" font-size="30" font-family="monospace" font-weight="bold"
+        text-anchor="middle">b</text>
+    <text x="380" y="210" fill="#fa5252" font-size="30" font-family="monospace" font-weight="bold"
+        text-anchor="middle">a</text>
+
+    <text x="490" y="150" fill="#f08c00" font-size="40" font-family="monospace" font-weight="bold"
+        text-anchor="middle">f(x)</text>
+    <text x="590" y="150" fill="#2b8a3e" font-size="40" font-family="monospace" font-weight="bold"
+        text-anchor="middle">dx</text>
+
+    <!-- Explanations Below -->
+
+    <!-- Integral Sign -->
+    <rect x="30" y="270" width="160" height="90" fill="#fff" stroke="#adb5bd" stroke-width="3" rx="10" />
+    <text x="110" y="300" fill="#495057" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">합치다 (Sum)</text>
+    <text x="110" y="330" fill="#868e96" font-size="14" font-weight="bold" text-anchor="middle">"모든 조각을 끌어모아</text>
+    <text x="110" y="350" fill="#868e96" font-size="14" font-weight="bold" text-anchor="middle">누적하는 S(Sum) 명령어"</text>
+    <path d="M 110 270 Q 110 180 340 140" fill="none" stroke="#adb5bd" stroke-width="3" stroke-dasharray="6,4"
+        marker-end="url(#arrow-gray)" />
+
+    <!-- Limits a, b -->
+    <rect x="220" y="270" width="160" height="90" fill="#fff" stroke="#74c0fc" stroke-width="3" rx="10" />
+    <text x="300" y="300" fill="#1c7ed6" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">구간 설정(a~b)</text>
+    <text x="300" y="330" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">"스캔을 시작할 점(a)과</text>
+    <text x="300" y="350" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">종료할 점(b)의 리미트"</text>
+    <path d="M 300 270 Q 300 240 360 210" fill="none" stroke="#fa5252" stroke-width="3" stroke-dasharray="6,4"
+        marker-end="url(#arrow-red)" />
+    <path d="M 300 270 Q 300 130 360 100" fill="none" stroke="#1c7ed6" stroke-width="3" stroke-dasharray="6,4"
+        marker-end="url(#arrow-blue)" />
+
+    <!-- Height f(x) -->
+    <rect x="410" y="270" width="160" height="90" fill="#fff" stroke="#ffd8a8" stroke-width="3" rx="10" />
+    <text x="490" y="300" fill="#e67700" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세로 높이</text>
+    <text x="490" y="330" fill="#d9480f" font-size="14" font-weight="bold" text-anchor="middle">"우뚝 솟은 장작(직사각형)</text>
+    <text x="490" y="350" fill="#d9480f" font-size="14" font-weight="bold" text-anchor="middle">의 y축 함수값 높이"</text>
+    <path d="M 490 270 Q 490 210 490 170" fill="none" stroke="#f08c00" stroke-width="3" stroke-dasharray="6,4"
+        marker-end="url(#arrow-orange)" />
+
+    <!-- Width dx -->
+    <rect x="600" y="270" width="160" height="90" fill="#fff" stroke="#b2f2bb" stroke-width="3" rx="10" />
+    <text x="680" y="300" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">가로 폭 (두께)</text>
+    <text x="680" y="330" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">"먼지보다 더 가느다랗게</text>
+    <text x="680" y="350" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">쪼개진 초미세 가로 밑변"</text>
+    <path d="M 680 270 Q 680 210 610 170" fill="none" stroke="#2b8a3e" stroke-width="3" stroke-dasharray="6,4"
+        marker-end="url(#arrow-green)" />
+
+    <!-- Combine Text -->
+    <rect x="420" y="180" width="260" height="40" fill="#fff9db" stroke="#fcc419" stroke-width="2" rx="5" />
+    <text x="550" y="206" fill="#f08c00" font-size="18" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">"높이 × 밑변 = 스캔된 장작 $1$개 넓이"</text>
+
+    <defs>
+        <marker id="arrow-gray" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+        <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fa5252" />
+        </marker>
+        <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#1c7ed6" />
+        </marker>
+        <marker id="arrow-orange" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#f08c00" />
+        </marker>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+    </defs>
+</svg>

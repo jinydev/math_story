@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#f08c00" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세상을 가두는 딱딱한 격자: 확률분포표 (Probability Table)</text>
+
+    <!-- Table Structure -->
+    <g transform="translate(100, 80)">
+
+        <!-- Outer Border -->
+        <rect x="0" y="0" width="400" height="120" fill="none" stroke="#495057" stroke-width="3" />
+
+        <!-- Horizontal lines -->
+        <line x1="0" y1="40" x2="400" y2="40" stroke="#495057" stroke-width="2" />
+        <line x1="0" y1="80" x2="400" y2="80" stroke="#495057" stroke-width="2" />
+
+        <!-- Vertical lines -->
+        <line x1="100" y1="0" x2="100" y2="120" stroke="#495057" stroke-width="2" />
+        <line x1="175" y1="0" x2="175" y2="120" stroke="#495057" stroke-width="2" />
+        <line x1="250" y1="0" x2="250" y2="120" stroke="#495057" stroke-width="2" />
+        <line x1="325" y1="0" x2="325" y2="120" stroke="#495057" stroke-width="2" />
+
+        <!-- Headers (Col 1) -->
+        <rect x="0" y="0" width="100" height="40" fill="#fff4e6" />
+        <text x="50" y="25" fill="#d9480f" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">X (사건)</text>
+
+        <rect x="0" y="40" width="100" height="40" fill="#ebfbee" />
+        <text x="50" y="65" fill="#2b8a3e" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">P (확률)</text>
+
+        <rect x="0" y="80" width="100" height="40" fill="#e7f5ff" />
+        <text x="50" y="105" fill="#1864ab" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">X × P</text>
+
+        <!-- Data X -->
+        <text x="137.5" y="25" fill="#495057" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">0 원</text>
+        <text x="212.5" y="25" fill="#495057" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">100 원</text>
+        <text x="287.5" y="25" fill="#495057" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">500 원</text>
+        <text x="362.5" y="25" fill="#c92a2a" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">합계</text>
+
+        <!-- Data P -->
+        <text x="137.5" y="65" fill="#495057" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">1/2</text>
+        <text x="212.5" y="65" fill="#495057" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">1/4</text>
+        <text x="287.5" y="65" fill="#495057" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">1/4</text>
+        <text x="362.5" y="65" fill="#c92a2a" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">1</text>
+
+        <!-- Data X*P (Preview of Expected Value) -->
+        <text x="137.5" y="105" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">0</text>
+        <text x="212.5" y="105" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">25</text>
+        <text x="287.5" y="105" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">125</text>
+        <text x="362.5" y="105" fill="#c92a2a" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">기댓값</text>
+
+        <!-- Highlight Box -->
+        <rect x="325" y="40" width="75" height="40" fill="none" stroke="#fa5252" stroke-width="4"
+            stroke-dasharray="4,4" />
+        <text x="440" y="65" fill="#fa5252" font-size="12" font-family="sans-serif" font-weight="bold">다 더하면 무조건 1
+            !</text>
+    </g>
+</svg>

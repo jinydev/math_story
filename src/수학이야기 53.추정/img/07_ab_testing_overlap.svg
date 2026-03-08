@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#c92a2a" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">A/B 테스트: 통계적 추정의 완벽한 실전 배치 (IT/마케팅)</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"두 버튼 색상의 구매 전환율(p̂)이 겹치는지(오차범위 내) 아니면 완전히
+        우월한지 추정을 통해 검증한다!"</text>
+
+    <!-- Left: A/B Test Variants -->
+    <g transform="translate(40, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">랜딩 페이지 A / B
+            테스트</text>
+
+        <!-- Variant A -->
+        <rect x="20" y="45" width="80" height="80" fill="#f1f3f5" stroke="#ced4da" rx="5" />
+        <text x="60" y="65" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">기존 A안</text>
+        <rect x="30" y="80" width="60" height="30" fill="#1864ab" rx="3" />
+        <text x="60" y="100" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">구매하기 (파랑)</text>
+        <text x="60" y="140" fill="#1864ab" font-size="10" font-weight="bold" text-anchor="middle">p̂_A = 12%</text>
+
+        <!-- Variant B -->
+        <rect x="120" y="45" width="80" height="80" fill="#fff0f6" stroke="#fcc2d7" rx="5" />
+        <text x="160" y="65" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">신규 B안</text>
+        <rect x="130" y="80" width="60" height="30" fill="#d81b60" rx="3" />
+        <text x="160" y="100" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">구매하기 (핑크)</text>
+        <text x="160" y="140" fill="#d81b60" font-size="10" font-weight="bold" text-anchor="middle">p̂_B = 18%</text>
+    </g>
+
+    <!-- VS Arrow -->
+    <text x="290" y="160" fill="#adb5bd" font-size="16" font-weight="bold">VS</text>
+
+    <!-- Right: Overlap Test -->
+    <g transform="translate(340, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">95% 신뢰구간 지표
+            오버랩</text>
+
+        <!-- Number line -->
+        <line x1="20" y1="110" x2="200" y2="110" stroke="#adb5bd" stroke-width="2" />
+        <text x="20" y="125" fill="#495057" font-size="10" text-anchor="middle">5%</text>
+        <text x="110" y="125" fill="#495057" font-size="10" text-anchor="middle">15%</text>
+        <text x="200" y="125" fill="#495057" font-size="10" text-anchor="middle">25%</text>
+
+        <!-- Range A -->
+        <path d="M 60 90 L 100 90" stroke="#1864ab" stroke-width="4" />
+        <circle cx="80" cy="90" r="4" fill="#1864ab" />
+        <text x="80" y="80" fill="#1864ab" font-size="10" font-weight="bold" text-anchor="middle">A: (9% ~ 15%)</text>
+
+        <!-- Range B -->
+        <path d="M 115 65 L 155 65" stroke="#d81b60" stroke-width="4" />
+        <circle cx="135" cy="65" r="4" fill="#d81b60" />
+        <text x="135" y="55" fill="#d81b60" font-size="10" font-weight="bold" text-anchor="middle">B: (14% ~ 22%)</text>
+
+        <text x="110" y="145" fill="#c92a2a" font-size="11" font-weight="bold" text-anchor="middle">구간이 거의 안 겹침 = B가 진짜
+            우월함!</text>
+    </g>
+
+</svg>

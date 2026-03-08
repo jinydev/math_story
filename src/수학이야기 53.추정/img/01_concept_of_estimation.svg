@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#f59f00" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">셜록 홈즈의 수학: 일부만 보고 전체를 간파하는 '추정'</text>
+
+    <!-- Missing Data Concept -->
+    <g transform="translate(150, 150)">
+        <circle cx="0" cy="-30" r="70" fill="#fff4e6" stroke="#f59f00" stroke-width="2" stroke-dasharray="4,4" />
+        <text x="0" y="-80" fill="#d9480f" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">대한민국 전체 키 평균?</text>
+
+        <!-- Big Question Mark -->
+        <text x="0" y="-10" fill="#fcc419" font-size="60" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">?</text>
+        <text x="0" y="25" fill="#d9480f" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">"5천만 명 다 잴 수 없어!"</text>
+    </g>
+
+    <!-- Arrow of Estimation -->
+    <path d="M 240 110 L 360 110" fill="none" stroke="#adb5bd" stroke-width="4" marker-end="url(#arrow-grey)"
+        marker-start="url(#arrow-start-grey)" />
+    <text x="300" y="95" fill="#f59f00" font-size="14" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">역추적 (추정)</text>
+
+    <!-- Sample Data -->
+    <g transform="translate(450, 150)">
+        <circle cx="0" cy="-30" r="50" fill="#fff" stroke="#f59f00" stroke-width="4" />
+        <text x="0" y="-80" fill="#d9480f" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">우리 동네 100명</text>
+
+        <!-- Sample people -->
+        <circle cx="-15" cy="-40" r="5" fill="#f59f00" />
+        <circle cx="20" cy="-45" r="5" fill="#f59f00" />
+        <circle cx="0" cy="-20" r="5" fill="#f59f00" />
+        <circle cx="-25" cy="-20" r="5" fill="#f59f00" />
+        <circle cx="25" cy="-15" r="5" fill="#f59f00" />
+
+        <text x="0" y="25" fill="#d9480f" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">"100명 평균이 173이니까.."</text>
+
+        <!-- Bubble pointing back -->
+        <rect x="-80" y="45" width="160" height="25" fill="#ffe8cc" rx="4" />
+        <text x="0" y="62" fill="#d9480f" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">"전체도 대충 173 부근일걸?"</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-grey" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+        <marker id="arrow-start-grey" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

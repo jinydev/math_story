@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .square-a {
+                fill: rgba(255, 100, 100, 0.4);
+                stroke: #ff6464;
+                stroke-width: 2;
+            }
+
+            .square-b {
+                fill: rgba(100, 100, 255, 0.4);
+                stroke: #6464ff;
+                stroke-width: 2;
+            }
+
+            .square-c {
+                fill: none;
+                stroke: #64ff64;
+                stroke-width: 4;
+                stroke-dasharray: 5, 5;
+            }
+
+            .cut-line {
+                stroke: #ffff00;
+                stroke-width: 3;
+                stroke-dasharray: 4, 4;
+            }
+
+            /* Animation for Pieces */
+            .piece-1 {
+                animation: p1 4s infinite alternate ease-in-out;
+            }
+
+            .piece-2 {
+                animation: p2 4s infinite alternate ease-in-out;
+            }
+
+            .piece-3 {
+                animation: p3 4s infinite alternate ease-in-out;
+            }
+
+            .piece-4 {
+                animation: p4 4s infinite alternate ease-in-out;
+            }
+
+            .piece-a {
+                animation: pA 4s infinite alternate ease-in-out;
+            }
+
+            @keyframes p1 {
+                0% {
+                    transform: translate(0, 0);
+                }
+
+                100% {
+                    transform: translate(250px, -50px) rotate(90deg);
+                }
+            }
+
+            @keyframes p2 {
+                0% {
+                    transform: translate(0, 0);
+                }
+
+                100% {
+                    transform: translate(250px, -50px) rotate(180deg);
+                }
+            }
+
+            @keyframes p3 {
+                0% {
+                    transform: translate(0, 0);
+                }
+
+                100% {
+                    transform: translate(250px, -50px) rotate(270deg);
+                }
+            }
+
+            @keyframes p4 {
+                0% {
+                    transform: translate(0, 0);
+                }
+
+                100% {
+                    transform: translate(250px, -50px) rotate(360deg);
+                }
+            }
+
+            @keyframes pA {
+                0% {
+                    transform: translate(0, 0);
+                }
+
+                100% {
+                    transform: translate(110px, 90px);
+                }
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#0d1117" />
+
+    <text x="300" y="50" fill="#00ffff" font-size="28" text-anchor="middle">분할 재조립 증명 (Dissection Proof)</text>
+    <text x="300" y="80" fill="#a0a0a0" font-size="16" text-anchor="middle">잘게 조각낸 a²와 b² 블록들이 빈틈없이 c² 사각형 안으로
+        조립된다</text>
+
+    <!-- Original parts on the left -->
+    <g transform="translate(100, 200)">
+        <!-- Square a (90x90) -->
+        <g class="piece-a">
+            <rect x="0" y="40" width="90" height="90" class="square-a" />
+            <text x="35" y="90" fill="#ff6464" font-size="24">a²</text>
+        </g>
+
+        <!-- Square b (120x120) with cross cut -->
+        <!-- The dissection of b^2 requires lines parallel/perpendicular to hypotenuse -->
+        <!-- For simplicity in visualization, we just draw abstract cut pieces -->
+        <g transform="translate(0, 150)">
+            <g class="piece-1">
+                <polygon points="0,0 60,0 60,60" class="square-b" />
+            </g>
+            <g class="piece-2">
+                <polygon points="60,0 120,0 120,60 60,60" class="square-b" />
+            </g>
+            <g class="piece-3">
+                <polygon points="0,60 60,60 60,120" class="square-b" />
+            </g>
+            <g class="piece-4">
+                <polygon points="60,60 120,60 120,120 60,120" class="square-b" />
+            </g>
+            <text x="45" y="70" fill="#6464ff" font-size="24">b²</text>
+            <!-- scissor cut lines -->
+            <line x1="-10" y1="60" x2="130" y2="60" class="cut-line" />
+            <line x1="60" y1="-10" x2="60" y2="130" class="cut-line" />
+        </g>
+    </g>
+
+    <!-- Target C^2 square on the right -->
+    <!-- 150x150 square -->
+    <g transform="translate(350, 250)">
+        <rect x="0" y="0" width="150" height="150" class="square-c" />
+        <text x="55" y="-10" fill="#64ff64" font-size="24">c² 틀</text>
+    </g>
+</svg>

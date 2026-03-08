@@ -20,7 +20,7 @@
 칸토어는 자신이 발견한 무한의 비밀을 질서 정연하게 설명하기 위해 새로운 수학적 '언어'를 하나 발명해 냈습니다. 그것이 바로 비슷한 성질을 가진 녀석들을 하나의 울타리로 묶어버리는 **'집합(Set)'**이라는 혁명적인 개념입니다.
 
 <div align="center">
-  <img src="./img/v3_02_intro_cantor.png" alt="무한의 크기를 비교하는 천재 수학자 칸토어" width="600" />
+  <img src="./img/00_cantor_infinity_comparison_python.png" alt="무한의 크기를 비교하는 천재 수학자 칸토어" width="600" />
 </div>
 
 ## 2. 현대 수학과 컴퓨터 공학의 절대 반지

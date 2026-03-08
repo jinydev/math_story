@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .stave-line {
+                stroke: #30363d;
+                stroke-width: 2;
+            }
+
+            .bar-line {
+                stroke: #8b949e;
+                stroke-width: 2;
+            }
+
+            .note-root {
+                fill: #ff6464;
+                stroke: #ff6464;
+            }
+
+            .note-level1 {
+                fill: #ffff64;
+                stroke: #ffff64;
+            }
+
+            .note-level2 {
+                fill: #64ff64;
+                stroke: #64ff64;
+            }
+
+            .note-stem {
+                stroke-width: 2;
+            }
+
+            .connection {
+                stroke: #8b949e;
+                stroke-width: 1;
+                stroke-dasharray: 4, 4;
+                fill: none;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 24px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 14px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="40" class="title">음악 속의 프랙탈 (바흐의 푸가/코러스)</text>
+    <text x="400" y="65" class="desc">하나의 주 선율(모티프)이 쪼개지고 복제되며 곡 전체를 지배하는 재귀적 음악 구조</text>
+
+    <g transform="translate(50, 150)">
+        <!-- Stave lines -->
+        <line x1="0" y1="-20" x2="700" y2="-20" class="stave-line" />
+        <line x1="0" y1="0" x2="700" y2="0" class="stave-line" />
+        <line x1="0" y1="20" x2="700" y2="20" class="stave-line" />
+        <line x1="0" y1="40" x2="700" y2="40" class="stave-line" />
+        <line x1="0" y1="60" x2="700" y2="60" class="stave-line" />
+
+        <line x1="200" y1="-20" x2="200" y2="60" class="bar-line" />
+        <line x1="450" y1="-20" x2="450" y2="60" class="bar-line" />
+        <line x1="700" y1="-20" x2="700" y2="60" class="bar-line" />
+
+        <!-- Level 0 (Root Motif) - Slow / Long Notes -->
+        <g class="note-root">
+            <ellipse cx="60" cy="40" rx="10" ry="7" />
+            <line x1="70" y1="40" x2="70" y2="-10" class="note-stem" />
+
+            <ellipse cx="140" cy="20" rx="10" ry="7" />
+            <line x1="150" y1="20" x2="150" y2="-30" class="note-stem" />
+
+            <!-- Motif Link line -->
+            <line x1="70" y1="-10" x2="150" y2="-30" class="note-stem" stroke-width="4" />
+            <text x="100" y="-45" fill="#ff6464" font-size="16" text-anchor="middle">기본 모티프(테마)</text>
+        </g>
+
+        <!-- Level 1 (Recursion) - Faster / Double speed -->
+        <g transform="translate(220, 0)">
+            <!-- First copy -->
+            <g class="note-level1">
+                <ellipse cx="30" cy="40" rx="8" ry="6" />
+                <line x1="38" y1="40" x2="38" y2="-5" class="note-stem" />
+                <ellipse cx="70" cy="20" rx="8" ry="6" />
+                <line x1="78" y1="20" x2="78" y2="-15" class="note-stem" />
+                <line x1="38" y1="-5" x2="78" y2="-15" class="note-stem" stroke-width="3" />
+            </g>
+            <!-- Second copy, shifted pitch -->
+            <g class="note-level1" transform="translate(80, -20)">
+                <ellipse cx="30" cy="40" rx="8" ry="6" />
+                <line x1="38" y1="40" x2="38" y2="-5" class="note-stem" />
+                <ellipse cx="70" cy="20" rx="8" ry="6" />
+                <line x1="78" y1="20" x2="78" y2="-15" class="note-stem" />
+                <line x1="38" y1="-5" x2="78" y2="-15" class="note-stem" stroke-width="3" />
+            </g>
+            <text x="115" y="-60" fill="#ffff64" font-size="14" text-anchor="middle">모티프의 피치 이동 및 2배속 복제</text>
+        </g>
+
+        <!-- Structure connections -->
+        <path d="M 100 65 Q 220 180 340 65" class="connection" />
+        <text x="220" y="150" fill="#888" font-size="14" text-anchor="middle">자기 유사 형태 (프랙탈 구조)</text>
+
+        <!-- Level 2 (Deep Recursion) - Fastest / Quad speed -->
+        <g transform="translate(470, 0)">
+            <!-- First small copy -->
+            <g class="note-level2">
+                <ellipse cx="20" cy="40" rx="6" ry="5" />
+                <line x1="26" y1="40" x2="26" y2="0" class="note-stem" />
+                <ellipse cx="40" cy="20" rx="6" ry="5" />
+                <line x1="46" y1="20" x2="46" y2="-10" class="note-stem" />
+                <line x1="26" y1="0" x2="46" y2="-10" class="note-stem" stroke-width="2" />
+                <line x1="26" y1="5" x2="46" y2="-5" class="note-stem" stroke-width="2" />
+            </g>
+            <!-- Second small copy -->
+            <g class="note-level2" transform="translate(40, -10)">
+                <ellipse cx="20" cy="40" rx="6" ry="5" />
+                <line x1="26" y1="40" x2="26" y2="0" class="note-stem" />
+                <ellipse cx="40" cy="20" rx="6" ry="5" />
+                <line x1="46" y1="20" x2="46" y2="-10" class="note-stem" />
+                <line x1="26" y1="0" x2="46" y2="-10" class="note-stem" stroke-width="2" />
+                <line x1="26" y1="5" x2="46" y2="-5" class="note-stem" stroke-width="2" />
+            </g>
+            <!-- Third small copy -->
+            <g class="note-level2" transform="translate(80, 10)">
+                <ellipse cx="20" cy="40" rx="6" ry="5" />
+                <line x1="26" y1="40" x2="26" y2="0" class="note-stem" />
+                <ellipse cx="40" cy="20" rx="6" ry="5" />
+                <line x1="46" y1="20" x2="46" y2="-10" class="note-stem" />
+                <line x1="26" y1="0" x2="46" y2="-10" class="note-stem" stroke-width="2" />
+                <line x1="26" y1="5" x2="46" y2="-5" class="note-stem" stroke-width="2" />
+            </g>
+            <!-- Fourth small copy -->
+            <g class="note-level2" transform="translate(120, -20)">
+                <ellipse cx="20" cy="40" rx="6" ry="5" />
+                <line x1="26" y1="40" x2="26" y2="0" class="note-stem" />
+                <ellipse cx="40" cy="20" rx="6" ry="5" />
+                <line x1="46" y1="20" x2="46" y2="-10" class="note-stem" />
+                <line x1="26" y1="0" x2="46" y2="-10" class="note-stem" stroke-width="2" />
+                <line x1="26" y1="5" x2="46" y2="-5" class="note-stem" stroke-width="2" />
+            </g>
+            <text x="110" y="-40" fill="#64ff64" font-size="14" text-anchor="middle">아주 미세한 리듬 속에서도 동일한 형태 발견</text>
+        </g>
+    </g>
+
+</svg>

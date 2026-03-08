@@ -23,6 +23,10 @@ $$ \sqrt{(x - c)^2 + y^2} + \sqrt{(x + c)^2 + y^2} = 2a $$
 
 ## 2. 대압축 완료본: 타원의 방정식 표준 렌더링 코드
 
+![타원의 렌더링 해체도](./img/03_ellipse_anatomy.svg)
+
+![타원 블루프린트](./img/03_ellipse_blueprint_python.png)
+
 > **최종 압축 모델:**
 > $$ \mathbf{\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1} \quad (단, \ a > b > 0) $$
 

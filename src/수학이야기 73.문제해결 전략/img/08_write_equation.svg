@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#c92a2a" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">여덟 번째 전략: 최후의 번역기, '식 세우기(Write an Equation)'</text>
+
+    <!-- Korean Text Area (Input) -->
+    <g transform="translate(30, 80)">
+        <rect x="0" y="0" width="220" height="100" fill="#fff5f5" stroke="#fa5252" stroke-width="2" rx="5" />
+        <text x="110" y="25" fill="#c92a2a" font-size="14" font-weight="bold" text-anchor="middle">복잡한 일상 언어
+            (Text)</text>
+
+        <text x="20" y="55" fill="#495057" font-size="11">"어떤 모르는 숫자를</text>
+        <text x="20" y="72" fill="#495057" font-size="11"> 3배로 뻥튀기한 뒤 5를 뺐더니</text>
+        <text x="20" y="89" fill="#495057" font-size="11"> 10이 되었다."</text>
+    </g>
+
+    <!-- The Translator / Compiler -->
+    <g transform="translate(265, 100)">
+        <circle cx="25" cy="30" r="30" fill="#e9ecef" stroke="#adb5bd" stroke-width="2" />
+        <text x="25" y="25" fill="#495057" font-size="10" font-weight="bold" text-anchor="middle">수학</text>
+        <text x="25" y="38" fill="#495057" font-size="10" font-weight="bold" text-anchor="middle">번역기</text>
+        <path d="M -15 30 L 7 30" fill="none" stroke="#fa5252" stroke-width="2" marker-end="url(#arrow-red)" />
+        <path d="M 43 30 L 65 30" fill="none" stroke="#2b8a3e" stroke-width="2" marker-end="url(#arrow-green)" />
+    </g>
+
+    <!-- Equation Area (Output) -->
+    <g transform="translate(340, 80)">
+        <rect x="0" y="0" width="230" height="100" fill="#ebfbee" stroke="#2b8a3e" stroke-width="2" rx="5" />
+        <text x="115" y="25" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">수학 언어
+            (Equation)</text>
+
+        <text x="115" y="55" fill="#099268" font-size="20" font-weight="bold" font-style="italic" text-anchor="middle">
+            3x - 5 = 10
+        </text>
+
+        <text x="115" y="85" fill="#495057" font-size="9" text-anchor="middle">문자 단 9개로 압축 완료!</text>
+    </g>
+
+    <text x="300" y="220" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">모든 군더더기를 제거하고, 컴퓨터가 처리할
+        수 있는 논리(Logic)로 이식하는 최종 코딩 단계</text>
+
+    <defs>
+        <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fa5252" />
+        </marker>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+    </defs>
+</svg>

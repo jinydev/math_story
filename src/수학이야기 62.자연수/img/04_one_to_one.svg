@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350">
+    <rect width="700" height="350" fill="#f1f3f5" rx="15" />
+
+    <text x="350" y="40" fill="#2b8a3e" font-size="24" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">일대일 대응 (One-to-One Correspondence)</text>
+
+    <rect x="50" y="70" width="250" height="250" fill="#d3f9d8" stroke="#51cf66" stroke-width="3" rx="10" />
+    <text x="175" y="105" fill="#2b8a3e" font-size="18" font-weight="bold" text-anchor="middle">양치기의 양 떼 (현실 데이터)</text>
+
+    <rect x="400" y="70" width="250" height="250" fill="#ffe8cc" stroke="#ffa94d" stroke-width="3" rx="10" />
+    <text x="525" y="105" fill="#d9480f" font-size="18" font-weight="bold" text-anchor="middle">가죽 주머니의 조약돌 (메모리)</text>
+
+    <!-- Sheep Icons (Circles) -->
+    <circle cx="175" cy="150" r="20" fill="#fff" stroke="#868e96" stroke-width="2" />
+    <circle cx="175" cy="210" r="20" fill="#fff" stroke="#868e96" stroke-width="2" />
+    <circle cx="175" cy="270" r="20" fill="#fff" stroke="#868e96" stroke-width="2" />
+
+    <!-- Pebble Icons (Rectangles) -->
+    <rect x="505" y="135" width="40" height="30" fill="#868e96" rx="5" />
+    <rect x="505" y="195" width="40" height="30" fill="#868e96" rx="5" />
+    <rect x="505" y="255" width="40" height="30" fill="#868e96" rx="5" />
+
+    <!-- Connecting Lines for One-to-One -->
+    <line x1="205" y1="150" x2="495" y2="150" stroke="#1c7ed6" stroke-width="4" stroke-dasharray="8,4"
+        marker-end="url(#arrow-blue)" />
+    <line x1="205" y1="210" x2="495" y2="210" stroke="#1c7ed6" stroke-width="4" stroke-dasharray="8,4"
+        marker-end="url(#arrow-blue)" />
+    <line x1="205" y1="270" x2="495" y2="270" stroke="#1c7ed6" stroke-width="4" stroke-dasharray="8,4"
+        marker-end="url(#arrow-blue)" />
+
+    <rect x="250" y="195" width="200" height="30" fill="#fff" stroke="#1c7ed6" stroke-width="2" rx="15" />
+    <text x="350" y="216" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">완벽한 1:1 매핑 선언</text>
+
+    <defs>
+        <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#1c7ed6" />
+        </marker>
+    </defs>
+</svg>

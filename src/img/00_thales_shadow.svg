@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .laser {
+                stroke: #ffff00;
+                stroke-width: 2;
+                stroke-dasharray: 10, 5;
+                animation: shoot 2s linear infinite;
+            }
+
+            @keyframes shoot {
+                from {
+                    stroke-dashoffset: 20;
+                }
+
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+
+            .pyramid {
+                fill: none;
+                stroke: #00ffff;
+                stroke-width: 4;
+            }
+
+            .stick {
+                fill: #ff6464;
+                stroke: #ff6464;
+                stroke-width: 6;
+            }
+
+            .shadow {
+                fill: rgba(0, 255, 255, 0.2);
+            }
+
+            .shadow-line {
+                stroke: #00ffff;
+                stroke-width: 2;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#0d1117" />
+
+    <!-- Title -->
+    <text x="300" y="50" fill="#00ffff" font-size="28" text-anchor="middle">탈레스의 닮음비 증명 (AA Similarity)</text>
+    <text x="300" y="80" fill="#a0a0a0" font-size="16" text-anchor="middle">평행한 태양빛이 만드는 완벽한 두 개의 쌍둥이 비율 삼각형</text>
+
+    <!-- Ground -->
+    <line x1="50" y1="450" x2="550" y2="450" stroke="#444" stroke-width="4" />
+
+    <!-- Sun Rays -->
+    <!-- Coming from top-left. Angle depends on the rays -->
+    <line x1="50" y1="100" x2="500" y2="450" class="laser" />
+    <line x1="50" y1="200" x2="370" y2="450" class="laser" />
+    <line x1="50" y1="300" x2="242" y2="450" class="laser" />
+
+    <!-- Pyramid Profile -->
+    <polygon points="350,450 450,450 400,200" class="pyramid" />
+    <!-- Center line (height) -->
+    <line x1="400" y1="450" x2="400" y2="200" stroke="#00ffff" stroke-width="2" stroke-dasharray="5,5" />
+    <text x="410" y="325" fill="#00ffff" font-size="20">H (우주 비밀)</text>
+
+    <!-- Pyramid Shadow Base -->
+    <polygon points="400,450 500,450 400,200" class="shadow" />
+    <!-- Shadow length on ground from center -->
+    <line x1="400" y1="450" x2="500" y2="450" stroke="#00ffff" stroke-width="6" />
+    <text x="440" y="480" fill="#00ffff" font-size="20">L (그림자)</text>
+
+    <!-- Stick -->
+    <line x1="200" y1="450" x2="200" y2="333" class="stick" />
+    <!-- Shadow Base -->
+    <polygon points="200,450 290,450 200,333" class="shadow" />
+    <line x1="200" y1="450" x2="290" y2="450" stroke="#ff6464" stroke-width="6" />
+    <text x="175" y="400" fill="#ff6464" font-size="20">h</text>
+    <text x="235" y="480" fill="#ff6464" font-size="20">l</text>
+
+    <!-- Angle indications -->
+    <!-- 90 deg -->
+    <polyline points="200,435 215,435 215,450" fill="none" stroke="#ff6464" stroke-width="2" />
+    <polyline points="400,435 415,435 415,450" fill="none" stroke="#00ffff" stroke-width="2" />
+
+    <!-- Parallel Sunlight Angle (AA) -->
+    <path d="M 270 450 A 30 30 0 0 0 255 435" fill="none" stroke="#ffff00" stroke-width="3" />
+    <path d="M 480 450 A 30 30 0 0 0 465 435" fill="none" stroke="#ffff00" stroke-width="3" />
+
+    <text x="270" y="430" fill="#ffff00" font-size="16">주어진 각</text>
+    <text x="480" y="430" fill="#ffff00" font-size="16">같은 각</text>
+
+    <!-- Equation -->
+    <text x="300" y="550" fill="#64ff64" font-size="24" text-anchor="middle">h : l = H : L</text>
+
+</svg>

@@ -25,8 +25,10 @@
 > 의미: 1의 다음 수인 $1'$, 그다음 수인 $(1')'$ 이 무조건 존재한다는 것입니다. 
 > 이 규칙 하나 덕분에 우리는 끝없이 수를 생산하는 무한의 쳇바퀴를 얻었습니다. $1$ 다음엔 $2$, $2$ 다음엔 $3$이 생겨나는 공장 시스템입니다. 
 
+![Successor 엔진](./img/01_successor_function.svg)
+
 <div align="center">
-  <img src="./img/v3_62_lesson01_successor_2d.png" alt="페아노 공리를 상징하는 빛나는 씨앗 공장" width="600" />
+  <img src="./img/01_successor_factory_python.png" alt="페아노 공리를 상징하는 빛나는 씨앗 공장" width="600" />
 </div>
 
 ### [공리 3] 1은 어떤 자연수의 '다음 수'도 아니다.

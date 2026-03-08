@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#1864ab" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">곱셈을 덧셈으로 해체하라: 로그의 마법 공식 (Properties)</text>
+
+    <!-- Formula 1 -->
+    <g transform="translate(100, 100)">
+        <rect x="-80" y="-40" width="260" height="60" fill="#e7f5ff" stroke="#339af0" stroke-width="2" rx="8" />
+        <text x="-60" y="-5" fill="#1864ab" font-size="18" font-family="sans-serif" font-weight="bold">
+            log<tspan baseline-shift="sub" font-size="12">a</tspan> (M × N)
+        </text>
+
+        <text x="65" y="-5" fill="#f03e3e" font-size="20" font-family="sans-serif" font-weight="bold">=</text>
+
+        <text x="85" y="-5" fill="#d9480f" font-size="18" font-family="sans-serif" font-weight="bold">
+            log<tspan baseline-shift="sub" font-size="12">a</tspan> M <tspan fill="#f03e3e">+</tspan> log<tspan
+                baseline-shift="sub" font-size="12">a</tspan> N
+        </text>
+
+        <text x="50" y="40" fill="#868e96" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">진수의 곱셈은 로그의 덧셈으로 찢어진다!</text>
+    </g>
+
+    <!-- Formula 2 -->
+    <g transform="translate(100, 200)">
+        <rect x="-80" y="-40" width="260" height="60" fill="#ebfbee" stroke="#40c057" stroke-width="2" rx="8" />
+        <text x="-60" y="-5" fill="#2b8a3e" font-size="18" font-family="sans-serif" font-weight="bold">
+            log<tspan baseline-shift="sub" font-size="12">a</tspan> (M / N)
+        </text>
+
+        <text x="65" y="-5" fill="#f03e3e" font-size="20" font-family="sans-serif" font-weight="bold">=</text>
+
+        <text x="85" y="-5" fill="#0b7285" font-size="18" font-family="sans-serif" font-weight="bold">
+            log<tspan baseline-shift="sub" font-size="12">a</tspan> M <tspan fill="#f03e3e">-</tspan> log<tspan
+                baseline-shift="sub" font-size="12">a</tspan> N
+        </text>
+
+        <text x="50" y="40" fill="#868e96" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">진수의 나눗셈은 로그의 뺄셈으로 찢어진다!</text>
+    </g>
+
+    <!-- Big Exponent Jump -->
+    <g transform="translate(450, 150)">
+        <text x="0" y="-50" fill="#e03131" font-size="18" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">앞구르기 법칙</text>
+
+        <text x="-30" y="0" fill="#495057" font-size="24" font-family="serif" font-weight="bold">log<tspan
+                baseline-shift="sub" font-size="14">a</tspan> M</text>
+        <text x="35" y="-20" fill="#f03e3e" font-size="20" font-family="serif" font-weight="bold">k</text>
+
+        <path d="M 40 -30 Q 10 -60 -40 -10" fill="none" stroke="#f03e3e" stroke-width="3" stroke-dasharray="5,5"
+            marker-end="url(#jump)" />
+
+        <text x="0" y="40" fill="#c92a2a" font-size="24" font-family="serif" font-weight="bold">= k · log<tspan
+                baseline-shift="sub" font-size="14">a</tspan> M</text>
+    </g>
+
+    <defs>
+        <marker id="jump" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#f03e3e" />
+        </marker>
+    </defs>
+</svg>

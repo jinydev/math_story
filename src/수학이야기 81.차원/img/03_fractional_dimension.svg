@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+    <rect width="600" height="300" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#c92a2a" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세 번째 시선: '소수 차원 (1.58D 프랙탈)'</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"1차원의 선보다는 빽빽하고, 2차원의 면보다는 성긴 괴물 같은 공간
+        비율"</text>
+
+    <!-- Normal scaling theory -->
+    <g transform="translate(60, 70)">
+        <rect x="0" y="0" width="220" height="180" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">정수 차원의 스케일링 (1D,
+            2D)</text>
+
+        <!-- 1D Line -->
+        <line x1="20" y1="60" x2="60" y2="60" stroke="#1864ab" stroke-width="4" />
+        <line x1="80" y1="60" x2="200" y2="60" stroke="#1864ab" stroke-width="4" />
+        <text x="70" y="80" fill="#1864ab" font-size="10" font-weight="bold" text-anchor="middle">3배 확대 ➜ 선분이 3개(3¹배)
+            됨</text>
+
+        <!-- 2D Square -->
+        <rect x="20" y="110" width="30" height="30" fill="#e7f5ff" stroke="#1864ab" />
+        <rect x="80" y="100" width="90" height="90" fill="#e7f5ff" stroke="#1864ab" />
+        <!-- Grid inside large square -->
+        <line x1="110" y1="100" x2="110" y2="190" stroke="#1864ab" stroke-dasharray="2,2" />
+        <line x1="140" y1="100" x2="140" y2="190" stroke="#1864ab" stroke-dasharray="2,2" />
+        <line x1="80" y1="130" x2="170" y2="130" stroke="#1864ab" stroke-dasharray="2,2" />
+        <line x1="80" y1="160" x2="170" y2="160" stroke="#1864ab" stroke-dasharray="2,2" />
+
+        <text x="70" y="145" fill="#1864ab" font-size="10" font-weight="bold" text-anchor="middle">3배 확대 ➜ 면적이 9개(3²)
+            됨</text>
+    </g>
+
+    <!-- Fractal D -->
+    <g transform="translate(320, 70)">
+        <rect x="0" y="0" width="220" height="180" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#c92a2a" font-size="14" font-weight="bold" text-anchor="middle">시에르핀스키 삼각형
+            (1.58차원)</text>
+
+        <!-- Triangle 1 -->
+        <path d="M 40 80 L 70 80 L 55 54 Z" fill="#ffe3e3" stroke="#fa5252" stroke-width="2" />
+
+        <!-- Triangle 2 (Level 2) -->
+        <!-- Base is 3 times wider = 90. Height is 3 times higher = 78. But composed of 3^D = 3^1.58 = 3 triangles? 
+         Wait, Sierpinski is scale 2 = 3 pieces. (log 3 / log 2 = 1.58)
+         Let's show the scale factor 2 -> 3 pieces.
+    -->
+        <text x="40" y="120" fill="#c92a2a" font-size="10" font-weight="bold" text-anchor="middle">2배 확대</text>
+
+        <path d="M 90 150 L 190 150 L 140 60 Z" fill="#fff5f5" stroke="#fa5252" stroke-width="2" /> <!-- Outer -->
+        <path d="M 115 105 L 165 105 L 140 150 Z" fill="#fff" stroke="#fa5252" stroke-width="2" />
+        <!-- Inverted Middle -->
+
+        <text x="140" y="170" fill="#c92a2a" font-size="10" font-weight="bold" text-anchor="middle">길이는 2배 늘렸는데, 조각은 3성립
+            (2²=4 아님)</text>
+
+        <!-- Formula -->
+        <rect x="25" y="195" width="170" height="20" fill="#fff5f5" />
+        <text x="110" y="210" fill="#c92a2a" font-size="11" font-weight="bold" text-anchor="middle">차원 D = log 3 / log 2
+            ≈ 1.58</text>
+    </g>
+
+</svg>

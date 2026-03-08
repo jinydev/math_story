@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#d9480f" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">형제들의 분열: 각도의 신(직사각형) VS 길이의 신(마름모)</text>
+
+    <!-- Parallelogram Base Text -->
+    <text x="300" y="65" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">귀족 '평행사변형'의 유전자를 상속받아 극한으로 진화한 두 형제</text>
+
+    <!-- Left Side: Rectangle (Angle Master) -->
+    <g transform="translate(150, 160)">
+        <rect x="-80" y="-50" width="160" height="100" fill="#e7f5ff" stroke="#1864ab" stroke-width="4" />
+
+        <!-- 90 Degree Marks -->
+        <path d="M -80 -35 L -65 -35 L -65 -50" fill="none" stroke="#e03131" stroke-width="2" />
+        <path d="M 80 -35 L 65 -35 L 65 -50" fill="none" stroke="#e03131" stroke-width="2" />
+        <path d="M -80 35 L -65 35 L -65 50" fill="none" stroke="#e03131" stroke-width="2" />
+        <path d="M 80 35 L 65 35 L 65 50" fill="none" stroke="#e03131" stroke-width="2" />
+        <text x="-50" y="-20" fill="#e03131" font-size="14" font-weight="bold">90°</text>
+
+        <!-- Diagonals Equal -->
+        <path d="M -80 -50 L 80 50" fill="none" stroke="#f08c00" stroke-width="2" stroke-dasharray="4,4" />
+        <path d="M 80 -50 L -80 50" fill="none" stroke="#f08c00" stroke-width="2" stroke-dasharray="4,4" />
+
+        <!-- Tic marks to show diagonals are same length and bisect -->
+        <line x1="-30" y1="-20" x2="-20" y2="-10" stroke="#f08c00" stroke-width="3" />
+        <line x1="20" y1="10" x2="30" y2="20" stroke="#f08c00" stroke-width="3" />
+        <line x1="-30" y1="20" x2="-20" y2="10" stroke="#f08c00" stroke-width="3" />
+        <line x1="20" y1="-10" x2="30" y2="-20" stroke="#f08c00" stroke-width="3" />
+
+        <text x="0" y="75" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">직사각형 (Rectangle)</text>
+        <rect x="-60" y="85" width="120" height="20" fill="#fff" stroke="#adb5bd" rx="3" />
+        <text x="0" y="99" fill="#1864ab" font-size="10" font-weight="bold" text-anchor="middle">내각 모두 90도 + 대각선 길이
+            일치</text>
+    </g>
+
+    <!-- Right Side: Rhombus (Length Master) -->
+    <g transform="translate(450, 160)">
+        <!-- Rhombus Shape Path -->
+        <path d="M 0 -70 L 60 0 L 0 70 L -60 0 Z" fill="#f3d9fa" stroke="#862e9c" stroke-width="4"
+            stroke-linejoin="round" />
+
+        <!-- All 4 sides equal marks -->
+        <line x1="-35" y1="-40" x2="-25" y2="-30" stroke="#e03131" stroke-width="3" />
+        <line x1="25" y1="-40" x2="35" y2="-30" stroke="#e03131" stroke-width="3" />
+        <line x1="-35" y1="30" x2="-25" y2="40" stroke="#e03131" stroke-width="3" />
+        <line x1="25" y1="30" x2="35" y2="40" stroke="#e03131" stroke-width="3" />
+        <text x="-40" y="-45" fill="#e03131" font-size="10" font-weight="bold">길이 a</text>
+
+        <!-- Diagonals intersect at 90 degrees -->
+        <path d="M 0 -70 L 0 70" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-dasharray="4,4" />
+        <path d="M -60 0 L 60 0" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-dasharray="4,4" />
+        <!-- 90 deg box at center -->
+        <path d="M 0 -10 L 10 -10 L 10 0" fill="none" stroke="#e03131" stroke-width="2" />
+
+        <!-- Angle Bisector -->
+        <path d="M -15 -52 A 15 15 0 0 1 15 -52" fill="none" stroke="#f08c00" stroke-width="2" />
+        <text x="0" y="-35" fill="#f08c00" font-size="9" font-weight="bold" text-anchor="middle">반갈죽</text>
+
+        <text x="0" y="95" fill="#862e9c" font-size="14" font-weight="bold" text-anchor="middle">마름모 (Rhombus)</text>
+        <rect x="-65" y="105" width="130" height="20" fill="#fff" stroke="#adb5bd" rx="3" />
+        <text x="0" y="119" fill="#862e9c" font-size="10" font-weight="bold" text-anchor="middle">네 변 길이 일치 + 대각선
+            수직(90도)교차</text>
+    </g>
+
+</svg>

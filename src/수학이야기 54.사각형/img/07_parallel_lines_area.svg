@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">등적변형 (Equal Area Transformation)</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"모양(기울기)이 100배 왜곡되어도, 밑변과 높이가 고정되면 면적(페인트
+        양)은 똑같다!"</text>
+
+    <!-- Parallel Lines (Railroad) -->
+    <line x1="50" y1="80" x2="550" y2="80" stroke="#adb5bd" stroke-width="3" stroke-dasharray="8,4" />
+    <line x1="50" y1="200" x2="550" y2="200" stroke="#adb5bd" stroke-width="3" stroke-dasharray="8,4" />
+    <text x="70" y="70" fill="#868e96" font-size="12" font-weight="bold">Top Rail (평행선)</text>
+    <text x="70" y="215" fill="#868e96" font-size="12" font-weight="bold">Base Rail (밑변 고정축)</text>
+
+    <!-- Height indicator -->
+    <line x1="520" y1="80" x2="520" y2="198" stroke="#f03e3e" stroke-width="2" marker-start="url(#dot)"
+        marker-end="url(#dot)" />
+    <text x="530" y="145" fill="#f03e3e" font-size="14" font-weight="bold">높이(h) 고정!</text>
+
+    <!-- Triangle 1 (Standard) -->
+    <polygon points="150,200 250,200 200,80" fill="#e7f5ff" stroke="#339af0" stroke-width="3" opacity="0.8" />
+    <!-- Triangle 2 (Skewed) -->
+    <polygon points="150,200 250,200 400,80" fill="#fff4e6" stroke="#ff922b" stroke-width="3" opacity="0.8" />
+
+    <!-- Base line highlight -->
+    <line x1="150" y1="200" x2="250" y2="200" stroke="#c92a2a" stroke-width="5" />
+    <text x="200" y="220" fill="#c92a2a" font-size="12" font-weight="bold" text-anchor="middle">밑변(b) 못박음!</text>
+
+    <!-- Dragging Arrow -->
+    <path d="M 215 70 Q 300 40 380 70" fill="none" stroke="#5c940d" stroke-width="3" stroke-dasharray="4,2"
+        marker-end="url(#arrow-green)" />
+    <text x="300" y="45" fill="#5c940d" font-size="12" font-weight="bold" text-anchor="middle">꼭짓점 드래그 이동</text>
+
+    <!-- Area Text -->
+    <text x="200" y="160" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">넓이 S</text>
+    <text x="280" y="160" fill="#d9480f" font-size="14" font-weight="bold" text-anchor="middle">같은 넓이 S</text>
+
+    <rect x="235" y="145" width="20" height="20" fill="#fff" rx="10" />
+    <text x="245" y="159" fill="#212529" font-size="14" font-weight="bold" text-anchor="middle">=</text>
+
+    <defs>
+        <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6">
+            <circle cx="5" cy="5" r="4" fill="#f03e3e" />
+        </marker>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#5c940d" />
+        </marker>
+    </defs>
+</svg>

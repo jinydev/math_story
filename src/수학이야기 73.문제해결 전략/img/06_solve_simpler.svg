@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">여섯 번째 전략: 몬스터를 반토막 낸 후 사살, '단순화 도끼(Simpler Problem)'</text>
+
+    <!-- Giant Complex Polygon -->
+    <g transform="translate(100, 100)">
+        <path d="M -40 -30 L 0 -60 L 50 -20 L 70 30 L 20 60 L -50 40 Z" fill="#fff" stroke="#495057" stroke-width="4"
+            stroke-dasharray="4,4" />
+        <text x="0" y="-80" fill="#fa5252" font-size="12" font-weight="bold" text-anchor="middle">도저히 넓이를 못 구하는 다각형
+            (Boss)</text>
+        <text x="0" y="0" fill="#fa5252" font-size="40" font-weight="bold" text-anchor="middle">?</text>
+    </g>
+
+    <!-- Magic Ax transformation -->
+    <path d="M 200 100 L 270 100" fill="none" stroke="#2b8a3e" stroke-width="4" marker-end="url(#arrow-green)" />
+    <path d="M 235 60 L 235 140" fill="none" stroke="#e03131" stroke-width="3" stroke-dasharray="4,2" />
+    <text x="235" y="50" fill="#e03131" font-size="12" font-weight="bold" text-anchor="middle">"단순화"의 도끼질 쾅!</text>
+    <text x="235" y="155" fill="#e03131" font-size="10" font-weight="bold" text-anchor="middle">아는 모양으로 쪼갠다!</text>
+
+    <!-- Separated Simple Polygons -->
+    <g transform="translate(420, 100)">
+        <!-- Piece 1 (Triangle) -->
+        <path d="M -40 -30 L 0 -60 L 50 -20 Z" fill="#e3fafc" stroke="#0b7285" stroke-width="2" />
+        <text x="5" y="-35" fill="#0b7285" font-size="10" font-weight="bold" text-anchor="middle">아는 것 1 (삼각형)</text>
+
+        <!-- Piece 2 (Rectangle) -->
+        <path d="M -40 -30 L 50 -20 L 70 30 L -50 40 Z" fill="#ebfbee" stroke="#2b8a3e" stroke-width="2" />
+        <text x="5" y="10" fill="#2b8a3e" font-size="10" font-weight="bold" text-anchor="middle">아는 것 2 (사다리꼴)</text>
+
+        <!-- Piece 3 (Triangle) -->
+        <path d="M 70 30 L 20 60 L -50 40 Z" fill="#fff4e6" stroke="#f59f00" stroke-width="2" />
+        <text x="15" y="45" fill="#f59f00" font-size="10" font-weight="bold" text-anchor="middle">아는 것 3 (삼각형)</text>
+
+        <text x="0" y="85" fill="#1864ab" font-size="12" font-weight="bold" text-anchor="middle">쉬운 조각 3개를 각각 푼 뒤, 다
+            더하면?</text>
+        <rect x="-80" y="95" width="160" height="25" fill="#e7f5ff" rx="5" />
+        <text x="0" y="112" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">복잡한 보스 원킬 완료!</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+    </defs>
+</svg>

@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .box {
+                fill: #161b22;
+                stroke: #30363d;
+                stroke-width: 2;
+                rx: 8;
+            }
+
+            .num-box {
+                fill: rgba(0, 255, 255, 0.1);
+                stroke: #00ffff;
+                stroke-width: 2;
+                rx: 4;
+            }
+
+            .sum-box {
+                fill: rgba(100, 255, 100, 0.2);
+                stroke: #64ff64;
+                stroke-width: 3;
+                rx: 4;
+            }
+
+            .st-line {
+                stroke: #64ff64;
+                stroke-width: 2;
+                stroke-dasharray: 4, 4;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 24px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 14px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#0d1117" />
+
+    <text x="400" y="40" fill="#00ffff" font-size="28" text-anchor="middle">가우스의 덧셈 (등차수열의 합)</text>
+    <text x="400" y="70" class="desc">양 끝을 더하는 거대한 거울 대칭 아키텍처</text>
+
+    <g transform="translate(50, 100)">
+        <!-- Row 1: S = 1 + 2 + 3 + ... + 100 -->
+        <text x="10" y="35" fill="#ffffff" font-size="20">S =</text>
+
+        <rect x="60" y="10" width="50" height="36" class="num-box" />
+        <text x="85" y="35" fill="#00ffff" font-size="20" text-anchor="middle">1</text>
+        <text x="125" y="35" fill="#ffffff" font-size="20" text-anchor="middle">+</text>
+
+        <rect x="140" y="10" width="50" height="36" class="num-box" />
+        <text x="165" y="35" fill="#00ffff" font-size="20" text-anchor="middle">2</text>
+        <text x="205" y="35" fill="#ffffff" font-size="20" text-anchor="middle">+</text>
+
+        <rect x="220" y="10" width="50" height="36" class="num-box" />
+        <text x="245" y="35" fill="#00ffff" font-size="20" text-anchor="middle">3</text>
+
+        <text x="320" y="35" fill="#888" font-size="20" text-anchor="middle">. . .</text>
+
+        <text x="405" y="35" fill="#ffffff" font-size="20" text-anchor="middle">+</text>
+        <rect x="420" y="10" width="50" height="36" class="num-box" />
+        <text x="445" y="35" fill="#00ffff" font-size="20" text-anchor="middle">98</text>
+
+        <text x="485" y="35" fill="#ffffff" font-size="20" text-anchor="middle">+</text>
+        <rect x="500" y="10" width="50" height="36" class="num-box" />
+        <text x="525" y="35" fill="#00ffff" font-size="20" text-anchor="middle">99</text>
+
+        <text x="565" y="35" fill="#ffffff" font-size="20" text-anchor="middle">+</text>
+        <rect x="580" y="10" width="60" height="36" class="num-box" />
+        <text x="610" y="35" fill="#00ffff" font-size="20" text-anchor="middle">100</text>
+
+        <!-- Row 2 (Reversed): S = 100 + 99 + 98 + ... + 1 -->
+        <text x="10" y="95" fill="#ffffff" font-size="20">S =</text>
+
+        <rect x="60" y="70" width="50" height="36" class="num-box" />
+        <text x="85" y="95" fill="#00ffff" font-size="20" text-anchor="middle">100</text>
+        <text x="125" y="95" fill="#ffffff" font-size="20" text-anchor="middle">+</text>
+
+        <rect x="140" y="70" width="50" height="36" class="num-box" />
+        <text x="165" y="95" fill="#00ffff" font-size="20" text-anchor="middle">99</text>
+        <text x="205" y="95" fill="#ffffff" font-size="20" text-anchor="middle">+</text>
+
+        <rect x="220" y="70" width="50" height="36" class="num-box" />
+        <text x="245" y="95" fill="#00ffff" font-size="20" text-anchor="middle">98</text>
+
+        <text x="320" y="95" fill="#888" font-size="20" text-anchor="middle">. . .</text>
+
+        <text x="405" y="95" fill="#ffffff" font-size="20" text-anchor="middle">+</text>
+        <rect x="420" y="70" width="50" height="36" class="num-box" />
+        <text x="445" y="95" fill="#00ffff" font-size="20" text-anchor="middle">3</text>
+
+        <text x="485" y="95" fill="#ffffff" font-size="20" text-anchor="middle">+</text>
+        <rect x="500" y="70" width="50" height="36" class="num-box" />
+        <text x="525" y="95" fill="#00ffff" font-size="20" text-anchor="middle">2</text>
+
+        <text x="565" y="95" fill="#ffffff" font-size="20" text-anchor="middle">+</text>
+        <rect x="580" y="70" width="60" height="36" class="num-box" />
+        <text x="610" y="95" fill="#00ffff" font-size="20" text-anchor="middle">1</text>
+
+        <!-- Divider Line -->
+        <line x1="0" y1="120" x2="680" y2="120" stroke="#ffffff" stroke-width="2" />
+        <text x="-20" y="115" fill="#ffffff" font-size="24">+</text>
+
+        <!-- Sum Row: 2S = 101 + 101 + ... -->
+        <rect x="6" y="135" width="40" height="36" fill="none" stroke="#ff6464" stroke-width="2" />
+        <text x="26" y="160" fill="#ff6464" font-size="20" text-anchor="middle">2S</text>
+        <text x="50" y="160" fill="#ffffff" font-size="20">=</text>
+
+        <rect x="60" y="135" width="50" height="36" class="sum-box" />
+        <text x="85" y="160" fill="#64ff64" font-size="20" text-anchor="middle">101</text>
+        <line x1="85" y1="110" x2="85" y2="130" class="st-line" />
+        <text x="125" y="160" fill="#ffffff" font-size="20" text-anchor="middle">+</text>
+
+        <rect x="140" y="135" width="50" height="36" class="sum-box" />
+        <text x="165" y="160" fill="#64ff64" font-size="20" text-anchor="middle">101</text>
+        <line x1="165" y1="110" x2="165" y2="130" class="st-line" />
+        <text x="205" y="160" fill="#ffffff" font-size="20" text-anchor="middle">+</text>
+
+        <rect x="220" y="135" width="50" height="36" class="sum-box" />
+        <text x="245" y="160" fill="#64ff64" font-size="20" text-anchor="middle">101</text>
+        <line x1="245" y1="110" x2="245" y2="130" class="st-line" />
+
+        <text x="320" y="160" fill="#888" font-size="20" text-anchor="middle">. . .</text>
+
+        <text x="405" y="160" fill="#ffffff" font-size="20" text-anchor="middle">+</text>
+        <rect x="420" y="135" width="50" height="36" class="sum-box" />
+        <text x="445" y="160" fill="#64ff64" font-size="20" text-anchor="middle">101</text>
+
+        <text x="485" y="160" fill="#ffffff" font-size="20" text-anchor="middle">+</text>
+        <rect x="500" y="135" width="50" height="36" class="sum-box" />
+        <text x="525" y="160" fill="#64ff64" font-size="20" text-anchor="middle">101</text>
+
+        <text x="565" y="160" fill="#ffffff" font-size="20" text-anchor="middle">+</text>
+        <rect x="580" y="135" width="60" height="36" class="sum-box" />
+        <text x="610" y="160" fill="#64ff64" font-size="20" text-anchor="middle">101</text>
+        <text x="660" y="160" fill="#ffff00" font-size="18">(100개)</text>
+
+    </g>
+
+    <text x="400" y="320" fill="#ffffff" font-size="24" text-anchor="middle">2S = 101 × 100 = 10100</text>
+    <text x="400" y="360" fill="#ff6464" font-size="32" text-anchor="middle">S = 5050</text>
+
+</svg>

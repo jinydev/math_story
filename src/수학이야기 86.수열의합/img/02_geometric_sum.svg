@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#c92a2a" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">두 번째 합체: '곱셈을 날려버리는 r 배수 시프트 (Shift) 마법'</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"눈덩이처럼 불어나는 등비수열의 합? 배수(r) 를 곱해서 한 칸 밀어버린 뒤,
+        통째로 빼라!"</text>
+
+    <!-- Left: S (Original) -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="480" height="60" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="30" y="35" fill="#495057" font-size="16" font-weight="bold" text-anchor="middle">S =</text>
+
+        <rect x="60" y="15" width="40" height="30" fill="#ffe3e3" rx="3" />
+        <text x="80" y="35" fill="#c92a2a" font-weight="bold" font-size="12" text-anchor="middle">a</text>
+
+        <text x="110" y="35" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">+</text>
+
+        <rect x="120" y="15" width="40" height="30" fill="#ffc9c9" rx="3" />
+        <text x="140" y="35" fill="#c92a2a" font-weight="bold" font-size="12" text-anchor="middle">ar</text>
+
+        <text x="170" y="35" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">+</text>
+
+        <rect x="180" y="15" width="40" height="30" fill="#ffc9c9" rx="3" />
+        <text x="200" y="35" fill="#c92a2a" font-weight="bold" font-size="12" text-anchor="middle">ar²</text>
+
+        <text x="240" y="35" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">+ ... +</text>
+
+        <rect x="280" y="15" width="60" height="30" fill="#ffc9c9" rx="3" />
+        <text x="310" y="35" fill="#c92a2a" font-weight="bold" font-size="11" text-anchor="middle">ar^(n-2)</text>
+
+        <text x="355" y="35" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">+</text>
+
+        <rect x="370" y="15" width="60" height="30" fill="#ffc9c9" rx="3" />
+        <text x="400" y="35" fill="#c92a2a" font-weight="bold" font-size="11" text-anchor="middle">ar^(n-1)</text>
+
+    </g>
+
+    <!-- Vertical Subtraction symbol -->
+    <text x="40" y="180" fill="#e8590c" font-size="24" font-weight="bold" text-anchor="middle">—</text>
+
+    <!-- Right: rS (Shifted) -->
+    <g transform="translate(60, 150)">
+        <rect x="0" y="0" width="480" height="60" fill="#fff" stroke="#e8590c" stroke-width="2" rx="5" />
+        <text x="30" y="35" fill="#e8590c" font-size="16" font-weight="bold" text-anchor="middle">rS =</text>
+
+        <!-- Shifted blocks! Match with the ones above -->
+
+        <!-- Under first block is empty (shifted) -->
+
+        <rect x="120" y="15" width="40" height="30" fill="#d0ebff" rx="3" />
+        <text x="140" y="35" fill="#1864ab" font-weight="bold" font-size="12" text-anchor="middle">ar</text>
+
+        <text x="170" y="35" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">+</text>
+
+        <rect x="180" y="15" width="40" height="30" fill="#d0ebff" rx="3" />
+        <text x="200" y="35" fill="#1864ab" font-weight="bold" font-size="12" text-anchor="middle">ar²</text>
+
+        <text x="240" y="35" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">+ ... +</text>
+
+        <rect x="280" y="15" width="60" height="30" fill="#d0ebff" rx="3" />
+        <text x="310" y="35" fill="#1864ab" font-weight="bold" font-size="11" text-anchor="middle">ar^(n-2)</text>
+
+        <text x="355" y="35" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">+</text>
+
+        <rect x="370" y="15" width="60" height="30" fill="#d0ebff" rx="3" />
+        <text x="400" y="35" fill="#1864ab" font-weight="bold" font-size="11" text-anchor="middle">ar^(n-1)</text>
+
+        <text x="445" y="35" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">+</text>
+
+        <rect x="460" y="15" width="60" height="30" fill="#e3fafc" stroke="#0b7285" stroke-width="2" rx="3" />
+        <text x="490" y="35" fill="#0b7285" font-weight="bold" font-size="11" text-anchor="middle">ar^n</text>
+
+    </g>
+
+    <!-- Elimination lines -->
+    <line x1="190" y1="105" x2="210" y2="175" stroke="#fa5252" stroke-width="2" />
+    <line x1="250" y1="105" x2="270" y2="175" stroke="#fa5252" stroke-width="2" />
+    <line x1="360" y1="105" x2="380" y2="175" stroke="#fa5252" stroke-width="2" />
+    <line x1="450" y1="105" x2="470" y2="175" stroke="#fa5252" stroke-width="2" />
+
+    <text x="300" y="235" fill="#c92a2a" font-size="14" font-weight="bold" text-anchor="middle">결과: (1 - r)S = a - ar^n
+        (가운데 기둥들은 모조리 폭파!)</text>
+</svg>

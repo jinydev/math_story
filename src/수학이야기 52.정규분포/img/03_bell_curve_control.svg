@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#e7f5ff" rx="10" />
+
+    <text x="300" y="30" fill="#1864ab" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">정규분포(Normal Distribution) 종 곡선의 2가지 조종 레버</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"평균(Mean)은 산의 기둥 위치를 이동시키고, 표준편차(Sigma)는 산의
+        뚱뚱함을 뾰족하게 누른다!"</text>
+
+    <!-- Ground Line -->
+    <line x1="50" y1="180" x2="550" y2="180" stroke="#adb5bd" stroke-width="3" />
+
+    <!-- Mean shift (X-axis movement) -->
+    <g transform="translate(150, 0)">
+        <!-- Base Curve 1 -->
+        <path d="M -50 180 C -30 180, -10 90, 0 90 C 10 90, 30 180, 50 180" fill="#ffe3e3" fill-opacity="0.7"
+            stroke="#fa5252" stroke-width="2" />
+        <line x1="0" y1="90" x2="0" y2="180" stroke="#fa5252" stroke-dasharray="3,3" />
+        <text x="0" y="195" fill="#c92a2a" font-size="12" font-weight="bold" text-anchor="middle">m₁</text>
+
+        <!-- Base Curve 2 (Shifted Right) -->
+        <path d="M 30 180 C 50 180, 70 90, 80 90 C 90 90, 110 180, 130 180" fill="#d0ebff" fill-opacity="0.7"
+            stroke="#228be6" stroke-width="2" />
+        <line x1="80" y1="90" x2="80" y2="180" stroke="#1864ab" stroke-dasharray="3,3" />
+        <text x="80" y="195" fill="#1864ab" font-size="12" font-weight="bold" text-anchor="middle">m₂ > m₁</text>
+
+        <!-- Shift arrow -->
+        <path d="M 15 110 Q 40 100 65 110" fill="none" stroke="#ced4da" stroke-width="3"
+            marker-end="url(#arrow-gray)" />
+        <text x="40" y="95" fill="#495057" font-size="10" font-weight="bold" text-anchor="middle">평균 m: 좌우 이동 휠</text>
+    </g>
+
+    <!-- Sigma Scale (Y-axis scaling) -->
+    <g transform="translate(420, 0)">
+        <!-- Fat Curve (Large Sigma) -->
+        <path d="M -80 180 C -40 180, -20 120, 0 120 C 20 120, 40 180, 80 180" fill="#e6fcf5" fill-opacity="0.7"
+            stroke="#20c997" stroke-width="2" />
+        <text x="60" y="150" fill="#0ca678" font-size="10" font-weight="bold">큰 σ (뚱뚱함)</text>
+
+        <!-- Sharp Curve (Small Sigma) -->
+        <path d="M -30 180 C -15 180, -10 50, 0 50 C 10 50, 15 180, 30 180" fill="#fff4e6" fill-opacity="0.8"
+            stroke="#fd7e14" stroke-width="2" />
+        <text x="25" y="80" fill="#d9480f" font-size="10" font-weight="bold">작은 σ (뾰족함)</text>
+
+        <line x1="0" y1="50" x2="0" y2="180" stroke="#adb5bd" stroke-dasharray="3,3" />
+        <text x="0" y="195" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">m 고정</text>
+
+        <!-- Up/Down scale arrow -->
+        <path d="M 0 110 L 0 65" fill="none" stroke="#ced4da" stroke-width="3" marker-end="url(#arrow-gray)" />
+        <text x="-40" y="80" fill="#495057" font-size="10" font-weight="bold">편차 σ:</text>
+        <text x="-40" y="92" fill="#495057" font-size="10" font-weight="bold">상하 압축기</text>
+    </g>
+
+    <rect x="180" y="215" width="240" height="25" fill="#fff" stroke="#adb5bd" rx="5" />
+    <text x="300" y="232" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">어떤 N(m, σ²) 도 면적 총합은 무조건
+        '1' 로 고정!</text>
+
+    <defs>
+        <marker id="arrow-gray" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

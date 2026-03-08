@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#e8590c" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">집단의 멱살을 잡는 대장: 대푯값 (Representative Values)</text>
+
+    <!-- Mean -->
+    <g transform="translate(100, 150)">
+        <rect x="-80" y="-80" width="160" height="120" fill="#fff4e6" stroke="#f59f00" stroke-width="2" rx="8" />
+        <text x="0" y="-50" fill="#d9480f" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">산술 평균 (Mean)</text>
+        <text x="0" y="-20" fill="#868e96" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">전체 합 / 인원수</text>
+
+        <text x="0" y="5" fill="#e8590c" font-size="20" font-family="monospace" font-weight="bold"
+            text-anchor="middle">가장 대중적</text>
+        <text x="0" y="30" fill="#c92a2a" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">단, 이상치(천재)에 심하게 왜곡됨</text>
+    </g>
+
+    <!-- Median -->
+    <g transform="translate(300, 150)">
+        <rect x="-80" y="-80" width="160" height="120" fill="#ebfbee" stroke="#40c057" stroke-width="2" rx="8" />
+        <text x="0" y="-50" fill="#2b8a3e" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">중앙값 (Median)</text>
+        <text x="0" y="-20" fill="#868e96" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">1등부터 꼴찌 중 센터</text>
+
+        <text x="0" y="5" fill="#2b8a3e" font-size="20" font-family="monospace" font-weight="bold"
+            text-anchor="middle">정중앙 서열</text>
+        <text x="0" y="30" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">극단적인 이상치(아웃라이어) 방어</text>
+    </g>
+
+    <!-- Mode -->
+    <g transform="translate(500, 150)">
+        <rect x="-80" y="-80" width="160" height="120" fill="#e3fafc" stroke="#0c8599" stroke-width="2" rx="8" />
+        <text x="0" y="-50" fill="#0b7285" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">최빈값 (Mode)</text>
+        <text x="0" y="-20" fill="#868e96" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">가장 많이 득표한 놈</text>
+
+        <text x="0" y="5" fill="#0b7285" font-size="20" font-family="monospace" font-weight="bold"
+            text-anchor="middle">인기투표 1위</text>
+        <text x="0" y="30" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">선거, 신발 사이즈 결정에 특화</text>
+    </g>
+
+</svg>

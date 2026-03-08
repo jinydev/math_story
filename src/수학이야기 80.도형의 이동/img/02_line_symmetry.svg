@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#e8590c" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">두 번째 이동: '선대칭 (Line Symmetry)'</text>
+
+    <!-- Subtitle -->
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"거울(축) 을 기준으로 도장을 찍듯 완벽하게 반전되는 데칼코마니의
+        우주"</text>
+
+    <!-- Left: x-axis symmetry -->
+    <g transform="translate(40, 70)">
+        <rect x="0" y="0" width="160" height="160" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="80" y="25" fill="#d9480f" font-size="14" font-weight="bold" text-anchor="middle">1. x축 대칭 (물그림자)</text>
+
+        <!-- Axes -->
+        <line x1="10" y1="90" x2="150" y2="90" stroke="#868e96" stroke-width="2" /> <!-- x axis -->
+        <line x1="80" y1="30" x2="80" y2="150" stroke="#ced4da" stroke-width="1" /> <!-- y axis -->
+        <text x="140" y="85" fill="#868e96" font-size="10">x축</text>
+
+        <!-- Original Point -->
+        <circle cx="110" cy="60" r="5" fill="#f59f00" />
+        <text x="110" y="50" fill="#d9480f" font-size="12" font-weight="bold" text-anchor="middle">(2, 3)</text>
+
+        <!-- Symmetry Path -->
+        <line x1="110" y1="65" x2="110" y2="115" stroke="#adb5bd" stroke-width="2" stroke-dasharray="2,2" />
+
+        <!-- Mirrored Point -->
+        <circle cx="110" cy="120" r="5" fill="#c92a2a" />
+        <text x="110" y="138" fill="#c92a2a" font-size="12" font-weight="bold" text-anchor="middle">(2, -3)</text>
+
+        <text x="80" y="155" fill="#c92a2a" font-size="10" font-weight="bold" text-anchor="middle">"y의 부호만 반대로!"</text>
+    </g>
+
+    <!-- Middle: y-axis symmetry -->
+    <g transform="translate(220, 70)">
+        <rect x="0" y="0" width="160" height="160" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="80" y="25" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">2. y축 대칭 (거울)</text>
+
+        <!-- Axes -->
+        <line x1="10" y1="90" x2="150" y2="90" stroke="#ced4da" stroke-width="1" /> <!-- x axis -->
+        <line x1="80" y1="30" x2="80" y2="150" stroke="#868e96" stroke-width="2" /> <!-- y axis -->
+        <text x="65" y="40" fill="#868e96" font-size="10">y축</text>
+
+        <!-- Original Point -->
+        <circle cx="120" cy="60" r="5" fill="#f59f00" />
+        <text x="120" y="50" fill="#d9480f" font-size="12" font-weight="bold" text-anchor="middle">(2, 3)</text>
+
+        <!-- Symmetry Path -->
+        <line x1="115" y1="60" x2="45" y2="60" stroke="#adb5bd" stroke-width="2" stroke-dasharray="2,2" />
+
+        <!-- Mirrored Point -->
+        <circle cx="40" cy="60" r="5" fill="#1864ab" />
+        <text x="40" y="50" fill="#1864ab" font-size="12" font-weight="bold" text-anchor="middle">(-2, 3)</text>
+
+        <text x="80" y="155" fill="#1864ab" font-size="10" font-weight="bold" text-anchor="middle">"x의 부호만 반대로!"</text>
+    </g>
+
+    <!-- Right: y=x symmetry -->
+    <g transform="translate(400, 70)">
+        <rect x="0" y="0" width="160" height="160" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="80" y="25" fill="#862e9c" font-size="14" font-weight="bold" text-anchor="middle">3. y=x 대칭 (체인지)</text>
+
+        <!-- Axes and Diagonal -->
+        <line x1="10" y1="120" x2="150" y2="120" stroke="#ced4da" stroke-width="1" /> <!-- x -->
+        <line x1="40" y1="30" x2="40" y2="150" stroke="#ced4da" stroke-width="1" /> <!-- y -->
+        <line x1="20" y1="140" x2="140" y2="20" stroke="#868e96" stroke-width="2" stroke-dasharray="4,2" />
+        <text x="135" y="45" fill="#868e96" font-size="10">y=x축</text>
+
+        <!-- Original Point -->
+        <circle cx="90" cy="100" r="5" fill="#f59f00" />
+        <text x="110" y="105" fill="#d9480f" font-size="12" font-weight="bold" text-anchor="middle">(2, 1)</text>
+
+        <!-- Symmetry Path -->
+        <line x1="85" y1="95" x2="65" y2="75" stroke="#adb5bd" stroke-width="2" stroke-dasharray="2,2" />
+
+        <!-- Mirrored Point -->
+        <circle cx="60" cy="70" r="5" fill="#862e9c" />
+        <text x="45" y="65" fill="#862e9c" font-size="12" font-weight="bold" text-anchor="middle">(1, 2)</text>
+
+        <text x="80" y="155" fill="#862e9c" font-size="10" font-weight="bold" text-anchor="middle">"x와 y의 자리가
+            거꾸로!"</text>
+    </g>
+
+</svg>

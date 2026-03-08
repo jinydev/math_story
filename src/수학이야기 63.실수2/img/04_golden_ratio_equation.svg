@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350">
+    <rect width="700" height="350" fill="#fcf8f2" rx="15" />
+
+    <text x="350" y="40" fill="#d9480f" font-size="22" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">황금비 (Golden Ratio) 의 완벽한 분할</text>
+
+    <!-- Title equations -->
+    <rect x="200" y="60" width="300" height="50" fill="#fff" stroke="#ffa94d" stroke-width="2" rx="8" />
+    <text x="350" y="92" fill="#e67700" font-size="20" font-weight="bold" font-family="monospace" text-anchor="middle">
+        A + B : A = A : B
+    </text>
+
+    <!-- Line Segment -->
+    <rect x="100" y="160" width="500" height="40" fill="#e9ecef" rx="10" />
+
+    <rect x="100" y="160" width="309" height="40" fill="#ffc078" rx="10" /> <!-- ~61.8% -->
+    <text x="254" y="186" fill="#d9480f" font-size="20" font-weight="bold" font-family="monospace"
+        text-anchor="middle">A (긴 부분)</text>
+
+    <rect x="409" y="160" width="191" height="40" fill="#ffd8a8" rx="10" /> <!-- ~38.2% -->
+    <text x="504" y="186" fill="#e67700" font-size="20" font-weight="bold" font-family="monospace"
+        text-anchor="middle">B (짧은 부분)</text>
+
+    <!-- Brackets and notations -->
+    <path d="M 100 220 L 100 240 L 600 240 L 600 220" fill="none" stroke="#adb5bd" stroke-width="2" />
+    <text x="350" y="265" fill="#495057" font-size="20" font-weight="bold" font-family="monospace"
+        text-anchor="middle">A + B (전체 길이)</text>
+
+    <!-- Value Output -->
+    <rect x="250" y="280" width="200" height="40" fill="#fff4e6" stroke="#fcc419" stroke-width="3" rx="8" />
+    <text x="350" y="306" fill="#d9480f" font-size="18" font-family="monospace" font-weight="bold" text-anchor="middle">
+        A / B = 1.61803398...
+    </text>
+
+</svg>

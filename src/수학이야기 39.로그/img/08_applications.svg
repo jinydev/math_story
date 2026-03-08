@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#fff9db" rx="10" />
+
+    <text x="300" y="30" fill="#e67700" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">폭주하는 데이터를 제압하라: 로그 스케일의 활용 (Applications)</text>
+
+    <!-- Linear Graph (Exploding) -->
+    <g transform="translate(100, 180)">
+        <line x1="0" y1="0" x2="160" y2="0" stroke="#adb5bd" stroke-width="2" /> <!-- X axis -->
+        <line x1="0" y1="0" x2="0" y2="-120" stroke="#adb5bd" stroke-width="2" /> <!-- Y axis -->
+
+        <!-- Linear Curve -->
+        <path d="M 0 0 Q 80 -10 120 -50 T 150 -120" fill="none" stroke="#f03e3e" stroke-width="3" />
+        <circle cx="150" cy="-120" r="4" fill="#c92a2a" />
+
+        <text x="110" y="-120" fill="#e03131" font-size="14" font-family="sans-serif" font-weight="bold">화면 뚫고
+            나감!</text>
+        <text x="-30" y="-130" fill="#868e96" font-size="14" font-family="sans-serif" font-weight="bold">Y(일반)</text>
+        <text x="80" y="25" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">일반 차트 (Linear)</text>
+    </g>
+
+    <!-- VS -->
+    <text x="300" y="110" fill="#adb5bd" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">VS</text>
+
+    <!-- Log Graph (Suppressed) -->
+    <g transform="translate(400, 180)">
+        <line x1="0" y1="0" x2="160" y2="0" stroke="#adb5bd" stroke-width="2" /> <!-- X axis -->
+        <line x1="0" y1="0" x2="0" y2="-120" stroke="#adb5bd" stroke-width="2" /> <!-- Y axis -->
+
+        <!-- Log Curve -->
+        <path d="M 0 0 Q 30 -50 150 -80" fill="none" stroke="#2b8a3e" stroke-width="3" />
+        <circle cx="150" cy="-80" r="4" fill="#2b8a3e" />
+
+        <text x="110" y="-95" fill="#2b8a3e" font-size="14" font-family="sans-serif" font-weight="bold">통제 가능!</text>
+        <text x="-40" y="-130" fill="#868e96" font-size="14" font-family="sans-serif" font-weight="bold">log(Y)</text>
+        <text x="80" y="25" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">로그 차트 (Log Scale)</text>
+    </g>
+
+</svg>

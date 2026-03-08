@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">천문학자의 수명을 두 배로 늘려준 기적: 네이피어의 로그 (Logarithm)</text>
+
+    <g transform="translate(100, 150)">
+
+        <!-- Before Logarithm (Multiplication) -->
+        <text x="0" y="-80" fill="#e03131" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">로그 이전 (곱셈의 지옥)</text>
+        <rect x="-80" y="-60" width="160" height="40" fill="#ffe3e3" stroke="#ff8787" stroke-width="2" rx="5" />
+        <text x="0" y="-35" fill="#c92a2a" font-size="14" font-family="monospace" font-weight="bold"
+            text-anchor="middle">873492 × 159302 = ?</text>
+
+        <path d="M 0 -10 L 0 30" fill="none" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow-down)" />
+        <text x="0" y="55" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">수개월 동안 손으로 계산 ✍️</text>
+
+    </g>
+
+    <g transform="translate(450, 150)">
+
+        <!-- After Logarithm (Addition) -->
+        <text x="0" y="-80" fill="#1864ab" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">네이피어 이후 (덧셈의 천국)</text>
+        <rect x="-80" y="-60" width="160" height="40" fill="#e7f5ff" stroke="#74c0fc" stroke-width="2" rx="5" />
+        <text x="0" y="-35" fill="#1864ab" font-size="14" font-family="monospace" font-weight="bold"
+            text-anchor="middle">log(A) + log(B) = log(C)</text>
+
+        <path d="M 0 -10 L 0 30" fill="none" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow-down)" />
+        <text x="0" y="55" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">몇 시간 만에 암산 가능! 🚀</text>
+
+    </g>
+
+    <path d="M 230 110 L 320 110" fill="none" stroke="#2b8a3e" stroke-width="4" marker-end="url(#arrow-right)" />
+    <text x="275" y="95" fill="#2b8a3e" font-size="14" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">혁명 (1614년)</text>
+
+    <defs>
+        <marker id="arrow-down" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+        <marker id="arrow-right" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+    </defs>
+</svg>

@@ -32,8 +32,10 @@
 조금 더 가서 $2 + 2 = 4$ 도 증명해볼까요? ($4$의 정의는 $S(S(S(1)))$ 이자 $S(3)$ 입니다)
 
 <div align="center">
-  <img src="./img/v3_62_lesson03_addition_2d.png" alt="1 더하기 1을 융합하는 에너지 랩실" width="600" />
+  <img src="./img/03_peano_addition.svg" alt="1 더하기 1을 융합하는 에너지 랩실" width="600" />
 </div>
+
+![1더하기 1 융합](./img/03_addition_fusion_python.png)
 
 > $2 + 2$
 > $= 2 + S(1)$   *(2의 정의는 $S(1)$)*

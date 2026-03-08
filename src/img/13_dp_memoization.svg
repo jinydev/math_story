@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .node {
+                fill: #161b22;
+                stroke: #30363d;
+                stroke-width: 2;
+                rx: 20;
+            }
+
+            .node-text {
+                fill: #ffffff;
+                font-size: 16px;
+                text-anchor: middle;
+                alignment-baseline: middle;
+            }
+
+            .node-dup {
+                stroke: #ff6464;
+                fill: rgba(255, 100, 100, 0.1);
+            }
+
+            .node-dup-text {
+                fill: #ff6464;
+            }
+
+            .node-dp {
+                stroke: #64ff64;
+                fill: rgba(100, 255, 100, 0.1);
+            }
+
+            .node-dp-text {
+                fill: #64ff64;
+            }
+
+            .line {
+                fill: none;
+                stroke: #8b949e;
+                stroke-width: 2;
+            }
+
+            .line-dp {
+                fill: none;
+                stroke: #64ff64;
+                stroke-width: 3;
+                stroke-dasharray: 5, 5;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 24px;
+                text-anchor: middle;
+            }
+
+            .memo-box {
+                fill: rgba(0, 255, 255, 0.05);
+                stroke: #00ffff;
+                stroke-width: 2;
+                rx: 5;
+            }
+
+            .memo-header {
+                fill: #00ffff;
+                font-size: 18px;
+            }
+
+            .memo-text {
+                fill: #ffffff;
+                font-size: 14px;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="40" class="title">재귀함수의 지옥 vs 동적 계획법(DP)의 캐싱 메모</text>
+
+    <!-- Recursion Tree Left Side -->
+    <text x="250" y="80" fill="#8b949e" font-size="18" text-anchor="middle">일반 재귀의 중복 피라미드 (O(2^n))</text>
+
+    <g transform="translate(0, 30)">
+        <!-- Level 1 -->
+        <rect x="210" y="80" width="80" height="40" class="node" />
+        <text x="250" y="100" class="node-text">fib(5)</text>
+
+        <path d="M 250 120 L 170 160" class="line" />
+        <path d="M 250 120 L 330 160" class="line" />
+
+        <!-- Level 2 -->
+        <rect x="130" y="160" width="80" height="40" class="node" />
+        <text x="170" y="180" class="node-text">fib(4)</text>
+        <rect x="290" y="160" width="80" height="40" class="node node-dup" />
+        <text x="330" y="180" class="node-text node-dup-text">fib(3)</text>
+
+        <path d="M 170 200 L 90 240" class="line" />
+        <path d="M 170 200 L 210 240" class="line" />
+        <path d="M 330 200 L 290 240" class="line" />
+        <path d="M 330 200 L 370 240" class="line" />
+
+        <!-- Level 3 -->
+        <rect x="50" y="240" width="80" height="40" class="node" />
+        <text x="90" y="260" class="node-text">fib(3)</text>
+        <rect x="170" y="240" width="80" height="40" class="node node-dup" />
+        <text x="210" y="260" class="node-text node-dup-text">fib(2)</text>
+        <rect x="250" y="240" width="80" height="40" class="node node-dup" />
+        <text x="290" y="260" class="node-text node-dup-text">fib(2)</text>
+        <rect x="330" y="240" width="80" height="40" class="node" />
+        <text x="370" y="260" class="node-text">fib(1)</text>
+
+        <!-- Warning -->
+        <text x="250" y="320" fill="#ff6464" font-size="16" text-anchor="middle">fib(3)과 fib(2)가 계속해서 똑같이 중복 연산됨!</text>
+    </g>
+
+    <!-- VS line -->
+    <path d="M 480 80 L 480 360" stroke="#30363d" stroke-width="2" stroke-dasharray="4,4" />
+
+    <!-- DP Right Side -->
+    <text x="650" y="80" fill="#64ff64" font-size="18" text-anchor="middle">동적 계획법 (Memoization)</text>
+
+    <g transform="translate(370, 30)">
+        <!-- Memo Box -->
+        <rect x="210" y="80" width="130" height="150" class="memo-box" />
+        <text x="275" y="110" class="memo-header" text-anchor="middle">공책 (Dict)</text>
+        <text x="230" y="140" class="memo-text">memo[1] = 1</text>
+        <text x="230" y="160" class="memo-text">memo[2] = 1</text>
+        <text x="230" y="180" class="memo-text">memo[3] = 2</text>
+        <text x="230" y="200" class="memo-text">memo[4] = 3</text>
+        <text x="230" y="220" class="memo-text">memo[5] = 5</text>
+
+        <!-- DP Flow -->
+        <rect x="130" y="160" width="60" height="40" class="node" />
+        <text x="160" y="180" class="node-text">fib(4)</text>
+
+        <path d="M 190 180 L 210 180" class="line-dp" />
+
+        <rect x="130" y="220" width="60" height="40" class="node node-dp" />
+        <text x="160" y="240" class="node-text node-dp-text">fib(3)</text>
+
+        <path d="M 190 240 L 210 200" class="line-dp" />
+
+        <!-- Explanation -->
+        <text x="275" y="260" fill="#64ff64" font-size="14" text-anchor="middle">계산 안하고 바로 꺼내옴!</text>
+        <text x="275" y="290" fill="#ffffff" font-size="16" text-anchor="middle">시간복잡도 O(N) 최적화</text>
+    </g>
+</svg>

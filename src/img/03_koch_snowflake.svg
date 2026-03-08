@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            /* Fractal line styles */
+            .base {
+                stroke: #30363d;
+                stroke-width: 2;
+                fill: none;
+            }
+
+            .lvl1 {
+                stroke: rgba(0, 255, 255, 0.3);
+                stroke-width: 2;
+                fill: none;
+            }
+
+            .lvl2 {
+                stroke: rgba(0, 255, 255, 0.6);
+                stroke-width: 2;
+                fill: none;
+            }
+
+            .lvl3 {
+                stroke: #00ffff;
+                stroke-width: 2;
+                fill: rgba(0, 255, 255, 0.1);
+                filter: drop-shadow(0 0 5px #00ffff);
+            }
+
+            .title {
+                fill: #00ffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 14px;
+                text-anchor: middle;
+            }
+
+            /* Animations */
+            @keyframes draw-path {
+                from {
+                    stroke-dashoffset: 2000;
+                }
+
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+
+            .anim-draw {
+                stroke-dasharray: 2000;
+                animation: draw-path 5s ease-in-out infinite alternate;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="40" class="title">코흐의 눈송이 (Koch Snowflake)</text>
+    <text x="400" y="65" class="desc">선분을 무한히 파편화하여 면적은 유한하지만 둘레 길이는 무한대가 되는 기하학 폭발</text>
+
+    <!-- Scale and Generation visuals -->
+    <g transform="translate(50, 150)">
+        <text x="60" y="-30" fill="#ffffff" font-size="16" text-anchor="middle">세대 0</text>
+        <polyline points="0,0 120,0" class="base" />
+    </g>
+
+    <g transform="translate(250, 150)">
+        <text x="60" y="-30" fill="#ffffff" font-size="16" text-anchor="middle">세대 1</text>
+        <polyline points="0,0 40,0 60,-34.64 80,0 120,0" class="lvl1" />
+    </g>
+
+    <g transform="translate(450, 150)">
+        <text x="60" y="-30" fill="#ffffff" font-size="16" text-anchor="middle">세대 2</text>
+        <polyline points="
+      0,0 13.33,0 20,-11.55 26.66,0 40,0 
+      46.66,-11.55 40,-23.09 53.33,-23.09 60,-34.64 66.66,-23.09 80,-23.09 73.33,-11.55 
+      80,0 93.33,0 100,-11.55 106.66,0 120,0
+    " class="lvl2" />
+    </g>
+
+    <g transform="translate(680, 150)">
+        <text x="60" y="-30" fill="#ffffff" font-size="16" text-anchor="middle">세대 3</text>
+        <polyline points="
+      0,0 4.44,0 6.66,-3.85 8.88,0 13.33,0 15.55,-3.85 13.33,-7.7 17.77,-7.7 20,-11.55 22.22,-7.7 26.66,-7.7 24.44,-3.85 26.66,0 31.11,0 33.33,-3.85 35.55,0 40,0 42.22,-3.85 44.44,-7.7 46.66,-3.85 51.11,-3.85 53.33,-7.7 51.11,-11.55 55.55,-11.55 60,-19.24 64.44,-11.55 68.88,-11.55 66.66,-7.7 68.88,-3.85 73.33,-3.85 75.55,-7.7 77.77,-3.85 80,0 84.44,0 86.66,-3.85 88.88,0 93.33,0 95.55,-3.85 93.33,-7.7 97.77,-7.7 100,-11.55 102.22,-7.7 106.66,-7.7 104.44,-3.85 106.66,0 111.11,0 113.33,-3.85 115.55,0 120,0
+    " class="lvl3" />
+    </g>
+
+    <!-- Main Snowflake at the bottom -->
+    <g transform="translate(400, 320) scale(1.5)">
+        <!-- Base triangle for visual reference (optional, fading) -->
+        <polygon points="-75,43.3 75,43.3 0,-86.6" fill="rgba(88, 88, 88, 0.1)" stroke="#30363d" stroke-width="1"
+            stroke-dasharray="2,2" />
+
+        <!-- Render completely a Koch Snowflake Iteration 4 using precomputed path or recursive drawing abstraction -->
+        <!-- For SVG simplicity, drawing an iteration 3 roughly here for the full snowflake -->
+        <path d="
+    M -75,43.3 
+    L -50,43.3 L -37.5,64.95 L -25,43.3 
+    L 0,43.3 L 12.5,64.95 L 0,86.6 L 25,86.6 L 37.5,108.25 L 50,86.6 L 75,86.6 L 62.5,64.95 L 75,43.3 
+    L 50,43.3 L 37.5,21.65 L 50,0 
+    L 25,0 L 12.5,-21.65 L 25,-43.3 L 0,-43.3 L -12.5,-64.95 L 0,-86.6 L -25,-86.6 L -12.5,-64.95 L -25,-43.3 L -50,-43.3 L -37.5,-21.65 L -50,0 L -75,0 L -87.5,21.65 L -75,43.3 
+    Z" class="lvl3 anim-draw" />
+
+        <circle cx="0" cy="10" r="2" fill="#ffffff" />
+    </g>
+
+</svg>

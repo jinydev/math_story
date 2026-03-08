@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#862e9c" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세 번째 이동: '점대칭 (Point Symmetry)'</text>
+
+    <!-- Subtitle -->
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"우주의 중심(블랙홀) 을 관통하여 정반대편 180도로 뱉어내는 웜홀
+        다이브"</text>
+
+    <!-- Left Side: Concept of 180 rotation -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#862e9c" font-size="14" font-weight="bold" text-anchor="middle">원점 대칭 (Origin
+            Symmetry)</text>
+
+        <!-- Axes -->
+        <line x1="10" y1="85" x2="210" y2="85" stroke="#ced4da" stroke-width="1" /> <!-- x -->
+        <line x1="110" y1="35" x2="110" y2="135" stroke="#ced4da" stroke-width="1" /> <!-- y -->
+
+        <!-- Origin Hole -->
+        <circle cx="110" cy="85" r="4" fill="#212529" />
+        <text x="125" y="100" fill="#495057" font-size="10" font-weight="bold">(0, 0)</text>
+
+        <!-- Original Point -->
+        <circle cx="160" cy="50" r="5" fill="#f59f00" />
+        <text x="160" y="40" fill="#d9480f" font-size="12" font-weight="bold" text-anchor="middle">(3, 2)</text>
+
+        <!-- Path through origin -->
+        <line x1="155" y1="53" x2="65" y2="117" stroke="#862e9c" stroke-width="2" stroke-dasharray="4,2"
+            marker-end="url(#arrow-purple)" />
+
+        <!-- Symmetric Point -->
+        <circle cx="60" cy="120" r="5" fill="#862e9c" />
+        <text x="60" y="138" fill="#862e9c" font-size="12" font-weight="bold" text-anchor="middle">(-3, -2)</text>
+
+        <!-- Rotation curve -->
+        <path d="M 160 50 A 60 60 0 0 1 60 120" fill="none" stroke="#eebefa" stroke-width="2" stroke-dasharray="2,2" />
+        <text x="175" y="90" fill="#862e9c" font-size="10">180° 회전!</text>
+    </g>
+
+    <!-- Formula Translation -->
+    <g transform="translate(320, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#c92a2a" font-size="14" font-weight="bold" text-anchor="middle">부호 파괴 알고리즘</text>
+
+        <!-- Logic flow -->
+        <rect x="25" y="40" width="170" height="30" fill="#f8f9fa" rx="3" />
+        <text x="110" y="60" fill="#495057" font-size="12" font-family="monospace" font-weight="bold"
+            text-anchor="middle">점 ( x , y )</text>
+
+        <text x="110" y="90" fill="#fa5252" font-size="16" font-weight="bold" text-anchor="middle">↓</text>
+
+        <rect x="25" y="100" width="170" height="35" fill="#ffe3e3" stroke="#fa5252" rx="3" />
+        <text x="110" y="118" fill="#c92a2a" font-size="12" font-family="monospace" font-weight="bold"
+            text-anchor="middle">점 ( -x , -y )</text>
+        <text x="110" y="130" fill="#c92a2a" font-size="9" text-anchor="middle">x축 대칭 + y축 대칭 콤보</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-purple" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#862e9c" />
+        </marker>
+    </defs>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">운명을 계산하는 숫자: 확률변수와 확률분포 (Random Variable)</text>
+
+    <!-- Real World Event -->
+    <g transform="translate(100, 150)">
+        <rect x="-80" y="-80" width="160" height="120" fill="#fff4e6" stroke="#f59f00" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#d9480f" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">현실 세계 (주사위)</text>
+
+        <rect x="-40" y="-30" width="40" height="40" fill="#fff" stroke="#f59f00" stroke-width="2" rx="4" />
+        <circle cx="-20" cy="-10" r="4" fill="#d9480f" />
+
+        <rect x="0" y="-10" width="40" height="40" fill="#fff" stroke="#f59f00" stroke-width="2" rx="4" />
+        <circle cx="10" cy="10" r="4" fill="#d9480f" />
+        <circle cx="30" cy="10" r="4" fill="#d9480f" />
+        <circle cx="10" cy="24" r="4" fill="#d9480f" />
+        <circle cx="30" cy="24" r="4" fill="#d9480f" />
+
+        <text x="0" y="55" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">결과: "1 눈", "4 눈"</text>
+    </g>
+
+    <!-- Transformation mapping (Random Variable X) -->
+    <g transform="translate(300, 130)">
+        <path d="M -80 0 Q 0 -50 80 0" fill="none" stroke="#2b8a3e" stroke-width="4" stroke-dasharray="6,4"
+            marker-end="url(#arrow-green)" />
+        <text x="0" y="-35" fill="#2b8a3e" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">확률변수 X</text>
+        <rect x="-50" y="-15" width="100" height="25" fill="#ebfbee" rx="5" />
+        <text x="0" y="2" fill="#2b8a3e" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">숫자로 매핑 (변환)</text>
+    </g>
+
+    <!-- Mathematical World -->
+    <g transform="translate(500, 150)">
+        <rect x="-80" y="-80" width="160" height="120" fill="#e7f5ff" stroke="#339af0" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#1864ab" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">수학 세계 (확률)</text>
+
+        <text x="0" y="-20" fill="#1864ab" font-size="24" font-family="monospace" font-weight="bold"
+            text-anchor="middle">X = 1</text>
+        <text x="0" y="10" fill="#339af0" font-size="14" font-family="monospace" font-weight="bold"
+            text-anchor="middle">P(X=1) = 1/6</text>
+
+        <text x="0" y="32" fill="#1864ab" font-size="24" font-family="monospace" font-weight="bold"
+            text-anchor="middle">X = 4</text>
+        <text x="0" y="55" fill="#339af0" font-size="14" font-family="monospace" font-weight="bold"
+            text-anchor="middle">P(X=4) = 1/6</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+    </defs>
+</svg>

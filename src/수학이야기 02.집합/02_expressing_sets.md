@@ -32,7 +32,7 @@
 2. 장벽의 오른쪽: "근데 그 X 녀석들이 바구니를 통과하려면 이런 조건을 만족해야만 해."
 
 <div align="center">
-  <img src="./img/v3_02_lesson02_scroll_vs_code_2d.png" alt="두루마리에 1만 개의 숫자를 쓰는 고대 학자와 조건제시법 코드를 치는 현대 해커의 대비" width="600" />
+  <img src="./img/02_roster_vs_builder_python.png" alt="두루마리에 1만 개의 숫자를 쓰는 고대 학자와 조건제시법 코드를 치는 현대 해커의 대비" width="600" />
 </div>
 
 데이터베이스의 `SQL` 조회문(`SELECT * FROM users WHERE height > 160`)과 완전히 똑같은 철학입니다. 

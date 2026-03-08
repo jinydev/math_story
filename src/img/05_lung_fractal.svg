@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .pipe {
+                fill: none;
+                stroke: #8b949e;
+                stroke-width: 15;
+                stroke-linecap: round;
+            }
+
+            .fractal-branch {
+                fill: none;
+                stroke: #ff6464;
+                stroke-linecap: round;
+            }
+
+            /* Level colors to simulate depth */
+            .l0 {
+                stroke-width: 16;
+                stroke: #ff6464;
+            }
+
+            .l1 {
+                stroke-width: 12;
+                stroke: #ff8864;
+            }
+
+            .l2 {
+                stroke-width: 8;
+                stroke: #ffaa64;
+            }
+
+            .l3 {
+                stroke-width: 5;
+                stroke: #ffcc64;
+            }
+
+            .l4 {
+                stroke-width: 3;
+                stroke: #ffee64;
+            }
+
+            .l5 {
+                stroke-width: 1.5;
+                stroke: #ffff64;
+                filter: drop-shadow(0 0 2px #ffff64);
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .box {
+                fill: #161b22;
+                stroke: #30363d;
+                stroke-width: 2;
+                rx: 5;
+            }
+
+            .highlight {
+                fill: #00ffff;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#0d1117" />
+
+    <text x="400" y="40" class="title">표면적의 극한 최적화: 유클리드 파이프 vs 프랙탈 폐결절</text>
+    <text x="400" y="70" class="desc">한정된 부피 속에서 접촉 면적을 수만 배 늘리기 위한 대자연의 선택</text>
+
+    <!-- Euclidean Pipeline -->
+    <g transform="translate(200, 150)">
+        <rect x="-60" y="-30" width="120" height="240" rx="60" fill="rgba(255, 255, 255, 0.05)" stroke="#ffffff"
+            stroke-width="2" stroke-dasharray="5,5" />
+        <text x="0" y="-50" fill="#ffffff" font-size="20" text-anchor="middle">유클리드 파이프라인</text>
+
+        <path d="M -20 0 L -20 180" class="pipe" />
+        <path d="M 20 0 L 20 180" class="pipe" />
+
+        <rect x="-80" y="240" width="160" height="60" class="box" />
+        <text x="0" y="265" fill="#ff6464" font-size="16" text-anchor="middle">접촉 면적 극히 부족</text>
+        <text x="0" y="285" fill="#888" font-size="14" text-anchor="middle">호흡 효율 1% 미만</text>
+    </g>
+
+    <!-- Fractal Lung Pipeline -->
+    <g transform="translate(600, 150)">
+        <rect x="-100" y="-30" width="200" height="240" rx="100" fill="rgba(255, 255, 255, 0.05)" stroke="#ffffff"
+            stroke-width="2" stroke-dasharray="5,5" />
+        <text x="0" y="-50" fill="#ffffff" font-size="20" text-anchor="middle">프랙탈 기관지 나무</text>
+
+        <!-- Recursive Branches simulation using SVG paths -->
+        <g transform="translate(0, 0)">
+            <path d="M 0 0 L 0 40" class="fractal-branch l0" />
+            <path d="M 0 40 L -30 80" class="fractal-branch l1" />
+            <path d="M 0 40 L 30 80" class="fractal-branch l1" />
+
+            <!-- Left side depth -->
+            <path d="M -30 80 L -50 120" class="fractal-branch l2" />
+            <path d="M -30 80 L -10 120" class="fractal-branch l2" />
+            <path d="M -50 120 L -70 150" class="fractal-branch l3" />
+            <path d="M -50 120 L -35 150" class="fractal-branch l3" />
+            <path d="M -10 120 L -20 150" class="fractal-branch l3" />
+            <path d="M -10 120 L 5 150" class="fractal-branch l3" />
+            <path d="M -70 150 L -85 170" class="fractal-branch l4" />
+            <path d="M -70 150 L -60 170" class="fractal-branch l4" />
+            <path d="M -35 150 L -45 170" class="fractal-branch l4" />
+            <path d="M -35 150 L -25 170" class="fractal-branch l4" />
+
+            <!-- Right side depth -->
+            <path d="M 30 80 L 10 120" class="fractal-branch l2" />
+            <path d="M 30 80 L 50 120" class="fractal-branch l2" />
+            <path d="M 10 120 L -5 150" class="fractal-branch l3" />
+            <path d="M 10 120 L 20 150" class="fractal-branch l3" />
+            <path d="M 50 120 L 35 150" class="fractal-branch l3" />
+            <path d="M 50 120 L 70 150" class="fractal-branch l3" />
+            <path d="M 35 150 L 25 170" class="fractal-branch l4" />
+            <path d="M 35 150 L 45 170" class="fractal-branch l4" />
+            <path d="M 70 150 L 60 170" class="fractal-branch l4" />
+            <path d="M 70 150 L 85 170" class="fractal-branch l4" />
+
+            <!-- 5th level dots simulating alveoli -->
+            <circle cx="-85" cy="175" r="4" fill="#ffff64" filter="drop-shadow(0 0 3px #ffff64)" />
+            <circle cx="-60" cy="175" r="4" fill="#ffff64" filter="drop-shadow(0 0 3px #ffff64)" />
+            <circle cx="-45" cy="175" r="4" fill="#ffff64" filter="drop-shadow(0 0 3px #ffff64)" />
+            <circle cx="-25" cy="175" r="4" fill="#ffff64" filter="drop-shadow(0 0 3px #ffff64)" />
+            <circle cx="25" cy="175" r="4" fill="#ffff64" filter="drop-shadow(0 0 3px #ffff64)" />
+            <circle cx="45" cy="175" r="4" fill="#ffff64" filter="drop-shadow(0 0 3px #ffff64)" />
+            <circle cx="60" cy="175" r="4" fill="#ffff64" filter="drop-shadow(0 0 3px #ffff64)" />
+            <circle cx="85" cy="175" r="4" fill="#ffff64" filter="drop-shadow(0 0 3px #ffff64)" />
+        </g>
+
+        <rect x="-80" y="240" width="160" height="60" class="box" />
+        <text x="0" y="265" class="highlight" font-size="16" text-anchor="middle">무한대 해상도(표면적) 달성</text>
+        <text x="0" y="285" fill="#888" font-size="14" text-anchor="middle">호흡 효율 10,000배 증가</text>
+    </g>
+</svg>

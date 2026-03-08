@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#1864ab" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">사각형 세계의 족보: 누가 더 까다로운가?</text>
+
+    <!-- Hierarchy Diagram -->
+    <!-- Level 1: Quadrilateral -->
+    <rect x="230" y="60" width="140" height="30" fill="#e7f5ff" stroke="#339af0" stroke-width="2" rx="4" />
+    <text x="300" y="80" fill="#1864ab" font-size="12" font-weight="bold" text-anchor="middle">그냥 사각형 (조건: 0개)</text>
+
+    <path d="M 300 90 L 300 110" fill="none" stroke="#adb5bd" stroke-width="2" marker-end="url(#arrow-blue)" />
+
+    <!-- Level 2: Trapezoid -->
+    <rect x="230" y="110" width="140" height="30" fill="#d0ebff" stroke="#228be6" stroke-width="2" rx="4" />
+    <text x="300" y="130" fill="#1971c2" font-size="12" font-weight="bold" text-anchor="middle">사다리꼴 (조건: 평행 1쌍)</text>
+
+    <path d="M 300 140 L 300 160" fill="none" stroke="#adb5bd" stroke-width="2" marker-end="url(#arrow-blue)" />
+
+    <!-- Level 3: Parallelogram -->
+    <rect x="230" y="160" width="140" height="30" fill="#a5d8ff" stroke="#1c7ed6" stroke-width="2" rx="4" />
+    <text x="300" y="180" fill="#1864ab" font-size="12" font-weight="bold" text-anchor="middle">평행사변형 (조건: 평행 2쌍)</text>
+
+    <!-- Split Level 4: Rectangle & Rhombus -->
+    <path d="M 270 190 L 200 210" fill="none" stroke="#adb5bd" stroke-width="2" marker-end="url(#arrow-blue)" />
+    <path d="M 330 190 L 400 210" fill="none" stroke="#adb5bd" stroke-width="2" marker-end="url(#arrow-blue)" />
+
+    <rect x="130" y="210" width="140" height="30" fill="#74c0fc" stroke="#1971c2" stroke-width="2" rx="4" />
+    <text x="200" y="230" fill="#0b7285" font-size="12" font-weight="bold" text-anchor="middle">직사각형 (모든 각 90도)</text>
+
+    <rect x="330" y="210" width="140" height="30" fill="#74c0fc" stroke="#1971c2" stroke-width="2" rx="4" />
+    <text x="400" y="230" fill="#5f3dc4" font-size="12" font-weight="bold" text-anchor="middle">마름모 (모든 변 같음)</text>
+
+    <!-- Side text indicating evolution direction -->
+    <path d="M 100 75 L 100 220" fill="none" stroke="#fa5252" stroke-width="3" stroke-dasharray="4,4"
+        marker-end="url(#arrow-red)" />
+    <text x="80" y="150" transform="rotate(-90, 80, 150)" fill="#e03131" font-size="12" font-weight="bold"
+        text-anchor="middle">규칙(레벨)이 더 엄격해짐</text>
+
+    <defs>
+        <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+        <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fa5252" />
+        </marker>
+    </defs>
+</svg>

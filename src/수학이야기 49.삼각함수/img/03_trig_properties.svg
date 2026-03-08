@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#ae3ec9" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세상에서 가장 완벽한 공식: 사인² + 코사인² = 1</text>
+
+    <!-- Explanation Area -->
+    <g transform="translate(50, 60)">
+        <rect x="0" y="0" width="220" height="150" fill="#f3d9fa" stroke="#ae3ec9" stroke-width="2" rx="8" />
+        <text x="110" y="25" fill="#862e9c" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">수학계의 마스터 키</text>
+
+        <text x="110" y="65" fill="#862e9c" font-size="24" font-family="monospace" font-weight="bold"
+            text-anchor="middle">sin²θ + cos²θ = 1</text>
+
+        <rect x="25" y="85" width="170" height="40" fill="#eebefa" rx="5" />
+        <text x="110" y="100" fill="#862e9c" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">원의 방정식 (x²+y²=r²)</text>
+        <text x="110" y="115" fill="#862e9c" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">피타고라스 정리의 환생</text>
+    </g>
+
+    <!-- Magic Arrow -->
+    <path d="M 285 130 L 335 130" fill="none" stroke="#adb5bd" stroke-width="4" marker-end="url(#arrow-grey)" />
+    <text x="310" y="115" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">탄생!</text>
+
+    <!-- Derived Formula (Tan) -->
+    <g transform="translate(350, 80)">
+        <rect x="0" y="0" width="200" height="100" fill="#fff4e6" stroke="#f59f00" stroke-width="2" rx="8" />
+        <text x="100" y="25" fill="#d9480f" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">숨겨진 자식: 탄젠트(tan)</text>
+
+        <!-- tan = sin/cos -->
+        <text x="100" y="60" fill="#d9480f" font-size="20" font-family="monospace" font-weight="bold"
+            text-anchor="middle">tan θ = <tspan fill="#339af0">sin θ</tspan> / <tspan fill="#2b8a3e">cos θ</tspan>
+            </text>
+
+        <text x="100" y="85" fill="#d9480f" font-size="12" font-family="sans-serif" text-anchor="middle">(기울기는 세로/가로 와
+            같다)</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-grey" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

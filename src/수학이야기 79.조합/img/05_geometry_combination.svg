@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+    <rect width="600" height="300" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">다섯 번째 선택: '도형과 조합 (Geometry & Combination)'</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"점(Point) 을 고르는 행위가 곧 선분(Line) 과 면(Face) 을
+        직조하는 수학적 예술"</text>
+
+    <!-- Left Side: Lines from Points -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="220" height="180" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">1. 선분(대각선) 의
+            개수</text>
+
+        <!-- 5 points (Pentagon) -->
+        <path d="M 110 50 L 160 85 L 140 140 L 80 140 L 60 85 Z" fill="#ffe3e3" stroke="#fa5252" stroke-width="2"
+            stroke-dasharray="2,2" />
+
+        <circle cx="110" cy="50" r="5" fill="#c92a2a" />
+        <circle cx="160" cy="85" r="5" fill="#c92a2a" />
+        <circle cx="140" cy="140" r="5" fill="#c92a2a" />
+        <circle cx="80" cy="140" r="5" fill="#c92a2a" />
+        <circle cx="60" cy="85" r="5" fill="#c92a2a" />
+
+        <!-- A few lines -->
+        <line x1="110" y1="50" x2="140" y2="140" stroke="#f59f00" stroke-width="2" />
+        <line x1="60" y1="85" x2="160" y2="85" stroke="#f59f00" stroke-width="2" />
+
+        <!-- Math Logic -->
+        <rect x="15" y="150" width="190" height="25" fill="#f1f3f5" rx="3" />
+        <text x="110" y="167" fill="#c92a2a" font-size="12" font-weight="bold" text-anchor="middle">"점 2개를 고르면 선 1개가
+            탄생!"</text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="300" y1="80" x2="300" y2="260" stroke="#adb5bd" stroke-width="2" stroke-dasharray="4,4" />
+
+    <!-- Right Side: Triangles from Points -->
+    <g transform="translate(320, 80)">
+        <rect x="0" y="0" width="220" height="180" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">2. 삼각형의 개수</text>
+
+        <!-- 6 points on a circle -->
+        <circle cx="110" cy="95" r="50" fill="none" stroke="#adb5bd" stroke-dasharray="2,2" />
+
+        <circle cx="110" cy="45" r="5" fill="#1864ab" /> <!-- Top -->
+        <circle cx="153" cy="70" r="5" fill="#1864ab" />
+        <circle cx="153" cy="120" r="5" fill="#1864ab" />
+        <circle cx="110" cy="145" r="5" fill="#1864ab" /> <!-- Bottom -->
+        <circle cx="67" cy="120" r="5" fill="#1864ab" />
+        <circle cx="67" cy="70" r="5" fill="#1864ab" />
+
+        <!-- A solid Triangle -->
+        <path d="M 110 45 L 153 120 L 67 120 Z" fill="#e7f5ff" stroke="#339af0" stroke-width="3" />
+
+        <!-- Math Logic -->
+        <rect x="15" y="150" width="190" height="25" fill="#f1f3f5" rx="3" />
+        <text x="110" y="167" fill="#1864ab" font-size="12" font-weight="bold" text-anchor="middle">"점 3개를 고르면 면 1개가
+            탄생!"</text>
+    </g>
+
+</svg>

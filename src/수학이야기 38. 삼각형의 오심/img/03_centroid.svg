@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#1864ab" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">삼각형이 손가락 위에서균형을 잡는 점: 무게중심 (Centroid)</text>
+
+    <!-- Triangle & Medians -->
+    <g transform="translate(300, 160)">
+
+        <!-- Triangle Base -->
+        <path d="M 0 -110 L -120 40 L 120 40 Z" fill="#e7f5ff" stroke="#339af0" stroke-width="3" />
+
+        <!-- Medians -->
+        <line x1="0" y1="-110" x2="0" y2="40" stroke="#f03e3e" stroke-width="2" stroke-dasharray="5,5" />
+        <line x1="-120" y1="40" x2="60" y2="-35" stroke="#f03e3e" stroke-width="2" stroke-dasharray="5,5" />
+        <line x1="120" y1="40" x2="-60" y2="-35" stroke="#f03e3e" stroke-width="2" stroke-dasharray="5,5" />
+
+        <!-- Midpoint Markers -->
+        <!-- Bottom Midpoint -->
+        <circle cx="0" cy="40" r="4" fill="#339af0" />
+        <!-- Right Midpoint -->
+        <circle cx="60" cy="-35" r="4" fill="#339af0" />
+        <!-- Left Midpoint -->
+        <circle cx="-60" cy="-35" r="4" fill="#339af0" />
+
+        <!-- Equality Tick Marks on edges -->
+        <path d="M -65 40 L -55 35 M -65 45 L -55 40" stroke="#339af0" stroke-width="2" />
+        <path d="M 55 35 L 65 40 M 55 40 L 65 45" stroke="#339af0" stroke-width="2" />
+
+        <!-- Centroid Point -->
+        <circle cx="0" cy="-10" r="7" fill="#c92a2a" />
+        <text x="15" y="-5" fill="#c92a2a" font-size="16" font-family="sans-serif" font-weight="bold">G (무게중심)</text>
+
+        <!-- 2:1 Ratio labels -->
+        <rect x="-15" y="-60" width="16" height="16" fill="white" />
+        <text x="-7" y="-48" fill="#e03131" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">2</text>
+
+        <rect x="-15" y="10" width="16" height="16" fill="white" />
+        <text x="-7" y="22" fill="#e03131" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">1</text>
+
+        <!-- Vertices -->
+        <text x="0" y="-120" fill="#1864ab" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">A</text>
+        <text x="-130" y="55" fill="#1864ab" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">B</text>
+        <text x="130" y="55" fill="#1864ab" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">C</text>
+
+    </g>
+
+</svg>

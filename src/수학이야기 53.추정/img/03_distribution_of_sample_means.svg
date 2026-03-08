@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#e03131" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">표본평균(X̄) 들의 반란: 새로운 정규분포 산의 탄생</text>
+
+    <!-- Original Population (Mother) - very fat and low -->
+    <g transform="translate(150, 200)">
+        <!-- X-axis -->
+        <line x1="-120" y1="0" x2="120" y2="0" stroke="#868e96" stroke-width="2" />
+
+        <path d="M -100 0 C -50 0, -50 -60, 0 -60 C 50 -60, 50 0, 100 0" fill="#ffc9c9" opacity="0.4" stroke="#e03131"
+            stroke-width="2" stroke-dasharray="4,4" />
+        <line x1="0" y1="0" x2="0" y2="-60" stroke="#e03131" stroke-width="1.5" stroke-dasharray="3,3" />
+
+        <text x="0" y="15" fill="#e03131" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">모집단 (Mother)</text>
+        <text x="-70" y="-30" fill="#e03131" font-size="10" font-family="sans-serif">오차(뚱뚱도): σ</text>
+    </g>
+
+    <!-- Arrow mapping with n -->
+    <path d="M 280 140 Q 300 90 320 140" fill="none" stroke="#2b8a3e" stroke-width="3" marker-end="url(#arrow-green)" />
+    <rect x="250" y="80" width="100" height="25" fill="#ebfbee" stroke="#40c057" rx="3" />
+    <text x="300" y="97" fill="#2b8a3e" font-size="12" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">n개씩 무한반복 뜰채!</text>
+
+    <!-- New Distribution of Sample Means (Tight and sharp) -->
+    <g transform="translate(450, 200)">
+        <!-- X-axis -->
+        <line x1="-120" y1="0" x2="120" y2="0" stroke="#868e96" stroke-width="2" />
+
+        <!-- Sharp, tight Curve -->
+        <path d="M -50 0 C -25 0, -10 -150, 0 -150 C 10 -150, 25 0, 50 0" fill="#d3f9d8" opacity="0.6" stroke="#2b8a3e"
+            stroke-width="3" />
+        <line x1="0" y1="0" x2="0" y2="-150" stroke="#2b8a3e" stroke-width="2" stroke-dasharray="2,2" />
+
+        <text x="0" y="15" fill="#2b8a3e" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">표본평균 집단 ( X̄ 텐트 )</text>
+        <text x="70" y="-50" fill="#2b8a3e" font-size="10" font-family="sans-serif" font-weight="bold">오차가 줄어든다!</text>
+        <text x="70" y="-35" fill="#2b8a3e" font-size="10" font-family="monospace" font-weight="bold">σ / √n</text>
+
+        <!-- Exact Same Mean Line -->
+        <line x1="-300" y1="-15" x2="0" y2="-15" stroke="#adb5bd" stroke-width="1" stroke-dasharray="2,5" />
+        <text x="-150" y="-20" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">두 산봉우리의 센터(평균) GPS는 완벽히 일치!</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+    </defs>
+</svg>

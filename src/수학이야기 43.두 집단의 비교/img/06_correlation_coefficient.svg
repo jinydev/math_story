@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#c92a2a" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">모호한 그림에 마침표를 찍는 절대 수치: 상관계수 (Correlation Coefficient)</text>
+
+    <!-- Number Line setup -->
+    <g transform="translate(100, 150)">
+        <!-- Main line -->
+        <line x1="0" y1="0" x2="400" y2="0" stroke="#adb5bd" stroke-width="4" />
+
+        <!-- Ticks -->
+        <!-- -1 -->
+        <line x1="0" y1="-10" x2="0" y2="10" stroke="#495057" stroke-width="3" />
+        <text x="0" y="30" fill="#1864ab" font-size="20" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">-1</text>
+        <text x="0" y="-30" fill="#1864ab" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">완벽한 음(-)</text>
+        <text x="0" y="-15" fill="#868e96" font-size="12" font-family="sans-serif" text-anchor="middle">(우하향 1직선)</text>
+
+        <!-- 0 -->
+        <line x1="200" y1="-10" x2="200" y2="10" stroke="#495057" stroke-width="3" />
+        <text x="200" y="30" fill="#868e96" font-size="20" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">0</text>
+        <text x="200" y="-30" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">아무 사이 아님</text>
+        <text x="200" y="-15" fill="#868e96" font-size="12" font-family="sans-serif" text-anchor="middle">(모래알
+            흩뿌림)</text>
+
+        <!-- +1 -->
+        <line x1="400" y1="-10" x2="400" y2="10" stroke="#495057" stroke-width="3" />
+        <text x="400" y="30" fill="#e03131" font-size="20" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">+1</text>
+        <text x="400" y="-30" fill="#e03131" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">완벽한 양(+)</text>
+        <text x="400" y="-15" fill="#868e96" font-size="12" font-family="sans-serif" text-anchor="middle">(우상향
+            1직선)</text>
+
+        <!-- Mid points -->
+        <!-- r = 0.7 -->
+        <circle cx="340" cy="0" r="8" fill="#ff8787" />
+        <text x="340" y="-30" fill="#fa5252" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">r = 0.7</text>
+        <path d="M 340 -20 L 340 -10" fill="none" stroke="#fa5252" stroke-width="2" marker-end="url(#arrow-red)" />
+        <text x="340" y="45" fill="#fa5252" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">"꽤 끈끈한 사이"</text>
+    </g>
+
+    <!-- Title Description -->
+    <text x="300" y="235" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">상관계수 r 은 우주의 법칙에 의해 절대 -1 과 +1 사이를 벗어나지 못한다!</text>
+
+    <defs>
+        <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fa5252" />
+        </marker>
+    </defs>
+</svg>

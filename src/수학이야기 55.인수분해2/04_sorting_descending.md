@@ -11,6 +11,10 @@ $x$도 있고, $y$도 있고, 심지어 $z$도 섞여 있으면서 항등식 조
 
 ## 1. 쫄지 마라, 기준 알파벳 하나만 골라라 (Sorting Key)
 
+![내림차순 정렬](./img/04_descending_sort.svg)
+
+![데이터 정렬 해커](./img/04_sorting_excel_python.png)
+
 수식 덩어리: 
 $$ x^2 + xy - 2y^2 + 2x + 5y - 3 $$
 

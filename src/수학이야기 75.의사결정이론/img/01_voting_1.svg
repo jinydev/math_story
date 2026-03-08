@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#1864ab" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">첫 번째 의사결정: '반장은 어떻게 뽑나요? (다수결의 함정)'</text>
+
+    <!-- Plurality Voting (다수결) -->
+    <g transform="translate(60, 60)">
+        <rect x="-10" y="-10" width="180" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="80" y="10" fill="#fa5252" font-size="14" font-weight="bold" text-anchor="middle">❌ 다수결
+            (Plurality)</text>
+
+        <!-- Votes -->
+        <rect x="10" y="30" width="40" height="80" fill="#ffc9c9" stroke="#fa5252" />
+        <text x="30" y="55" fill="#c92a2a" font-size="12" font-weight="bold" text-anchor="middle">A당</text>
+        <text x="30" y="70" fill="#c92a2a" font-size="10" text-anchor="middle">40%</text>
+
+        <rect x="60" y="50" width="40" height="60" fill="#b2f2bb" stroke="#2b8a3e" />
+        <text x="80" y="75" fill="#2b8a3e" font-size="12" font-weight="bold" text-anchor="middle">B당</text>
+        <text x="80" y="90" fill="#2b8a3e" font-size="10" text-anchor="middle">30%</text>
+
+        <rect x="110" y="50" width="40" height="60" fill="#a5d8ff" stroke="#1864ab" />
+        <text x="130" y="75" fill="#1864ab" font-size="12" font-weight="bold" text-anchor="middle">C당</text>
+        <text x="130" y="90" fill="#1864ab" font-size="10" text-anchor="middle">30%</text>
+
+        <!-- Base line -->
+        <line x1="0" y1="110" x2="160" y2="110" stroke="#495057" stroke-width="2" />
+
+        <text x="80" y="130" fill="#c92a2a" font-size="11" font-weight="bold" text-anchor="middle">당선: A당 (단 40%의
+            지지로!)</text>
+    </g>
+
+    <!-- The Irony / Arrow -->
+    <path d="M 250 120 L 320 120" fill="none" stroke="#adb5bd" stroke-width="3" stroke-dasharray="4,2"
+        marker-end="url(#arrow)" />
+    <text x="285" y="105" fill="#495057" font-size="10" font-weight="bold" text-anchor="middle">60%의 국민은</text>
+    <text x="285" y="115" fill="#495057" font-size="10" font-weight="bold" text-anchor="middle">A당을 싫어함!</text>
+    <text x="285" y="135" fill="#fa5252" font-size="10" font-weight="bold" text-anchor="middle">(사표 발생)</text>
+
+    <!-- Condorcet / Run-off Method -->
+    <g transform="translate(360, 60)">
+        <rect x="-10" y="-10" width="200" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="90" y="10" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">✅ 콩도르세 / 결선투표</text>
+
+        <text x="90" y="40" fill="#495057" font-size="11" text-anchor="middle">1:1 일기토(토너먼트) 데스매치</text>
+
+        <!-- VS Boxes -->
+        <rect x="20" y="55" width="40" height="25" fill="#ffc9c9" stroke="#fa5252" rx="3" />
+        <text x="40" y="71" fill="#c92a2a" font-size="10" font-weight="bold" text-anchor="middle">A당</text>
+
+        <text x="90" y="70" fill="#fa5252" font-size="12" font-weight="bold" font-style="italic"
+            text-anchor="middle">VS</text>
+
+        <rect x="120" y="55" width="40" height="25" fill="#b2f2bb" stroke="#2b8a3e" rx="3" />
+        <text x="140" y="71" fill="#2b8a3e" font-size="10" font-weight="bold" text-anchor="middle">B당</text>
+
+        <text x="90" y="100" fill="#0b7285" font-size="10" font-weight="bold" text-anchor="middle">C당 지지표 30%가 B당으로
+            몰림!</text>
+        <text x="90" y="130" fill="#2b8a3e" font-size="11" font-weight="bold" text-anchor="middle">최종 진정한 승자: B당
+            (60%)</text>
+    </g>
+
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

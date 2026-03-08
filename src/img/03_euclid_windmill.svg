@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .triangle {
+                fill: none;
+                stroke: #00ffff;
+                stroke-width: 4;
+            }
+
+            .square-a {
+                fill: rgba(255, 100, 100, 0.5);
+                stroke: #ff6464;
+                stroke-width: 2;
+            }
+
+            .square-b {
+                fill: rgba(100, 100, 255, 0.5);
+                stroke: #6464ff;
+                stroke-width: 2;
+            }
+
+            .square-c {
+                fill: none;
+                stroke: #64ff64;
+                stroke-width: 4;
+                stroke-dasharray: 5, 5;
+            }
+
+            .fall-a {
+                animation: fallA 4s infinite ease-in-out alternate;
+            }
+
+            .fall-b {
+                animation: fallB 4s infinite ease-in-out alternate;
+            }
+
+            @keyframes fallA {
+                0% {
+                    transform: translate(0, 0);
+                    opacity: 1;
+                }
+
+                100% {
+                    transform: translate(170px, 120px);
+                    opacity: 0.8;
+                }
+            }
+
+            @keyframes fallB {
+                0% {
+                    transform: translate(0, 0);
+                    opacity: 1;
+                }
+
+                100% {
+                    transform: translate(-100px, 160px);
+                    opacity: 0.8;
+                }
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#0d1117" />
+
+    <g transform="translate(180, 250)">
+        <!-- Right triangle: a=90 (left), b=120 (bottom), c=150 -->
+        <!-- Vertices: A(0,0), B(0,90), C(120,90) -->
+        <!-- Wait, a 3-4-5 triangle. Let's make sides a=120, b=160, c=200 -->
+        <polygon points="0,0 0,120 160,120" class="triangle" />
+
+        <!-- Square a (left): 120x120 -->
+        <g class="fall-a">
+            <rect x="-120" y="0" width="120" height="120" class="square-a" />
+            <text x="-70" y="65" fill="#ff6464" font-size="24">a²</text>
+        </g>
+
+        <!-- Square b (bottom): 160x160 -->
+        <g class="fall-b">
+            <rect x="0" y="120" width="160" height="160" class="square-b" />
+            <text x="70" y="205" fill="#6464ff" font-size="24">b²</text>
+        </g>
+
+        <!-- Square c (hypotenuse): 200x200 -->
+        <!-- Angle is atan(120/160) = 36.87 degrees -->
+        <g transform="rotate(36.87)">
+            <rect x="0" y="-200" width="200" height="200" class="square-c" />
+            <text x="90" y="-90" fill="#64ff64" font-size="24">c²</text>
+        </g>
+
+        <!-- Labels -->
+        <text x="-15" y="60" fill="#00ffff" font-size="20">a</text>
+        <text x="80" y="145" fill="#00ffff" font-size="20">b</text>
+        <text x="60" y="50" fill="#00ffff" font-size="20">c</text>
+    </g>
+
+    <!-- Title -->
+    <text x="300" y="50" fill="#00ffff" font-size="28" text-anchor="middle">유클리드의 풍차 증명 (Euclid's Windmill)</text>
+    <text x="300" y="80" fill="#a0a0a0" font-size="16" text-anchor="middle">위쪽 두 정사각형(a², b²)이 모래처럼 반씩 합쳐져 평행하게 아래 큰
+        정사각형(c²)을 가득 채운다</text>
+</svg>

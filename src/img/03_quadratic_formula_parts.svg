@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .formula {
+                font-size: 60px;
+                fill: #ffffff;
+                text-anchor: middle;
+                alignment-baseline: central;
+            }
+
+            .frac-line {
+                fill: none;
+                stroke: #ffffff;
+                stroke-width: 6;
+                stroke-linecap: round;
+            }
+
+            .part-b {
+                fill: #ffaa44;
+            }
+
+            .part-pm {
+                fill: #00ffff;
+            }
+
+            .part-sqrt {
+                fill: #ff6464;
+            }
+
+            .part-a {
+                fill: #64ff64;
+            }
+
+            .box {
+                fill: none;
+                stroke-dasharray: 4, 4;
+                stroke-width: 2;
+                rx: 5;
+                ry: 5;
+            }
+
+            .annotation {
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .line {
+                fill: none;
+                stroke-width: 2;
+                marker-end: url(#arrow);
+            }
+        </style>
+        <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="context-stroke" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="400" y="40" class="title">우주의 마법 치트키: 근의 공식 (Quadratic Formula)</text>
+    <text x="400" y="65" class="desc">ax² + bx + c = 0 의 계수(a, b, c)만 넣으면 해(x)가 쏟아져 나오는 자판기</text>
+
+    <!-- The Grand Formula -->
+    <g transform="translate(400, 240)">
+        <text x="-250" y="0" class="formula">x =</text>
+
+        <!-- Numerator -->
+        <text x="-80" y="-45" class="formula part-b">-b</text>
+        <text x="-20" y="-45" class="formula part-pm">±</text>
+
+        <!-- Square Root Symbol -->
+        <path d="M 10 -40 L 30 -40 L 50 -80 L 190 -80" fill="none" stroke="#ff6464" stroke-width="5"
+            stroke-linecap="round" stroke-linejoin="round" />
+        <text x="110" y="-45" class="formula part-sqrt" font-size="45">b²-4ac</text>
+
+        <!-- Fraction Line -->
+        <line x1="-120" y1="10" x2="200" y2="10" class="frac-line" />
+
+        <!-- Denominator -->
+        <text x="40" y="65" class="formula part-a">2a</text>
+    </g>
+
+    <!-- Annotations -->
+
+    <!-- -b annotation -->
+    <rect x="290" y="150" width="70" height="60" class="box" stroke="#ffaa44" />
+    <path d="M 325 150 L 325 100" class="line" stroke="#ffaa44" />
+    <text x="325" y="90" class="annotation" fill="#ffaa44">1차항 계수(반대부호)</text>
+
+    <!-- PM annotation -->
+    <rect x="365" y="150" width="40" height="60" class="box" stroke="#00ffff" />
+    <path d="M 385 150 L 385 130 Q 385 100 450 100" class="line" stroke="#00ffff" />
+    <text x="500" y="90" class="annotation" fill="#00ffff">두 갈래 길 (해 2개 발동기)</text>
+
+    <!-- Discriminant annotation -->
+    <rect x="410" y="140" width="180" height="70" class="box" stroke="#ff6464" />
+    <path d="M 500 140 L 500 110 Q 500 70 600 70" class="line" stroke="#ff6464" />
+    <text x="650" y="65" class="annotation" fill="#ff6464">판별식 (D)</text>
+    <text x="650" y="85" class="annotation" fill="#ffaa64" font-size="14">루트 안이 척살되면 허수!</text>
+
+    <!-- Denominator annotation -->
+    <rect x="390" y="270" width="100" height="60" class="box" stroke="#64ff64" />
+    <path d="M 440 330 L 440 380" class="line" stroke="#64ff64" />
+    <text x="440" y="400" class="annotation" fill="#64ff64">이차항 계수(a)의 2배</text>
+
+</svg>

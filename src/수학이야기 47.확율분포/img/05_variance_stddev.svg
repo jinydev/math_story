@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#c92a2a" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">도박판의 롤러코스터 지수: 확률변수의 분산과 표준편차 (Variance, V(X))</text>
+
+    <!-- Game A (Low Risk) -->
+    <g transform="translate(100, 150)">
+        <rect x="-80" y="-80" width="160" height="120" fill="#e7f5ff" stroke="#339af0" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#1864ab" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">게임 A (안전형)</text>
+
+        <text x="-40" y="-30" fill="#339af0" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">50원 (50%)</text>
+        <text x="40" y="-30" fill="#339af0" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">100원 (50%)</text>
+
+        <rect x="-50" y="-10" width="100" height="25" fill="#1864ab" rx="4" />
+        <text x="0" y="7" fill="#fff" font-size="14" font-family="monospace" font-weight="bold"
+            text-anchor="middle">기댓값: 75원</text>
+
+        <!-- Dispersion -->
+        <path d="M -40 25 Q 0 40 40 25" fill="none" stroke="#868e96" stroke-width="2" stroke-dasharray="3,3"
+            marker-start="url(#arrow-grey)" marker-end="url(#arrow-grey)" />
+        <text x="0" y="45" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">편차 작음 (안정적)</text>
+    </g>
+
+    <!-- Game B (High Risk) -->
+    <g transform="translate(350, 150)">
+        <rect x="-80" y="-80" width="160" height="120" fill="#fff5f5" stroke="#fa5252" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#c92a2a" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">게임 B (도박형)</text>
+
+        <text x="-40" y="-30" fill="#fa5252" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">-925원 (50%)</text>
+        <text x="45" y="-30" fill="#fa5252" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">1,075원 (50%)</text>
+
+        <rect x="-50" y="-10" width="100" height="25" fill="#c92a2a" rx="4" />
+        <text x="0" y="7" fill="#fff" font-size="14" font-family="monospace" font-weight="bold"
+            text-anchor="middle">기댓값: 75원</text>
+
+        <!-- Dispersion -->
+        <path d="M -60 25 Q 0 50 60 25" fill="none" stroke="#868e96" stroke-width="2" stroke-dasharray="3,3"
+            marker-start="url(#arrow-grey)" marker-end="url(#arrow-grey)" />
+        <text x="0" y="45" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">편차 미침 (모 아니면 도)</text>
+    </g>
+
+    <!-- VS Text -->
+    <circle cx="225" cy="110" r="15" fill="#fcc419" />
+    <text x="225" y="115" fill="#fff" font-size="14" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">VS</text>
+
+    <!-- Conclusion -->
+    <rect x="440" y="60" width="140" height="40" fill="#f8f9fa" stroke="#495057" stroke-width="2" rx="5" />
+    <text x="510" y="76" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">기댓값(평균)이 같아도</text>
+    <text x="510" y="92" fill="#c92a2a" font-size="12" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">분산(V)에 따라 운명이 다름!</text>
+
+    <defs>
+        <marker id="arrow-grey" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#868e96" />
+        </marker>
+    </defs>
+</svg>

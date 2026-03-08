@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#ae3ec9" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">아르키메데스의 묘비: 원뿔, 구, 원기둥 부피비 (Volume of a Sphere)</text>
+
+    <!-- Archimedes Tombstone Scene -->
+    <g transform="translate(300, 150)">
+
+        <!-- Tombstone specific base (Cylinder enclosing Sphere and Cone) -->
+        <!-- Cylinder Back -->
+        <path d="M -80 -70 A 80 20 0 0 1 80 -70" fill="none" stroke="#adb5bd" stroke-width="2" stroke-dasharray="4,4" />
+        <path d="M -80 -70 L -80 70" fill="none" stroke="#adb5bd" stroke-width="2" />
+        <path d="M 80 -70 L 80 70" fill="none" stroke="#adb5bd" stroke-width="2" />
+        <path d="M -80 70 A 80 20 0 0 0 80 70" fill="none" stroke="#adb5bd" stroke-width="2" />
+
+        <!-- Explaining Ratios -->
+        <g transform="translate(-250, -40)">
+            <text x="0" y="0" fill="#f59f00" font-size="18" font-family="sans-serif" font-weight="bold">1. 원뿔
+                (꼬깔)</text>
+            <text x="0" y="25" fill="#e8590c" font-size="24" font-family="monospace" font-weight="bold">비율: 1</text>
+        </g>
+
+        <g transform="translate(-250, 40)">
+            <text x="0" y="0" fill="#339af0" font-size="18" font-family="sans-serif" font-weight="bold">2. 구 (공)</text>
+            <text x="0" y="25" fill="#1864ab" font-size="24" font-family="monospace" font-weight="bold">비율: 2</text>
+        </g>
+
+        <g transform="translate(150, 0)">
+            <text x="0" y="0" fill="#868e96" font-size="18" font-family="sans-serif" font-weight="bold">3. 원기둥
+                (통통)</text>
+            <text x="0" y="25" fill="#495057" font-size="24" font-family="monospace" font-weight="bold">비율: 3</text>
+        </g>
+
+        <!-- Cone (Inside) -->
+        <path d="M -80 70 L 0 -70 L 80 70" fill="none" stroke="#f59f00" stroke-width="3" />
+        <ellipse cx="0" cy="70" rx="80" ry="20" fill="none" stroke="#f59f00" stroke-width="3" stroke-dasharray="4,4" />
+
+        <!-- Sphere (Inside) -->
+        <circle cx="0" cy="0" r="70" fill="none" stroke="#339af0" stroke-width="3" />
+        <ellipse cx="0" cy="0" rx="70" ry="15" fill="none" stroke="#339af0" stroke-width="2" stroke-dasharray="2,2" />
+
+        <!-- Ratio Center -->
+        <rect x="-60" y="-120" width="120" height="30" fill="#f3d9fa" stroke="#ae3ec9" stroke-width="2" rx="5" />
+        <text x="0" y="-100" fill="#9c36b5" font-size="16" font-family="monospace" font-weight="bold"
+            text-anchor="middle">1 : 2 : 3</text>
+    </g>
+
+</svg>

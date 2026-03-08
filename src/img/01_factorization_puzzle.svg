@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .cross {
+                fill: none;
+                stroke: #30363d;
+                stroke-width: 6;
+                stroke-linecap: round;
+            }
+
+            .top-box {
+                fill: rgba(0, 255, 255, 0.1);
+                stroke: #00ffff;
+                stroke-width: 3;
+                rx: 10;
+                ry: 10;
+            }
+
+            .bot-box {
+                fill: rgba(255, 100, 100, 0.1);
+                stroke: #ff6464;
+                stroke-width: 3;
+                rx: 10;
+                ry: 10;
+            }
+
+            .side-box {
+                fill: rgba(255, 255, 0, 0.1);
+                stroke: #ffff00;
+                stroke-width: 2;
+                rx: 10;
+                ry: 10;
+            }
+
+            .math {
+                font-size: 28px;
+                text-anchor: middle;
+                alignment-baseline: middle;
+            }
+
+            .label {
+                font-size: 18px;
+                text-anchor: middle;
+                fill: #8b949e;
+            }
+
+            .arrow {
+                fill: none;
+                stroke: #00ff00;
+                stroke-width: 4;
+                marker-end: url(#arrowhead);
+            }
+        </style>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#00ff00" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="400" y="40" class="title">X자 치트 퍼즐: 더해서 중간, 곱해서 끝</text>
+    <text x="400" y="65" class="desc">이차방정식 x² - 5x + 6 = 0 을 분해하는 해킹 로직</text>
+
+    <!-- Big X Cross -->
+    <g transform="translate(400, 250)">
+        <line x1="-150" y1="-150" x2="150" y2="150" class="cross" />
+        <line x1="150" y1="-150" x2="-150" y2="150" class="cross" />
+
+        <!-- Top Box (Product) -->
+        <rect x="-60" y="-180" width="120" height="70" class="top-box" />
+        <text x="0" y="-150" class="math" fill="#00ffff">+6</text>
+        <text x="0" y="-120" class="label" fill="#00ffff">곱 (Product)</text>
+
+        <!-- Bottom Box (Sum) -->
+        <rect x="-60" y="110" width="120" height="70" class="bot-box" />
+        <text x="0" y="140" class="math" fill="#ff6464">-5</text>
+        <text x="0" y="170" class="label" fill="#ff6464">합 (Sum)</text>
+
+        <!-- Left Box (Factor 1) -->
+        <rect x="-240" y="-35" width="100" height="70" class="side-box" />
+        <text x="-190" y="0" class="math" fill="#ffff00">-2</text>
+
+        <!-- Right Box (Factor 2) -->
+        <rect x="140" y="-35" width="100" height="70" class="side-box" />
+        <text x="190" y="0" class="math" fill="#ffff00">-3</text>
+
+        <!-- Operation Indicators -->
+        <path d="M -130 -35 Q 0 -90 130 -35" fill="none" stroke="#00ffff" stroke-width="3" stroke-dasharray="4,4" />
+        <text x="0" y="-70" fill="#00ffff" font-size="20" font-weight="bold" text-anchor="middle">×</text>
+
+        <path d="M -130 35 Q 0 90 130 35" fill="none" stroke="#ff6464" stroke-width="3" stroke-dasharray="4,4" />
+        <text x="0" y="80" fill="#ff6464" font-size="20" font-weight="bold" text-anchor="middle">+</text>
+    </g>
+
+    <!-- Final Answer Output -->
+    <g transform="translate(400, 450)">
+        <rect x="-250" y="-30" width="500" height="60" fill="rgba(0, 255, 0, 0.1)" stroke="#00ff00" stroke-width="2"
+            rx="5" ry="5" />
+        <text x="0" y="0" class="math" fill="#ffffff" alignment-baseline="middle">👉 (x <tspan fill="#ffff00">- 2
+            </tspan>)(x <tspan fill="#ffff00">- 3</tspan>) = 0</text>
+    </g>
+
+</svg>
