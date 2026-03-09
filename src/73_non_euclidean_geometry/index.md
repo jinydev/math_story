@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_07
 title: '11. 비유클리드 기하학 Non-Euclidean Geometry 휘어진 시공간'
 ---
 

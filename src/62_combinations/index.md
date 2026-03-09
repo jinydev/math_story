@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_06
 title: '수학이야기 79. 조합 Combination'
 ---
 

@@ -1,0 +1,23 @@
+main:
+- title: "24. 삼각비2"
+  url: /24_trigonometric_ratios_2/
+- title: "25. 원1"
+  url: /25_circles_1/
+- title: "26. 근삿값과 오차"
+  url: /26_approximations_and_errors/
+- title: "27. 경우의수"
+  url: /27_number_of_cases/
+- title: "28. 확률1"
+  url: /28_probability_1/
+- title: "29. 집합"
+  url: /29_sets/
+- title: "30. 명제와 논리"
+  url: /30_propositions_and_logic/
+- title: "31. 실수2"
+  url: /31_real_numbers_2/
+- title: "32. 복소수"
+  url: /32_complex_numbers/
+- title: "33. 인수분해2"
+  url: /33_factorization_2/
+- title: "34. 이차부등식"
+  url: /34_quadratic_inequalities/

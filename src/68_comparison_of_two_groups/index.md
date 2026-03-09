@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_07
 title: '수학이야기 43. 두 집단의 비교 Comparison of Two Groups'
 ---
 

@@ -1,0 +1,17 @@
+main:
+- title: "35. 절대부등식"
+  url: /35_absolute_inequalities/
+- title: "36. 행렬"
+  url: /36_matrices/
+- title: "37. 함수2"
+  url: /37_functions_2/
+- title: "38. 도형의 이동"
+  url: /38_geometric_transformations/
+- title: "39. 지수"
+  url: /39_exponents/
+- title: "40. 로그"
+  url: /40_logarithms/
+- title: "41. 지수함수와 로그함수"
+  url: /41_exponential_and_logarithmic_functions/
+- title: "42. 삼각함수"
+  url: /42_trigonometric_functions/

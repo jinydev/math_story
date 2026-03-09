@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_01
 title: '13. 일차방정식 Linear Equation 미지의 엑스x를 향한 추리'
 ---
 

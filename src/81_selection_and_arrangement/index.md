@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_08
 title: '수학이야기 76. 선택과 배열 Selection and Arrangement'
 ---
 

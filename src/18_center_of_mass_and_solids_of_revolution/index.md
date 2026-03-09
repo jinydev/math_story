@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_01
 title: '수학이야기 42. 무게중심과 회전체 Centroid and Solid of Revolution'
 ---
 

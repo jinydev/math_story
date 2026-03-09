@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_04
 title: '수학이야기 34. 수열 Sequences'
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_08
 title: '수학이야기 75. 의사결정이론 Decision Theory'
 ---
 

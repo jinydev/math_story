@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_05
 title: '60.'
 ---
 

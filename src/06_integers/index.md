@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_01
 title: '41.정수 Integers'
 theme:
   name: math

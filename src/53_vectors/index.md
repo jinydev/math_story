@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_05
 title: '수학이야기 64.벡터'
 parent: 수학이야기
 nav_order: 64

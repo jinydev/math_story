@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_08
 title: '수학이야기 38. 삼각형의 오심 Five Centers of a Triangle'
 ---
 

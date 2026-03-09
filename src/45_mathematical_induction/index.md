@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_04
 title: '24. 수학적 귀납법 Mathematical Induction 논리적 100 무결점 증명'
 ---
 

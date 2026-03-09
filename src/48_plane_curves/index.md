@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_04
 title: '수학이야기 37. 평면곡선 Plane Curves'
 ---
 

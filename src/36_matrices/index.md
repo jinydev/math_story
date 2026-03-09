@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_03
 title: '수학이야기 69.행렬'
 parent: 수학이야기
 nav_order: 69

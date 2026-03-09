@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_06
 title: '수학이야기 52. 정규분포 Normal Distribution'
 ---
 

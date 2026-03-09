@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_01
 layout: home
 title: '수학이야기 04. 삼각형 Triangle'
 ---

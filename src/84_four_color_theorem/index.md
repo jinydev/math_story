@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_08
 title: '수학이야기 50. 4색 정리 Four Color Theorem'
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_08
 title: '수학이야기 73. 문제해결 전략 Problem Solving Strategies'
 ---
 

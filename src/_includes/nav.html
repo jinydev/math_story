@@ -5,21 +5,15 @@
         강의 목차
       </strong>
       <ul class="list-unstyled fw-normal pb-2 small">
-        {% assign part_data = site.data.navigation.main %}
-        {% if page.url contains '/basic/' %}
-        {% assign part_data = site.data.basic.main %}
-        {% elsif page.url contains '/oop/' %}
-        {% assign part_data = site.data.oop.main %}
-        {% elsif page.url contains '/part03/' %}
-        {% assign part_data = site.data.part03.main %}
-        {% elsif page.url contains '/database/' %}
-        {% assign part_data = site.data.database.main %}
-        {% elsif page.url contains '/network/' %}
-        {% assign part_data = site.data.network.main %}
-        {% elsif page.url contains '/gui/' %}
-        {% assign part_data = site.data.gui.main %}
-        {% elsif page.url contains '/backend/' %}
-        {% assign part_data = site.data.backend.main %}
+        {% assign chapter_folder = page.url | split: '/' | compact | first %}
+        {% assign level_id = site.data.menu_mapping[chapter_folder] %}
+
+        {% if level_id %}
+        {% assign part_data = site.data[level_id].main %}
+        {% elsif page.layout contains 'level_' %}
+        {% assign part_data = site.data[page.layout].main %}
+        {% else %}
+        {% assign part_data = site.data.level_00.main %}
         {% endif %}
 
         {% for item in part_data %}

@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_08
 title: '08. 피보나치수열 Fibonacci Sequence'
 ---
 

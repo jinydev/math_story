@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_02
 title: '수학이야기 82. 이차부등식 Quadratic Inequalities'
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_00
 title: '22. 비 Ratio 뺄셈을 넘어선 나눗셈 스케일의 지배'
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_03
 title: '31. 지수 Exponent 기하급수 폭발과 차원의 확장'
 ---
 

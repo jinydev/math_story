@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_02
 title: '18. 경우의 수 Number of Cases 예측과 확률의 코어 엔진'
 ---
 

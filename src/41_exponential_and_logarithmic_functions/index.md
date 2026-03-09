@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_03
 title: '수학이야기 40. 지수함수와 로그함수 Exponential  Logarithmic Functions'
 ---
 

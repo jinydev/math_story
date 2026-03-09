@@ -1,0 +1,27 @@
+main:
+- title: "74. 최적화이론"
+  url: /74_optimization_theory_1/
+- title: "75. 최적화 이론2"
+  url: /75_optimization_theory_2/
+- title: "76. 의사결정이론"
+  url: /76_decision_theory/
+- title: "77. 문제해결 전략"
+  url: /77_problem_solving_strategies/
+- title: "78. 암호"
+  url: /78_cryptography/
+- title: "79. 프랙탈"
+  url: /79_fractals/
+- title: "80. 피보나치수열"
+  url: /80_fibonacci_sequence/
+- title: "81. 선택과 배열"
+  url: /81_selection_and_arrangement/
+- title: "82. 벤 다이어그램"
+  url: /82_venn_diagrams/
+- title: "83. 삼각형의 오심"
+  url: /83_five_centers_of_a_triangle/
+- title: "84. 4색정리"
+  url: /84_four_color_theorem/
+- title: "85. 원론"
+  url: /85_elements/
+- title: "86. 이자"
+  url: /86_interest/

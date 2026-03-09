@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_03
 title: '수학이야기 49. 삼각함수 Trigonometric Functions'
 ---
 

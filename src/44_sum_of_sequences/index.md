@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_04
 title: '수학이야기 86. 수열의 합 Sum of Sequences'
 ---
 

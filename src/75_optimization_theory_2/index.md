@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_08
 title: '수학이야기 51. 최적화 이론2 Optimization Theory 2'
 ---
 

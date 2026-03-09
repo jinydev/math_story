@@ -1,0 +1,15 @@
+main:
+- title: "67. 추정"
+  url: /67_statistical_estimation/
+- title: "68. 두 집단의 비교"
+  url: /68_comparison_of_two_groups/
+- title: "69. 군"
+  url: /69_group_theory/
+- title: "70. 위상수학"
+  url: /70_topology/
+- title: "71. 무한"
+  url: /71_infinity/
+- title: "72. 차원"
+  url: /72_dimensions/
+- title: "73. 비유클리드 기하학"
+  url: /73_non_euclidean_geometry/

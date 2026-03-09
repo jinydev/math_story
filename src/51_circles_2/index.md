@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_04
 title: '수학이야기 72.원2'
 parent: 수학이야기
 nav_order: 72

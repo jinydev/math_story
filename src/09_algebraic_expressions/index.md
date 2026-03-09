@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_01
 title: '수학이야기 32 코딩으로 진짜 이해하는 식의 계산 Algebraic Expressions'
 ---
 

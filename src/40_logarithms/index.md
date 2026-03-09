@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_03
 title: '수학이야기 39. 로그 Logarithms'
 ---
 

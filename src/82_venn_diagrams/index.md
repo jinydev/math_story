@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_08
 title: '16. 벤 다이어그램 Venn Diagram 보이지 않는 데이터 논리의 시각화'
 ---
 

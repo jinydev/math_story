@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_02
 title: '63.2'
 ---
 

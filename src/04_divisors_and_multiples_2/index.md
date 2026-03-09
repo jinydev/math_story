@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_00
 layout: home
 title: '수학이야기 33. 약수와 배수 2 Divisors and Multiples 2 심화편'
 ---

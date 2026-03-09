@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_00
 title: '62.자연수'
 theme:
   name: math

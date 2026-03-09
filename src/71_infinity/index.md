@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_07
 title: '21. 무한 Infinity 붕괴하는 직관과 칸토어의 집합론'
 ---
 

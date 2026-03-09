@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_02
 title: '15. 명제와 논리 Logic  Proposition 참과 거짓을 가르는 컴퓨터의 영혼'
 ---
 

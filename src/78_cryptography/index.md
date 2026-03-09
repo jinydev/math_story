@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_08
 title: '10. 암호 Cryptography 비밀 수학의 세계'
 ---
 

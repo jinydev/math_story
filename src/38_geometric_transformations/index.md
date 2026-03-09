@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_03
 title: '수학이야기 80. 도형의 이동 Transformation of Figures'
 ---
 

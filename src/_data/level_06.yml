@@ -1,0 +1,17 @@
+main:
+- title: "59. 적분1"
+  url: /59_integrals_1/
+- title: "60. 적분2"
+  url: /60_integrals_2/
+- title: "61. 순열"
+  url: /61_permutations/
+- title: "62. 조합"
+  url: /62_combinations/
+- title: "63. 확률2"
+  url: /63_probability_2/
+- title: "64. 통계"
+  url: /64_statistics/
+- title: "65. 확률분포"
+  url: /65_probability_distributions/
+- title: "66. 정규분포"
+  url: /66_normal_distribution/

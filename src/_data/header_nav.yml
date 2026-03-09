@@ -1,13 +1,18 @@
-- title: 자바기초
-  url: /basic
-- title: 객체지향
-  url: /oop
-- title: 입출력
-  url: /part03
-- title: 데이터베이스
-  url: /database
-
-- title: GUI
-  url: /gui
-- title: 백엔드
-  url: /backend
+- title: 초등 수학
+  url: /level_00/
+- title: 중등 수학
+  url: /level_01/
+- title: 고등 공통
+  url: /level_02/
+- title: 고등 대수
+  url: /level_03/
+- title: 고등 미적분
+  url: /level_04/
+- title: 고등 기하와 벡터
+  url: /level_05/
+- title: 고등 확률과 통계
+  url: /level_06/
+- title: 대학 전공수학
+  url: /level_07/
+- title: 응용/교양 수학
+  url: /level_08/

@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_01
 title: '수학이야기 48. 일차부등식 Linear Inequalities'
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_01
 title: '12. 다면체 Polyhedron 우주의 뼈대 설계도'
 ---
 

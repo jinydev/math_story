@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_05
 title: '수학이야기 66.미분2'
 parent: 수학이야기
 nav_order: 66

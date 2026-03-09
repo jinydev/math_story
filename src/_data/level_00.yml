@@ -1,0 +1,11 @@
+main:
+- title: "01. 자연수"
+  url: /01_natural_numbers/
+- title: "02. 기수법"
+  url: /02_numeral_systems/
+- title: "03. 약수와배수1"
+  url: /03_divisors_and_multiples_1/
+- title: "04. 약수와배수2"
+  url: /04_divisors_and_multiples_2/
+- title: "05. 비"
+  url: /05_ratio/

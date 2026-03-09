@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_01
 title: '29. 작도 Construction 신의 기하학과 대수학의 충돌'
 ---
 

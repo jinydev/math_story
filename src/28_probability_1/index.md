@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_02
 title: '수학이야기 25.확률1'
 parent: 수학이야기
 nav_order: 25

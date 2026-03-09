@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_06
 title: '수학이야기 74. 통계 Statistics'
 ---
 

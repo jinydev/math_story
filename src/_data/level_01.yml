@@ -1,0 +1,37 @@
+main:
+- title: "06. 정수★"
+  url: /06_integers/
+- title: "07. 유리수"
+  url: /07_rational_numbers/
+- title: "08. 실수1"
+  url: /08_real_numbers_1/
+- title: "09. 식의계산"
+  url: /09_algebraic_expressions/
+- title: "10. 인수분해1"
+  url: /10_factorization_1/
+- title: "11. 일차방정식"
+  url: /11_linear_equations/
+- title: "12. 일차부등식"
+  url: /12_linear_inequalities/
+- title: "13. 이차방정식"
+  url: /13_quadratic_equations/
+- title: "14. 좌표"
+  url: /14_coordinates/
+- title: "15. 함수1"
+  url: /15_functions_1/
+- title: "16. 작도"
+  url: /16_geometric_constructions/
+- title: "17. 다면체"
+  url: /17_polyhedrons/
+- title: "18. 무게중심과 회전체"
+  url: /18_center_of_mass_and_solids_of_revolution/
+- title: "19. 삼각형"
+  url: /19_triangles/
+- title: "20. 사각형"
+  url: /20_quadrilaterals/
+- title: "21. 닮음"
+  url: /21_similarity/
+- title: "22. 피타고라스정리"
+  url: /22_pythagorean_theorem/
+- title: "23. 삼각비1"
+  url: /23_trigonometric_ratios_1/

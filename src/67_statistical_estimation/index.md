@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_07
 title: '수학이야기 53. 추정 Estimation'
 ---
 

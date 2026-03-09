@@ -1,5 +1,5 @@
 ---
-layout: "docs"
+layout: level_08
 layout: home
 title: '수학이야기 06. 프랙탈 Fractals'
 ---
