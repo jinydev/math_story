@@ -18,10 +18,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 폭발하는 우주의 가지치기 (Intro)](00_intro.md)
-- [01. 첫 번째 수업: 순서가 지배하는 권력, 순열 (Permutation)](01_permutation.md)
-- [02. 두 번째 수업: 줄 세우기, 그리고 팩토리얼 (Factorial !)](02_factorial_logic.md)
-- [03. 세 번째 수업: 순서를 붕괴시키는 평등의 바구니, 조합 (Combination)](03_combination.md)
-- [04. 네 번째 수업: "대표 2명 뽑기" 가 조합이 되는 이유 (Why Combinations Work)](04_representative_combination.md)
-- [05. 다섯 번째 수업: 연속 확률의 곱셈과 연속 뽑기의 함정 (Consecutive Draws)](05_consecutive_probability.md)
-- [06. 여섯 번째 수업: 파이썬 몬테카를로! 원주율 $\pi$ 를 총 쏴서 맞추기 (Python Monte Carlo PI)](06_python_monte_carlo.md)
+- [00. 인트로: 폭발하는 우주의 가지치기 (Intro)](00_intro)
+- [01. 첫 번째 수업: 순서가 지배하는 권력, 순열 (Permutation)](01_permutation)
+- [02. 두 번째 수업: 줄 세우기, 그리고 팩토리얼 (Factorial !)](02_factorial_logic)
+- [03. 세 번째 수업: 순서를 붕괴시키는 평등의 바구니, 조합 (Combination)](03_combination)
+- [04. 네 번째 수업: "대표 2명 뽑기" 가 조합이 되는 이유 (Why Combinations Work)](04_representative_combination)
+- [05. 다섯 번째 수업: 연속 확률의 곱셈과 연속 뽑기의 함정 (Consecutive Draws)](05_consecutive_probability)
+- [06. 여섯 번째 수업: 파이썬 몬테카를로! 원주율 $\pi$ 를 총 쏴서 맞추기 (Python Monte Carlo PI)](06_python_monte_carlo)

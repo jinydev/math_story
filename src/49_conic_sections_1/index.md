@@ -19,10 +19,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 원뿔을 자르는 마법의 칼날 (Intro)](00_intro.md)
-- [01. 첫 번째 수업: 이차곡선의 탄생, 고대 그리스의 스캐닝 (Origin)](01_origin_of_conics.md)
-- [02. 두 번째 수업: 원뿔을 자르는 4가지 방법 (Four Slices)](02_four_conic_sections.md)
-- [03. 세 번째 수업: 포물선, 하늘을 가르는 로켓방정식 (Parabola)](03_definition_of_parabola.md)
-- [04. 네 번째 수업: 촛점(Focus) 과 준선(Directrix) 의 비밀 (Focus & Directrix)](04_focus_and_directrix.md)
-- [05. 다섯 번째 수업: 데카르트 평면 위에 포물선을 코딩하다 (Parabola Equations)](05_equation_of_parabola.md)
-- [06. 여섯 번째 수업: 파이썬 Matplotlib 로 그리는 우주의 궤적 (Python Plotting)](06_python_matplotlib_conics.md)
+- [00. 인트로: 원뿔을 자르는 마법의 칼날 (Intro)](00_intro)
+- [01. 첫 번째 수업: 이차곡선의 탄생, 고대 그리스의 스캐닝 (Origin)](01_origin_of_conics)
+- [02. 두 번째 수업: 원뿔을 자르는 4가지 방법 (Four Slices)](02_four_conic_sections)
+- [03. 세 번째 수업: 포물선, 하늘을 가르는 로켓방정식 (Parabola)](03_definition_of_parabola)
+- [04. 네 번째 수업: 촛점(Focus) 과 준선(Directrix) 의 비밀 (Focus & Directrix)](04_focus_and_directrix)
+- [05. 다섯 번째 수업: 데카르트 평면 위에 포물선을 코딩하다 (Parabola Equations)](05_equation_of_parabola)
+- [06. 여섯 번째 수업: 파이썬 Matplotlib 로 그리는 우주의 궤적 (Python Plotting)](06_python_matplotlib_conics)

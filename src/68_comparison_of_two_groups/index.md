@@ -12,26 +12,26 @@ title: '수학이야기 43. 두 집단의 비교 Comparison of Two Groups'
 
 ## 📚 목차 (Table of Contents)
 
-1. [1. 진짜 승자는 누구인가?: 두 집단의 비교 (Comparison of Groups)](01_comparing_groups.md)
+1. [1. 진짜 승자는 누구인가?: 두 집단의 비교 (Comparison of Groups)](01_comparing_groups)
    - 모래알 같은 개별 데이터를 버리고 ‘거대 덩어리(분포)’ 로 싸움을 붙이는 통계 분석의 눈과, 평균(60점) 뒤에 숨은 집단의 착시 현상을 학습합니다.
 
-2. [2. 집단의 멱살을 잡는 세 명의 대장: 대푯값 (Representative Values)](02_representative_values.md)
+2. [2. 집단의 멱살을 잡는 세 명의 대장: 대푯값 (Representative Values)](02_representative_values)
    - 빌게이츠가 이사 오면 전원 재벌이 되어버리는 평균의 치명적 오류를 막기 위해 등수 세우기인 중앙값(Median)과 인기쟁이 최빈값(Mode) 필터를 코딩에 장착합니다.
 
-3. [3. 데이터의 폭격: 파이썬으로 구하는 평균과 표준편차 (Standard Deviation)](03_python_statistics.md)
+3. [3. 데이터의 폭격: 파이썬으로 구하는 평균과 표준편차 (Standard Deviation)](03_python_statistics)
    - 퍼진 데이터의 +, - 오류를 제곱 뻥튀기로 태워 죽인 '분산' 과, 루트를 씌워 팩트로 만든 '표준편차' 의 공포스러운 6단 변신 수학식을 파이썬 1줄 함수로 쳐냅니다.
 
-4. [4. 여름엔 아이스크림, 겨울엔 붕어빵: 두 변수의 관계성 (Correlation)](04_correlation.md)
+4. [4. 여름엔 아이스크림, 겨울엔 붕어빵: 두 변수의 관계성 (Correlation)](04_correlation)
    - 에어컨과 기온, 난로와 폭염처럼 두 개의 생판 다른 집단이 마치 거울 치료처럼 우상향/우하향으로 함께 움직이는 빅데이터 마케팅의 운명적 스캔입니다.
 
-5. [5. 하늘에 찍어보는 관계의 별자리: 상관도 (Scatter Plot)](05_scatter_plot.md)
+5. [5. 하늘에 찍어보는 관계의 별자리: 상관도 (Scatter Plot)](05_scatter_plot)
    - 숫자가 적힌 엑셀 표의 암호를 2D 거대 좌표 평면(허공) 위에 폭격하여, 눈으로만 봐도 럭비공인지 원형 파편인지 알게 하는 파이썬 별자리 `scatter` 입니다.
 
-6. [6. 애매모호한 그림에 도장을 찍다: 상관계수 (Correlation Coefficient)](06_correlation_coefficient.md)
+6. [6. 애매모호한 그림에 도장을 찍다: 상관계수 (Correlation Coefficient)](06_correlation_coefficient)
    - 우하향, 우상향 느낌적인 느낌의 평가를 박살 내고, $-1.0$ 부터 $+1.0$ 이라는 영원한 절대 수치 감옥 안에 궁합 점수(r) 단 한 방을 꽂아 넣는 피어슨 판독기입니다.
 
-7. [7. 숫자에 속지 마라 1: 통계의 허와 실 (Fallacies in Statistics)](07_statistics_fallacy.md)
+7. [7. 숫자에 속지 마라 1: 통계의 허와 실 (Fallacies in Statistics)](07_statistics_fallacy)
    - "아이스크림을 먹으면 상어가 물어 죽인다?" 같이 오른 쌍둥이 그래프 뒤에서 배후를 조종하던 진짜 제3의 범인, '여름철(폭염)' 을 찾아내는 인과관계 구별 법입니다.
 
-8. [8. 숫자에 속지 마라 2: 평균의 함정과 사기 그래프 (The Trap of Averages)](08_average_trap.md)
+8. [8. 숫자에 속지 마라 2: 평균의 함정과 사기 그래프 (The Trap of Averages)](08_average_trap)
    - $0$부터 시작하는 $Y$축 밑동을 파이썬 렌더링(YLim)으로 날려버려 $5$% 차이를 무려 우주적인 $6$배 차이로 뒤틀어 버리는 악덕 마케팅 통계들의 시각적 해킹을 차단합니다.

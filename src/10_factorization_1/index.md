@@ -18,10 +18,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 레고 블록으로 해체하기 (Intro)](00_intro.md)
-- [01. 첫 번째 수업: 소인수분해와 다항식의 만남 (Prime Factors vs Polynomials)](01_concept_of_factorization.md)
-- [02. 두 번째 수업: 가장 중요한 공통분모 찾기, 공통인수 (Common Factor)](02_common_factors.md)
-- [03. 세 번째 수업: 곱셈 공식의 테이프 거꾸로 감기 (Reversing Multiplication)](03_reversing_multiplication.md)
-- [04. 네 번째 수업: 위대한 완전제곱식으로의 압축 (Perfect Squares)](04_perfect_square_trinomials.md)
-- [05. 다섯 번째 수업: 합차 공식, 데칼코마니의 마법 (Difference of Squares)](05_difference_of_squares.md)
-- [06. 여섯 번째 수업: 파이썬 기계로 다항식 산산조각 내기 (Python SymPy)](06_python_sympy_factorization.md)
+- [00. 인트로: 레고 블록으로 해체하기 (Intro)](00_intro)
+- [01. 첫 번째 수업: 소인수분해와 다항식의 만남 (Prime Factors vs Polynomials)](01_concept_of_factorization)
+- [02. 두 번째 수업: 가장 중요한 공통분모 찾기, 공통인수 (Common Factor)](02_common_factors)
+- [03. 세 번째 수업: 곱셈 공식의 테이프 거꾸로 감기 (Reversing Multiplication)](03_reversing_multiplication)
+- [04. 네 번째 수업: 위대한 완전제곱식으로의 압축 (Perfect Squares)](04_perfect_square_trinomials)
+- [05. 다섯 번째 수업: 합차 공식, 데칼코마니의 마법 (Difference of Squares)](05_difference_of_squares)
+- [06. 여섯 번째 수업: 파이썬 기계로 다항식 산산조각 내기 (Python SymPy)](06_python_sympy_factorization)

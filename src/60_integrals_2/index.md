@@ -21,11 +21,11 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 스킬 트리를 융합하다 (Intro)](00_intro.md)
-- [01. 첫 번째 수업: 허공에 뜬 영토, 두 곡선 사이의 넓이 (Area Between)](01_area_between_curves.md)
-- [02. 두 번째 수업: 3D 프린터처럼 쌓아 올리는 입체의 부피 (Volumes)](02_volumes_of_solids.md)
-- [03. 세 번째 수업: 물리학과 노동의 결실 (Work and Force)](03_work_and_force.md)
-- [04. 네 번째 수업: 껍데기를 바꿔치기하는 치환적분법 (Substitution)](04_integration_by_substitution.md)
-- [05. 다섯 번째 수업: 곱의 미분을 역설계하는 부분적분법 (By Parts)](05_integration_by_parts.md)
-- [06. 여섯 번째 수업: 무한 우주의 끝까지 넓이 구하기 (Improper Integrals)](06_improper_integrals.md)
-- [07. 일곱 번째 수업: 코드로 그리는 인공지능 속 확률의 넓이 (CS & Probabilities)](07_cs_applications.md)
+- [00. 인트로: 스킬 트리를 융합하다 (Intro)](00_intro)
+- [01. 첫 번째 수업: 허공에 뜬 영토, 두 곡선 사이의 넓이 (Area Between)](01_area_between_curves)
+- [02. 두 번째 수업: 3D 프린터처럼 쌓아 올리는 입체의 부피 (Volumes)](02_volumes_of_solids)
+- [03. 세 번째 수업: 물리학과 노동의 결실 (Work and Force)](03_work_and_force)
+- [04. 네 번째 수업: 껍데기를 바꿔치기하는 치환적분법 (Substitution)](04_integration_by_substitution)
+- [05. 다섯 번째 수업: 곱의 미분을 역설계하는 부분적분법 (By Parts)](05_integration_by_parts)
+- [06. 여섯 번째 수업: 무한 우주의 끝까지 넓이 구하기 (Improper Integrals)](06_improper_integrals)
+- [07. 일곱 번째 수업: 코드로 그리는 인공지능 속 확률의 넓이 (CS & Probabilities)](07_cs_applications)

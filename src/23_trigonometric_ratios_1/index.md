@@ -19,10 +19,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 닿을 수 없는 곳을 측량하다 (Intro)](00_intro.md)
-- [01. 첫 번째 수업: 직각 삼각형과 닮음의 기적 (Similar Triangles)](01_similar_right_triangles.md)
-- [02. 두 번째 수업: 사인, 코사인, 탄젠트의 탄생 (SOH CAH TOA)](02_sine_cosine_tangent.md)
-- [03. 세 번째 수업: 신성한 특수각의 비율 ($30^\circ$, $45^\circ$, $60^\circ$)](03_special_angles.md)
-- [04. 네 번째 수업: 삼각비 표와 컴퓨터의 무한 소수점 (Trig Tables)](04_trig_tables.md)
-- [05. 다섯 번째 수업: 퍼즐 풀기, 숨겨진 변과 각도 찾기 (Solving Triangles)](05_solving_right_triangles.md)
-- [06. 여섯 번째 수업: 파이썬 코드로 쏘아 올리는 대포알 (Applications)](06_applications.md)
+- [00. 인트로: 닿을 수 없는 곳을 측량하다 (Intro)](00_intro)
+- [01. 첫 번째 수업: 직각 삼각형과 닮음의 기적 (Similar Triangles)](01_similar_right_triangles)
+- [02. 두 번째 수업: 사인, 코사인, 탄젠트의 탄생 (SOH CAH TOA)](02_sine_cosine_tangent)
+- [03. 세 번째 수업: 신성한 특수각의 비율 ($30^\circ$, $45^\circ$, $60^\circ$)](03_special_angles)
+- [04. 네 번째 수업: 삼각비 표와 컴퓨터의 무한 소수점 (Trig Tables)](04_trig_tables)
+- [05. 다섯 번째 수업: 퍼즐 풀기, 숨겨진 변과 각도 찾기 (Solving Triangles)](05_solving_right_triangles)
+- [06. 여섯 번째 수업: 파이썬 코드로 쏘아 올리는 대포알 (Applications)](06_applications)

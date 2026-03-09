@@ -13,10 +13,10 @@ title: '18. 경우의 수 Number of Cases 예측과 확률의 코어 엔진'
 
 ## 목차 (Table of Contents)
 
-* [00. 직감과 확률의 세계로: 천재 블레즈 파스칼](00_intro_pascal.md) (Visual: 17세기 도박장 테이블에서 빛나는 주사위 홀로그램 공식을 풀고 있는 파스칼의 AI 일러스트)
-* [01. 합과 곱의 법칙, 그리고 파이썬 Product 엔진](01_event_and_cases.md) (Python: 상의 X 하의 X 신발의 수많은 패션 조합 경우를 `itertools.product` 세트 데카르트 곱으로 1초 만에 렌더링 검증)
-* [02. 암호와 순서의 세계, 순열(Permutation)](02_permutations.md) (Python: 순서 배열이 핵심인 자물쇠 5P3의 무차별 팩토리얼 비밀번호 스캐너 해킹 시뮬레이션)
-* [03. 제비뽑기와 조합, 로또의 세계(Combination)](03_combinations.md) (Python: 순서를 배제한 평등의 산술식 45C6로 구현한 무자비한 814만 확률의 로또 렌더링 엔진)
-* [04. 이웃하여 줄 서는 묶음(Grouping) 테크닉](04_grouping_friends.md) (Visual: 친한 친구 3명을 거대한 하나의 보이지 않는 끈으로 감아 분할 배치하는 덩어리 팩토리얼 묶음 배열의 SVG 플로우)
-* [05. 바둑판 미로와 최단 경로 알고리즘](05_shortest_path.md) (Visual: 사이버펑크 퓨처 뉴욕 맵에서의 맨해튼 거리 최단 경로, 그리고 역주행 불가 합의 법칙의 네온 아트워크)
-* [06. 이긴 자만 살아남는다: 리그전과 토너먼트](06_league_and_tournament.md) (Visual: 모든 자를 한 번씩 마주치는 조합론 리그 펜타그램과, 무조건 N-1명 제거 학살 방식인 토너먼트의 구조 대조 SVG 다이어그램)
+* [00. 직감과 확률의 세계로: 천재 블레즈 파스칼](00_intro_pascal) (Visual: 17세기 도박장 테이블에서 빛나는 주사위 홀로그램 공식을 풀고 있는 파스칼의 AI 일러스트)
+* [01. 합과 곱의 법칙, 그리고 파이썬 Product 엔진](01_event_and_cases) (Python: 상의 X 하의 X 신발의 수많은 패션 조합 경우를 `itertools.product` 세트 데카르트 곱으로 1초 만에 렌더링 검증)
+* [02. 암호와 순서의 세계, 순열(Permutation)](02_permutations) (Python: 순서 배열이 핵심인 자물쇠 5P3의 무차별 팩토리얼 비밀번호 스캐너 해킹 시뮬레이션)
+* [03. 제비뽑기와 조합, 로또의 세계(Combination)](03_combinations) (Python: 순서를 배제한 평등의 산술식 45C6로 구현한 무자비한 814만 확률의 로또 렌더링 엔진)
+* [04. 이웃하여 줄 서는 묶음(Grouping) 테크닉](04_grouping_friends) (Visual: 친한 친구 3명을 거대한 하나의 보이지 않는 끈으로 감아 분할 배치하는 덩어리 팩토리얼 묶음 배열의 SVG 플로우)
+* [05. 바둑판 미로와 최단 경로 알고리즘](05_shortest_path) (Visual: 사이버펑크 퓨처 뉴욕 맵에서의 맨해튼 거리 최단 경로, 그리고 역주행 불가 합의 법칙의 네온 아트워크)
+* [06. 이긴 자만 살아남는다: 리그전과 토너먼트](06_league_and_tournament) (Visual: 모든 자를 한 번씩 마주치는 조합론 리그 펜타그램과, 무조건 N-1명 제거 학살 방식인 토너먼트의 구조 대조 SVG 다이어그램)

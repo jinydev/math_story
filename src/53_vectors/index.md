@@ -20,10 +20,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 우주선의 가속 엔진과 방향타 (Intro)](00_intro.md)
-- [01. 첫 번째 수업: 데이터의 영혼, 스칼라(Scalar) 와 벡터(Vector) (Scalar vs Vector)](01_scalar_vs_vector.md)
-- [02. 두 번째 수업: 벡터를 쪼개라! X축과 Y축 컴포넌트 분해 (Vector Components)](02_vector_components.md)
-- [03. 세 번째 수업: 화살표 꼬리 잡기 렌더링, 벡터의 덧셈 (Vector Addition)](03_vector_addition.md)
-- [04. 네 번째 수업: 나를 향해 날아오는 과녁, 벡터의 뺄셈 (Vector Subtraction)](04_vector_subtraction.md)
-- [05. 다섯 번째 수업: 에네르기파 뻥튀기! 스칼라 곱셈 (Scalar Multiplication)](05_scalar_multiplication.md)
-- [06. 여섯 번째 수업: 파이썬 넘파이(NumPy) 우주선 가속도 시뮬레이터 (Python NumPy Vectors)](06_python_numpy_vectors.md)
+- [00. 인트로: 우주선의 가속 엔진과 방향타 (Intro)](00_intro)
+- [01. 첫 번째 수업: 데이터의 영혼, 스칼라(Scalar) 와 벡터(Vector) (Scalar vs Vector)](01_scalar_vs_vector)
+- [02. 두 번째 수업: 벡터를 쪼개라! X축과 Y축 컴포넌트 분해 (Vector Components)](02_vector_components)
+- [03. 세 번째 수업: 화살표 꼬리 잡기 렌더링, 벡터의 덧셈 (Vector Addition)](03_vector_addition)
+- [04. 네 번째 수업: 나를 향해 날아오는 과녁, 벡터의 뺄셈 (Vector Subtraction)](04_vector_subtraction)
+- [05. 다섯 번째 수업: 에네르기파 뻥튀기! 스칼라 곱셈 (Scalar Multiplication)](05_scalar_multiplication)
+- [06. 여섯 번째 수업: 파이썬 넘파이(NumPy) 우주선 가속도 시뮬레이터 (Python NumPy Vectors)](06_python_numpy_vectors)

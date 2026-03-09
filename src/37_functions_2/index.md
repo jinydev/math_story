@@ -18,10 +18,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 금기를 코딩하다 (Intro)](00_intro.md)
-- [01. 첫 번째 수업: 닿을 수 없는 절대 장벽, 유리 함수 (Rational Functions)](01_rational_functions.md)
-- [02. 두 번째 수업: 속도가 휘어지는 총알, 무리 함수 (Irrational Functions)](02_irrational_functions.md)
-- [03. 세 번째 수업: 빛보다 빠른 폭주 기관차, 지수 함수 (Exponential Functions)](03_exponential_functions.md)
-- [04. 네 번째 수업: 폭주 기관차에 목줄을 채우다, 로그 함수 (Logarithmic Functions)](04_logarithmic_functions.md)
-- [05. 다섯 번째 수업: 다항, 유리, 무리, 지수, 로그의 거대한 트리 (Functions Tree)](05_functions_family_tree.md)
-- [06. 여섯 번째 수업: 파이썬 알고리즘 속 지수와 로그의 실전 (Time Complexity)](06_time_complexity_applications.md)
+- [00. 인트로: 금기를 코딩하다 (Intro)](00_intro)
+- [01. 첫 번째 수업: 닿을 수 없는 절대 장벽, 유리 함수 (Rational Functions)](01_rational_functions)
+- [02. 두 번째 수업: 속도가 휘어지는 총알, 무리 함수 (Irrational Functions)](02_irrational_functions)
+- [03. 세 번째 수업: 빛보다 빠른 폭주 기관차, 지수 함수 (Exponential Functions)](03_exponential_functions)
+- [04. 네 번째 수업: 폭주 기관차에 목줄을 채우다, 로그 함수 (Logarithmic Functions)](04_logarithmic_functions)
+- [05. 다섯 번째 수업: 다항, 유리, 무리, 지수, 로그의 거대한 트리 (Functions Tree)](05_functions_family_tree)
+- [06. 여섯 번째 수업: 파이썬 알고리즘 속 지수와 로그의 실전 (Time Complexity)](06_time_complexity_applications)

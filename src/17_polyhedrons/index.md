@@ -12,10 +12,10 @@ title: '12. 다면체 Polyhedron 우주의 뼈대 설계도'
 
 ## 목차 (Table of Contents)
 
-* [00. 도입부: 입체 도형의 뼈대, 다면체 (Polyhedron)](00_intro.md) (면, 모서리, 꼭짓점의 분자 구조)
-* [01. 기둥(Prism)과 뿔(Pyramid): 입체의 두 거장](01_prisms_and_pyramids.md) (AI Visual: 파르테논 대리석 신전과 사각 이집트 피라미드 대조 렌더링)
-* [02. 공간을 종이로 펼치다: 전개도 매핑 (Net)](02_unfolding_polyhedrons.md) (Python: 큐브 십자가 배열 UV 텍스처 좌표 맵핑 시뮬레이터)
-* [03. 우주의 5원소 코어, 플라톤 입체 (정다면체)](03_platos_five_polyhedrons.md) (Visual: 불/흙/공기/물/우주의 3D 정다면체 콤비네이션 아트)
-* [04. 증명! 왜 정다면체는 우주에 오직 5개뿐인가?](04_why_only_five.md) (Python: 한 꼭짓점 내각 360도 초과 시 붕괴하는 조립 블록 제한 알고리즘)
-* [05. 기하학의 마스터키: 오일러의 다면체 공식](05_euler_characteristic.md) (Python: V - E + F 상수 '2' 무결성 검증 게임 버그 디버거 제작)
-* [06. 신의 조각을 깎아 만든 스포츠: 아르키메데스 다면체와 축구공](06_archimedean_solids_and_soccer.md) (Visual: 사무라이 검술로 정이십면체 뿔을 깎아 둥근 텔스타 축구공을 제작하는 도해)
+* [00. 도입부: 입체 도형의 뼈대, 다면체 (Polyhedron)](00_intro) (면, 모서리, 꼭짓점의 분자 구조)
+* [01. 기둥(Prism)과 뿔(Pyramid): 입체의 두 거장](01_prisms_and_pyramids) (AI Visual: 파르테논 대리석 신전과 사각 이집트 피라미드 대조 렌더링)
+* [02. 공간을 종이로 펼치다: 전개도 매핑 (Net)](02_unfolding_polyhedrons) (Python: 큐브 십자가 배열 UV 텍스처 좌표 맵핑 시뮬레이터)
+* [03. 우주의 5원소 코어, 플라톤 입체 (정다면체)](03_platos_five_polyhedrons) (Visual: 불/흙/공기/물/우주의 3D 정다면체 콤비네이션 아트)
+* [04. 증명! 왜 정다면체는 우주에 오직 5개뿐인가?](04_why_only_five) (Python: 한 꼭짓점 내각 360도 초과 시 붕괴하는 조립 블록 제한 알고리즘)
+* [05. 기하학의 마스터키: 오일러의 다면체 공식](05_euler_characteristic) (Python: V - E + F 상수 '2' 무결성 검증 게임 버그 디버거 제작)
+* [06. 신의 조각을 깎아 만든 스포츠: 아르키메데스 다면체와 축구공](06_archimedean_solids_and_soccer) (Visual: 사무라이 검술로 정이십면체 뿔을 깎아 둥근 텔스타 축구공을 제작하는 도해)

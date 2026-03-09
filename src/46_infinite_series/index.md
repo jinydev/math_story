@@ -22,10 +22,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 영원히 끝나지 않는 덧셈의 굴레 (Intro)](00_intro.md)
-- [01. 첫 번째 수업: 도대체 급수(Series) 가 뭔가요? (What is Series)](01_what_is_series.md)
-- [02. 두 번째 수업: 등차 수열의 덧셈 vs 등비 수열의 중첩 (Arithmetic vs Geometric)](02_arithmetic_vs_geometric.md)
-- [03. 세 번째 수업: 거북이를 절대 못 잡는 아킬레스 건, 제논의 역설 (Zeno's Paradox)](03_zenos_paradox.md)
-- [04. 네 번째 수업: 우주 밖으로 폭발하냐, 멈추느냐 (Converge & Diverge)](04_converge_diverge.md)
-- [05. 다섯 번째 수업: 무한등비급수의 마법진, $S = \frac{a}{1-r}$ (Sum of Geometric Series)](05_sum_of_geometric_series.md)
-- [06. 여섯 번째 수업: 파이썬 `while` 무한 루프 록다운! 컴퓨터로 무한 찢기 (Python While Convergence)](06_python_while_convergence.md)
+- [00. 인트로: 영원히 끝나지 않는 덧셈의 굴레 (Intro)](00_intro)
+- [01. 첫 번째 수업: 도대체 급수(Series) 가 뭔가요? (What is Series)](01_what_is_series)
+- [02. 두 번째 수업: 등차 수열의 덧셈 vs 등비 수열의 중첩 (Arithmetic vs Geometric)](02_arithmetic_vs_geometric)
+- [03. 세 번째 수업: 거북이를 절대 못 잡는 아킬레스 건, 제논의 역설 (Zeno's Paradox)](03_zenos_paradox)
+- [04. 네 번째 수업: 우주 밖으로 폭발하냐, 멈추느냐 (Converge & Diverge)](04_converge_diverge)
+- [05. 다섯 번째 수업: 무한등비급수의 마법진, $S = \frac{a}{1-r}$ (Sum of Geometric Series)](05_sum_of_geometric_series)
+- [06. 여섯 번째 수업: 파이썬 `while` 무한 루프 록다운! 컴퓨터로 무한 찢기 (Python While Convergence)](06_python_while_convergence)

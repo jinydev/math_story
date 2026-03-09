@@ -12,17 +12,17 @@ title: '수학이야기 38. 삼각형의 오심 Five Centers of a Triangle'
 
 ## 📚 목차 (Table of Contents)
 
-1. [1. 세 마을의 중심을 찾아라: 외심 (Circumcenter)](01_circumcenter.md)
+1. [1. 세 마을의 중심을 찾아라: 외심 (Circumcenter)](01_circumcenter)
    - 세 꼭짓점까지의 거리가 완벽히 같은 교차점. 최적화된 소방서의 위치를 파이썬 행렬 방정식으로 산출합니다.
 
-2. [2. 세 도로망의 교차점: 내심 (Incenter)](02_incenter.md)
+2. [2. 세 도로망의 교차점: 내심 (Incenter)](02_incenter)
    - 삼각형 안에 꽉 끼는 거대한 돔 구장. 면적($S$) 공식을 파이썬으로 역산하여 내접원의 최대 반지름을 추적합니다.
 
-3. [3. 물리와 수학의 아름다운 만남: 무게중심 (Centroid)](03_centroid.md)
+3. [3. 물리와 수학의 아름다운 만남: 무게중심 (Centroid)](03_centroid)
    - 중력이 완벽히 균형을 이루는 $2:1$의 마법 비율. 파이썬의 단순 $X, Y$ 평균 함수로 제트기의 밸런스를 코딩합니다.
 
-4. [4. 직각과 바깥의 세계: 수심(Orthocenter)과 방심(Excenter)](04_orthocenter_excenter.md)
+4. [4. 직각과 바깥의 세계: 수심(Orthocenter)과 방심(Excenter)](04_orthocenter_excenter)
    - 직각 레이저 미사일의 교점(수심)과 우주 밖으로 튕겨나간 외톨이(방심). 3D 게임 그래픽 셰이더의 기본 원리가 됩니다.
 
-5. [5. 천재 수학자의 대발견: 오일러 선(Euler Line)과 구점원](05_euler_line_nine_point.md)
+5. [5. 천재 수학자의 대발견: 오일러 선(Euler Line)과 구점원](05_euler_line_nine_point)
    - 흩어져 있던 중심들이 일직선과 하나의 원으로 정렬하는 소름돋는 질서를 파이썬 기울기 스크립트로 증명해 냅니다.

@@ -12,10 +12,10 @@ title: '21. 무한 Infinity 붕괴하는 직관과 칸토어의 집합론'
 또한, 차원이 다르게 거대한 괴물인 실수의 무한($\aleph_1$)을 유도해 낸 역사상 가장 잔인한 해킹 증명법 **'대각선 논법'** 의 위력을 파이썬 문자 조각 브루트포스 시뮬레이션으로 함께 체감할 것입니다.
 
 ## 목차 (Table of Contents)
-* [00. 무한정복자 게오르크 칸토어(Georg Cantor)](00_intro_cantor.md) (Visual: 블랙홀 앞의 알레프-널(Aleph-Null) 사이버 툰)
-* [01. 유한을 넘어, 힐베르트의 무한 호텔](01_hilberts_hotel.md) (Python: 메모리 한계가 없는 무한 `yield` Generator 방 배정 엔진)
-* [02. 셀 수 있는 무한: 알레프 널($\aleph_0$)](02_countable_infinity.md) (Python: 1대1 매핑의 강력한 튜플 묶음 `zip` 스캐너 코딩)
-* [03. 부분은 전체와 같다: 갈릴레오의 역설](03_galileos_paradox.md) (Visual: $f(x)=2x$ 곱만으로 짝수를 자연수 전체와 1:1 결속시키는 역설적 SVG)
-* [04. 조밀성의 끝판왕: 유리수의 기수 대결](04_infinity_of_rationals.md) (Visual: 2차원 표의 조밀한 분수들을 자연수 한 개씩으로 모조리 엮어내는 칸토어 지그재그 나선형 스캔형 SVG 다이어그램)
-* [05. 차원이 다른 무한: 칸토어의 대각선 논법](05_cantors_diagonal_argument.md) (Python: 자연수로는 묶을 수 없는 거대한 배열 인덱스의 소수점을 강제로 해킹 변조하여 없는 실수를 창조해 내는 대각선 논리 봇 시뮬레이션)
-* [06. 차원의 붕괴: 선과 면의 점 개수는 똑같다!](06_collapse_of_dimensions.md) (Visual: 1차원 선이 2차원 그리드 평면으로 퍼지며 두 숫자가 번갈아 결합 합체하는 차원 붕괴 네온 AI 텍스처)
+* [00. 무한정복자 게오르크 칸토어(Georg Cantor)](00_intro_cantor) (Visual: 블랙홀 앞의 알레프-널(Aleph-Null) 사이버 툰)
+* [01. 유한을 넘어, 힐베르트의 무한 호텔](01_hilberts_hotel) (Python: 메모리 한계가 없는 무한 `yield` Generator 방 배정 엔진)
+* [02. 셀 수 있는 무한: 알레프 널($\aleph_0$)](02_countable_infinity) (Python: 1대1 매핑의 강력한 튜플 묶음 `zip` 스캐너 코딩)
+* [03. 부분은 전체와 같다: 갈릴레오의 역설](03_galileos_paradox) (Visual: $f(x)=2x$ 곱만으로 짝수를 자연수 전체와 1:1 결속시키는 역설적 SVG)
+* [04. 조밀성의 끝판왕: 유리수의 기수 대결](04_infinity_of_rationals) (Visual: 2차원 표의 조밀한 분수들을 자연수 한 개씩으로 모조리 엮어내는 칸토어 지그재그 나선형 스캔형 SVG 다이어그램)
+* [05. 차원이 다른 무한: 칸토어의 대각선 논법](05_cantors_diagonal_argument) (Python: 자연수로는 묶을 수 없는 거대한 배열 인덱스의 소수점을 강제로 해킹 변조하여 없는 실수를 창조해 내는 대각선 논리 봇 시뮬레이션)
+* [06. 차원의 붕괴: 선과 면의 점 개수는 똑같다!](06_collapse_of_dimensions) (Visual: 1차원 선이 2차원 그리드 평면으로 퍼지며 두 숫자가 번갈아 결합 합체하는 차원 붕괴 네온 AI 텍스처)

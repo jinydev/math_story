@@ -20,10 +20,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 스피드의 스피드, G-Force 충격량 (Intro)](00_intro.md)
-- [01. 첫 번째 수업: 속도 계기판 바늘마저 돌아가는 스피드, 이계도함수 $f''(x)$](01_second_derivative_meaning.md)
-- [02. 두 번째 수업: 하늘정면 웃는 상($\cup$) vs 바닥 땅벌레 절망 상($\cap$) (Concave Up & Down)](02_concave_up_down.md)
-- [03. 세 번째 수업: 중력 쏠림이 역전되는 찰나의 버그 충돌, 변곡점 (Inflection Point)](03_inflection_points.md)
-- [04. 네 번째 수업: 나락의 폭주엔진! 가속도(Acceleration) 의 물리 렌더링 (Acceleration Physics)](04_acceleration_physics.md)
-- [05. 다섯 번째 수업: 3D 심화 버그 디버깅, 기괴한 그래프 스캐닝 스킬 (Curve Sketching Advanced)](05_curve_sketching_advanced.md)
-- [06. 여섯 번째 수업: 파이썬 SymPy 치트 중첩 시전! 미분기어 $2$단 터보 (Python Sympy Diff Diff)](06_python_sympy_diff_diff.md)
+- [00. 인트로: 스피드의 스피드, G-Force 충격량 (Intro)](00_intro)
+- [01. 첫 번째 수업: 속도 계기판 바늘마저 돌아가는 스피드, 이계도함수 $f''(x)$](01_second_derivative_meaning)
+- [02. 두 번째 수업: 하늘정면 웃는 상($\cup$) vs 바닥 땅벌레 절망 상($\cap$) (Concave Up & Down)](02_concave_up_down)
+- [03. 세 번째 수업: 중력 쏠림이 역전되는 찰나의 버그 충돌, 변곡점 (Inflection Point)](03_inflection_points)
+- [04. 네 번째 수업: 나락의 폭주엔진! 가속도(Acceleration) 의 물리 렌더링 (Acceleration Physics)](04_acceleration_physics)
+- [05. 다섯 번째 수업: 3D 심화 버그 디버깅, 기괴한 그래프 스캐닝 스킬 (Curve Sketching Advanced)](05_curve_sketching_advanced)
+- [06. 여섯 번째 수업: 파이썬 SymPy 치트 중첩 시전! 미분기어 $2$단 터보 (Python Sympy Diff Diff)](06_python_sympy_diff_diff)

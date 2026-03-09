@@ -21,10 +21,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 영원히 닿을 수 없는 투명 에너지 쉴드 (Intro)](00_intro.md)
-- [01. 첫 번째 수업: 마우스 휠 무한 줌인 무빙 치기, 극한($\lim$) 의 스크립트 선언](01_what_is_limit.md)
-- [02. 두 번째 수업: 리미트($\lim$) 무스비 해체 패치, 사칙연산 분배 법칙](02_limit_properties.md)
-- [03. 세 번째 수업: 무한대 발산 vs 상수로 얼어붙는 수렴 판독기 (Limits Convergence)](03_limit_convergence.md)
-- [04. 네 번째 수업: 나락의 데스매치! 무한대 분의 무한대 ($\frac{\infty}{\infty}$) 꼴 해킹 꼼수](04_infinity_over_infinity.md)
-- [05. 다섯 번째 수업: 무한히 커지는 빼기도 결국 제로? ($\infty - \infty$) 착시 파멸 타파](05_infinity_minus_infinity.md)
-- [06. 여섯 번째 수업: 파이썬 SymPy 해커 모드 `limit()` 폭탄 컴파일 (Python Sympy Limit)](06_python_sympy_limit.md)
+- [00. 인트로: 영원히 닿을 수 없는 투명 에너지 쉴드 (Intro)](00_intro)
+- [01. 첫 번째 수업: 마우스 휠 무한 줌인 무빙 치기, 극한($\lim$) 의 스크립트 선언](01_what_is_limit)
+- [02. 두 번째 수업: 리미트($\lim$) 무스비 해체 패치, 사칙연산 분배 법칙](02_limit_properties)
+- [03. 세 번째 수업: 무한대 발산 vs 상수로 얼어붙는 수렴 판독기 (Limits Convergence)](03_limit_convergence)
+- [04. 네 번째 수업: 나락의 데스매치! 무한대 분의 무한대 ($\frac{\infty}{\infty}$) 꼴 해킹 꼼수](04_infinity_over_infinity)
+- [05. 다섯 번째 수업: 무한히 커지는 빼기도 결국 제로? ($\infty - \infty$) 착시 파멸 타파](05_infinity_minus_infinity)
+- [06. 여섯 번째 수업: 파이썬 SymPy 해커 모드 `limit()` 폭탄 컴파일 (Python Sympy Limit)](06_python_sympy_limit)

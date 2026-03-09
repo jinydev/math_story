@@ -20,10 +20,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 완벽한 측정은 우주에 존재하지 않는다 (Intro)](00_intro.md)
-- [01. 첫 번째 수업: 참값과 측정값의 차이 (True vs Approximate)](01_approximate_vs_true.md)
-- [02. 두 번째 수업: 오차와 정확도 (Error and Accuracy)](02_error_and_accuracy.md)
-- [03. 세 번째 수업: 반올림과 버림, 컴퓨터의 선택 (Rounding Rules)](03_rounding_rules.md)
-- [04. 네 번째 수업: 유효숫자의 비밀 (Significant Figures)](04_significant_figures_1.md)
-- [05. 다섯 번째 수업: 과학적 표기법 (Scientific Notation)](05_significant_figures_2.md)
-- [06. 여섯 번째 수업: 파이썬 정밀도 시뮬레이터 (Precision in Python)](06_precision_in_python.md)
+- [00. 인트로: 완벽한 측정은 우주에 존재하지 않는다 (Intro)](00_intro)
+- [01. 첫 번째 수업: 참값과 측정값의 차이 (True vs Approximate)](01_approximate_vs_true)
+- [02. 두 번째 수업: 오차와 정확도 (Error and Accuracy)](02_error_and_accuracy)
+- [03. 세 번째 수업: 반올림과 버림, 컴퓨터의 선택 (Rounding Rules)](03_rounding_rules)
+- [04. 네 번째 수업: 유효숫자의 비밀 (Significant Figures)](04_significant_figures_1)
+- [05. 다섯 번째 수업: 과학적 표기법 (Scientific Notation)](05_significant_figures_2)
+- [06. 여섯 번째 수업: 파이썬 정밀도 시뮬레이터 (Precision in Python)](06_precision_in_python)

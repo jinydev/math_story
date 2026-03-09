@@ -12,10 +12,10 @@ title: '14. 이차방정식 Quadratic Equation 포물선의 궤적과 거대한 
 
 ## 목차 (Table of Contents)
 
-* [00. 방정식의 제왕: 알콰리즈미와 알주브라](00_intro_al_khwarizmi.md) (Visual: 지혜의 전당에서 대수학의 기원을 여는 수학자 알콰리즈미 일러스트)
-* [01. 해체 쇼의 시작: X자 인수분해](01_factorization_puzzle.md) (Python: 곱과 합의 $X$자 로직을 통해 해를 스캔하는 만능 쌍 탐색 브루트포스 봇)
-* [02. 안 되면 억지로 맞춘다: 완전제곱식 기하학](02_completing_the_square.md) (Visual: 떨어져 있는 다항식 블록을 억지로 뭉쳐 완전 사각 면적으로 조립하는 마법 타일 SVG)
-* [03. 우주의 절대 무기: 근의 공식과 AI 자동 추출기](03_quadratic_formula.md) (Python: 계수 세 개를 때려 넣으면 무결점 $\pm$ 루트 해를 뽑아내는 근 자동 발사 스크립트)
-* [04. 판별식 점쟁이와 허수 차원의 개방](04_discriminant_and_imaginary.md) (Visual: $D<0$ 에러를 뚫고 상상의 숫자인 허수($i$) 세계로 연결되는 우주 포탈 렌더링)
-* [05. 하늘을 가르는 무지개: 포물선 곡선과의 만남](05_parabola_geometry.md) (Python: `matplotlib` 차트 엔진이 그리는 X축 지평선 크레이터 명중 교차점 시뮬레이션)
-* [06. 뉴턴역학과 포물선: 우리 곁의 이차함수](06_parabola_in_real_life.md) (Visual: 갈릴레오의 중력 법칙대로 완벽한 이차함수 궤도를 남기고 날아가는 포탄 툰)
+* [00. 방정식의 제왕: 알콰리즈미와 알주브라](00_intro_al_khwarizmi) (Visual: 지혜의 전당에서 대수학의 기원을 여는 수학자 알콰리즈미 일러스트)
+* [01. 해체 쇼의 시작: X자 인수분해](01_factorization_puzzle) (Python: 곱과 합의 $X$자 로직을 통해 해를 스캔하는 만능 쌍 탐색 브루트포스 봇)
+* [02. 안 되면 억지로 맞춘다: 완전제곱식 기하학](02_completing_the_square) (Visual: 떨어져 있는 다항식 블록을 억지로 뭉쳐 완전 사각 면적으로 조립하는 마법 타일 SVG)
+* [03. 우주의 절대 무기: 근의 공식과 AI 자동 추출기](03_quadratic_formula) (Python: 계수 세 개를 때려 넣으면 무결점 $\pm$ 루트 해를 뽑아내는 근 자동 발사 스크립트)
+* [04. 판별식 점쟁이와 허수 차원의 개방](04_discriminant_and_imaginary) (Visual: $D<0$ 에러를 뚫고 상상의 숫자인 허수($i$) 세계로 연결되는 우주 포탈 렌더링)
+* [05. 하늘을 가르는 무지개: 포물선 곡선과의 만남](05_parabola_geometry) (Python: `matplotlib` 차트 엔진이 그리는 X축 지평선 크레이터 명중 교차점 시뮬레이션)
+* [06. 뉴턴역학과 포물선: 우리 곁의 이차함수](06_parabola_in_real_life) (Visual: 갈릴레오의 중력 법칙대로 완벽한 이차함수 궤도를 남기고 날아가는 포탄 툰)

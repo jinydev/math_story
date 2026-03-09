@@ -12,10 +12,10 @@ title: '13. 일차방정식 Linear Equation 미지의 엑스x를 향한 추리'
 
 ## 목차 (Table of Contents)
 
-* [00. 방정식의 기원: 디오판토스의 묘비 미스터리](00_intro_diophantus.md) (산술의 한계와 대수학의 탄생 배경)
-* [01. 대수학의 혁명: 미지의 문자 'x'의 등장](01_unknown_x.md) (Visual: 컴컴한 석실에서 기호를 창조하는 고대 수학자 렌더링)
-* [02. 방정식의 영혼: 등식의 성질과 양팔 저울](02_equality_and_balance.md) (Visual: 황금 양팔 저울과 $2x+3=11$ 수평 밸런스 SVG)
-* [03. 일차방정식의 해머, 이항과 Python 봇](03_solving_linear_equations.md) (Python: 묘비명 퍼즐을 $x$에 대해 자동 해독하는 `sympy` 스크립트)
-* [04. 시대를 앞서간 매트릭스: 구장산술과 연립방정식](04_history_of_systems.md) (Visual: 대나무 숲에서 산가지 열을 다루는 고대 학자 렌더링)
-* [05. 연립방정식을 부수는 쌍두마차 알고리즘](05_systems_of_equations.md) (변수 아바타를 소거시키는 가감법과 대입법 개념도)
-* [06. 대수학과 기하학의 크로스오버: 교차점 스캐너](06_intersection_graphs.md) (Python: `matplotlib` 차트 2개 일차함수 발사 & 교차 충돌점 스캔 데모)
+* [00. 방정식의 기원: 디오판토스의 묘비 미스터리](00_intro_diophantus) (산술의 한계와 대수학의 탄생 배경)
+* [01. 대수학의 혁명: 미지의 문자 'x'의 등장](01_unknown_x) (Visual: 컴컴한 석실에서 기호를 창조하는 고대 수학자 렌더링)
+* [02. 방정식의 영혼: 등식의 성질과 양팔 저울](02_equality_and_balance) (Visual: 황금 양팔 저울과 $2x+3=11$ 수평 밸런스 SVG)
+* [03. 일차방정식의 해머, 이항과 Python 봇](03_solving_linear_equations) (Python: 묘비명 퍼즐을 $x$에 대해 자동 해독하는 `sympy` 스크립트)
+* [04. 시대를 앞서간 매트릭스: 구장산술과 연립방정식](04_history_of_systems) (Visual: 대나무 숲에서 산가지 열을 다루는 고대 학자 렌더링)
+* [05. 연립방정식을 부수는 쌍두마차 알고리즘](05_systems_of_equations) (변수 아바타를 소거시키는 가감법과 대입법 개념도)
+* [06. 대수학과 기하학의 크로스오버: 교차점 스캐너](06_intersection_graphs) (Python: `matplotlib` 차트 2개 일차함수 발사 & 교차 충돌점 스캔 데모)

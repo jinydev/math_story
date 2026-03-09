@@ -19,10 +19,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 보이지 않는 우주 지형의 뼈대를 캐내다 (Intro)](00_intro.md)
-- [01. 첫 번째 수업: 도함수 자판기의 $+ / -$ 스위치, 증가와 감소 (Increasing & Decreasing)](01_increasing_decreasing.md)
-- [02. 두 번째 수업: 엔진 가속도가 멈추는 $0$ 의 찰나, 극댓값과 극솟값 (Local Extrema)](02_local_extrema.md)
-- [03. 세 번째 수업: 우주 끝까지! 최대 랭킹과 최소 랭킹 방어 (Global Max & Min)](03_max_min_values.md)
-- [04. 네 번째 수업: 나만의 미지의 외계 산맥 지도 렌더링하기 (Graph Drawing)](04_graph_drawing.md)
-- [05. 다섯 번째 수업: 가성비 극한의 아이템 셋업! 최적화 문제 퀘스트 (Optimization Problems)](05_optimization_problems.md)
-- [06. 여섯 번째 수업: 파이썬 SciPy AI로 굴곡의 정점 산책하기 (Python Optimize)](06_python_scipy_optimize.md)
+- [00. 인트로: 보이지 않는 우주 지형의 뼈대를 캐내다 (Intro)](00_intro)
+- [01. 첫 번째 수업: 도함수 자판기의 $+ / -$ 스위치, 증가와 감소 (Increasing & Decreasing)](01_increasing_decreasing)
+- [02. 두 번째 수업: 엔진 가속도가 멈추는 $0$ 의 찰나, 극댓값과 극솟값 (Local Extrema)](02_local_extrema)
+- [03. 세 번째 수업: 우주 끝까지! 최대 랭킹과 최소 랭킹 방어 (Global Max & Min)](03_max_min_values)
+- [04. 네 번째 수업: 나만의 미지의 외계 산맥 지도 렌더링하기 (Graph Drawing)](04_graph_drawing)
+- [05. 다섯 번째 수업: 가성비 극한의 아이템 셋업! 최적화 문제 퀘스트 (Optimization Problems)](05_optimization_problems)
+- [06. 여섯 번째 수업: 파이썬 SciPy AI로 굴곡의 정점 산책하기 (Python Optimize)](06_python_scipy_optimize)

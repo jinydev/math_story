@@ -15,12 +15,12 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 유리수의 한계와 피타고라스의 공포 (Intro)](00_intro.md)
-- [01. 첫 번째 수업: 제곱근의 탄생 (Square Roots)](01_square_roots.md)
-- [02. 두 번째 수업: 제곱근의 성질과 절댓값 (Properties of Roots)](02_properties_of_roots.md)
-- [03. 세 번째 수업: 무리수, 규칙 없는 영원함 (Irrational Numbers)](03_irrational_numbers.md)
-- [04. 네 번째 수업: 실수 수직선, 빈틈을 메우다 (Real Number Line)](04_real_number_line.md)
-- [05. 다섯 번째 수업: 실수의 대소 비교 (Ordering Reals)](05_ordering_reals.md)
-- [06. 여섯 번째 수업: 무리수의 근삿값 구하기 (Approximating Roots)](06_approximating_roots.md)
-- [07. 일곱 번째 수업: 루트 2가 무리수인 이유 (Irrational Proof)](07_irrational_proof.md)
-- [08. 여덟 번째 수업: 컴퓨터 속의 실수 (Computing Reals)](08_computing_reals.md)
+- [00. 인트로: 유리수의 한계와 피타고라스의 공포 (Intro)](00_intro)
+- [01. 첫 번째 수업: 제곱근의 탄생 (Square Roots)](01_square_roots)
+- [02. 두 번째 수업: 제곱근의 성질과 절댓값 (Properties of Roots)](02_properties_of_roots)
+- [03. 세 번째 수업: 무리수, 규칙 없는 영원함 (Irrational Numbers)](03_irrational_numbers)
+- [04. 네 번째 수업: 실수 수직선, 빈틈을 메우다 (Real Number Line)](04_real_number_line)
+- [05. 다섯 번째 수업: 실수의 대소 비교 (Ordering Reals)](05_ordering_reals)
+- [06. 여섯 번째 수업: 무리수의 근삿값 구하기 (Approximating Roots)](06_approximating_roots)
+- [07. 일곱 번째 수업: 루트 2가 무리수인 이유 (Irrational Proof)](07_irrational_proof)
+- [08. 여덟 번째 수업: 컴퓨터 속의 실수 (Computing Reals)](08_computing_reals)

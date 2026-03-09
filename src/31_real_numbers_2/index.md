@@ -7,13 +7,13 @@ title: '63.2'
 
 ## 목차
 
-- [00. 인트로: 신이 숨겨놓은 아름다운 무리수, 황금비 (Intro)](00_intro.md)
-- [01. 첫 번째 수업: 무리수의 사칙연산 (Four Operations)](01_four_operations.md)
-- [02. 두 번째 수업: 분모의 유리화 - 루트를 위로 넘겨라! (Rationalization)](02_rationalization.md)
-- [03. 세 번째 수업: 도형 속의 무리수와 피타고라스 (Irrational Geometry)](03_irrational_geometry.md)
-- [04. 네 번째 수업: 황금비의 수학적 비밀 (Golden Ratio)](04_golden_ratio.md)
-- [05. 다섯 번째 수업: 무리수 방정식 풀이 (Irrational Equations)](05_irrational_equations.md)
-- [06. 여섯 번째 수업: 파이썬 기하학과 무리수 응용 (Python Irrational Math)](06_python_irrational_math.md)
+- [00. 인트로: 신이 숨겨놓은 아름다운 무리수, 황금비 (Intro)](00_intro)
+- [01. 첫 번째 수업: 무리수의 사칙연산 (Four Operations)](01_four_operations)
+- [02. 두 번째 수업: 분모의 유리화 - 루트를 위로 넘겨라! (Rationalization)](02_rationalization)
+- [03. 세 번째 수업: 도형 속의 무리수와 피타고라스 (Irrational Geometry)](03_irrational_geometry)
+- [04. 네 번째 수업: 황금비의 수학적 비밀 (Golden Ratio)](04_golden_ratio)
+- [05. 다섯 번째 수업: 무리수 방정식 풀이 (Irrational Equations)](05_irrational_equations)
+- [06. 여섯 번째 수업: 파이썬 기하학과 무리수 응용 (Python Irrational Math)](06_python_irrational_math)
 - [실수2_ (1).md](extracted/md/실수2_ (1).md)
 - [실수2_ (10).md](extracted/md/실수2_ (10).md)
 - [실수2_ (100).md](extracted/md/실수2_ (100).md)

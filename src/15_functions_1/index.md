@@ -20,11 +20,11 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 예측 가능한 마법 상자 (Intro)](00_intro.md)
-- [01. 첫 번째 수업: 집합과 대응 관계 (Domain and Codomain)](01_function_definition.md)
-- [02. 두 번째 수업: $1$차 함수, 가장 솔직하고 반듯한 직선 (Linear Functions)](02_linear_functions.md)
-- [03. 세 번째 수업: $2$차 함수, 포물선으로 떨어지는 폭탄 궤적 (Quadratic)](03_quadratic_functions.md)
-- [04. 네 번째 수업: 나를 되돌리는 거울, 역함수 (Inverse Functions)](04_inverse_functions.md)
-- [05. 다섯 번째 수업: 상자 속의 상자, 합성함수 (Composite Functions)](05_composite_functions.md)
-- [06. 여섯 번째 수업: 절대 무너지지 않는 성벽, 절댓값 함수 (Absolute Value)](06_absolute_value_functions.md)
-- [07. 일곱 번째 수업: 코드로 짜보는 함수 공장 (Python Functions)](07_python_functions.md)
+- [00. 인트로: 예측 가능한 마법 상자 (Intro)](00_intro)
+- [01. 첫 번째 수업: 집합과 대응 관계 (Domain and Codomain)](01_function_definition)
+- [02. 두 번째 수업: $1$차 함수, 가장 솔직하고 반듯한 직선 (Linear Functions)](02_linear_functions)
+- [03. 세 번째 수업: $2$차 함수, 포물선으로 떨어지는 폭탄 궤적 (Quadratic)](03_quadratic_functions)
+- [04. 네 번째 수업: 나를 되돌리는 거울, 역함수 (Inverse Functions)](04_inverse_functions)
+- [05. 다섯 번째 수업: 상자 속의 상자, 합성함수 (Composite Functions)](05_composite_functions)
+- [06. 여섯 번째 수업: 절대 무너지지 않는 성벽, 절댓값 함수 (Absolute Value)](06_absolute_value_functions)
+- [07. 일곱 번째 수업: 코드로 짜보는 함수 공장 (Python Functions)](07_python_functions)
