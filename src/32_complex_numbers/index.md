@@ -15,9 +15,9 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 차원을 뛰어넘은 상상의 숫자 (Intro)](00_intro)
-- [01. 첫 번째 수업: 허수 $i$ 의 탄생 (Imaginary Numbers)](01_imaginary_numbers)
-- [02. 두 번째 수업: 복소수 평면과 공간의 확장 (Complex Plane)](02_complex_plane)
-- [03. 세 번째 수업: 복소수의 연산과 켤레 쌍 (Operations and Conjugates)](03_operations_and_conjugate)
-- [04. 네 번째 수업: 곱셈이 곧 회전이다 (Rotation in 2D)](04_rotation_in_2d)
-- [05. 다섯 번째 수업: 파이썬의 `j` 와 양자 시뮬레이션 (Python Complex Type)](05_python_complex_type)
+- [00. 인트로: 차원을 뛰어넘은 상상의 숫자 (Intro)](./00_intro/)
+- [01. 첫 번째 수업: 허수 $i$ 의 탄생 (Imaginary Numbers)](./01_imaginary_numbers/)
+- [02. 두 번째 수업: 복소수 평면과 공간의 확장 (Complex Plane)](./02_complex_plane/)
+- [03. 세 번째 수업: 복소수의 연산과 켤레 쌍 (Operations and Conjugates)](./03_operations_and_conjugate/)
+- [04. 네 번째 수업: 곱셈이 곧 회전이다 (Rotation in 2D)](./04_rotation_in_2d/)
+- [05. 다섯 번째 수업: 파이썬의 `j` 와 양자 시뮬레이션 (Python Complex Type)](./05_python_complex_type/)

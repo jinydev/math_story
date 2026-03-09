@@ -21,10 +21,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 과속 단속 카메라의 버그 (Intro)](00_intro)
-- [01. 첫 번째 수업: 서울에서 부산까지, 평균 변화율 (Average Rate of Change)](01_average_rate_of_change)
-- [02. 두 번째 수업: 간격을 영(0) 으로 부숴라! 순간 변화율 (Instantaneous Rate)](02_instantaneous_rate)
-- [03. 세 번째 수업: 분모가 0이 되는 무한 루프 에러, 리미트($\Delta x \to 0$) 의 등장](03_limit_h_to_zero)
-- [04. 네 번째 수업: 할선의 붕괴와 접선(Tangent) 의 탄생 (Tangent Line Slope)](04_tangent_line_slope)
-- [05. 다섯 번째 수업: 미분 계수 $f'(a)$ 와 도함수 $f'(x)$ 의 진짜 차이 (Derivative Definition)](05_derivative_definition)
-- [06. 여섯 번째 수업: 파이썬 SymPy 치트키! 1초 만에 미분 머신 돌리기 (Python Sympy Diff)](06_python_sympy_derivative)
+- [00. 인트로: 과속 단속 카메라의 버그 (Intro)](./00_intro/)
+- [01. 첫 번째 수업: 서울에서 부산까지, 평균 변화율 (Average Rate of Change)](./01_average_rate_of_change/)
+- [02. 두 번째 수업: 간격을 영(0) 으로 부숴라! 순간 변화율 (Instantaneous Rate)](./02_instantaneous_rate/)
+- [03. 세 번째 수업: 분모가 0이 되는 무한 루프 에러, 리미트($\Delta x \to 0$) 의 등장](./03_limit_h_to_zero/)
+- [04. 네 번째 수업: 할선의 붕괴와 접선(Tangent) 의 탄생 (Tangent Line Slope)](./04_tangent_line_slope/)
+- [05. 다섯 번째 수업: 미분 계수 $f'(a)$ 와 도함수 $f'(x)$ 의 진짜 차이 (Derivative Definition)](./05_derivative_definition/)
+- [06. 여섯 번째 수업: 파이썬 SymPy 치트키! 1초 만에 미분 머신 돌리기 (Python Sympy Diff)](./06_python_sympy_derivative/)

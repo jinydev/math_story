@@ -18,10 +18,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 두 개의 태양이 지배하는 궤도 (Intro)](00_intro)
-- [01. 첫 번째 수업: 다이아몬드 반지, 완벽한 원의 방정식 (Circle)](01_equation_of_circle)
-- [02. 두 번째 수업: 타원, 두 개의 못과 실이 그리는 우주 (Ellipse)](02_definition_of_ellipse)
-- [03. 세 번째 수업: 길고 납작한 타원의 수식 해체 (Ellipse Equation)](03_equation_of_ellipse)
-- [04. 네 번째 수업: 쌍곡선, 끝없이 멀어지는 영원한 궤적 (Hyperbola)](04_definition_of_hyperbola)
-- [05. 다섯 번째 수업: 쌍곡선의 점근선 (Asymptotes) 벽 치기 (Asymptotes)](05_hyperbola_and_asymptotes)
-- [06. 여섯 번째 수업: 파이썬으로 렌더링 하는 케플러의 우주 (Python Matplotlib & Kepler)](06_python_matplotlib_kepler)
+- [00. 인트로: 두 개의 태양이 지배하는 궤도 (Intro)](./00_intro/)
+- [01. 첫 번째 수업: 다이아몬드 반지, 완벽한 원의 방정식 (Circle)](./01_equation_of_circle/)
+- [02. 두 번째 수업: 타원, 두 개의 못과 실이 그리는 우주 (Ellipse)](./02_definition_of_ellipse/)
+- [03. 세 번째 수업: 길고 납작한 타원의 수식 해체 (Ellipse Equation)](./03_equation_of_ellipse/)
+- [04. 네 번째 수업: 쌍곡선, 끝없이 멀어지는 영원한 궤적 (Hyperbola)](./04_definition_of_hyperbola/)
+- [05. 다섯 번째 수업: 쌍곡선의 점근선 (Asymptotes) 벽 치기 (Asymptotes)](./05_hyperbola_and_asymptotes/)
+- [06. 여섯 번째 수업: 파이썬으로 렌더링 하는 케플러의 우주 (Python Matplotlib & Kepler)](./06_python_matplotlib_kepler/)

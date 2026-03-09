@@ -12,10 +12,10 @@ title: '11. 비유클리드 기하학 Non-Euclidean Geometry 휘어진 시공간
 
 ## 목차 (Table of Contents)
 
-* [00. 서론: 유클리드와 제5공준의 딜레마](00_intro) (절대 수식의 한계)
-* [01. 휘어진 공간의 충격: 평면과 곡면의 평행선](01_parallel_lines_paradox) (Python 3D: 평면과 구면 파라독스 교차 렌더링)
-* [02. 직선의 배신: 곡면 위의 최단 거리 (측지선)](02_shortest_path_geodesic) (Visual: 지구본 대원과 비행기 최단 항로 SVG)
-* [03. 공간의 휘어짐을 재는 잣대, 가우스 곡률](03_curvature) (Python: 양수/0/음수 곡률값 판독 시뮬레이터)
-* [04. 공 위의 일탈: 삼각형의 내각이 180도를 넘다](04_spherical_geometry) (Visual: 두 내각이 직각인 북극점-적도 삼각형 SVG)
-* [05. 말 안장 우주, 무한의 프랙탈: 쌍곡 기하학](05_hyperbolic_geometry) (Visual: 가장자리가 영원히 수축되는 푸앵카레 쌍곡 원반 프랙탈 아트)
-* [06. 아인슈타인의 시공간, 우주는 기하학의 캔버스다](06_einstein_and_curved_space) (AI Visual: 질량과 시공간의 붕괴 - 일반 상대성이론 블랙홀 일러스트)
+* [00. 서론: 유클리드와 제5공준의 딜레마](./00_intro/) (절대 수식의 한계)
+* [01. 휘어진 공간의 충격: 평면과 곡면의 평행선](./01_parallel_lines_paradox/) (Python 3D: 평면과 구면 파라독스 교차 렌더링)
+* [02. 직선의 배신: 곡면 위의 최단 거리 (측지선)](./02_shortest_path_geodesic/) (Visual: 지구본 대원과 비행기 최단 항로 SVG)
+* [03. 공간의 휘어짐을 재는 잣대, 가우스 곡률](./03_curvature/) (Python: 양수/0/음수 곡률값 판독 시뮬레이터)
+* [04. 공 위의 일탈: 삼각형의 내각이 180도를 넘다](./04_spherical_geometry/) (Visual: 두 내각이 직각인 북극점-적도 삼각형 SVG)
+* [05. 말 안장 우주, 무한의 프랙탈: 쌍곡 기하학](./05_hyperbolic_geometry/) (Visual: 가장자리가 영원히 수축되는 푸앵카레 쌍곡 원반 프랙탈 아트)
+* [06. 아인슈타인의 시공간, 우주는 기하학의 캔버스다](./06_einstein_and_curved_space/) (AI Visual: 질량과 시공간의 붕괴 - 일반 상대성이론 블랙홀 일러스트)

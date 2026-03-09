@@ -18,10 +18,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 방어막을 뚫는 레이저 빔 (Intro)](00_intro)
-- [01. 첫 번째 수업: 아슬아슬한 스침, 접선(Tangent) 의 정의 (Tangent)](01_tangent_of_circle)
-- [02. 두 번째 수업: 무자비한 관통, 할선(Secant) 과 방멱의 정리 (Secant)](02_secant_and_power)
-- [03. 세 번째 수업: 허공의 마법, 원주각(Inscribed Angle) 의 탄생 (Inscribed Angle)](03_inscribed_angle)
-- [04. 네 번째 수업: 원주각과 중심각의 $1:2$ 비율 해킹 (Angle Ratio)](04_angle_ratio_theorem)
-- [05. 다섯 번째 수업: 원주각의 그림자 복제 (Clone) 마법 (Cloned Angles)](05_cloned_angles)
-- [06. 여섯 번째 수업: 파이썬 파이게임(PyGame) 식 충돌 감지 매커니즘 (Python Collision)](06_python_collision_detection)
+- [00. 인트로: 방어막을 뚫는 레이저 빔 (Intro)](./00_intro/)
+- [01. 첫 번째 수업: 아슬아슬한 스침, 접선(Tangent) 의 정의 (Tangent)](./01_tangent_of_circle/)
+- [02. 두 번째 수업: 무자비한 관통, 할선(Secant) 과 방멱의 정리 (Secant)](./02_secant_and_power/)
+- [03. 세 번째 수업: 허공의 마법, 원주각(Inscribed Angle) 의 탄생 (Inscribed Angle)](./03_inscribed_angle/)
+- [04. 네 번째 수업: 원주각과 중심각의 $1:2$ 비율 해킹 (Angle Ratio)](./04_angle_ratio_theorem/)
+- [05. 다섯 번째 수업: 원주각의 그림자 복제 (Clone) 마법 (Cloned Angles)](./05_cloned_angles/)
+- [06. 여섯 번째 수업: 파이썬 파이게임(PyGame) 식 충돌 감지 매커니즘 (Python Collision)](./06_python_collision_detection/)

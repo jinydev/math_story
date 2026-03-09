@@ -20,10 +20,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 엑셀 표가 아닌 우주의 마법 주문 배열 (Intro)](00_intro)
-- [01. 첫 번째 수업: 데이터베이스 격자 타일링, 행렬의 구조 (What is Matrix)](01_what_is_matrix)
-- [02. 두 번째 수업: 같은 크기 픽셀끼리의 병합, 덧셈과 뺄셈 (Addition & Subtraction)](02_addition_subtraction)
-- [03. 세 번째 수업: 전체 스케일 폭주 버프, 실수배 (Scalar Multiplication)](03_scalar_multiplication)
-- [04. 네 번째 수업: 내적(Dot) 충돌 데미지 매트릭스, 행렬의 곱셈 (Matrix Multiplication)](04_matrix_multiplication)
-- [05. 다섯 번째 수업: 시공간을 늘리고 비틀어라! 선형 변환 (Linear Transformation)](05_linear_transformation)
-- [06. 여섯 번째 수업: 파이썬 NumPy AI 텐서 행렬 폭격 연산 (Python NumPy Matrix)](06_python_numpy_matrix)
+- [00. 인트로: 엑셀 표가 아닌 우주의 마법 주문 배열 (Intro)](./00_intro/)
+- [01. 첫 번째 수업: 데이터베이스 격자 타일링, 행렬의 구조 (What is Matrix)](./01_what_is_matrix/)
+- [02. 두 번째 수업: 같은 크기 픽셀끼리의 병합, 덧셈과 뺄셈 (Addition & Subtraction)](./02_addition_subtraction/)
+- [03. 세 번째 수업: 전체 스케일 폭주 버프, 실수배 (Scalar Multiplication)](./03_scalar_multiplication/)
+- [04. 네 번째 수업: 내적(Dot) 충돌 데미지 매트릭스, 행렬의 곱셈 (Matrix Multiplication)](./04_matrix_multiplication/)
+- [05. 다섯 번째 수업: 시공간을 늘리고 비틀어라! 선형 변환 (Linear Transformation)](./05_linear_transformation/)
+- [06. 여섯 번째 수업: 파이썬 NumPy AI 텐서 행렬 폭격 연산 (Python NumPy Matrix)](./06_python_numpy_matrix/)

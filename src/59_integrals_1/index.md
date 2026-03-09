@@ -17,11 +17,11 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 곡선을 정복하려는 인간의 집념 (Intro)](00_intro)
-- [01. 첫 번째 수업: 아르키메데스와 넓이의 비밀 (Area and Volume)](01_area_and_volume)
-- [02. 두 번째 수업: 리만 합, 직사각형 무한 러시 (Riemann Sums)](02_riemann_sums)
-- [03. 세 번째 수업: 유한에서 무한으로 건너뛰기, 정적분 (Definite Integrals)](03_definite_integrals)
-- [04. 네 번째 수업: 미적분학의 제1 기본 정리 (Fundamental Theorem)](04_fundamental_theorem)
-- [05. 다섯 번째 수업: 미분의 필름을 거꾸로 돌리다 (Antiderivatives)](05_antiderivatives)
-- [06. 여섯 번째 수업: 파괴된 정보의 복구비용 $C$ (Indefinite Integrals)](06_indefinite_integrals)
-- [07. 일곱 번째 수업: 파이썬 루프로 속도를 거리에 누적하다 (Physics & Code)](07_integration_in_physics)
+- [00. 인트로: 곡선을 정복하려는 인간의 집념 (Intro)](./00_intro/)
+- [01. 첫 번째 수업: 아르키메데스와 넓이의 비밀 (Area and Volume)](./01_area_and_volume/)
+- [02. 두 번째 수업: 리만 합, 직사각형 무한 러시 (Riemann Sums)](./02_riemann_sums/)
+- [03. 세 번째 수업: 유한에서 무한으로 건너뛰기, 정적분 (Definite Integrals)](./03_definite_integrals/)
+- [04. 네 번째 수업: 미적분학의 제1 기본 정리 (Fundamental Theorem)](./04_fundamental_theorem/)
+- [05. 다섯 번째 수업: 미분의 필름을 거꾸로 돌리다 (Antiderivatives)](./05_antiderivatives/)
+- [06. 여섯 번째 수업: 파괴된 정보의 복구비용 $C$ (Indefinite Integrals)](./06_indefinite_integrals/)
+- [07. 일곱 번째 수업: 파이썬 루프로 속도를 거리에 누적하다 (Physics & Code)](./07_integration_in_physics/)

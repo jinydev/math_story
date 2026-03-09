@@ -12,17 +12,17 @@ title: '수학이야기 53. 추정 Estimation'
 
 ## 📚 목차 (Table of Contents)
 
-1. [1. 셜록 홈즈의 수학: 일부만 보고 전체를 간파하는 '추정(Estimation)'](01_concept_of_estimation)
+1. [1. 셜록 홈즈의 수학: 일부만 보고 전체를 간파하는 '추정(Estimation)'](./01_concept_of_estimation/)
    - 전지전능한 정보 수집(전수조사)가 불가능한 현실을 인정하고 조약돌 몇 개로 전체 행성의 스펙을 유추해 내는 추정학의 마인드 셋을 장착합니다.
-2. [2. 전수조사 불가: 모집단(Population)과 표본(Sample)](02_population_and_sample)
+2. [2. 전수조사 불가: 모집단(Population)과 표본(Sample)](./02_population_and_sample/)
    - 내가 영원히 알 수 없는 진짜 보스 '모평균($m$)' 과, 뜰채로 방금 잡아 올린 짝퉁 총알 '표본평균($\bar{X}$)' 의 기호를 피눈물 나게 분리하여 암기합니다.
-3. [3. 뼈대 공식의 반란: 표본평균($\bar{X}$) 들의 새로운 정규분포 산의 탄생](03_distribution_of_sample_means)
+3. [3. 뼈대 공식의 반란: 표본평균($\bar{X}$) 들의 새로운 정규분포 산의 탄생](./03_distribution_of_sample_means/)
    - 수억 번의 뜰채 질(루프)이 머릿속에 돌면서, $\bar{X}$ 파편들이 알아서 가장 뾰족하고 타이트한 자기들만의 에펠탑 텐트를 짓는 기적을 확인합니다.
-4. [4. 투망 던지기 스킬: 진짜 모평균($m$)의 소굴을 향한 역추적](04_estimating_population_mean)
+4. [4. 투망 던지기 스킬: 진짜 모평균($m$)의 소굴을 향한 역추적](./04_estimating_population_mean/)
    - 내가 구한 찌질한 평균($\bar{X}$) 하나에 $\pm 1.96$ 이라는 방어 밧줄을 걸고, 보이지 않는 $m$ 의 소굴을 일정 확률 범위 구간으로 포획하는 스나이퍼 계산기법을 배웁니다.
-5. [5. 장사꾼의 딜레마: 신뢰도(Confidence Level)와 오차 한계](05_confidence_level_error)
+5. [5. 장사꾼의 딜레마: 신뢰도(Confidence Level)와 오차 한계](./05_confidence_level_error/)
    - 99% 의 확률 보장이 오차의 폭발(쓰레기 정보)을 부르는 반비례의 재앙을 뚫고, 오직 조사 규모($n$) 에 돈을 쏟아부어야만 촘촘한 오차망이 유지됨을 증명합니다.
-6. [6. 여론조사의 단골손님: 뉴스 자막의 지배자, 모비율 추정](06_population_proportion)
+6. [6. 여론조사의 단골손님: 뉴스 자막의 지배자, 모비율 추정](./06_population_proportion/)
    - 대통령 지지자의 표를 세는 모비율($p$) 타격 역시 투망 공식에서 기호만 비율 폼($\hat{p}$) 으로 갈아 끼워 방송국의 자막 "오차범위 $\pm$ 3%p" 매트릭스를 창출하는 원리를 파헤칩니다.
-7. [7. 세상을 덮어버린 통계: 일상생활 추정 (Estimation) 해킹](07_estimation_everyday_life)
+7. [7. 세상을 덮어버린 통계: 일상생활 추정 (Estimation) 해킹](./07_estimation_everyday_life/)
    - 구글의 UX 테스트부터 백신 임상실험까지, 전 세계 산업계가 전수조사의 바보짓을 버리고 소규모 자본 표본을 통해 수십억 명의 미래를 '추정 결재' 하는 팩트를 관찰합니다.

@@ -25,10 +25,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 모서리를 부수고 나온 비율 (Intro)](00_intro)
-- [01. 첫 번째 수업: 디그리(도)의 종말과 라디안의 탄생 (Radians)](01_radian_measure)
-- [02. 두 번째 수업: 모든 것을 품은 마법의 링, 단위원 (Unit Circle)](02_unit_circle_trigonometry)
-- [03. 세 번째 수업: 영원히 물결치는 사인과 코사인의 심장 박동 (Sine & Cosine Graphs)](03_graphs_of_sine_cosine)
-- [04. 네 번째 수업: 무한대를 향해 폭주하는 탄젠트 절벽 (Tangent Graph)](04_graph_of_tangent)
-- [05. 다섯 번째 수업: 영원히 깨지지 않는 피타고라스의 삼각 호흡 (Trig Identities)](05_trig_identities)
-- [06. 여섯 번째 수업: 파이썬 코드로 두 파동을 합치다 (Harmonics & Signals)](06_harmonics_and_sound)
+- [00. 인트로: 모서리를 부수고 나온 비율 (Intro)](./00_intro/)
+- [01. 첫 번째 수업: 디그리(도)의 종말과 라디안의 탄생 (Radians)](./01_radian_measure/)
+- [02. 두 번째 수업: 모든 것을 품은 마법의 링, 단위원 (Unit Circle)](./02_unit_circle_trigonometry/)
+- [03. 세 번째 수업: 영원히 물결치는 사인과 코사인의 심장 박동 (Sine & Cosine Graphs)](./03_graphs_of_sine_cosine/)
+- [04. 네 번째 수업: 무한대를 향해 폭주하는 탄젠트 절벽 (Tangent Graph)](./04_graph_of_tangent/)
+- [05. 다섯 번째 수업: 영원히 깨지지 않는 피타고라스의 삼각 호흡 (Trig Identities)](./05_trig_identities/)
+- [06. 여섯 번째 수업: 파이썬 코드로 두 파동을 합치다 (Harmonics & Signals)](./06_harmonics_and_sound/)

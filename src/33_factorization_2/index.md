@@ -18,10 +18,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 복잡함과의 전쟁, 특수 해킹 장비들 (Intro)](00_intro)
-- [01. 첫 번째 수업: 치환, 긴 변수를 하나로 숨기는 은폐술 (Substitution)](01_substitution_method)
-- [02. 두 번째 수업: $3$차 방정식의 해체, 큐브를 분해하라 (Cubic Factorization)](02_cubic_factorization)
-- [03. 세 번째 수업: 복이차식, $x^2$ 을 조종하는 이중 트릭 (Biquadratic Equations)](03_biquadratic_equations)
-- [04. 네 번째 수업: 내림차순 정리, 혼돈 속의 뼈대 찾기 (Sorting by Degree)](04_sorting_descending)
-- [05. 다섯 번째 수업: 궁극의 해머 조립제법과 인수정리 (Synthetic Division)](05_synthetic_division)
-- [06. 여섯 번째 수업: 파이썬 루트(Roots) 추적기와 방정식의 붕괴 (Python SymPy Roots)](06_python_sympy_roots)
+- [00. 인트로: 복잡함과의 전쟁, 특수 해킹 장비들 (Intro)](./00_intro/)
+- [01. 첫 번째 수업: 치환, 긴 변수를 하나로 숨기는 은폐술 (Substitution)](./01_substitution_method/)
+- [02. 두 번째 수업: $3$차 방정식의 해체, 큐브를 분해하라 (Cubic Factorization)](./02_cubic_factorization/)
+- [03. 세 번째 수업: 복이차식, $x^2$ 을 조종하는 이중 트릭 (Biquadratic Equations)](./03_biquadratic_equations/)
+- [04. 네 번째 수업: 내림차순 정리, 혼돈 속의 뼈대 찾기 (Sorting by Degree)](./04_sorting_descending/)
+- [05. 다섯 번째 수업: 궁극의 해머 조립제법과 인수정리 (Synthetic Division)](./05_synthetic_division/)
+- [06. 여섯 번째 수업: 파이썬 루트(Roots) 추적기와 방정식의 붕괴 (Python SymPy Roots)](./06_python_sympy_roots/)

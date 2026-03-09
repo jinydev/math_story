@@ -19,10 +19,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 신은 주사위 놀이를 하는가? (Intro)](00_intro)
-- [01. 첫 번째 수업: 모든 멀티버스의 개수 세기, 경우의 수 (Number of Cases)](01_number_of_cases)
-- [02. 두 번째 수업: "또는(OR)" 과 "그리고(AND)" 의 합의 법칙, 곱의 법칙 (Sum & Product Rules)](02_or_and_rules)
-- [03. 세 번째 수업: 동전과 주사위 분기점 트리 그리기 (Tree Diagrams)](03_tree_diagrams)
-- [04. 네 번째 수업: 확률 P 의 정의와 범위 (Definition of Probability)](04_definition_of_probability)
-- [05. 다섯 번째 수업: 결코 일어나지 않을 확률, 여사건 (Complementary Events)](05_complementary_events)
-- [06. 여섯 번째 수업: 파이썬 `random` 모듈과 10만 번의 슬롯머신 (Python Simulation)](06_python_random_simulation)
+- [00. 인트로: 신은 주사위 놀이를 하는가? (Intro)](./00_intro/)
+- [01. 첫 번째 수업: 모든 멀티버스의 개수 세기, 경우의 수 (Number of Cases)](./01_number_of_cases/)
+- [02. 두 번째 수업: "또는(OR)" 과 "그리고(AND)" 의 합의 법칙, 곱의 법칙 (Sum & Product Rules)](./02_or_and_rules/)
+- [03. 세 번째 수업: 동전과 주사위 분기점 트리 그리기 (Tree Diagrams)](./03_tree_diagrams/)
+- [04. 네 번째 수업: 확률 P 의 정의와 범위 (Definition of Probability)](./04_definition_of_probability/)
+- [05. 다섯 번째 수업: 결코 일어나지 않을 확률, 여사건 (Complementary Events)](./05_complementary_events/)
+- [06. 여섯 번째 수업: 파이썬 `random` 모듈과 10만 번의 슬롯머신 (Python Simulation)](./06_python_random_simulation/)

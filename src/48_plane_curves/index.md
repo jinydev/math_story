@@ -12,17 +12,17 @@ title: '수학이야기 37. 평면곡선 Plane Curves'
 
 ## 📚 목차 (Table of Contents)
 
-1. [1. 굽은 정도를 측정하는 마법: 곡률(Curvature)](01_curvature)
+1. [1. 굽은 정도를 측정하는 마법: 곡률(Curvature)](./01_curvature/)
    - 도로가 굽은 정도를 원($R$)에 빗대어 수치로 파악하고, 파이썬을 이용한 안전속도 한계 산출
 
-2. [2. 극좌표(Polar Coordinates): 회전과 거리의 세계](02_polar_coordinates)
+2. [2. 극좌표(Polar Coordinates): 회전과 거리의 세계](./02_polar_coordinates/)
    - $X, Y$ 직교좌표의 틀을 깨고, 거리($r$)와 회전각도($\theta$)로 사물을 쫓는 스나이퍼식 좌표 매칭 
 
-3. [3. 우주를 지배하는 곡선: 이차곡선 (Conic Sections)](03_conic_sections)
+3. [3. 우주를 지배하는 곡선: 이차곡선 (Conic Sections)](./03_conic_sections/)
    - 아이스크림 콘(원뿔)을 잘라서 만들어내는 우주 공간 행성의 궤도(타원)와 위성 안테나(포물선)
 
-4. [4. 자전거 바퀴의 궤적: 사이클로이드 (Cycloid)](04_cycloid)
+4. [4. 자전거 바퀴의 궤적: 사이클로이드 (Cycloid)](./04_cycloid/)
    - 세상에서 가장 빠른 미끄럼틀! 빛의 속도로 강하하는 마법의 아치와 매개변수 방정식
 
-5. [5. 자연의 성장 패턴: 로그나선 (Logarithmic Spiral)](05_log_spiral)
+5. [5. 자연의 성장 패턴: 로그나선 (Logarithmic Spiral)](./05_log_spiral/)
    - 태풍, 앵무조개, 은하계가 증식하는 황금비율 지수함수($e$)의 실체를 파이썬 빅데이터 시각화로 직접 투영

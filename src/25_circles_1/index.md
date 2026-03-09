@@ -18,10 +18,10 @@ has_children: true
 
 ## 목차
 
-- [00. 인트로: 인류 최고의 발명품, 수레바퀴 (Intro)](00_intro)
-- [01. 첫 번째 수업: 원의 뼈대 해부학, 호와 현 (Anatomy of Circle)](01_anatomy_of_circle)
-- [02. 두 번째 수업: 각도의 지배자, 중심각과 호의 길이 (Central Angle)](02_central_angle_and_arc)
-- [03. 세 번째 수업: 무한의 암호, $\pi$ (원주율) 의 정체 (The Secret of Pi)](03_secret_of_pi)
-- [04. 네 번째 수업: 원의 둘레와 넓이, 원시적인 쪼개기 (Circumference & Area)](04_circumference_and_area)
-- [05. 다섯 번째 수업: 피자 조각의 면적, 부채꼴 공식 (Area of Sector)](05_area_of_sector)
-- [06. 여섯 번째 수업: 파이썬으로 쪼개어 증명하는 $\pi$ 무한 루프 (Python Archimedes Loop)](06_python_pi_calculation)
+- [00. 인트로: 인류 최고의 발명품, 수레바퀴 (Intro)](./00_intro/)
+- [01. 첫 번째 수업: 원의 뼈대 해부학, 호와 현 (Anatomy of Circle)](./01_anatomy_of_circle/)
+- [02. 두 번째 수업: 각도의 지배자, 중심각과 호의 길이 (Central Angle)](./02_central_angle_and_arc/)
+- [03. 세 번째 수업: 무한의 암호, $\pi$ (원주율) 의 정체 (The Secret of Pi)](./03_secret_of_pi/)
+- [04. 네 번째 수업: 원의 둘레와 넓이, 원시적인 쪼개기 (Circumference & Area)](./04_circumference_and_area/)
+- [05. 다섯 번째 수업: 피자 조각의 면적, 부채꼴 공식 (Area of Sector)](./05_area_of_sector/)
+- [06. 여섯 번째 수업: 파이썬으로 쪼개어 증명하는 $\pi$ 무한 루프 (Python Archimedes Loop)](./06_python_pi_calculation/)
