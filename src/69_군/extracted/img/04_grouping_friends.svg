@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 24px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .box {
+                fill: #161b22;
+                stroke: #30363d;
+                stroke-width: 2;
+                rx: 10;
+                ry: 10;
+            }
+
+            .rope-box {
+                fill: rgba(255, 0, 100, 0.1);
+                stroke: #ff0055;
+                stroke-width: 3;
+                stroke-dasharray: 8, 4;
+                rx: 20;
+                ry: 20;
+            }
+
+            .person {
+                fill: #0088ff;
+            }
+
+            .person-friend {
+                fill: #ff0055;
+            }
+
+            .text-p {
+                font-size: 28px;
+                fill: #ffffff;
+                text-anchor: middle;
+            }
+
+            .arrow {
+                stroke: #ffff00;
+                stroke-width: 3;
+                fill: none;
+            }
+
+            .arrow-head {
+                fill: #ffff00;
+            }
+
+            .math {
+                font-size: 22px;
+                fill: #00ffff;
+                text-anchor: middle;
+                font-weight: bold;
+            }
+
+            .math-res {
+                font-size: 28px;
+                fill: #ffff00;
+                text-anchor: middle;
+                font-weight: bold;
+            }
+        </style>
+
+        <!-- Marker for arrow -->
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="arrow-head" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="400" y="40" class="title">이웃하여 줄 서는 경우 (Grouping 테크닉)</text>
+    <text x="400" y="70" class="desc">A, B, C가 무조건 붙어 있어야 할 때 덩어리 치환 방식</text>
+
+    <!-- Step 1: Big Chunks Array -->
+    <rect x="50" y="110" width="700" height="150" class="box" />
+    <text x="120" y="140" fill="#aaaaaa" font-size="16" text-anchor="middle">Step 1. 전체 배열</text>
+
+    <g transform="translate(0, -20)">
+        <!-- Rope Box for [A B C] -->
+        <rect x="180" y="160" width="220" height="80" class="rope-box" />
+        <text x="290" y="255" fill="#ff0055" font-size="14" text-anchor="middle">[거대한 1명] 취급</text>
+
+        <circle cx="220" cy="200" r="25" class="person-friend" />
+        <text x="220" y="210" class="text-p">A</text>
+
+        <circle cx="290" cy="200" r="25" class="person-friend" />
+        <text x="290" y="210" class="text-p">B</text>
+
+        <circle cx="360" cy="200" r="25" class="person-friend" />
+        <text x="360" y="210" class="text-p">C</text>
+
+        <!-- Individual D, E -->
+        <circle cx="480" cy="200" r="25" class="person" />
+        <text x="480" y="210" class="text-p">D</text>
+
+        <circle cx="580" cy="200" r="25" class="person" />
+        <text x="580" y="210" class="text-p">E</text>
+
+        <path d="M 290 270 L 400 310" class="arrow" marker-end="url(#arrowhead)" />
+    </g>
+
+    <text x="700" y="195" class="math">총 3덩어리</text>
+    <text x="700" y="225" fill="#ff00ff" font-size="24" font-weight="bold" text-anchor="middle">3!</text>
+
+    <!-- Step 2: Internal Array -->
+    <rect x="50" y="290" width="700" height="180" class="box" />
+    <text x="140" y="320" fill="#aaaaaa" font-size="16" text-anchor="middle">Step 2. 묶음 내부에서 자리 교체</text>
+
+    <g transform="translate(180, 360)">
+        <!-- Swap arrows inside the group -->
+        <path d="M 20 -40 Q 60 -70 100 -40" class="arrow" marker-end="url(#arrowhead)" />
+        <path d="M 120 -40 Q 160 -70 200 -40" class="arrow" marker-end="url(#arrowhead)" />
+
+        <rect x="-20" y="-30" width="260" height="70" class="rope-box" />
+        <text x="20" y="10" fill="#ffffff" font-size="24" text-anchor="middle">B</text>
+        <text x="110" y="10" fill="#ffffff" font-size="24" text-anchor="middle">C</text>
+        <text x="200" y="10" fill="#ffffff" font-size="24" text-anchor="middle">A</text>
+
+        <text x="110" y="65" fill="#888888" font-size="14" text-anchor="middle">밧줄 안에서 3명이 자리 바꾸는 경우</text>
+    </g>
+
+    <text x="700" y="375" class="math">내부 교체</text>
+    <text x="700" y="405" fill="#ff00ff" font-size="24" font-weight="bold" text-anchor="middle">3!</text>
+
+    <!-- Final Result -->
+    <rect x="250" y="420" width="300" height="60" fill="#0d1117" stroke="#ffaa00" stroke-width="2" rx="10" />
+    <text x="400" y="460" class="math-res">정답: 3! × 3! = 36 가지</text>
+
+</svg>

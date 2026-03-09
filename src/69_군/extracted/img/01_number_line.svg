@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 24px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .axis {
+                stroke: #ffffff;
+                stroke-width: 4;
+            }
+
+            .tick {
+                stroke: #8b949e;
+                stroke-width: 2;
+            }
+
+            .tick-text {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .origin {
+                fill: #00ff00;
+            }
+
+            .point-a {
+                fill: #ffff00;
+            }
+
+            .point-b {
+                fill: #00ffff;
+            }
+
+            .label-text {
+                font-size: 18px;
+                text-anchor: middle;
+            }
+
+            .arrow {
+                stroke: #ffffff;
+                stroke-width: 2;
+                fill: none;
+            }
+
+            .arrow-head {
+                fill: #ffffff;
+            }
+        </style>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="arrow-head" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="40" class="title">1차원 수직선 (Number Line) 탐색</text>
+    <text x="400" y="70" class="desc">오른쪽(+)은 양수 방향, 왼쪽(-)은 음수 방향</text>
+
+    <!-- Number Line Axis (y=180) -->
+    <line x1="50" y1="180" x2="750" y2="180" class="axis" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)" />
+
+    <!-- Ticks (-5 to 5) -->
+    <!-- 0 is at x=400. Tick spacing = 60 -->
+    <g transform="translate(0, 180)">
+        <!-- x=-5: x=100 -->
+        <line x1="100" y1="-10" x2="100" y2="10" class="tick" /> <text x="100" y="30" class="tick-text">-5</text>
+        <line x1="160" y1="-10" x2="160" y2="10" class="tick" /> <text x="160" y="30" class="tick-text">-4</text>
+        <line x1="220" y1="-10" x2="220" y2="10" class="tick" /> <text x="220" y="30" class="tick-text">-3</text>
+        <line x1="280" y1="-10" x2="280" y2="10" class="tick" /> <text x="280" y="30" class="tick-text">-2</text>
+        <line x1="340" y1="-10" x2="340" y2="10" class="tick" /> <text x="340" y="30" class="tick-text">-1</text>
+
+        <line x1="400" y1="-15" x2="400" y2="15" class="tick" stroke="#ffffff" stroke-width="3" /> <text x="400" y="35"
+            class="tick-text" fill="#ffffff" font-size="20">0</text>
+
+        <line x1="460" y1="-10" x2="460" y2="10" class="tick" /> <text x="460" y="30" class="tick-text">+1</text>
+        <line x1="520" y1="-10" x2="520" y2="10" class="tick" /> <text x="520" y="30" class="tick-text">+2</text>
+        <line x1="580" y1="-10" x2="580" y2="10" class="tick" /> <text x="580" y="30" class="tick-text">+3</text>
+        <line x1="640" y1="-10" x2="640" y2="10" class="tick" /> <text x="640" y="30" class="tick-text">+4</text>
+        <line x1="700" y1="-10" x2="700" y2="10" class="tick" /> <text x="700" y="30" class="tick-text">+5</text>
+    </g>
+
+    <!-- Points and Agents -->
+    <!-- Origin -->
+    <circle cx="400" cy="180" r="10" class="origin" />
+    <text x="400" y="140" class="label-text" fill="#00ff00">원점 (Origin)</text>
+
+    <!-- Point A (+3) -> x = 580 -->
+    <circle cx="580" cy="180" r="12" class="point-a" />
+    <text x="580" y="140" class="label-text" fill="#ffff00">요원 A (+3)</text>
+    <path d="M 400 160 Q 490 100 580 160" class="arrow" marker-end="url(#arrowhead)" stroke="#ffff00"
+        stroke-dasharray="5,5" />
+    <text x="490" y="125" fill="#ffff00" font-size="14" text-anchor="middle">+3보 이동</text>
+
+    <!-- Point B (-2) -> x = 280 -->
+    <circle cx="280" cy="180" r="12" class="point-b" />
+    <text x="280" y="140" class="label-text" fill="#00ffff">요원 B (-2)</text>
+    <path d="M 400 160 Q 340 100 280 160" class="arrow" marker-end="url(#arrowhead)" stroke="#00ffff"
+        stroke-dasharray="5,5" />
+    <text x="340" y="115" fill="#00ffff" font-size="14" text-anchor="middle">-2보 이동</text>
+
+</svg>

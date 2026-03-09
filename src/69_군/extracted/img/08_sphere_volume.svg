@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">아르키메데스의 묘비명: "1 : 2 : 3 황금비율"</text>
+
+    <!-- Subtitle -->
+    <text x="450" y="85" fill="#aaaaaa" font-family="sans-serif" font-size="18" text-anchor="middle">동일한 밑면 반경(r)과
+        높이(2r) 상자에 완전히 꽉 끼도록 도형 3개를 집어넣었을 때의 모래 부피 비율</text>
+
+    <!-- Visualizing the three shapes -->
+
+    <!-- 1. CONE (Ratio 1) -->
+    <g transform="translate(200, 250)">
+        <!-- Virtual Box (Cylinder outline) -->
+        <rect x="-80" y="-80" width="160" height="160" fill="none" stroke="#555555" stroke-width="2"
+            stroke-dasharray="4 4" />
+
+        <!-- Cone Body -->
+        <path d="M 0 -80 L -80 80 A 80 20 0 0 0 80 80 Z" fill="#00ffcc" opacity="0.3" stroke="#00ffcc"
+            stroke-width="3" />
+        <ellipse cx="0" cy="80" rx="80" ry="20" fill="none" stroke="#00ffcc" stroke-width="3" />
+
+        <text x="0" y="130" fill="#00ffcc" font-family="sans-serif" font-size="28" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">1</text>
+        <text x="0" y="160" fill="#ffffff" font-family="monospace" font-size="18" text-anchor="middle">꼬깔 1/3 통</text>
+    </g>
+
+    <text x="350" y="270" fill="#ffffff" font-family="sans-serif" font-size="40" font-weight="bold"
+        text-anchor="middle">:</text>
+
+    <!-- 2. SPHERE (Ratio 2) -->
+    <g transform="translate(450, 250)">
+        <!-- Virtual Box (Cylinder outline) -->
+        <rect x="-80" y="-80" width="160" height="160" fill="none" stroke="#555555" stroke-width="2"
+            stroke-dasharray="4 4" />
+
+        <!-- Sphere Body -->
+        <circle cx="0" cy="0" r="80" fill="#ffaa00" opacity="0.3" stroke="#ffaa00" stroke-width="3" />
+        <ellipse cx="0" cy="0" rx="80" ry="20" fill="none" stroke="#ffaa00" stroke-width="2" stroke-dasharray="6 4" />
+
+        <text x="0" y="130" fill="#ffaa00" font-family="sans-serif" font-size="28" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">2</text>
+        <text x="0" y="160" fill="#ffffff" font-family="monospace" font-size="18" text-anchor="middle">둥근 공 2/3 통</text>
+    </g>
+
+    <text x="550" y="270" fill="#ffffff" font-family="sans-serif" font-size="40" font-weight="bold"
+        text-anchor="middle">:</text>
+
+    <!-- 3. CYLINDER (Ratio 3) -->
+    <g transform="translate(700, 250)">
+        <!-- Solid Box (Cylinder outline) -->
+
+        <!-- Top Ellipse -->
+        <ellipse cx="0" cy="-80" rx="80" ry="20" fill="#ff4d4d" opacity="0.3" stroke="#ff4d4d" stroke-width="3" />
+        <!-- Cylinder Body Lines -->
+        <line x1="-80" y1="-80" x2="-80" y2="80" stroke="#ff4d4d" stroke-width="3" />
+        <line x1="80" y1="-80" x2="80" y2="80" stroke="#ff4d4d" stroke-width="3" />
+        <!-- Bottom Ellipse -->
+        <path d="M -80 80 A 80 20 0 0 0 80 80" fill="none" stroke="#ff4d4d" stroke-width="3" />
+        <path d="M -80 80 A 80 20 0 0 1 80 80" fill="none" stroke="#ff4d4d" stroke-width="2" stroke-dasharray="4 4" />
+
+        <rect x="-80" y="-80" width="160" height="160" fill="#ff4d4d" opacity="0.1" />
+
+        <text x="0" y="130" fill="#ff4d4d" font-family="sans-serif" font-size="28" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">3</text>
+        <text x="0" y="160" fill="#ffffff" font-family="monospace" font-size="18" text-anchor="middle">가득 찬 3/3 통</text>
+    </g>
+
+    <!-- Mathematical Breakdown Panel -->
+    <g transform="translate(150, 450)">
+        <rect x="0" y="0" width="600" height="70" rx="10" fill="#111122" stroke="#4da6ff" stroke-width="2" />
+
+        <!-- Base Cylinder volume -->
+        <text x="70" y="30" fill="#ff4d4d" font-family="sans-serif" font-size="16" font-weight="bold">원기둥 부피 (3)</text>
+        <text x="70" y="55" fill="#ffffff" font-family="monospace" font-size="16">πr² × 2r = 2πr³</text>
+
+        <!-- Sphere volume derivation -->
+        <text x="300" y="30" fill="#ffaa00" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">구의 부피 (2/3 토막)</text>
+        <text x="300" y="55" fill="#00ffcc" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">2πr³ × 2/3 = 4/3 πr³</text>
+
+        <!-- Cone volume derivation -->
+        <text x="530" y="30" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="end">원뿔 부피 (1/3 토막)</text>
+        <text x="530" y="55" fill="#ffffff" font-family="monospace" font-size="16" text-anchor="end">2πr³ × 1/3</text>
+
+        <line x1="180" y1="10" x2="180" y2="60" stroke="#4da6ff" stroke-width="2" stroke-dasharray="4 4" />
+        <line x1="420" y1="10" x2="420" y2="60" stroke="#4da6ff" stroke-width="2" stroke-dasharray="4 4" />
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="535" width="600" height="40" rx="10" fill="#2b1111" stroke="#ff4d4d" stroke-width="2" />
+    <text x="450" y="560" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">미적분 없이 단순 분수식 만으로
+        메모리 연산 부하를 박살 내는 고대 그리스의 렌더링 꼼수</text>
+
+</svg>

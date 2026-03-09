@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="40" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">원주각(Inscribed Angle): 중심 시야각의 무조건적인 1/2 너프 (디버프 락)</text>
+
+    <g transform="translate(250, 100)">
+
+        <!-- Pizza Arc Base (Shared) -->
+        <path d="M 69 350 A 200 200 0 0 0 331 350" fill="none" stroke="#ff00ff" stroke-width="15" filter="url(#glow)" />
+        <text x="200" y="385" fill="#ff00ff" font-family="sans-serif" font-size="22" font-weight="bold"
+            text-anchor="middle">목표 호 (Arc A-B)</text>
+        <circle cx="69" cy="350" r="8" fill="#ffffff" />
+        <text x="40" y="360" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold">A</text>
+        <circle cx="331" cy="350" r="8" fill="#ffffff" />
+        <text x="350" y="360" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold">B</text>
+
+        <!-- Circle Outline -->
+        <circle cx="200" cy="200" r="200" fill="none" stroke="#4da6ff" stroke-width="2" stroke-dasharray="10 10" />
+
+        <!-- Central Angle (Center point) -->
+        <circle cx="200" cy="200" r="8" fill="#ffff00" filter="url(#glow)" />
+        <text x="180" y="190" fill="#ffff00" font-family="sans-serif" font-size="18" font-weight="bold">배꼽(중심)</text>
+
+        <line x1="200" y1="200" x2="69" y2="350" stroke="#ffff00" stroke-width="4" />
+        <line x1="200" y1="200" x2="331" y2="350" stroke="#ffff00" stroke-width="4" />
+
+        <!-- Central Angle Arc -->
+        <path d="M 160 245 A 60 60 0 0 0 240 245" fill="none" stroke="#ffff00" stroke-width="3" />
+        <text x="200" y="270" fill="#ffff00" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle">60°</text>
+
+
+        <!-- Inscribed Angle (Point P on circumference) -->
+        <circle cx="100" cy="26.79" r="8" fill="#00ffcc" filter="url(#glow)" />
+        <text x="80" y="20" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold">P (원주 테두리)</text>
+
+        <line x1="100" y1="26.79" x2="69" y2="350" stroke="#00ffcc" stroke-width="4" opacity="0.8" />
+        <line x1="100" y1="26.79" x2="331" y2="350" stroke="#00ffcc" stroke-width="4" opacity="0.8" />
+
+        <!-- Inscribed Angle Arc -->
+        <path d="M 94 80 A 50 50 0 0 0 132 70" fill="none" stroke="#00ffcc" stroke-width="3" />
+        <text x="115" y="105" fill="#00ffcc" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">30°</text>
+        <text x="115" y="125" fill="#4da6ff" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">(정확히 반토막!)</text>
+    </g>
+
+    <!-- Explanation Panel -->
+    <g transform="translate(150, 480)">
+        <rect x="0" y="0" width="600" height="100" rx="10" fill="#1b1122" stroke="#ff00ff" stroke-width="3" />
+        <text x="300" y="35" fill="#ffffff" font-family="sans-serif" font-size="18" text-anchor="middle">
+            같은 렌더링 영역(호 AB)을 쳐다볼 때, 시야 카메라가 배꼽(중심)을 벗어나
+        </text>
+        <text x="300" y="60" fill="#ffffff" font-family="sans-serif" font-size="18" text-anchor="middle">
+            <tspan fill="#00ffcc" font-weight="bold">원 외곽 테두리(원주)</tspan>로 물러나면, 그 시야각(원주각)은
+        </text>
+        <text x="300" y="85" fill="#ffffff" font-family="sans-serif" font-size="18" text-anchor="middle">
+            중심 배꼽 시야각의 <tspan fill="#ff00ff" font-weight="bold" font-size="22">정확히 1/2 반토막</tspan> 으로 강제 락다운 당함!
+        </text>
+    </g>
+
+</svg>

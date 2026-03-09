@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">시공간의 미끄러짐: 평행이동 (Translation)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"점의 정직한 덧셈 법칙 vs
+        도형(함수) 의 청개구리 법칙"</text>
+
+    <!-- Grid Background -->
+    <g transform="translate(100, 150)" opacity="0.2">
+        <!-- Vertical lines -->
+        <path
+            d="M 50 0 L 50 250 M 150 0 L 150 250 M 250 0 L 250 250 M 350 0 L 350 250 M 450 0 L 450 250 M 550 0 L 550 250 M 650 0 L 650 250"
+            fill="none" stroke="#fff" stroke-width="1" />
+        <!-- Horizontal lines -->
+        <path d="M 0 50 L 700 50 M 0 100 L 700 100 M 0 150 L 700 150 M 0 200 L 700 200 M 0 250 L 700 250" fill="none"
+            stroke="#fff" stroke-width="1" />
+    </g>
+
+    <!-- Left Side: Translation of a Point (x+a, y+b) -->
+    <g transform="translate(100, 150)">
+        <rect x="-20" y="-30" width="350" height="300" rx="10" fill="#1b1122" stroke="#ff00ff" stroke-width="2"
+            opacity="0.8" />
+        <text x="155" y="0" fill="#ff00ff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">1. 점(Point) 의 이동</text>
+
+        <!-- Origin point A -->
+        <circle cx="50" cy="200" r="8" fill="#fff" />
+        <text x="30" y="225" fill="#fff" font-weight="bold" text-anchor="middle">A(x, y)</text>
+
+        <!-- Movement Arrows -->
+        <path d="M 50 200 L 250 200" fill="none" stroke="#ffff00" stroke-width="4" stroke-dasharray="8 4"
+            marker-end="url(#arrow_y)" filter="url(#glow)" />
+        <text x="150" y="220" fill="#ffff00" font-weight="bold" text-anchor="middle">+a 만큼</text>
+
+        <path d="M 250 200 L 250 80" fill="none" stroke="#ffff00" stroke-width="4" stroke-dasharray="8 4"
+            marker-end="url(#arrow_y)" filter="url(#glow)" />
+        <text x="285" y="140" fill="#ffff00" font-weight="bold" text-anchor="middle">+b 만큼</text>
+
+        <!-- Translated point A' -->
+        <circle cx="250" cy="80" r="8" fill="#ff00ff" filter="url(#glow)" />
+        <text x="250" y="60" fill="#ff00ff" font-weight="bold" font-size="18" text-anchor="middle"
+            filter="url(#glow)">A'(x+a, y+b)</text>
+
+        <rect x="0" y="230" width="310" height="30" rx="5" fill="#000" stroke="#ff00ff" />
+        <text x="155" y="250" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">정직한 덧셈: 좌표값에 그대로
+            더한다!</text>
+    </g>
+
+    <!-- Right Side: Translation of an Equation f(x-a, y-b)=0 -->
+    <g transform="translate(480, 150)">
+        <rect x="-20" y="-30" width="360" height="300" rx="10" fill="#001a11" stroke="#00ffcc" stroke-width="2"
+            opacity="0.8" />
+        <text x="160" y="0" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">2. 도형(함수) 의 이동</text>
+
+        <!-- Origin Parabola -->
+        <path d="M 30 50 Q 50 250 150 200" fill="none" stroke="#fff" stroke-width="3" opacity="0.6" />
+        <text x="90" y="250" fill="#fff" font-family="monospace" font-weight="bold" text-anchor="middle">f(x, y) =
+            0</text>
+
+        <!-- Movement Arrow covering the whole set -->
+        <path d="M 120 150 L 220 100" fill="none" stroke="#00ffcc" stroke-width="4" marker-end="url(#arrow_c)"
+            filter="url(#glow)" />
+        <text x="170" y="120" fill="#00ffcc" font-weight="bold" text-anchor="middle">통째로 이동 (+a, +b)</text>
+
+        <!-- Translated Parabola -->
+        <path d="M 130 0 Q 150 200 250 150" fill="none" stroke="#00ffcc" stroke-width="4" filter="url(#glow)" />
+        <text x="260" y="60" fill="#00ffcc" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">f(x-a, y-b) = 0</text>
+
+        <text x="260" y="85" fill="#ff5555" font-family="monospace" font-size="14" font-weight="bold"
+            text-anchor="middle">청개구리 파고들기!</text>
+
+        <rect x="0" y="230" width="320" height="30" rx="5" fill="#000" stroke="#00ffcc" />
+        <text x="160" y="250" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">부호 반전: 관찰자 시점 보정을 위해
+            빼기(-) 삽입!</text>
+    </g>
+
+    <defs>
+        <marker id="arrow_y" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#ffff00" />
+        </marker>
+        <marker id="arrow_c" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#00ffcc" />
+        </marker>
+    </defs>
+
+    <!-- Big Alert Bottom -->
+    <rect x="100" y="470" width="700" height="80" rx="10" fill="#220000" stroke="#ff5555" stroke-width="2" />
+    <text x="450" y="505" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        도형(방정식) 을 이동시킬 때 무작정 뒤에 꼬리 달듯 +a를 더하는 것이 아니라,
+    </text>
+    <text x="450" y="530" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        반드시 알파벳 변수 자리를 파내고 반대 부호인 <tspan fill="#ff5555" font-weight="bold">"(x - a)"</tspan> 를 괄호째로 삽입해야 버그가 나지 않는다!
+    </text>
+</svg>

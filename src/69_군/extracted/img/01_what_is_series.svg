@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">수열(Sequence) 배열 vs 무한 급수(Series) 루프 덧셈</text>
+
+    <!-- 1. Sequence (Array) -->
+    <g transform="translate(100, 150)">
+        <text x="-50" y="30" fill="#4da6ff" font-family="sans-serif" font-size="24" font-weight="bold">수열</text>
+        <text x="-50" y="55" fill="#aaaaaa" font-family="sans-serif" font-size="16">(Sequence)</text>
+
+        <!-- Array Brackets -->
+        <path d="M 60 -10 L 40 -10 L 40 90 L 60 90" fill="none" stroke="#4da6ff" stroke-width="4" />
+        <path d="M 660 -10 L 680 -10 L 680 90 L 660 90" fill="none" stroke="#4da6ff" stroke-width="4" />
+
+        <!-- Numbers & Commas -->
+        <g font-family="monospace" font-size="40" font-weight="bold" fill="#ffffff">
+            <text x="80" y="55">1</text>
+            <text x="140" y="55" fill="#4da6ff">,</text>
+
+            <text x="200" y="55">3</text>
+            <text x="260" y="55" fill="#4da6ff">,</text>
+
+            <text x="320" y="55">5</text>
+            <text x="380" y="55" fill="#4da6ff">,</text>
+
+            <text x="440" y="55">7</text>
+            <text x="500" y="55" fill="#4da6ff">,</text>
+
+            <text x="560" y="55">9, ...</text>
+        </g>
+
+        <!-- Subtext -->
+        <text x="360" y="130" fill="#4da6ff" font-family="sans-serif" font-size="16" text-anchor="middle">
+            파이썬의 List 형태: 딱딱하게 콤마(,)로 나열된 아이템 파이프라인
+        </text>
+    </g>
+
+    <!-- Transformation Arrow -->
+    <path d="M 450 320 L 450 360" stroke="#ff00ff" stroke-width="6" marker-end="url(#arrow_m)" filter="url(#glow)" />
+    <text x="480" y="350" fill="#ff00ff" font-family="sans-serif" font-size="20" font-weight="bold"
+        filter="url(#glow)">해킹 용접 (마개조)!</text>
+
+    <!-- 2. Series (Summation) -->
+    <g transform="translate(100, 420)">
+        <text x="-50" y="30" fill="#ff0055" font-family="sans-serif" font-size="24" font-weight="bold"
+            filter="url(#glow)">급수</text>
+        <text x="-50" y="55" fill="#ff5588" font-family="sans-serif" font-size="16">(Series)</text>
+
+        <!-- Sigma Symbol -->
+        <text x="40" y="60" fill="#ff0055" font-family="serif" font-size="80" font-weight="bold"
+            filter="url(#glow)">∑</text>
+
+        <!-- Numbers & Plus Signs -->
+        <g font-family="monospace" font-size="46" font-weight="bold" fill="#ffffff">
+            <text x="120" y="55">1</text>
+            <text x="180" y="55" fill="#ff0055" filter="url(#glow)">+</text>
+
+            <text x="240" y="55">3</text>
+            <text x="300" y="55" fill="#ff0055" filter="url(#glow)">+</text>
+
+            <text x="360" y="55">5</text>
+            <text x="420" y="55" fill="#ff0055" filter="url(#glow)">+</text>
+
+            <text x="480" y="55">7</text>
+            <text x="540" y="55" fill="#ff0055" filter="url(#glow)">+</text>
+
+            <text x="600" y="55">9 ...</text>
+        </g>
+    </g>
+
+    <defs>
+        <marker id="arrow_m" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ff00ff" />
+        </marker>
+    </defs>
+
+    <rect x="150" y="530" width="600" height="50" rx="10" fill="#110505" stroke="#ff0055" stroke-width="3" />
+    <text x="450" y="560" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        배열의 콤마(,)를 뜯어내고 <tspan fill="#ff0055" font-weight="bold">무한 번의 덧셈(+)</tspan> 기호로 용접 박치기 해버린 끔찍한 연산 덩어리
+    </text>
+</svg>

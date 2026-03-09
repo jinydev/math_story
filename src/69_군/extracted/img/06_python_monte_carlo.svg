@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="40" fill="#ffffff" font-family="sans-serif" font-size="30" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">무식함의 끝판왕: 몬테카를로 시뮬레이션 (Monte Carlo Pi)</text>
+    <text x="450" y="65" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">"수식을 몰라도 파이썬 For
+        루프로 100만 발의 총알을 쏴서 파이(π)를 리버스 엔지니어링 해킹한다."</text>
+
+    <!-- Monte Carlo Visualization Area -->
+    <g transform="translate(100, 100)">
+
+        <!-- Code Panel on Left -->
+        <g transform="translate(0, 50)">
+            <rect x="0" y="0" width="300" height="280" rx="8" fill="#111122" stroke="#00ffcc" stroke-width="2" />
+            <rect x="0" y="0" width="300" height="25" rx="8" fill="#00ffcc" fill-opacity="0.2" />
+            <circle cx="15" cy="12" r="5" fill="#ff4d4d" />
+            <circle cx="30" cy="12" r="5" fill="#ffaa00" />
+            <circle cx="45" cy="12" r="5" fill="#00ffcc" />
+            <text x="150" y="17" fill="#00ffcc" font-family="sans-serif" font-size="12" font-weight="bold"
+                text-anchor="middle">monte_carlo_pi.py</text>
+
+            <text x="10" y="45" fill="#ffaa00" font-family="monospace" font-size="12">for _ in range(1_000_000):</text>
+            <text x="30" y="70" fill="#aaaaaa" font-family="monospace" font-size="12">x = random.uniform(-1, 1)</text>
+            <text x="30" y="90" fill="#aaaaaa" font-family="monospace" font-size="12">y = random.uniform(-1, 1)</text>
+
+            <text x="30" y="130" fill="#ff00ff" font-family="monospace" font-size="12">if x**2 + y**2 &lt;= 1.0:</text>
+            <text x="50" y="150" fill="#00ffcc" font-family="monospace" font-size="12">circle_hits += 1</text>
+
+            <text x="10" y="200" fill="#aaaaaa" font-family="monospace" font-size="12">P = circle_hits /
+                1_000_000</text>
+            <text x="10" y="230" fill="#ff4d4d" font-family="monospace" font-size="14" font-weight="bold">estimated_pi =
+                P * 4</text>
+        </g>
+
+        <!-- Canvas (Dart Board) on Right -->
+        <g transform="translate(380, 50)">
+            <!-- Target Area: Square 280x280 (Represents -1 to 1, so size is 2) -->
+            <rect x="0" y="0" width="280" height="280" fill="#221122" stroke="#ff4d4d" stroke-width="3"
+                filter="url(#glow)" />
+
+            <!-- Circle Inscribed (Radius 1 = 140) -->
+            <circle cx="140" cy="140" r="140" fill="#112233" stroke="#00ffcc" stroke-width="3" filter="url(#glow)" />
+
+            <!-- Crosshairs Axes -->
+            <line x1="140" y1="0" x2="140" y2="280" stroke="#4da6ff" stroke-width="1" stroke-dasharray="4 4"
+                opacity="0.5" />
+            <line x1="0" y1="140" x2="280" y2="140" stroke="#4da6ff" stroke-width="1" stroke-dasharray="4 4"
+                opacity="0.5" />
+            <text x="145" y="10" fill="#aaaaaa" font-size="10">+1</text>
+            <text x="145" y="275" fill="#aaaaaa" font-size="10">-1</text>
+            <text x="5" y="135" fill="#aaaaaa" font-size="10">-1</text>
+            <text x="260" y="135" fill="#aaaaaa" font-size="10">+1</text>
+
+            <!-- Labels inside canvas -->
+            <text x="140" y="70" fill="#00ffcc" font-family="sans-serif" font-size="14" font-weight="bold"
+                text-anchor="middle" opacity="0.7">원 넓이 = π</text>
+            <text x="50" y="260" fill="#ff4d4d" font-family="sans-serif" font-size="14" font-weight="bold"
+                text-anchor="middle" opacity="0.7">사각 넓이 = 4</text>
+
+            <!-- Draw Random Dots Simulation -->
+            <!-- Draw points manually but represent randomness -->
+            <!-- Hits (cyan) and Misses (red) -->
+            <!-- Misses in corners -->
+            <circle cx="20" cy="20" r="2" fill="#ff4d4d" />
+            <circle cx="40" cy="10" r="2" fill="#ff4d4d" />
+            <circle cx="10" cy="40" r="2" fill="#ff4d4d" />
+            <circle cx="250" cy="30" r="2" fill="#ff4d4d" />
+            <circle cx="270" cy="50" r="2" fill="#ff4d4d" />
+            <circle cx="260" cy="15" r="2" fill="#ff4d4d" />
+            <circle cx="30" cy="250" r="2" fill="#ff4d4d" />
+            <circle cx="10" cy="260" r="2" fill="#ff4d4d" />
+            <circle cx="40" cy="270" r="2" fill="#ff4d4d" />
+            <circle cx="260" cy="250" r="2" fill="#ff4d4d" />
+            <circle cx="250" cy="270" r="2" fill="#ff4d4d" />
+            <circle cx="270" cy="260" r="2" fill="#ff4d4d" />
+
+            <!-- Hits inside circle -->
+            <circle cx="140" cy="140" r="2" fill="#00ffcc" filter="url(#glow)" />
+            <circle cx="120" cy="100" r="2" fill="#00ffcc" />
+            <circle cx="160" cy="120" r="2" fill="#00ffcc" />
+            <circle cx="150" cy="180" r="2" fill="#00ffcc" />
+            <circle cx="100" cy="150" r="2" fill="#00ffcc" />
+            <circle cx="80" cy="80" r="2" fill="#00ffcc" />
+            <circle cx="200" cy="200" r="2" fill="#00ffcc" />
+            <circle cx="180" cy="100" r="2" fill="#00ffcc" />
+            <circle cx="100" cy="200" r="2" fill="#00ffcc" />
+            <circle cx="140" cy="50" r="2" fill="#00ffcc" />
+            <circle cx="220" cy="140" r="2" fill="#00ffcc" />
+            <circle cx="60" cy="150" r="2" fill="#00ffcc" />
+            <circle cx="130" cy="220" r="2" fill="#00ffcc" />
+
+            <!-- A few more for density illusion -->
+            <g fill="#00ffcc" opacity="0.6">
+                <circle cx="110" cy="110" r="2" />
+                <circle cx="170" cy="170" r="2" />
+                <circle cx="150" cy="90" r="2" />
+                <circle cx="90" cy="130" r="2" />
+                <circle cx="190" cy="120" r="2" />
+                <circle cx="120" cy="190" r="2" />
+            </g>
+        </g>
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="50" y="450" width="800" height="100" rx="10" fill="#2b1133" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="480" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="bold"
+        text-anchor="middle">결론: 총알이 명중할 확률(P) = π / 4</text>
+    <text x="450" y="515" fill="#ffaa00" font-family="monospace" font-size="24" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">π = 명중 확률 P × 4 ≈ 3.1415...</text>
+    <text x="450" y="540" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">미적분 공식 하나 없이 오직
+        컴퓨터의 무식한 반복 스피드와 시뮬레이션으로 우주의 상수를 역발굴한다!</text>
+
+</svg>

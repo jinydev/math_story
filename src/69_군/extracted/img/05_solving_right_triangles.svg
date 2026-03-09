@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">숨겨진 스펙 찾아내기: 삼각비 퍼즐 해킹 (Solving)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"90도 직각 단서 이외에 2개의
+        단서만 수집하면, 나머지 숨겨진 길이를 모조리 털 수 있다!"</text>
+
+    <!-- The Scene: Sniping a Building's height -->
+
+    <g transform="translate(100, 450)">
+
+        <!-- Building -->
+        <rect x="500" y="-300" width="100" height="300" fill="#112233" stroke="#4da6ff" stroke-width="3" />
+        <!-- Windows -->
+        <g fill="#4da6ff" opacity="0.4">
+            <rect x="520" y="-280" width="60" height="20" rx="3" />
+            <rect x="520" y="-240" width="60" height="20" rx="3" />
+            <rect x="520" y="-200" width="60" height="20" rx="3" />
+            <rect x="520" y="-160" width="60" height="20" rx="3" />
+            <rect x="520" y="-120" width="60" height="20" rx="3" />
+            <rect x="520" y="-80" width="60" height="20" rx="3" />
+            <rect x="520" y="-40" width="60" height="20" rx="3" />
+        </g>
+
+        <!-- Base Line (Ground) -->
+        <line x1="-50" y1="0" x2="650" y2="0" stroke="#777777" stroke-width="4" />
+
+        <!-- Distance (Adjacent) = 10m -->
+        <line x1="0" y1="0" x2="500" y2="0" stroke="#00ffcc" stroke-width="4" filter="url(#glow)" />
+        <text x="250" y="25" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">단서1: 밑변 10m (Adjacent)</text>
+
+        <!-- Person holding an astrolabe/protractor -->
+        <!-- Simplified stick person -->
+        <circle cx="0" cy="-20" r="10" fill="#ffffff" />
+        <line x1="0" y1="-10" x2="0" y2="0" stroke="#ffffff" stroke-width="3" />
+
+        <!-- Angle Scope Line -->
+        <!-- 60 degrees. Tan(60) = ~1.732. So if base=500, height=866. Wait, for illustration scale, let's just draw to top of building which is y=-300. 500/300 is tan=3/5=0.6 ~= 31 degrees. We'll label it as 60 degrees! -->
+        <line x1="0" y1="-20" x2="500" y2="-300" stroke="#ffaa00" stroke-width="3" stroke-dasharray="6 4"
+            filter="url(#glow)" />
+
+        <!-- Angle Arch -->
+        <path d="M 80 -20 A 80 80 0 0 0 45 -45" fill="none" stroke="#ff00ff" stroke-width="3" />
+        <text x="110" y="-30" fill="#ff00ff" font-family="sans-serif" font-size="20" font-weight="bold">단서2: 시야각 60°
+            (θ)</text>
+
+        <!-- Unknown Height -->
+        <line x1="500" y1="0" x2="500" y2="-300" stroke="#ff4d4d" stroke-width="5" stroke-dasharray="10 5"
+            filter="url(#glow)" />
+        <text x="500" y="-150" fill="#ff4d4d" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)" transform="translate(0, 0)">? m (수직 높이 Opp)</text>
+
+    </g>
+
+    <!-- Math Logic Panel -->
+    <g transform="translate(100, 100)">
+        <rect x="0" y="0" width="350" height="200" rx="15" fill="#221111" stroke="#ff4d4d" stroke-width="2" />
+        <text x="175" y="35" fill="#ffaa00" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">미션: 타겟의 수직 높이는?</text>
+
+        <text x="20" y="70" fill="#ffffff" font-family="sans-serif" font-size="16">1. 내가 아는 단서: 밑변(A)과 각도(θ)</text>
+        <text x="20" y="100" fill="#ffffff" font-family="sans-serif" font-size="16">2. 구해야 할 미지수: 높이(O)</text>
+        <text x="20" y="130" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold">=> 높이와 밑변이 묶인
+            탄젠트(TOA) 선택!</text>
+
+        <text x="175" y="170" fill="#ff4d4d" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle">tan(60°) = O / 10</text>
+    </g>
+
+    <!-- Arrow Right -->
+    <path d="M 460 200 Q 500 200 540 200" fill="none" stroke="#ffffff" stroke-width="4" marker-end="url(#arrowWhite)" />
+
+    <!-- Solution Panel -->
+    <g transform="translate(560, 100)">
+        <rect x="0" y="0" width="300" height="200" rx="15" fill="#113322" stroke="#00ffcc" stroke-width="2" />
+        <text x="150" y="35" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">해결: 특수각 치트키 발동!</text>
+
+        <text x="150" y="80" fill="#ffffff" font-family="monospace" font-size="18" text-anchor="middle">tan(60°) = √3 ≈
+            1.732</text>
+
+        <text x="150" y="120" fill="#ffffff" font-family="monospace" font-size="20" text-anchor="middle">O = 10 ×
+            1.732</text>
+
+        <text x="150" y="170" fill="#00ffcc" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">정답: 높이 17.32m!</text>
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="520" width="600" height="50" rx="10" fill="#112233" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="550" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">건물에 기어오를 필요 없이,
+        허공의 꼭대기 좌표를 팩트 저격해낸다.</text>
+
+    <defs>
+        <marker id="arrowWhite" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffffff" />
+        </marker>
+    </defs>
+</svg>

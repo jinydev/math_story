@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">절대부등식의 딜레마: 공중부양과 판별식(D<0)< /text>
+            <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"모든 X에 대해
+                >0 이 성립하려면, X축(땅) 과 만나지 않아야 하므로 오히려 판별식은 <0 이 되어야 한다!"</text>
+
+                    <!-- Ground Line (x-axis) across all panels -->
+                    <path d="M 50 400 L 850 400" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="8 4" />
+                    <text x="800" y="420" fill="#fff" font-weight="bold" font-family="monospace">X축 (y=0 땅바닥)</text>
+
+                    <!-- Panel 1: D > 0 (Crashed) -->
+                    <g transform="translate(100, 150)">
+                        <rect x="-20" y="0" width="200" height="280" rx="10" fill="#1b0000" stroke="#ff5555"
+                            stroke-width="2" />
+                        <text x="80" y="30" fill="#ff5555" font-family="sans-serif" font-size="20" font-weight="bold"
+                            text-anchor="middle" filter="url(#glow)">판별식 D > 0</text>
+
+                        <!-- Parabola crashing through ground -->
+                        <path d="M 0 100 Q 80 400 160 100" fill="none" stroke="#ff5555" stroke-width="4" />
+
+                        <!-- intersection points -->
+                        <circle cx="35" cy="250" r="6" fill="#fff" />
+                        <circle cx="125" cy="250" r="6" fill="#fff" />
+
+                        <!-- Water/Lava below ground -->
+                        <path d="M 35 250 Q 80 350 125 250 Z" fill="#ff5555" opacity="0.4" />
+                        <text x="80" y="270" fill="#fff" font-weight="bold" font-size="12" text-anchor="middle">침수 구역
+                            (f(x)<0)< /text>
+
+                                <!-- Result -->
+                                <rect x="-10" y="180" width="180" height="30" rx="5" fill="#000" stroke="#ff5555" />
+                                <text x="80" y="200" fill="#ff5555" font-weight="bold" font-size="14"
+                                    text-anchor="middle">실패 (밑으로 처박힘)</text>
+                    </g>
+
+                    <!-- Panel 2: D = 0 (Touched) -->
+                    <g transform="translate(350, 150)">
+                        <rect x="-20" y="0" width="200" height="280" rx="10" fill="#111100" stroke="#ffff00"
+                            stroke-width="2" />
+                        <text x="80" y="30" fill="#ffff00" font-family="sans-serif" font-size="20" font-weight="bold"
+                            text-anchor="middle" filter="url(#glow)">판별식 D = 0</text>
+
+                        <!-- Parabola touching ground -->
+                        <path d="M 0 50 Q 80 450 160 50" fill="none" stroke="#ffff00" stroke-width="4" />
+
+                        <!-- intersection point -->
+                        <circle cx="80" cy="250" r="8" fill="#fff" stroke="#ffff00" stroke-width="3" />
+                        <text x="80" y="275" fill="#fff" font-weight="bold" font-size="12" text-anchor="middle">땅과 접촉
+                            (f(x)=0)</text>
+
+                        <!-- Result -->
+                        <rect x="-10" y="180" width="180" height="30" rx="5" fill="#000" stroke="#ffff00" />
+                        <text x="80" y="200" fill="#ffff00" font-weight="bold" font-size="14" text-anchor="middle">실패
+                            (>0 조건 위배)</text>
+                    </g>
+
+                    <!-- Panel 3: D < 0 (Floating - Success) -->
+                    <g transform="translate(600, 150)">
+                        <rect x="-20" y="0" width="200" height="280" rx="10" fill="#001a11" stroke="#00ffcc"
+                            stroke-width="3" filter="url(#glow)" />
+                        <text x="80" y="30" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+                            text-anchor="middle" filter="url(#glow)">판별식 D < 0</text>
+
+                                <!-- Parabola floating in air -->
+                                <path d="M 0 0 Q 80 250 160 0" fill="none" stroke="#00ffcc" stroke-width="5"
+                                    filter="url(#glow)" />
+
+                                <!-- Sparkles/Stars (Sky) -->
+                                <circle cx="40" cy="50" r="2" fill="#fff" filter="url(#glow)" />
+                                <circle cx="120" cy="80" r="3" fill="#fff" filter="url(#glow)" />
+                                <circle cx="80" cy="180" r="4" fill="#00ffcc" filter="url(#glow)" />
+
+                                <text x="80" y="150" fill="#fff" font-weight="bold" font-size="14"
+                                    text-anchor="middle">단 한 점도 닿지 않음!</text>
+
+                                <!-- Result -->
+                                <rect x="-10" y="210" width="180" height="30" rx="5" fill="#000" stroke="#00ffcc" />
+                                <text x="80" y="230" fill="#00ffcc" font-weight="bold" font-size="14"
+                                    text-anchor="middle">무적 성공 (항상 f(x)>0)</text>
+                    </g>
+
+                    <!-- Big Alert Bottom -->
+                    <rect x="100" y="470" width="700" height="90" rx="10" fill="#0d1b2a" stroke="#4da6ff"
+                        stroke-width="2" />
+                    <text x="450" y="500" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+                        초보자의 치명적 함정 💥: "부등식이 크니까(> 0) 판별식도 크겠지? (D > 0) -> 자폭 스위치!"
+                    </text>
+                    <text x="450" y="530" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+                        <tspan fill="#4da6ff" font-weight="bold">"모든 우주에서 f(x) > 0 임을 증명하려면,"</tspan>
+                    </text>
+                    <text x="450" y="550" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+                        text-anchor="middle" filter="url(#glow)">
+                        아래로 볼록 (a > 0) AND 땅과 파편도 안튀게 공중부양 (D < 0) 이다! </text>
+</svg>

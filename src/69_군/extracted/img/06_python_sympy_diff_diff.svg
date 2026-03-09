@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">Python SymPy: 이계도함수 2단 가속기 diff(f, x, 2)</text>
+
+    <!-- Terminal Window Graphic -->
+    <g transform="translate(100, 100)">
+        <rect x="0" y="0" width="700" height="400" rx="15" fill="#0d141e" stroke="#223344" stroke-width="4" />
+        <rect x="0" y="0" width="700" height="40" fill="#1a2533"
+            style="border-top-left-radius: 15px; border-top-right-radius: 15px;" />
+
+        <circle cx="20" cy="20" r="6" fill="#ff5f56" />
+        <circle cx="40" cy="20" r="6" fill="#ffbd2e" />
+        <circle cx="60" cy="20" r="6" fill="#27c93f" />
+        <text x="350" y="25" fill="#aaaaaa" font-family="monospace" font-size="14"
+            text-anchor="middle">sympy_double_diff.py</text>
+
+        <!-- Coding blocks -->
+        <g transform="translate(20, 80)" font-family="monospace" font-size="18">
+            <text x="0" y="0" fill="#ff7b72">import</text>
+            <text x="75" y="0" fill="#ffffff">sympy</text>
+            <text x="140" y="0" fill="#ff7b72">as</text>
+            <text x="175" y="0" fill="#ffffff">sp</text>
+
+            <text x="0" y="40" fill="#ffffff">x = sp.</text>
+            <text x="75" y="40" fill="#d2a8ff">Symbol</text>
+            <text x="140" y="40" fill="#ffffff">('x')</text>
+
+            <!-- Original -> 4th order -->
+            <text x="0" y="80" fill="#ffffff">f = x**</text>
+            <text x="80" y="80" fill="#79c0ff">4</text>
+            <text x="95" y="80" fill="#ffffff"> - </text>
+            <text x="130" y="80" fill="#79c0ff">6</text>
+            <text x="145" y="80" fill="#ffffff">*x**</text>
+            <text x="195" y="80" fill="#79c0ff">3</text>
+            <text x="210" y="80" fill="#ffffff"> + </text>
+            <text x="245" y="80" fill="#79c0ff">12</text>
+            <text x="270" y="80" fill="#ffffff">*x**</text>
+            <text x="320" y="80" fill="#79c0ff">2</text>
+            <text x="335" y="80" fill="#ffffff"> - </text>
+            <text x="370" y="80" fill="#79c0ff">8</text>
+            <text x="385" y="80" fill="#ffffff">*x + </text>
+            <text x="440" y="80" fill="#79c0ff">3</text>
+
+            <!-- 1st derivative -->
+            <text x="0" y="130" fill="#7a828e" font-size="14"># 1차 속도계 미분</text>
+            <text x="0" y="155" fill="#ffffff">f_prime = sp.</text>
+            <text x="140" y="155" fill="#d2a8ff" font-weight="bold">diff</text>
+            <text x="185" y="155" fill="#ffffff">(f, x)</text>
+
+            <!-- 2nd derivative highlighting -->
+            <rect x="-10" y="180" width="670" height="40" fill="#331122" stroke="#ff0055" stroke-width="2" />
+            <text x="0" y="200" fill="#7a828e" font-size="14"># 2차 중력/곡률 스캔 버스트 어택 (파라미터 숫자 2 추가!)</text>
+            <text x="0" y="206" fill="#ff0055" font-size="20">f_double_prime = sp.</text>
+            <text x="215" y="206" fill="#ffaa00" font-weight="bold" font-size="20" filter="url(#glow)">diff</text>
+            <text x="260" y="206" fill="#ffffff" font-size="20">(f, x, </text>
+            <text x="350" y="206" fill="#ffff00" font-size="24" font-weight="bold" filter="url(#glow)">2</text>
+            <text x="365" y="206" fill="#ffffff" font-size="20">)</text>
+
+            <!-- Find root -->
+            <text x="0" y="255" fill="#7a828e" font-size="14"># 변곡점 IP 찾기: f''(x) = 0 가 되는 x 해킹</text>
+            <text x="0" y="280" fill="#ffffff">roots = sp.</text>
+            <text x="120" y="280" fill="#d2a8ff">solve</text>
+            <text x="175" y="280" fill="#ffffff">(f_double_prime, x)</text>
+            <text x="0" y="305" fill="#ffffff">print(roots)</text>
+        </g>
+
+        <!-- Result popup -->
+        <rect x="520" y="210" width="130" height="60" rx="10" fill="#2a0008" stroke="#ff0055" stroke-width="2" />
+        <text x="585" y="235" fill="#ffffff" font-family="monospace" font-size="16" text-anchor="middle">Output:</text>
+        <text x="585" y="260" fill="#00ffcc" font-family="monospace" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">[ 1, 2 ]</text>
+
+        <path d="M 450 280 L 510 260" stroke="#ff0055" stroke-width="4" marker-end="url(#arrow_ai)" />
+    </g>
+
+    <defs>
+        <marker id="arrow_ai" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ff0055" />
+        </marker>
+    </defs>
+
+    <rect x="100" y="520" width="700" height="50" rx="10" fill="#0f0f15" stroke="#ffaa00" stroke-width="2" />
+    <text x="450" y="550" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        파이썬은 <tspan fill="#ffaa00" font-weight="bold">sp.diff(함수, 기준변수, 반복횟수)</tspan> 로 중첩 미분까지 단 한 줄에 컴파일 지원합니다.
+    </text>
+</svg>

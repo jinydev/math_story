@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#00ffcc" />
+        </marker>
+    </defs>
+
+    <text x="400" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">수열의 기초 규칙 (규칙찾기)</text>
+
+    <!-- Number Line / Sequence Boxes -->
+    <g transform="translate(100, 150)">
+
+        <!-- Box 1 -->
+        <rect x="0" y="0" width="80" height="80" rx="15" fill="#2b1111" stroke="#ff4d4d" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="40" y="50" fill="#ff4d4d" font-family="monospace" font-size="40" font-weight="bold"
+            text-anchor="middle">1</text>
+        <text x="40" y="110" fill="#aaaaaa" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">제 1항 (a₁)</text>
+
+        <!-- Arrow 1 to 2 -->
+        <path d="M 90 20 Q 140 -30 190 20" fill="none" stroke="#00ffcc" stroke-width="4" stroke-dasharray="8"
+            marker-end="url(#arrow)" />
+        <rect x="110" y="-35" width="60" height="30" rx="5" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+        <text x="140" y="-12" fill="#00ffcc" font-family="monospace" font-size="22" font-weight="bold"
+            text-anchor="middle">+ 2</text>
+
+        <!-- Box 2 -->
+        <rect x="200" y="0" width="80" height="80" rx="15" fill="#2b1111" stroke="#ff4d4d" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="240" y="50" fill="#ff4d4d" font-family="monospace" font-size="40" font-weight="bold"
+            text-anchor="middle">3</text>
+        <text x="240" y="110" fill="#aaaaaa" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">제 2항 (a₂)</text>
+
+        <!-- Arrow 2 to 3 -->
+        <path d="M 290 20 Q 340 -30 390 20" fill="none" stroke="#00ffcc" stroke-width="4" stroke-dasharray="8"
+            marker-end="url(#arrow)" />
+        <rect x="310" y="-35" width="60" height="30" rx="5" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+        <text x="340" y="-12" fill="#00ffcc" font-family="monospace" font-size="22" font-weight="bold"
+            text-anchor="middle">+ 2</text>
+
+        <!-- Box 3 -->
+        <rect x="400" y="0" width="80" height="80" rx="15" fill="#2b1111" stroke="#ff4d4d" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="440" y="50" fill="#ff4d4d" font-family="monospace" font-size="40" font-weight="bold"
+            text-anchor="middle">5</text>
+        <text x="440" y="110" fill="#aaaaaa" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">제 3항 (a₃)</text>
+
+        <!-- Arrow 3 to 4 -->
+        <path d="M 490 20 Q 540 -30 590 20" fill="none" stroke="#00ffcc" stroke-width="4" stroke-dasharray="8"
+            marker-end="url(#arrow)" />
+        <rect x="510" y="-35" width="60" height="30" rx="5" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+        <text x="540" y="-12" fill="#00ffcc" font-family="monospace" font-size="22" font-weight="bold"
+            text-anchor="middle">+ 2</text>
+
+        <!-- Box 4 -->
+        <rect x="600" y="0" width="80" height="80" rx="15" fill="#2b1111" stroke="#ff4d4d" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="640" y="50" fill="#ff4d4d" font-family="monospace" font-size="40" font-weight="bold"
+            text-anchor="middle">7</text>
+        <text x="640" y="110" fill="#aaaaaa" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">제 4항 (a₄)</text>
+
+    </g>
+
+    <!-- Explanation Text -->
+    <rect x="250" y="320" width="300" height="50" rx="10" fill="#112233" stroke="#4da6ff" stroke-width="2" />
+    <text x="400" y="352" fill="#ffffff" font-family="sans-serif" font-size="20" text-anchor="middle">다음 숫자로 넘어갈 때마다
+        <tspan fill="#00ffcc" font-weight="bold">+2</tspan> 의 규칙 발견!</text>
+
+</svg>

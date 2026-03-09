@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">분모 강제 스케일링 동기화 (통분 비교법)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"크기가 다른 조각(3/5 vs
+        5/8) 을 최소공배수(LCM=40) 조각으로 쪼개 동일 픽셀로 변환한다."</text>
+
+    <!-- Before Scale: 3/5 vs 5/8 -->
+    <g transform="translate(200, 200)">
+        <text x="0" y="-80" fill="#ff0055" font-weight="bold" font-size="24" text-anchor="middle" filter="url(#glow)">3
+            / 5</text>
+        <rect x="-60" y="-40" width="120" height="200" fill="#222" stroke="#fff" stroke-width="2" />
+        <!-- 5 sections total -->
+        <path d="M -60 0 L 60 0 M -60 40 L 60 40 M -60 80 L 60 80 M -60 120 L 60 120" fill="none" stroke="#555"
+            stroke-width="2" />
+        <!-- 3 sections filled -->
+        <rect x="-60" y="40" width="120" height="120" fill="#ff0055" opacity="0.6" filter="url(#glow)" />
+        <text x="0" y="-50" fill="#fff" font-size="12" text-anchor="middle">5등분 된 거대한 조각덩이</text>
+    </g>
+
+    <!-- Big VS -->
+    <text x="450" y="200" fill="#ffffff" font-family="monospace" font-size="40" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">VS</text>
+    <text x="450" y="240" fill="#ff0000" font-weight="bold" font-size="24" text-anchor="middle">?</text>
+
+    <g transform="translate(700, 200)">
+        <text x="0" y="-80" fill="#0088ff" font-weight="bold" font-size="24" text-anchor="middle" filter="url(#glow)">5
+            / 8</text>
+        <rect x="-60" y="-40" width="120" height="200" fill="#222" stroke="#fff" stroke-width="2" />
+        <!-- 8 sections total -->
+        <path
+            d="M -60 -15 L 60 -15 M -60 10 L 60 10 M -60 35 L 60 35 M -60 60 L 60 60 M -60 85 L 60 85 M -60 110 L 60 110 M -60 135 L 60 135"
+            fill="none" stroke="#555" stroke-width="2" />
+        <!-- 5 sections filled -->
+        <rect x="-60" y="35" width="120" height="125" fill="#0088ff" opacity="0.6" filter="url(#glow)" />
+        <text x="0" y="-50" fill="#fff" font-size="12" text-anchor="middle">8등분 된 조금 더 얇은 조각</text>
+    </g>
+
+    <!-- The magic transformation via LCM -->
+    <!-- Left Side: x 8/8 -->
+    <path d="M 200 370 L 200 420" fill="none" stroke="#ff00cc" stroke-width="3" stroke-dasharray="4 4"
+        marker-end="url(#arrow_d)" />
+    <rect x="130" y="380" width="140" height="25" rx="5" fill="#000" stroke="#ff00cc" />
+    <text x="200" y="398" fill="#ff00cc" font-weight="bold" text-anchor="middle">분모분자 × 8</text>
+
+    <text x="200" y="460" fill="#ff0055" font-family="monospace" font-weight="bold" font-size="32" text-anchor="middle"
+        filter="url(#glow)">24 / 40</text>
+    <text x="200" y="490" fill="#ffaa55" font-weight="bold" font-size="14" text-anchor="middle">(24개의 초미세 픽셀)</text>
+
+    <!-- Right Side: x 5/5 -->
+    <path d="M 700 370 L 700 420" fill="none" stroke="#00ccff" stroke-width="3" stroke-dasharray="4 4"
+        marker-end="url(#arrow_d)" />
+    <rect x="630" y="380" width="140" height="25" rx="5" fill="#000" stroke="#00ccff" />
+    <text x="700" y="398" fill="#00ccff" font-weight="bold" text-anchor="middle">분모분자 × 5</text>
+
+    <text x="700" y="460" fill="#0088ff" font-family="monospace" font-weight="bold" font-size="32" text-anchor="middle"
+        filter="url(#glow)">25 / 40</text>
+    <text x="700" y="490" fill="#55bbff" font-weight="bold" font-size="14" text-anchor="middle">(25개의 초미세 픽셀)</text>
+
+    <defs>
+        <marker id="arrow_d" markerWidth="6" markerHeight="4" refX="3" refY="4" orient="auto" fill="#fff">
+            <polygon points="0 0, 6 0, 3 4" />
+        </marker>
+    </defs>
+
+    <!-- Final Conclusion -->
+    <g transform="translate(450, 460)">
+        <text x="0" y="0" fill="#00ffcc" font-size="40" font-weight="bold" text-anchor="middle"
+            filter="url(#glow)">&lt;</text>
+        <text x="0" y="30" fill="#00ffcc" font-size="16" font-weight="bold" text-anchor="middle">24 조각 패배, 25 조각
+            승리!</text>
+    </g>
+
+    <!-- Concept Warning Box -->
+    <rect x="100" y="520" width="700" height="60" rx="10" fill="#1b1122" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="545" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        분모(자른 조각의 크기) 를 똑같이 맞춘다 (최소공배수 <tspan fill="#00ffcc" font-weight="bold">LCM</tspan>) = <tspan fill="#ff00ff"
+            font-weight="bold">통분</tspan>
+    </text>
+    <text x="450" y="570" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        이제부터는 공평한 배틀! 순수하게 분자(가진 조각의 개수) 값 만으로 승패가 판별된다.
+    </text>
+</svg>

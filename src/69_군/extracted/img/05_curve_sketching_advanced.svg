@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="40" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">심화 증감표: 4가지 레고 블록 파츠 결합 (Curve Sketching)</text>
+
+    <!-- 4 Blocks of concavity combinations -->
+    <g transform="translate(50, 80)">
+
+        <!-- Part 1: ++ -->
+        <g transform="translate(0, 0)">
+            <rect x="0" y="0" width="180" height="250" rx="10" fill="#1b0008" stroke="#ff0055" stroke-width="3" />
+            <rect x="0" y="0" width="180" height="40" fill="#330011"
+                style="border-top-left-radius: 10px; border-top-right-radius: 10px;" />
+            <text x="90" y="27" fill="#ff0055" font-family="sans-serif" font-size="18" font-weight="bold"
+                text-anchor="middle">기믹 1 (+ &amp; +)</text>
+
+            <text x="90" y="70" fill="#ffffff" font-family="monospace" font-size="18" text-anchor="middle">f'(x) > 0
+                (오르막)</text>
+            <text x="90" y="100" fill="#ff0055" font-family="monospace" font-size="18" text-anchor="middle">f''(x) > 0
+                (U자 곡률)</text>
+
+            <!-- Curve Drawing -->
+            <!-- Going up, concave up -->
+            <path d="M 40 220 Q 120 200 140 130" fill="none" stroke="#ff0055" stroke-width="6"
+                marker-end="url(#arrow_r)" filter="url(#glow)" />
+            <text x="90" y="240" fill="#ff0055" font-family="sans-serif" font-size="14" font-weight="bold"
+                text-anchor="middle">나이키 로고 꼬리형</text>
+        </g>
+
+        <!-- Part 2: +- -->
+        <g transform="translate(205, 0)">
+            <rect x="0" y="0" width="180" height="250" rx="10" fill="#110d1a" stroke="#ffaa00" stroke-width="3" />
+            <rect x="0" y="0" width="180" height="40" fill="#221100"
+                style="border-top-left-radius: 10px; border-top-right-radius: 10px;" />
+            <text x="90" y="27" fill="#ffaa00" font-family="sans-serif" font-size="18" font-weight="bold"
+                text-anchor="middle">기믹 2 (+ &amp; -)</text>
+
+            <text x="90" y="70" fill="#ffffff" font-family="monospace" font-size="18" text-anchor="middle">f'(x) > 0
+                (오르막)</text>
+            <text x="90" y="100" fill="#00ffcc" font-family="monospace" font-size="18" text-anchor="middle">f''(x) &lt;
+                0 (우산 곡률)</text>
+
+            <!-- Curve Drawing -->
+            <!-- Going up, concave down -->
+            <path d="M 40 220 Q 60 150 140 130" fill="none" stroke="#ffaa00" stroke-width="6" marker-end="url(#arrow_o)"
+                filter="url(#glow)" />
+            <text x="90" y="240" fill="#ffaa00" font-family="sans-serif" font-size="14" font-weight="bold"
+                text-anchor="middle">산등성이 올라타기형</text>
+        </g>
+
+        <!-- Part 3: -+ -->
+        <g transform="translate(410, 0)">
+            <rect x="0" y="0" width="180" height="250" rx="10" fill="#001a11" stroke="#27c93f" stroke-width="3" />
+            <rect x="0" y="0" width="180" height="40" fill="#003311"
+                style="border-top-left-radius: 10px; border-top-right-radius: 10px;" />
+            <text x="90" y="27" fill="#27c93f" font-family="sans-serif" font-size="18" font-weight="bold"
+                text-anchor="middle">기믹 3 (- &amp; +)</text>
+
+            <text x="90" y="70" fill="#ffffff" font-family="monospace" font-size="18" text-anchor="middle">f'(x) &lt; 0
+                (내리막)</text>
+            <text x="90" y="100" fill="#ff0055" font-family="monospace" font-size="18" text-anchor="middle">f''(x) > 0
+                (U자 곡률)</text>
+
+            <!-- Curve Drawing -->
+            <!-- Going down, concave up -->
+            <path d="M 40 130 Q 60 200 140 220" fill="none" stroke="#27c93f" stroke-width="6" marker-end="url(#arrow_g)"
+                filter="url(#glow)" />
+            <text x="90" y="240" fill="#27c93f" font-family="sans-serif" font-size="14" font-weight="bold"
+                text-anchor="middle">미끄럼틀 연착륙형</text>
+        </g>
+
+        <!-- Part 4: -- -->
+        <g transform="translate(615, 0)">
+            <rect x="0" y="0" width="180" height="250" rx="10" fill="#001824" stroke="#00ffcc" stroke-width="3" />
+            <rect x="0" y="0" width="180" height="40" fill="#003344"
+                style="border-top-left-radius: 10px; border-top-right-radius: 10px;" />
+            <text x="90" y="27" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+                text-anchor="middle">기믹 4 (- &amp; -)</text>
+
+            <text x="90" y="70" fill="#ffffff" font-family="monospace" font-size="18" text-anchor="middle">f'(x) &lt; 0
+                (내리막)</text>
+            <text x="90" y="100" fill="#00ffcc" font-family="monospace" font-size="18" text-anchor="middle">f''(x) &lt;
+                0 (우산 곡률)</text>
+
+            <!-- Curve Drawing -->
+            <!-- Going down, concave down -->
+            <path d="M 40 130 Q 120 150 140 220" fill="none" stroke="#00ffcc" stroke-width="6"
+                marker-end="url(#arrow_c)" filter="url(#glow)" />
+            <text x="90" y="240" fill="#00ffcc" font-family="sans-serif" font-size="14" font-weight="bold"
+                text-anchor="middle">나락 다이빙형</text>
+        </g>
+    </g>
+
+    <!-- The Combiner Example -->
+    <g transform="translate(100, 360)">
+        <rect x="0" y="0" width="700" height="150" rx="15" fill="#110d1a" stroke="#ffffff" stroke-width="3" />
+        <text x="350" y="30" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">레고 블록 결합 렌더링 방식 시연</text>
+
+        <!-- Connect part 2 and part 3 to show local max -->
+        <!-- Part 2 -->
+        <path d="M 150 120 Q 170 50 250 30" fill="none" stroke="#ffaa00" stroke-width="8" filter="url(#glow)" />
+        <text x="180" y="90" fill="#ffaa00" font-family="sans-serif" font-size="16" font-weight="bold">기믹2 탑재</text>
+
+        <!-- Part 3 -->
+        <path d="M 250 30 Q 330 50 350 120" fill="none" stroke="#00ffcc" stroke-width="8" filter="url(#glow)" />
+        <text x="280" y="90" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold">기믹4 탑재</text>
+
+        <!-- Marker -->
+        <circle cx="250" cy="30" r="10" fill="#ff0055" stroke="#fff" stroke-width="3" />
+        <text x="250" y="70" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">극댓점 앵커</text>
+
+        <!-- Now an inflection point connected to Part 1 -->
+        <!-- From 350, 120 (Part 4 curve going down) to Part 3 -->
+        <path d="M 350 120 Q 370 190 450 210" fill="none" stroke="#27c93f" stroke-width="8" filter="url(#glow)" />
+        <text x="380" y="160" fill="#27c93f" font-family="sans-serif" font-size="16" font-weight="bold">기믹3 탑재</text>
+
+        <path d="M 450 210 Q 530 190 550 120" fill="none" stroke="#ff0055" stroke-width="8" filter="url(#glow)" />
+        <text x="490" y="160" fill="#ff0055" font-family="sans-serif" font-size="16" font-weight="bold">기믹1 탑재</text>
+
+        <circle cx="450" cy="210" r="10" fill="#ffaa00" stroke="#fff" stroke-width="3" />
+        <text x="450" y="240" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">극솟점 앵커</text>
+
+        <circle cx="350" cy="120" r="8" fill="#ffff00" stroke="#fff" stroke-width="2" />
+        <text x="350" y="100" fill="#ffff00" font-family="monospace" font-size="14" text-anchor="middle">IP 변곡점</text>
+    </g>
+
+    <defs>
+        <marker id="arrow_r" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ff0055" />
+        </marker>
+        <marker id="arrow_o" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ffaa00" />
+        </marker>
+        <marker id="arrow_g" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#27c93f" />
+        </marker>
+        <marker id="arrow_c" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#00ffcc" />
+        </marker>
+    </defs>
+
+    <rect x="150" y="530" width="600" height="50" rx="10" fill="#0f0f15" stroke="#ffffff" stroke-width="2" />
+    <text x="450" y="560" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        4가지 방향성 파츠 레고 블록만 적재적소에 비벼 붙이면 모든 지형의 곡률 스킨을 그릴 수 있습니다.
+    </text>
+</svg>

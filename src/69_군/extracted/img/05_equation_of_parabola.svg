@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">가로형 vs 세로형 포물선 방정식 (Equations of Parabola)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"X 자표와 Y 좌표의
+        스왑(Swap) 이 낳은 90도 회전 시뮬레이션"</text>
+
+    <!-- Left: Horizontal Parabola (y^2 = 4px) -->
+    <g transform="translate(150, 150)">
+        <rect x="-50" y="-30" width="300" height="300" rx="10" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+        <text x="100" y="-5" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">1. 가로형 (레이더 안테나형)</text>
+
+        <!-- Axes -->
+        <line x1="20" y1="120" x2="220" y2="120" stroke="#777777" stroke-width="2" marker-end="url(#arrowGray)" />
+        <line x1="80" y1="20" x2="80" y2="220" stroke="#777777" stroke-width="2" marker-end="url(#arrowGray)" />
+        <text x="230" y="125" fill="#777777" font-family="sans-serif" font-size="14">X</text>
+        <text x="75" y="10" fill="#777777" font-family="sans-serif" font-size="14">Y</text>
+
+        <!-- Parabola y^2 = 4px (open right) -->
+        <!-- Let vertex = (80, 120), p = 40. path: x = y^2/(160) + 80 -->
+        <path d="M 210 20 Q 50 120 210 220" fill="none" stroke="#00ffcc" stroke-width="4" filter="url(#glow)" />
+
+        <!-- Focus p=40 -> (120, 120) -->
+        <circle cx="120" cy="120" r="6" fill="#ffff00" filter="url(#glow)" />
+        <text x="120" y="140" fill="#ffff00" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">F (p, 0)</text>
+
+        <!-- Directrix x=-40 -> (40, y) -->
+        <line x1="40" y1="20" x2="40" y2="220" stroke="#ff00ff" stroke-width="2" stroke-dasharray="4 4" />
+        <text x="35" y="60" fill="#ff00ff" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="end"
+            transform="rotate(-90, 35, 60)">x = -p</text>
+
+        <!-- Equation -->
+        <rect x="20" y="240" width="160" height="30" rx="5" fill="#1a1a24" stroke="#00ffcc" stroke-width="2" />
+        <text x="100" y="260" fill="#00ffcc" font-family="monospace" font-size="20" font-weight="bold"
+            text-anchor="middle">y² = 4px</text>
+    </g>
+
+    <!-- Exchange Arrow -->
+    <g transform="translate(450, 270)">
+        <text x="0" y="0" fill="#ffffff" font-family="sans-serif" font-size="30" font-weight="bold"
+            text-anchor="middle">🔄</text>
+        <text x="0" y="30" fill="#aaaaaa" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">X, Y 자리 바꿈</text>
+    </g>
+
+    <!-- Right: Vertical Parabola (x^2 = 4py) -->
+    <g transform="translate(550, 150)">
+        <rect x="-50" y="-30" width="300" height="300" rx="10" fill="#331111" stroke="#ff4d4d" stroke-width="2" />
+        <text x="100" y="-5" fill="#ff4d4d" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">2. 세로형 (분수/포탄형)</text>
+
+        <!-- Axes -->
+        <line x1="20" y1="180" x2="220" y2="180" stroke="#777777" stroke-width="2" marker-end="url(#arrowGray)" />
+        <line x1="120" y1="20" x2="120" y2="220" stroke="#777777" stroke-width="2" marker-end="url(#arrowGray)" />
+        <text x="230" y="185" fill="#777777" font-family="sans-serif" font-size="14">X</text>
+        <text x="115" y="10" fill="#777777" font-family="sans-serif" font-size="14">Y</text>
+
+        <!-- Parabola x^2 = 4py (open up) -->
+        <!-- Let vertex = (120, 180), p=40 -> Focus = (120, 140). path: y = x^2/160 + 180. But going up is negative y on Canvas -> meaning we subtract from 180. -->
+        <path d="M 20 50 Q 120 220 220 50" fill="none" stroke="#ff4d4d" stroke-width="4" filter="url(#glow)" />
+
+        <!-- Focus p=40 -> (120, 140) -->
+        <circle cx="120" cy="140" r="6" fill="#ffff00" filter="url(#glow)" />
+        <text x="150" y="145" fill="#ffff00" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="start">F (0, p)</text>
+
+        <!-- Directrix y=-40 -> (x, 220) -->
+        <line x1="20" y1="220" x2="220" y2="220" stroke="#ff00ff" stroke-width="2" stroke-dasharray="4 4" />
+        <text x="50" y="215" fill="#ff00ff" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">y = -p</text>
+
+        <!-- Equation -->
+        <rect x="20" y="240" width="160" height="30" rx="5" fill="#1a1a24" stroke="#ff4d4d" stroke-width="2" />
+        <text x="100" y="260" fill="#ff4d4d" font-family="monospace" font-size="20" font-weight="bold"
+            text-anchor="middle">x² = 4py</text>
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="520" width="600" height="50" rx="10" fill="#221133" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="545" fill="#ffffff" font-family="sans-serif" font-size="15" text-anchor="middle">우리가 배웠던 이차함수
+        <tspan fill="#00ffcc" font-weight="bold">y = ax²</tspan> 은 사실 <tspan fill="#ff4d4d" font-weight="bold">x² = 4py
+        </tspan> 가 위장 잠입해있던</text>
+    <text x="450" y="565" fill="#ffffff" font-family="sans-serif" font-size="15" text-anchor="middle">동일한 태생의 '초점($p$)
+        포물선' 이었다.</text>
+
+    <defs>
+        <marker id="arrowGray" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#777777" />
+        </marker>
+    </defs>
+</svg>

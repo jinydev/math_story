@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">다중 연발 콤보 시뮬레이션: 연금과 할부금</text>
+
+    <!-- Timeline Base -->
+    <line x1="100" y1="450" x2="800" y2="450" stroke="#555566" stroke-width="4" />
+    <text x="100" y="480" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">1개월차</text>
+    <text x="250" y="480" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">2개월차</text>
+    <text x="400" y="480" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">3개월차</text>
+    <text x="550" y="480" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">...</text>
+    <text x="700" y="480" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">n-1개월</text>
+    <text x="800" y="480" fill="#aaaaaa" font-family="sans-serif" font-size="14" font-weight="bold"
+        text-anchor="middle">만기(n)</text>
+
+    <!-- Annuity Deposits (PMT) -->
+    <rect x="75" y="425" width="50" height="25" fill="#4da6ff" stroke="#ffffff" />
+    <text x="100" y="442" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold"
+        text-anchor="middle">PMT</text>
+
+    <rect x="225" y="425" width="50" height="25" fill="#4da6ff" stroke="#ffffff" />
+    <text x="250" y="442" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold"
+        text-anchor="middle">PMT</text>
+
+    <rect x="375" y="425" width="50" height="25" fill="#4da6ff" stroke="#ffffff" />
+    <text x="400" y="442" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold"
+        text-anchor="middle">PMT</text>
+
+    <rect x="675" y="425" width="50" height="25" fill="#4da6ff" stroke="#ffffff" />
+    <text x="700" y="442" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold"
+        text-anchor="middle">PMT</text>
+
+    <rect x="775" y="425" width="50" height="25" fill="#4da6ff" stroke="#ffffff" />
+    <text x="800" y="442" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold"
+        text-anchor="middle">PMT</text>
+
+    <!-- Future Value Compilation (Snowballing arrows to end) -->
+    <path d="M 100 420 Q 450 100 800 250" fill="none" stroke="#ffaa00" stroke-width="2" stroke-dasharray="5 5"
+        marker-end="url(#arrow)" />
+    <text x="200" y="270" fill="#ffaa00" font-family="sans-serif" font-size="12" text-anchor="middle">가장 큰 스노우볼</text>
+
+    <path d="M 250 420 Q 525 150 800 270" fill="none" stroke="#ffaa00" stroke-width="2" stroke-dasharray="5 5"
+        marker-end="url(#arrow)" />
+
+    <path d="M 400 420 Q 600 200 800 290" fill="none" stroke="#ffaa00" stroke-width="2" stroke-dasharray="5 5"
+        marker-end="url(#arrow)" />
+
+    <path d="M 700 420 Q 750 350 800 310" fill="none" stroke="#ffaa00" stroke-width="2" stroke-dasharray="5 5"
+        marker-end="url(#arrow)" />
+
+    <line x1="800" y1="420" x2="800" y2="340" stroke="#ffaa00" stroke-width="2" stroke-dasharray="5 5"
+        marker-end="url(#arrow)" />
+
+    <!-- Ultimate Vault (S_n) -->
+    <rect x="750" y="150" width="100" height="150" rx="10" fill="#331111" stroke="#ff0055" stroke-width="3"
+        filter="url(#glow)" />
+    <text x="800" y="200" fill="#ff0055" font-family="sans-serif" font-size="28" font-weight="bold"
+        text-anchor="middle">총계</text>
+    <text x="800" y="240" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold"
+        text-anchor="middle">합=S</text>
+
+    <!-- Formula Highlight -->
+    <rect x="150" y="100" width="400" height="100" rx="10" fill="#112233" stroke="#00ffcc" stroke-width="3"
+        filter="url(#glow)" />
+    <text x="350" y="140" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+        text-anchor="middle">수십 번의 개별 이자를 1줄로 병합하는 치트키</text>
+    <text x="350" y="175" fill="#ffffff" font-family="serif" font-size="24" font-weight="bold"
+        text-anchor="middle">등비수열의 합 = a(rⁿ-1) / (r-1)</text>
+
+    <!-- Explanation -->
+    <rect x="150" y="530" width="600" height="50" rx="10" fill="#0f0f15" stroke="#555566" />
+    <text x="450" y="560" fill="#00ffcc" font-family="sans-serif" font-size="16" text-anchor="middle">자동차 할부금 계산도 은행의
+        슈퍼컴퓨터가 이 '합산' 공식을 역산한 결과일 뿐입니다.</text>
+
+</svg>

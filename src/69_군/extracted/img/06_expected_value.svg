@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">불확실성의 렌더링: 기댓값 (Expected Value) 엔진의 경고</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"화려한 1만 원 상금의 뒤편에
+        숨은 진실. 확률(%) 을 곱하고 덧셈(Σ) 하는 순간 사기극이 드러난다!"</text>
+
+    <!-- Left: The Casino's Trap (Seductive Illusion) -->
+    <g transform="translate(100, 150)">
+        <rect x="-20" y="-20" width="300" height="250" rx="15" fill="#1b0000" stroke="#ff00ff" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="130" y="15" fill="#ff00ff" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">환상(Illusion): 1만 점 잭팟 배너</text>
+
+        <!-- Big shiny prize -->
+        <rect x="30" y="40" width="200" height="60" rx="10" fill="#330033" stroke="#ffff00" stroke-width="2" />
+        <text x="130" y="65" fill="#ffff00" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">👑 10,000 P</text>
+        <text x="130" y="85" fill="#aaaaaa" font-family="sans-serif" font-size="12" text-anchor="middle">"10%의 기적을
+            노려라!"</text>
+
+        <!-- Medium prize -->
+        <rect x="30" y="110" width="200" height="40" rx="5" fill="#221111" stroke="#ffaa00" stroke-width="1" />
+        <text x="130" y="130" fill="#ffaa00" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">🥈 1,000 P</text>
+        <text x="130" y="145" fill="#aaaaaa" font-family="sans-serif" font-size="10" text-anchor="middle">확률 30%</text>
+
+        <!-- Losing -->
+        <text x="130" y="190" fill="#ff5555" font-family="monospace" font-size="16" font-weight="bold"
+            text-anchor="middle">💀 꽝 (0 P): 숨겨진 60%</text>
+
+        <!-- Entrance fee -->
+        <rect x="65" y="210" width="130" height="30" rx="5" fill="#000" stroke="#ff5555" />
+        <text x="130" y="230" fill="#ff5555" font-family="monospace" font-size="14" font-weight="bold"
+            text-anchor="middle">입장료: 2,000 P</text>
+    </g>
+
+    <!-- Middle: Zip & Sum Calculation System -->
+    <g transform="translate(430, 240)">
+        <path d="M 0 -20 L 40 0 L 0 20 Z" fill="#4da6ff" filter="url(#glow)" />
+        <text x="20" y="45" fill="#4da6ff" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">E(x) 연산</text>
+    </g>
+
+    <!-- Right: Mathematical Truth (Expected Value) -->
+    <g transform="translate(520, 150)">
+        <rect x="-20" y="-20" width="340" height="250" rx="15" fill="#001a11" stroke="#00ffcc" stroke-width="3" />
+        <text x="150" y="15" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">진실(Fact): 기댓값 스캐너 렌더링</text>
+
+        <!-- Calc 1 -->
+        <text x="10" y="60" fill="#ffff00" font-family="monospace" font-size="16" font-weight="bold">10,000 P</text>
+        <text x="110" y="60" fill="#ffffff" font-family="monospace" font-size="14">x 0.1 (10%)</text>
+        <text x="220" y="60" fill="#00ffcc" font-family="monospace" font-size="16" font-weight="bold">= 1,000</text>
+
+        <!-- Calc 2 -->
+        <text x="10" y="100" fill="#ffaa00" font-family="monospace" font-size="16" font-weight="bold">1,000 P</text>
+        <text x="110" y="100" fill="#ffffff" font-family="monospace" font-size="14">x 0.3 (30%)</text>
+        <text x="220" y="100" fill="#00ffcc" font-family="monospace" font-size="16" font-weight="bold">= 300</text>
+
+        <!-- Calc 3 -->
+        <text x="10" y="140" fill="#ff5555" font-family="monospace" font-size="16" font-weight="bold">0 P</text>
+        <text x="110" y="140" fill="#ffffff" font-family="monospace" font-size="14">x 0.6 (60%)</text>
+        <text x="220" y="140" fill="#00ffcc" font-family="monospace" font-size="16" font-weight="bold">= 0</text>
+
+        <!-- Plus line -->
+        <line x1="200" y1="160" x2="300" y2="160" stroke="#fff" stroke-width="2" />
+        <text x="180" y="185" fill="#4da6ff" font-family="monospace" font-size="20" font-weight="bold">+</text>
+
+        <!-- Result -->
+        <rect x="210" y="170" width="80" height="30" fill="#003322" stroke="#00ffcc" />
+        <text x="250" y="190" fill="#00ffcc" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">1,300 P</text>
+
+        <!-- Hackers Note -->
+        <text x="150" y="230" fill="#ff5555" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">결론: 입장료 2,000원 대비 무조건 700원 손해보는 구조!</text>
+    </g>
+
+    <!-- Big Alert Bottom -->
+    <rect x="100" y="460" width="700" height="80" rx="10" fill="#1b1122" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="490" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        도박장과 복권 비즈니스는 언제나 <tspan fill="#ff00ff" font-weight="bold">기댓값보다 입장권(판돈) 을 비싸게 파는 수학적 해킹</tspan> 에 불과합니다.
+    </text>
+    <text x="450" y="520" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        "나한테 1만 원이 당첨될 수 있잖아!" 란 개인의 망상은 <tspan fill="#00ffcc" font-weight="bold">무한히 반복되는 기댓값의 거대한 법칙</tspan> 앞에서
+        무너집니다.
+    </text>
+</svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+
+        <linearGradient id="coneGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#112244" />
+            <stop offset="50%" stop-color="#336699" />
+            <stop offset="100%" stop-color="#112244" />
+        </linearGradient>
+
+        <!-- Reusable Cone Outline -->
+        <g id="cone">
+            <path d="M 0 -80 L -60 100 Q 0 120 60 100 Z" fill="url(#coneGrad)" stroke="#4da6ff" stroke-width="2"
+                opacity="0.6" />
+            <path d="M -60 100 Q 0 80 60 100" fill="none" stroke="#4da6ff" stroke-width="2" opacity="0.4" />
+        </g>
+
+        <!-- Double Cone for Hyperbola -->
+        <g id="doubleCone">
+            <!-- Bottom Cone -->
+            <path d="M 0 0 L -60 180 Q 0 200 60 180 Z" fill="url(#coneGrad)" stroke="#4da6ff" stroke-width="2"
+                opacity="0.6" />
+            <path d="M -60 180 Q 0 160 60 180" fill="none" stroke="#4da6ff" stroke-width="2" opacity="0.4" />
+            <!-- Top Cone (Inverted) -->
+            <path d="M 0 0 L -60 -180 Q 0 -200 60 -180 Z" fill="url(#coneGrad)" stroke="#4da6ff" stroke-width="2"
+                opacity="0.6" />
+            <path d="M -60 -180 Q 0 -160 60 -180" fill="none" stroke="#4da6ff" stroke-width="2" opacity="0.4" />
+        </g>
+    </defs>
+
+    <text x="500" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">이차곡선: 원뿔 단면 (Conic Sections)</text>
+
+    <!-- 1. Circle -->
+    <g transform="translate(150, 220)">
+        <use href="#cone" />
+        <!-- Cutting Plane (Horizontal) -->
+        <polygon points="-50,-10 50,-10 30,30 -70,30" fill="#ff4d4d" opacity="0.4" stroke="#ffffff" stroke-width="1" />
+        <!-- Cut Surface (Circle) -->
+        <ellipse cx="0" cy="10" rx="33" ry="12" fill="none" stroke="#ffaa00" stroke-width="4" filter="url(#glow)" />
+
+        <text x="0" y="160" fill="#ffffff" font-family="sans-serif" font-size="22" font-weight="bold"
+            text-anchor="middle">1. 원 (Circle)</text>
+        <text x="0" y="185" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">바닥과 평행하게
+            절단</text>
+    </g>
+
+    <!-- 2. Ellipse -->
+    <g transform="translate(380, 220)">
+        <use href="#cone" />
+        <!-- Cutting Plane (Tilted) -->
+        <polygon points="-50,-30 40,20 20,60 -70,10" fill="#ff4d4d" opacity="0.4" stroke="#ffffff" stroke-width="1" />
+        <!-- Cut Surface (Ellipse) -->
+        <!-- Approximated via rotated ellipse -->
+        <ellipse cx="-5" cy="15" rx="35" ry="15" transform="rotate(30 -5 15)" fill="none" stroke="#00ffcc"
+            stroke-width="4" filter="url(#glow)" />
+
+        <text x="0" y="160" fill="#ffffff" font-family="sans-serif" font-size="22" font-weight="bold"
+            text-anchor="middle">2. 타원 (Ellipse)</text>
+        <text x="0" y="185" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">비스듬하게 비틀어
+            절단</text>
+    </g>
+
+    <!-- 3. Parabola -->
+    <g transform="translate(610, 220)">
+        <use href="#cone" />
+        <!-- Cutting Plane (Parallel to slope) -->
+        <polygon points="10,-80 80,-30 -30,120 -80,50" fill="#ff4d4d" opacity="0.4" stroke="#ffffff" stroke-width="1" />
+        <!-- Parabola Arch -->
+        <path d="M 20 -20 Q -40 80 -40 100 Q 0 115 50 100 Q -10 30 20 -20" fill="none" stroke="#ff00ff" stroke-width="4"
+            filter="url(#glow)" />
+
+        <text x="0" y="160" fill="#ffffff" font-family="sans-serif" font-size="22" font-weight="bold"
+            text-anchor="middle">3. 포물선 (Parabola)</text>
+        <text x="0" y="185" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">모선(빗변)과 평행하게
+            절단</text>
+    </g>
+
+    <!-- 4. Hyperbola -->
+    <g transform="translate(850, 220)">
+        <!-- Smaller scaled double cone to fit -->
+        <g transform="scale(0.5)">
+            <use href="#doubleCone" />
+            <!-- Vertical Cutting Plane -->
+            <polygon points="20,-200 60,-180 60,180 20,200" fill="#ff4d4d" opacity="0.4" stroke="#ffffff"
+                stroke-width="2" />
+            <!-- Two Hyperbola Curves -->
+            <path d="M 12 -160 Q 50 -100 50 -50 Q 50 -30 20 -15" fill="none" stroke="#00ffcc" stroke-width="6"
+                filter="url(#glow)" />
+            <path d="M 12 160 Q 50 100 50 50 Q 50 30 20 15" fill="none" stroke="#00ffcc" stroke-width="6"
+                filter="url(#glow)" />
+        </g>
+
+        <text x="0" y="160" fill="#ffffff" font-family="sans-serif" font-size="22" font-weight="bold"
+            text-anchor="middle">4. 쌍곡선 (Hyperbola)</text>
+        <text x="0" y="185" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">위아래 수직으로
+            절단</text>
+    </g>
+
+</svg>

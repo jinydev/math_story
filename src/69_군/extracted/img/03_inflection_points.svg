@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">등껍질 반전 스위치! 변곡점 (Inflection Point)</text>
+
+    <g transform="translate(100, 150)">
+
+        <!-- Background axes/grid -->
+        <line x1="0" y1="350" x2="700" y2="350" stroke="#334455" stroke-width="2" />
+        <line x1="50" y1="400" x2="50" y2="0" stroke="#334455" stroke-width="2" />
+
+        <!-- Curve segments -->
+        <!-- First half: Concave DOWN (U upside down) -->
+        <!-- Starts low, goes up, curves right -->
+        <path d="M 50 300 Q 200 50 350 200" fill="none" stroke="#00ffcc" stroke-width="8" filter="url(#glow)" />
+
+        <!-- Second half: Concave UP (U shape) -->
+        <!-- Starts from middle, goes down, curves up -->
+        <path d="M 350 200 Q 500 350 650 100" fill="none" stroke="#ff0055" stroke-width="8" filter="url(#glow)" />
+
+        <!-- Labels for Concavity -->
+        <text x="200" y="100" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">위로 볼록 (엎어진 우산)</text>
+        <text x="200" y="130" fill="#00ffcc" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">f''(x) &lt; 0</text>
+
+        <text x="520" y="300" fill="#ff0055" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">아래로 볼록 (U자 그릇)</text>
+        <text x="520" y="330" fill="#ff0055" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">f''(x) > 0</text>
+
+        <!-- The Inflection Point! -->
+        <circle cx="350" cy="200" r="12" fill="#ffff00" stroke="#fff" stroke-width="4" filter="url(#glow)" />
+
+        <!-- Laser Target Graphic at IP -->
+        <line x1="280" y1="200" x2="330" y2="200" stroke="#ffffff" stroke-width="2" />
+        <line x1="370" y1="200" x2="420" y2="200" stroke="#ffffff" stroke-width="2" />
+        <line x1="350" y1="130" x2="350" y2="180" stroke="#ffffff" stroke-width="2" />
+        <line x1="350" y1="220" x2="350" y2="270" stroke="#ffffff" stroke-width="2" />
+        <circle cx="350" cy="200" r="25" fill="none" stroke="#ffffff" stroke-dasharray="4 4" stroke-width="2"
+            filter="url(#glow)" />
+
+        <rect x="250" y="40" width="200" height="60" rx="10" fill="#2a2200" stroke="#ffff00" stroke-width="3" />
+        <text x="350" y="70" fill="#ffff00" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">변곡점 스팟 (IP)</text>
+        <text x="350" y="90" fill="#ffaa00" font-family="monospace" font-size="16" font-weight="bold"
+            text-anchor="middle">f''(x) = 0</text>
+
+        <!-- Arrow from label to point -->
+        <path d="M 350 100 L 350 165" stroke="#ffff00" stroke-width="3" marker-end="url(#arrow_y)" />
+
+    </g>
+
+    <defs>
+        <marker id="arrow_y" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ffff00" />
+        </marker>
+    </defs>
+
+    <!-- Mathematical explanation box -->
+    <rect x="100" y="520" width="700" height="50" rx="10" fill="#0f0f15" stroke="#ffff00" stroke-width="2" />
+    <text x="450" y="550" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        2차 가속도 센서가 <tspan fill="#ffff00" font-weight="bold">0을 밟고 부호가 180도 역전될 때</tspan> 롤러코스터 레일의 오목/볼록 부품이 전환결합됩니다.
+    </text>
+</svg>

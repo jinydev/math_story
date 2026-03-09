@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">도함수의 지형 탐색 시스템: 증가(+) 와 감소(-)</text>
+
+    <!-- Curve background grid -->
+    <g transform="translate(100, 150)">
+        <!-- X/Y Axes -->
+        <line x1="0" y1="350" x2="750" y2="350" stroke="#334455" stroke-width="2" />
+        <line x1="50" y1="400" x2="50" y2="0" stroke="#334455" stroke-width="2" />
+
+        <!-- The Function Curve f(x) -->
+        <!-- Goes up (increasing), reaches peak, goes down (decreasing), reaches valley, goes up -->
+        <path d="M 50 300 C 200 50, 250 150, 400 150 S 550 300, 700 100" fill="none" stroke="#4da6ff" stroke-width="6"
+            filter="url(#glow)" />
+
+        <!-- Increasing Section 1 (Red arrows up) -->
+        <!-- Point 1 -->
+        <circle cx="120" cy="225" r="8" fill="#ff0055" stroke="#fff" stroke-width="2" />
+        <line x1="80" y1="305" x2="160" y2="145" stroke="#ff0055" stroke-width="4" filter="url(#glow)" />
+        <polygon points="160,145 150,155 160,165" fill="#ff0055" transform="rotate(-63, 160, 145)" />
+
+        <!-- Tag -->
+        <rect x="50" y="80" width="130" height="40" rx="5" fill="#550022" stroke="#ff0055" />
+        <text x="115" y="105" fill="#ff0055" font-family="monospace" font-size="16" font-weight="bold"
+            text-anchor="middle">f'(x) > 0 (증가)</text>
+
+        <!-- The Summit (Slope 0) -->
+        <circle cx="270" cy="115" r="8" fill="#ffff00" stroke="#fff" stroke-width="2" />
+        <line x1="200" y1="115" x2="340" y2="115" stroke="#ffff00" stroke-width="4" stroke-dasharray="8 4"
+            filter="url(#glow)" />
+
+        <rect x="230" y="60" width="100" height="40" rx="5" fill="#555500" stroke="#ffff00" />
+        <text x="280" y="85" fill="#ffff00" font-family="monospace" font-size="16" font-weight="bold"
+            text-anchor="middle">f'(x) = 0</text>
+
+        <!-- Decreasing Section (Blue arrows down) -->
+        <!-- Point 2 -->
+        <circle cx="430" cy="180" r="8" fill="#00ffcc" stroke="#fff" stroke-width="2" />
+        <line x1="370" y1="120" x2="490" y2="240" stroke="#00ffcc" stroke-width="4" filter="url(#glow)" />
+        <polygon points="490,240 480,230 490,220" fill="#00ffcc" transform="rotate(45, 490, 240)" />
+
+        <!-- Tag -->
+        <rect x="365" y="270" width="130" height="40" rx="5" fill="#003322" stroke="#00ffcc" />
+        <text x="430" y="295" fill="#00ffcc" font-family="monospace" font-size="16" font-weight="bold"
+            text-anchor="middle">f'(x) < 0 (감소)</text>
+
+                <!-- Valley (Slope 0) -->
+                <circle cx="530" cy="250" r="8" fill="#ffff00" stroke="#fff" stroke-width="2" />
+                <line x1="460" y1="250" x2="600" y2="250" stroke="#ffff00" stroke-width="4" stroke-dasharray="8 4"
+                    filter="url(#glow)" />
+
+                <!-- Increasing Section 2 (Red arrows up) -->
+                <circle cx="630" cy="190" r="8" fill="#ff0055" stroke="#fff" stroke-width="2" />
+                <line x1="580" y1="260" x2="680" y2="120" stroke="#ff0055" stroke-width="4" filter="url(#glow)" />
+
+                <!-- Tag -->
+                <rect x="600" y="70" width="130" height="40" rx="5" fill="#550022" stroke="#ff0055" />
+                <text x="665" y="95" fill="#ff0055" font-family="monospace" font-size="16" font-weight="bold"
+                    text-anchor="middle">f'(x) > 0 (증가)</text>
+    </g>
+
+    <!-- Explanation Footer -->
+    <rect x="150" y="520" width="600" height="60" rx="10" fill="#0f0f15" stroke="#ff0055" stroke-width="2" />
+    <text x="450" y="555" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        도함수의 부호가 <tspan fill="#ff0055" font-weight="bold">양수(+)</tspan>면 오르막 엔진, <tspan fill="#00ffcc"
+            font-weight="bold">음수(-)</tspan>면 내리막 낭떠러지를 의미합니다.
+    </text>
+</svg>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">거리의 마법: 표준편차 (Standard Deviation)</text>
+
+    <!-- Title Description -->
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"수학자들의 해킹: (-)거리를
+        죽이기 위해 전부 제곱하고 분산시킨 뒤 다시 루트로 깐다!"</text>
+
+    <!-- Visual Workflow -->
+    <g transform="translate(150, 150)">
+
+        <!-- Step 1: Base Line and Deviations -->
+        <line x1="0" y1="0" x2="600" y2="0" stroke="#777777" stroke-width="2" />
+
+        <!-- Mean Line -->
+        <line x1="300" y1="-50" x2="300" y2="50" stroke="#ffaa00" stroke-width="3" stroke-dasharray="6 4"
+            filter="url(#glow)" />
+        <text x="300" y="-60" fill="#ffaa00" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">평균 점수(Mean)</text>
+
+        <!-- Data point 1 (-) -->
+        <circle cx="100" cy="0" r="8" fill="#ff4d4d" />
+        <text x="100" y="25" fill="#ff4d4d" font-family="monospace" font-size="14" text-anchor="middle">A학생</text>
+        <!-- Arrow from Mean to A -->
+        <path d="M 300 -20 Q 200 -50 100 -20" fill="none" stroke="#ff4d4d" stroke-width="2"
+            marker-end="url(#arrowRed)" />
+        <text x="180" y="-40" fill="#ff4d4d" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">편차: -20점</text>
+
+        <!-- Data point 2 (+) -->
+        <circle cx="500" cy="0" r="8" fill="#00ffcc" />
+        <text x="500" y="25" fill="#00ffcc" font-family="monospace" font-size="14" text-anchor="middle">B학생</text>
+        <!-- Arrow from Mean to B -->
+        <path d="M 300 20 Q 400 50 500 20" fill="none" stroke="#00ffcc" stroke-width="2" marker-end="url(#arrowCyan)" />
+        <text x="420" y="55" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">편차: +20점</text>
+
+        <text x="300" y="80" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">"그냥 합치면 -20 +
+            20 = 0 (거리가 증발해버림!)"</text>
+    </g>
+
+    <!-- Arrow down -->
+    <text x="450" y="270" fill="#ffffff" font-family="sans-serif" font-size="40" font-weight="bold"
+        text-anchor="middle">⬇</text>
+
+    <!-- Step 2: Variance and Standard Deviation -->
+    <g transform="translate(100, 310)">
+
+        <!-- Variance Panel -->
+        <rect x="0" y="0" width="300" height="150" rx="10" fill="#331111" stroke="#ff4d4d" stroke-width="2" />
+        <text x="150" y="30" fill="#ff4d4d" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">1. 분산 (Variance)</text>
+        <text x="150" y="60" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">마이너스를 모두 암살하기
+            위해</text>
+        <text x="150" y="80" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">편차를 <tspan
+                fill="#ffaa00" font-weight="bold">강제 제곱(²)</tspan></text>
+        <text x="150" y="110" fill="#ff4d4d" font-family="monospace" font-size="24" text-anchor="middle">-20² =
+            +400</text>
+        <text x="150" y="135" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">(숫자가 점수 단위를
+            벗어나 뻥튀기됨)</text>
+
+        <!-- Arrow Right -->
+        <text x="350" y="80" fill="#ffffff" font-family="sans-serif" font-size="40" font-weight="bold"
+            text-anchor="middle">➡</text>
+
+        <!-- STD DEV Panel -->
+        <rect x="400" y="0" width="300" height="150" rx="10" fill="#113322" stroke="#00ffcc" stroke-width="2" />
+        <text x="550" y="30" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">2. 표준편차 (Std Dev)</text>
+        <text x="550" y="60" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">뻥튀기된 분산에 다시
+            <tspan fill="#00ffcc" font-weight="bold">루트(√)</tspan>를</text>
+        <text x="550" y="80" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">씌워 껍질을 까고 크기를
+            현실 롤백!</text>
+        <text x="550" y="110" fill="#00ffcc" font-family="monospace" font-size="26" font-weight="bold"
+            text-anchor="middle">√400 = 20점</text>
+        <text x="550" y="135" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">(진정한 "평균 도망
+            거리" 획득!)</text>
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="520" width="600" height="50" rx="10" fill="#112233" stroke="#4da6ff" stroke-width="2" />
+    <text x="450" y="550" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">파이썬의 마법 지팡이:
+        <tspan fill="#4da6ff" font-weight="bold">statistics.pstdev()</tspan> 하나면 모든 과정 자동 산출!</text>
+
+    <defs>
+        <marker id="arrowRed" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff4d4d" />
+        </marker>
+        <marker id="arrowCyan" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#00ffcc" />
+        </marker>
+    </defs>
+</svg>

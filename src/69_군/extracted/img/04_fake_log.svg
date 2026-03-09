@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">가짜 로그를 걸러내는 보안 검색대</text>
+
+    <!-- Left: Security Gate -->
+    <g transform="translate(150, 300)">
+        <!-- Gate structure -->
+        <rect x="-80" y="-200" width="160" height="350" rx="10" fill="#112233" stroke="#4da6ff" stroke-width="4" />
+        <rect x="-60" y="-180" width="120" height="40" rx="5" fill="#223344" stroke="#4da6ff" />
+        <text x="0" y="-155" fill="#4da6ff" font-family="monospace" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">LOG CHECK</text>
+
+        <!-- Scan Beam -->
+        <path d="M -60 -130 L 60 -130 L 100 150 L -100 150 Z" fill="#4da6ff" opacity="0.15" />
+        <line x1="-80" y1="-20" x2="80" y2="-20" stroke="#00ffcc" stroke-width="3" stroke-dasharray="10 5"
+            filter="url(#glow)" />
+    </g>
+
+    <!-- Formula format -->
+    <text x="150" y="470" fill="#ffffff" font-family="monospace" font-size="28" font-weight="bold"
+        text-anchor="middle">log<tspan fill="#ff4d4d" font-size="20" dy="10">a </tspan>
+        <tspan fill="#ffaa00" dy="-10">N</tspan>
+    </text>
+
+
+    <!-- Middle Area: Rules -->
+    <g transform="translate(450, 250)">
+        <rect x="-120" y="-150" width="240" height="280" rx="15" fill="#222233" stroke="#ffaa00" stroke-width="3" />
+
+        <text x="0" y="-110" fill="#ffaa00" font-family="sans-serif" font-size="22" font-weight="bold"
+            text-anchor="middle">통과 조건 (Pass)</text>
+
+        <!-- Rule 1: Base a -->
+        <rect x="-100" y="-70" width="200" height="60" rx="5" fill="#111122" stroke="#ff4d4d" stroke-width="2" />
+        <text x="-80" y="-50" fill="#ff4d4d" font-family="sans-serif" font-size="16" font-weight="bold">심사대상: 밑
+            (a)</text>
+        <text x="-80" y="-25" fill="#ffffff" font-family="monospace" font-size="20" font-weight="bold">a &gt; 0, a ≠
+            1</text>
+
+        <!-- Rule 2: True number N -->
+        <rect x="-100" y="10" width="200" height="60" rx="5" fill="#111122" stroke="#ffaa00" stroke-width="2" />
+        <text x="-80" y="30" fill="#ffaa00" font-family="sans-serif" font-size="16" font-weight="bold">심사대상: 진수
+            (N)</text>
+        <text x="-80" y="55" fill="#ffffff" font-family="monospace" font-size="20" font-weight="bold">N &gt; 0</text>
+
+        <!-- Error icon -->
+        <text x="0" y="110" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">위반 시 ValueError
+            발생!</text>
+    </g>
+
+    <!-- Right: Examples (Fail/Pass) -->
+    <g transform="translate(750, 250)">
+
+        <!-- Fail 1 -->
+        <rect x="-120" y="-150" width="240" height="60" rx="10" fill="#331111" stroke="#ff4d4d" stroke-width="2" />
+        <text x="-100" y="-115" fill="#ffffff" font-family="monospace" font-size="24" font-weight="bold">log<tspan
+                fill="#ff4d4d" font-size="16" dy="5">-2 </tspan>
+            <tspan dy="-5">(8)</tspan>
+        </text>
+        <text x="80" y="-115" fill="#ff4d4d" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle">❌</text>
+        <text x="0" y="-155" fill="#ff4d4d" font-family="sans-serif" font-size="14" text-anchor="middle"
+            font-weight="bold">밑이 음수!</text>
+
+        <!-- Fail 2 -->
+        <rect x="-120" y="-60" width="240" height="60" rx="10" fill="#331111" stroke="#ff4d4d" stroke-width="2" />
+        <text x="-100" y="-25" fill="#ffffff" font-family="monospace" font-size="24" font-weight="bold">log<tspan
+                fill="#ff4d4d" font-size="16" dy="5">1 </tspan>
+            <tspan fill="#ffaa00" dy="-5">(10)</tspan>
+        </text>
+        <text x="80" y="-25" fill="#ff4d4d" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle">❌</text>
+        <text x="0" y="-65" fill="#ff4d4d" font-family="sans-serif" font-size="14" text-anchor="middle"
+            font-weight="bold">밑은 1 금지!</text>
+
+        <!-- Fail 3 -->
+        <rect x="-120" y="30" width="240" height="60" rx="10" fill="#331111" stroke="#ff4d4d" stroke-width="2" />
+        <text x="-100" y="65" fill="#ffffff" font-family="monospace" font-size="24" font-weight="bold">log<tspan
+                fill="#ff4d4d" font-size="16" dy="5">3 </tspan>
+            <tspan fill="#ffaa00" dy="-5">(-5)</tspan>
+        </text>
+        <text x="80" y="65" fill="#ff4d4d" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle">❌</text>
+        <text x="0" y="25" fill="#ff4d4d" font-family="sans-serif" font-size="14" text-anchor="middle"
+            font-weight="bold">진수가 음수!</text>
+
+        <!-- Pass -->
+        <rect x="-120" y="120" width="240" height="60" rx="10" fill="#113322" stroke="#00ffcc" stroke-width="2" />
+        <text x="-100" y="155" fill="#ffffff" font-family="monospace" font-size="24" font-weight="bold">log<tspan
+                fill="#ff4d4d" font-size="16" dy="5">3 </tspan>
+            <tspan fill="#ffaa00" dy="-5">(9)</tspan>
+        </text>
+        <text x="80" y="155" fill="#00ffcc" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle">⭕</text>
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="500" width="600" height="60" rx="10" fill="#112233" stroke="#ff4d4d" stroke-width="2" />
+    <text x="450" y="525" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">숫자 포맷이 맞지 않는
+        <tspan fill="#ff4d4d" font-weight="bold">가짜 로그 연산</tspan>을 시도하면</text>
+    <text x="450" y="550" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">파이썬은 즉시 <tspan
+            fill="#ffaa00" font-weight="bold">Math Domain Error</tspan> 를 터뜨리며 시스템을 방어한다!</text>
+
+</svg>

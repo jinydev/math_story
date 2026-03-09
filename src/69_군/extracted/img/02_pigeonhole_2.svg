@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">클라우드 병목 트랩: 일반화된 비둘기집 올림(Ceiling) 연산</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"공평하게 나눈 정수 뒤에 남은
+        '나머지(Remainder)' 1개는, 반드시 누군가의 천장(Ceiling) 을 박살낸다."</text>
+
+    <!-- Servers Container -->
+    <g transform="translate(100, 150)">
+
+        <!-- Top Source (Traffic) -->
+        <rect x="250" y="-30" width="200" height="60" rx="10" fill="#001133" stroke="#4da6ff" stroke-width="3" />
+        <text x="350" y="0" fill="#4da6ff" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">총 트래픽 (M = 7)</text>
+        <text x="350" y="20" fill="#ffffff" font-family="monospace" font-size="16" text-anchor="middle">1 2 3 4 5 6 |
+            <tspan fill="#ff5555" font-weight="bold">7</tspan></text>
+
+        <!-- Load Balancer Distributing -->
+        <path d="M 350 40 L 150 100" fill="none" stroke="#4da6ff" stroke-width="2" stroke-dasharray="5 5"
+            marker-end="url(#arrow_b)" />
+        <path d="M 350 40 L 350 100" fill="none" stroke="#4da6ff" stroke-width="2" stroke-dasharray="5 5"
+            marker-end="url(#arrow_b)" />
+        <path d="M 350 40 L 550 100" fill="none" stroke="#4da6ff" stroke-width="2" stroke-dasharray="5 5"
+            marker-end="url(#arrow_b)" />
+        <path d="M 350 40 Q 550 70 550 100" fill="none" stroke="#ff5555" stroke-width="4" marker-end="url(#arrow_r)"
+            filter="url(#glow)" />
+
+        <defs>
+            <marker id="arrow_b" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+                <polygon points="0 0, 8 3, 0 6" fill="#4da6ff" />
+            </marker>
+            <marker id="arrow_r" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+                <polygon points="0 0, 8 3, 0 6" fill="#ff5555" />
+            </marker>
+        </defs>
+
+        <!-- Server 1 -->
+        <rect x="50" y="120" width="160" height="150" rx="10" fill="#002211" stroke="#00ffcc" stroke-width="2" />
+        <text x="130" y="150" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">서버 1</text>
+        <rect x="70" y="170" width="50" height="30" rx="3" fill="#00aa88" />
+        <text x="95" y="190" fill="#fff" font-family="monospace" font-size="14" text-anchor="middle">D1</text>
+        <rect x="130" y="170" width="50" height="30" rx="3" fill="#00aa88" />
+        <text x="155" y="190" fill="#fff" font-family="monospace" font-size="14" text-anchor="middle">D4</text>
+        <!-- Base load text -->
+        <text x="130" y="240" fill="#aaaaaa" font-family="monospace" font-size="14" text-anchor="middle">부하: 2</text>
+
+        <!-- Server 2 -->
+        <rect x="270" y="120" width="160" height="150" rx="10" fill="#002211" stroke="#00ffcc" stroke-width="2" />
+        <text x="350" y="150" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">서버 2</text>
+        <rect x="290" y="170" width="50" height="30" rx="3" fill="#00aa88" />
+        <text x="315" y="190" fill="#fff" font-family="monospace" font-size="14" text-anchor="middle">D2</text>
+        <rect x="350" y="170" width="50" height="30" rx="3" fill="#00aa88" />
+        <text x="375" y="190" fill="#fff" font-family="monospace" font-size="14" text-anchor="middle">D5</text>
+        <text x="350" y="240" fill="#aaaaaa" font-family="monospace" font-size="14" text-anchor="middle">부하: 2</text>
+
+        <!-- Server 3 (The Overloaded one) -->
+        <rect x="490" y="120" width="160" height="150" rx="10" fill="#220000" stroke="#ff00ff" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="570" y="150" fill="#ff00ff" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">서버 3 (병목)</text>
+        <rect x="510" y="170" width="40" height="30" rx="3" fill="#00aa88" />
+        <text x="530" y="190" fill="#fff" font-family="monospace" font-size="14" text-anchor="middle">D3</text>
+        <rect x="560" y="170" width="40" height="30" rx="3" fill="#00aa88" />
+        <text x="580" y="190" fill="#fff" font-family="monospace" font-size="14" text-anchor="middle">D6</text>
+
+        <!-- The Remainder (Crashing in) -->
+        <rect x="535" y="210" width="70" height="30" rx="3" fill="#ff5555" filter="url(#glow)" />
+        <text x="570" y="230" fill="#fff" font-family="monospace" font-size="14" font-weight="bold"
+            text-anchor="middle">D7 (+1)</text>
+
+        <text x="570" y="260" fill="#ffaa00" font-family="monospace" font-size="16" font-weight="bold"
+            text-anchor="middle">최대 부하: 3!</text>
+
+    </g>
+
+    <!-- Math Explanation Box -->
+    <g transform="translate(150, 440)">
+        <rect x="0" y="0" width="600" height="110" rx="10" fill="#111" stroke="#ffff00" stroke-width="2" />
+        <text x="300" y="30" fill="#ffff00" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">수학적 백엔드 (math.ceil)</text>
+
+        <text x="300" y="60" fill="#aaaaaa" font-family="monospace" font-size="18" text-anchor="middle">수식: ⌈ M / N ⌉ =
+            ⌈ 7 / 3 ⌉</text>
+        <text x="300" y="90" fill="#4da6ff" font-family="monospace" font-size="20" font-weight="bold"
+            text-anchor="middle">⌈ 2.333... ⌉ = <tspan fill="#ff00ff" font-weight="bold" filter="url(#glow)">3</tspan>
+            </text>
+    </g>
+</svg>

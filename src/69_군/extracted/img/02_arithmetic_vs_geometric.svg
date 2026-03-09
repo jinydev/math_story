@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Left: Arithmetic Series Explosion -->
+    <g transform="translate(50, 50)">
+        <rect x="0" y="0" width="380" height="480" rx="15" fill="#1b1111" stroke="#ff0000" stroke-width="4"
+            filter="url(#glow)" />
+        <text x="190" y="40" fill="#ff0000" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">등차 급수 (폭발 엔진)</text>
+        <text x="190" y="65" fill="#ff5555" font-family="sans-serif" font-size="16" text-anchor="middle">같은 숫자를 계속 더해나가
+            폭주!</text>
+
+        <!-- Formula -->
+        <text x="190" y="120" fill="#ffffff" font-family="monospace" font-size="28" font-weight="bold"
+            text-anchor="middle">
+            2 +<tspan fill="#ffff00"> 5 </tspan>+<tspan fill="#ffaa00"> 8 </tspan>+<tspan fill="#ff5555"> 11 </tspan>+
+            ...
+        </text>
+
+        <!-- Explosion Graph Lines going straight up -->
+        <g transform="translate(50, 350)">
+            <line x1="0" y1="0" x2="280" y2="0" stroke="#555" stroke-width="2" /> <!-- X axis -->
+            <line x1="0" y1="0" x2="0" y2="-200" stroke="#555" stroke-width="2" /> <!-- Y axis -->
+
+            <!-- Explosion Curve -->
+            <path d="M 0 0 Q 150 -50 250 -200" fill="none" stroke="#ff0000" stroke-width="6" stroke-dasharray="10 5"
+                marker-end="url(#arrow_r)" />
+
+            <circle cx="50" cy="-20" r="5" fill="#ffff00" />
+            <circle cx="100" cy="-60" r="7" fill="#ffaa00" />
+            <circle cx="150" cy="-120" r="10" fill="#ff5555" />
+
+            <text x="260" y="-220" fill="#ff0000" font-family="sans-serif" font-size="24" font-weight="bold"
+                filter="url(#glow)">∞ 발산!</text>
+        </g>
+
+        <text x="190" y="440" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">계속 커지는 놈퍼들을
+            더하므로 무조건 터짐!</text>
+    </g>
+
+    <!-- VS Text -->
+    <text x="450" y="290" fill="#ffffff" font-family="serif" font-size="40" font-weight="bold" font-style="italic"
+        text-anchor="middle" filter="url(#glow)">VS</text>
+
+    <!-- Right: Geometric Series Half-Cut Convergence -->
+    <g transform="translate(470, 50)">
+        <rect x="0" y="0" width="380" height="480" rx="15" fill="#111122" stroke="#00ffcc" stroke-width="4"
+            filter="url(#glow)" />
+        <text x="190" y="40" fill="#00ffcc" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">등비 급수 (미립자 락다운)</text>
+        <text x="190" y="65" fill="#4da6ff" font-family="sans-serif" font-size="16" text-anchor="middle">반갈죽(1/2) 너프시켜
+            더하면?</text>
+
+        <!-- Formula -->
+        <text x="190" y="120" fill="#ffffff" font-family="monospace" font-size="26" font-weight="bold"
+            text-anchor="middle">
+            1 + <tspan fill="#ffff00">0.5</tspan> + <tspan fill="#4da6ff">0.25</tspan> + <tspan fill="#00ffcc">0.125
+            </tspan> ...
+        </text>
+
+        <!-- Convergence Graph Lines hitting ceiling -->
+        <g transform="translate(50, 350)">
+            <line x1="0" y1="0" x2="280" y2="0" stroke="#555" stroke-width="2" /> <!-- X axis -->
+            <line x1="0" y1="0" x2="0" y2="-200" stroke="#555" stroke-width="2" /> <!-- Y axis -->
+
+            <!-- Ceiling Line at sum=2.0 -->
+            <line x1="0" y1="-150" x2="280" y2="-150" stroke="#ffff00" stroke-width="2" stroke-dasharray="6 4" />
+            <text x="-40" y="-145" fill="#ffff00" font-family="sans-serif" font-size="16" font-weight="bold">2.0</text>
+
+            <!-- Curve Hitting Ceiling -->
+            <path d="M 0 0 Q 150 -130 250 -148" fill="none" stroke="#00ffcc" stroke-width="6"
+                marker-end="url(#arrow_c)" />
+            <circle cx="50" cy="-75" r="5" fill="#ffff00" />
+            <circle cx="100" cy="-112" r="4" fill="#4da6ff" />
+            <circle cx="150" cy="-131" r="3" fill="#00ffcc" />
+            <circle cx="200" cy="-140" r="2" fill="#00ffcc" />
+
+            <!-- Ceiling Text -->
+            <text x="260" y="-160" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+                filter="url(#glow)">수렴 (정지)!</text>
+        </g>
+
+        <text x="190" y="440" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">더해지는 쪼가리가
+            제로(0) 먼지가 되어 천장에 박음!</text>
+    </g>
+
+    <defs>
+        <marker id="arrow_r" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ff0000" />
+        </marker>
+        <marker id="arrow_c" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#00ffcc" />
+        </marker>
+    </defs>
+
+    <rect x="150" y="550" width="600" height="30" rx="5" fill="#111" stroke="#555" stroke-width="1" />
+    <text x="450" y="570" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">
+        곱하는 비율(공비 r) 이 절대값 1 미만이 되어 먼지처럼 쪼그라들어야만 '수렴의 기적' 이 일어납니다!
+    </text>
+</svg>

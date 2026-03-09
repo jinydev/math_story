@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .box {
+                fill: #161b22;
+                stroke: #30363d;
+                stroke-width: 2;
+                rx: 10;
+                ry: 10;
+            }
+
+            /* League Style */
+            .node-l {
+                fill: #0088ff;
+                stroke: #ffffff;
+                stroke-width: 2;
+            }
+
+            .edge-l {
+                stroke: #0088ff;
+                stroke-width: 2;
+                opacity: 0.6;
+            }
+
+            /* Tournament Style */
+            .node-t {
+                fill: #ff0055;
+                stroke: #ffffff;
+                stroke-width: 2;
+            }
+
+            .node-dead {
+                fill: #30363d;
+                stroke: #ff0055;
+                stroke-width: 2;
+            }
+
+            .edge-t {
+                stroke: #ff0055;
+                stroke-width: 2;
+                opacity: 0.8;
+            }
+
+            .st-title {
+                font-size: 22px;
+                fill: #ffffff;
+                text-anchor: middle;
+            }
+
+            .st-math {
+                font-size: 20px;
+                fill: #ffff00;
+                text-anchor: middle;
+            }
+
+            .knockout-x {
+                stroke: #ff0000;
+                stroke-width: 3;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="400" y="40" class="title">리그전(League) vs 토너먼트(Tournament) 아키텍처</text>
+    <text x="400" y="70" class="desc">평등한 쌍(Pair) 조합 $\mathbf{_nC_2}$ 과, 단 1명이 남을 때까지 죽이는 $\mathbf{N-1}$ 트리</text>
+
+    <!-- Left Side: League (Pentagram Graph) -->
+    <g transform="translate(200, 140)">
+        <rect x="-180" y="-30" width="360" height="460" class="box" />
+        <text x="0" y="0" class="st-title" fill="#0088ff">리그전 (League)</text>
+        <text x="0" y="25" fill="#888888" font-size="14" text-anchor="middle">"모든 팀이 한 번씩 빠짐없이 맞붙는다"</text>
+
+        <!-- 5 nodes in a circle (Pentagon) -->
+        <!-- R = 100, Centers: (0, -100), (95, -30), (58, 80), (-58, 80), (-95, -30) + offset -->
+        <g transform="translate(0, 180)">
+            <!-- Edges (All combinations) -->
+            <!-- Node 0 to others -->
+            <line x1="0" y1="-100" x2="95" y2="-30" class="edge-l" />
+            <line x1="0" y1="-100" x2="58" y2="80" class="edge-l" />
+            <line x1="0" y1="-100" x2="-58" y2="80" class="edge-l" />
+            <line x1="0" y1="-100" x2="-95" y2="-30" class="edge-l" />
+            <!-- Node 1 to others -->
+            <line x1="95" y1="-30" x2="58" y2="80" class="edge-l" />
+            <line x1="95" y1="-30" x2="-58" y2="80" class="edge-l" />
+            <line x1="95" y1="-30" x2="-95" y2="-30" class="edge-l" />
+            <!-- Node 2 to others -->
+            <line x1="58" y1="80" x2="-58" y2="80" class="edge-l" />
+            <line x1="58" y1="80" x2="-95" y2="-30" class="edge-l" />
+            <!-- Node 3 to others -->
+            <line x1="-58" y1="80" x2="-95" y2="-30" class="edge-l" />
+
+            <!-- Nodes -->
+            <circle cx="0" cy="-100" r="15" class="node-l" />
+            <circle cx="95" cy="-30" r="15" class="node-l" />
+            <circle cx="58" cy="80" r="15" class="node-l" />
+            <circle cx="-58" cy="80" r="15" class="node-l" />
+            <circle cx="-95" cy="-30" r="15" class="node-l" />
+
+            <text x="-10" y="-120" fill="#ffffff" font-size="20">A</text>
+            <text x="115" y="-30" fill="#ffffff" font-size="20">B</text>
+            <text x="80" y="90" fill="#ffffff" font-size="20">C</text>
+            <text x="-80" y="90" fill="#ffffff" font-size="20">D</text>
+            <text x="-120" y="-30" fill="#ffffff" font-size="20">E</text>
+        </g>
+
+        <text x="0" y="380" class="st-math">5팀 중 2팀 짝짓기</text>
+        <text x="0" y="410" fill="#ffff00" font-size="24" font-weight="bold" text-anchor="middle">_5C_2 = 10 경기</text>
+    </g>
+
+    <!-- VS Text -->
+    <text x="400" y="380" fill="#ffffff" font-size="36" font-weight="bold" text-anchor="middle">VS</text>
+
+    <!-- Right Side: Tournament (Pyramid) -->
+    <g transform="translate(600, 140)">
+        <rect x="-180" y="-30" width="360" height="460" class="box" />
+        <text x="0" y="0" class="st-title" fill="#ff0055">토너먼트 (Tournament)</text>
+        <text x="0" y="25" fill="#888888" font-size="14" text-anchor="middle">"패자는 즉탈! 1명 남을 때까지 도장깨기"</text>
+
+        <!-- Binary Tree Structure (8 Teams) -->
+        <g transform="translate(0, 100)">
+            <!-- Level 0 (Finals) -->
+            <line x1="0" y1="20" x2="0" y2="0" stroke="#ff0055" stroke-width="4" />
+            <!-- Level 1 (Semis) -->
+            <line x1="-50" y1="60" x2="-50" y2="20" class="edge-t" />
+            <line x1="50" y1="60" x2="50" y2="20" class="edge-t" />
+            <line x1="-50" y1="20" x2="50" y2="20" class="edge-t" />
+            <!-- Level 2 (Quarters) -->
+            <line x1="-100" y1="120" x2="-100" y2="80" class="edge-t" />
+            <line x1="-20" y1="120" x2="-20" y2="80" class="edge-t" />
+            <line x1="-100" y1="80" x2="-20" y2="80" class="edge-t" />
+            <line x1="-60" y1="80" x2="-60" y2="60" class="edge-t" />
+
+            <line x1="20" y1="120" x2="20" y2="80" class="edge-t" />
+            <line x1="100" y1="120" x2="100" y2="80" class="edge-t" />
+            <line x1="20" y1="80" x2="100" y2="80" class="edge-t" />
+            <line x1="60" y1="80" x2="60" y2="60" class="edge-t" />
+
+            <!-- Level 3 Nodes (Start: 8 teams) -->
+            <!-- Match 1 -->
+            <circle cx="-120" cy="120" r="10" class="node-dead" />
+            <line x1="-128" y1="112" x2="-112" y2="128" class="knockout-x" />
+            <line x1="-112" y1="112" x2="-128" y2="128" class="knockout-x" />
+            <circle cx="-80" cy="120" r="10" class="node-t" />
+
+            <!-- Match 2 -->
+            <circle cx="-40" cy="120" r="10" class="node-t" />
+            <circle cx="0" cy="120" r="10" class="node-dead" />
+            <line x1="-8" y1="112" x2="8" y2="128" class="knockout-x" />
+            <line x1="8" y1="112" x2="-8" y2="128" class="knockout-x" />
+
+            <!-- Match 3 -->
+            <circle cx="40" cy="120" r="10" class="node-dead" />
+            <line x1="32" y1="112" x2="48" y2="128" class="knockout-x" />
+            <line x1="48" y1="112" x2="32" y2="128" class="knockout-x" />
+            <circle cx="80" cy="120" r="10" class="node-t" />
+
+            <!-- Match 4 -->
+            <circle cx="120" cy="120" r="10" class="node-dead" />
+            <line x1="112" y1="112" x2="128" y2="128" class="knockout-x" />
+            <line x1="128" y1="112" x2="112" y2="128" class="knockout-x" />
+            <circle cx="160" cy="120" r="10" class="node-t" />
+
+            <circle cx="0" cy="0" r="15" fill="#ffff00" stroke="#ffaa00" stroke-width="3" />
+            <text x="0" y="5" fill="#000000" font-size="14" text-anchor="middle">👑</text>
+
+            <text x="0" y="170" fill="#ff6464" font-size="16" text-anchor="middle">"우승자 1명 빼고 나머지 7명은 반드시
+                패배(X)한다!"</text>
+        </g>
+
+        <text x="0" y="380" class="st-math">8팀 참가 우승자 1명</text>
+        <text x="0" y="410" fill="#ffff00" font-size="24" font-weight="bold" text-anchor="middle">8 - 1 = 7 경기</text>
+    </g>
+
+</svg>

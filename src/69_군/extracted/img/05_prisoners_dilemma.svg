@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">게임 이론 매트릭스: 죄수의 딜레마 (Prisoner's Dilemma)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"인간의 이기적 합리성(배신) 은
+        상호 소통이 부재할 때 무조건 조직의 파멸(내쉬 균형) 을 초래한다."</text>
+
+    <!-- Payoff Matrix -> Dictionary Visual -->
+    <g transform="translate(180, 150)">
+
+        <!-- Matrix Grid Lines -->
+        <rect x="100" y="50" width="200" height="200" fill="none" stroke="#aaaaaa" stroke-width="2" />
+        <rect x="300" y="50" width="200" height="200" fill="none" stroke="#aaaaaa" stroke-width="2" />
+        <rect x="100" y="250" width="200" height="200" fill="none" stroke="#aaaaaa" stroke-width="2" />
+        <rect x="300" y="250" width="200" height="200" fill="none" stroke="#aaaaaa" stroke-width="2" />
+
+        <!-- A's Moves (Left columns) -->
+        <text x="70" y="160" fill="#4da6ff" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="end"
+            filter="url(#glow)">A 침묵(협력)</text>
+        <text x="70" y="360" fill="#ff5555" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="end"
+            filter="url(#glow)">A 자백(배신)</text>
+
+        <!-- B's Moves (Top rows) -->
+        <text x="200" y="30" fill="#4da6ff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">B 침묵 (협력)</text>
+        <text x="400" y="30" fill="#ff5555" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">B 자백 (배신)</text>
+
+        <!-- Quadrant 1: Cooperate-Cooperate -->
+        <g transform="translate(100, 50)">
+            <rect x="0" y="0" width="200" height="200" fill="#003322" opacity="0.6" />
+            <polygon points="0,0 200,200 0,200" fill="#002211" opacity="0.6" />
+            <line x1="0" y1="200" x2="200" y2="0" stroke="#555" stroke-width="1" />
+            <!-- Payoffs -->
+            <text x="50" y="160" fill="#4da6ff" font-family="monospace" font-size="30" font-weight="bold"
+                text-anchor="middle">1년</text>
+            <text x="150" y="60" fill="#4da6ff" font-family="monospace" font-size="30" font-weight="bold"
+                text-anchor="middle">1년</text>
+            <text x="100" y="100" fill="#00ffcc" font-family="sans-serif" font-size="14" font-weight="bold"
+                text-anchor="middle">파레토 최적 (베스트)</text>
+        </g>
+
+        <!-- Quadrant 2: Cooperate-Defect -->
+        <g transform="translate(300, 50)">
+            <rect x="0" y="0" width="200" height="200" fill="#331111" opacity="0.6" />
+            <polygon points="0,0 200,200 0,200" fill="#221111" opacity="0.6" />
+            <line x1="0" y1="200" x2="200" y2="0" stroke="#555" stroke-width="1" />
+            <text x="50" y="160" fill="#4da6ff" font-family="monospace" font-size="30" font-weight="bold"
+                text-anchor="middle">10년!</text>
+            <text x="150" y="60" fill="#ff5555" font-family="monospace" font-size="30" font-weight="bold"
+                text-anchor="middle">0년!</text>
+            <text x="100" y="100" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">A 독박, B
+                무죄</text>
+        </g>
+
+        <!-- Quadrant 3: Defect-Cooperate -->
+        <g transform="translate(100, 250)">
+            <rect x="0" y="0" width="200" height="200" fill="#331111" opacity="0.6" />
+            <polygon points="0,0 200,200 0,200" fill="#221111" opacity="0.6" />
+            <line x1="0" y1="200" x2="200" y2="0" stroke="#555" stroke-width="1" />
+            <text x="50" y="160" fill="#ff5555" font-family="monospace" font-size="30" font-weight="bold"
+                text-anchor="middle">0년!</text>
+            <text x="150" y="60" fill="#4da6ff" font-family="monospace" font-size="30" font-weight="bold"
+                text-anchor="middle">10년!</text>
+            <text x="100" y="100" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">A 무죄, B
+                독박</text>
+        </g>
+
+        <!-- Quadrant 4: Defect-Defect (Nash Equilibrium) -->
+        <g transform="translate(300, 250)">
+            <rect x="0" y="0" width="200" height="200" fill="#220011" stroke="#ff00ff" stroke-width="4"
+                filter="url(#glow)" />
+            <polygon points="0,0 200,200 0,200" fill="#330022" opacity="0.6" />
+            <line x1="0" y1="200" x2="200" y2="0" stroke="#ff00ff" stroke-width="1" />
+            <text x="50" y="160" fill="#ff5555" font-family="monospace" font-size="30" font-weight="bold"
+                text-anchor="middle" filter="url(#glow)">5년</text>
+            <text x="150" y="60" fill="#ff5555" font-family="monospace" font-size="30" font-weight="bold"
+                text-anchor="middle" filter="url(#glow)">5년</text>
+            <text x="100" y="110" fill="#ff00ff" font-family="sans-serif" font-size="16" font-weight="bold"
+                text-anchor="middle" filter="url(#glow)">내쉬 균형 도달!</text>
+            <text x="100" y="130" fill="#ffffff" font-family="sans-serif" font-size="12" text-anchor="middle">(이기심이 부른
+                공멸)</text>
+        </g>
+
+        <!-- Red Arrows indicating the Gravitational pull towards Betrayal -->
+        <path d="M 200 150 Q 250 150 280 150" fill="none" stroke="#ffaa00" stroke-width="4" stroke-dasharray="5 5"
+            marker-end="url(#arrow_y)" />
+        <path d="M 200 350 Q 250 350 280 350" fill="none" stroke="#ffaa00" stroke-width="4" stroke-dasharray="5 5"
+            marker-end="url(#arrow_y)" />
+        <path d="M 150 200 Q 150 220 150 230" fill="none" stroke="#ffaa00" stroke-width="4" stroke-dasharray="5 5"
+            marker-end="url(#arrow_y)" />
+        <path d="M 350 200 Q 350 220 350 230" fill="none" stroke="#ffaa00" stroke-width="4" stroke-dasharray="5 5"
+            marker-end="url(#arrow_y)" />
+
+    </g>
+
+    <defs>
+        <marker id="arrow_y" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ffaa00" />
+        </marker>
+    </defs>
+
+</svg>

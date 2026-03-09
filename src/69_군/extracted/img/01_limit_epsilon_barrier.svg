@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">극한(Limit): 절대 닿을 수 없는 에너지 쉴드 (수렴 벽 L)</text>
+
+    <!-- Coordinate System -->
+    <g transform="translate(150, 450)">
+
+        <!-- X and Y Axes -->
+        <path d="M 0 0 L 600 0" stroke="#555566" stroke-width="3" marker-end="url(#arrow_w)" />
+        <path d="M 0 0 L 0 -350" stroke="#555566" stroke-width="3" marker-end="url(#arrow_w)" />
+
+        <text x="610" y="5" fill="#aaaaaa" font-family="sans-serif" font-size="20">턴 횟수 (n → ∞)</text>
+        <text x="-15" y="-360" fill="#aaaaaa" font-family="sans-serif" font-size="20" text-anchor="end">결괏값 (y)</text>
+
+        <!-- The Limit Barrier (L) -->
+        <line x1="0" y1="-100" x2="600" y2="-100" stroke="#ff00ff" stroke-width="5" stroke-dasharray="10 5"
+            filter="url(#glow)" />
+        <text x="-20" y="-90" fill="#ff00ff" font-family="serif" font-size="36" font-weight="bold" text-anchor="end"
+            filter="url(#glow)">L</text>
+        <text x="-60" y="-60" fill="#ff55aa" font-family="sans-serif" font-size="16" text-anchor="end">(수렴 유리벽)</text>
+
+        <!-- The Sequence Curve (Converging) -->
+        <path d="M 50 -300 Q 200 -120 400 -105 T 580 -101" fill="none" stroke="#4da6ff" stroke-width="4"
+            stroke-linecap="round" />
+
+        <!-- Points on the curve -->
+        <circle cx="50" cy="-300" r="8" fill="#4da6ff" />
+        <circle cx="120" cy="-210" r="7" fill="#4da6ff" />
+        <circle cx="200" cy="-150" r="6" fill="#4da6ff" />
+        <circle cx="300" cy="-120" r="5" fill="#4da6ff" />
+        <circle cx="400" cy="-105" r="4" fill="#00ffcc" filter="url(#glow)" />
+        <circle cx="480" cy="-102" r="3.5" fill="#00ffcc" filter="url(#glow)" />
+        <circle cx="560" cy="-101" r="3" fill="#00ffcc" filter="url(#glow)" />
+
+        <!-- Arrows indicating movement -->
+        <path d="M 45 -290 Q 70 -260 110 -220" fill="none" stroke="#ffff00" stroke-width="3" stroke-dasharray="5 5"
+            marker-end="url(#arrow_y)" />
+        <path d="M 210 -140 Q 250 -130 290 -125" fill="none" stroke="#ffff00" stroke-width="3" stroke-dasharray="5 5"
+            marker-end="url(#arrow_y)" />
+
+        <!-- Magnifying Glass indicating Infinity Zoom -->
+        <g transform="translate(480, -100)">
+            <circle cx="0" cy="0" r="60" fill="none" stroke="#ffff00" stroke-width="4" opacity="0.6"
+                filter="url(#glow)" />
+            <line x1="42" y1="42" x2="70" y2="70" stroke="#ffff00" stroke-width="6" opacity="0.6" />
+            <text x="0" y="-80" fill="#ffff00" font-family="sans-serif" font-size="18" font-weight="bold"
+                text-anchor="middle">∞ 무한대 줌인 존</text>
+
+            <!-- Micro distance -->
+            <path d="M 30 -10 L 30 -30 M 30 -30 L 60 -30 M 60 -30 L 60 -5" fill="none" stroke="#ff0055"
+                stroke-width="2" />
+            <text x="80" y="-35" fill="#ff0055" font-family="sans-serif" font-size="14" font-weight="bold">간격차이 0</text>
+        </g>
+
+        <!-- Mathematical Limit Notation -->
+        <g transform="translate(150, -350)">
+            <rect x="0" y="0" width="220" height="60" rx="10" fill="#1b1122" stroke="#00ffcc" stroke-width="2" />
+            <text x="110" y="40" fill="#ffffff" font-family="serif" font-size="34" font-weight="bold"
+                text-anchor="middle" filter="url(#glow)">
+                <tspan fill="#4da6ff">lim</tspan>
+                <tspan font-family="sans-serif" font-size="20">n→∞</tspan> f(n) = <tspan fill="#ff00ff">L</tspan>
+            </text>
+        </g>
+    </g>
+
+    <defs>
+        <marker id="arrow_w" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#555566" />
+        </marker>
+        <marker id="arrow_y" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ffff00" />
+        </marker>
+    </defs>
+
+    <rect x="150" y="530" width="600" height="50" rx="10" fill="#110511" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="560" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        n이 우주 끝 무한대로 달릴 때, 결괏값이 <tspan fill="#ff00ff" font-weight="bold">L 이라는 유리 천장(상수값)</tspan>에 들러붙어 얼어붙는 현상!
+    </text>
+</svg>

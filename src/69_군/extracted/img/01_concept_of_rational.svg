@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">유리수 (Rational Numbers) 의 절대 해부</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"전체를 나눈 조각의
+        비율(Ratio) 을 표현하는 인류 최고의 조각 기술"</text>
+
+    <!-- Fraction Structure Anatomy -->
+    <g transform="translate(150, 200)">
+        <rect x="-80" y="-50" width="300" height="250" rx="15" fill="#1b1122" stroke="#ff00ff" stroke-width="2" />
+
+        <!-- Fraction 3/4 -->
+        <text x="60" y="40" fill="#ff00ff" font-family="monospace" font-size="80" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">3</text>
+        <path d="M -10 60 L 130 60" fill="none" stroke="#fff" stroke-width="6" filter="url(#glow)" />
+        <text x="60" y="140" fill="#00ffcc" font-family="monospace" font-size="80" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">4</text>
+
+        <!-- Labels -->
+        <path d="M 0 10 L -40 -10 L -40 -30" fill="none" stroke="#ff00ff" stroke-width="2" />
+        <text x="-40" y="-40" fill="#ff00ff" font-weight="bold" text-anchor="middle">분자 (a)</text>
+        <text x="-40" y="-20" fill="#fff" font-size="12" text-anchor="middle">가진 조각 수</text>
+
+        <path d="M 0 110 L -40 130 L -40 150" fill="none" stroke="#00ffcc" stroke-width="2" />
+        <text x="-40" y="170" fill="#00ffcc" font-weight="bold" text-anchor="middle">분모 (b)</text>
+        <text x="-40" y="190" fill="#fff" font-size="12" text-anchor="middle">전체를 나눈 수</text>
+    </g>
+
+    <!-- Pie Chart Visual -->
+    <g transform="translate(600, 250)">
+        <!-- Base Pizza (4 slices) -->
+        <circle cx="0" cy="0" r="100" fill="#222" stroke="#00ffcc" stroke-width="4" />
+
+        <!-- Slices Lines -->
+        <path d="M -100 0 L 100 0" fill="none" stroke="#00ffcc" stroke-width="4" />
+        <path d="M 0 -100 L 0 100" fill="none" stroke="#00ffcc" stroke-width="4" />
+
+        <!-- 3 Slices Filled -->
+        <!-- Top Right -->
+        <path d="M 0 0 L 0 -100 A 100 100 0 0 1 100 0 Z" fill="#ff00ff" opacity="0.7" filter="url(#glow)" />
+        <!-- Bottom Right -->
+        <path d="M 0 0 L 100 0 A 100 100 0 0 1 0 100 Z" fill="#ff00ff" opacity="0.7" filter="url(#glow)" />
+        <!-- Bottom Left -->
+        <path d="M 0 0 L 0 100 A 100 100 0 0 1 -100 0 Z" fill="#ff00ff" opacity="0.7" filter="url(#glow)" />
+
+        <text x="0" y="-40" fill="#fff" font-weight="bold" font-size="24" text-anchor="middle">1</text>
+        <text x="40" y="40" fill="#fff" font-weight="bold" font-size="24" text-anchor="middle">2</text>
+        <text x="-40" y="40" fill="#fff" font-weight="bold" font-size="24" text-anchor="middle">3</text>
+
+        <text x="0" y="140" fill="#fff" font-size="16" font-weight="bold" text-anchor="middle">4등분 중 3조각 (3/4)</text>
+    </g>
+
+    <!-- Big Alert Bottom: ZeroDivision Error -->
+    <rect x="100" y="450" width="700" height="120" rx="10" fill="#2b0000" stroke="#ff0000" stroke-width="3" />
+    <text x="450" y="480" fill="#ff5555" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">
+        ⚠️ 절체절명의 우주 법칙: 분모(b) 는 절대 0 이 될 수 없다! (b ≠ 0)
+    </text>
+    <text x="450" y="520" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        피자를 '0명'이 나누어 먹을 수는 없다. 곱해서 자신을 보존하는 어떤 수도 존재하지 않는다.
+    </text>
+    <text x="450" y="545" fill="#ffffff" font-family="monospace" font-size="16" text-anchor="middle" font-weight="bold">
+        <tspan fill="#ffff00">Python 런타임 환경: ZeroDivisionError 발생 -> 시스템 즉시 다운!</tspan>
+    </text>
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="40" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">Python Matplotlib: 로켓 키네마틱스 3단 대시보드</text>
+
+    <!-- Left: Code Section -->
+    <g transform="translate(40, 70)">
+        <rect x="0" y="0" width="400" height="450" rx="10" fill="#0d141e" stroke="#4da6ff" stroke-width="3" />
+        <rect x="0" y="0" width="400" height="30" fill="#1a2533"
+            style="border-top-left-radius: 10px; border-top-right-radius: 10px;" />
+        <circle cx="15" cy="15" r="5" fill="#ff5f56" />
+        <circle cx="30" cy="15" r="5" fill="#ffbd2e" />
+        <circle cx="45" cy="15" r="5" fill="#27c93f" />
+        <text x="200" y="20" fill="#aaaaaa" font-family="monospace" font-size="12"
+            text-anchor="middle">rocket_physics.py</text>
+
+        <g transform="translate(15, 60)" font-family="monospace" font-size="14">
+            <text x="0" y="0" fill="#ff7b72">import</text><text x="60" y="0" fill="#ffffff">sympy</text><text x="110"
+                y="0" fill="#ff7b72">as</text><text x="135" y="0" fill="#ffffff">sp</text>
+
+            <text x="0" y="30" fill="#7a828e"># 1. 위치 뼈대</text>
+            <text x="0" y="50" fill="#ffffff">p = -5*t**2 + 30*t</text>
+
+            <text x="0" y="80" fill="#7a828e"># 2. 2연속 미분 발동!</text>
+            <text x="0" y="100" fill="#ffffff">v = sp.diff(p, t)</text>
+            <text x="0" y="120" fill="#ffffff">a = sp.diff(p, t, 2)</text>
+
+            <text x="0" y="160" fill="#7a828e"># 3. 플롯 도화지 셋팅</text>
+            <text x="0" y="180" fill="#ffffff">fig, axs = plt.</text><text x="135" y="180"
+                fill="#d2a8ff">subplots</text><text x="210" y="180" fill="#ffffff">(3,1)</text>
+
+            <text x="0" y="220" fill="#7a828e"># [상단] 위치 h(t)</text>
+            <text x="0" y="240" fill="#ffffff">axs[0].</text><text x="60" y="240" fill="#79c0ff">plot</text><text x="95"
+                y="240" fill="#ffffff">(t, pos, color='</text><text x="235" y="240" fill="#27c93f">green</text><text
+                x="280" y="240" fill="#ffffff">')</text>
+
+            <text x="0" y="280" fill="#7a828e"># [중단] 속도 v(t)</text>
+            <text x="0" y="300" fill="#ffffff">axs[1].</text><text x="60" y="300" fill="#79c0ff">plot</text><text x="95"
+                y="300" fill="#ffffff">(t, vel, color='</text><text x="235" y="300" fill="#4da6ff">blue</text><text
+                x="280" y="300" fill="#ffffff">')</text>
+
+            <text x="0" y="340" fill="#7a828e"># [하단] 가속도 a(t)</text>
+            <text x="0" y="360" fill="#ffffff">axs[2].</text><text x="60" y="360" fill="#79c0ff">plot</text><text x="95"
+                y="360" fill="#ffffff">(t, acc, color='</text><text x="235" y="360" fill="#ff0055">red</text><text
+                x="270" y="360" fill="#ffffff">')</text>
+
+            <text x="0" y="400" fill="#ffffff">plt.</text><text x="35" y="400" fill="#d2a8ff">show</text><text x="70"
+                y="400" fill="#ffffff">()</text>
+        </g>
+    </g>
+
+    <!-- Right: Matplotlib Output Graphs -->
+    <g transform="translate(460, 70)">
+        <rect x="0" y="0" width="400" height="450" rx="10" fill="#000000" stroke="#555555" stroke-width="2" />
+        <rect x="0" y="0" width="400" height="30" fill="#222"
+            style="border-top-left-radius: 10px; border-top-right-radius: 10px;" />
+        <text x="200" y="20" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">Figure 1 -
+            Rocket Physics Dashboard</text>
+
+        <!-- Graph 1: Position (Green parables) -->
+        <g transform="translate(50, 40)">
+            <line x1="0" y1="100" x2="300" y2="100" stroke="#333" stroke-width="2" />
+            <line x1="0" y1="0" x2="0" y2="100" stroke="#333" stroke-width="2" />
+            <path d="M 0 100 Q 150 -50 300 100" fill="none" stroke="#27c93f" stroke-width="4" filter="url(#glow)" />
+            <text x="10" y="15" fill="#27c93f" font-family="sans-serif" font-size="12">Position h(t)</text>
+            <!-- Vertical marker line at t=3 -->
+            <line x1="150" y1="20" x2="150" y2="110" stroke="#fff" stroke-dasharray="4 4" stroke-width="1" />
+        </g>
+
+        <!-- Graph 2: Velocity (Blue straight line down) -->
+        <g transform="translate(50, 160)">
+            <line x1="0" y1="50" x2="300" y2="50" stroke="#555" stroke-width="2" /> <!-- Zero Line -->
+            <line x1="0" y1="0" x2="0" y2="100" stroke="#333" stroke-width="2" />
+            <line x1="0" y1="10" x2="300" y2="90" stroke="#4da6ff" stroke-width="4" filter="url(#glow)" />
+            <text x="10" y="25" fill="#4da6ff" font-family="sans-serif" font-size="12">Velocity v(t)</text>
+            <!-- Zero Crossing exactly matches peak above -->
+            <circle cx="150" cy="50" r="4" fill="#fff" stroke="#ff0055" stroke-width="2" filter="url(#glow)" />
+            <line x1="150" y1="-10" x2="150" y2="110" stroke="#fff" stroke-dasharray="4 4" stroke-width="1" />
+        </g>
+
+        <!-- Graph 3: Acceleration (Red flat line below zero) -->
+        <g transform="translate(50, 280)">
+            <line x1="0" y1="30" x2="300" y2="30" stroke="#555" stroke-width="2" /> <!-- Zero Line -->
+            <line x1="0" y1="0" x2="0" y2="100" stroke="#333" stroke-width="2" />
+            <line x1="0" y1="70" x2="300" y2="70" stroke="#ff0055" stroke-width="4" filter="url(#glow)" />
+            <text x="10" y="20" fill="#ff0055" font-family="sans-serif" font-size="12">Acceleration a(t)</text>
+            <text x="310" y="115" fill="#aaaaaa" font-family="monospace" font-size="12">t</text>
+            <line x1="150" y1="-10" x2="150" y2="110" stroke="#fff" stroke-dasharray="4 4" stroke-width="1" />
+        </g>
+
+        <!-- UI Overlay texts -->
+        <text x="250" y="100" fill="#ffff00" font-family="sans-serif" font-size="14" font-weight="bold">최고점 (v=0)</text>
+    </g>
+
+    <rect x="150" y="540" width="600" height="40" rx="10" fill="#0f0f15" stroke="#ffffff" stroke-width="2" />
+    <text x="450" y="565" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        파이썬 Matplotlib 창에서 위치(정점), 속도(0크로스), 가속도(음수 타격) 동기화의 짜릿함을 직관합니다.
+    </text>
+</svg>

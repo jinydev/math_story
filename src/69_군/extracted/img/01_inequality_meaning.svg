@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">방정식(점) vs 부등식(영역)의 세계</text>
+
+    <!-- Left: Equation (Point) -->
+    <g transform="translate(50, 100)">
+        <!-- Box -->
+        <rect x="0" y="0" width="380" height="400" rx="15" fill="#222233" stroke="#4da6ff" stroke-width="3"
+            filter="url(#glow)" />
+
+        <text x="190" y="40" fill="#4da6ff" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle">방정식 (Equation)</text>
+        <text x="190" y="80" fill="#ffffff" font-family="monospace" font-size="32" font-weight="bold"
+            text-anchor="middle">x = 120</text>
+        <text x="190" y="110" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"오직 120cm인 단 한
+            명만 통과 가능!"</text>
+
+        <!-- Number line -->
+        <line x1="20" y1="200" x2="360" y2="200" stroke="#ffffff" stroke-width="4" />
+        <polygon points="360,195 370,200 360,205" fill="#ffffff" />
+
+        <!-- Ticks -->
+        <line x1="90" y1="190" x2="90" y2="210" stroke="#ffffff" stroke-width="2" />
+        <text x="90" y="235" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">100</text>
+
+        <line x1="190" y1="190" x2="190" y2="210" stroke="#ffffff" stroke-width="2" />
+        <text x="190" y="235" fill="#4da6ff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">120</text>
+
+        <line x1="290" y1="190" x2="290" y2="210" stroke="#ffffff" stroke-width="2" />
+        <text x="290" y="235" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">140</text>
+
+        <!-- The Answer: A single point -->
+        <circle cx="190" cy="200" r="12" fill="#4da6ff" filter="url(#glow)" />
+        <text x="190" y="170" fill="#4da6ff" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">단 하나의 점 (Point)</text>
+
+        <!-- Visual representation: Tiny locked door -->
+        <rect x="150" y="300" width="80" height="80" fill="#334455" stroke="#4da6ff" stroke-width="2" />
+        <circle cx="190" cy="340" r="10" fill="#111" stroke="#4da6ff" stroke-width="2" />
+        <path d="M 188 340 L 188 350 L 192 350 L 192 340" fill="#111" />
+        <text x="190" y="285" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">좁은 정답의
+            문</text>
+    </g>
+
+    <!-- VS Text -->
+    <text x="450" y="300" fill="#ff00ff" font-family="sans-serif" font-size="40" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">VS</text>
+
+    <!-- Right: Inequality (Area) -->
+    <g transform="translate(470, 100)">
+        <!-- Box -->
+        <rect x="0" y="0" width="380" height="400" rx="15" fill="#2b1133" stroke="#ff00ff" stroke-width="3"
+            filter="url(#glow)" />
+
+        <text x="190" y="40" fill="#ff00ff" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle">부등식 (Inequality)</text>
+        <text x="190" y="80" fill="#00ffcc" font-family="monospace" font-size="32" font-weight="bold"
+            text-anchor="middle">x ≥ 120</text>
+        <text x="190" y="110" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"120cm 이상인
+            무한대의 사람 통과!"</text>
+
+        <!-- Number line -->
+        <line x1="20" y1="200" x2="360" y2="200" stroke="#ffffff" stroke-width="4" />
+        <polygon points="360,195 370,200 360,205" fill="#ffffff" />
+
+        <!-- Area representation -->
+        <rect x="150" y="180" width="200" height="40" fill="#00ffcc" opacity="0.4" filter="url(#glow)" />
+        <line x1="150" y1="180" x2="350" y2="180" stroke="#00ffcc" stroke-width="2" />
+        <line x1="150" y1="220" x2="350" y2="220" stroke="#00ffcc" stroke-width="2" />
+        <polygon points="340,170 360,200 340,230" fill="#00ffcc" />
+
+        <!-- Ticks -->
+        <line x1="50" y1="190" x2="50" y2="210" stroke="#ffffff" stroke-width="2" />
+        <text x="50" y="235" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">100</text>
+
+        <line x1="150" y1="190" x2="150" y2="210" stroke="#ffffff" stroke-width="2" />
+        <text x="150" y="235" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">120</text>
+
+        <line x1="250" y1="190" x2="250" y2="210" stroke="#ffffff" stroke-width="2" />
+        <text x="250" y="235" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">140</text>
+
+        <line x1="330" y1="190" x2="330" y2="210" stroke="#ffffff" stroke-width="2" />
+
+        <!-- The Answer: Area / Range -->
+        <circle cx="150" cy="200" r="10" fill="#00ffcc" stroke="#00ffcc" stroke-width="4" />
+        <text x="250" y="160" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">무한대의 영역 (Area)</text>
+
+        <!-- Visual representation: Giant open gate -->
+        <rect x="50" y="300" width="280" height="80" fill="none" stroke="#00ffcc" stroke-width="3"
+            stroke-dasharray="10 5" filter="url(#glow)" />
+        <text x="190" y="345" fill="#00ffcc" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle">활짝 열린 광활한 영토</text>
+    </g>
+
+</svg>

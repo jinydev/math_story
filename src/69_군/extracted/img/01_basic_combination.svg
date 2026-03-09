@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">서열 파괴와 평등의 우주: 조합 (Combination, nCr)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"순서를 매기지 않고, 커다란
+        자루(Set) 에 뭉텅이로 담아내는 확률 모델"</text>
+
+    <!-- The Ice Cream Bucket Metaphor -->
+    <g transform="translate(150, 160)">
+
+        <!-- Candidate Pool -->
+        <rect x="-50" y="0" width="150" height="280" rx="10" fill="#1b1122" stroke="#ff00ff" stroke-width="2" />
+        <text x="25" y="30" fill="#ff00ff" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">아이스크림 5종</text>
+        <text x="25" y="55" fill="#aaaaaa" font-family="monospace" font-size="14" font-weight="bold"
+            text-anchor="middle">(n = 5)</text>
+
+        <circle cx="25" cy="85" r="15" fill="#ff5555" />
+        <text x="25" y="90" fill="#fff" font-weight="bold" text-anchor="middle">딸기</text>
+
+        <circle cx="25" cy="125" r="15" fill="#552200" />
+        <text x="25" y="130" fill="#fff" font-weight="bold" text-anchor="middle">초코</text>
+
+        <circle cx="25" cy="165" r="15" fill="#f5f5dc" />
+        <text x="25" y="170" fill="#000" font-weight="bold" text-anchor="middle">바닐</text>
+
+        <circle cx="25" cy="205" r="15" fill="#800080" />
+        <text x="25" y="210" fill="#fff" font-weight="bold" text-anchor="middle">포도</text>
+
+        <circle cx="25" cy="245" r="15" fill="#008000" />
+        <text x="25" y="250" fill="#fff" font-weight="bold" text-anchor="middle">녹차</text>
+
+        <!-- The Act of Grabbing -->
+        <path d="M 110 160 L 250 160" fill="none" stroke="#00ffcc" stroke-width="3" stroke-dasharray="5 5"
+            marker-end="url(#arrow_c)" />
+        <text x="180" y="150" fill="#00ffcc" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">동시에 2 스쿱 포크레인 발사!</text>
+        <text x="180" y="180" fill="#00ffcc" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">₅C₂</text>
+
+        <!-- The Bucket (No sequence) -->
+        <rect x="280" y="60" width="300" height="200" rx="30" fill="#001a11" stroke="#00ffcc" stroke-width="3" />
+        <text x="430" y="90" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">파인트 통 (하나의 집합, r=2)</text>
+
+        <!-- Ice cream in the bucket -->
+        <circle cx="380" cy="160" r="40" fill="#ff5555" filter="url(#glow)" />
+        <text x="380" y="165" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">딸기</text>
+
+        <circle cx="480" cy="160" r="40" fill="#552200" filter="url(#glow)" />
+        <text x="480" y="165" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">초코</text>
+
+        <text x="430" y="240" fill="#ffff00" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">순서(딸기→초코 vs 초코→딸기) 는 뱃속에선 똑같다!</text>
+    </g>
+
+    <defs>
+        <marker id="arrow_c" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#00ffcc" />
+        </marker>
+    </defs>
+
+    <!-- Explanation Bottom -->
+    <g transform="translate(100, 470)">
+        <rect x="0" y="0" width="700" height="90" rx="10" fill="#0d1b2a" stroke="#4da6ff" stroke-width="2" />
+
+        <text x="350" y="35" fill="#4da6ff" font-family="monospace" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">조합 공간 (Combination Space)</text>
+
+        <text x="350" y="70" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">로또, 피자 토핑, 임원
+            뽑기 등 <tspan fill="#ff00ff" font-weight="bold">"서열과 직급 없이 평등한 패밀리"</tspan> 를 묶어내는 행위.</text>
+    </g>
+
+</svg>

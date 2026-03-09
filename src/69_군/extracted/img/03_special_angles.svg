@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">신성한 특수각의 황금 비율표 (30°, 45°, 60°)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"건축가와 수학자들이 눈감고도
+        외워야 할 마법의 삼각형 모듈"</text>
+
+    <!-- Left: 45 Degree Triangle (Half a Square) -->
+    <g transform="translate(180, 200)">
+
+        <!-- The hypothetical top half of the square in dashed lines -->
+        <polygon points="0,-180 180,-180 180,0" fill="none" stroke="#777777" stroke-width="2" stroke-dasharray="5 5" />
+        <text x="140" y="-190" fill="#777777" font-family="sans-serif" font-size="12" text-anchor="middle">완벽한 정사각형
+            접기</text>
+
+        <!-- The 45-45-90 Triangle -->
+        <polygon points="0,0 180,0 180,-180" fill="none" stroke="#00ffcc" stroke-width="4" filter="url(#glow)" />
+        <polygon points="0,0 180,0 180,-180" fill="#00ffcc" opacity="0.2" />
+
+        <!-- Right Angle Symbol -->
+        <polyline points="160,0 160,-20 180,-20" fill="none" stroke="#00ffcc" stroke-width="2" />
+
+        <!-- Angle 45 -->
+        <path d="M 40 0 A 40 40 0 0 0 28 -28" fill="none" stroke="#ffffff" stroke-width="2" />
+        <text x="55" y="-12" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">45°</text>
+
+        <path d="M 180 -140 A 40 40 0 0 0 152 -152" fill="none" stroke="#ffffff" stroke-width="2" />
+        <text x="150" y="-115" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">45°</text>
+
+        <!-- Side Labels -->
+        <text x="90" y="25" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">밑변: 1</text>
+        <text x="215" y="-90" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">높이: 1</text>
+        <text x="70" y="-105" fill="#ffaa00" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">빗변: √2</text>
+
+        <!-- Formulas -->
+        <rect x="-30" y="60" width="240" height="90" rx="5" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+        <text x="90" y="85" fill="#ffffff" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">sin(45°) = 1 / √2</text>
+        <text x="90" y="110" fill="#ffffff" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">cos(45°) = 1 / √2</text>
+        <text x="90" y="135" fill="#ffffff" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">tan(45°) = 1</text>
+    </g>
+
+    <!-- Right: 30-60 Degree Triangle (Half an Equilateral Triangle) -->
+    <g transform="translate(600, 200)">
+
+        <!-- The hypothetical left half of the equilateral triangle -->
+        <polygon points="0,0 -120,0 0,-207.8" fill="none" stroke="#777777" stroke-width="2" stroke-dasharray="5 5" />
+        <text x="-140" y="-10" fill="#777777" font-family="sans-serif" font-size="12" text-anchor="middle">정삼각형
+            반갈죽</text>
+
+        <!-- The 30-60-90 Triangle -->
+        <!-- Base = 120, height = 120*sqrt(3) ~= 207.8 -->
+        <polygon points="0,0 120,0 0,-207.8" fill="none" stroke="#ff4d4d" stroke-width="4" filter="url(#glow)" />
+        <polygon points="0,0 120,0 0,-207.8" fill="#ff4d4d" opacity="0.2" />
+
+        <!-- Right Angle Symbol -->
+        <polyline points="20,0 20,-20 0,-20" fill="none" stroke="#ff4d4d" stroke-width="2" />
+
+        <!-- Angles -->
+        <path d="M 80 0 A 40 40 0 0 0 100 -23" fill="none" stroke="#ffffff" stroke-width="2" />
+        <text x="75" y="-15" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">60°</text>
+
+        <path d="M 0 -157.8 A 50 50 0 0 1 25 -164" fill="none" stroke="#ffffff" stroke-width="2" />
+        <text x="25" y="-180" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">30°</text>
+
+        <!-- Side Labels -->
+        <text x="60" y="25" fill="#ff4d4d" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">밑변: 1</text>
+        <text x="-40" y="-100" fill="#ff4d4d" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">높이: √3</text>
+        <text x="80" y="-115" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">빗변: 2</text>
+
+        <!-- Formulas -->
+        <rect x="-60" y="60" width="240" height="90" rx="5" fill="#331111" stroke="#ff4d4d" stroke-width="2" />
+        <text x="60" y="85" fill="#ffffff" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">sin(30°) = 1 / 2</text>
+        <text x="60" y="110" fill="#ffffff" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">cos(30°) = √3 / 2</text>
+        <text x="60" y="135" fill="#ffffff" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">tan(60°) = √3</text>
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="520" width="600" height="50" rx="10" fill="#2b1133" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="550" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">특수각 삼각형은 전 세계 모든
+        설계도면과 게임 엔진 수학의 핵심 블록이다.</text>
+
+</svg>

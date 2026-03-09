@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">시공간의 장벽 붕괴: 4차원 투영 (Tesseract)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"3차원의 방(Cube) 전체가
+        우리가 인지할 수 없는 수직의 '가상 축(W)' 을 향해 밀려 들어간다."</text>
+
+    <!-- Tesseract Center Graphics -->
+    <g transform="translate(450, 260)">
+
+        <!-- Outer Cube (Current Space or Time t=0) -->
+        <g stroke="#00ffcc" stroke-width="4" fill="none" filter="url(#glow)">
+            <!-- Back face -->
+            <polygon points="-80,-80 80,-80 80,80 -80,80" />
+            <!-- Front face (offset slightly for 3D look of outer cube) -->
+            <polygon points="-120,-120 120,-120 120,120 -120,120" stroke="#0088aa" stroke-dasharray="10 5" />
+            <!-- Edges connecting front to back -->
+            <line x1="-120" y1="-120" x2="-80" y2="-80" stroke="#0088aa" stroke-dasharray="5 5" />
+            <line x1="120" y1="-120" x2="80" y2="-80" stroke="#0088aa" stroke-dasharray="5 5" />
+            <line x1="120" y1="120" x2="80" y2="80" stroke="#0088aa" stroke-dasharray="5 5" />
+            <line x1="-120" y1="120" x2="-80" y2="80" stroke="#0088aa" stroke-dasharray="5 5" />
+        </g>
+
+        <text x="-150" y="-130" fill="#00ffcc" font-family="monospace" font-weight="bold" filter="url(#glow)">Time T=0
+            (우리 우주)</text>
+
+        <!-- Inner Cube (Future Space or Time t=1 shifted inward via 4th dimension projection) -->
+        <g stroke="#ff00ff" stroke-width="4" fill="none" filter="url(#glow)">
+            <!-- Back face -->
+            <polygon points="-20,-20 20,-20 20,20 -20,20" />
+            <!-- Front face -->
+            <polygon points="-40,-40 40,-40 40,40 -40,40" stroke="#aa00aa" stroke-dasharray="6 3" />
+            <!-- Edges connecting front to back -->
+            <line x1="-40" y1="-40" x2="-20" y2="-20" stroke="#aa00aa" stroke-dasharray="3 3" />
+            <line x1="40" y1="-40" x2="20" y2="-20" stroke="#aa00aa" stroke-dasharray="3 3" />
+            <line x1="40" y1="40" x2="20" y2="20" stroke="#aa00aa" stroke-dasharray="3 3" />
+            <line x1="-40" y1="40" x2="-20" y2="20" stroke="#aa00aa" stroke-dasharray="3 3" />
+        </g>
+
+        <text x="20" y="-10" fill="#ff00ff" font-family="monospace" font-size="12" font-weight="bold"
+            filter="url(#glow)">Time T=1</text>
+
+        <!-- 4th Dimension Connection Lines (Connecting Outer to Inner) -->
+        <g stroke="#ffffff" stroke-width="2" fill="none" stroke-dasharray="8 6" opacity="0.8">
+            <!-- Back Face connects -->
+            <line x1="-80" y1="-80" x2="-20" y2="-20" />
+            <line x1="80" y1="-80" x2="20" y2="-20" />
+            <line x1="80" y1="80" x2="20" y2="20" />
+            <line x1="-80" y1="80" x2="-20" y2="20" />
+
+            <!-- Front Face connects -->
+            <line x1="-120" y1="-120" x2="-40" y2="-40" />
+            <line x1="120" y1="-120" x2="40" y2="-40" />
+            <line x1="120" y1="120" x2="40" y2="40" />
+            <line x1="-120" y1="120" x2="-40" y2="40" />
+        </g>
+
+        <!-- Labeling the 4th axis -->
+        <path d="M 120 120 L 50 50" fill="none" stroke="#ffff00" stroke-width="3" marker-end="url(#arrow_y)"
+            filter="url(#glow)" />
+        <text x="90" y="80" fill="#ffff00" font-weight="bold" filter="url(#glow)">제4의 이동 축 (w축 / 시간 t)</text>
+
+    </g>
+
+    <defs>
+        <marker id="arrow_y" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#ffff00" />
+        </marker>
+    </defs>
+
+    <!-- Big Alert Bottom -->
+    <rect x="100" y="470" width="700" height="90" rx="10" fill="#220033" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="505" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        3차원 생물인 인간은 4차원 테서랙트(초입방체) 의 진짜 모습을 볼 수 없다.
+    </text>
+    <text x="450" y="535" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        마치 종이 위의 만화 캐릭터가 입체 큐브를 볼 수 없듯, <tspan fill="#ff00ff" font-weight="bold">"3차원 스크린에 맺힌 1층 낮은 그림자 투영본"</tspan> 으로만
+        관찰이 가능하다.
+    </text>
+</svg>

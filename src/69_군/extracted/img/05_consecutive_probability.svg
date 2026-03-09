@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">복원 추출 vs 비복원 추출 (독립과 종속)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"메모리 캐시를 리셋하느냐, 앞
+        사건이 뒷 사건의 우주 분모를 박살내느냐의 차이"</text>
+
+    <!-- Left Side: Independent Events (Dice) -->
+    <g transform="translate(100, 150)">
+        <rect x="0" y="0" width="300" height="300" rx="10" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+        <text x="150" y="30" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">1. 주사위 2연속 투척 (독립 사건)</text>
+        <text x="150" y="55" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">기억상실증 객체 (매번 분모
+            1/6 리셋)</text>
+
+        <!-- Turn 1 -->
+        <rect x="30" y="80" width="100" height="60" rx="5" fill="#223344" stroke="#00ffcc" />
+        <text x="80" y="105" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">첫 판: 6
+            나옴</text>
+        <text x="80" y="125" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">확률: 1 / 6</text>
+
+        <!-- Reset Node -->
+        <path d="M 130 110 L 170 110" stroke="#ffffff" stroke-width="2" marker-end="url(#arrowWhite)" />
+        <text x="150" y="95" fill="#00ffcc" font-family="sans-serif" font-size="12" text-anchor="middle">메모리 삭제</text>
+
+        <!-- Turn 2 -->
+        <rect x="170" y="80" width="100" height="60" rx="5" fill="#223344" stroke="#00ffcc" />
+        <text x="220" y="105" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">두구째 판: 6
+            나옴</text>
+        <text x="220" y="125" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">확률: 1 / 6</text>
+
+        <text x="150" y="180" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">앞 사건이 다음 퀘스트에
+            영향을 주지 않음</text>
+
+        <rect x="50" y="210" width="200" height="60" rx="5" fill="#111122" stroke="#00ffcc" />
+        <text x="150" y="245" fill="#00ffcc" font-family="monospace" font-size="20" font-weight="bold"
+            text-anchor="middle">1/6 × 1/6 = 1/36</text>
+    </g>
+
+    <!-- Right Side: Dependent Events (Drawing without replacement) -->
+    <g transform="translate(500, 150)">
+        <rect x="0" y="0" width="300" height="300" rx="10" fill="#221111" stroke="#ff4d4d" stroke-width="2" />
+        <text x="150" y="30" fill="#ff4d4d" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">2. 주머니 공 연속 뽑기 (종속 사건)</text>
+        <text x="150" y="55" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">카드 카운팅, 비복원
+            (분모가 실시간 마이너스)</text>
+
+        <!-- State 1 -->
+        <rect x="30" y="80" width="110" height="70" rx="5" fill="#331111" stroke="#ffaa00" />
+        <text x="85" y="100" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">첫 턴: 빨간 공(3)
+            뽑기</text>
+        <text x="85" y="120" fill="#aaaaaa" font-family="sans-serif" font-size="12" text-anchor="middle">전체 공:
+            10개</text>
+        <text x="85" y="140" fill="#ffaa00" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">확률: 3 / 10</text>
+
+        <!-- State Change -->
+        <path d="M 140 115 L 170 115" stroke="#ff4d4d" stroke-width="3" stroke-dasharray="4 2"
+            marker-end="url(#arrowRed)" />
+        <text x="155" y="95" fill="#ff4d4d" font-family="sans-serif" font-size="12" font-weight="bold"
+            text-anchor="middle">공 폐기!</text>
+        <text x="155" y="135" fill="#ff4d4d" font-family="sans-serif" font-size="12" font-weight="bold"
+            text-anchor="middle">분모 -1</text>
+
+        <!-- State 2 -->
+        <rect x="170" y="80" width="110" height="70" rx="5" fill="#331111" stroke="#ff00ff" filter="url(#glow)" />
+        <text x="225" y="100" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">둘째 턴: 또 빨간 공
+            뽑기</text>
+        <text x="225" y="120" fill="#ff4d4d" font-family="sans-serif" font-size="12" font-weight="bold"
+            text-anchor="middle">전체 9개, 빨간 2개 남음!</text>
+        <text x="225" y="140" fill="#ff00ff" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">분모/분자 너프됨 = 2 / 9</text>
+
+        <text x="150" y="180" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">앞 사건이 다음 확률
+            베이스 체력을 깎아먹음</text>
+
+        <rect x="50" y="210" width="200" height="60" rx="5" fill="#111122" stroke="#ff4d4d" />
+        <text x="150" y="245" fill="#ff4d4d" font-family="monospace" font-size="20" font-weight="bold"
+            text-anchor="middle">3/10 × 2/9 = 6/90 = 1/15</text>
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="500" width="600" height="50" rx="10" fill="#2b1133" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="530" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">카지노에서 블랙잭 카드 카운팅이
+        무서운 이유. 이미 지나간 미래(배열 팝)가</text>
+    <text x="450" y="510" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle"></text>
+
+    <defs>
+        <marker id="arrowWhite" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffffff" />
+        </marker>
+        <marker id="arrowRed" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff4d4d" />
+        </marker>
+    </defs>
+</svg>

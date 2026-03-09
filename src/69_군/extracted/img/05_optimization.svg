@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">도형 최적화 결계: 부피 고정, 표면적 쥐어짜기</text>
+
+    <!-- Target Info -->
+    <g transform="translate(100, 100)">
+        <rect x="0" y="0" width="300" height="150" rx="15" fill="#221122" stroke="#ff0055" stroke-width="2" />
+        <text x="150" y="35" fill="#ff0055" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">최적화 퀘스트 보드</text>
+        <line x1="20" y1="50" x2="280" y2="50" stroke="#555" />
+
+        <text x="30" y="85" fill="#ffffff" font-family="monospace" font-size="16">목표: 포장지 면적 최소화 (비용 절감)</text>
+        <text x="30" y="115" fill="#00ffcc" font-family="monospace" font-size="16">조건: 박스 내부 부피 = 1000 고정</text>
+    </g>
+
+    <!-- The Equation Strategy -->
+    <g transform="translate(450, 100)">
+        <path d="M -50 75 L 10 75" stroke="#00ffcc" stroke-width="4" marker-end="url(#arrow)" filter="url(#glow)" />
+        <rect x="0" y="0" width="350" height="150" rx="15" fill="#112233" stroke="#00ffcc" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="175" y="40" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">산술-기하 3-파츠 꼼수 엔진</text>
+        <line x1="20" y1="60" x2="330" y2="60" stroke="#555" />
+
+        <text x="50" y="95" fill="#aaaaaa" font-family="sans-serif" font-size="14">표면적 S = 2x² + 4000/x</text>
+        <text x="50" y="125" fill="#ffaa00" font-family="monospace" font-size="16" font-weight="bold">S = 2x² + (2000/x)
+            + (2000/x)</text>
+    </g>
+
+    <!-- 3D Box Visualization -->
+    <g transform="translate(150, 320)">
+        <!-- Back faces -->
+        <polygon points="100,50 150,20 150,120 100,150" fill="#0d1a26" stroke="#555" />
+        <polygon points="50,20 150,20 100,50 0,50" fill="#1a334d" stroke="#555" />
+
+        <!-- Front faces (Transparent wireframe style) -->
+        <polygon points="0,50 100,50 100,150 0,150" fill="rgba(0,255,204,0.1)" stroke="#00ffcc" stroke-width="2"
+            filter="url(#glow)" />
+        <polygon points="100,50 150,20 150,120 100,150" fill="rgba(0,255,204,0.2)" stroke="#00ffcc" stroke-width="2"
+            filter="url(#glow)" />
+        <polygon points="50,20 150,20 100,50 0,50" fill="rgba(0,255,204,0.3)" stroke="#00ffcc" stroke-width="2"
+            filter="url(#glow)" />
+
+        <!-- Axes Labels -->
+        <text x="40" y="170" fill="#ffffff" font-family="monospace" font-size="16">x = 10</text>
+        <text x="-25" y="110" fill="#ffffff" font-family="monospace" font-size="16">x = 10</text>
+        <text x="120" y="145" fill="#ffffff" font-family="monospace" font-size="16">y = 10</text>
+    </g>
+
+    <!-- Calculation Process Downwards -->
+    <path d="M 625 250 L 625 300" stroke="#ffaa00" stroke-width="4" stroke-dasharray="10 5" marker-end="url(#arrow)"
+        filter="url(#glow)" />
+
+    <g transform="translate(450, 300)">
+        <rect x="0" y="0" width="350" height="150" rx="15" fill="#331111" stroke="#ffaa00" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="175" y="40" fill="#ffaa00" font-family="serif" font-size="24" font-weight="bold" text-anchor="middle">≥
+            3 × ∛( 2x² · 2000/x · 2000/x )</text>
+        <text x="175" y="80" fill="#ffffff" font-family="serif" font-size="20" text-anchor="middle">= 3 × ∛( 8,000,000
+            )</text>
+        <text x="175" y="125" fill="#ff0055" font-family="sans-serif" font-size="28" font-weight="bold"
+            text-anchor="middle">최솟값 = 600</text>
+    </g>
+
+    <!-- Result Banner -->
+    <rect x="100" y="490" width="700" height="70" rx="15" fill="#0f0f15" stroke="#00ffcc" stroke-width="2" />
+    <text x="450" y="525" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+        text-anchor="middle">💡 가장 완벽한 비율 밸런스: 정육면체 (x=10, y=10)</text>
+    <text x="450" y="545" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">도형이 찌그러지지 않고 완벽한
+        대칭(정육면체)을 이룰 때 표면적이 극한으로 압축됩니다.</text>
+
+</svg>

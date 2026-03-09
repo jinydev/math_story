@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">기타 전략 / 몬테카를로 (Monte-Carlo) 야생 해킹 방식</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"복잡한 확률 조합 공식을
+        모른다고? 그냥 무식하게 100만 번 진짜 시뮬레이션 돌려봐!"</text>
+
+    <!-- Math Theory Mode (Left) -->
+    <g transform="translate(100, 150)">
+        <rect x="0" y="0" width="300" height="280" rx="15" fill="#1b1111" stroke="#ff5555" stroke-width="3" />
+        <text x="150" y="40" fill="#ff5555" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">이론적 수학 연산 (모범생)</text>
+
+        <text x="20" y="90" fill="#aaaaaa" font-family="sans-serif" font-size="14">동전 2개를 던져서 모두 앞면(H, H)?</text>
+        <text x="20" y="130" fill="#ff7777" font-family="monospace" font-size="16">경우의 수 = (H,H), (H,T), (T,H),
+            (T,T)</text>
+        <text x="20" y="170" fill="#ff7777" font-family="monospace" font-size="18">Total = 4 가지</text>
+        <text x="20" y="210" fill="#ff7777" font-family="monospace" font-size="18">Target (H,H) = 1 가지</text>
+
+        <text x="150" y="250" fill="#ffffff" font-family="monospace" font-size="26" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">P = 1 / 4 (25%)</text>
+    </g>
+
+    <!-- VS -->
+    <text x="450" y="290" fill="#ffaa00" font-family="sans-serif" font-size="30" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">VS</text>
+
+    <path d="M 430 200 L 470 200 M 450 180 L 450 220" stroke="#ffaa00" stroke-width="3" fill="none" />
+
+    <!-- Hacker Monte Carlo Mode (Right) -->
+    <g transform="translate(500, 150)">
+        <rect x="0" y="0" width="350" height="280" rx="15" fill="#001a11" stroke="#00ffcc" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="175" y="40" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">몬테카를로 시뮬레이션 (해커)</text>
+
+        <text x="20" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="14">"공식? 몰라. Python 루프로 진짜 10만번
+            던진다!"</text>
+
+        <rect x="20" y="110" width="310" height="60" rx="5" fill="#0d1115" stroke="#4da6ff" />
+        <text x="30" y="135" fill="#79c0ff" font-family="monospace" font-size="14">for i in range(<tspan fill="#ffff00"
+                font-weight="bold">100_000</tspan>):</text>
+        <text x="30" y="155" fill="#79c0ff" font-family="monospace" font-size="14"> throw_coins() # 다다다다다다다 작동!</text>
+
+        <text x="20" y="200" fill="#00ffcc" font-family="sans-serif" font-size="14">▶ 10만 번 플레이 중 완료된 횟수: <tspan
+                fill="#ffff00" font-weight="bold">24,961 번</tspan></text>
+
+        <text x="175" y="250" fill="#ffffff" font-family="monospace" font-size="26" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">24,961 / 100,000 ≒ 24.96%</text>
+    </g>
+
+    <!-- Base Explain -->
+    <rect x="100" y="480" width="700" height="80" rx="10" fill="#1b1122" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="510" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        현실 세계의 복잡한 주식, 비행기 지연, 우주선 충돌 사고들처럼 식 하나로 깔끔하게 떨어지지 않을 때는
+    </text>
+    <text x="450" y="540" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        강력한 컴퓨터 파워를 빌려 <tspan fill="#ff00ff" font-weight="bold">무식하게 1억 번을 직접 실행(시뮬레이션) 시켜버리는 야생의 방법</tspan> 이 현대 수학의
+        주류입니다!
+    </text>
+</svg>

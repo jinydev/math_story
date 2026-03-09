@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">위상 공간 (Topological Space): 열린 집합의 3대 공리</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"거리를 잴 자(Ruler) 가
+        부서졌다면, 누가 누구와 같은 '주머니' 에 들어있는지(소속) 로 가깝다를 정의한다."</text>
+
+    <!-- Space Universe X -->
+    <g transform="translate(150, 250)">
+        <circle cx="0" cy="0" r="140" fill="#1b1122" stroke="#fff" stroke-width="4" stroke-dasharray="10 5" />
+        <text x="0" y="-150" fill="#fff" font-weight="bold" font-size="24" text-anchor="middle">우주 공간 X = {1, 2,
+            3}</text>
+
+        <!-- Point 1 -->
+        <circle cx="-50" cy="-40" r="8" fill="#ff00ff" filter="url(#glow)" />
+        <text x="-50" y="-20" fill="#fff" font-weight="bold" font-size="18" text-anchor="middle">1</text>
+
+        <!-- Point 2 -->
+        <circle cx="50" cy="-40" r="8" fill="#00ffcc" filter="url(#glow)" />
+        <text x="50" y="-20" fill="#fff" font-weight="bold" font-size="18" text-anchor="middle">2</text>
+
+        <!-- Point 3 -->
+        <circle cx="0" cy="60" r="8" fill="#ffff00" filter="url(#glow)" />
+        <text x="0" y="80" fill="#fff" font-weight="bold" font-size="18" text-anchor="middle">3</text>
+
+        <!-- Open Sets (Bags) -->
+        <!-- Bag {1} -->
+        <ellipse cx="-50" cy="-35" rx="30" ry="25" fill="none" stroke="#ff00ff" stroke-width="2" stroke-dasharray="4"
+            filter="url(#glow)" />
+        <text x="-80" y="-60" fill="#ff00ff" font-weight="bold">{1}</text>
+
+        <!-- Bag {1, 2} -->
+        <ellipse cx="0" cy="-35" rx="90" ry="40" fill="none" stroke="#00ffcc" stroke-width="2" stroke-dasharray="4"
+            filter="url(#glow)" />
+        <text x="80" y="-60" fill="#00ffcc" font-weight="bold">{1, 2}</text>
+    </g>
+
+    <!-- The 3 Axioms Box -->
+    <g transform="translate(450, 150)">
+        <rect x="0" y="0" width="400" height="300" rx="15" fill="#0b0b1a" stroke="#00ffcc" stroke-width="2" />
+        <text x="200" y="40" fill="#00ffcc" font-family="sans-serif" font-size="22" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">위상(Topology τ) 명단 검사 3원칙</text>
+
+        <path d="M 20 60 L 380 60" fill="none" stroke="#fff" stroke-dasharray="2" opacity="0.3" />
+
+        <!-- Axiom 1 -->
+        <text x="30" y="100" fill="#ff00ff" font-weight="bold" font-size="16">1. 절대 소속의 법칙</text>
+        <text x="40" y="125" fill="#fff" font-size="14">- 텅 빈 우주(Ø) 와 전체 우주(X) 는 무조건 포함.</text>
+
+        <!-- Axiom 2 -->
+        <text x="30" y="165" fill="#0088ff" font-weight="bold" font-size="16">2. 교집합 보존의 법칙 (가장 좁은 교점)</text>
+        <text x="40" y="190" fill="#fff" font-size="14">- 식구끼리 겹치는 부분(∩) 도 가문 명단에 있어야 한다.</text>
+        <text x="40" y="210" fill="#aaa" font-size="14">ex) {1,2} ∩ {1} = <tspan fill="#ff00ff"> {1} (명단에 있음 O)</tspan>
+            </text>
+
+        <!-- Axiom 3 -->
+        <text x="30" y="250" fill="#ffff00" font-weight="bold" font-size="16">3. 합집합 보존의 법칙 (거대한 융합)</text>
+        <text x="40" y="275" fill="#fff" font-size="14">- 식구끼리 마구 합쳐도(∪) 가문 명단에 있어야 한다.</text>
+    </g>
+
+    <!-- Big Alert Bottom -->
+    <rect x="100" y="480" width="700" height="90" rx="10" fill="#2b0000" stroke="#ff0000" stroke-width="2" />
+    <text x="450" y="510" fill="#ff5555" font-family="sans-serif" font-size="18" font-weight="bold"
+        text-anchor="middle">
+        파이썬 에러 시뮬레이터: {Ø, {1,2,3}, {1}, {2}} 묶음은 왜 진정한 위상이 아닐까?
+    </text>
+    <text x="450" y="535" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        가족 {1} 과 가족 {2} 를 연합(합집합 ∪) 시켜 {1, 2} 덩어리를 만들었는데,
+    </text>
+    <text x="450" y="555" fill="#ffffff" font-family="monospace" font-size="16" text-anchor="middle" font-weight="bold">
+        명단에 {1, 2} 주머니가 존재하지 않으므로 <tspan fill="#ff0000">공리 3 위반(Crash)!</tspan>
+    </text>
+</svg>

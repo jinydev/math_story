@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">점대칭의 물리적 실체: 원점 다이브(Point Symmetry)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"특정 점을 향해 빨려 들어가
+        반대편 차원으로 분출되는 180도 회전(Spin) 엔진"</text>
+
+    <!-- Left: The Direct Vector (Origin Hole) -->
+    <g transform="translate(150, 150)">
+        <rect x="-50" y="0" width="300" height="280" rx="15" fill="#1b0022" stroke="#ff00ff" stroke-width="2" />
+        <text x="100" y="30" fill="#ff00ff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">원점 블랙홀 관통</text>
+
+        <!-- Axes -->
+        <path d="M 0 150 L 200 150 M 100 50 L 100 250" fill="none" stroke="#555" stroke-width="1" />
+
+        <!-- Origin (The Hole) -->
+        <circle cx="100" cy="150" r="10" fill="#000" stroke="#00ffcc" stroke-width="2" filter="url(#glow)" />
+        <text x="80" y="140" fill="#00ffcc" font-size="14" font-weight="bold">(0,0)</text>
+
+        <!-- Start Point -->
+        <circle cx="170" cy="80" r="6" fill="#fff" />
+        <text x="180" y="70" fill="#fff" font-weight="bold">P(x, y)</text>
+
+        <!-- The Dive -->
+        <path d="M 170 80 L 30 220" fill="none" stroke="#ff00ff" stroke-width="4" stroke-dasharray="6 6"
+            marker-end="url(#arrow_m)" filter="url(#glow)" />
+
+        <!-- End Point -->
+        <circle cx="30" cy="220" r="6" fill="#ffff00" filter="url(#glow)" />
+        <text x="25" y="240" fill="#ffff00" font-weight="bold" filter="url(#glow)">P'(-x, -y)</text>
+    </g>
+
+    <!-- Right: The 180 Degree Flip -->
+    <g transform="translate(550, 150)">
+        <rect x="-50" y="0" width="300" height="280" rx="15" fill="#001a11" stroke="#00ffcc" stroke-width="2" />
+        <text x="100" y="30" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">180도 롤오버 (회전)</text>
+
+        <!-- Axes -->
+        <path d="M 0 150 L 200 150 M 100 50 L 100 250" fill="none" stroke="#555" stroke-width="1" />
+
+        <!-- Origin Pivot -->
+        <circle cx="100" cy="150" r="6" fill="#fff" />
+
+        <!-- Start Shape (e.g. Letter F or custom shape) -->
+        <g transform="translate(150, 90)">
+            <polygon points="0,0 20,0 20,-10 30,-10 30,20 0,20" fill="#fff" opacity="0.6" />
+        </g>
+
+        <!-- 180 Rotation Path -->
+        <path d="M 160 80 A 70 70 0 0 0 40 220" fill="none" stroke="#00ffcc" stroke-width="4" stroke-dasharray="8 4"
+            marker-end="url(#arrow_c)" filter="url(#glow)" />
+
+        <!-- End Shape (Rotated 180) -->
+        <g transform="translate(50, 210) rotate(180)">
+            <polygon points="0,0 20,0 20,-10 30,-10 30,20 0,20" fill="#ffff00" filter="url(#glow)" />
+        </g>
+
+        <text x="70" y="110" fill="#00ffcc" font-weight="bold" font-size="14" filter="url(#glow)">180° Spin</text>
+    </g>
+
+    <defs>
+        <marker id="arrow_m" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#ff00ff" />
+        </marker>
+        <marker id="arrow_c" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#00ffcc" />
+        </marker>
+    </defs>
+
+    <!-- Big Alert Bottom -->
+    <rect x="100" y="460" width="700" height="90" rx="10" fill="#220000" stroke="#ff5555" stroke-width="2" />
+    <text x="450" y="495" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        결론적으로 원점(0,0) 대칭은 <tspan fill="#ffff00" font-weight="bold">x축 대칭 1회 + y축 대칭 1회 다단 히트</tspan> 와 완벽히 동일하다.
+    </text>
+    <text x="450" y="525" fill="#ff5555" font-family="monospace" font-size="20" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">
+        ( x, y ) =====> ( -x, -y )
+    </text>
+</svg>

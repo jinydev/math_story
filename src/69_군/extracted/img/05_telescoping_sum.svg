@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">거대 분수의 소멸: 망원급수 (Telescoping Sum)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"부분분수(Partial
+        Fractions) 로 곱셈을 마이너스(-) 로 찢어낸 뒤, 연쇄 폭발(Cancel-Out) 을 유도한다."</text>
+
+    <!-- Partial Fraction Formula -->
+    <rect x="250" y="110" width="400" height="60" rx="10" fill="#1b1122" stroke="#ffff00" stroke-width="2" />
+    <text x="450" y="150" fill="#ffff00" font-family="monospace" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">
+        1 / (A×B) ==> (1/A) - (1/B)
+    </text>
+    <text x="660" y="150" fill="#aaa" font-size="16" font-weight="bold"> (단, B-A=1 일때) </text>
+
+    <!-- The Telescoping sequence visual -->
+    <g transform="translate(50, 250)">
+
+        <!-- k=1 -->
+        <rect x="0" y="0" width="120" height="60" rx="8" fill="#140014" stroke="#ff0055" stroke-width="2" />
+        <text x="10" y="-10" fill="#ff0055" font-weight="bold" font-size="18">k = 1</text>
+        <text x="60" y="38" fill="#fff" font-weight="bold" font-size="24" text-anchor="middle">
+            <tspan fill="#00ffcc">1/1</tspan>
+            <tspan fill="#ff0055">- 1/2</tspan>
+        </text>
+
+        <text x="140" y="40" fill="#fff" font-weight="bold" font-size="30">+</text>
+
+        <!-- k=2 -->
+        <rect x="170" y="0" width="120" height="60" rx="8" fill="#140014" stroke="#ff0055" stroke-width="2" />
+        <text x="180" y="-10" fill="#ff0055" font-weight="bold" font-size="18">k = 2</text>
+        <text x="230" y="38" fill="#fff" font-weight="bold" font-size="24" text-anchor="middle">
+            <tspan fill="#0088ff">+ 1/2</tspan>
+            <tspan fill="#ff0055">- 1/3</tspan>
+        </text>
+
+        <text x="310" y="40" fill="#fff" font-weight="bold" font-size="30">+</text>
+
+        <!-- k=3 -->
+        <rect x="340" y="0" width="120" height="60" rx="8" fill="#140014" stroke="#ff0055" stroke-width="2" />
+        <text x="350" y="-10" fill="#ff0055" font-weight="bold" font-size="18">k = 3</text>
+        <text x="400" y="38" fill="#fff" font-weight="bold" font-size="24" text-anchor="middle">
+            <tspan fill="#0088ff">+ 1/3</tspan>
+            <tspan fill="#ff0055">- 1/4</tspan>
+        </text>
+
+        <text x="500" y="40" fill="#fff" font-weight="bold" font-size="30">. . .</text>
+
+        <!-- k=n -->
+        <rect x="550" y="0" width="150" height="60" rx="8" fill="#140014" stroke="#ff0055" stroke-width="2" />
+        <text x="560" y="-10" fill="#ff00ff" font-weight="bold" font-size="18">k = n (마지막)</text>
+        <text x="625" y="38" fill="#fff" font-weight="bold" font-size="24" text-anchor="middle">
+            <tspan fill="#0088ff">+ 1/n</tspan>
+            <tspan fill="#ff00ff">- 1/(n+1)</tspan>
+        </text>
+
+        <!-- Exploding Animations / Cross out -->
+        <!-- -1/2 cancels +1/2 -->
+        <path d="M 85 50 L 210 10 M 85 10 L 210 50" fill="none" stroke="#ff0000" stroke-width="4" opacity="0.8"
+            filter="url(#glow)" />
+        <circle cx="150" cy="30" r="25" fill="#ff0000" opacity="0.3" filter="url(#glow)" />
+
+        <!-- -1/3 cancels +1/3 -->
+        <path d="M 255 50 L 380 10 M 255 10 L 380 50" fill="none" stroke="#ff0000" stroke-width="4" opacity="0.8"
+            filter="url(#glow)" />
+        <circle cx="320" cy="30" r="25" fill="#ff0000" opacity="0.3" filter="url(#glow)" />
+
+        <!-- -1/4 cancels next -->
+        <path d="M 425 50 L 480 10 M 425 10 L 480 50" fill="none" stroke="#ff0000" stroke-width="4" opacity="0.8"
+            filter="url(#glow)" />
+
+        <!-- +1/n cancelled by prev -->
+        <path d="M 520 50 L 590 10 M 520 10 L 590 50" fill="none" stroke="#ff0000" stroke-width="4" opacity="0.8"
+            filter="url(#glow)" />
+
+        <!-- Surviving Terms Highlight -->
+        <rect x="25" y="5" width="55" height="45" rx="5" fill="none" stroke="#00ffcc" stroke-width="4"
+            stroke-dasharray="4 4" filter="url(#glow)" />
+        <path d="M 50 -40 L 50 -10" fill="none" stroke="#00ffcc" stroke-width="3" marker-end="url(#arrow_d)" />
+        <text x="50" y="-50" fill="#00ffcc" font-weight="bold" font-size="16" text-anchor="middle">생존: 머리</text>
+
+        <rect x="615" y="5" width="80" height="45" rx="5" fill="none" stroke="#ff00ff" stroke-width="4"
+            stroke-dasharray="4 4" filter="url(#glow)" />
+        <path d="M 655 -40 L 655 -10" fill="none" stroke="#ff00ff" stroke-width="3" marker-end="url(#arrow_d_m)" />
+        <text x="655" y="-50" fill="#ff00ff" font-weight="bold" font-size="16" text-anchor="middle">생존: 꼬리</text>
+
+    </g>
+
+    <defs>
+        <marker id="arrow_d" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#00ffcc" />
+        </marker>
+        <marker id="arrow_d_m" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#ff00ff" />
+        </marker>
+    </defs>
+
+    <!-- Final Conclusion Box Bottom -->
+    <rect x="100" y="460" width="700" height="110" rx="10" fill="#0b0b1a" stroke="#ffffff" stroke-width="2" />
+    <text x="450" y="490" fill="#ffffff" font-family="sans-serif" font-size="18" text-anchor="middle">
+        도미노처럼 중간의 모든 마디가 자기들끼리 충돌하여 0으로 (Cancel-Out) 산화한다!
+    </text>
+    <text x="450" y="515" fill="#ffffff" font-family="sans-serif" font-size="18" text-anchor="middle">
+        무한 누적 덧셈 연산(for loop O(N)) 을 단숨에 끝내는 프로그래머들의 궁극의 최적화 도구.
+    </text>
+    <text x="450" y="550" fill="#00ffcc" font-family="monospace" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">
+        Final = 1 - ( 1 / (n+1) )
+    </text>
+</svg>

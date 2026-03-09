@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">직각 삼각형과 닮음의 기적 (Similar Triangles)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"크기가 달라져도, 내각이 같다면
+        각 변의 비율은 절대 불변이다!"</text>
+
+    <!-- Ground Line -->
+    <line x1="50" y1="450" x2="850" y2="450" stroke="#777777" stroke-width="4" />
+
+    <!-- Small Triangle (Stick) -->
+    <g transform="translate(150, 450)">
+        <!-- 30-60-90 Triangle base = 40, height = 20 (just abstract sizes) -->
+        <!-- Let's make it 30 deg angle at origin -->
+        <polygon points="0,0 120,0 120,-60" fill="none" stroke="#00ffcc" stroke-width="3" filter="url(#glow)" />
+        <polygon points="0,0 120,0 120,-60" fill="#00ffcc" opacity="0.2" />
+
+        <!-- Right Angle Symbol -->
+        <polyline points="110,0 110,-10 120,-10" fill="none" stroke="#00ffcc" stroke-width="2" />
+
+        <!-- Angle -->
+        <path d="M 30 0 A 30 30 0 0 0 25 -13" fill="none" stroke="#ffffff" stroke-width="2" />
+        <text x="40" y="-8" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">30°</text>
+
+        <!-- Labels -->
+        <text x="60" y="20" fill="#00ffcc" font-family="sans-serif" font-size="14" text-anchor="middle">밑변 10cm</text>
+        <text x="140" y="-20" fill="#00ffcc" font-family="sans-serif" font-size="14" text-anchor="middle">높이 5cm</text>
+
+        <!-- Ratio Box -->
+        <rect x="-30" y="-120" width="160" height="40" rx="5" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+        <text x="50" y="-95" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">비율 = 5 / 10 = 0.5</text>
+
+        <text x="60" y="50" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">작은 지팡이 계측</text>
+    </g>
+
+    <!-- Big Triangle (Pyramid) -->
+    <g transform="translate(400, 450)">
+        <polygon points="0,0 360,0 360,-180" fill="none" stroke="#ffaa00" stroke-width="3" filter="url(#glow)" />
+        <polygon points="0,0 360,0 360,-180" fill="#ffaa00" opacity="0.2" />
+
+        <!-- Right Angle Symbol -->
+        <polyline points="340,0 340,-20 360,-20" fill="none" stroke="#ffaa00" stroke-width="2" />
+
+        <!-- Angle -->
+        <path d="M 60 0 A 60 60 0 0 0 52 -28" fill="none" stroke="#ffffff" stroke-width="2" />
+        <text x="75" y="-15" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold">30°</text>
+
+        <!-- Labels -->
+        <text x="180" y="25" fill="#ffaa00" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">거대 피라미드 그림자 (1000m)</text>
+        <text x="440" y="-80" fill="#ffaa00" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">수직 높이 (500m)</text>
+
+        <!-- Ratio Box -->
+        <rect x="80" y="-120" width="220" height="40" rx="5" fill="#332211" stroke="#ffaa00" stroke-width="2" />
+        <text x="190" y="-95" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">비율 = 500 / 1000 = 0.5</text>
+    </g>
+
+    <!-- Comparison Lines -->
+    <path d="M 230 350 Q 300 300 460 350" fill="none" stroke="#ff4d4d" stroke-width="4" stroke-dasharray="10 5"
+        marker-end="url(#arrowRed)" filter="url(#glow)" />
+    <text x="345" y="325" fill="#ff4d4d" font-family="sans-serif" font-size="18" font-weight="bold"
+        text-anchor="middle">완벽한 일치 (100배 줌인)</text>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="520" width="600" height="50" rx="10" fill="#221133" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="550" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">아무리 거대한 삼각형이라도, 내부
+        <tspan fill="#ff00ff" font-weight="bold">각도(DNA)</tspan>가 같으면 삼각비는 똑같다!</text>
+
+    <defs>
+        <marker id="arrowRed" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff4d4d" />
+        </marker>
+    </defs>
+</svg>

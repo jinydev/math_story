@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="40" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">무한등비급수의 기적: 1을 향한 반갈죽 조각 모음 (1/2 + 1/4 + ...)</text>
+
+    <!-- Left: Area Representation -->
+    <g transform="translate(150, 100)">
+        <!-- Base 1x1 Square Outline -->
+        <rect x="0" y="0" width="300" height="300" fill="none" stroke="#4da6ff" stroke-width="4"
+            stroke-dasharray="10 5" />
+        <text x="150" y="-15" fill="#4da6ff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">목표 유리천장: 총 면적 1.0</text>
+
+        <!-- Halves being filled -->
+        <g transform="translate(0, 0)">
+            <!-- 1/2 Left Half -->
+            <rect x="0" y="0" width="150" height="300" fill="#ff0055" opacity="0.8" stroke="#ffffff" stroke-width="2" />
+            <text x="75" y="150" fill="#ffffff" font-family="monospace" font-size="30" font-weight="bold"
+                text-anchor="middle">1/2</text>
+        </g>
+
+        <g transform="translate(150, 0)">
+            <!-- 1/4 Top Right -->
+            <rect x="0" y="0" width="150" height="150" fill="#ffaa00" opacity="0.8" stroke="#ffffff" stroke-width="2" />
+            <text x="75" y="85" fill="#ffffff" font-family="monospace" font-size="24" font-weight="bold"
+                text-anchor="middle">1/4</text>
+        </g>
+
+        <g transform="translate(150, 150)">
+            <!-- 1/8 Bottom Right Left -->
+            <rect x="0" y="0" width="75" height="150" fill="#00ffcc" opacity="0.8" stroke="#ffffff" stroke-width="2" />
+            <text x="37" y="85" fill="#222" font-family="monospace" font-size="18" font-weight="bold"
+                text-anchor="middle">1/8</text>
+        </g>
+
+        <g transform="translate(225, 150)">
+            <!-- 1/16 Bottom Right Top Right -->
+            <rect x="0" y="0" width="75" height="75" fill="#ffff00" opacity="0.8" stroke="#ffffff" stroke-width="2" />
+            <text x="37" y="45" fill="#222" font-family="monospace" font-size="14" font-weight="bold"
+                text-anchor="middle">1/16</text>
+        </g>
+
+        <g transform="translate(225, 225)">
+            <!-- 1/32 Bottom Right ... -->
+            <rect x="0" y="0" width="37.5" height="75" fill="#aa00ff" opacity="0.8" stroke="#ffffff" stroke-width="1" />
+            <rect x="37.5" y="0" width="37.5" height="37.5" fill="#ff5588" opacity="0.8" stroke="#ffffff"
+                stroke-width="1" />
+            <rect x="37.5" y="37.5" width="18.75" height="37.5" fill="#4da6ff" opacity="0.8" stroke="#ffffff"
+                stroke-width="1" />
+            <!-- Getting too small, dots -->
+            <circle cx="65" cy="65" r="2" fill="#ffffff" />
+            <circle cx="58" cy="60" r="1.5" fill="#ffffff" />
+            <circle cx="52" cy="55" r="1" fill="#ffffff" />
+        </g>
+    </g>
+
+    <!-- Right: The Formula Explainer -->
+    <g transform="translate(500, 120)">
+        <rect x="0" y="0" width="350" height="260" rx="15" fill="#110d1a" stroke="#ffff00" stroke-width="3" />
+        <text x="175" y="40" fill="#ffff00" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">등비급수 합(Sum) 치트 스펠</text>
+
+        <!-- Formula S = a / (1 - r) -->
+        <text x="175" y="110" fill="#ffffff" font-family="serif" font-size="50" font-weight="bold" text-anchor="middle"
+            filter="url(#glow)">S = ———</text>
+        <text x="210" y="75" fill="#ff0055" font-family="serif" font-size="40" font-weight="bold"
+            text-anchor="middle">a</text>
+        <text x="230" y="135" fill="#ffffff" font-family="serif" font-size="30" font-weight="bold"
+            text-anchor="middle">1 − <tspan fill="#ffaa00">r</tspan></text>
+
+        <!-- Params Breakdown -->
+        <g transform="translate(40, 180)">
+            <circle cx="0" cy="0" r="8" fill="#ff0055" />
+            <text x="20" y="6" fill="#ff0055" font-family="sans-serif" font-size="18" font-weight="bold">a = 1/2 (첫째 조각
+                먼지)</text>
+
+            <circle cx="0" cy="35" r="8" fill="#ffaa00" />
+            <text x="20" y="41" fill="#ffaa00" font-family="sans-serif" font-size="18" font-weight="bold">r = 1/2 (반갈죽
+                공비 비율)</text>
+        </g>
+    </g>
+
+    <!-- Bottom: Applying the logic -->
+    <g transform="translate(150, 440)">
+        <rect x="0" y="0" width="600" height="80" rx="10" fill="#1b1111" stroke="#ff0055" stroke-width="2" />
+        <text x="300" y="30" fill="#ffffff" font-family="monospace" font-size="20" font-weight="bold"
+            text-anchor="middle">
+            <tspan fill="#aaaaaa">S = </tspan>
+            <tspan fill="#ff0055">(1/2)</tspan> / <tspan fill="#ffffff">(1 - </tspan>
+            <tspan fill="#ffaa00">1/2</tspan>
+            <tspan fill="#ffffff">)</tspan>
+            <tspan fill="#aaaaaa"> = </tspan>
+            <tspan fill="#ff0055">(1/2)</tspan> / <tspan fill="#ffaa00">(1/2)</tspan>
+        </text>
+        <text x="300" y="65" fill="#ffff00" font-family="monospace" font-size="30" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">
+            = 1.0 (퍼펙트 피자 1판 락다운!)
+        </text>
+    </g>
+
+    <rect x="150" y="540" width="600" height="40" rx="10" fill="#0f0f15" stroke="#ffffff" stroke-width="2" />
+    <text x="450" y="565" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        무한 번 칼질해도 정사각형(1.0) 프레임 바깥으로 단 한 픽셀도 넘어가지 못합니다!
+    </text>
+</svg>

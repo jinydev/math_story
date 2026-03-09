@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">자연은 온도 차이가 클수록 맹렬하다: 뉴턴의 냉각 법칙</text>
+
+    <!-- Left: Hot Coffee (Fast Drop) -->
+    <g transform="translate(200, 250)">
+        <rect x="-120" y="-120" width="240" height="240" rx="15" fill="#331111" stroke="#ff4d4d" stroke-width="3"
+            opacity="0.8" />
+        <text x="0" y="-80" fill="#ff4d4d" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">1. 초반: 급격한 하락</text>
+
+        <!-- Thermometer hot -->
+        <rect x="-20" y="-40" width="40" height="100" rx="20" fill="#111111" stroke="#ffffff" stroke-width="2" />
+        <circle cx="0" cy="60" r="30" fill="#ff4d4d" />
+        <rect x="-10" y="-20" width="20" height="70" fill="#ff4d4d" />
+
+        <!-- Arrows -->
+        <path d="M 40 0 L 80 40" fill="none" stroke="#ff4d4d" stroke-width="4" marker-end="url(#arrow)"
+            filter="url(#glow)" />
+        <path d="M -40 0 L -80 40" fill="none" stroke="#ff4d4d" stroke-width="4" marker-end="url(#arrow)"
+            filter="url(#glow)" />
+
+        <text x="0" y="100" fill="#cccccc" font-family="sans-serif" font-size="14" text-anchor="middle">실내 온도(0도)와 차이가
+            큼(90도)</text>
+        <text x="0" y="115" fill="#ff4d4d" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">-> 수직 낙하!</text>
+    </g>
+
+    <!-- Right: Lukewarm Coffee (Slow Drop) -->
+    <g transform="translate(700, 250)">
+        <rect x="-120" y="-120" width="240" height="240" rx="15" fill="#113322" stroke="#00ffcc" stroke-width="3"
+            opacity="0.8" />
+        <text x="0" y="-80" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">2. 후반: 답답한 정체</text>
+
+        <!-- Thermometer lukewarm -->
+        <rect x="-20" y="-40" width="40" height="100" rx="20" fill="#111111" stroke="#ffffff" stroke-width="2" />
+        <circle cx="0" cy="60" r="30" fill="#00ffcc" />
+        <rect x="-10" y="30" width="20" height="20" fill="#00ffcc" />
+
+        <!-- Arrows -->
+        <path d="M 40 40 L 70 50" fill="none" stroke="#00ffcc" stroke-width="2" marker-end="url(#arrow)"
+            filter="url(#glow)" />
+        <path d="M -40 40 L -70 50" fill="none" stroke="#00ffcc" stroke-width="2" marker-end="url(#arrow)"
+            filter="url(#glow)" />
+
+        <text x="0" y="100" fill="#cccccc" font-family="sans-serif" font-size="14" text-anchor="middle">실내 온도와
+            비슷해짐(10도)</text>
+        <text x="0" y="115" fill="#00ffcc" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">-> 거북이 걸음</text>
+    </g>
+
+    <!-- Center Graph -->
+    <g transform="translate(450, 480)">
+
+        <!-- Axes -->
+        <line x1="-120" y1="0" x2="120" y2="0" stroke="#888888" stroke-width="2" />
+        <line x1="-120" y1="0" x2="-120" y2="-150" stroke="#888888" stroke-width="2" />
+
+        <text x="130" y="5" fill="#aaaaaa" font-family="sans-serif" font-size="14">시간(t)</text>
+        <text x="-130" y="-140" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="end">온도(T)</text>
+
+        <!-- Asymptote (Room Temp) -->
+        <line x1="-120" y1="-30" x2="120" y2="-30" stroke="#4da6ff" stroke-width="2" stroke-dasharray="6 4"
+            filter="url(#glow)" />
+        <text x="130" y="-25" fill="#4da6ff" font-family="sans-serif" font-size="14">실내 온도 (점근선)</text>
+
+        <!-- Exponential Cooling Curve -->
+        <path d="M -120 -150 Q -60 -35 100 -31" fill="none" stroke="#ffaa00" stroke-width="4" filter="url(#glow)" />
+
+        <circle cx="-120" cy="-150" r="4" fill="#ff4d4d" />
+        <circle cx="-60" cy="-65" r="4" fill="#ffaa00" />
+        <circle cx="20" cy="-35" r="4" fill="#00ffcc" />
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="520" width="600" height="50" rx="10" fill="#112233" stroke="#4da6ff" stroke-width="2" />
+    <text x="450" y="550" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">자연상수 e (math.exp)
+        가 만들어내는 완벽한 지수형 꼬리 (Exponential Tail)</text>
+
+</svg>

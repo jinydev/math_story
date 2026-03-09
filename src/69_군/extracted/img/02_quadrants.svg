@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 24px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 14px;
+                text-anchor: middle;
+            }
+
+            .axis {
+                stroke: #cccccc;
+                stroke-width: 4;
+            }
+
+            .grid {
+                stroke: #30363d;
+                stroke-width: 1;
+            }
+
+            .quad-bg-1 {
+                fill: rgba(0, 255, 136, 0.05);
+            }
+
+            .quad-bg-2 {
+                fill: rgba(0, 136, 255, 0.05);
+            }
+
+            .quad-bg-3 {
+                fill: rgba(255, 0, 136, 0.05);
+            }
+
+            .quad-bg-4 {
+                fill: rgba(255, 136, 0, 0.05);
+            }
+
+            .q-text {
+                font-size: 28px;
+                text-anchor: middle;
+            }
+
+            .sign-text {
+                font-size: 40px;
+                text-anchor: middle;
+            }
+        </style>
+        <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#cccccc" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="300" y="40" class="title">2차원 평면의 4개 구역: 사분면 (Quadrants)</text>
+
+    <g transform="translate(50, 80)">
+        <!-- Quadrant Backgrounds -->
+        <rect x="250" y="0" width="250" height="250" class="quad-bg-1" />
+        <rect x="0" y="0" width="250" height="250" class="quad-bg-2" />
+        <rect x="0" y="250" width="250" height="250" class="quad-bg-3" />
+        <rect x="250" y="250" width="250" height="250" class="quad-bg-4" />
+
+        <!-- Grid -->
+        <line x1="0" y1="50" x2="500" y2="50" class="grid" />
+        <line x1="0" y1="100" x2="500" y2="100" class="grid" />
+        <line x1="0" y1="150" x2="500" y2="150" class="grid" />
+        <line x1="0" y1="200" x2="500" y2="200" class="grid" />
+        <line x1="0" y1="300" x2="500" y2="300" class="grid" />
+        <line x1="0" y1="350" x2="500" y2="350" class="grid" />
+        <line x1="0" y1="400" x2="500" y2="400" class="grid" />
+        <line x1="0" y1="450" x2="500" y2="450" class="grid" />
+
+        <line x1="50" y1="0" x2="50" y2="500" class="grid" />
+        <line x1="100" y1="0" x2="100" y2="500" class="grid" />
+        <line x1="150" y1="0" x2="150" y2="500" class="grid" />
+        <line x1="200" y1="0" x2="200" y2="500" class="grid" />
+        <line x1="300" y1="0" x2="300" y2="500" class="grid" />
+        <line x1="350" y1="0" x2="350" y2="500" class="grid" />
+        <line x1="400" y1="0" x2="400" y2="500" class="grid" />
+        <line x1="450" y1="0" x2="450" y2="500" class="grid" />
+
+        <!-- Axes -->
+        <line x1="0" y1="250" x2="500" y2="250" class="axis" marker-end="url(#arrow)" />
+        <line x1="250" y1="500" x2="250" y2="0" class="axis" marker-end="url(#arrow)" />
+        <text x="515" y="255" fill="#cccccc" font-size="20">x</text>
+        <text x="250" y="-15" fill="#cccccc" font-size="20">y</text>
+        <text x="235" y="265" fill="#cccccc" font-size="16">O</text>
+
+        <!-- Q1 -->
+        <text x="375" y="100" class="q-text" fill="#00ff88">제1사분면</text>
+        <text x="375" y="150" class="sign-text" fill="#00ff88">(+, +)</text>
+        <circle cx="400" cy="150" r="6" fill="#00ff88" />
+
+        <!-- Q2 -->
+        <text x="125" y="100" class="q-text" fill="#0088ff">제2사분면</text>
+        <text x="125" y="150" class="sign-text" fill="#0088ff">(-, +)</text>
+        <circle cx="100" cy="150" r="6" fill="#0088ff" />
+
+        <!-- Q3 -->
+        <text x="125" y="350" class="q-text" fill="#ff0088">제3사분면</text>
+        <text x="125" y="400" class="sign-text" fill="#ff0088">(-, -)</text>
+        <circle cx="100" cy="350" r="6" fill="#ff0088" />
+
+        <!-- Q4 -->
+        <text x="375" y="350" class="q-text" fill="#ff8800">제4사분면</text>
+        <text x="375" y="400" class="sign-text" fill="#ff8800">(+, -)</text>
+        <circle cx="400" cy="350" r="6" fill="#ff8800" />
+
+    </g>
+
+</svg>

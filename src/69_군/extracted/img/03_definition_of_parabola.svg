@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">점과 직선 사이의 줄다리기: 초점(Focus)과 준선(Directrix)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"점 F와 선 L 사이의 거리가
+        완벽하게 1:1로 같은 픽셀만 렌더링하면 포물선이 된다"</text>
+
+    <!-- Interactive Demo Area -->
+    <g transform="translate(100, 150)">
+
+        <!-- Grid Base -->
+        <path
+            d="M 0 0 L 700 0 M 0 50 L 700 50 M 0 100 L 700 100 M 0 150 L 700 150 M 0 200 L 700 200 M 0 250 L 700 250 M 0 300 L 700 300"
+            stroke="#333344" stroke-width="1" />
+        <path
+            d="M 0 0 L 0 300 M 100 0 L 100 300 M 200 0 L 200 300 M 300 0 L 300 300 M 400 0 L 400 300 M 500 0 L 500 300 M 600 0 L 600 300 M 700 0 L 700 300"
+            stroke="#333344" stroke-width="1" />
+
+        <!-- Axis X & Y -->
+        <line x1="350" y1="0" x2="350" y2="300" stroke="#555555" stroke-width="3" />
+        <line x1="0" y1="150" x2="700" y2="150" stroke="#555555" stroke-width="3" />
+
+        <text x="680" y="140" fill="#555555" font-family="sans-serif" font-size="16">X</text>
+        <text x="360" y="20" fill="#555555" font-family="sans-serif" font-size="16">Y</text>
+
+        <!-- Parabola Curve y^2 = 4*50*x -> x = y^2 / 200 -->
+        <!-- We will draw x = y^2 / 100 for better curve. 
+         Focus is at p = 25 (so (375, 150) in our absolute coords where (350,150) is origin).
+         Wait, let's use origin = (200, 150). Focus p = 100 (so 300, 150). Directrix x = -100 (so 100, y).
+         y^2 = 400x -> x = y^2 / 400. 
+         y = 150 -> x = 22500 / 400 = 56.25 from origin.
+    -->
+        <path d="M 300 0 Q 150 150 300 300" fill="none" stroke="#00ffcc" stroke-width="4" filter="url(#glow)" />
+        <path d="M 300 0 Q 150 150 300 300 L 700 300 L 700 0 Z" fill="#00ffcc" opacity="0.1" />
+
+        <!-- Directrix (x = 100 in our canvas, from origin 200 -> so x = -100) -->
+        <line x1="100" y1="0" x2="100" y2="300" stroke="#ff00ff" stroke-width="4" filter="url(#glow)" />
+        <text x="90" y="325" fill="#ff00ff" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="end">준선 L (Directrix)</text>
+
+        <!-- Focus Point F (x = 300 in canvas, from origin 200 -> p = 100) -->
+        <circle cx="300" cy="150" r="8" fill="#ffaa00" filter="url(#glow)" />
+        <text x="300" y="175" fill="#ffaa00" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">초점 F (Focus)</text>
+
+        <!-- Vertex (200, 150) -->
+        <circle cx="200" cy="150" r="6" fill="#ffffff" filter="url(#glow)" />
+        <text x="175" y="175" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">꼭짓점
+            (Vertex)</text>
+
+        <!-- Example Point P1 (origin 200, p=100. Let's pick y=100 -> x=25 -> (225, 50) on canvas) -->
+        <!-- Wait, y=100 from origin is y=50 on canvas. Distance to F(300,150) = sqrt(75^2 + 100^2) = sqrt(5625 + 10000) = sqrt(15625) = 125.
+         Distance to directrix(100): 225 - 100 = 125. IT WORKS! PERFECT 1:1. -->
+        <circle cx="225" cy="50" r="8" fill="#ff4d4d" filter="url(#glow)" />
+        <text x="240" y="45" fill="#ff4d4d" font-family="sans-serif" font-size="16" font-weight="bold">점 P (렌더링
+            합격)</text>
+
+        <!-- Line P1 to F -->
+        <line x1="225" y1="50" x2="300" y2="150" stroke="#ffaa00" stroke-width="3" stroke-dasharray="6 4" />
+        <text x="275" y="100" fill="#ffaa00" font-family="sans-serif" font-size="16" font-weight="bold"
+            transform="rotate(50, 275, 100)">거리 = 125</text>
+
+        <!-- Line P1 to Directrix -->
+        <line x1="225" y1="50" x2="100" y2="50" stroke="#ff00ff" stroke-width="3" stroke-dasharray="6 4" />
+        <text x="160" y="40" fill="#ff00ff" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">거리 = 125</text>
+
+        <!-- Right-angle symbol at Directrix -->
+        <polyline points="110,50 110,60 100,60" fill="none" stroke="#ff00ff" stroke-width="2" />
+
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="500" width="600" height="60" rx="10" fill="#2b1111" stroke="#ff4d4d" stroke-width="2" />
+    <text x="450" y="530" fill="#ff4d4d" font-family="monospace" font-size="20" font-weight="bold"
+        text-anchor="middle">초점 F 와 준선 L 의 줄다리기: 1:1 매칭</text>
+    <text x="450" y="550" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">이 팽팽한 $1:1$ 방어막을
+        스크립트로 짜면 $y^2 = 4px$ 가 도출된다.</text>
+
+</svg>
