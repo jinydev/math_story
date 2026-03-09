@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#0b7285" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">투망 던지기: 내 안의 진짜 평균(m) 포획 작전</text>
+
+    <!-- Ground Line representing Population Mean (Unknown m) -->
+    <line x1="50" y1="180" x2="550" y2="180" stroke="#868e96" stroke-width="2" />
+
+    <!-- The magical Unknown m line in center -->
+    <line x1="300" y1="50" x2="300" y2="200" stroke="#c92a2a" stroke-width="3" stroke-dasharray="8,4" />
+    <text x="300" y="220" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">신의 정답: 모평균 (m)</text>
+
+    <!-- Fishing Nets (Estimations) -->
+
+    <!-- Net 1 (Missed slightly but caught) -->
+    <g transform="translate(150, 150)">
+        <circle cx="0" cy="0" r="4" fill="#0b7285" />
+        <text x="0" y="15" fill="#0b7285" font-size="12" font-family="monospace" font-weight="bold"
+            text-anchor="middle">내 표본 X̄₁</text>
+
+        <!-- The net range (Confidence Interval) -->
+        <line x1="-60" y1="-20" x2="60" y2="-20" stroke="#1098ad" stroke-width="4" />
+        <line x1="-60" y1="-25" x2="-60" y2="-15" stroke="#1098ad" stroke-width="3" />
+        <line x1="60" y1="-25" x2="60" y2="-15" stroke="#1098ad" stroke-width="3" />
+        <!-- Connecting strings -->
+        <path d="M 0 0 L -60 -20" fill="none" stroke="#99e9f2" stroke-width="1" />
+        <path d="M 0 0 L 60 -20" fill="none" stroke="#99e9f2" stroke-width="1" />
+    </g>
+
+    <!-- Net 2 (Hit perfect center) -->
+    <g transform="translate(260, 110)">
+        <circle cx="0" cy="0" r="4" fill="#0b7285" />
+        <text x="0" y="15" fill="#0b7285" font-size="12" font-family="monospace" font-weight="bold"
+            text-anchor="middle">내 표본 X̄₂</text>
+        <line x1="-60" y1="-20" x2="60" y2="-20" stroke="#1098ad" stroke-width="4" />
+        <line x1="-60" y1="-25" x2="-60" y2="-15" stroke="#1098ad" stroke-width="3" />
+        <line x1="60" y1="-25" x2="60" y2="-15" stroke="#1098ad" stroke-width="3" />
+        <path d="M 0 0 L -60 -20" fill="none" stroke="#99e9f2" stroke-width="1" />
+        <path d="M 0 0 L 60 -20" fill="none" stroke="#99e9f2" stroke-width="1" />
+
+        <text x="0" y="-30" fill="#2b8a3e" font-size="12" font-weight="bold" text-anchor="middle">"망 안에 m이 들어옴! (포획
+            성공)"</text>
+    </g>
+
+    <!-- Net 3 (Missed completely - Outlier) -->
+    <g transform="translate(450, 130)">
+        <circle cx="0" cy="0" r="4" fill="#868e96" />
+        <text x="0" y="15" fill="#868e96" font-size="12" font-family="monospace" font-weight="bold"
+            text-anchor="middle">망한 표본 X̄₃</text>
+        <line x1="-60" y1="-20" x2="60" y2="-20" stroke="#fa5252" stroke-width="4" />
+        <line x1="-60" y1="-25" x2="-60" y2="-15" stroke="#fa5252" stroke-width="3" />
+        <line x1="60" y1="-25" x2="60" y2="-15" stroke="#fa5252" stroke-width="3" />
+        <path d="M 0 0 L -60 -20" fill="none" stroke="#ffe3e3" stroke-width="1" />
+        <path d="M 0 0 L 60 -20" fill="none" stroke="#ffe3e3" stroke-width="1" />
+
+        <text x="0" y="-30" fill="#e03131" font-size="10" font-weight="bold" text-anchor="middle">"m 이 그물 밖으로 나감!
+            (실패)"</text>
+    </g>
+
+</svg>

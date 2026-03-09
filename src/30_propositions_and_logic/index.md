@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '15. 명제와 논리 Logic  Proposition 참과 거짓을 가르는 컴퓨터의 영혼'
+---
+
 # 15. 명제와 논리 (Logic & Proposition: 참과 거짓을 가르는 컴퓨터의 영혼)
 
 ## 이 단원의 핵심 (Chapter Focus)

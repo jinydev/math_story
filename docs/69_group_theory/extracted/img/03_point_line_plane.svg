@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">0차원 코어 기반 차원 팽창 렌더링</text>
+
+    <!-- 1. ZERO DIMENSION (POINT) -->
+    <g transform="translate(150, 200)">
+        <rect x="-100" y="-100" width="200" height="200" rx="15" fill="#111122" stroke="#ff0055" stroke-width="2" />
+        <text x="0" y="-60" fill="#ff0055" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">0차원: 점 (Point)</text>
+
+        <circle cx="0" cy="10" r="10" fill="#ff0055" filter="url(#glow)" />
+
+        <text x="0" y="50" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">크기: 0, 부피:
+            0</text>
+        <text x="0" y="70" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">"부분이 없는 위치
+            데이터"</text>
+    </g>
+
+    <!-- Arrow to 1D -->
+    <path d="M 260 200 L 340 200" stroke="#ffffff" stroke-width="4" marker-end="url(#arrow)" />
+    <text x="300" y="190" fill="#ffff00" font-family="sans-serif" font-size="14" font-weight="bold"
+        text-anchor="middle">이동 스크롤</text>
+
+    <!-- 2. ONE DIMENSION (LINE) -->
+    <g transform="translate(450, 200)">
+        <rect x="-100" y="-100" width="200" height="200" rx="15" fill="#112233" stroke="#4da6ff" stroke-width="2" />
+        <text x="0" y="-60" fill="#4da6ff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">1차원: 선 (Line)</text>
+
+        <!-- Moving point leaves a trail -->
+        <path d="M -60 10 L 60 10" fill="none" stroke="#4da6ff" stroke-width="5" filter="url(#glow)" />
+        <circle cx="-60" cy="10" r="5" fill="#ffffff" />
+        <circle cx="60" cy="10" r="5" fill="#ffffff" />
+
+        <text x="0" y="50" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">길이: 존재, 두께:
+            0</text>
+        <text x="0" y="70" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">"점이 이동한
+            흔적"</text>
+    </g>
+
+    <!-- Arrow to 2D -->
+    <path d="M 560 200 L 640 200" stroke="#ffffff" stroke-width="4" marker-end="url(#arrow)" />
+    <text x="600" y="190" fill="#ffff00" font-family="sans-serif" font-size="14" font-weight="bold"
+        text-anchor="middle">수직 팽창</text>
+
+    <!-- 3. TWO DIMENSION (PLANE) -->
+    <g transform="translate(750, 200)">
+        <rect x="-100" y="-100" width="200" height="200" rx="15" fill="#223322" stroke="#00ffcc" stroke-width="2" />
+        <text x="0" y="-60" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">2차원: 면 (Plane)</text>
+
+        <!-- Moving line leaves a plane area -->
+        <rect x="-60" y="-20" width="120" height="60" fill="#00ffcc" opacity="0.4" stroke="#00ffcc" stroke-width="2"
+            filter="url(#glow)" />
+
+        <text x="0" y="70" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">길이+폭: 존재, 부피:
+            0</text>
+        <text x="0" y="90" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">"선이 미끄러진
+            자국"</text>
+    </g>
+
+    <!-- Code visualization at bottom -->
+    <rect x="150" y="400" width="600" height="150" rx="10" fill="#0f0f15" stroke="#555566" stroke-width="2" />
+    <text x="170" y="430" fill="#ff77aa" font-family="monospace" font-size="16"># 차원 빌드-업 파이썬 구조</text>
+    <text x="170" y="460" fill="#ffffff" font-family="monospace" font-size="16">V_0D = [ x, y ] <tspan fill="#ff0055">//
+            배열 1개 (단일 위상)</tspan></text>
+    <text x="170" y="490" fill="#ffffff" font-family="monospace" font-size="16">V_1D = [ [x1,y1], [x2,y2] ... ]<tspan
+            fill="#4da6ff">// 1차원 배열</tspan></text>
+    <text x="170" y="520" fill="#ffffff" font-family="monospace" font-size="16">V_2D = [ V_1D_A, V_1D_B, ... ] <tspan
+            fill="#00ffcc">// 2차원 매트릭스</tspan></text>
+
+</svg>

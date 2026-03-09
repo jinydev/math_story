@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 일차방정식의 해머, 이항과 Python 봇'
+---
+
 # 03. 일차방정식의 해머, 이항과 Python 봇
 
 ## 1. 학습 목표 (Learning Objectives)

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '02. 두 번째 수업 원점을 향한 중력, 절댓값 Number line  Absolute Value'
+---
+
 # 02. 두 번째 수업: 원점을 향한 중력, 절댓값 (Number line & Absolute Value)
 
 정수 왕국의 지리(Map)를 한눈에 파악하려면 **수직선(Number Line)**이라는 직선 도로를 그려보면 됩니다. 수직선은 0을 중심으로 오른쪽은 양수, 왼쪽은 음수가 끝없이 펼쳐진 1차원 우주입니다.

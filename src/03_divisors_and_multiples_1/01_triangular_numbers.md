@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '01. 첫 번째 수업 삼각수와 가우스 Triangular Numbers'
+---
+
 # 01. 첫 번째 수업: 삼각수와 가우스 (Triangular Numbers)
 
 "여러분, 자리에 앉아서 1부터 100까지의 숫자를 전부 더해보세요."

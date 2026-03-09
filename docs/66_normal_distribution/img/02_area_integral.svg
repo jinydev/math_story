@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">확률은 산(곡선) 아래의 거대한 면적이다 (Integral)</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"데이터 분포 산이 아무리 치솟아 올라도, 그 모든 면적을 다 긁어모으면 무조건
+        1(100%) 이다!"</text>
+
+    <!-- Left: The full mountain area -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">f(x) 확률 밀도 함수
+            전체</text>
+
+        <line x1="10" y1="120" x2="210" y2="120" stroke="#495057" stroke-width="2" />
+
+        <!-- Density Curve & Fill -->
+        <path d="M 20 120 C 60 120, 80 40, 110 40 C 140 40, 160 120, 200 120 Z" fill="#ebfbee" stroke="#2b8a3e"
+            stroke-width="3" />
+
+        <text x="110" y="90" fill="#0ca678" font-size="24" font-weight="bold" text-anchor="middle">∑ = 1 (100%)</text>
+
+        <rect x="15" y="125" width="190" height="18" fill="#e6fcf5" rx="3" />
+        <text x="110" y="138" fill="#087f5b" font-size="10" font-weight="bold" font-family="monospace"
+            text-anchor="middle">∫ -∞ to +∞ f(x) dx = 1</text>
+    </g>
+
+    <!-- Plus Arrow -->
+    <path d="M 290 145 L 310 145" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow-gray)" />
+
+    <!-- Right: Slicing the area -->
+    <g transform="translate(320, 80)">
+        <rect x="0" y="0" width="240" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="120" y="25" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">범위 절단면(Slicing) = 곧
+            확률</text>
+
+        <line x1="20" y1="120" x2="220" y2="120" stroke="#495057" stroke-width="2" />
+
+        <!-- Empty Curve Frame -->
+        <path d="M 30 120 C 70 120, 90 40, 120 40 C 150 40, 170 120, 210 120" fill="none" stroke="#e8590c"
+            stroke-width="2" stroke-dasharray="2,2" />
+
+        <!-- Sliced Area Target -->
+        <path d="M 120 40 C 140 40, 150 80, 160 100 L 160 120 L 120 120 Z" fill="#ffe8cc" stroke="#fd7e14"
+            stroke-width="2" />
+
+        <line x1="120" y1="40" x2="120" y2="120" stroke="#d9480f" stroke-width="2" stroke-dasharray="2,2" />
+        <text x="120" y="135" fill="#d9480f" font-size="10" font-weight="bold" text-anchor="middle">a</text>
+
+        <line x1="160" y1="100" x2="160" y2="120" stroke="#d9480f" stroke-width="2" stroke-dasharray="2,2" />
+        <text x="160" y="135" fill="#d9480f" font-size="10" font-weight="bold" text-anchor="middle">b</text>
+
+        <text x="140" y="110" fill="#d9480f" font-size="14" font-weight="bold" text-anchor="middle">P단면</text>
+
+        <rect x="15" y="125" width="210" height="18" fill="#fff4e6" rx="3" />
+        <text x="120" y="138" fill="#d9480f" font-size="9" font-weight="bold" font-family="monospace"
+            text-anchor="middle">P(a ≤ X ≤ b) = a부터 b까지 적분 면적!</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-gray" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세 번째 의사결정: '누가 피자를 자를 것인가?' (분할과 선택)</text>
+
+    <!-- Title / Setup -->
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">절대 싸우지 않는 마법의 알고리즘: I Cut, You Choose</text>
+
+    <!-- Step 1: I Cut -->
+    <g transform="translate(80, 80)">
+        <rect x="-10" y="-10" width="180" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="80" y="10" fill="#e67700" font-size="14" font-weight="bold" text-anchor="middle">🔪 Step 1: 분할자 (I
+            Cut)</text>
+
+        <!-- Pizza -->
+        <circle cx="80" cy="70" r="40" fill="#fcc419" stroke="#e67700" stroke-width="2" />
+        <!-- Pepperoni -->
+        <circle cx="65" cy="55" r="5" fill="#c92a2a" />
+        <circle cx="95" cy="65" r="5" fill="#c92a2a" />
+        <circle cx="75" cy="85" r="5" fill="#c92a2a" />
+        <circle cx="55" cy="75" r="5" fill="#c92a2a" />
+
+        <!-- Cutting Line -->
+        <line x1="40" y1="30" x2="120" y2="110" stroke="#fa5252" stroke-width="3" stroke-dasharray="4,2" />
+        <text x="80" y="130" fill="#495057" font-size="11" font-weight="bold" text-anchor="middle">형: 정확히 50:50으로
+            자름</text>
+    </g>
+
+    <!-- Arrow -->
+    <path d="M 270 140 L 320 140" fill="none" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow)" />
+    <text x="295" y="130" fill="#868e96" font-size="10" font-weight="bold" text-anchor="middle">권리 이전</text>
+
+    <!-- Step 2: You Choose -->
+    <g transform="translate(350, 80)">
+        <rect x="-10" y="-10" width="200" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="90" y="10" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">✋ Step 2: 선택자 (You
+            Choose)</text>
+
+        <!-- Splitted Pizza -->
+        <path d="M 60 70 A 40 40 0 0 1 100 30 L 100 70 Z" fill="#ffd43b" stroke="#e67700" stroke-width="2"
+            transform="translate(0, -5)" />
+        <path d="M 60 70 A 40 40 0 1 0 100 30 L 100 70 Z" fill="#fcc419" stroke="#e67700" stroke-width="2"
+            transform="translate(5, 5)" />
+
+        <!-- Pepperoni on pieces -->
+        <circle cx="85" cy="50" r="5" fill="#c92a2a" transform="translate(0, -5)" />
+        <circle cx="75" cy="85" r="5" fill="#c92a2a" transform="translate(5, 5)" />
+        <circle cx="55" cy="75" r="5" fill="#c92a2a" transform="translate(5, 5)" />
+
+        <!-- Hand pointing -->
+        <text x="110" y="45" font-size="20">👈</text>
+
+        <text x="90" y="130" fill="#495057" font-size="11" font-weight="bold" text-anchor="middle">동생: 먼저 원하는 조각을
+            픽!</text>
+    </g>
+
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

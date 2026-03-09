@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '6. 애매모호한 그림에 도장을 찍다 상관계수 Correlation Coefficient'
+---
+
 # 6. 애매모호한 그림에 도장을 찍다: 상관계수 (Correlation Coefficient)
 
 ## [도입부] 학습 목표 (Learning Objectives)

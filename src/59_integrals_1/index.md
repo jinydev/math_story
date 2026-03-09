@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "수학이야기 01.적분1"
+title: '수학이야기 01.적분1'
 parent: 수학이야기
 nav_order: 1
 has_children: true

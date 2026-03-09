@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '02. 가장 완벽한 뼈대, 삼각형 Triangle Build'
+---
+
 # 02. 가장 완벽한 뼈대, 삼각형 (Triangle Build)
 
 ## 1. 학습 목표 (Learning Objectives)

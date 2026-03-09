@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#0b7285" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">여론조사의 꽃: 모비율(p) 추정의 원리</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"대한민국 국민 전체의 지지율(p)을 1000명의 샘플 지지율(p̂)로
+        추정한다!"</text>
+
+    <!-- Left: The Formula -->
+    <g transform="translate(40, 80)">
+        <rect x="0" y="0" width="300" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="150" y="25" fill="#0b7285" font-size="14" font-weight="bold" text-anchor="middle">95% 신뢰구간 공식 변환</text>
+
+        <line x1="10" y1="40" x2="290" y2="40" stroke="#adb5bd" stroke-width="1" />
+
+        <!-- Mean Formula (Before) -->
+        <text x="150" y="60" fill="#adb5bd" font-size="12" font-weight="bold" font-family="monospace"
+            text-anchor="middle">X̄ ± 1.96 × (σ / √n)</text>
+
+        <!-- Arrow -->
+        <path d="M 150 70 L 150 90" fill="none" stroke="#228be6" stroke-width="2" marker-end="url(#arrow-blue)" />
+
+        <!-- Proportion Formula (After) -->
+        <rect x="25" y="100" width="250" height="35" fill="#e3fafc" rx="5" />
+        <text x="150" y="122" fill="#0c8599" font-size="14" font-weight="bold" font-family="monospace"
+            text-anchor="middle">p̂ ± 1.96 × √(p̂q̂ / n)</text>
+    </g>
+
+    <!-- Right: The News Anchor -->
+    <g transform="translate(360, 80)">
+        <rect x="0" y="0" width="200" height="150" fill="#fff" stroke="#1864ab" stroke-width="2" rx="5" />
+
+        <!-- TV Screen Header -->
+        <rect x="0" y="0" width="200" height="25" fill="#1864ab" rx="3" />
+        <text x="100" y="17" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">KBS 9시 뉴스 속보</text>
+
+        <text x="100" y="50" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">A 후보 지지율 (p̂)</text>
+        <text x="100" y="80" fill="#c92a2a" font-size="28" font-weight="bold" text-anchor="middle">45.0%</text>
+
+        <rect x="10" y="95" width="180" height="45" fill="#f1f3f5" rx="3" />
+        <text x="100" y="112" fill="#495057" font-size="10" font-weight="bold" text-anchor="middle">표본오차: ± 3.1%p</text>
+        <text x="100" y="128" fill="#495057" font-size="10" font-weight="bold" text-anchor="middle">신뢰수준 95%
+            (n=1000명)</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#228be6" />
+        </marker>
+    </defs>
+</svg>

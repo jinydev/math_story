@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '9. 궁극의 포트폴리오 융합 무기와 게릴라 해법, 기타 전략 Other Strategies'
+---
+
 # 9. 궁극의 포트폴리오: 융합 무기와 게릴라 해법, '기타 전략 (Other Strategies)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

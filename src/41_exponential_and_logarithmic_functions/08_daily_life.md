@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '8. 보이지 않는 일상의 지배자 지수와 로그의 활용 Daily Life'
+---
+
 # 8. 보이지 않는 일상의 지배자: 지수와 로그의 활용 (Daily Life)
 
 ## [도입부] 학습 목표 (Learning Objectives)

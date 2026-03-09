@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" width="900" height="650">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="40" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">프랙탈 다항식 컴파일러: 파스칼의 삼각형 (Pascal's Triangle)</text>
+    <text x="450" y="70" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"방정식을 직접 곱하지 마라.
+        상단의 두 노드(Node) 를 합산해 내려오는 알고리즘이면 모든 계수가 해킹된다."</text>
+
+    <!-- The Pyramid Structure -->
+    <g transform="translate(450, 150)">
+
+        <!-- Row 0: (a+b)^0 -->
+        <g transform="translate(0, 0)">
+            <polygon points="0,-25 25,15 -25,15" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+            <text x="0" y="5" fill="#00ffcc" font-family="monospace" font-size="16" font-weight="bold"
+                text-anchor="middle">1</text>
+            <text x="180" y="5" fill="#aaaaaa" font-family="monospace" font-size="14" text-anchor="start">(a+b)⁰</text>
+        </g>
+
+        <!-- Row 1: (a+b)^1 -->
+        <g transform="translate(-40, 60)">
+            <polygon points="0,-25 25,15 -25,15" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+            <text x="0" y="5" fill="#00ffcc" font-family="monospace" font-size="16" font-weight="bold"
+                text-anchor="middle">1</text>
+        </g>
+        <g transform="translate(40, 60)">
+            <polygon points="0,-25 25,15 -25,15" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+            <text x="0" y="5" fill="#00ffcc" font-family="monospace" font-size="16" font-weight="bold"
+                text-anchor="middle">1</text>
+            <text x="140" y="5" fill="#aaaaaa" font-family="monospace" font-size="14" text-anchor="start">(a+b)¹ = 1a +
+                1b</text>
+        </g>
+
+        <!-- Row 2: (a+b)^2 -->
+        <g transform="translate(-80, 120)">
+            <polygon points="0,-25 25,15 -25,15" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+            <text x="0" y="5" fill="#00ffcc" font-family="monospace" font-size="16" font-weight="bold"
+                text-anchor="middle">1</text>
+        </g>
+        <g transform="translate(0, 120)">
+            <polygon points="0,-25 25,15 -25,15" fill="#331133" stroke="#ff00ff" stroke-width="3" filter="url(#glow)" />
+            <text x="0" y="5" fill="#ffffff" font-family="monospace" font-size="20" font-weight="bold"
+                text-anchor="middle">2</text>
+
+            <!-- Arrows showing addition -> 1 + 1 = 2 -->
+            <path d="M -25 -45 L -10 -20" fill="none" stroke="#ffff00" stroke-width="2" marker-end="url(#arrow_y)" />
+            <path d="M 25 -45 L 10 -20" fill="none" stroke="#ffff00" stroke-width="2" marker-end="url(#arrow_y)" />
+            <text x="0" y="-55" fill="#ffff00" font-size="18" font-weight="bold" text-anchor="middle">+</text>
+        </g>
+        <g transform="translate(80, 120)">
+            <polygon points="0,-25 25,15 -25,15" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+            <text x="0" y="5" fill="#00ffcc" font-family="monospace" font-size="16" font-weight="bold"
+                text-anchor="middle">1</text>
+            <text x="100" y="5" fill="#aaaaaa" font-family="monospace" font-size="14" text-anchor="start">(a+b)² = 1a² +
+                2ab + 1b²</text>
+        </g>
+
+        <!-- Row 3: (a+b)^3 -->
+        <g transform="translate(-120, 180)">
+            <polygon points="0,-25 25,15 -25,15" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+            <text x="0" y="5" fill="#00ffcc" font-family="monospace" font-size="16" font-weight="bold"
+                text-anchor="middle">1</text>
+        </g>
+        <g transform="translate(-40, 180)">
+            <polygon points="0,-25 25,15 -25,15" fill="#331133" stroke="#ff00ff" stroke-width="2" />
+            <text x="0" y="5" fill="#ffffff" font-family="monospace" font-size="20" font-weight="bold"
+                text-anchor="middle">3</text>
+        </g>
+        <g transform="translate(40, 180)">
+            <polygon points="0,-25 25,15 -25,15" fill="#331133" stroke="#ff00ff" stroke-width="2" />
+            <text x="0" y="5" fill="#ffffff" font-family="monospace" font-size="20" font-weight="bold"
+                text-anchor="middle">3</text>
+        </g>
+        <g transform="translate(120, 180)">
+            <polygon points="0,-25 25,15 -25,15" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+            <text x="0" y="5" fill="#00ffcc" font-family="monospace" font-size="16" font-weight="bold"
+                text-anchor="middle">1</text>
+            <text x="60" y="5" fill="#aaaaaa" font-family="monospace" font-size="14" text-anchor="start">(a+b)³ = 1a³ +
+                3a²b + 3ab² + 1b³</text>
+        </g>
+
+        <!-- Row 4: (a+b)^4 -->
+        <g transform="translate(-160, 240)">
+            <polygon points="0,-25 25,15 -25,15" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+            <text x="0" y="5" fill="#00ffcc" font-family="monospace" font-size="16" font-weight="bold"
+                text-anchor="middle">1</text>
+        </g>
+        <g transform="translate(-80, 240)">
+            <polygon points="0,-25 25,15 -25,15" fill="#331133" stroke="#ff00ff" stroke-width="2" />
+            <text x="0" y="5" fill="#ffffff" font-family="monospace" font-size="20" font-weight="bold"
+                text-anchor="middle">4</text>
+        </g>
+        <g transform="translate(0, 240)">
+            <polygon points="0,-25 25,15 -25,15" fill="#220000" stroke="#ff5555" stroke-width="3" filter="url(#glow)" />
+            <text x="0" y="5" fill="#ffffff" font-family="monospace" font-size="22" font-weight="bold"
+                text-anchor="middle">6</text>
+            <!-- Arrows showing addition -> 3 + 3 = 6 -->
+            <path d="M -25 -45 L -10 -20" fill="none" stroke="#ffff00" stroke-width="2" marker-end="url(#arrow_y)" />
+            <path d="M 25 -45 L 10 -20" fill="none" stroke="#ffff00" stroke-width="2" marker-end="url(#arrow_y)" />
+            <text x="0" y="-55" fill="#ffff00" font-size="18" font-weight="bold" text-anchor="middle">+</text>
+        </g>
+        <g transform="translate(80, 240)">
+            <polygon points="0,-25 25,15 -25,15" fill="#331133" stroke="#ff00ff" stroke-width="2" />
+            <text x="0" y="5" fill="#ffffff" font-family="monospace" font-size="20" font-weight="bold"
+                text-anchor="middle">4</text>
+        </g>
+        <g transform="translate(160, 240)">
+            <polygon points="0,-25 25,15 -25,15" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+            <text x="0" y="5" fill="#00ffcc" font-family="monospace" font-size="16" font-weight="bold"
+                text-anchor="middle">1</text>
+            <text x="20" y="5" fill="#aaaaaa" font-family="monospace" font-size="14" text-anchor="start">(a+b)⁴ = 1a⁴ +
+                4a³b + 6a²b² + 4ab³ + 1b⁴</text>
+        </g>
+    </g>
+
+    <defs>
+        <marker id="arrow_y" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#ffff00" />
+        </marker>
+    </defs>
+
+    <!-- Explanation Bottom -->
+    <g transform="translate(100, 480)">
+        <rect x="0" y="0" width="700" height="120" rx="10" fill="#001122" stroke="#4da6ff" stroke-width="2" />
+        <text x="350" y="30" fill="#4da6ff" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">이항정리(Binomial Theorem) = 콤비네이션(조합) 의 시각화</text>
+
+        <text x="350" y="60" fill="#aaaaaa" font-family="monospace" font-size="16" text-anchor="middle">위 피라미드의 모든 블록은
+            사실 조합식(nCr) 의 숨겨진 암호입니다.</text>
+
+        <text x="350" y="90" fill="#00ffcc" font-family="monospace" font-size="20" font-weight="bold"
+            text-anchor="middle">Row N 층의 계수들 = ₙC₀, ₙC₁, ₙC₂, ... , ₙCₙ</text>
+    </g>
+
+</svg>

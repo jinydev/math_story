@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '01. 복잡함을 지운다 점Node과 선Edge'
+---
+
 # 01. 복잡함을 지운다: 점(Node)과 선(Edge)
 
 ## 1. 학습 목표 (Learning Objectives)

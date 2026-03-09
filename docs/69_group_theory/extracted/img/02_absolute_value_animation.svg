@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">원점을 향한 절대적인 거리: 절댓값 (Absolute Value)</text>
+
+    <!-- Number Line -->
+    <g transform="translate(100, 300)">
+
+        <!-- Horizon Line -->
+        <line x1="0" y1="0" x2="700" y2="0" stroke="#777777" stroke-width="4" />
+
+        <!-- Origin (0) -->
+        <circle cx="350" cy="0" r="10" fill="#ffffff" filter="url(#glow)" />
+        <text x="350" y="-20" fill="#ffffff" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle">0</text>
+        <text x="350" y="40" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">원점
+            (Origin)</text>
+
+        <!-- Ticks -->
+        <line x1="150" y1="-10" x2="150" y2="10" stroke="#777777" stroke-width="3" />
+        <text x="150" y="35" fill="#aaaaaa" font-family="monospace" font-size="20" text-anchor="middle">-3</text>
+
+        <line x1="550" y1="-10" x2="550" y2="10" stroke="#777777" stroke-width="3" />
+        <text x="550" y="35" fill="#aaaaaa" font-family="monospace" font-size="20" text-anchor="middle">+3</text>
+
+        <!-- Negative Absolute Value Jump -->
+        <path d="M 150 -40 Q 250 -150 350 -40" fill="none" stroke="#00ffcc" stroke-width="4" stroke-dasharray="8 4"
+            marker-end="url(#arrow)" filter="url(#glow)" />
+        <circle cx="150" cy="-40" r="8" fill="#00ffcc" />
+        <text x="250" y="-110" fill="#00ffcc" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle">| -3 | = 3</text>
+        <text x="250" y="-85" fill="#00ffcc" font-family="sans-serif" font-size="14" text-anchor="middle">서쪽으로
+            3거리</text>
+
+        <!-- Positive Absolute Value Jump -->
+        <path d="M 550 -40 Q 450 -150 350 -40" fill="none" stroke="#ff4d4d" stroke-width="4" stroke-dasharray="8 4"
+            marker-end="url(#arrow)" filter="url(#glow)" />
+        <circle cx="550" cy="-40" r="8" fill="#ff4d4d" />
+        <text x="450" y="-110" fill="#ff4d4d" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle">| +3 | = 3</text>
+        <text x="450" y="-85" fill="#ff4d4d" font-family="sans-serif" font-size="14" text-anchor="middle">동쪽으로
+            3거리</text>
+
+        <circle cx="350" cy="-35" r="8" fill="#ffffff" filter="url(#glow)" />
+
+        <!-- Arrows definition inside g for correct context if needed, but we can reuse the global one if defined -->
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="480" width="600" height="80" rx="10" fill="#2b1133" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="510" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="bold"
+        text-anchor="middle">방향(+,-)의 꼬리표를 떼어내는 탈착기</text>
+    <text x="450" y="540" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">수직선에서 숫자가
+        0(기준점)으로부터 떨어진 <tspan fill="#ff00ff" font-weight="bold">순수한 거리 크기</tspan>만 남긴다.</text>
+
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffffff" />
+        </marker>
+    </defs>
+
+</svg>

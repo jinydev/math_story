@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '05. 우리 몸속의 황금비'
+---
+
 # 05. 우리 몸속의 황금비
 
 ## 1. 학습 목표 (Learning Objectives)

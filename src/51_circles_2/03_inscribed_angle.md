@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 세 번째 수업 허공의 마법, 원주각Inscribed Angle 의 탄생'
+---
+
 # 03. 세 번째 수업: 허공의 마법, 원주각(Inscribed Angle) 의 탄생
 
 원의 한가운데 배꼽에 꼭짓점을 둔 각도를 **'중심각(Central Angle)'** 이라고 불렀습니다. (1부 참조)

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 54. 사각형 Quadrilaterals'
+---
+
 # 수학이야기 54. 사각형 (Quadrilaterals)
 
 ## 📌 학습 개요

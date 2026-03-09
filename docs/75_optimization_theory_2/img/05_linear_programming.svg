@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#f59f00" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세계 2차 대전이 낳은 기적: 단치히의 심플렉스(Simplex) 알고리즘</text>
+
+    <!-- The Problem: Millions of variables -->
+    <g transform="translate(100, 150)">
+        <rect x="-80" y="-80" width="160" height="120" fill="#fff4e6" stroke="#f59f00" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#d9480f" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">군수 물자 최적화 (1947)</text>
+
+        <!-- Chaos of variables -->
+        <text x="0" y="-20" fill="#d9480f" font-size="14" font-family="monospace" font-weight="bold"
+            text-anchor="middle">x1, x2 ... x100,000</text>
+
+        <text x="0" y="5" fill="#495057" font-size="11" font-family="sans-serif" text-anchor="middle">미군 폭격기, 식량,
+            연료...</text>
+        <text x="0" y="20" fill="#495057" font-size="11" font-family="sans-serif" text-anchor="middle">10만짜리 다면체
+            모서리</text>
+        <text x="0" y="35" fill="#e03131" font-size="11" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">"인간이 계산 불가능"</text>
+    </g>
+
+    <!-- Dantzig's Simplex Magic -->
+    <path d="M 190 110 L 250 110" fill="none" stroke="#adb5bd" stroke-width="4" stroke-dasharray="4,4"
+        marker-end="url(#arrow-grey)" />
+
+    <g transform="translate(420, 150)">
+        <rect x="-140" y="-80" width="280" height="120" fill="#fff5f5" stroke="#fa5252" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">심플렉스(Simplex) 점프 알고리즘</text>
+
+        <!-- Simplex Jumping over vertices -->
+        <!-- Draw a mini polygon and arrows jumping around edges -->
+        <polygon points="-50,30 0,30 40,-10 10,-40 -40,-20" fill="#ffe3e3" stroke="#ff8787" stroke-width="2" />
+
+        <!-- Nodes -->
+        <circle cx="-50" cy="30" r="4" fill="#c92a2a" />
+        <circle cx="0" cy="30" r="4" fill="#c92a2a" />
+        <circle cx="40" cy="-10" r="4" fill="#f03e3e" /> <!-- Targeted Max Goal -->
+
+        <!-- Jump Arrows -->
+        <!-- Start at -50,30, jump to 0,30, jump to 40,-10 -->
+        <path d="M -50 30 Q -25 15 0 30" fill="none" stroke="#c92a2a" stroke-width="2" marker-end="url(#arrow-red)" />
+        <path d="M 0 30 Q 30 15 40 -10" fill="none" stroke="#e03131" stroke-width="3" marker-end="url(#arrow-red)" />
+
+        <text x="-70" y="35" fill="#c92a2a" font-size="10" font-family="sans-serif" font-weight="bold">시작점</text>
+        <text x="65" y="-10" fill="#e03131" font-size="10" font-family="sans-serif" font-weight="bold">도착(Max)</text>
+
+        <text x="0" y="55" fill="#e03131" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">"모서리를 타고 이익이 큰 쪽으로만 등반해라!"</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-grey" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+        <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#e03131" />
+        </marker>
+    </defs>
+</svg>

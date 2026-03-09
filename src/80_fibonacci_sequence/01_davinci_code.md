@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '01. 영화 다 빈치 코드 속 암호의 비밀'
+---
+
 # 01. 영화 «다 빈치 코드» 속 암호의 비밀
 
 ## 1. 학습 목표 (Learning Objectives)

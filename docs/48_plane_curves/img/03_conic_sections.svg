@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#fff0f6" rx="10" />
+
+    <text x="300" y="30" fill="#c2255c" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">원뿔을 자르면 나타나는 신비한 수학: 이차곡선(Conic Sections)</text>
+
+    <!-- Cylinder / Cone representation -->
+    <g transform="translate(100, 150)">
+        <!-- Cone base & lines -->
+        <ellipse cx="0" cy="50" rx="40" ry="15" fill="#fcc419" stroke="#e67700" stroke-width="2" />
+        <path d="M -40 50 L 0 -80 L 40 50" fill="#ffe066" stroke="#e67700" stroke-width="2" opacity="0.8" />
+        <ellipse cx="0" cy="-20" rx="20" ry="7" fill="#ffa94d" stroke="#d9480f" stroke-width="3" />
+        <text x="0" y="90" fill="#d9480f" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">원 (수평 컷)</text>
+    </g>
+
+    <g transform="translate(240, 150)">
+        <ellipse cx="0" cy="50" rx="40" ry="15" fill="#fcc419" stroke="#e67700" stroke-width="2" />
+        <path d="M -40 50 L 0 -80 L 40 50" fill="#ffe066" stroke="#e67700" stroke-width="2" opacity="0.8" />
+
+        <ellipse cx="5" cy="-10" rx="25" ry="10" fill="#ff8787" stroke="#c92a2a" stroke-width="3"
+            transform="rotate(-20)" />
+        <text x="0" y="90" fill="#c92a2a" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">타원 (비스듬히 컷)</text>
+    </g>
+
+    <g transform="translate(380, 150)">
+        <ellipse cx="0" cy="50" rx="40" ry="15" fill="#fcc419" stroke="#e67700" stroke-width="2" />
+        <path d="M -40 50 L 0 -80 L 40 50" fill="#ffe066" stroke="#e67700" stroke-width="2" opacity="0.8" />
+
+        <!-- Parabola cut -->
+        <path d="M -25 55 Q 0 -60 25 55 Z" fill="#69db7c" stroke="#2b8a3e" stroke-width="3" />
+
+        <text x="0" y="90" fill="#2b8a3e" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">포물선 (모선과 평행)</text>
+    </g>
+
+    <g transform="translate(520, 150)">
+        <path d="M -40 -180 L 0 -50 L 40 -180" fill="#ffe066" stroke="#e67700" stroke-width="2" opacity="0.5" />
+        <path d="M -40 50 L 0 -50 L 40 50" fill="#ffe066" stroke="#e67700" stroke-width="2" opacity="0.8" />
+
+        <!-- Hyperbola branches -->
+        <path d="M -15 -140 Q 0 -70 15 -140" fill="none" stroke="#3bc9db" stroke-width="4" />
+        <path d="M -15 40 Q 0 -30 15 40" fill="none" stroke="#3bc9db" stroke-width="4" />
+
+        <text x="0" y="90" fill="#0b7285" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">쌍곡선 (수직 컷)</text>
+    </g>
+</svg>

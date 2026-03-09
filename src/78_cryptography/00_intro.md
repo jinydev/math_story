@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '00. 암호Cryptography와 튜링의 천재성'
+---
+
 # 00. 암호(Cryptography)와 튜링의 천재성
 
 ## 1. 학습 목표 (Learning Objectives)

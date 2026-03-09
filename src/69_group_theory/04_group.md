@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '4. 모든 것을 되돌리는 마법의 조건 군Group'
+---
+
 # 4. 모든 것을 되돌리는 마법의 조건: '군(Group)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

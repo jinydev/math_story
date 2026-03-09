@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 79. 조합 Combination'
+---
+
 # 수학이야기 79. 조합 (Combination)
 
 ## 📌 학습 개요

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="50" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">유리수의 덧셈과 뺄셈 (Vector Movement)</text>
+  <text x="400" y="80" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">방향(부호)과 거리(절댓값)를 이용한 수직선 위에서의 이동</text>
+
+  <!-- Number Line Base -->
+  <line x1="50" y1="300" x2="750" y2="300" stroke="#4A5568" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Tick Marks -->
+  <g stroke="#718096" stroke-width="2" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">
+    <line x1="100" y1="290" x2="100" y2="310"/> <text x="100" y="330">-3</text>
+    <line x1="200" y1="290" x2="200" y2="310"/> <text x="200" y="330">-2</text>
+    <line x1="300" y1="290" x2="300" y2="310"/> <text x="300" y="330">-1</text>
+    <line x1="400" y1="285" x2="400" y2="315" stroke="#F7FAFC" stroke-width="3"/> <text x="400" y="335" fill="#F7FAFC" font-weight="bold">0</text>
+    <line x1="500" y1="290" x2="500" y2="310"/> <text x="500" y="330">+1</text>
+    <line x1="600" y1="290" x2="600" y2="310"/> <text x="600" y="330">+2</text>
+    <line x1="700" y1="290" x2="700" y2="310"/> <text x="700" y="330">+3</text>
+
+    <!-- Fraction points -->
+    <line x1="550" y1="295" x2="550" y2="305" stroke-width="1"/> <text x="550" y="345">+1.5</text>
+    <line x1="250" y1="295" x2="250" y2="305" stroke-width="1"/> <text x="250" y="345">-1.5</text>
+  </g>
+
+  <!-- Title for Example 1 -->
+  <text x="400" y="140" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#F6AD55" text-anchor="middle">(+1.5) + (-3) = -1.5</text>
+  
+  <!-- Arrow 1: Move right by +1.5 -->
+  <path d="M 400 280 Q 475 220 545 280" fill="none" stroke="#4FD1C5" stroke-width="4" marker-end="url(#arrow_right)"/>
+  <polygon points="545,280 535,275 538,280 535,285" fill="#4FD1C5"/>
+  <text x="475" y="240" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#4FD1C5" text-anchor="middle">1. 오른쪽으로 +1.5 이동</text>
+
+  <!-- Arrow 2: Move left by -3 from 1.5 -->
+  <path d="M 550 270 Q 400 150 255 270" fill="none" stroke="#FC8181" stroke-width="4" stroke-dasharray="5,5" marker-end="url(#arrow_left)"/>
+  <polygon points="255,270 265,265 262,270 265,275" fill="#FC8181"/>
+  <text x="400" y="190" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#FC8181" text-anchor="middle">2. 왼쪽으로 -3 방향 반전 이동</text>
+
+  <!-- Final Position Dot -->
+  <circle cx="250" cy="300" r="8" fill="#F6AD55" filter="url(#glow)"/>
+  <text x="250" y="370" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#F6AD55" text-anchor="middle">최종 도착: -1.5</text>
+
+  <!-- Explanatory Box -->
+  <g transform="translate(100, 420)">
+    <rect x="0" y="0" width="600" height="60" rx="10" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+    <text x="300" y="25" font-family="'Inter', sans-serif" font-size="16" fill="#F7FAFC" text-anchor="middle">빼기는 더하기의 "반대 방향"을 뜻합니다.</text>
+    <text x="300" y="45" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">(-를 빼면 방향이 두 번 반전되어 왼쪽의 왼쪽 = 즉, 오른쪽(+)이 됩니다.)</text>
+  </g>
+</svg>

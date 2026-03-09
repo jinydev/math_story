@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '6. 시작과 끝이 없는 우주 원순열 Circular Permutation'
+---
+
 # 6. 시작과 끝이 없는 우주: '원순열 (Circular Permutation)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

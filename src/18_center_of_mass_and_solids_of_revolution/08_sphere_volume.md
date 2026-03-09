@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '8. 아르키메데스의 묘비 조각되는 원기둥과 구의 부피 Sphere Volume'
+---
+
 # 8. 아르키메데스의 묘비: 조각되는 원기둥과 구의 부피 (Sphere Volume)
 
 ## [도입부] 학습 목표 (Learning Objectives)

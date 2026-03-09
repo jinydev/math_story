@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '04. 네 번째 수업 음수 곱하기 음수는 왜 양수일까? Multiplication  Division'
+---
+
 # 04. 네 번째 수업: 음수 곱하기 음수는 왜 양수일까? (Multiplication & Division)
 
 정수의 곱셈에서 가장 많은 학생들의 뒷목을 잡게 하는 마의 구간, 바로 **"음수 곱하기 음수는 양수다 $(- \times - = +)$"** 입니다.

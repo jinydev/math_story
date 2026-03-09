@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '식의 계산Algebraic Expressions 모듈 개편 기획서 V3 현대적 파이썬 AI 융합 수학 교재'
+---
+
 # 식의 계산(Algebraic Expressions) 모듈 개편 기획서 (V3: 현대적 파이썬 AI 융합 수학 교재)
 
 ## 1. 개요

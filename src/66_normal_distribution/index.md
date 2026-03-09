@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 52. 정규분포 Normal Distribution'
+---
+
 # 수학이야기 52. 정규분포 (Normal Distribution)
 
 ## 📌 학습 개요

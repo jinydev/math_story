@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "수학이야기 33. 약수와 배수 2 (Divisors and Multiples 2 심화편)"
+title: '수학이야기 33. 약수와 배수 2 Divisors and Multiples 2 심화편'
 ---
 
 # 33. 약수와 배수 2 (Divisors and Multiples 심화 과정)

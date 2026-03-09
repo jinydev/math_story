@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 도넛 공장의 비밀 파푸스-굴딘 정리 Pappuss Centroid Theorem'
+---
+
 # 5. 도넛 공장의 비밀: 파푸스-굴딘 정리 (Pappus's Centroid Theorem)
 
 ## [도입부] 학습 목표 (Learning Objectives)

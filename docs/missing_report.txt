@@ -1,0 +1,1218 @@
+=== Unwritten Chapters ===
+수학이야기 25.확율1
+수학이야기 33.약수와배수2
+수학이야기 46.확율2
+수학이야기 57.원론
+수학이야기 58.이자
+수학이야기 59.절대부등식
+수학이야기 60.연속함수
+수학이야기 61.공간도형
+
+=== Missing Images in Written Chapters ===
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/00_intro.md -> ## 2. 쪼개고 결합한다: 미분과 적분의 관계
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/00_intro.md -> ## 3. 세상을 시뮬레이션 하는 부품, 적분
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/01_area_and_volume.md -> ## 1. 이 지구상에 완벽한 곡선은 없다?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/01_area_and_volume.md -> ## 2. 실진법(Method of Exhaustion) : 공백을 갉아먹다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/01_area_and_volume.md -> ## 3. 원뿔과 구의 부피도 쪼개서 증명하다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/01_what_is_integral.md -> ## 3. 전통 수학 수식과 AI 프로그래밍 (Math & Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/01_what_is_integral.md -> ## 4. 3줄 요약 (Summary)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/02_principle_of_integral.md -> ## 2. 기초 개념: 피자 자르기와 테트리스 맞추기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/02_principle_of_integral.md -> ## 3. 전통 수학 수식과 AI 프로그래밍 (Math & Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/02_principle_of_integral.md -> ## 4. 3줄 요약 (Summary)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/02_riemann_sums.md -> ## 2. 컴퓨터 시뮬레이션: 파이썬(Python)으로 사각형 무한 루프 돌리기!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/02_riemann_sums.md -> ## 3. 리만 합의 위력: N이 무한대로 간다면?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/03_definite_integrals.md -> ## 1. 길게 늘여 빼놓은 $\text{S}$ : $\int$ (인테그랄)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/03_definite_integrals.md -> ## 2. 정해진 구역을 전부 싹쓸이: 정적분
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/03_definite_integrals.md -> ## 3. 정적분은 결국, 데이터의 최종 '결괏값 누적치'
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/03_generalization_of_area.md -> ## 2. 기초 개념: 넓이를 "가두어 포위"하는 극한 작전!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/03_generalization_of_area.md -> ## 3. 컴퓨터와 AI 시대의 수학: 파이썬 최적화 (Error Minimization)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/03_generalization_of_area.md -> ## 4. 3줄 요약 (Summary)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/04_fundamental_theorem.md -> ## 1. 전혀 다르게 생겨먹은 두 괴물
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/04_fundamental_theorem.md -> ## 2. 미적분학의 제1 기본 정리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/04_fundamental_theorem.md -> ## 3. 적분이라는 무식한 노가다가 해킹당하다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/04_integral_symbol.md -> ## 2. 기초 개념: 적분 기호 완벽 해부도
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/04_integral_symbol.md -> ## 3. 전통 수학 수식과 AI 프로그래밍 (Math & Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/04_integral_symbol.md -> ## 4. 3줄 요약 (Summary)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/05_antiderivatives.md -> ## 1. 필름 역재생하기: "원래 함수가 뭐였지?"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/05_antiderivatives.md -> ## 2. 역도함수(Antiderivative) : $F(x)$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/05_antiderivatives.md -> ## 3. 정보 손실이라는 치명적 버그
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/05_dilemma_of_dx.md -> ## 2. 기초 개념: 0에 "가까워지는 것"과 완전한 "0"은 완전히 다르다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/05_dilemma_of_dx.md -> ## 3. 전통 수학 수식과 AI 프로그래밍 (Math & Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/05_dilemma_of_dx.md -> ## 4. 3줄 요약 (Summary)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/06_indefinite_integrals.md -> ## 1. 누가 미분해서 $2x$가 되었나의 다중우주
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/06_indefinite_integrals.md -> ## 2. 알 수 없는 숫자, 적분 상수 $C$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/06_indefinite_integrals.md -> ## 3. 초기 상태(Initial Condition)의 중요성
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/06_integral_and_area.md -> ## 2. 기초 개념: 넓이가 마이너스가 된 이유 (상쇄, Cancel-Out)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/06_integral_and_area.md -> ## 3. 전통 수학 수식과 AI 프로그래밍 (Math & Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/06_integral_and_area.md -> ## 4. 3줄 요약 (Summary)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/07_cavalieris_principle.md -> ## 1. 서론: 구부러진 길 vs 반듯한 길
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/07_cavalieris_principle.md -> ## 3. 전통 수학 수식과 AI 프로그래밍 (Math & Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/07_cavalieris_principle.md -> ## 4. 3줄 요약 (Summary)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/07_integration_in_physics.md -> ## 1. 시간을 무한히 쪼개 속도를 쌓다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/07_integration_in_physics.md -> ## 2. 파이썬 적분(Integration) 시뮬레이션
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/07_integration_in_physics.md -> ## 3. 적분 상수 $C$ 가 뜻하는 물리학의 의미
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/plan.md -> ## 1. 개요
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/plan.md -> ## 2. 챕터별 시각화 & 파이썬 추가 계획
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 01.적분1/plan.md -> ## 3. 진행 순서
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 02.집합/00_intro.md -> ## 2. 현대 수학과 컴퓨터 공학의 절대 반지
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 02.집합/01_birth_of_sets.md -> ## 2. 모임을 이루는 식구들: 원소 (Element)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 02.집합/02_expressing_sets.md -> ## 1. 하나하나 예쁘게 늘어놓기: 원소나열법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 02.집합/03_venn_diagram.md -> ## 2. 세상의 바운더리, 전체집합 (Universal Set, $U$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 02.집합/03_venn_diagram.md -> ## 3. 시각화(Visualization) 기술의 시조새
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 02.집합/04_subsets.md -> ## 3. 파이썬과 `issubset` 논리 검사
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 02.집합/05_set_operations_1.md -> ## 1. 뭉치면 산다: 합집합 (Union, $\cup$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 02.집합/05_set_operations_1.md -> ## 3. 파이썬과 함께하는 1초 컷 데이터 필터링
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 02.집합/06_set_operations_2.md -> ## 3. 파이썬의 `마이너스(-)`와 집합 필터링
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 02.집합/07_applications_of_sets.md -> ## 2. 드모르간이 파이썬 코드를 만날 때
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/00_intro.md -> ## 가장 위대한 발견, 피타고라스의 정리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/01_pythagorean_theorem.md -> ## 2. 컴퓨터 과학에서의 피타고라스와 Python `math.hypot`
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/02_pythagorean_school.md -> ## 2. 루트($\sqrt{}$) 기호의 탄생과 파이썬
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/03_euclids_proof.md -> ## 2. 면적 보존의 법칙과 Python 검증 로직
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/04_bhaskaras_proof.md -> ## 2. $(b-a)^2$ 전개식과 Python 분해 시뮬레이션
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/05_davincis_proof.md -> ## 2. Python의 Tuple 대칭성과 불변의 양팔저울
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/06_algebraic_proof.md -> ## 2. Python `SymPy`: 수식을 다루는 AI의 두뇌
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/07_dissection_proof.md -> ## 2. Python의 조각 모음: 슬라이싱(Slicing)과 리스트 병합
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/08_polyas_proof.md -> ## 2. Python의 클래스 복제: 다형성(Polymorphism) 테스트
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/09_various_proofs.md -> ## 1. 400가지 증명의 거대한 맥락
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/09_various_proofs.md -> ## 3. Python `Recursion`: 무한 우주로 뻗어나가는 코드
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/10_converse_of_pythagoras.md -> ## 2. Python의 논리 회로: If 조건 판별기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/11_applications_in_2d.md -> ## 1. 보이지 않는 선 긋기: 정사각형의 대각선
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/11_applications_in_2d.md -> ## 2. 정삼각형을 반으로 쪼개기: 넓이의 마법 공식
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/11_applications_in_2d.md -> ## 3. Python 2D 툴박스: 정삼각형의 모든 것 자동 산출기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/12_applications_in_3d.md -> ## 2. Python 3차원 유니버스: $x, y, z$ 좌표계 통신
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/13_extension_of_theorem.md -> ## 1. 1차원 선(Line)부터 3차원 우주까지
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/13_extension_of_theorem.md -> ## 2. 빗변에서 삼각함수(Trigonometry)의 탄생으로
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/14_related_mathematics.md -> ## 🎯 수학과 코딩의 동기화 완료
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 03.피타고라스정리/14_related_mathematics.md -> ## 🚀 여정의 핵심 개념 요약
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/00_intro.md -> ## 2. 태양빛이 만드는 우주의 삼각형 (닮음비)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/00_intro.md -> ## 3. 현대 컴퓨터 공학과 폴리곤(Polygon)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/00_intro.md -> ## V3.1 학습 가이드
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/01_triangle_basics.md -> ## 1. 차원의 폭발: 점, 선, 그리고 면
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/01_triangle_basics.md -> ## 2. 삼각형 성립의 절대 법칙 (The Inequality Theorem)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/01_triangle_basics.md -> ## 3. Python 건축 사무소: `if/else` 삼각형 판별기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/02_angles_of_triangle.md -> ## 1. 세 내각의 합은 왜 무조건 $180^\circ$인가?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/02_angles_of_triangle.md -> ## 2. 반항아 외각(External Angle)의 폭주
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/02_angles_of_triangle.md -> ## 3. Python 항공 시뮬레이터: 데이터 무결성 검증
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/03_congruence.md -> ## 2. Python 객체 공장: 클래스(Class)와 생성자 설계
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/04_similarity.md -> ## 1. 줌인/줌아웃의 통제: 일정한 비율의 마법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/04_similarity.md -> ## 2. 시야의 폭발: AA 닮음 (가장 중요!)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/04_similarity.md -> ## 3. Python 픽셀 스케일러: 부동소수점 `float` 스케일링
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/05_right_triangles.md -> ## 1. 건축물 뼈대: 빗변의 웅장함
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/05_right_triangles.md -> ## 2. 보안 검색대의 프리패스: RHA & RHS 합동
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/05_right_triangles.md -> ## 3. Python 내비게이션 엔진: `math.hypot()`
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/06_isosceles_equilateral.md -> ## 1. 이등변삼각형 (Isosceles): 좌우 대칭의 꼭지각
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/06_isosceles_equilateral.md -> ## 2. 정삼각형 (Equilateral): 기하학의 신(God)의 파편
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/06_isosceles_equilateral.md -> ## 3. Python 감식반: 대칭 폴리곤 식별 (`==` 연산자 체인)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/07_centroid.md -> ## 1. 무게중심의 탄생: 중선(Median)의 교차
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/07_centroid.md -> ## 2. Python 물리 엔진: 3D 폴리곤의 균형 회복 (Averaging)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/08_circumcenter_incenter.md -> ## 1. 철통 방어막: 외심 (Circumcenter)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/08_circumcenter_incenter.md -> ## 2. 내부 평화 유지군: 내심 (Incenter)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/08_circumcenter_incenter.md -> ## 3. 기하학의 데이터화: 좌표와 거리 벡터
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/09_applications.md -> ## 1. 부서지지 않는 철골: 트러스(Truss) 구조
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/09_applications.md -> ## 2. GPS 위성과 삼각 측량법 (Triangulation)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 04.삼각형/09_applications.md -> ## 3. Module 04 최종 정리 및 C.S. 인사이트
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 05.약수와배수1/00_intro_fermat.md -> ## 2. 여백이 너무 좁다! (Fermat's Last Theorem)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 05.약수와배수1/00_intro_fermat.md -> ## 3. 정수론 (Number Theory)과 프로그래밍
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 05.약수와배수1/01_triangular_numbers.md -> ## 2. 삼각형으로 숫자를 쌓기 (삼각수)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 05.약수와배수1/01_triangular_numbers.md -> ## 3. Python의 연산 속도: 무식한 Loop와 우아한 수식
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 05.약수와배수1/02_divisors_and_perfect_numbers.md -> ## 1. 신의 숫자 6: 완전수 (Perfect Number)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 05.약수와배수1/02_divisors_and_perfect_numbers.md -> ## 3. Python 찌꺼기 추적기: 모듈러(`%`) 연산
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 05.약수와배수1/03_prime_numbers.md -> ## 1. 우주를 구성하는 절대 소수(Prime)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 05.약수와배수1/03_prime_numbers.md -> ## 2. Python의 무자비한 해킹: 소수 판별기 (Prime Checker)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 05.약수와배수1/04_factorization_and_passwords.md -> ## 1. 숫자의 유전자 지도: 소인수분해
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 05.약수와배수1/04_factorization_and_passwords.md -> ## 2. RSA 암호 체계와 현대 해커들의 전쟁
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 05.약수와배수1/04_factorization_and_passwords.md -> ## 3. Python 파괴 머신: `While` 무한 탈곡기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 05.약수와배수1/05_lcm_and_gears.md -> ## 2. Python 천문대: `math.lcm()` 주파수 탐지기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 05.약수와배수1/06_multiples_tricks.md -> ## 1. 인간을 위한 배수 감별법 마술
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 05.약수와배수1/06_multiples_tricks.md -> ## 2. Python 코드로 구현하는 $3$의 배수 '문자열' 마술
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 06.프랙탈/00_intro.md -> ## 1. 자연을 묘사할 수 없는 수학의 한계
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 06.프랙탈/00_intro.md -> ## V3.1 학습 가이드
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 06.프랙탈/01_what_is_fractal.md -> ## 3. 유클리드(정수) vs 프랙탈(실수)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 06.프랙탈/02_self_similarity.md -> ## 2. Python 코딩 미러링: "재귀 함수 (Recursion)"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 06.프랙탈/03_koch_and_sierpinski.md -> ## 3. Python 거북이(`Turtle`): 코흐 곡선 코딩 공장
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 06.프랙탈/04_fractional_dimension.md -> ## 2. 괴물의 차원: 소수점으로 깨져버린 차원 (Fractional Dimension)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 06.프랙탈/04_fractional_dimension.md -> ## 3. Python 차원 분석기: 수학 라이브러리 `math.log()`
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 06.프랙탈/05_fractals_in_nature.md -> ## 3. Module 06 최종 정리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 06.프랙탈/06_fractals_in_art.md -> ## 3. Python 캔버스: "프랙탈 아트 (Fractal Art)" 코딩
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 06.프랙탈/07_fractals_in_daily_life.md -> ## 1. 펄떡이는 생명의 프랙탈: 심전도(ECG) 그래프
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 06.프랙탈/07_fractals_in_daily_life.md -> ## 3. Python 빅데이터 분석: 시계열 데이터의 프랙탈
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 06.프랙탈/08_father_of_fractal_geometry.md -> ## 1. 정통 수학을 혐오한 폴란드의 아웃사이더
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 06.프랙탈/08_father_of_fractal_geometry.md -> ## 3. 컴퓨터와의 찰떡궁합 렌더링 폭발
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/00_intro.md -> ## V3.1 학습 가이드
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/01_ancient_numbers.md -> ## 1. 늑대 뼈에 새긴 인류 최초의 USB: 이상고 뼈 (Ishango Bone)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/01_ancient_numbers.md -> ## 2. 밧줄을 묶어 숫자를 남기다: 결승문자 (Inca Quipu)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/01_ancient_numbers.md -> ## 3. 1 대 1 매칭의 치명적인 저하 (에러)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/02_numeral_systems_start.md -> ## 1. 묶어서 압축하기 (Data Compression)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/02_numeral_systems_start.md -> ## 2. 왜 하필 단위가 10진법이었나?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/02_numeral_systems_start.md -> ## 3. 고대 이집트의 10배수 상형문자 기수법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/03_positional_notation.md -> ## 1. 모양이 아니라 방(Room)의 계급이 가치를 결정한다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/03_positional_notation.md -> ## 2. Python 리스트 해독기: 위치 기수법의 코딩화
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/04_base_conversion.md -> ## 2. Python 메모리 공장: 진법 직통 번역기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/05_ancient_notation.md -> ## 1. 우주를 보는 바빌로니아의 60진법 시스템
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/05_ancient_notation.md -> ## 2. 맨발의 피라미드 건설자들: 마야의 20진법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/06_indian_zero.md -> ## 1. 0이 없으면 일어나는 참사: 빈방을 어떻게 표시할까?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/06_indian_zero.md -> ## 2. 인도 수학과 불교의 혼란: "아무것도 없는 것도 상태(State)다"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/06_indian_zero.md -> ## 3. Python 메모리의 빈 공간: Zero & Null (`\0`)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/07_leibniz_binary.md -> ## 1. 스위치 하나로 돌아가는 은하계: 비트 (Bit) 우주
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/07_leibniz_binary.md -> ## 2. Python 논리 엔진: 빛 덩어리 시뮬레이터 (Boolean)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 07.기수법/07_leibniz_binary.md -> ## 3. Module 07 최종 정리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/01_davinci_code.md -> ## 2. 소니에르의 다잉 메시지
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/01_davinci_code.md -> ## 3. 파이썬으로 암호문 해독하기 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/03_liber_abaci.md -> ## 2. 0의 도입과 십진법의 전파
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/03_liber_abaci.md -> ## 3. 로마 숫자 vs 아라비아 숫자 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/04_golden_ratio.md -> ## 2. 피보나치 수의 기묘한 비율
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/04_golden_ratio.md -> ## 3. 파이썬으로 증명하는 황금비 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/05_human_body.md -> ## 3. 머리끝부터 발끝까지의 비밀
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/06_beauty_and_math.md -> ## 2. 완벽한 얼굴을 그리는 눈금자
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/07_golden_spiral.md -> ## 3. 자연에서 관찰되는 황금 나선의 프랙탈(Fractal) 구조
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/08_nature_fibonacci.md -> ## 2. 식물의 잎차례 (Phyllotaxis)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/09_architecture.md -> ## 3. 신전 곳곳에 숨겨진 1.618의 패스워드
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/10_art_and_music.md -> ## 2. 캔버스를 가르는 황금 분할
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/10_art_and_music.md -> ## 3. 피치가 달라지는 선율 속의 피보나치
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/10_art_and_music.md -> ## 4. 파이썬으로 내보는 피보나치 화음 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/11_magic_plants.md -> ## 2. 클로버의 잎은 왜 세 장일까?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/11_magic_plants.md -> ## 3. 숫자 4가 식물에게 가져오는 저주
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/12_stock_market.md -> ## 2. 엘리어트 파동과 황금비
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/12_stock_market.md -> ## 4. 파이썬 기반 피보나치 되돌림 계산기 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/13_applications_and_python.md -> ## 2. 컴퓨터를 괴롭히는 순진한 수식의 맹점
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 08.피보나치수열/13_applications_and_python.md -> ## 3. 동적 계획법 (Dynamic Programming)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 09.닮음/00_intro.md -> ## 2. 탈레스, 피라미드의 높이를 재다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 09.닮음/00_intro.md -> ## 3. 수학에서의 '닮음'이란?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 09.닮음/01_similarity_in_life.md -> ## 2. 비율을 잊으면 괴물이 된다?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 09.닮음/01_similarity_in_life.md -> ## 3. 파이썬으로 픽셀 사이즈 비율 구하기 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 09.닮음/02_properties_of_similarity.md -> ## 3. 닮은 도형이 가지고 있는 2가지 절대 성질
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 09.닮음/03_drawing_similar_figures.md -> ## 2. 극장에 빛을 쏘다, 닮음의 위치
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 09.닮음/04_triangle_similarity.md -> ## 2. 삼각형이 꼭 닮기 위한 필수 조건 (SSS, SAS, AA)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 09.닮음/04_triangle_similarity.md -> ## 3. 파이썬 삼각형 닮음 판별기 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 09.닮음/05_parallel_lines_and_ratios.md -> ## 3. 그림자 비례식을 방정식으로 풀기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 09.닮음/06_area_and_volume_ratios.md -> ## 2. 피자 M사이즈와 L사이즈의 진실 (넓이의 비)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 09.닮음/06_area_and_volume_ratios.md -> ## 3. 킹콩 스케일링의 오류 (부피의 비)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 09.닮음/06_area_and_volume_ratios.md -> ## 4. 파이썬 다차원 스케일링 계산 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 09.닮음/07_fractals_infinite_similarity.md -> ## 3. 파이썬을 이용한 재귀 프랙탈 코딩 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 10.암호/00_intro.md -> ## 2. 창과 방패의 전쟁, 암호학
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 10.암호/01_caesar_cipher_and_modulo.md -> ## 2. 뱅글뱅글 도는 바퀴, 나머지 연산 (Modulo)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 10.암호/01_caesar_cipher_and_modulo.md -> ## 3. 영문 알파벳 26자의 모듈러 바퀴, 시저 암호
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 10.암호/01_caesar_cipher_and_modulo.md -> ## 4. 파이썬 시저 암호 생성/해독기 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 10.암호/02_frequency_analysis.md -> ## 2. 모음 'E'의 절대적인 지배력
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 10.암호/02_frequency_analysis.md -> ## 3. 파이썬과 `matplotlib`를 이용한 통계 차트 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 10.암호/03_vigenere_cipher.md -> ## 2. 'E'가 더 이상 'X'가 아닐 때 일어나는 일
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 10.암호/04_prime_numbers.md -> ## 2. 곱하기는 쉽지만, 쪼개기는 불가능한 숫자
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 10.암호/04_prime_numbers.md -> ## 3. 파이썬 소수 판독기: 에라토스테네스의 체 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 10.암호/05_rsa_public_key.md -> ## 2. 자물쇠는 공개하고, 진짜 열쇠는 내가 숨긴다!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 10.암호/05_rsa_public_key.md -> ## 3. 파이썬으로 구현하는 미니 RSA 공장 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 10.암호/06_discrete_log_and_zkp.md -> ## 3. 영(Zero)의 지식이 입증되는 마법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 11.비유클리드 기하학/00_intro.md -> ## 2. 2000년을 지배한 절대 수학 법전, 원론(Elements)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 11.비유클리드 기하학/00_intro.md -> ## 3. 아무리 생각해도 찝찝한 평행선 공준 (제5공준)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 11.비유클리드 기하학/01_parallel_lines_paradox.md -> ## 2. 평행선은 정말 영원히 만나지 않을까?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 11.비유클리드 기하학/01_parallel_lines_paradox.md -> ## 3. 파이썬 3D 공간 렌더링 시뮬레이터 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 11.비유클리드 기하학/02_shortest_path_geodesic.md -> ## 3. 대원(Great Circle)과 측지선
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 11.비유클리드 기하학/03_curvature.md -> ## 2. 19세기 최고의 수학자 카를 프리드리히 가우스
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 11.비유클리드 기하학/03_curvature.md -> ## 3. 파이썬 곡률 진단 스크립트 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 11.비유클리드 기하학/04_spherical_geometry.md -> ## 3. 팽창 도수와 양의 곡률
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 11.비유클리드 기하학/05_hyperbolic_geometry.md -> ## 2. 오그라드는 삼각형과 무한한 평행선
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 11.비유클리드 기하학/06_einstein_and_curved_space.md -> ## 3. 중력은 당기는 것이 아니라, 공간에 그려진 곡률 계곡이다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 12.다면체/00_intro.md -> ## 2. 평면에서 공간으로의 도약
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 12.다면체/00_intro.md -> ## 3. 다면체를 뼈대 잡는 3대 요소
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 12.다면체/01_prisms_and_pyramids.md -> ## 3. 부피의 비밀: 왜 3분의 1일까? (Volume)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 12.다면체/02_unfolding_polyhedrons.md -> ## 2. 3D 공간을 2D 평면 도면으로 압축하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 12.다면체/02_unfolding_polyhedrons.md -> ## 3. 파이썬 전개도 십자 매핑 시뮬레이터 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 12.다면체/03_platos_five_polyhedrons.md -> ## 3. 플라톤 입체 (Platonic Solids) 5형제
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 12.다면체/04_why_only_five.md -> ## 2. 입체가 부풀어 오르기 위한 360도의 벽
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 12.다면체/04_why_only_five.md -> ## 3. 파이썬 다면체 가능성 판독기 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 12.다면체/05_euler_characteristic.md -> ## 2. 모든 입체는 하나의 끈으로 엮여 있다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 12.다면체/05_euler_characteristic.md -> ## 3. 파이썬 오일러 증명 및 오류 적발기 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 12.다면체/06_archimedean_solids_and_soccer.md -> ## 2. 완벽한 도자기를 깎아내다: 준정다면체의 탄생
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 13.일차방정식/00_intro_diophantus.md -> ## 2. 산술(Arithmetic)에서 대수학(Algebra)으로의 진화
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 13.일차방정식/00_intro_diophantus.md -> ## 3. 대수학의 아버지, 디오판토스의 묘비명
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 13.일차방정식/01_unknown_x.md -> ## 2. 말로 쓰던 시대의 답답함
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 13.일차방정식/02_equality_and_balance.md -> ## 3. 등식의 4대 성질 절대 법칙
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 13.일차방정식/03_solving_linear_equations.md -> ## 2. 왼쪽에서 오른쪽으로 이사 갈 땐, 성별이 바뀐다! (이항)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 13.일차방정식/03_solving_linear_equations.md -> ## 3. 파이썬 SymPy 방정식 해결 봇 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 13.일차방정식/04_history_of_systems.md -> ## 2. 미지수가 하나로는 부족하다!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 13.일차방정식/05_systems_of_equations.md -> ## 2. 모든 전술의 코어 원리: "변수 줄이기"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 13.일차방정식/05_systems_of_equations.md -> ## 3. 필살기 1: 소거의 마술, 가감법 (Elimination)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 13.일차방정식/05_systems_of_equations.md -> ## 4. 필살기 2: 형태 변이, 대입법 (Substitution)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 13.일차방정식/06_intersection_graphs.md -> ## 2. 데카르트의 위대한 선물, XY 좌표계
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 13.일차방정식/06_intersection_graphs.md -> ## 3. "연립방정식을 푼다" = "두 레이저 빔이 부딪히는 좌표를 찾는다"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 13.일차방정식/06_intersection_graphs.md -> ## 4. 파이썬 그래프 충돌 스캐너 구현 (Python matplotlib)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 14.이차방정식/00_intro_al_khwarizmi.md -> ## 3. 이차방정식 시대의 개막
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 14.이차방정식/01_factorization_puzzle.md -> ## 2. 곱해서 0이 되는 마법 ($A \times B = 0$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 14.이차방정식/01_factorization_puzzle.md -> ## 3. X자 퍼즐: 더해서 $b$, 곱해서 $c$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 14.이차방정식/01_factorization_puzzle.md -> ## 4. 파이썬 브루트포스 인수분해기 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 14.이차방정식/02_completing_the_square.md -> ## 2. 인수분해 거부 사태! 어떡하지?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 14.이차방정식/02_completing_the_square.md -> ## 4. 실전 도구: "반(1/2)의 제곱을 더해주어라!"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 14.이차방정식/03_quadratic_formula.md -> ## 2. 노가다의 종식, 코어 공식의 탄생
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 14.이차방정식/03_quadratic_formula.md -> ## 3. 파이썬 천하무적 '근의 공식' 자동 봇 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 14.이차방정식/04_discriminant_and_imaginary.md -> ## 2. 근의 개수를 맞추는 판별식 (Discriminant, $D$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 14.이차방정식/05_parabola_geometry.md -> ## 2. 일차 직선에서 이차 곡선으로의 진화
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 14.이차방정식/05_parabola_geometry.md -> ## 3. "방정식의 근" = "포물선이 찍고 간 크레이터 자국"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 14.이차방정식/05_parabola_geometry.md -> ## 4. 파이썬 포물선 $X$축 충돌 교차점 스캐너 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 14.이차방정식/06_parabola_in_real_life.md -> ## 3. 실생활에 위장한 포물선 친구들
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 15.명제와 논리/00_intro_proposition.md -> ## 2. 누가 봐도 똑같은 판정 (명제)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 15.명제와 논리/00_intro_proposition.md -> ## 3. 파이썬의 명제 판별기 (Boolean)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 15.명제와 논리/01_condition_and_truth_set.md -> ## 2. 변신하는 문장, '조건'
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 15.명제와 논리/01_condition_and_truth_set.md -> ## 3. 조건의 스위치를 켜라! '진리집합'
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 15.명제와 논리/02_conditional_statement.md -> ## 2. 조건끼리의 퓨전: 화살표($\rightarrow$) 명제
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 15.명제와 논리/03_converse_inverse_contrapositive.md -> ## 2. 부정의 마법 물약 ($\sim$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 15.명제와 논리/03_converse_inverse_contrapositive.md -> ## 3. 원본 명제의 3단 변신: 역, 이, 대우
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 15.명제와 논리/03_converse_inverse_contrapositive.md -> ## 4. 파이썬 진리표 (Truth Table) 운명 공동체 코딩
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 15.명제와 논리/04_necessary_and_sufficient.md -> ## 3. 동전의 양면, "필요충분조건 ($p \leftrightarrow q$)"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 15.명제와 논리/05_proof_by_contradiction.md -> ## 3. 세기의 증명: $\sqrt{2}$ 는 무리수이다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 15.명제와 논리/06_paradox.md -> ## 2. 참도 거짓도 아니라고?!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 15.명제와 논리/06_paradox.md -> ## 4. 논리학을 정교하게 제련한 망치
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 16.벤 다이어그램/00_intro_john_venn.md -> ## 3. 정보 시각화(Data Visualization)의 조상님
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 16.벤 다이어그램/01_set_operations.md -> ## 2. 원 두 개로 배우는 4대 연산 색칠놀이
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 16.벤 다이어그램/01_set_operations.md -> ## 3. 파이썬 `set` 연산자 실습 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 16.벤 다이어그램/02_python_matplotlib_venn.md -> ## 2. 왜 코딩으로 다이어그램을 그려야 할까?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 16.벤 다이어그램/02_python_matplotlib_venn.md -> ## 3. 파이썬 `matplotlib_venn` 시뮬레이터 가동 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 16.벤 다이어그램/03_euler_vs_venn.md -> ## 2. 존 벤의 선배: 레온하르트 오일러
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 16.벤 다이어그램/03_euler_vs_venn.md -> ## 4. 왜 현대 수학은 '벤' 모델을 표준으로 삼았을까?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 16.벤 다이어그램/04_complex_regions_and_demorgan.md -> ## 3. 집합의 암흑 마법: 드 모르간의 법칙
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 16.벤 다이어그램/05_sql_joins_and_sets.md -> ## 3. SQL 조인과 수학 집합의 완벽한 1:1 매칭
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 16.벤 다이어그램/06_multidimensional_venn.md -> ## 2. 벤 다이어그램의 교차 조건 (Power of 2)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 16.벤 다이어그램/06_multidimensional_venn.md -> ## 3. 원 4개의 재앙: 그릴 수 없는 영역
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 16.벤 다이어그램/06_multidimensional_venn.md -> ## 4. 뒤틀린 기하학: 에드워즈-벤 다이어그램
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 18.경우의수/00_intro_pascal.md -> ## 3. 확률론(Probability)과 우주의 경우의 수 탄생
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 18.경우의수/01_event_and_cases.md -> ## 2. OR(+) 인가, AND(×) 인가?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 18.경우의수/01_event_and_cases.md -> ## 3. 파이썬 `itertools.product`로 옷장 속 조합 코딩 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 18.경우의수/02_permutations.md -> ## 2. 순서가 곧 권력! 순열($_nP_r$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 18.경우의수/02_permutations.md -> ## 3. 미친 듯이 커지는 경우의 폭주, 팩토리얼 ($N!$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 18.경우의수/02_permutations.md -> ## 4. 파이썬 무차별 대입 암호 해킹 체험 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 18.경우의수/03_combinations.md -> ## 2. 순서는 부질없다, 오직 뭉쳐라! 조합($_nC_r$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 18.경우의수/03_combinations.md -> ## 3. 파이썬 `Combination` 로또 시뮬레이터 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 18.경우의수/04_grouping_friends.md -> ## 2. 절대 떨어질 수 없는 단짝 친구
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 18.경우의수/05_shortest_path.md -> ## 3. 길 찾기의 마법, 꼭짓점 덧셈 법칙
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 18.경우의수/06_league_and_tournament.md -> ## 2. 평등의 결투장, 리그전 (League)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/00_intro.md -> ## 1. 두 개의 섬: 도형의 세계와 식의 세계
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/00_intro.md -> ## 3. 기하학과 대수학의 만남
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/01_number_line_and_coordinates.md -> ## 2. 순서쌍? 아직은 아니야!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/01_number_line_and_coordinates.md -> ## 3. 파이썬(Python)으로 1차원 세상 그리기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/02_four_quadrants.md -> ## 1. 2차원 좌표평면과 순서쌍
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/02_four_quadrants.md -> ## 3. 거울 저편으로: 대칭 (Symmetry)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/02_four_quadrants.md -> ## 4. 파이썬(Python)으로 사분면 한눈에 그리기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/03_equations_and_graphs.md -> ## 3. 파이썬(Python)으로 $y=3x$ 무한 점 찍기 체험
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/04_proportions_and_inverse.md -> ## 1. 같이 커지는 정비례 ($y = ax$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/04_proportions_and_inverse.md -> ## 3. 파이썬(Python)으로 $y = 12/x$ 쌍곡선 시각화
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/05_dimensions_and_space.md -> ## 1. 차원: 공간을 통치하는 좌표 축의 개수
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/05_dimensions_and_space.md -> ## 3. 파이썬(Python)의 3D 공간 시각화엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/06_quadratic_functions.md -> ## 2. 포물선 (Parabola)과 꼭짓점
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/06_quadratic_functions.md -> ## 4. 파이썬(Python)으로 발사체 포물선 추적하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/07_descartes_philosophy.md -> ## 1. 르네 데카르트: 병약한 천재의 관찰력
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/07_descartes_philosophy.md -> ## 2. 의심할 수 없는 진흙 속의 다이아몬드
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/07_descartes_philosophy.md -> ## 3. 세상을 바꾼 통합: 해석기하학
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/08_distance_between_points.md -> ## 3. 파이썬(Python)으로 내비게이션 최단 경로 계산하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/09_dividing_line_segments.md -> ## 2. 울타리 밖에서 쏘는 위성광선! (외분)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/09_dividing_line_segments.md -> ## 3. 고대인의 난제를 데카르트의 좌표로 깨부수다 (파포스의 정리)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/09_dividing_line_segments.md -> ## 4. 파이썬(Python)으로 $1:3$ 내분점 시각화
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/10_equations_of_lines.md -> ## 2. 세 가지 정보로 직선의 식 단숨에 뽑아내기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/10_equations_of_lines.md -> ## 3. 선과 점 사이의 거리: 수선의 발
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/10_equations_of_lines.md -> ## 4. 파이썬(Python)과 인공지능 속의 직선
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/10_equations_of_lines.md -> ## 단원 모듈 20 (좌표) 핵심 총정리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/11_memory_and_coordinates.md -> ## 2. 2차원 좌표와 그래픽 픽셀 (Grid)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 20.좌표/11_memory_and_coordinates.md -> ## 4. 파이썬과 메모리 주소(Coordinates) 코딩 체감
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 21.무한/00_intro_cantor.md -> ## 2. 금기의 영역: "무한은 인간이 다룰 수 없다"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 21.무한/00_intro_cantor.md -> ## 4. 왕따당한 천재와 현대 수학의 아버지가 되기까지
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 21.무한/01_hilberts_hotel.md -> ## 2. "방이 꽉 찼습니다만, 어서 오십시오!"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 21.무한/01_hilberts_hotel.md -> ## 3. 파이썬 `Generator` 엔진으로 무한 호텔 코딩하기 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 21.무한/02_countable_infinity.md -> ## 2. 셀 수 있다는 것(Countable)의 수학적 의미
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 21.무한/02_countable_infinity.md -> ## 3. 직관의 붕괴: 양수+음수(정수)도 알레프-널과 똑같다?!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 21.무한/02_countable_infinity.md -> ## 4. 파이썬 `zip(1:1 매핑)` 자연수-정수 무한 생성기 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 21.무한/03_galileos_paradox.md -> ## 2. 유클리드의 대원칙: 부분 < 전체
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 21.무한/03_galileos_paradox.md -> ## 4. 직관의 붕괴와 칸토어의 확립
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 21.무한/04_infinity_of_rationals.md -> ## 2. 끝없는 조밀함: 두 수 사이엔 무조건 다른 수가 있다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 21.무한/04_infinity_of_rationals.md -> ## 3. 칸토어의 마법: 2차원 분수 그리드(Grid) 해킹
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 21.무한/05_cantors_diagonal_argument.md -> ## 2. 신도 셀 수 없는 진짜 무한의 강림
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 21.무한/05_cantors_diagonal_argument.md -> ## 3. 위대한 파괴자, '대각선 논법 (Diagonal Argument)'
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 21.무한/05_cantors_diagonal_argument.md -> ## 4. 파이썬 "대각선 논법" 데몬 시뮬레이터 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 21.무한/06_collapse_of_dimensions.md -> ## 2. 길이 $\neq$ 넓이, 그러나 점의 개수는?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 22.비/00_intro_eudoxus.md -> ## 2. 피타고라스 학파의 붕괴: "무리수($\sqrt{2}$)의 괴물"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 22.비/00_intro_eudoxus.md -> ## 4. 유클리드 기하학의 완성
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 22.비/01_ratio_and_value.md -> ## 2. 뺄셈의 하수 vs 나눗셈의 고수
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 22.비/01_ratio_and_value.md -> ## 3. 비(Ratio) 기호와 비의 값(비율)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 22.비/01_ratio_and_value.md -> ## 4. 파이썬 `Percentage` 100% 자동 환산기 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 22.비/02_golden_ratio_revisited.md -> ## 2. 인간의 뇌를 세뇌시킨 궁극의 분할: 1.618
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 22.비/03_continuous_ratio_and_distribution.md -> ## 2. 연비(Continuous Ratio): 끊어진 쇠사슬을 잇다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 22.비/03_continuous_ratio_and_distribution.md -> ## 3. 피정한 파이 조각 찢기: 비례배분
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 22.비/03_continuous_ratio_and_distribution.md -> ## 4. 파이썬 스타트업 배당금 `Distribution` 분배기 (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 22.비/04_direct_proportion.md -> ## 2. $x$가 2배 커지면, 나 탈거야! $y$도 2배 커진다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 22.비/04_direct_proportion.md -> ## 3. 정비례 스캐너 `matplotlib` (Python)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 22.비/05_inverse_proportion.md -> ## 2. 네가 커지면, 나는 죽는다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 22.비/05_inverse_proportion.md -> ## 4. 반비례를 좌표평면에 렌더링하면? (쌍곡선)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 22.비/06_thales_and_pyramid.md -> ## 2. 등호 하나로 묶인 두 형제: 비례식
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/00_intro_euler.md -> ## 2. 7개의 다리는 과연 한 붓으로 건널 수 있을까?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/00_intro_euler.md -> ## 4. "불가능하다" 수학적 사망 선고
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/01_graph_theory_basics.md -> ## 3. 그래프의 해부학: 점, 선, 차수
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/01_graph_theory_basics.md -> ## 4. 짝수점(Even)과 홀수점(Odd)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/02_eulerian_circuit.md -> ## 2. 한붓그리기의 치명적 규칙 (Rule of the Game)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/02_eulerian_circuit.md -> ## 3. 통과점의 생존 법칙 (짝수점의 진가)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/02_eulerian_circuit.md -> ## 4. 오일러의 최종 심판 두 가지
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/02_eulerian_circuit.md -> ## 5. 현대 도시의 혈관 배선
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/03_hamiltonian_circuit.md -> ## 2. 오일러를 배신한 길 찾기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/03_hamiltonian_circuit.md -> ## 3. 컴퓨터 과학의 최악 폭탄, TSP 팩토리얼 딜레마
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/03_hamiltonian_circuit.md -> ## 4. 파이썬 택배 배송 브루트포스 봇 (Python TSP)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/04_spanning_tree.md -> ## 3. 가지 (Branch)와 뿌리 (Root)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/04_spanning_tree.md -> ## 4. 수형도 해킹 제1법칙: "점 빼기 1은 선!"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/05_minimum_spanning_tree.md -> ## 2. 5천 억짜리 통신망 공사: 회로의 죄악
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/05_minimum_spanning_tree.md -> ## 4. 로컬 최적화가 전체 최적화를 이긴다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/06_dijkstra_algorithm.md -> ## 2. 카페 창업의 전설, 다익스트라(1956)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/06_dijkstra_algorithm.md -> ## 3. 다익스트라의 스캔 해킹 로직
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 23.최적화이론/06_dijkstra_algorithm.md -> ## 4. 파이썬 최단 경로 스캐너 봇 (Python Dijkstra)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/00_intro_domino.md -> ## 2. 1억 개의 명제를 증명하는 방법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/01_deduction_vs_induction.md -> ## 2. 팩트로 때려 눕힌다: 연역법 (Deduction)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/01_deduction_vs_induction.md -> ## 3. 경험이 축적되어 공식이 되다: 귀납법 (Induction)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/01_deduction_vs_induction.md -> ## 4. 백조 패러독스: 귀납법의 치명적 오류 파괴
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/01_deduction_vs_induction.md -> ## 5. '수학적' 귀납법은 뭔가 다른가요?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/02_inductive_definition.md -> ## 2. 점화식, 수열의 도화선에 불을 붙이다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/02_inductive_definition.md -> ## 3. 거울 속의 거울: 파이썬 재귀 함수 (Recursion)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/02_inductive_definition.md -> ## 4. 파이썬 재귀 폭발 스캐너 시뮬레이션
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/03_fibonacci_and_dp.md -> ## 2. 과거 2대가 합쳐져 1대를 창조한다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/03_fibonacci_and_dp.md -> ## 3. 재귀 함수의 파멸적 버그 폭발 ($Fib(40)$ 의 악몽)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/03_fibonacci_and_dp.md -> ## 4. 다이내믹 프로그래밍 (DP: Memoization) 해결사!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/03_fibonacci_and_dp.md -> ## 5. 파이썬 피보나치 엔진 (재귀 vs DP 속도 비교)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/04_induction_step1_trigger.md -> ## 2. 1번 도미노를 건드려라! (초기값 검증)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/04_induction_step1_trigger.md -> ## 3. 출발선은 꼭 1이 아니어도 된다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/04_induction_step1_trigger.md -> ## 4. 파이썬 재귀 함수의 Base Case 와의 평행이론
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/05_induction_step2_chain.md -> ## 3. "만약 네가 쓰러진다면, 네 뒷놈도 무조건 같이 끌고 간다!"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/05_induction_step2_chain.md -> ## 4. 무한 루프의 완성: 도미노 엔진 가동
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/06_proof_of_equations.md -> ## 2. [실전 1] 등식의 증명 (1부터 n까지의 합)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 24.수학적귀납법/06_proof_of_equations.md -> ## 3. [실전 2] 부등식의 증명 ($A>B>C$ 샌드위치 기법)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/00_intro.md -> ## 1. 우주를 무너뜨린 끔찍한 발견
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/00_intro.md -> ## 3. 새로운 우주의 문, 무리수
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/01_square_roots.md -> ## 2. 근호($\sqrt{\quad}$) 기호의 의미
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/01_square_roots.md -> ## 3. 제곱을 하면 25가 되는 수는 '두 개'입니다!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/01_square_roots.md -> ## 4. 파이썬의 `math.sqrt()` 해부하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/02_properties_of_roots.md -> ## 2. 곱셈과 나눗셈의 자유로운 결합
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/02_properties_of_roots.md -> ## 3. 파이썬으로 겪는 절대값의 배신 증명
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/03_irrational_numbers.md -> ## 1. 분수로 표현할 수 없는 영원함
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/03_irrational_numbers.md -> ## 2. 우리가 아는 유명한 무리수 친구들
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/03_irrational_numbers.md -> ## 3. 파이썬과 무리수의 본모습 관찰하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/04_real_number_line.md -> ## 2. 드디어 등장한 진짜 우주: 실수 (Real Numbers)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/04_real_number_line.md -> ## 3. 집합 관계로 보는 우주의 확장
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/04_real_number_line.md -> ## 4. 파이썬과 타입 체계의 대응 (컴퓨터는 과연 Real할까?)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/05_ordering_reals.md -> ## 1. 수직선 위의 절대 규칙
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/05_ordering_reals.md -> ## 2. 루트($\sqrt{\quad}$)가 씌워진 숫자들의 크기 비교
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/05_ordering_reals.md -> ## 3. 정수와 루트의 이종 격투기 비교
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/05_ordering_reals.md -> ## 4. 파이썬과 소수점 비교의 함정
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/06_approximating_roots.md -> ## 1. 노가다 추적 1단계: 정수 사이에 가두기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/06_approximating_roots.md -> ## 3. 파이썬으로 구현한 이분법 스무고개
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/07_irrational_proof.md -> ## 1. 귀류법: 거짓말쟁이를 함정에 빠뜨리기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/07_irrational_proof.md -> ## 2. 증명의 시작 (기약분수 세팅)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/07_irrational_proof.md -> ## 3. 치명적인 오류의 발견
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/07_irrational_proof.md -> ## 4. 수학계의 논리적 폭발 (모순)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/08_computing_reals.md -> ## 1. IEEE 754: 세상을 지배하는 64비트 실수 표준 규약
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/08_computing_reals.md -> ## 2. 파이썬 `decimal` 에도 한계는 있다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 26.실수1/08_computing_reals.md -> ## 마무리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/00_intro.md -> ## 2. 분해 공장의 이름, "인수분해"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/01_concept_of_factorization.md -> ## 1. 숫자 12 의 진짜 뼈를 발라라 (소인수분해)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/02_common_factors.md -> ## 1. 셜록 홈스의 눈: 똑같은 놈 묶어 내기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/02_common_factors.md -> ## 2. 분배법칙 (Distributive Law) 의 역재생
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/02_common_factors.md -> ## 3. 공통인수는 숫자도 되고 알파벳도 된다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/03_reversing_multiplication.md -> ## 1. 전개와 분해는 "비디오 빨리 감기" 와 "되감기"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/03_reversing_multiplication.md -> ## 2. 해커의 눈동자: 패턴 인지의 시작
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/03_reversing_multiplication.md -> ## 3. 알고리즘으로서의 인수분해
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/04_perfect_square_trinomials.md -> ## 1. 완벽한 정사각형의 마법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/04_perfect_square_trinomials.md -> ## 2. 완전제곱식의 까다로운 입장 조건
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/04_perfect_square_trinomials.md -> ## 3. 이차 함수와의 우주적 연결 고리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/05_difference_of_squares.md -> ## 1. 꼬리가 증발해 버린 희귀종: $\mathbf{a^2 - b^2}$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/05_difference_of_squares.md -> ## 2. 합과 차의 음양 조화 (왜 가운데가 증발했을까?)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/05_difference_of_squares.md -> ## 3. 분모의 유리화 (마법의 지팡이) 실전 적용
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/06_python_sympy_factorization.md -> ## 1. SymPy: 심볼(Symbol) 수학의 제왕
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/06_python_sympy_factorization.md -> ## 2. `.factor()` 메소드: 1초 만에 해체 조립
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 27.인수분해1/06_python_sympy_factorization.md -> ## 3. 초고난도 다항식의 붕괴
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/00_intro.md -> ## 1. 지치지 않는 운동의 비밀
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/00_intro.md -> ## 2. 해킹 불가능한 무한의 비밀번호, 파이 $\pi$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/01_anatomy_of_circle.md -> ## 1. 십자선 부품: 반지름(Radius) 과 지름(Diameter)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/01_anatomy_of_circle.md -> ## 2. 곡선 부품: 원주(Circumference) 와 호(Arc)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/01_anatomy_of_circle.md -> ## 3. 절단 부품: 현(Chord) 과 부채꼴(Sector)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/02_central_angle_and_arc.md -> ## 1. 중심각: 모든 팽창의 리모컨
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/02_central_angle_and_arc.md -> ## 2. 현(Chord) 의 반란, 넌 비례하지 않아!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/02_central_angle_and_arc.md -> ## 3. 같은 원 안의 복사 복제 (Clone)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/03_secret_of_pi.md -> ## 2. 계산기가 없던 시대의 노가다 머신, '다각형 쪼개기'
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/03_secret_of_pi.md -> ## 3. 원의 공식을 폭발시키는 방아쇠, $\pi$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/04_circumference_and_area.md -> ## 1. 껍데기 둘레 함수: $\mathbf{C = 2\pi r}$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/04_circumference_and_area.md -> ## 2. 치즈 넓이 함수: $\mathbf{Area = \pi r^2}$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/05_area_of_sector.md -> ## 1. 비율 필터 스크립트 가동 ( $\frac{x}{360}$ )
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/05_area_of_sector.md -> ## 2. 호의 길이와 넓이에 팩터(Factor) 비율 강제 곱하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/05_area_of_sector.md -> ## 3. 부채꼴 면적의 숨겨진 백도어 해킹 키 ($S = \frac{1}{2}rl$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/06_python_pi_calculation.md -> ## 1. 아르키메데스의 파이($\pi$) 착즙기 가동!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 28.원1/06_python_pi_calculation.md -> ## 2. 콘솔 렌더링 결과 (우주의 암호가 풀리는 순간)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/00_intro_euclid.md -> ## 2. "왕을 위한 기하학의 지름길은 없습니다!"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/01_rules_of_construction.md -> ## 2. 하드코어 룰: 도구의 스펙 제한 모델
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/01_rules_of_construction.md -> ## 3. 작도 스킬 1: 선분의 수직이등분선 조준!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/01_rules_of_construction.md -> ## 4. 작도 스킬 2: 각의 이등분선 레이저!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/02_triangle_construction.md -> ## 2. 왜 삼각형만 유일하게 안 무너지는가?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/02_triangle_construction.md -> ## 3. 삼각형을 소환하는 3가지 절대 지령 (합동 조건)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/02_triangle_construction.md -> ## 4. 파이썬 삼각형 건축 판독 보안 시스템
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/03_hippocrates_lune.md -> ## 2. 원을 으깨서 정사각형을 만들어라! (원적 문제)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/03_hippocrates_lune.md -> ## 4. 증명: 피타고라스 정리를 이용한 마술
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/04_golden_rectangle.md -> ## 2. 세상에서 가장 아름다운 사각형
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/04_golden_rectangle.md -> ## 4. 증명: $\frac{1+\sqrt{5}}{2}$ 의 출현
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/05_three_impossible_problems.md -> ## 2. 수천 년의 저주: 3대 난제
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/05_three_impossible_problems.md -> ## 3. 작도 도구의 치명적 한계: 2차 방정식의 저주
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/05_three_impossible_problems.md -> ## 4. 파이썬 `SymPy` 가 판독한 난제의 해답값
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/06_transcendental_numbers.md -> ## 2. 갈루아의 등장: 이 세상 작도 가능 숫자 계보
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 29.작도/06_transcendental_numbers.md -> ## 3. 끝판왕 초월수의 등장! 방정식조차 거부한다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/00_intro.md -> ## 2. 프로그래밍 함수 모듈과 완벽한 일치
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/01_function_definition.md -> ## 1. 정의역(Domain)과 공역(Codomain) 시스템
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/02_linear_functions.md -> ## 1. 1차 함수의 생김새와 일차원적 뇌 구조
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/02_linear_functions.md -> ## 2. 그래프를 관통하는 반듯한 빔 (직선)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/02_linear_functions.md -> ## 3. 선장과 조타수: 기울기(Slope)와 Y절편(y-intercept)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/03_quadratic_functions.md -> ## 1. 머리통에 폭탄을 달고 있는 함수: $x^2$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/03_quadratic_functions.md -> ## 2. 대사건: 마이너스(-) 입력도 양수로 구원받다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/03_quadratic_functions.md -> ## 3. 폭탄의 뿔 (꼭짓점) 찾기, 완전제곱식
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/04_inverse_functions.md -> ## 1. 함수의 영화 필름을 거꾸로 돌리다: $f^{-1}(x)$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/04_inverse_functions.md -> ## 2. 아무 기계나 타임머신(역함수)을 달 수는 없다!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/04_inverse_functions.md -> ## 3. 그래프상의 거울 복사기: $Y=X$ 대칭 라인
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/05_composite_functions.md -> ## 1. 합성의 기호: 동그란 연결 파이프 $\circ$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/05_composite_functions.md -> ## 2. 순서가 바뀌면 자동차가 터진다 (교환 법칙 성립 불가)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/05_composite_functions.md -> ## 3. 모방은 창조의 어머니 (재귀와 프랙탈)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/06_absolute_value_functions.md -> ## 1. 마이너스 절단기 박스
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/06_absolute_value_functions.md -> ## 2. 그래프가 땅에 충돌하고 반사되어 튀어 오르다 (V-Shape)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/06_absolute_value_functions.md -> ## 3. 거리(Distance)와 안전 필터 코드
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/07_python_functions.md -> ## 1. 나의 첫 번째 1차 함수 팩토리 `def f(x)`
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/07_python_functions.md -> ## 2. 모듈 합성: 공장과 공장의 연결 파이프 (Composite)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/07_python_functions.md -> ## 3. 수학과 프로그래밍은 결국 한 몸
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/함수.md -> ## 그래프의 기울기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/함수.md -> ## 일차함수
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/함수.md -> ## 절편
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/함수.md -> ## 평행이동
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/함수.md -> ## 함수 그래프
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 30.함수1/함수.md -> ## 함수 그래프
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 31.지수/00_intro_exponential_growth.md -> ## 3. 기하급수(Exponential Growth)의 압도적 공포
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 31.지수/01_zero_and_negative_exponents.md -> ## 2. 0번을 곱한다는 게 말이 돼? ($a^0 = 1$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 31.지수/01_zero_and_negative_exponents.md -> ## 3. 마이너스 번 곱한다는 게 말이 돼? ($a^{-n} = \frac{1}{a^n}$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 31.지수/02_fractional_exponents_and_roots.md -> ## 2. 0.5번을 (반 번만) 곱한다는 게 말이 돼? ($a^{\frac{1}{2}}$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 31.지수/03_laws_of_exponents.md -> ## 2. 모든 확장을 통제하는 단 하나의 반지: 지수 법칙
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 31.지수/03_laws_of_exponents.md -> ## 3. 지수 법칙 4대 치트키 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 31.지수/04_compound_interest_bot.md -> ## 2. 돈이 돈을 낳는 알 시스템: 1차 함수 vs 지수 함수
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 31.지수/04_compound_interest_bot.md -> ## 3. 파이썬 단리 vs 복리 시뮬레이터 차트
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 31.지수/05_half_life_decay.md -> ## 2. 절반의 마법, 붕괴하는 지수 함수 ($y = a^{-kt}$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 31.지수/05_half_life_decay.md -> ## 3. 공룡 뼈의 나이를 알아내는 수학적 해킹
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 31.지수/05_half_life_decay.md -> ## 4. 파이썬 방사성 탄소 동위원소 역추적 스캐너
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 31.지수/06_exponential_equations.md -> ## 2. 미지수 x가 머리에 달린 괴기한 형태
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 31.지수/06_exponential_equations.md -> ## 3. 해킹 루트 1단계: 좌우 진영의 거울 동기화
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 31.지수/06_exponential_equations.md -> ## 4. 해킹 루트 2단계: 본체 날리기 (머리통 1:1 대결)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 31.지수/06_exponential_equations.md -> ## 5. 살짝 꼬아놓은 분수 형태 타격 방어법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/00_intro.md -> ## 2. 코딩 변수(Variable)의 기원: 수학의 문자
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/00_intro.md -> ## 3. 문자와 식을 알면 세상이 단순해진다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/01_why_use_letters.md -> ## 0. 대수학의 아버지, 프랑수아 비에트(François Viète)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/01_why_use_letters.md -> ## 3. 파이썬(Python)의 인공지능 수학 라이브러리: SymPy
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/02_value_of_expressions.md -> ## 3. 파이썬 `SymPy`로 식의 값 1초 만에 구하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/03_linear_expressions.md -> ## 2. 일차식의 계산 규칙
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/03_linear_expressions.md -> ## 3. 파이썬 `SymPy`의 청소기: `.simplify()`
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/04_laws_of_exponents.md -> ## 2. 지수법칙 3총사: 거듭제곱을 다루는 치트키
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/04_laws_of_exponents.md -> ## 3. 파이썬 `SymPy`로 거듭제곱 날개 달기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/05_polynomial_simplification.md -> ## 1. 다항식의 분류 기준: 차수 (Degree)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/05_polynomial_simplification.md -> ## 3. 차수별로 예쁘게 줄 세우기 (내림차순)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/05_polynomial_simplification.md -> ## 4. 파이썬 `SymPy`의 다항식 정렬 명령: `collect()`
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/06_multiplication_formulas.md -> ## 1. 공연장 좌석 수 늘리기 (다항식의 전개)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/06_multiplication_formulas.md -> ## 2. 우리가 꼭 알아야 할 곱셈공식 치트키 3종 세트
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/06_multiplication_formulas.md -> ## 3. 파이썬 `SymPy`로 곱셈공식 1초 만에 풀기: `expand()`
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/07_history_of_symbols.md -> ## 2. 생략적 대수 시대: "줄임말 쓰기"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/07_history_of_symbols.md -> ## 3. 기호적 대수 시대: "현대 수학의 완성"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/08_epilogue.md -> ## 3. «비에트가 들려주는 식의 계산 이야기»를 마치며
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/plan.md -> ## 1. 개요
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/plan.md -> ## 2. 챕터별 시각화 & 파이썬 추가 계획
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 32.식의계산/plan.md -> ## 3. 진행 순서
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 34.수열/01_sequence_basics.md -> ## 3. 💻 파이썬(Python)으로 보는 수열
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 34.수열/02_arithmetic_sequence.md -> ## 2. 등차수열의 일반항 ($a_n$) 찾기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 34.수열/02_arithmetic_sequence.md -> ## 3. 💻 파이썬(Python)으로 등차수열 만들기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 34.수열/03_harmonic_sequence.md -> ## 2. 조화수열의 일반항 찾기 전략
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 34.수열/03_harmonic_sequence.md -> ## 3. 💻 파이썬(Python)으로 조화수열 다루기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 34.수열/04_geometric_sequence.md -> ## 2. 등비수열의 일반항 ($a_n$) 찾기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 34.수열/04_geometric_sequence.md -> ## 3. 💻 파이썬(Python)으로 느끼는 등비수열의 위력!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 34.수열/05_sum_of_sequences.md -> ## 2. 등차수열의 합($S_n$) 공식 유도
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 34.수열/05_sum_of_sequences.md -> ## 3. 💻 파이썬(Python)으로 더 빠르고 우아하게 덧셈하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 34.수열/06_various_sequences.md -> ## 1. 합계의 끝판왕 기호, $\Sigma$ (시그마)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 34.수열/06_various_sequences.md -> ## 2. 계차수열: 차이가 만들어내는 새로운 수열
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 34.수열/06_various_sequences.md -> ## 3. 💻 파이썬(Python)의 List Comprehension과 $\Sigma$ 의 평행이론
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 34.수열/07_advanced_sequences.md -> ## 1. 덩어리들의 수열, 군수열(Group Sequence)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 34.수열/07_advanced_sequences.md -> ## 2. 수학적 귀납법: 영원히 쓰러지는 도미노
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 34.수열/07_advanced_sequences.md -> ## 3. 💻 파이썬(Python)으로 느끼는 군수열과 귀납법의 향기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/00_intro.md -> ## 2. 금지된 코드를 피해서 살아남아라
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/01_rational_functions.md -> ## 1. 분자가 아니라 분모($X$)에 엔진이 달렸다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/01_rational_functions.md -> ## 2. 절대로 나누면 안 돼! ZeroDivideError 폭발 장벽
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/02_irrational_functions.md -> ## 1. 허수(에러) 바이러스 방어선
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/02_irrational_functions.md -> ## 2. 매트릭스 불릿 타임: 가속도의 한계 (반쪽 포물선)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/03_exponential_functions.md -> ## 1. 제곱의 자리를 강탈한 변수 $X$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/03_exponential_functions.md -> ## 2. J-커브 (J-Curve) 의 위협
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/03_exponential_functions.md -> ## 3. 자연에서 온 마법 충전재: 자연상수 $e$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/04_logarithmic_functions.md -> ## 1. 폭발 해제 기호: $\log$ (Logarithm)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/04_logarithmic_functions.md -> ## 2. 곡선이 바닥을 핥으며 기어가다 (지수함수의 대칭 거울)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/04_logarithmic_functions.md -> ## 3. 지진 강도와 산성도 pH 의 숨겨진 척도
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/05_functions_family_tree.md -> ## 1. 다항 함수 (Polynomial) 계열: 엔진의 출력
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/05_functions_family_tree.md -> ## 2. 분수와 루트 계열 (대수 함수 파생): 에러 제어장치들
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/05_functions_family_tree.md -> ## 3. 폭발과 압축 펌핑, 초월 함수 (Transcendental) 계열
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/06_time_complexity_applications.md -> ## 1. 끔찍한 지수 재앙: 빅 오 $O(2^N)$ 피보나치
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/06_time_complexity_applications.md -> ## 2. 신의 축복: 로그 다이어트 압축 알고리즘 $O(\log N)$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 35.함수2/06_time_complexity_applications.md -> ## 3. 함수, 인간과 우주의 대화
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 36.복소수/00_intro.md -> ## 1. 닫혀버린 실수 세계의 한계
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 36.복소수/00_intro.md -> ## 3. 우주를 설계하는 가짜 숫자들
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 36.복소수/01_imaginary_numbers.md -> ## 1. 상상 속의 숫자 (Imaginary Number)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 36.복소수/01_imaginary_numbers.md -> ## 3. i 의 뱅글뱅글 4박자 순환 댄스
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 36.복소수/01_imaginary_numbers.md -> ## 4. 파이썬과 허수 $j$ 의 만남
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 36.복소수/02_complex_plane.md -> ## 1. 진짜와 가짜의 혼혈: 복소수 (Complex Numbers)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 36.복소수/02_complex_plane.md -> ## 3. 복소수 = 2D 벡터 좌표
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 36.복소수/02_complex_plane.md -> ## 4. 파이썬으로 복소수 좌표 뜯어보기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 36.복소수/03_operations_and_conjugate.md -> ## 2. 곱셈의 법칙: $i^2 = -1$ 의 폭발
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 36.복소수/03_operations_and_conjugate.md -> ## 3. 영혼의 단짝 거울 쌍둥이: 켤레복소수 (Conjugate)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 36.복소수/03_operations_and_conjugate.md -> ## 4. 파이썬 연산 시뮬레이션
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 36.복소수/04_rotation_in_2d.md -> ## 2. 복소 평면 위 일반 곱셈의 진실 (길이 뻥튀기 + 각도 합체)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 36.복소수/04_rotation_in_2d.md -> ## 3. 파이썬 조이스틱 시뮬레이션 (90도 폭격기)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 36.복소수/05_python_complex_type.md -> ## 1. 전제가 된 1줄의 우주 공식 방정식: $z = z^2 + c$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 36.복소수/05_python_complex_type.md -> ## 2. 파이썬 복소수 하드코어 벤치마크 (만델브로트)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 37.평면곡선/01_curvature.md -> ## 1. 곡선은 얼마나 굽어있을까?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 37.평면곡선/01_curvature.md -> ## 3. 💻 파이썬(Python)으로 곡률에 따른 안전속도 계산하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 37.평면곡선/02_polar_coordinates.md -> ## 2. $(r, \theta)$ : 극좌표의 문법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 37.평면곡선/02_polar_coordinates.md -> ## 3. 💻 파이썬(Python)의 수학 모듈로 좌표계 통역사 만들기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 37.평면곡선/03_conic_sections.md -> ## 2. 대수학(수식)과 기하학(그림)의 만남
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 37.평면곡선/03_conic_sections.md -> ## 3. 💻 파이썬(Python)으로 느끼는 이차곡선의 미학
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 37.평면곡선/04_cycloid.md -> ## 2. 사이클로이드의 기적 2가지
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 37.평면곡선/04_cycloid.md -> ## 3. 💻 파이썬(Python)의 수학 식 매개변수 다루기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 37.평면곡선/05_log_spiral.md -> ## 2. 극좌표계와 로그나선 합체!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 37.평면곡선/05_log_spiral.md -> ## 3. 💻 파이썬(Python)으로 해바라기 씨앗 그리기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 38. 삼각형의 오심/01_circumcenter.md -> ## 2. 외심은 어떻게 작도할까? (수직이등분선)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 38. 삼각형의 오심/01_circumcenter.md -> ## 3. 💻 파이썬(Python)으로 외심 좌표 구하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 38. 삼각형의 오심/02_incenter.md -> ## 2. 내심은 어떻게 작도할까? (각의 이등분선)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 38. 삼각형의 오심/02_incenter.md -> ## 3. 💻 파이썬(Python)으로 내접원의 반지름 구하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 38. 삼각형의 오심/03_centroid.md -> ## 2. 무게중심의 작도법과 2:1의 마법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 38. 삼각형의 오심/03_centroid.md -> ## 3. 💻 파이썬(Python)으로 찾는 초간단 무게중심
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 38. 삼각형의 오심/04_orthocenter_excenter.md -> ## 2. 삼각형 밖의 외톨이: 방심(Excenter)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 38. 삼각형의 오심/04_orthocenter_excenter.md -> ## 3. 💻 수학의 오심과 프로그래밍 패턴의 융합
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 38. 삼각형의 오심/05_euler_line_nine_point.md -> ## 2. 점 9개가 원 하나에 쏙? 구점원의 기적
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 38. 삼각형의 오심/05_euler_line_nine_point.md -> ## 3. 💻 파이썬(Python)으로 오일러의 일직선 증명하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 39.로그/01_napier.md -> ## 2. 존 네이피어(John Napier)의 구원
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 39.로그/01_napier.md -> ## 3. 💻 파이썬(Python)으로 체험하는 네이피어의 곱셈 마법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 39.로그/02_definition.md -> ## 2. 로그(Log)의 탄생 기호학
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 39.로그/02_definition.md -> ## 3. 💻 파이썬(Python)으로 부르는 로그의 노래
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 39.로그/03_properties.md -> ## 2. 0과 1의 특별한 룰
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 39.로그/03_properties.md -> ## 3. 💻 파이썬(Python)에서 로그 곱셈/덧셈 분리 검증하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 39.로그/04_fake_log.md -> ## 2. 💻 파이썬(Python)의 엄격한 보안 프로텍터
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 39.로그/05_base_change.md -> ## 2. 💻 파이썬(Python)으로 느끼는 밑 변환의 힘
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 39.로그/06_common_log.md -> ## 2. 엄청난 숫자를 한 자릿수로 압축하다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 39.로그/06_common_log.md -> ## 3. 💻 파이썬(Python)의 전용 상용로그 계산기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 39.로그/07_common_log_parts.md -> ## 2. 0이 붙거나 소수점이 되어도 유전자(가수)는 같다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 39.로그/07_common_log_parts.md -> ## 3. 💻 파이썬(Python)으로 상용로그 분해기 만들기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 39.로그/08_applications.md -> ## 2. 우리가 당하고 있는 수많은 로그들!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 39.로그/08_applications.md -> ## 3. 💻 파이썬(Python)으로 바이러스 기하급수 통제하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 40.지수함수와 로그함수/01_exponential_growth.md -> ## 2. 종이 50번 접기 테스트
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 40.지수함수와 로그함수/01_exponential_growth.md -> ## 3. 💻 파이썬(Python)으로 종이 접기 시뮬레이션
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 40.지수함수와 로그함수/02_compound_interest.md -> ## 1. 정직한 덧셈: 단리(Simple Interest) 체계
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 40.지수함수와 로그함수/02_compound_interest.md -> ## 3. 💻 파이썬(Python)의 금융 엔지니어링
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 40.지수함수와 로그함수/03_half_life.md -> ## 2. 공룡의 뼈에서 나이를 캐내다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 40.지수함수와 로그함수/03_half_life.md -> ## 3. 💻 파이썬(Python)으로 구현하는 고고학 시뮬레이터
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 40.지수함수와 로그함수/04_cooling_law.md -> ## 2. 지수 평형 상태(Equilibrium)를 향한 수렴
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 40.지수함수와 로그함수/04_cooling_law.md -> ## 3. 💻 파이썬(Python) 방구석 바리스타 시뮬레이션
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 40.지수함수와 로그함수/05_log_growth.md -> ## 2. 공부와 운동의 딜레마 (정체기)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 40.지수함수와 로그함수/05_log_growth.md -> ## 3. 💻 파이썬(Python)으로 게임 경험치 시스템 만들기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 40.지수함수와 로그함수/06_inverse_function.md -> ## 2. 모든 특징이 거꾸로 바뀐다!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 40.지수함수와 로그함수/06_inverse_function.md -> ## 3. 💻 파이썬(Python)의 In/Out 역전 시스템
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 40.지수함수와 로그함수/07_log_scale_viz.md -> ## 2. 왜곡이 아니라 '진실'을 보기 위한 마법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 40.지수함수와 로그함수/07_log_scale_viz.md -> ## 3. 💻 파이썬(Python)으로 바이러스 제압 모니터링하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 40.지수함수와 로그함수/08_daily_life.md -> ## 2. 💻 파이썬(Python) 뉴스 팩트 체크 방패
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 41.정수★/00_intro.md -> ## 2. 한켈의 일침: 눈에 보이지 않아도 '규칙'이 있다면 수(Number)다!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 41.정수★/01_concept_of_integers.md -> ## 1. 부호(Sign): 두 세계를 나누는 꼬리표
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 41.정수★/01_concept_of_integers.md -> ## 2. 정수 (Integers): 딱 떨어지는 완벽한 자들의 모임
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 41.정수★/01_concept_of_integers.md -> ## 3. 파이썬(Python) 변수의 정수 여행
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 41.정수★/02_number_line_and_absolute_value.md -> ## 1. 수직선 위의 쌍둥이 자리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 41.정수★/02_number_line_and_absolute_value.md -> ## 3. 파이썬과 `abs()` 폭탄 해체기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 41.정수★/03_addition_and_subtraction.md -> ## 2. 뺄셈(-): 넌 지금부터 우리 팀이야! (부호 뒤집기)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 41.정수★/04_multiplication_and_division.md -> ## 1. 곱셈은 돋보기(스케일링) 기능이다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 41.정수★/04_multiplication_and_division.md -> ## 3. 정수의 분배법칙과 증명 대방출
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 41.정수★/04_multiplication_and_division.md -> ## 4. 나눗셈은 곱셈의 그림자
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 41.정수★/05_integers_in_computers.md -> ## 2. 파이썬의 정수(`int`), 한계란 없다!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 41.정수★/05_integers_in_computers.md -> ## 3. 정수의 연금술: 형변환 (Type Casting)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/01_lever_law.md -> ## 2. 모멘트(Moment)와 밸런스
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/01_lever_law.md -> ## 3. 💻 파이썬(Python)으로 지구 들어 올리기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/02_triangle_centroid.md -> ## 2. 3명의 친구가 손을 잡은 평균값
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/02_triangle_centroid.md -> ## 3. 💻 파이썬(Python)으로 게임 오브젝트 균형 잡기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/03_polygon_centroid.md -> ## 2. 모든 것은 '기본 단위(삼각형)'로 쪼개야 한다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/03_polygon_centroid.md -> ## 3. 💻 파이썬(Python)으로 다각형 무게중심 통합기 만들기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/04_solid_of_revolution.md -> ## 2. 세상을 지배하는 3대 회전체 군단
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/04_solid_of_revolution.md -> ## 3. 💻 파이썬(Python)으로 회전체의 기본 슬라이스 단면 찾기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/05_pappus_theorem.md -> ## 2. 도넛 구조(Torus)의 부피 구하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/05_pappus_theorem.md -> ## 3. 💻 파이썬(Python) 3D 도넛 팩토리 시뮬레이터
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/06_cone_properties.md -> ## 2. 1/3 로 깎여나간 마법의 부피와 겉껍질 전개도
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/06_cone_properties.md -> ## 3. 💻 파이썬(Python) 원뿔 제원 자동 산출기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/07_sphere_surface.md -> ## 1. 자연은 가성비의 끝판왕이다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/07_sphere_surface.md -> ## 3. 💻 파이썬(Python)으로 지구본 가죽 씌우기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/08_sphere_volume.md -> ## 2. 원기둥에서 구(Sphere)를 파내다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 42.무게중심과 회전체/08_sphere_volume.md -> ## 3. 💻 파이썬(Python) 3D 탱크 팩토리 설계
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/01_comparing_groups.md -> ## 1. 숲을 보지 못하면 나무에 깔려 죽는다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/01_comparing_groups.md -> ## 3. 💻 파이썬(Python)으로 데이터 집단 싸움 붙이기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/02_representative_values.md -> ## 1. 수백만 데이터를 1개로 찍어 누르는 압축 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/02_representative_values.md -> ## 3. 💻 파이썬(Python)의 대푯값 산출 AI
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/03_python_statistics.md -> ## 2. 분산(Variance)과 표준편차(Standard Deviation)의 위력
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/03_python_statistics.md -> ## 3. 💻 파이썬(Python) 1타 강사: 표준편차 원클릭 폭격
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/04_correlation.md -> ## 1. 나 혼자가 아니야, 두 녀석의 댄스파티
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/04_correlation.md -> ## 3. 💻 파이썬(Python) 빅데이터 마케팅 추천 알고리즘
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/05_scatter_plot.md -> ## 2. 세 가지 별자리의 생김새
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/05_scatter_plot.md -> ## 3. 💻 파이썬(Python)의 마법 지휘봉 `scatter()`
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/06_correlation_coefficient.md -> ## 2. -1과 +1이라는 뚫리지 않는 절댓값 감옥
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/06_correlation_coefficient.md -> ## 3. 💻 파이썬(Python)으로 궁합 점수(r) 뽑아내기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/07_statistics_fallacy.md -> ## 1. 충격 보도: "아이스크림이 상어를 불러온다!"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/07_statistics_fallacy.md -> ## 3. 💻 파이썬(Python)의 맹점: 컴퓨터는 거짓말을 하지 않는다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/08_average_trap.md -> ## 2. 전체 통계 vs 세부 통계: 심슨의 역설
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 43.두 집단의 비교/08_average_trap.md -> ## 3. 💻 파이썬(Python)의 사기 그래프 렌더링 실습
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/00_intro.md -> ## 2. 확대/축소의 마법: 닮음(Similarity)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/00_intro.md -> ## 3. 세상을 해킹하는 치트키 삼각형
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/01_similar_right_triangles.md -> ## 1. 뼈대만 남기고 살을 쫙 빼는 '각도'의 비밀
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/01_similar_right_triangles.md -> ## 2. 확대 복사기(Zoom-in)의 함정, 비율은 불변!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/01_similar_right_triangles.md -> ## 3. 세 가지의 절대 불변 비율 (Trig Ratios)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/02_sine_cosine_tangent.md -> ## 2. SOH: 사인 (Sine) = Opposite / Hypotenuse
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/02_sine_cosine_tangent.md -> ## 3. CAH: 코사인 (Cosine) = Adjacent / Hypotenuse
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/02_sine_cosine_tangent.md -> ## 4. TOA: 탄젠트 (Tangent) = Opposite / Adjacent
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/03_special_angles.md -> ## 1. 완벽한 정사각형의 반쪽 ($45^\circ$) 반반 치킨의 미학
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/03_special_angles.md -> ## 2. 완벽한 정삼각형의 반쪽 ($30^\circ$ 와 $60^\circ$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/03_special_angles.md -> ## 3. 손가락 하나 까딱하면 풀리는 특수각 패스워드
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/04_trig_tables.md -> ## 1. 각도라는 치명적인 단어: 라디안 (Radian) 의 횡포
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/04_trig_tables.md -> ## 2. 파이썬 `math` 라이브러리로 무한 소수점 소환하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/04_trig_tables.md -> ## 3. 아무도 몰랐던 $12^\circ$ 삼각비도 1초 컷
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/05_solving_right_triangles.md -> ## 1. 퍼즐 조각의 규칙 (최소 요건)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/05_solving_right_triangles.md -> ## 2. 실전 해킹: 변과 각도 조합 (A조합)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/05_solving_right_triangles.md -> ## 3. 직각 스나이퍼의 쾌감
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/06_applications.md -> ## 1. 게임 물리 엔진: 발사체 궤도 분리하기 (벡터 분해)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 44.삼각비1/06_applications.md -> ## 2. 역추적 미사일 시스템: 아크(Arc) 역삼각함수
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/00_intro.md -> ## 1. 우주를 지배하는 원뿔
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/00_intro.md -> ## 2. 대수학과 기하학의 만남
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/01_origin_of_conics.md -> ## 1. 전염병과 "부피 2배의 재단" 퀘스트
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/01_origin_of_conics.md -> ## 2. 3차 방정식의 벽에 부딪치다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/01_origin_of_conics.md -> ## 3. 메나이크모스(Menaechmus)의 원상 돌파
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/02_four_conic_sections.md -> ## 1. 완벽한 수평 자르기: 원 (Circle)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/02_four_conic_sections.md -> ## 2. 살짝 비스듬히 자르기: 타원 (Ellipse)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/02_four_conic_sections.md -> ## 3. 원뿔 옆면과 완벽히 평행하게 썰기: 포물선 (Parabola)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/02_four_conic_sections.md -> ## 4. 아예 수직으로 내리찍기: 쌍곡선 (Hyperbola)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/03_definition_of_parabola.md -> ## 1. 일상 속의 포물선
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/03_definition_of_parabola.md -> ## 2. 점과 직선 사이의 공평한 이등분
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/04_focus_and_directrix.md -> ## 1. 줄다리기의 궤적 추적 (Tracking)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/04_focus_and_directrix.md -> ## 2. 수식으로 해킹하기: $\mathbf{y^2 = 4px}$ 의 탄생
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/05_equation_of_parabola.md -> ## 1. 가로형 vs 세로형 포트폴리오 차이
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/05_equation_of_parabola.md -> ## 2. 평행 이동 (Transforming the Origin)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/06_python_matplotlib_conics.md -> ## 1. 파이썬 그래픽스(Matplotlib) 와 포물선의 만남
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 45.이차곡선1/06_python_matplotlib_conics.md -> ## 2. 코드 실행과 로켓 궤도의 이해
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/01_random_variable.md -> ## 2. 모든 운명을 하나의 지도로: 확률분포 (Probability Distribution)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/01_random_variable.md -> ## 3. 💻 파이썬(Python)으로 확률 뽑기 게임 렌더링하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/02_probability_table.md -> ## 2. 합계는 무조건 '1' : 통계청의 뚫리지 않는 철칙
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/02_probability_table.md -> ## 3. 💻 파이썬(Python) `Pandas` 스타일 확률표 스캐너
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/03_expected_value.md -> ## 2. 계산법: 위 칸과 아래 칸의 죽음의 왈츠
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/03_expected_value.md -> ## 3. 💻 파이썬(Python)으로 로또 사기 판독기 구축
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/04_probability_statistics.md -> ## 2. 1만 번의 노가다: 대수의 법칙 (Law of Large Numbers)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/04_probability_statistics.md -> ## 3. 💻 파이썬(Python)으로 신의 주사위 해킹하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/05_variance_stddev.md -> ## 2. 악명 높은 단축 공식: '제평 - 평제'
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/05_variance_stddev.md -> ## 3. 💻 파이썬(Python)으로 위험 자산 스캐너 구동
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/06_binomial_distribution.md -> ## 2. 과거를 기억 못 하는 붕어: 독립시행 (Independent Trials)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/06_binomial_distribution.md -> ## 3. 💻 파이썬(Python)으로 이항분포 확률 뚫기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/07_binomial_expected_variance.md -> ## 2. 3대 치트키: $np$, $npq$, $\sqrt{npq}$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/07_binomial_expected_variance.md -> ## 3. 💻 파이썬(Python)으로 $n$, $p$, $q$ 즉시 산출기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/08_binomial_graph.md -> ## 2. 진화의 끝: 이산에서 연속으로, 정규분포(Normal Distribution)의 탄생!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 47.확율분포/08_binomial_graph.md -> ## 3. 💻 파이썬(Python)으로 $n$ 무한 증식 진화 과정 시각화 봇
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 48.일차부등식/01_inequality_meaning.md -> ## 2. 해리엇의 악어 입, 부등호 4총사
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 48.일차부등식/01_inequality_meaning.md -> ## 3. 💻 파이썬(Python)의 비교 연산자 (Boolean)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 48.일차부등식/02_add_sub.md -> ## 2. 방정식의 영혼, '이항'을 그대로 이식하다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 48.일차부등식/02_add_sub.md -> ## 3. 💻 파이썬(Python)으로 부등식 저울 양변 스캐닝
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 48.일차부등식/03_mul_div.md -> ## 2. 🚨 긴급 비상: 음수(-)를 곱하면 뒤집어지는 세계
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 48.일차부등식/03_mul_div.md -> ## 3. 💻 파이썬(Python)의 버그 창출: 음수 폭탄 투하
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 48.일차부등식/04_solve_linear.md -> ## 2. 복잡한 놈들도 원리는 하나다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 48.일차부등식/04_solve_linear.md -> ## 3. 💻 파이썬(Python) `SymPy` 부등식 자동 분쇄기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 48.일차부등식/05_system_linear.md -> ## 2. 수직선 위의 셀로판지 겹치기 (교집합)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 48.일차부등식/05_system_linear.md -> ## 3. 💻 파이썬(Python)으로 이중 감시망(AND 필터링) 구축
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 48.일차부등식/06_applications.md -> ## 2. 실전 모델링: 택시 할증의 공포 피하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 48.일차부등식/06_applications.md -> ## 3. 💻 파이썬(Python) `While` 로 예산 소진 시뮬레이션
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 49.삼각함수/01_angles_radians.md -> ## 1. 360도를 돌파하다: 일반각(General Angle)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 49.삼각함수/01_angles_radians.md -> ## 3. 💻 파이썬(Python)의 디그리-라디안 번역 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 49.삼각함수/02_trig_definition.md -> ## 2. All-사-탄-코 의 저주 (부호 판별법)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 49.삼각함수/02_trig_definition.md -> ## 3. 💻 파이썬(Python)의 2D 게임 미사일 탄착군 좌표 찾기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 49.삼각함수/03_trig_properties.md -> ## 2. 잃어버린 막내의 비밀: $\tan = \frac{\sin}{\cos}$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 49.삼각함수/03_trig_properties.md -> ## 3. 💻 파이썬(Python) 제곱 공식 무결성 증명기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 49.삼각함수/04_sin_graph.md -> ## 2. 갇혀버린 맹수: 최댓값 $+1$, 최솟값 $-1$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 49.삼각함수/04_sin_graph.md -> ## 3. 💻 파이썬(Python) 우주 파동 렌더링 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 49.삼각함수/05_cos_graph.md -> ## 2. 출생의 비밀: 평행이동 된 도플갱어
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 49.삼각함수/05_cos_graph.md -> ## 3. 💻 파이썬(Python) 쌍둥이 파동 그래픽 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 49.삼각함수/06_tan_graph.md -> ## 2. 접근 금지 투명 벽: 점근선(Asymptote)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 49.삼각함수/06_tan_graph.md -> ## 3. 💻 파이썬(Python) 무한대 에러 회피 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 49.삼각함수/07_trig_equations.md -> ## 2. 부등식은 '형광펜 칠하기' 다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 49.삼각함수/07_trig_equations.md -> ## 3. 💻 파이썬(Python)의 다중 근(Root) 자동 탐색기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 50.4색정리/01_four_color_origin.md -> ## 3. 💻 파이썬(Python)으로 알아보는 '인접성' 검증
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 50.4색정리/02_vertices_edges_faces.md -> ## 3. 💻 파이썬(Python) 오일러 등식 무결성 스캐너
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 50.4색정리/03_kempe_flawed_proof.md -> ## 3. 💻 파이썬(Python) 켐프의 '색상 반전(Flip)' 스위치 시뮬레이션
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 50.4색정리/04_graph_theory_representation.md -> ## 1. 지도의 껍데기를 날려라 (추상화의 기적)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 50.4색정리/04_graph_theory_representation.md -> ## 3. 💻 파이썬(Python) 노드 네트워크(Network) 행렬화 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 50.4색정리/05_unavoidable_sets.md -> ## 3. 💻 파이썬(Python) 필수 패턴 조각 매칭(Filtering) 스캐너
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 50.4색정리/06_computer_proof.md -> ## 3. 💻 파이썬(Python) 브루트 포스(Brute Force) 연산 증명기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 51.최적화 이론2/01_inequalities_solutions.md -> ## 1. 방정식의 족쇄와 부등식의 해방
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 51.최적화 이론2/01_inequalities_solutions.md -> ## 3. 💻 파이썬(Python) 부등식 레이더 필터링 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 51.최적화 이론2/02_graphing_inequalities.md -> ## 4. 💻 파이썬(Python)의 2D 영토 채굴기 (Area Fill)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 51.최적화 이론2/03_system_inequalities.md -> ## 1. 꼬리에 꼬리를 무는 다중 제약 (연립부등식)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 51.최적화 이론2/03_system_inequalities.md -> ## 3. 💻 파이썬(Python) 다중 교집합(AND) 안전지대 색출 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 51.최적화 이론2/04_max_min_optimization.md -> ## 3. 💻 파이썬(Python) 꼭짓점(Vertex) 최적점 스캐너 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 51.최적화 이론2/05_linear_programming.md -> ## 3. 💻 파이썬(Python)의 산업 표준 최적화 모터 (`SciPy` Simplex)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 52.정규분포/01_continuous_distribution.md -> ## 3. 💻 파이썬(Python) 끝없는 소수점 해상도의 한계 테스트
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 52.정규분포/02_continuous_probability_calculation.md -> ## 3. 💻 파이썬(Python)의 곡선 면적(적분) 터미네이터
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 52.정규분포/03_normal_distribution.md -> ## 3. 언덕을 조종하는 두 개의 레버: 평균($m$)과 분산($\sigma^2$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 52.정규분포/03_normal_distribution.md -> ## 3. 💻 파이썬(Python) 종이 접기(Bell Curve) 시뮬레이터
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 52.정규분포/04_standard_normal_calculation.md -> ## 1. 개판인 잣대들을 하나의 절대 잣대로! (표준화)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 52.정규분포/04_standard_normal_calculation.md -> ## 3. 💻 파이썬(Python) Z-스코어 누적 상위 퍼센트 판독기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 52.정규분포/05_binomial_to_normal.md -> ## 3. 💻 파이썬(Python) 종족 변환(Binomial to Normal) 시각화 렌더러
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 52.정규분포/06_continuous_mean_variance.md -> ## 2. 분산($V(X)$) : 재평평재 도 적분으로 간다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 52.정규분포/06_continuous_mean_variance.md -> ## 3. 💻 파이썬(Python) 연속 적분기(Integral)를 이용한 평균/분산 연산 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 53.추정/01_concept_of_estimation.md -> ## 3. 💻 파이썬(Python) 셜록 홈즈 파편 스캐너
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 53.추정/02_population_and_sample.md -> ## 3. 💻 파이썬(Python)의 대자연 샘플링 뜰채 (`random.sample`)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 53.추정/03_distribution_of_sample_means.md -> ## 3. 💻 파이썬(Python) 1만번의 뜰채질 - 산맥 렌더링 검열기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 53.추정/04_estimating_population_mean.md -> ## 3. 💻 파이썬(Python) 95% 구간 투망 포획 자동화 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 53.추정/05_confidence_level_error.md -> ## 3. 💻 파이썬(Python) 조사 규모($n$) 팽창에 따른 극악의 오차율 압축 시뮬레이터
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 53.추정/06_population_proportion.md -> ## 3. 💻 파이썬(Python) 방송국 대선 개표/신뢰도 자막 렌더러
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 53.추정/07_estimation_everyday_life.md -> ## 3. 💻 파이썬(Python) IT 제국의 A/B 테스트 추정 엔진 시뮬레이션
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 54.사각형/06_midpoint_quadrilateral.md -> ## 1. 죽은 고철 사각형의 부활 마술
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 54.사각형/07_parallel_lines_area.md -> ## 2. 평행사변형을 반갈죽하는 넓이의 신들
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/00_intro.md -> ## 1. 2차원의 한계와 해커의 새로운 무기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/01_substitution_method.md -> ## 1. 눈알이 터질 것 같은 다항식의 기만
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/01_substitution_method.md -> ## 2. A 란 스티커로 은폐시켜라
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/01_substitution_method.md -> ## 3. 포장 스티커를 떼고 현실로 복구 (Return)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/02_cubic_factorization.md -> ## 1. 전사들의 무기: 세제곱 분해 공식 암기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/02_cubic_factorization.md -> ## 2. 실전 해킹: $x^3 - 8$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/03_biquadratic_equations.md -> ## 1. 징그러운 $4$차식의 연막
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/03_biquadratic_equations.md -> ## 2. 껍데기를 벗기면 다시 터지는 2차 폭발
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/03_biquadratic_equations.md -> ## 3. 합차 공식을 강제로 욱여넣는 극한 변형 (고오급 스킬)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/04_sorting_descending.md -> ## 1. 쫄지 마라, 기준 알파벳 하나만 골라라 (Sorting Key)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/04_sorting_descending.md -> ## 2. 엑셀 스크립트 실행 (재배치)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/04_sorting_descending.md -> ## 3. 기적이 일어나다 (패턴의 부활)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/05_synthetic_division.md -> ## 1. 틈새를 찾아내는 레이더 (인수정리)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/05_synthetic_division.md -> ## 3. 대압축 종료
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/06_python_sympy_roots.md -> ## 1. 방정식의 뿌리 (Roots) 탐색 AI 가동
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/06_python_sympy_roots.md -> ## 2. `.roots()` : 치명적인 X 의 점 약점 추출기 (해커의 눈)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 55.인수분해2/06_python_sympy_roots.md -> ## 3. 해킹, 끝이 아닌 시작
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 56.이차곡선2/00_intro.md -> ## 1. 완벽함과 찌그러짐의 경계
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 56.이차곡선2/00_intro.md -> ## 2. 모래시계를 자른 세 번째와 네 번째 단면
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 56.이차곡선2/01_equation_of_circle.md -> ## 1. 가장 단순한 궤도 추적기 (원의 정의)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 56.이차곡선2/01_equation_of_circle.md -> ## 2. 중심점을 강제로 끌고 다니기 (원의 평행이동)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 56.이차곡선2/02_definition_of_ellipse.md -> ## 2. 렌더링 스크립트 필터 조건 (합이 일정!)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 56.이차곡선2/03_equation_of_ellipse.md -> ## 1. 지저분한 이중 루트($\mathbf{\sqrt{ \ }}$) 껍데기의 괴물
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 56.이차곡선2/03_equation_of_ellipse.md -> ## 2. 대압축 완료본: 타원의 방정식 표준 렌더링 코드
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 56.이차곡선2/03_equation_of_ellipse.md -> ## 3. 원($\mathbf{Circle}$) 과 타원($\mathbf{Ellipse}$) 의 소름 돋는 연결고리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 56.이차곡선2/04_definition_of_hyperbola.md -> ## 1. 팽창과 도주, 두 갈래의 데칼코마니
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 56.이차곡선2/04_definition_of_hyperbola.md -> ## 2. 쌍곡선의 코드 변이: 놀랍도록 친숙한 뼈대
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 56.이차곡선2/04_definition_of_hyperbola.md -> ## 3. LORAN (쌍곡선 항법) 시스템과 GPS 의 근간
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 56.이차곡선2/05_hyperbola_and_asymptotes.md -> ## 1. 다가갈 수 없는 영원한 철벽 레이저
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 56.이차곡선2/05_hyperbola_and_asymptotes.md -> ## 2. 쌍곡선을 렌더링하는 궁극의 치트키 박스
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 56.이차곡선2/06_python_matplotlib_kepler.md -> ## 1. 닫힌 궤도(타원) & 무한 궤도(쌍곡선) 렌더링
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 56.이차곡선2/06_python_matplotlib_kepler.md -> ## 2. 렌더링 결과로 보는 우주의 민낯 (Insights)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 62.자연수/00_intro.md -> ## 1. 익숙함의 함정: 1 다음엔 왜 2인가요?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 62.자연수/00_intro.md -> ## 3. 자연수 공리계: 모든 수의 '씨앗'
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 62.자연수/01_peano_axioms.md -> ## 2. '다음 수(Successor)' 함수가 만드는 창조의 기적
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 62.자연수/01_peano_axioms.md -> ## 3. 파이썬(Python)으로 자연수 창조하기 (From Scratch)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 62.자연수/02_mathematical_induction.md -> ## 2. 귀납법 실전 증명 사례
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 62.자연수/02_mathematical_induction.md -> ## 3. 파이썬과 컴퓨터 과학의 '재귀(Recursion)'
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 62.자연수/03_addition_rules.md -> ## 2. 덧셈의 절대 법칙: 교환과 결합
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 62.자연수/03_addition_rules.md -> ## 3. 파이썬으로 경험하는 '진짜' 덧셈의 해부
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 62.자연수/04_origin_of_numbers.md -> ## 2. 이상고 뼈(Ishango bone), 2만 년 전의 엑셀(Excel)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 62.자연수/04_origin_of_numbers.md -> ## 3. 손가락, 가장 완벽한 휴대용 계산기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 62.자연수/05_history_of_numerals.md -> ## 1. 기호의 반복, 무식한 덧셈적 기수법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 62.자연수/05_history_of_numerals.md -> ## 3. 영웅 '0(Zero)'의 빈자리 보호 효과
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/00_intro.md -> ## 2. 자연계에 스며든 무리수들
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/00_intro.md -> ## 3. 실수 세계의 확장된 지배자, 무리수를 조각하다!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/01_four_operations.md -> ## 2. 곱셈과 나눗셈: 영토 파괴의 자유 (합방)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/01_four_operations.md -> ## 3. 탈출의 마법 (근호 밖으로 빼내기)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/01_four_operations.md -> ## 4. 파이썬과 무리수 객체의 연산
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/02_rationalization.md -> ## 1. 1을 무한소수($\approx 1.414...$)로 나눠보세요!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/02_rationalization.md -> ## 3. 파이썬과 유리화 자동 검증
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/03_irrational_geometry.md -> ## 1. 피타고라스 정리와 무리수의 부활 ($a^2 + b^2 = c^2$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/03_irrational_geometry.md -> ## 2. 달팽이 배열 (직각삼각형의 연속 나선)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/03_irrational_geometry.md -> ## 3. 파이썬 터틀로 루트 나선(테오도로스 달팽이) 그리기!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/04_golden_ratio.md -> ## 1. 황금비의 정의 (가장 완벽한 분할)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/04_golden_ratio.md -> ## 2. 구원의 수, 무리수 $\sqrt{5}$ 의 등장
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/04_golden_ratio.md -> ## 3. 피보나치 수열과 황금비의 충격적 만남
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/04_golden_ratio.md -> ## 4. 파이썬으로 증명하는 황금빛 수렴
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/05_irrational_equations.md -> ## 2. 응용: 완전제곱식 감옥 탈출
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/05_irrational_equations.md -> ## 3. 파이썬 `sympy` 로 순식간에 탈출하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/06_python_irrational_math.md -> ## 1. 정수 부분과 소수(무리수) 부분 분리하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/06_python_irrational_math.md -> ## 2. 점과 점 사이의 거리 (유클리드 거리 공식)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 63.실수2/06_python_irrational_math.md -> ## 3. 파이썬 실전 거리 판독기 작전
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/00_intro.md -> ## 1. 반쪽짜리 데이터, 스칼라(Scalar)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/00_intro.md -> ## 2. 완벽한 물리 캡슐, 벡터(Vector) 의 탄생
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/01_scalar_vs_vector.md -> ## 1. 스칼라 (Scalar): 정적인 숫자
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/01_scalar_vs_vector.md -> ## 2. 벡터 (Vector): 살아 숨 쉬는 화살표
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/01_scalar_vs_vector.md -> ## 3. 벡터 평등의 법칙 (드래그 앤 드롭 버그)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/02_vector_components.md -> ## 1. 피타고라스의 삼각자 렌더링 도마
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/02_vector_components.md -> ## 2. 배열(Array) 로 벡터 가두기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/02_vector_components.md -> ## 3. 내 엔진 파워(크기) 의 진짜 덩치 역추산 기법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/03_vector_addition.md -> ## 2. 평행사변형 마법: 두 마리 말이 수레를 끌 때
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/03_vector_addition.md -> ## 3. 배열 코드로 컴파일하면? (진짜 미친 꿀빨기)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/04_vector_subtraction.md -> ## 1. 뺄셈의 역발상 해킹: "마이너스는 방항을 180도 뒤집어 깐 복제품이다!"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/04_vector_subtraction.md -> ## 2. 전투기 레이더 타겟팅 (Targeting): 종점에서 시점 빼기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/04_vector_subtraction.md -> ## 3. 배열 코드 데이터로 해킹하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/05_scalar_multiplication.md -> ## 1. 방향타는 놔두고 고무줄만 $3$배로 땡겨라!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/05_scalar_multiplication.md -> ## 2. 성분 분해 배열 속 치트 복제
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/05_scalar_multiplication.md -> ## 3. 가장 고결한 마법 엔진: "단위 벡터 (Unit Vector)"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/06_python_numpy_vectors.md -> ## 1. NumPy 배터리 장착! 배열(Array) 은 신이다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 64.벡터/06_python_numpy_vectors.md -> ## 2. 렌더링 콘솔 도출 창! 피타고라스 엔진 파워값 해킹
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/00_intro.md -> ## 1. 곡선의 비밀을 캐는 현미경 툴킷
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/00_intro.md -> ## 2. 뉴턴과 라이프니츠의 미친 오버클럭
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/01_average_rate_of_change.md -> ## 1. 기울기 파이프라인 복습 (직선 데이터)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/01_average_rate_of_change.md -> ## 2. 굽이치는 곡선 포물선에서의 에러 발생
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/01_average_rate_of_change.md -> ## 3. 선을 긋고 관통시켜라. 그것이 "평균" 이다.
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/02_instantaneous_rate.md -> ## 2. 분모가 터지는 에러 $0 / 0$ 스크립트!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/02_instantaneous_rate.md -> ## 3. Limit (극한) 함수의 등판: "0 은 아니지만 0 에 무한히 빌붙는 상태"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/03_limit_h_to_zero.md -> ## 1. 0(Zero) 과 무한소(Infinitesimal) 의 차이점
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/03_limit_h_to_zero.md -> ## 2. 수식 렌더링: 에러 회피 스크립트 도출
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/04_tangent_line_slope.md -> ## 1. 접(Touch) 한다, 그 아슬아슬한 스파크
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/04_tangent_line_slope.md -> ## 2. 미분 = "단 한 픽셀 스팟의 접선 기울기를 구하는 매크로 툴"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/04_tangent_line_slope.md -> ## 3. 물리 엔진과의 접속 (순간 스피드)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/05_derivative_definition.md -> ## 1. 1회용 단건 발급기: "미분 계수 $\mathbf{f'(a)}$"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/05_derivative_definition.md -> ## 2. 만능 기울기 치트 자판기: "도함수 $\mathbf{f'(x)}$"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/06_python_sympy_derivative.md -> ## 1. `sympy.diff()` : 미분 칼날 파이프라인 매크로
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 65.미분1/06_python_sympy_derivative.md -> ## 2. 콘솔 렌더링 출력 대기! 오토 미분 스캐너
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/00_intro.md -> ## 1. 장님이 지팡이로 산맥을 등반하는 법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/00_intro.md -> ## 2. 미분기어로 지도를 해킹하다 (도함수의 위용)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/01_increasing_decreasing.md -> ## 1. 플러스(+) 스위치: 오르막 엑셀 밟기! (증가)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/01_increasing_decreasing.md -> ## 3. 부호 변이의 분기점 해킹
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/02_local_extrema.md -> ## 1. 정점(Peak) 을 알리는 침묵의 버그 상태: $\mathbf{f'(x) = 0}$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/02_local_extrema.md -> ## 2. 봉우리 정상: 극대 (Local Maximum)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/02_local_extrema.md -> ## 3. 계곡의 밑바닥: 극소 (Local Minimum)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/03_max_min_values.md -> ## 1. 후보자 엔트리 리스트(Entry List) 긁어 모으기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/03_max_min_values.md -> ## 2. 면접과 처형 (Max / Min 판독)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/04_graph_drawing.md -> ## 1. 해커의 렌더링 설계도: '증감표 (표 데이터)' 작곡하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/04_graph_drawing.md -> ## 2. 점 찍고 뱀파이어 날개 궤적 휘갈기기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/05_optimization_problems.md -> ## 1. 현실 세계를 2D 함수 매트릭스로 번역하라!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/05_optimization_problems.md -> ## 2. 미분 스매시! 정점을 색출하라!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/06_python_scipy_optimize.md -> ## 1. 장님이 산꼭대기에서 바닥으로 굴러떨어지는 알고리즘
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/06_python_scipy_optimize.md -> ## 2. 파이썬 SciPy 치트 호출! `minimize()`
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 66.미분2/06_python_scipy_optimize.md -> ## 3. 렌더링 로그: 소름 돋는 AI의 정밀 공정
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 67.미분3/00_intro.md -> ## 1. 속도가 점점 변한다는 것 (속도 + 계기판 바늘)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 67.미분3/00_intro.md -> ## 2. 도함수를 한 번 더 갈아라!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 67.미분3/01_second_derivative_meaning.md -> ## 1. 두 번의 대시($\mathbf{''}$) 마크
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 67.미분3/01_second_derivative_meaning.md -> ## 2. 렌더링 치트 실습: $f(x) \to f''(x)$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 67.미분3/01_second_derivative_meaning.md -> ## 3. 이계도함수가 뱉어내는 긍정(+) 과 부정(-) 의 진실
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 67.미분3/02_concave_up_down.md -> ## 1. 스마일 오르가즘 가속 부스터! $\mathbf{f''(x) > 0}$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 67.미분3/02_concave_up_down.md -> ## 3. 오목/볼록 버그 탐지기 요약
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 67.미분3/03_inflection_points.md -> ## 1. 이계도함수 센서가 고장 나는 $\mathbf{f''(x) = 0}$ 스팟!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 67.미분3/03_inflection_points.md -> ## 2. 왜 알아야 하나? 3D 모델링의 스무스(Smooth) 커브
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 67.미분3/04_acceleration_physics.md -> ## 1. 위치 $\to$ 속도 $\to$ 가속도 해킹 트리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 67.미분3/04_acceleration_physics.md -> ## 2. 브레이크의 모순: "가속도 부호(-) 가 스피드(-) 와 동기화 되면? 역주행 대폭발!"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 67.미분3/05_curve_sketching_advanced.md -> ## 1. 2차 증감표 해킹 스크립트 작성 (더 나은 디자인 툴)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 67.미분3/05_curve_sketching_advanced.md -> ## 2. 네 가지 렌더링 콤포넌트 부품 공장
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 67.미분3/06_python_sympy_diff_diff.md -> ## 1. `sp.diff(func, x, 2)` : 뒤쪽 정수 숫자 넘버 슬롯의 위용
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 67.미분3/06_python_sympy_diff_diff.md -> ## 2. 렌더링 무스비! 마법 스캐너의 콘솔 반격
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/00_intro.md -> ## 1. 시간($\mathbf{t}$) 이 지배하는 함수 방정식
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/00_intro.md -> ## 2. 뉴턴의 미분 트리: 3단 로켓 분해
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/01_1d_motion.md -> ## 2. 방향 전환의 버그 스팟: $\mathbf{v(t) = 0}$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/01_1d_motion.md -> ## 3. 부호 이펙트 폭파 점검
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/02_velocity_and_speed.md -> ## 1. 속도 (Velocity): "나는 방향 앵글을 달고 산다!"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/02_velocity_and_speed.md -> ## 2. 절댓값 필터 파이프라인: 속력 (Speed)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/02_velocity_and_speed.md -> ## 3. 치명적 코딩 버그: "어느 차가 더 빨랐냐?"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/03_projectile_motion.md -> ## 1. 믹서기 가동: 도함수 스피드 뽑기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/03_projectile_motion.md -> ## 2. 해킹 1: "이 수류탄이 우주 끝 어디까지 제일 높이 치솟아 오르는가? (최고 높이)"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/03_projectile_motion.md -> ## 3. 해킹 2: "적군의 대가리 땅바닥에 쾅! 하고 충돌할 때 폭발 타격 데미지 스피드는?"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/04_related_rates.md -> ## 1. 반지름이 커지면 면적은 미친 듯이 뻥튀기된다!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/04_related_rates.md -> ## 2. 해킹 매크로: "무식하게 면적 함수 설계하고 미분 칼질!"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/05_optimization_applications.md -> ## 1. 설계 변수의 강제 속박
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/05_optimization_applications.md -> ## 2. 괴랄한 면적 배합 함수의 탄생
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/05_optimization_applications.md -> ## 3. 미분 스매셔의 일도양단! $\mathbf{A'(x) = 0}$ 극점 타격
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/06_python_matplotlib_kinematics.md -> ## 1. 3단 물리 엔진 통합 스캐너 스크립트 작성
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 68.미분4/06_python_matplotlib_kinematics.md -> ## 2. 렌더링 결과의 충격: 모니터 뷰포트 해석
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/00_intro.md -> ## 1. 숫자를 가둬놓는 네모난 짐승 우리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/00_intro.md -> ## 2. 텐서(Tensor) 의 할아버지
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/01_what_is_matrix.md -> ## 1. 행(Row) 과 열(Column)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/01_what_is_matrix.md -> ## 2. 행렬의 덩치 사이즈, "차원(Dimension)"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/01_what_is_matrix.md -> ## 3. 영행렬 (Zero Matrix)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/02_addition_subtraction.md -> ## 1. 행렬 병합의 절대 법칙 1: "체급이 맞아야 박치기 융합이 된다!"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/02_addition_subtraction.md -> ## 2. 규격 깡패의 버그 터널: 던전 튕김 에러
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/02_addition_subtraction.md -> ## 3. 영행렬의 투명 방패 (덧셈의 항등원)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/03_scalar_multiplication.md -> ## 1. 분배 법칙의 매크로 난사
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/03_scalar_multiplication.md -> ## 2. 코딩 해킹 필터 적용, 픽셀 뽀샵의 원리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/04_matrix_multiplication.md -> ## 1. 곱셈의 기괴한 렌더링 규칙: "$\mathbf{L}$ 자로 꼬라박기!"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/04_matrix_multiplication.md -> ## 2. 뼈아픈 교판 법칙의 폭발: $\mathbf{A \times B \ \neq \ B \times A}$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/04_matrix_multiplication.md -> ## 3. 이 미친 노가다를 왜 하느냐?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/05_linear_transformation.md -> ## 1. 폭파 변환! 매트릭스의 시공간 회전
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/05_linear_transformation.md -> ## 2. 함수 $f(x)$ 찌질이들을 가뿐히 넘어서는 위엄
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/05_linear_transformation.md -> ## 3. 리니어(Linear) 의 마법, 뼈대는 안 부서진다!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/06_python_numpy_matrix.md -> ## 1. NumPy: 우주의 행렬 뼈대 스폰기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 69.행렬/06_python_numpy_matrix.md -> ## 2. 골뱅이 `(@)` 의 공포: 진정한 시공간 변환 붕괴 타격기!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 70.무한급수/00_intro.md -> ## 1. 그런데 만약 "더하는 숫자 자체가 먼지로 변하고" 있다면?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 70.무한급수/00_intro.md -> ## 2. 먼지를 합쳐도 별이 되지 않는다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 70.무한급수/01_what_is_series.md -> ## 1. 수열(Sequence): 그냥 숫자 담는 Array 배열
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 70.무한급수/01_what_is_series.md -> ## 2. 급수(Series): 그 배열의 모든 칸을 무식하게 다 더해라! 루프 덧셈 `sum()`
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 70.무한급수/01_what_is_series.md -> ## 3. "그걸 왜 다 더하는데 씹덕아..."
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 70.무한급수/02_arithmetic_vs_geometric.md -> ## 1. 덧셈 폭주기관차: 등차수열 (Arithmetic Sequence)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 70.무한급수/02_arithmetic_vs_geometric.md -> ## 2. 곱셈 좀비의 나락: 등비수열 (Geometric Sequence)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 70.무한급수/02_arithmetic_vs_geometric.md -> ## 3. 유일한 희망: 쪼그라드는 곱셈! (공비가 $\mathbf{0.5}$ 라면?)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 70.무한급수/03_zenos_paradox.md -> ## 2. 시간을 무한 프레임으로 썰어버린 말장난
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 70.무한급수/03_zenos_paradox.md -> ## 3. 합체된 시간의 한계치 (수렴)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 70.무한급수/04_converge_diverge.md -> ## 1. 폭주 폭파! "발산 (Divergence)" 의 악몽
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 70.무한급수/04_converge_diverge.md -> ## 2. 얼어붙는 평화 구역! "수렴 (Convergence)" 의 축복
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 70.무한급수/05_sum_of_geometric_series.md -> ## 2. 렌더링 해킹 실습! $\mathbf{a}$ 와 $\mathbf{r}$ 이펙트
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 70.무한급수/06_python_while_convergence.md -> ## 1. 수렴 스크립트 작성 (제논의 ピ자 쪼가리)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 70.무한급수/06_python_while_convergence.md -> ## 2. 렌더링 콘솔의 공포
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/00_intro.md -> ## 1. 다가간다, 하지만 절대 닿지 않는다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/00_intro.md -> ## 2. 미적분학의 창조적 파괴
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/01_what_is_limit.md -> ## 2. 세 글자의 마법 패치: $\mathbf{\lim}_{n \to \infty}$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/01_what_is_limit.md -> ## 3. 리미트는 왜 필요한가?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/02_limit_properties.md -> ## 1. 쪼개고 폭파하고 분해 분배하라 (리미트 4종 세트)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/02_limit_properties.md -> ## 2. 주의보: 폭탄(발산) 한테 분배 스크립트 치면 영정 먹는다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/03_limit_convergence.md -> ## 1. 폭발하는 놈들 (발산, Divergence)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/03_limit_convergence.md -> ## 2. 얌전하게 주차하는 놈들 (수렴, Convergence)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/04_infinity_over_infinity.md -> ## 1. 깡패 두목의 논리: "대빵 놈의 파워만 봐!"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/04_infinity_over_infinity.md -> ## 2. 3초 암산 해킹 치트 매크로
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/05_infinity_minus_infinity.md -> ## 1. 뇌피셜의 함정: "야, 쌤쌤이니까 똑같이 치고받아서 $0$ 먼지로 터지는 거 아니야?"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/05_infinity_minus_infinity.md -> ## 2. 합차 공식 부적 템플릿 씌우기 (유리화 렌더링)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/05_infinity_minus_infinity.md -> ## 3. 최종장: 각 방 방어선 깡패 스캔으로 막타 갈기기!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/06_python_sympy_limit.md -> ## 1. 터미널의 신 스크립트 도구 셋업
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/06_python_sympy_limit.md -> ## 2. 5장의 함정 마진 카드 돌파 (루트 마이너스 트랩)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 71.수열의 극한/06_python_sympy_limit.md -> ## 3. 미분/적분의 모든 코어로 관통하는 이데아 $\lim$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/00_intro.md -> ## 1. 1차원 직선과 2차원 원의 충돌 시스템
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/00_intro.md -> ## 2. 각도(Angle) 가 품은 그림자 복제 마법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/01_tangent_of_circle.md -> ## 1. 접(Touch) 한다의 진짜 의미
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/01_tangent_of_circle.md -> ## 2. 우주 최고의 하드 락(Lock) 족쇄 기능: $\mathbf{90^\circ}$ 수직 스킬
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/01_tangent_of_circle.md -> ## 3. 원 밖에서 쏘아 올린 쌍권총 (두 개의 접선)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/02_secant_and_power.md -> ## 2. 밖에서 뚫고 들어온 두 발의 저격 (원 외부의 할선)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/02_secant_and_power.md -> ## 3. 접선(스침) 과 할선(관통) 이 퓨전 합체 스킬을 쓴다면?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/03_inscribed_angle.md -> ## 1. 중심을 벗어난 외곽 시큐리티 (원주각 세팅)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/03_inscribed_angle.md -> ## 2. 50% 반토막 너프 (디버프 락)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/04_angle_ratio_theorem.md -> ## 1. 눈알 위치를 드래그 앤 드롭하라!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/04_angle_ratio_theorem.md -> ## 2. 모든 원주각은 평등하다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/04_angle_ratio_theorem.md -> ## 3. 궁극의 직각 치트 (지름을 품은 원주각)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/05_cloned_angles.md -> ## 1. 마주 보는 대각선 각도끼리의 충돌
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/05_cloned_angles.md -> ## 2. 밖으로 삐져나온 꼬리 (외각) 의 함정
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/06_python_collision_detection.md -> ## 1. 거리($\mathbf{d}$) 와 반지름($\mathbf{r}$) 의 배틀그라운드
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 72.원2/06_python_collision_detection.md -> ## 2. 콘솔에 터져 나온 충돌 판정 (실전 스파크)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/01_how_to_solve.md -> ## 2. 식(Equation) 세우기 강박증에서 벗어나라!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/01_how_to_solve.md -> ## 3. 💻 파이썬(Python)의 `While` 루프와 디버깅 4단계 시스템
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/02_draw_picture.md -> ## 2. 개구리 우물 탈출 사고 실험
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/02_draw_picture.md -> ## 3. 💻 파이썬(Python) 상태 추적(State Tracking) 시각화 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/03_guess_and_check.md -> ## 2. 닭과 돼지 해킹 (연립방정식의 파괴)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/03_guess_and_check.md -> ## 3. 💻 파이썬(Python) Brute-Force(무차별 대입) 탐색 스캐너
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/04_find_pattern.md -> ## 2. 블록 탑 쌓기 문제 (도형의 패턴)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/04_find_pattern.md -> ## 3. 💻 파이썬(Python) 반복문을 통한 패턴(Pattern) 미래 예측기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/05_make_table.md -> ## 2. 함수와 좌표계의 조상
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/05_make_table.md -> ## 3. 💻 파이썬(Python)으로 구현하는 2차원 Matrix 데이터 매핑
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/06_solve_simpler.md -> ## 2. 계산기 마비 해킹: 100제곱의 일의 자리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/06_solve_simpler.md -> ## 3. 💻 파이썬(Python) 분할 정복(Divide and Conquer) 함수 조립기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/07_work_backwards.md -> ## 2. 미로 찾기의 필살기: 출구에서 출발하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/07_work_backwards.md -> ## 3. 💻 파이썬(Python) Undo (되돌리기) 스택 엔진 시스템
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/08_write_equation.md -> ## 2. 식별과 네이밍(Naming)의 파워
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/08_write_equation.md -> ## 3. 💻 파이썬(Python)의 대수학(Algebra) 연산자
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/09_other_strategies.md -> ## 2. 야생의 게릴라 전술들 (관점 전환 & 시뮬레이션)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/09_other_strategies.md -> ## 3. 💻 파이썬(Python) 몬테카를로 (Monte-Carlo) 시뮬레이션
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 73.문제해결 전략/09_other_strategies.md -> ## [마무리 요약] 문제해결 전략 (Chapter 73) 총정리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 74.통계/01_data_collection.md -> ## 2. 조사 방법: 다 물어볼까, 몇 명만 찌를까?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 74.통계/01_data_collection.md -> ## 3. 💻 파이썬(Python) 데이터 수집 엔진: `input()` 과 `List`
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 74.통계/02_data_classification.md -> ## 2. 남녀노소, 그리고 구간(Range) 단위 자르기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 74.통계/02_data_classification.md -> ## 3. 💻 파이썬(Python) If 조건문 필터링(Filtering) 매직
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 74.통계/03_table.md -> ## 2. 엑셀(Excel) 과 데이터베이스의 시조새
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 74.통계/03_table.md -> ## 3. 💻 파이썬(Python) `Pandas` 데이터 프레임(DataFrame) 생성기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 74.통계/04_graphs.md -> ## 2. 뉴스에 속지 마라: 물결선과 잘라먹기 해킹
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 74.통계/04_graphs.md -> ## 3. 💻 파이썬(Python) `Matplotlib` 차트 렌더링 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 74.통계/05_frequency_hist.md -> ## 2. 틈이 없는 빌딩 숲, 히스토그램 (Histogram)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 74.통계/05_frequency_hist.md -> ## 3. 💻 파이썬(Python) 반복문으로 '계급(Bin)' 필터링 짜보기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 74.통계/06_relative_cumulative.md -> ## 2. 눈사람처럼 굴려붙이기: 누적도수 (Cumulative Frequency)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 74.통계/06_relative_cumulative.md -> ## 3. 💻 파이썬(Python) 누적 합계(`+=`) 및 상대비율 할당기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 74.통계/07_average.md -> ## 2. 공산주의적 평등: 평균의 진짜 속내
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 74.통계/07_average.md -> ## 3. 💻 파이썬(Python) 빅데이터 평균 산출 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 74.통계/07_average.md -> ## [마무리 요약] 통계 기초 (Chapter 74) 총정리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 75.의사결정이론/01_voting_1.md -> ## 2. 콩도르세의 1:1 토너먼트 (데스매치)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 75.의사결정이론/01_voting_1.md -> ## 3. 💻 파이썬(Python) 단순 다수결 제어 엔진 (딕셔너리 활용)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 75.의사결정이론/02_voting_2.md -> ## 1. '딱 1명만 골라' 의 비극: 정보의 증발
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 75.의사결정이론/02_voting_2.md -> ## 3. 💻 파이썬(Python) 보다 가중치(Borda Count) 산출 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 75.의사결정이론/03_fair_division_1.md -> ## 2. 💻 파이썬(Python) 분할-선택 생존 시뮬레이션
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 75.의사결정이론/04_fair_division_2.md -> ## 1. 쪼갤 수 없는 유산의 딜레마
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 75.의사결정이론/04_fair_division_2.md -> ## 3. 💻 파이썬(Python) 유산 상속 현금 자동 정산기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 75.의사결정이론/05_prisoners_dilemma.md -> ## 2. 💻 파이썬(Python) 페이오프(Payoff) 매트릭스 시뮬레이터
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 75.의사결정이론/06_expected_value.md -> ## 2. 💻 파이썬(Python) 합법적 겜블 확률 분석기 (`Zip` 함수 활용)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 76.선택과 배열/01_pigeonhole_1.md -> ## 2. 일상 속의 비둘기집 해킹
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 76.선택과 배열/01_pigeonhole_1.md -> ## 3. 💻 파이썬(Python)의 중복 탐지기 (`Set` 과 `Len` 의 교차)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 76.선택과 배열/02_pigeonhole_2.md -> ## 2. 군대와 기업을 덮치는 일반화 원리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 76.선택과 배열/02_pigeonhole_2.md -> ## 3. 💻 파이썬(Python) 병목 과부하(Overload) 예측기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 76.선택과 배열/03_inclusion_exclusion.md -> ## 2. 세 덩어리의 포개짐 (A ∪ B ∪ C)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 76.선택과 배열/03_inclusion_exclusion.md -> ## 3. 💻 파이썬(Python) 합집합/교집합 데이터 마이닝
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 76.선택과 배열/04_multisets.md -> ## 1. 31가지 맛 아이스크림, 중복 선택이 가능하다면?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 76.선택과 배열/04_multisets.md -> ## 3. 💻 파이썬(Python) itertools 중복조합 부스터팩
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 76.선택과 배열/05_binomial_theorem.md -> ## 1. 괄호 속의 노가다, 암호로 풀릴까?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 76.선택과 배열/05_binomial_theorem.md -> ## 3. 💻 파이썬(Python) 식 전개 초고속 매크로 (SymPy)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/00_intro.md -> ## 2. 참값(True Value)과 근삿값(Approximate Value)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/00_intro.md -> ## 3. 오차를 다스리는 자가 세상을 다스린다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/01_approximate_vs_true.md -> ## 1. 근삿값이 발생할 수밖에 없는 이유
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/01_approximate_vs_true.md -> ## 3. 파이썬과 측정값의 디지털 한계
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/02_error_and_accuracy.md -> ## 1. 절대 오차 (Absolute Error) : 팩트 폭격
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/02_error_and_accuracy.md -> ## 3. 상대 오차 공식 (비율)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/02_error_and_accuracy.md -> ## 4. 파이썬 무기: math.isclose() 의 원리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/03_rounding_rules.md -> ## 1. 인간이 사랑하는 규칙: 반올림 (Rounding)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/03_rounding_rules.md -> ## 2. 컴퓨터 은행이 사랑하는 규칙: 내림/버림 (Truncating / Floor)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/03_rounding_rules.md -> ## 3. 물건을 살 때: 올림 (Ceiling)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/03_rounding_rules.md -> ## 4. 파이썬의 조각술 함수들 3총사
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/04_significant_figures_1.md -> ## 1. 그래서 누가 유효숫자인데? (판별법)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/04_significant_figures_1.md -> ## 2. 유효숫자 카운팅 실전 퀴즈
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/04_significant_figures_1.md -> ## 3. 연산할 때 폭발하는 유효숫자 (정밀도의 하향 평준화)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/05_significant_figures_2.md -> ## 1. 과학적 표기법: $a \times 10^n$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/05_significant_figures_2.md -> ## 2. 모호한 유효숫자의 구원자
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/05_significant_figures_2.md -> ## 3. 파이썬과 E-표기법 (Exponential Notation)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/06_precision_in_python.md -> ## 1. 정밀 포격 통제소: `decimal` 모듈
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/06_precision_in_python.md -> ## 2. 오차 허용의 미학: `math.isclose()` (상대 오차)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 77.근삿값과 오차/06_precision_in_python.md -> ## 시스템 종료
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 78.순열/01_sum_product_rules.md -> ## 2. 💻 파이썬(Python)의 `For` 루프와 곱의 법칙
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 78.순열/02_basic_permutation.md -> ## 2. 순열의 철학: "순서가 다르면 다른 우주다"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 78.순열/02_basic_permutation.md -> ## 3. 💻 파이썬(Python)의 순열 제너레이터
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 78.순열/03_adjacency.md -> ## 1. 접착제로 묶어버려라: 이웃하는 경우
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 78.순열/03_adjacency.md -> ## 3. 💻 파이썬(Python) 정규화 필터링 (If-In)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 78.순열/04_multisets_permutation.md -> ## 2. 모스 부호와 바코드: 정보를 담는 그릇
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 78.순열/04_multisets_permutation.md -> ## 3. 💻 파이썬(Python) 데카르트 곱(Cartesian Product) 해킹
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 78.순열/05_shortest_path.md -> ## 1. 도시의 바둑판, 네비게이션의 꼼수
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 78.순열/05_shortest_path.md -> ## 3. 💻 파이썬(Python)의 최단 경로 AI 길잡이
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 78.순열/06_circular_permutation.md -> ## 2. 💻 파이썬(Python) Deque(데크) 회전초밥 모듈
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 79.조합/01_basic_combination.md -> ## 2. 일상 속 조합의 냄새를 맡아라
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 79.조합/01_basic_combination.md -> ## 3. 💻 파이썬(Python) 의 무자비한 로또 크래커
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 79.조합/02_perm_vs_comb.md -> ## 2. 💻 파이썬(Python) 엔진 속도 비교 (P vs C)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 79.조합/03_properties.md -> ## 2. 💻 파이썬(Python) 연산 벤치마킹: 대칭의 위력
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 79.조합/03_properties.md -> ## 3. 대마왕 파스칼의 분할 법칙
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 79.조합/04_partitioning.md -> ## 2. 팩토리얼 파편화 (분할의 진실)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 79.조합/04_partitioning.md -> ## 3. 💻 조 짜기 시스템의 함정 코딩
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 79.조합/05_geometry_combination.md -> ## 1. 선분(Line) 의 탄생: 2개의 점이 만날 때
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 79.조합/05_geometry_combination.md -> ## 3. 💻 파이썬(Python) 네트워크 노드 엣지 폭발기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 80.도형의 이동/01_translation.md -> ## 1. 정직한 '점'의 이동
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 80.도형의 이동/01_translation.md -> ## 3. 💻 파이썬(Python) 그래프 미끄러짐 렌더링
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 80.도형의 이동/02_line_symmetry.md -> ## 2. 도형의 대칭: 청개구리는 퇴근했다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 80.도형의 이동/02_line_symmetry.md -> ## 3. 💻 파이썬(Python) 데칼코마니 렌더링
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 80.도형의 이동/03_point_symmetry.md -> ## 2. 팽이치기: 사실은 180도 회전이다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 80.도형의 이동/03_point_symmetry.md -> ## 3. 💻 파이썬(Python) $180^\circ$ 회전 클라이언트
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 80.도형의 이동/04_coord_symmetry.md -> ## 1. 엉뚱한 점 $(a, b)$ 을 블랙홀로 삼기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 80.도형의 이동/04_coord_symmetry.md -> ## 3. 💻 파이썬(Python) 연립방정식(SymPy) 뚫기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 80.도형의 이동/05_dilation.md -> ## 2. 확대(Scale) 는 찌그러짐을 포용한다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 80.도형의 이동/05_dilation.md -> ## 3. 💻 파이썬(Python)의 스케일업(Scale-Up) 모터
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 81.차원/01_what_is_dimension.md -> ## 2. 컴퓨터 과학에서의 차원 (Tensor)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 81.차원/01_what_is_dimension.md -> ## 3. 💻 파이썬(Python) 배열 차원 스캐너
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 81.차원/02_fourth_dimension.md -> ## 1. 약속을 잡는 완벽한 좌표 (물리학적 4차원)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 81.차원/02_fourth_dimension.md -> ## 3. 💻 파이썬(Python) 4D 텐서 물류 트래킹
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 81.차원/03_fractional_dimension.md -> ## 2. 대자연은 모두 소수(Fraction) 차원이다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 81.차원/03_fractional_dimension.md -> ## 3. 💻 파이썬(Python) 프랙탈 탐지기 (로그 계산)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 81.차원/04_11d_universe.md -> ## 1. 전깃줄에 숨은 개미의 차원
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 81.차원/04_11d_universe.md -> ## 3. 💻 파이썬(Python) 11차원 벡터 하이퍼스페이스
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 82.이차부등식/01_concept.md -> ## 2. 사이 공간 vs 바깥 공간 (In & Out)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 82.이차부등식/01_concept.md -> ## 3. 💻 파이썬(Python) 부등식 스캐너 (Boolean Indexing)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 82.이차부등식/02_graphic_solution.md -> ## 2. 그래프가 주는 면책 특권
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 82.이차부등식/02_graphic_solution.md -> ## 3. 💻 파이썬(Python) 형광펜 영역 칠하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 82.이차부등식/03_discriminant.md -> ## 1. 절대부등식: "무슨 짓을 해도 이긴다"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 82.이차부등식/03_discriminant.md -> ## 3. 💻 파이썬(Python) 비행 상태 판별 시뮬레이터
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 82.이차부등식/04_system.md -> ## 1. 이중 필터링: "키 180 이상이면서 몸무게 70 이하인 사람!"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 82.이차부등식/04_system.md -> ## 3. 💻 파이썬(Python) 다중 필터(AND 비트 논리곱)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 82.이차부등식/05_absolute.md -> ## 2. 알맹이가 두껍다면? "망치로 구간을 깨부수어라"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 82.이차부등식/05_absolute.md -> ## 3. 💻 파이썬(Python) 절대 사거리 반경 센서 (`abs()`)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/00_intro.md -> ## 2. 미적분학의 심화 스킬트리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/01_area_between_curves.md -> ## 2. 누가 지붕(Top)이고, 누가 바닥(Bottom)인가?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/01_area_between_curves.md -> ## 3. 요약: 조각내고, 빼고, 쌓아 올려라!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/02_volumes_of_solids.md -> ## 1. 무 썰기: 단면의 넓이를 차곡차곡 쌓다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/02_volumes_of_solids.md -> ## 2. 빙글빙글 돌려 만드는 도자기: 회전체의 부피 (Disc Method)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/02_volumes_of_solids.md -> ## 3. 부피 적분의 위력
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/03_work_and_force.md -> ## 1. 일(Work) = 힘(Force) × 이동 거리(Distance)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/03_work_and_force.md -> ## 2. 진짜 세상은 힘이 1초마다 변한다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/03_work_and_force.md -> ## 3. 용수철 당기기: 훅의 법칙 (Hooke's Law)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/04_integration_by_substitution.md -> ## 1. 합성 함수의 더러운 뱃속
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/04_integration_by_substitution.md -> ## 2. 해킹의 시작: 이름표 스와핑(치환)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/04_integration_by_substitution.md -> ## 3. 마사지된 평화로운 세상을 풀다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/05_integration_by_parts.md -> ## 1. 끄집어낼 수 없는 두 우주의 충돌
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/05_integration_by_parts.md -> ## 2. 누가 미분팀이고, 누가 적분팀인가? (LIATE 법칙)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/05_integration_by_parts.md -> ## 3. 알고리즘 실행: 파괴와 복구를 동시에
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/06_improper_integrals.md -> ## 1. 꼬리가 영원히 끝나지 않는 나팔 토네이도
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/06_improper_integrals.md -> ## 2. 한계선 극한(Limit) 방패를 치다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/06_improper_integrals.md -> ## 3. 영원히 채워지지만 1 컵을 넘지 못한다.
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/07_cs_applications.md -> ## 1. 정규 분포 곡선, 그 아래의 넓이는 무조건 $1$ ($100\%$)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/07_cs_applications.md -> ## 2. 파이썬을 활용한 확률 밀도 면적 계산
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 83.적분2/07_cs_applications.md -> ## 3. 요약: 적분, 미래와 차원을 가르는 칼날
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/00_intro.md -> ## 2. '조각'을 표현하는 새로운 수의 언어
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/00_intro.md -> ## 3. 유리수의 위대함: 비율(Ratio)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/01_concept_of_rational.md -> ## 2. 왜 분모는 절대 0이 될 수 없을까요?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/01_concept_of_rational.md -> ## 3. 파이썬에서 0으로 나누기를 시도한다면?
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/01_concept_of_rational.md -> ## 4. 정수도 사실 유리수입니다!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/02_equivalent_fractions.md -> ## 2. 파이썬과 `math.gcd`를 이용한 자동 기약분수 만들기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/02_equivalent_fractions.md -> ## 3. 동치(Equivalent)의 중요성
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/03_comparing_rationals.md -> ## 1. 양수와 음수의 기본 생태계
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/03_comparing_rationals.md -> ## 3. 파이썬과 `fractions` 모듈을 통한 절대 비교법!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/04_addition_and_subtraction.md -> ## 2. 덧셈의 교환법칙과 결합법칙
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/04_addition_and_subtraction.md -> ## 3. 분수의 덧셈과 뺄셈
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/04_addition_and_subtraction.md -> ## 4. 파이썬과 `Fractions` 모듈로 연산하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/05_multiplication_division.md -> ## 2. 역수 (Reciprocal): 분자 분모 뒤집기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/05_multiplication_division.md -> ## 3. 나눗셈: 나누기는 역수를 '곱하기'로 바꾼다!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/05_multiplication_division.md -> ## 4. 부호의 결정 규칙 (적의 적은 나의 친구)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/05_multiplication_division.md -> ## 5. 파이썬과 `Fraction`의 마법 연산
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/06_terminating_decimals.md -> ## 1. 10의 거듭제곱과 소수의 관계
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/06_terminating_decimals.md -> ## 2. 비밀은 2와 5에게 있다!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/06_terminating_decimals.md -> ## 3. 파이썬으로 유한소수 여부 탐지하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/07_repeating_decimals.md -> ## 1. 1을 3으로 나누면 일어나는 일
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/07_repeating_decimals.md -> ## 2. 순환마디 (다이어트 된 무한의 표현)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/07_repeating_decimals.md -> ## 4. 파이썬과 무한루프 디버깅
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/08_rationals_in_computers.md -> ## 2. 구원자: `fractions` 모듈 (완벽한 비율계산기)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 84.유리수/08_rationals_in_computers.md -> ## 마무리
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 85.위상수학/01_intro.md -> ## 2. 우리가 매일 보는 위상기하학 '지하철 노선도'
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 85.위상수학/01_intro.md -> ## 3. 💻 파이썬(Python) 네트워크 토폴로지 렌더러 (`NetworkX`)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 85.위상수학/02_topological_space.md -> ## 2. 위상 공간의 절대 공리 3원칙
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 85.위상수학/02_topological_space.md -> ## 3. 💻 파이썬(Python) 공간법칙(Topology) 검열기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 85.위상수학/03_homeomorphism.md -> ## 2. 구멍(Hole) 의 개수가 곧 신분증
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 85.위상수학/03_homeomorphism.md -> ## 3. 💻 파이썬(Python) 객체 위상 식별기 (Genus 판별)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 85.위상수학/04_euler.md -> ## 2. 구멍이 하나 파이면, 우주의 법칙이 깨진다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 85.위상수학/04_euler.md -> ## 3. 💻 파이썬(Python) 3D 모델오일러 검증기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 85.위상수학/05_mobius_klein.md -> ## 2. 4차원 우주의 도자기: 클라인 병(Klein Bottle)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 85.위상수학/05_mobius_klein.md -> ## 3. 💻 파이썬(Python) 뫼비우스 월드 시뮬레이터 (공간 순간 이동)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 86.수열의합/01_arithmetic_sum.md -> ## 1. 노가다 교사 vs 10살짜리 꼬마
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 86.수열의합/01_arithmetic_sum.md -> ## 3. 💻 파이썬(Python) 병렬 배열 뒤집기 엔진
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 86.수열의합/02_geometric_sum.md -> ## 1. 가우스의 마법이 통하지 않는 상대
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 86.수열의합/02_geometric_sum.md -> ## 3. 💻 파이썬(Python) 배열 시프트(Shift) 와 상수 시간 지우개
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 86.수열의합/03_sigma_notation.md -> ## 2. 거듭제곱의 폭발: $k, k^2, k^3$ 공식 삼형제
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 86.수열의합/03_sigma_notation.md -> ## 3. 💻 파이썬(Python)의 수학적 접점: 리스트 형과 시그마
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 86.수열의합/04_difference_seq.md -> ## 1. 윗물이 더러우면? 아랫물을 보아라!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 86.수열의합/04_difference_seq.md -> ## 3. 💻 파이썬(Python)의 이산 미분(Discrete Derivative `diff`)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 86.수열의합/05_telescoping_sum.md -> ## 1. 접착제를 끊어내는 암살자: 부분분수
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 86.수열의합/05_telescoping_sum.md -> ## 3. 💻 파이썬(Python) 실수 연산 오류(Rounding Error) 피하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 87.삼각비2/00_intro.md -> ## 2. 삼각형에서 파동(Wave)으로의 진화
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 87.삼각비2/01_radian_measure.md -> ## 1. 반지름이 곡면으로 굽어질 때 (Radian 의 정의)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 87.삼각비2/01_radian_measure.md -> ## 2. 프로그래밍에서 각도의 알파이자 오메가
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 87.삼각비2/02_unit_circle_trigonometry.md -> ## 2. 좌표계를 질주하는 무한한 각도 추적
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 87.삼각비2/03_graphs_of_sine_cosine.md -> ## 1. 사파이어 블러드 (사인 곡선) 의 박동
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 87.삼각비2/03_graphs_of_sine_cosine.md -> ## 2. 코사인(Cosine)은 사인의 쌍둥이 형제
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 87.삼각비2/03_graphs_of_sine_cosine.md -> ## 3. 주기(Period)와 주파수(Frequency)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 87.삼각비2/04_graph_of_tangent.md -> ## 1. 엑셀을 너무 세게 밟으면 엔진이 터진다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 87.삼각비2/04_graph_of_tangent.md -> ## 2. 끊어지고 폭발하는 주기의 파행 곡선
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 87.삼각비2/04_graph_of_tangent.md -> ## 3. 언제 쓰일까? 임계점, 저항의 한계
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 87.삼각비2/05_trig_identities.md -> ## 1. 우주 최강의 주문: $\sin^2\theta + \cos^2\theta = 1$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 87.삼각비2/05_trig_identities.md -> ## 2. 형제들의 연금술: $\tan = \frac{\sin}{\cos}$
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 87.삼각비2/05_trig_identities.md -> ## 3. 리팩토링의 끝판왕: 함수 압축기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 87.삼각비2/06_harmonics_and_sound.md -> ## 1. 노이즈 캔슬링(Noise Cancelling)의 원리 파괴
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 87.삼각비2/06_harmonics_and_sound.md -> ## 2. 파이썬으로 파동 그래프 합치기 결합
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 88.군/01_sets.md -> ## 2. 주머니들끼리의 화학 반응: 집합 연산
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 88.군/01_sets.md -> ## 3. 💻 파이썬(Python)의 고유 자료구조 `set` 구현
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 88.군/02_binary_operation.md -> ## 1. 1+1 이 2가 아니라 3이라면? (이항연산의 자유도)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 88.군/02_binary_operation.md -> ## 3. 💻 파이썬(Python)의 이항연산 마법: `lambda` 시스템
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 88.군/03_algebraic_structure.md -> ## 2. 연산 기계(조리법) 에 따라 생태계 등급이 나뉜다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 88.군/03_algebraic_structure.md -> ## 3. 💻 파이썬(Python) 객체 지향: Object = Set + Method
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 88.군/04_group.md -> ## 2. 역원(Inverse) 의 무서움: 시간을 거스르는 자
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 88.군/04_group.md -> ## 3. 💻 파이썬(Python)의 시계 연산(Modulo) 암호 역원 추출기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 88.군/05_isomorphism.md -> ## 1. 껍데기에 속지 마라! 뼈대(구조) 를 보라
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 88.군/05_isomorphism.md -> ## 3. 💻 파이썬(Python) 딕셔너리 매핑 렌더러 구현
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 25.확률1/00_intro.md -> ## 1. 멀티버스의 숫자를 세다
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 25.확률1/00_intro.md -> ## 2. 예측 불허가 가져오는 시스템의 도파민
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 25.확률1/01_number_of_cases.md -> ## 1. 사건(Event) 과 테스트(Trial) 구분하기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 25.확률1/01_number_of_cases.md -> ## 2. 노가다 카운트의 위대함
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 25.확률1/01_number_of_cases.md -> ## 3. 배열과 집합(Set) 으로 생각하라
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 25.확률1/02_or_and_rules.md -> ## 1. OR 게이트 (합의 법칙): 죽거나 살거나, 택일의 조건
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 25.확률1/02_or_and_rules.md -> ## 2. AND 게이트 (곱의 법칙): 잔혹한 동시 폭파 조건문
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 25.확률1/02_or_and_rules.md -> ## 3. 요약 필터 (뇌정지 올 때 꺼내볼 것)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 25.확률1/03_tree_diagrams.md -> ## 2. 수형도 파싱의 최강점 (안 헷갈린다!)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 25.확률1/04_definition_of_probability.md -> ## 1. 확률($\mathbf{P}$) = 내 지분 / 우주 전체 지분
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 25.확률1/04_definition_of_probability.md -> ## 2. 확률의 한계치 (Limit 바운더리)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 25.확률1/05_complementary_events.md -> ## 1. 여사건 (안 일어날 돌연변이 해킹)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 25.확률1/05_complementary_events.md -> ## 2. "적어도 하나는~" 의 절망적인 텍스트
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 25.확률1/06_python_random_simulation.md -> ## 1. 파이썬 주사위 오토 클릭 시뮬레이터
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 25.확률1/06_python_random_simulation.md -> ## 2. 큰 수의 법칙 (The Law of Large Numbers) 터트리기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/00_intro.md -> ## 1. 노가다의 종말, 공식 머신 조합기
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/00_intro.md -> ## 2. 몬테카를로(Monte Carlo): 수학이 포기한 최후의 보루
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/01_permutation.md -> ## 1. 랭킹 시상대 파이프라인 (루프 연산)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/01_permutation.md -> ## 2. 순열의 수학 기호 P (Permutation)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/02_factorial_logic.md -> ## 1. 전원 강제 소집 스크립트! 느낌표 기호의 충격
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/02_factorial_logic.md -> ## 2. 엄청난 초팽창 버그 (Factorial Explosion)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/02_factorial_logic.md -> ## 3. 원탁 조작 버그: "야! 꼬리랑 머리가 합쳐졌네?!"
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/03_combination.md -> ## 1. 계급장을 떼고 대표 기믹으로 뽑아라!
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/03_combination.md -> ## 2. 중복 오차 프레임 파괴 필터 (나누기 팩토리얼)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/04_representative_combination.md -> ## 1. 위계 질서($\mathbf{P}$): [회장 1명, 부회장 1명 뽑기]
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/04_representative_combination.md -> ## 2. 블록 압축($\mathbf{C}$): [그냥 공동 대표 2명 뽑기]
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/04_representative_combination.md -> ## 3. 대칭 버그: C 의 숨겨진 거울(Mirror) 마법
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/05_consecutive_probability.md -> ## 1. 독립 사건 (복원 추출 - 주사위의 기억 상실)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/05_consecutive_probability.md -> ## 2. 종속 사건 (비복원 추출 - 주머니 속 카드 빼기)
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/06_python_monte_carlo.md -> ## 1. 다트판 위 무작위 기관총 난사
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/06_python_monte_carlo.md -> ## 2. 몬테카를로 Python 파이($\pi$) 채굴 코드
+/Users/hojin8/docs/070.강의/math_story/src/수학이야기 46.확률2/06_python_monte_carlo.md -> ## 3. 난수(Random) 엔진이 지배하는 거대 우주의 종말

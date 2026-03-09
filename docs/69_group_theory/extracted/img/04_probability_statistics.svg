@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">대수의 법칙 (Law of Large Numbers)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"통계(과거의 파편)가 모여서 신의
+        암호 확률(미래 예측) 로 수렴하는 과정"</text>
+
+    <!-- Left: Small Data (Noise) -->
+    <g transform="translate(100, 150)">
+        <rect x="0" y="0" width="250" height="250" rx="10" fill="#221111" stroke="#ff4d4d" stroke-width="2" />
+        <text x="125" y="40" fill="#ff4d4d" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">시행 횟수 n = 10</text>
+
+        <!-- Wavy unstable graph -->
+        <path d="M 20 200 L 60 40 L 100 210 L 140 30 L 180 180 L 220 50" fill="none" stroke="#ffaa00"
+            stroke-width="4" />
+        <circle cx="20" cy="200" r="5" fill="#ffffff" />
+        <circle cx="60" cy="40" r="5" fill="#ffffff" />
+        <circle cx="100" cy="210" r="5" fill="#ffffff" />
+        <circle cx="140" cy="30" r="5" fill="#ffffff" />
+        <circle cx="180" cy="180" r="5" fill="#ffffff" />
+        <circle cx="220" cy="50" r="5" fill="#ffffff" />
+
+        <!-- Theoretical Line -->
+        <line x1="10" y1="125" x2="240" y2="125" stroke="#00ffcc" stroke-width="2" stroke-dasharray="6 4"
+            filter="url(#glow)" />
+        <text x="125" y="115" fill="#00ffcc" font-family="sans-serif" font-size="12" text-anchor="middle">이론적 수학 참값
+            P=1/2</text>
+
+        <text x="125" y="235" fill="#ffaa00" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">우연과 오류가 지배하는 카오스장</text>
+    </g>
+
+    <!-- Arrow -->
+    <g transform="translate(380, 250)">
+        <text x="0" y="0" fill="#ffffff" font-family="sans-serif" font-size="40" font-weight="bold"
+            text-anchor="middle">→</text>
+        <text x="0" y="40" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">For Loop 100만 회
+            난사</text>
+    </g>
+
+    <!-- Right: Big Data (Convergence) -->
+    <g transform="translate(500, 150)">
+        <rect x="0" y="0" width="300" height="250" rx="10" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+        <text x="150" y="40" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">시행 횟수 n = 100,000</text>
+
+        <!-- Rapid squiggly but converging graph -->
+        <path
+            d="M 20 200 L 40 50 L 60 180 L 80 70 L 100 150 L 120 90 L 140 135 L 160 115 L 180 128 L 200 122 L 220 126 L 240 124 L 260 125 L 280 125"
+            fill="none" stroke="#4da6ff" stroke-width="3" filter="url(#glow)" />
+
+        <!-- Theoretical Line -->
+        <line x1="10" y1="125" x2="290" y2="125" stroke="#00ffcc" stroke-width="4" stroke-dasharray="8 4"
+            filter="url(#glow)" />
+        <text x="210" y="105" fill="#00ffcc" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">P=1/2 에 완전히 일치 수렴!</text>
+
+        <text x="150" y="235" fill="#4da6ff" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">수학적 진리(예언) 로 강제 안착되는 미래</text>
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="450" width="600" height="100" rx="10" fill="#221122" stroke="#ffaa00" stroke-width="2" />
+    <text x="450" y="480" fill="#ffaa00" font-family="sans-serif" font-size="18" font-weight="bold"
+        text-anchor="middle">파이썬 머신러닝의 베이스 알고리즘</text>
+    <text x="450" y="515" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">데이터 표본(과거 기록) 이
+        무한대로 방대해질수록, 그 모임의 전체 형상은</text>
+    <text x="450" y="535" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+        text-anchor="middle">수학 공식이 예측한 오차 없는 참값(확률)에 자석처럼 들러붙는다.</text>
+
+</svg>

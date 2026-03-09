@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '06. 여섯 번째 수업 파이썬으로 렌더링 하는 케플러의 우주 Python Matplotlib'
+---
+
 # 06. 여섯 번째 수업: 파이썬으로 렌더링 하는 케플러의 우주 (Python Matplotlib)
 
 인수분해를 통해 도출된 타원(Ellipse) 과 쌍곡선(Hyperbola) 의 기하학적 수식을 종이 위에서 암기하는 것은 끝났습니다.

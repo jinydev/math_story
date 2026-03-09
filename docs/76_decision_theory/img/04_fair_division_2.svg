@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#862e9c" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">네 번째 의사결정: '공평한 분배 2 - 가치가 다른 유산 나누기'</text>
+
+    <!-- The Problem -->
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">물리적으로 자를 수 없는 물건(강아지, 그림, 차)을 어떻게 나눌
+        것인가?</text>
+
+    <!-- Value Assessment -->
+    <g transform="translate(30, 80)">
+        <rect x="0" y="0" width="180" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="90" y="20" fill="#d9480f" font-size="14" font-weight="bold" text-anchor="middle">💰 가치 평가
+            (Bidding)</text>
+
+        <!-- Items -->
+        <text x="40" y="50" font-size="24">🐶</text>
+        <text x="90" y="50" font-size="24">🚗</text>
+        <text x="140" y="50" font-size="24">🖼️</text>
+
+        <!-- Person A -->
+        <rect x="10" y="65" width="160" height="30" fill="#fff4e6" rx="4" />
+        <text x="25" y="85" font-size="12" font-weight="bold" fill="#d9480f">상속자 A</text>
+        <text x="75" y="85" font-size="10" fill="#495057">5천만</text>
+        <text x="115" y="85" font-size="10" fill="#495057">3천만</text>
+        <text x="155" y="85" font-size="10" fill="#495057">1천만</text>
+
+        <!-- Person B -->
+        <rect x="10" y="100" width="160" height="30" fill="#e7f5ff" rx="4" />
+        <text x="25" y="120" font-size="12" font-weight="bold" fill="#1864ab">상속자 B</text>
+        <text x="75" y="120" font-size="10" fill="#495057">1천만</text>
+        <text x="115" y="120" font-size="10" fill="#495057">6천만</text>
+        <text x="155" y="120" font-size="10" fill="#495057">2천만</text>
+    </g>
+
+    <!-- Arrow -->
+    <path d="M 220 150 L 260 150" fill="none" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow)" />
+    <text x="240" y="140" fill="#868e96" font-size="10" font-weight="bold" text-anchor="middle">독립 채점</text>
+
+    <!-- Allocation & Compensation -->
+    <g transform="translate(280, 80)">
+        <rect x="0" y="0" width="300" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="150" y="20" fill="#5c940d" font-size="14" font-weight="bold" text-anchor="middle">✅ 물건 할당 및 현금
+            정산</text>
+
+        <!-- Rules -->
+        <text x="150" y="45" fill="#495057" font-size="11" text-anchor="middle">1. 각 물건은 '가장 비싸게 평가한 사람' 에게 낙찰!</text>
+
+        <!-- Item Allocation -->
+        <text x="40" y="75" font-size="18">🐶 👉 A</text>
+        <text x="150" y="75" font-size="18">🚗 👉 B</text>
+        <text x="260" y="75" font-size="18">🖼️ 👉 B</text>
+
+        <!-- Calculation Line -->
+        <line x1="20" y1="90" x2="280" y2="90" stroke="#adb5bd" stroke-width="1" stroke-dasharray="2,2" />
+
+        <text x="150" y="110" fill="#495057" font-size="11" text-anchor="middle">2. 공평 몫(전체 합의 1/2) 과 획득한 물건 가치의 차이
+            계산</text>
+
+        <rect x="20" y="120" width="260" height="20" fill="#f8f9fa" rx="3" />
+        <text x="150" y="133" fill="#c92a2a" font-size="11" font-weight="bold" text-anchor="middle">결과: 초과 획득한 B가 부족한
+            A에게 현금 지급! (완벽한 평화)</text>
+    </g>
+
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

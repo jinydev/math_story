@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 세 번째 수업 유리수의 대소 비교 Comparing Rationals'
+---
+
 # 03. 세 번째 수업: 유리수의 대소 비교 (Comparing Rationals)
 
 양수끼리 비교할 때는 통장에 돈이 많을수록 좋으므로 절대 숫자가 큰 쪽이 이깁니다. 하지만 빚(음수)이 있다면 어떨까요?

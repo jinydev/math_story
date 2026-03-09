@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '08. 생명과 자연 속에 스며든 피보나치'
+---
+
 # 08. 생명과 자연 속에 스며든 피보나치
 
 ## 1. 학습 목표 (Learning Objectives)

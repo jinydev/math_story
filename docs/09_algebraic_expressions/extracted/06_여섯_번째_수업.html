@@ -1,0 +1,1245 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 기본 메타데이터 --><meta name="description" content="Jiny linux"><meta name="author" content="HojinLee"><!-- 제목 설정 --><title>6교시 곱셈공식</title>
+  <meta name="title" content="6교시 곱셈공식" /><!-- 키워드 설정 --><!-- Open Graph 메타데이터 --><meta property="og:title" content="6교시 곱셈공식"><meta property="og:description" content="Jiny linux"><meta property="og:type" content="website"><meta property="og:locale" content="ko">
+  <meta property="og:site_name" content="linux">
+  <meta property="og:url" content="http://localhost:4000/09_algebraic_expressions/extracted/06_%EC%97%AC%EC%84%AF_%EB%B2%88%EC%A7%B8_%EC%88%98%EC%97%85.html">
+  <!-- 대표 URL (캐노니컬) -->
+  <link rel="canonical" href="http://localhost:4000/09_algebraic_expressions/extracted/06_%EC%97%AC%EC%84%AF_%EB%B2%88%EC%A7%B8_%EC%88%98%EC%97%85.html">
+
+  <!-- Twitter 카드 메타데이터 --><meta name="twitter:card" content="summary"><meta property="twitter:title" content="6교시 곱셈공식"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="6교시 곱셈공식" />
+<meta name="author" content="Hojin" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="AI 시대의 데이터 사이언스와 함께하는 새로운 수학 학습 연대기" />
+<meta property="og:description" content="AI 시대의 데이터 사이언스와 함께하는 새로운 수학 학습 연대기" />
+<link rel="canonical" href="http://localhost:4000/09_algebraic_expressions/extracted/06_%EC%97%AC%EC%84%AF_%EB%B2%88%EC%A7%B8_%EC%88%98%EC%97%85.html" />
+<meta property="og:url" content="http://localhost:4000/09_algebraic_expressions/extracted/06_%EC%97%AC%EC%84%AF_%EB%B2%88%EC%A7%B8_%EC%88%98%EC%97%85.html" />
+<meta property="og:site_name" content="수학이야기 (Math Story V3)" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="6교시 곱셈공식" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Hojin"},"description":"AI 시대의 데이터 사이언스와 함께하는 새로운 수학 학습 연대기","headline":"6교시 곱셈공식","url":"http://localhost:4000/09_algebraic_expressions/extracted/06_%EC%97%AC%EC%84%AF_%EB%B2%88%EC%A7%B8_%EC%88%98%EC%97%85.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/assets/css/docs.css" rel="stylesheet" />
+  <link href="/assets/css/highlight.css" rel="stylesheet" />
+
+  <style>
+    blockquote {
+      border-left: solid 5px #dee2e6;
+      padding: 5px 10px;
+      background-color: #f8f9fa;
+    }
+  </style>
+
+  <style>
+    h1 a {
+      text-decoration: none;
+    }
+
+    h2 a {
+      text-decoration: none;
+    }
+
+    h3 a {
+      text-decoration: none;
+    }
+
+    h4 a {
+      text-decoration: none;
+    }
+
+    h5 a {
+      text-decoration: none;
+    }
+
+    h6 a {
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: top
+    }
+
+    strong a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* 스크롤바 커스텀 */
+    /* 임의의 영역 생성 */
+    .scrollBar {}
+
+    /* 아래의 모든 코드는 영역::코드로 사용 */
+    .scrollBar::-webkit-scrollbar {
+      width: 7px;
+      /* 스크롤바의 너비 */
+    }
+
+    .scrollBar::-webkit-scrollbar-thumb {
+      height: 30%;
+      /* 스크롤바의 길이 */
+      background: #cccccc;
+      /* 스크롤바의 색상 */
+
+      border-radius: 5px;
+    }
+
+    .scrollBar::-webkit-scrollbar-track {
+      background: rgba(33, 122, 244, .1);
+      /*스크롤바 뒷 배경 색상*/
+    }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4VBPCT3CR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-R4VBPCT3CR');
+  </script>
+
+
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg bd-navbar sticky-top">
+    <nav class="container bd-gutter flex-wrap flex-lg-nowrap position-relative" aria-label="Main navigation">
+
+      <!-- Mobile: Left Toggle (Browse) -->
+      <div class="bd-navbar-toggle d-lg-none">
+        <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
+          aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+            </path>
+          </svg>
+          <span class="d-none fs-6 pe-1">Browse</span>
+        </button>
+      </div>
+
+      <!-- Brand: Desktop (Static), Mobile (Absolute Center) -->
+      <a class="navbar-brand p-0 me-0 me-lg-2 ms-lg-0 d-none d-lg-inline-block" href="/" aria-label="jinydev">
+        <svg width="32" height="26" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M24.2746 5.33377C25.8486 7.33981 25.1183 11.1792 24.3961 13.0177C24.4028 13.0199 24.4094 13.0221 24.4161 13.0243L24.4013 13.0248L22.649 12.9082C22.649 12.9053 22.6488 12.9013 22.649 12.8993C22.9902 8.93373 22.5975 7.34575 22.2147 7.07677C17.6316 10.3896 13.5379 9.33658 12.2725 9.01111C11.928 8.9225 11.7932 8.88781 11.9152 9.00988C12.2872 9.38185 13.1336 9.82821 13.7371 10.1465H13.7372L13.7376 10.1467C13.8743 10.2188 13.9985 10.2843 14.1019 10.3409C9.12673 10.3984 7.12659 8.00279 6.53855 7.29846C6.47859 7.22664 6.4333 7.1724 6.40105 7.14015C6.11408 6.85318 4.49961 5.87252 3.99256 7.74227C3.50142 9.55335 3.81246 11.6775 3.97665 12.7988C3.99089 12.896 3.99257 12.8981 3.99257 12.9298L2.37635 13.0248L2.37213 13.0247C0.223493 8.05534 1.83854 5.26971 3.29536 4.2246C3.29536 1.78444 6.27428 -0.592359 10.0455 0.263262C14.8768 1.64043 16.3468 1.18409 18.0759 0.647278C18.774 0.430562 19.5143 0.200726 20.5351 0.073124C25.2219 -0.512739 26.7993 2.56612 27 4.16122C26.2141 3.70487 24.8556 4.73165 24.2746 5.33377ZM12.3374 1.5872C11.1225 1.16466 7.99257 0.717209 6.3478 2.41116C5.98397 2.78587 5.55554 3.48864 5.55554 3.48864C5.55554 3.48864 4.82665 4.81961 4.25622 4.24919C3.68579 3.67878 5.0168 1.96749 6.06259 1.46044C7.10838 0.953388 9.70703 0.0660505 12.3374 1.5872Z"
+            fill="currentColor" />
+          <path
+            d="M10.078 13.5002H3.10601C2.2309 13.5002 1.52148 14.2097 1.52148 15.0848V18.3172C1.52148 19.1923 2.2309 19.9018 3.10601 19.9018H10.078C10.9531 19.9018 11.6625 19.1923 11.6625 18.3172V15.0848C11.6625 14.2097 10.9531 13.5002 10.078 13.5002Z"
+            stroke="currentColor" stroke-width="1.26763" />
+          <path
+            d="M0.823513 14.6094H0.379847C0.187322 14.6094 0.03125 14.7654 0.03125 14.958V15.9721C0.03125 16.1646 0.187322 16.3207 0.379847 16.3207H0.823513C1.01604 16.3207 1.17211 16.1646 1.17211 15.9721V14.958C1.17211 14.7654 1.01604 14.6094 0.823513 14.6094Z"
+            fill="currentColor" stroke="currentColor" stroke-width="0.0633813" />
+          <path
+            d="M16.7326 13.5002H23.7045C24.5796 13.5002 25.2891 14.2097 25.2891 15.0848V18.3172C25.2891 19.1923 24.5796 19.9018 23.7045 19.9018H16.7326C15.8575 19.9018 15.1481 19.1923 15.1481 18.3172V15.0848C15.1481 14.2097 15.8575 13.5002 16.7326 13.5002Z"
+            stroke="currentColor" stroke-width="1.26763" />
+          <path
+            d="M25.9861 14.6094H26.4297C26.6222 14.6094 26.7783 14.7654 26.7783 14.958V15.9721C26.7783 16.1646 26.6222 16.3207 26.4297 16.3207H25.9861C25.7935 16.3207 25.6375 16.1646 25.6375 15.9721V14.958C25.6375 14.7654 25.7935 14.6094 25.9861 14.6094Z"
+            fill="currentColor" stroke="currentColor" stroke-width="0.0633813" />
+          <path
+            d="M12.2954 15.5601H14.5137C14.7062 15.5601 14.8623 15.7161 14.8623 15.9087V16.9228C14.8623 17.1153 14.7062 17.2713 14.5137 17.2713H12.2954C12.1028 17.2713 11.9468 17.1153 11.9468 16.9228V15.9087C11.9468 15.7161 12.1028 15.5601 12.2954 15.5601Z"
+            fill="currentColor" stroke="currentColor" stroke-width="0.0633813" />
+          <path
+            d="M9.93343 16.3937C9.93343 16.7087 9.76317 16.9641 9.55314 16.9641C9.34311 16.9641 9.17285 16.7087 9.17285 16.3937C9.17285 16.0786 9.34311 15.8232 9.55314 15.8232C9.76317 15.8232 9.93343 16.0786 9.93343 16.3937Z"
+            fill="currentColor" />
+          <path
+            d="M16.9688 16.3937C16.9688 16.7087 17.139 16.9641 17.3491 16.9641C17.5591 16.9641 17.7293 16.7087 17.7293 16.3937C17.7293 16.0786 17.5591 15.8232 17.3491 15.8232C17.139 15.8232 16.9688 16.0786 16.9688 16.3937Z"
+            fill="currentColor" />
+          <path
+            d="M14.2758 20.1016C13.642 20.6086 12.7863 20.3551 12.5645 20.1016C12.6278 20.4185 12.8687 20.8622 13.4518 20.8622C14.0349 20.8622 14.2441 20.3551 14.2758 20.1016Z"
+            fill="currentColor" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12.1312 22.411C12.1575 22.2914 12.2759 22.2157 12.3956 22.2421L14.6347 22.735C14.7544 22.7614 14.83 22.8797 14.8036 22.9994C14.7773 23.119 14.659 23.1947 14.5393 23.1683L12.3002 22.6753C12.1805 22.649 12.1049 22.5307 12.1312 22.411Z"
+            fill="currentColor" />
+          <path
+            d="M13.4203 27.6754C9.00897 27.7261 5.77228 23.6613 4.70536 21.6225C4.54691 21.3197 4.42016 21.2739 4.32509 21.3373C4.17297 21.4387 4.28282 21.6437 4.32507 21.7493C4.85747 22.9916 5.58213 24.0416 5.87791 24.4113C4.83846 26.1353 4.49409 27.855 4.45183 28.4994C6.1758 26.8008 7.91668 26.8832 8.57162 27.1367C13.7055 29.7987 16.5577 27.929 18.1739 27.1367C19.4669 26.5029 21.4803 27.7388 22.3254 28.436C22.224 26.8642 21.3747 25.1402 20.9627 24.4747C21.6282 23.5873 22.1669 22.5099 22.4522 21.9711C22.6803 21.5401 22.6106 21.369 22.5472 21.3373C22.3951 21.2613 22.2092 21.4958 22.1353 21.6225C21.6599 22.4148 18.9345 27.6121 13.4203 27.6754Z"
+            fill="currentColor" />
+        </svg>
+      </a>
+      <a class="navbar-brand p-0 me-0 position-absolute top-50 start-50 translate-middle d-lg-none" href="/"
+        aria-label="jinydev">
+        <svg width="100" height="26" viewBox="0 0 112 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M24.2746 5.33377C25.8486 7.33981 25.1183 11.1792 24.3961 13.0177C24.4028 13.0199 24.4094 13.0221 24.4161 13.0243L24.4013 13.0248L22.649 12.9082C22.649 12.9053 22.6488 12.9013 22.649 12.8993C22.9902 8.93373 22.5975 7.34575 22.2147 7.07677C17.6316 10.3896 13.5379 9.33658 12.2725 9.01111C11.928 8.9225 11.7932 8.88781 11.9152 9.00988C12.2872 9.38185 13.1336 9.82821 13.7371 10.1465H13.7372L13.7376 10.1467C13.8743 10.2188 13.9985 10.2843 14.1019 10.3409C9.12673 10.3984 7.12659 8.00279 6.53855 7.29846C6.47859 7.22664 6.4333 7.1724 6.40105 7.14015C6.11408 6.85318 4.49961 5.87252 3.99256 7.74227C3.50142 9.55335 3.81246 11.6775 3.97665 12.7988C3.99089 12.896 3.99257 12.8981 3.99257 12.9298L2.37635 13.0248L2.37213 13.0247C0.223493 8.05534 1.83854 5.26971 3.29536 4.2246C3.29536 1.78444 6.27428 -0.592359 10.0455 0.263262C14.8768 1.64043 16.3468 1.18409 18.0759 0.647278C18.774 0.430562 19.5143 0.200726 20.5351 0.073124C25.2219 -0.512739 26.7993 2.56612 27 4.16122C26.2141 3.70487 24.8556 4.73165 24.2746 5.33377ZM12.3374 1.5872C11.1225 1.16466 7.99257 0.717209 6.3478 2.41116C5.98397 2.78587 5.55554 3.48864 5.55554 3.48864C5.55554 3.48864 4.82665 4.81961 4.25622 4.24919C3.68579 3.67878 5.0168 1.96749 6.06259 1.46044C7.10838 0.953388 9.70703 0.0660505 12.3374 1.5872Z"
+            fill="currentColor" />
+          <path
+            d="M10.078 13.5002H3.10601C2.2309 13.5002 1.52148 14.2097 1.52148 15.0848V18.3172C1.52148 19.1923 2.2309 19.9018 3.10601 19.9018H10.078C10.9531 19.9018 11.6625 19.1923 11.6625 18.3172V15.0848C11.6625 14.2097 10.9531 13.5002 10.078 13.5002Z"
+            stroke="currentColor" stroke-width="1.26763" />
+          <path
+            d="M0.823513 14.6094H0.379847C0.187322 14.6094 0.03125 14.7654 0.03125 14.958V15.9721C0.03125 16.1646 0.187322 16.3207 0.379847 16.3207H0.823513C1.01604 16.3207 1.17211 16.1646 1.17211 15.9721V14.958C1.17211 14.7654 1.01604 14.6094 0.823513 14.6094Z"
+            fill="currentColor" stroke="currentColor" stroke-width="0.0633813" />
+          <path
+            d="M16.7326 13.5002H23.7045C24.5796 13.5002 25.2891 14.2097 25.2891 15.0848V18.3172C25.2891 19.1923 24.5796 19.9018 23.7045 19.9018H16.7326C15.8575 19.9018 15.1481 19.1923 15.1481 18.3172V15.0848C15.1481 14.2097 15.8575 13.5002 16.7326 13.5002Z"
+            stroke="currentColor" stroke-width="1.26763" />
+          <path
+            d="M25.9861 14.6094H26.4297C26.6222 14.6094 26.7783 14.7654 26.7783 14.958V15.9721C26.7783 16.1646 26.6222 16.3207 26.4297 16.3207H25.9861C25.7935 16.3207 25.6375 16.1646 25.6375 15.9721V14.958C25.6375 14.7654 25.7935 14.6094 25.9861 14.6094Z"
+            fill="currentColor" stroke="currentColor" stroke-width="0.0633813" />
+          <path
+            d="M12.2954 15.5601H14.5137C14.7062 15.5601 14.8623 15.7161 14.8623 15.9087V16.9228C14.8623 17.1153 14.7062 17.2713 14.5137 17.2713H12.2954C12.1028 17.2713 11.9468 17.1153 11.9468 16.9228V15.9087C11.9468 15.7161 12.1028 15.5601 12.2954 15.5601Z"
+            fill="currentColor" stroke="currentColor" stroke-width="0.0633813" />
+          <path
+            d="M9.93343 16.3937C9.93343 16.7087 9.76317 16.9641 9.55314 16.9641C9.34311 16.9641 9.17285 16.7087 9.17285 16.3937C9.17285 16.0786 9.34311 15.8232 9.55314 15.8232C9.76317 15.8232 9.93343 16.0786 9.93343 16.3937Z"
+            fill="currentColor" />
+          <path
+            d="M16.9688 16.3937C16.9688 16.7087 17.139 16.9641 17.3491 16.9641C17.5591 16.9641 17.7293 16.7087 17.7293 16.3937C17.7293 16.0786 17.5591 15.8232 17.3491 15.8232C17.139 15.8232 16.9688 16.0786 16.9688 16.3937Z"
+            fill="currentColor" />
+          <path
+            d="M14.2758 20.1016C13.642 20.6086 12.7863 20.3551 12.5645 20.1016C12.6278 20.4185 12.8687 20.8622 13.4518 20.8622C14.0349 20.8622 14.2441 20.3551 14.2758 20.1016Z"
+            fill="currentColor" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12.1312 22.411C12.1575 22.2914 12.2759 22.2157 12.3956 22.2421L14.6347 22.735C14.7544 22.7614 14.83 22.8797 14.8036 22.9994C14.7773 23.119 14.659 23.1947 14.5393 23.1683L12.3002 22.6753C12.1805 22.649 12.1049 22.5307 12.1312 22.411Z"
+            fill="currentColor" />
+          <path
+            d="M13.4203 27.6754C9.00897 27.7261 5.77228 23.6613 4.70536 21.6225C4.54691 21.3197 4.42016 21.2739 4.32509 21.3373C4.17297 21.4387 4.28282 21.6437 4.32507 21.7493C4.85747 22.9916 5.58213 24.0416 5.87791 24.4113C4.83846 26.1353 4.49409 27.855 4.45183 28.4994C6.1758 26.8008 7.91668 26.8832 8.57162 27.1367C13.7055 29.7987 16.5577 27.929 18.1739 27.1367C19.4669 26.5029 21.4803 27.7388 22.3254 28.436C22.224 26.8642 21.3747 25.1402 20.9627 24.4747C21.6282 23.5873 22.1669 22.5099 22.4522 21.9711C22.6803 21.5401 22.6106 21.369 22.5472 21.3373C22.3951 21.2613 22.2092 21.4958 22.1353 21.6225C21.6599 22.4148 18.9345 27.6121 13.4203 27.6754Z"
+            fill="currentColor" />
+          <text x="32" y="21" font-family="Arial, sans-serif" font-weight="bold" font-size="22"
+            fill="currentColor">Jiny</text>
+        </svg>
+      </a>
+
+      <!-- Mobile: Right Toggle (Menu) -->
+      <div class="d-flex d-lg-none ms-auto">
+        <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar"
+          aria-controls="bdNavbar" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid"
+            viewBox="0 0 16 16">
+            <path
+              d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- OffCanvas -->
+      <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar"
+        aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
+        <!-- OffCanver Header -->
+        <div class="offcanvas-header px-4 pb-0">
+          <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">Jiny</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"
+            data-bs-target="#bdNavbar">
+          </button>
+        </div>
+
+        <!-- OffCanver Body -->
+        <div class="offcanvas-body p-4 pt-0 p-lg-0">
+          <hr class="d-lg-none text-white-50">
+
+          <ul class="navbar-nav flex-column flex-lg-row bd-navbar-nav">
+            
+            <li class="nav-item">
+              <a class="nav-link py-2 px-0 px-lg-2" href="/basic">자바기초</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link py-2 px-0 px-lg-2" href="/oop">객체지향</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link py-2 px-0 px-lg-2" href="/part03">입출력</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link py-2 px-0 px-lg-2" href="/database">데이터베이스</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link py-2 px-0 px-lg-2" href="/gui">GUI</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link py-2 px-0 px-lg-2" href="/backend">백엔드</a>
+            </li>
+            
+          </ul>
+
+          <hr class="d-lg-none text-white-50">
+
+          <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+            <li class="nav-item col-6 col-lg-auto">
+              <a class="nav-link py-2 px-0 px-lg-2" href="https://github.com/jinydev/datas" target="_blank"
+                rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="navbar-nav-svg"
+                  viewBox="0 0 512 499.36" role="img">
+                  <title>GitHub</title>
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z">
+                  </path>
+                </svg>
+                <small class="d-lg-none ms-2">GitHub</small>
+              </a>
+            </li>
+
+            <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+              <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+              <hr class="d-lg-none my-2 text-white-50">
+            </li>
+
+            <li class="nav-item col-6 col-lg-auto">
+              <a class="nav-link py-2 px-0 px-lg-2" href="https://jiny.dev" aria-label="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="navbar-nav-svg"
+                  viewBox="0 0 16 16" role="img">
+                  <title>Home</title>
+                  <path fill="currentColor"
+                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                </svg>
+                <small class="d-lg-none ms-2">Home</small>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container bd-gutter mt-3 my-md-4 bd-layout">
+    <aside class="bd-sidebar scrollBar">
+        <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar"
+            aria-labelledby="bdSidebarOffcanvasLabel">
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">학습목차</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    data-bs-target="#bdSidebar"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <!-- 네비게이션 -->
+                <nav class="bd-links w-100" id="bd-docs-nav" aria-label="Docs navigation">
+  <ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
+    <li class="bd-links-group py-2">
+      <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+        강의 목차
+      </strong>
+      <ul class="list-unstyled fw-normal pb-2 small">
+        
+        
+
+        
+        <li>
+          
+          
+          
+          <button
+            class="bd-links-link bd-links-btn btn d-inline-flex align-items-center rounded border-0 collapsed w-100"
+            data-bs-toggle="collapse" data-bs-target="#collapse-1"
+            aria-expanded="false">
+            Part 01. 자바 기초
+            <svg class="bi ms-auto" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div class="collapse " id="collapse-1">
+            <ul class="list-unstyled fw-normal pb-1 small ms-3">
+              
+              <li>
+                <a href="/basic/java"
+                  class="bd-links-link d-inline-block rounded ">
+                  자바 언어 소개
+                </a>
+              </li>
+              
+              <li>
+                <a href="/basic/setup"
+                  class="bd-links-link d-inline-block rounded ">
+                  개발 환경 구축
+                </a>
+              </li>
+              
+              <li>
+                <a href="/basic/start"
+                  class="bd-links-link d-inline-block rounded ">
+                  01. 자바 시작하기
+                </a>
+              </li>
+              
+              <li>
+                <a href="/basic/variable"
+                  class="bd-links-link d-inline-block rounded ">
+                  02. 변수와 타입
+                </a>
+              </li>
+              
+              <li>
+                <a href="/basic/operator"
+                  class="bd-links-link d-inline-block rounded ">
+                  03. 연산자
+                </a>
+              </li>
+              
+              <li>
+                <a href="/basic/condition"
+                  class="bd-links-link d-inline-block rounded ">
+                  04. 조건문
+                </a>
+              </li>
+              
+              <li>
+                <a href="/basic/loop"
+                  class="bd-links-link d-inline-block rounded ">
+                  05. 반복문
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li>
+          
+          
+          
+          <button
+            class="bd-links-link bd-links-btn btn d-inline-flex align-items-center rounded border-0 collapsed w-100"
+            data-bs-toggle="collapse" data-bs-target="#collapse-2"
+            aria-expanded="false">
+            Part 02. 객체지향
+            <svg class="bi ms-auto" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div class="collapse " id="collapse-2">
+            <ul class="list-unstyled fw-normal pb-1 small ms-3">
+              
+              <li>
+                <a href="/oop/reference"
+                  class="bd-links-link d-inline-block rounded ">
+                  05. 참조 타입
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/oop"
+                  class="bd-links-link d-inline-block rounded ">
+                  06. 클래스
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/extends"
+                  class="bd-links-link d-inline-block rounded ">
+                  07. 상속
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/interface"
+                  class="bd-links-link d-inline-block rounded ">
+                  08. 인터페이스
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/nested"
+                  class="bd-links-link d-inline-block rounded ">
+                  09. 중첩 선언과 익명 객체
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/module"
+                  class="bd-links-link d-inline-block rounded ">
+                  10. 라이브러리와 모듈
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/exception"
+                  class="bd-links-link d-inline-block rounded ">
+                  11. 예외 처리
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/api"
+                  class="bd-links-link d-inline-block rounded ">
+                  12. java.base 모듈
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/generic"
+                  class="bd-links-link d-inline-block rounded ">
+                  13. 제네릭
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/collection"
+                  class="bd-links-link d-inline-block rounded ">
+                  15. 컬렉션 자료구조
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/lambda"
+                  class="bd-links-link d-inline-block rounded ">
+                  16. 람다식
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li>
+          
+          
+          
+          <button
+            class="bd-links-link bd-links-btn btn d-inline-flex align-items-center rounded border-0 collapsed w-100"
+            data-bs-toggle="collapse" data-bs-target="#collapse-3"
+            aria-expanded="false">
+            Part 03. 라이브러리 활용
+            <svg class="bi ms-auto" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div class="collapse " id="collapse-3">
+            <ul class="list-unstyled fw-normal pb-1 small ms-3">
+              
+              <li>
+                <a href="/part03/thread"
+                  class="bd-links-link d-inline-block rounded ">
+                  14. 멀티 스레드
+                </a>
+              </li>
+              
+              <li>
+                <a href="/part03/io"
+                  class="bd-links-link d-inline-block rounded ">
+                  17. 데이터 입출력
+                </a>
+              </li>
+              
+              <li>
+                <a href="/part03/stream"
+                  class="bd-links-link d-inline-block rounded ">
+                  18. 데이터 입출력 (심화)
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li>
+          
+          
+          
+          <button
+            class="bd-links-link bd-links-btn btn d-inline-flex align-items-center rounded border-0 collapsed w-100"
+            data-bs-toggle="collapse" data-bs-target="#collapse-4"
+            aria-expanded="false">
+            데이터베이스
+            <svg class="bi ms-auto" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div class="collapse " id="collapse-4">
+            <ul class="list-unstyled fw-normal pb-1 small ms-3">
+              
+              <li>
+                <a href="/database/jdbc"
+                  class="bd-links-link d-inline-block rounded ">
+                  20. JDBC
+                </a>
+              </li>
+              
+              <li>
+                <a href="/database/mysql"
+                  class="bd-links-link d-inline-block rounded ">
+                  22. MySQL
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li>
+          
+          
+          
+          <button
+            class="bd-links-link bd-links-btn btn d-inline-flex align-items-center rounded border-0 collapsed w-100"
+            data-bs-toggle="collapse" data-bs-target="#collapse-5"
+            aria-expanded="false">
+            네트워크 프로그래밍
+            <svg class="bi ms-auto" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div class="collapse " id="collapse-5">
+            <ul class="list-unstyled fw-normal pb-1 small ms-3">
+              
+              <li>
+                <a href="/network/tcp"
+                  class="bd-links-link d-inline-block rounded ">
+                  19. 네트워크 입출력
+                </a>
+              </li>
+              
+              <li>
+                <a href="/network/nio"
+                  class="bd-links-link d-inline-block rounded ">
+                  25. NIO
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li>
+          
+          
+          
+          <button
+            class="bd-links-link bd-links-btn btn d-inline-flex align-items-center rounded border-0 collapsed w-100"
+            data-bs-toggle="collapse" data-bs-target="#collapse-6"
+            aria-expanded="false">
+            GUI 프로그래밍
+            <svg class="bi ms-auto" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div class="collapse " id="collapse-6">
+            <ul class="list-unstyled fw-normal pb-1 small ms-3">
+              
+              <li>
+                <a href="/gui/1.awt"
+                  class="bd-links-link d-inline-block rounded ">
+                  1. AWT
+                </a>
+              </li>
+              
+              <li>
+                <a href="/gui/2.swing"
+                  class="bd-links-link d-inline-block rounded ">
+                  2. Swing
+                </a>
+              </li>
+              
+              <li>
+                <a href="/gui/3.javafx"
+                  class="bd-links-link d-inline-block rounded ">
+                  3. JavaFX
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li>
+          
+          
+          
+          <button
+            class="bd-links-link bd-links-btn btn d-inline-flex align-items-center rounded border-0 collapsed w-100"
+            data-bs-toggle="collapse" data-bs-target="#collapse-7"
+            aria-expanded="false">
+            백엔드 웹서버 개발
+            <svg class="bi ms-auto" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div class="collapse " id="collapse-7">
+            <ul class="list-unstyled fw-normal pb-1 small ms-3">
+              
+              <li>
+                <a href="/backend/jsp/01_intro"
+                  class="bd-links-link d-inline-block rounded ">
+                  1주차. 웹 서버와 환경 설정
+                </a>
+              </li>
+              
+              <li>
+                <a href="/backend/jsp/05_crud"
+                  class="bd-links-link d-inline-block rounded ">
+                  2주차. JSP 게시판 만들기
+                </a>
+              </li>
+              
+              <li>
+                <a href="/backend/boot/01_intro"
+                  class="bd-links-link d-inline-block rounded ">
+                  3주차. Spring Boot 시작하기
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+        </div>
+    </aside>
+
+    <main class="bd-main order-1">
+        <nav aria-label="breadcrumb" class="mt-3">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="breadcrumb-item"><a href="/09_algebraic_expressions/">09 algebraic expressions</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="breadcrumb-item"><a href="/09_algebraic_expressions/extracted/">Extracted</a></li>
+        
+        
+        
+        
+        
+        
+        <li class="breadcrumb-item active" aria-current="page">6교시 곱셈공식</li>
+        
+        
+        
+    </ol>
+</nav>
+        <div class="bd-content ps-lg-2">
+            <h1 id="6교시-곱셈공식">6교시 곱셈공식</h1>
+
+<p>다항식의 곱셈에는 일정한 공식이 있습니다. 곱셈공식을 알아봅시다.</p>
+
+<p><img src="./img/0138.jpg" alt="6교시 곱셈공식 도입 만화" /></p>
+
+<h2 id="여섯-번째-학습-목표">여섯 번째 학습 목표</h2>
+
+<ol>
+  <li>전개의 뜻을 알아봅니다.</li>
+  <li>두 다항식의 곱셈을 해 봅니다.</li>
+</ol>
+
+<h2 id="미리-알면-좋아요">미리 알면 좋아요</h2>
+
+<ol>
+  <li><strong>수직선</strong>: 일정한 간격으로 숫자가 표시되어 있는 직선을 말합니다. 수직선을 나타내는 한자 數直線(수직선)에서 보면 直線(직선), 곧은 선에 數(수), 숫자를 나타냈다는 뜻입니다. 가운데 기준이 되는 것을 원점이라고 하며 $O$로 나타냅니다. 그리고 양쪽의 화살표는 선이 끝없이 이어지는 것을 나타냅니다.</li>
+</ol>
+
+<pre><code class="language-mermaid">graph LR
+    subgraph 수직선
+    direction LR
+    A[ ] --- B[ ] --- C[ ] --- D[ ] --- E((O&lt;br&gt;원점)) --- F[ ] --- G[ ] --- H[ ] --- I[ ]
+    end
+    style A fill:none,stroke:none
+    style I fill:none,stroke:none
+</code></pre>
+
+<ol>
+  <li><strong>정사각형</strong>: 네 개의 각이 직각이고 네 변의 크기가 같은 사각형을 말합니다. 네 변의 길이가 같으므로 한 변의 길이를 $a$라고 하면 가로와 세로의 길이가 모두 $a$이므로 식으로 표현하면 다음과 같습니다.</li>
+</ol>
+
+\[(\text{정사각형의 넓이}) = a \times a = a^2\]
+
+<h1 id="비에트의-여섯-번째-수업">비에트의 여섯 번째 수업</h1>
+
+<p>지금까지 문자를 사용하여 나타낸 식의 덧셈, 뺄셈, 곱셈, 나눗셈을 간단하게 나타내는 것을 배웠습니다. 오늘은 우리가 건축가라면 지금까지 배운 다항식을 어떻게 사용할 수 있는지 알아봅시다. 우선 이 사진을 보세요.</p>
+
+<p><img src="./img/0140.jpg" alt="예술의 전당" /></p>
+
+<p>앞의 사진은 예술의 전당입니다. 이곳은 우리의 문화적 주체성을 확립하고 한국문화예술을 발전시키기 위하여 음악관 $\cdot$ 미술관 $\cdot$ 자료관 $\cdot$ 교육관 등에서 예술문화공연을 볼 수 있고 배울 수 있는 공간입니다. 지금 보고 있는 곳이 예술의 전당 중심인 축제극장으로 한국을 상징하는 선비의 갓 모양으로 만들어졌어요.</p>
+
+<p>이곳에서는 뮤지컬, 독주회 등의 공연이 많이 이루어지기 때문에 오페라 하우스, 음악관, 박물관이 있어요. 그리고 음악관이라도 공연의 크기나 관객의 수를 생각해서 음악당, 콘서트홀, 리사이트홀 등 다양한 크기의 공연장이 있어요. 여러분이 이런 예술문화공연장을 만드는 건축가가 되었다면 지금까지 배운 식의 계산을 이용하여 공연장의 크기와 공연을 볼 사람들을 위한 좌석의 수를 생각해야겠죠? 자, 그럼 장소의 크기도 생각해 보고 필요한 좌석도 몇 개인지 구해 보도록 합시다.</p>
+
+<p>공연장에서 가로의 좌석 수가 10개이고 세로의 좌석 수가 8개라면 전체의 좌석 수는 $10 \times 8 = 80$개입니다.</p>
+
+<p>여러분이 건축가가 되어 공연장에 들어갈 좌석의 수를 가로의</p>
+
+<p>좌석의 수 $=a$, 세로의 좌석의 수 $=c$라고 생각한다면 전체 좌석의 수는 $ac$가 됩니다.</p>
+
+<p>비에트가 포스터를 꺼내 들었습니다.</p>
+
+<p><img src="./img/0142.jpg" alt="맘마미아 포스터" /></p>
+
+<p>이것은 뮤지컬 &lt;맘마미아!&gt;의 포스터입니다. 유명한 음악 그룹인 ABBA의 22개의 음악을 하나의 줄거리로 만든 뮤지컬입니다. 엄마와 딸의 가족애를 그리는 줄거리와 서로 다른 22개의 음악이 너무나도 잘 어울려 즐겁게 뮤지컬을 감상할 수 있어요. 영국 극작가상을 수상한 경력이 있는 캐서린 존슨(Catherine Johnson)이 극본을 쓰고 1999년 런던에서 처음 공연하여 박스 오피스 기록을 연일 갱신하며 입석까지 매진되었던 유명한 뮤지컬입니다. <오페라의 유령="">, <레 미제라블="">의 뒤를 잇는 히트작으로 평가받</레></오페라의></p>
+
+<p>고 있으며 뉴욕, 독일, 캐나다, 한국 등 전 세계 극장가에서 인기리에 공연 중입니다.</p>
+
+<p>좌석이 $ac$개인 공연장 보다 더 큰 공연장을 만들기 위해 가로의 좌석수를 $b$개만큼, 세로의 좌석수를 $d$개만큼 늘리려고 해요. 가로, 세로의 좌석의 수를 늘려서 만든 공연장의 전체 좌석 수는 얼마일까요?</p>
+
+<p><img src="./img/0143.jpg" alt="가로 세로 좌석수 늘리기" /></p>
+
+<p>“$(a+b)(c+d)$입니다.”</p>
+
+<p>그렇죠, 가로가 $a+b$개이고 세로가 $c+d$개이므로 $(a+b)(c+d)$입니다.</p>
+
+<p><img src="./img/0144.jpg" alt="관객이 많아서 좌석수를 늘려야 한다는 다항식 전개 만화" /></p>
+
+<p>지난 시간에 $3x(x+5)$에서 $3x$를 분배법칙을 사용하여 계산하면 $3x^2$과 $15x$의 합인 $3x^2+15x$가 되었습니다.</p>
+
+\[3x(x+5)=3x^2+15x\]
+
+<p>이렇게 분배법칙을 사용하여 단항식들의 합으로 나타내는 것을 전개한다고 합니다. 우리가 구한 $(a+b)(c+d)$개의 좌석도 분배법칙을 이용하여 전개할 수 있습니다.</p>
+
+<p>가로와 세로가 $b$개, $d$개 늘어나면서 생긴 세 개의 무늬 좌석을 생각하며 다항식 $a+b$와 $c+d$의 곱인 $(a+b)(c+d)$개의 좌석도 분배법칙으로 전개해 봅시다.</p>
+
+<pre><code class="language-mermaid">graph TD
+    subgraph 전체 좌석
+        A[a개] --- B[b개]
+        C[c개] --- D[ac]
+        C --- E[bc]
+        F[d개] --- G[ad]
+        F --- H[bd]
+    end
+</code></pre>
+<!-- 위 다이어그램은 임시로 작성된 것입니다. 본문 이미지 참고 부탁드립니다. -->
+
+<p>파란색 사각형의 좌석의 수 : 가로가 $a$개, 세로가 $c$개이므로 $ac$개입니다.</p>
+
+<p>곱하기
+\((a+b)(c+d)\)</p>
+
+<p>가로줄 무늬의 좌석의 수 : 가로가 $a$개, 세로가 $d$개이므로 $ad$개입니다.</p>
+
+<p>곱하기
+\((a+b)(c+d)\)</p>
+
+<p>가로줄 무늬의 좌석의 수 : 가로가 $b$개, 세로가 $c$개이므로 $bc$개입니다.</p>
+
+<p>곱하기
+\((a+b)(c+d)\)</p>
+
+<p>빗금 무늬의 좌석의 수 : 가로가 $b$개, 세로가 $d$개이므로 $bd$개입니다.</p>
+
+<p>곱하기
+\((a+b)(c+d)\)</p>
+
+<p>전체 좌석의 수 $= ac+ad+bc+bd$</p>
+
+\[(a+b)(c+d)\]
+
+<p>전체 좌석을 구하는 것을 다시 볼까요?</p>
+
+<p>전체 좌석의 수를 구할 때 가로 좌석의 수가 $a$인 두 무늬의 좌석의 수는 $a$를 전개 $(a+b)(c+d)$하여 구하는 것과 같습니다.</p>
+
+<p>마찬가지로 가로 좌석의 수가 $b$인 두 무늬의 좌석의 수는 $b$를 전개 $(a+b)(c+d)$하여 구하는 것입니다.</p>
+
+<p>즉, 다항식과 다항식의 곱을 전개할 때는 항 $a$를 $c+d$에 전개하고 항 $b$를 $c+d$에 전개하는 것입니다. 네 개의 사각형 무늬가 생긴 것처럼 $(a+b)(c+d)$를 전개하면 ①, ②, ③, ④를 전개해서 네 개의 항이 생깁니다.</p>
+
+\[(a+b)(c+d) = ac+ad+bc+bd\]
+
+<h2 id="곱셈공식">곱셈공식</h2>
+
+<p>이번에 여러분이 지어야 하는 공연장 벽면에 공연 포스터를 걸어 놓을 곳을 지으려고 합니다. 현재 공연 포스터가 걸려 있는 벽면의 크기는 가로와 세로의 크기가 같습니다. 공연 포스터를 직사각형 모양으로 하기 위해 가로와 세로의 크기를 조절한다면 새로 지은 포스터 걸어 놓는 벽면의 크기는 얼마나 될까요?</p>
+
+<p>가로와 세로의 크기를 모르니까 $x$라고 합시다.</p>
+
+<p>현재 공연 포스터 벽면의 크기 : 가로 $\times$ 세로 $= x \times x = x^2$</p>
+
+<p>가로의 길이를 $a$, 세로의 길이를 $b$만큼 조절한 새 공연 포스터 벽면의 크기를 구해 봅시다.</p>
+
+<p>새 공연 포스터 벽면의 넓이</p>
+
+\[(x+a)(x+b) = x^2+bx+ax+ab\]
+
+<p>$(x+a)(x+b)$를 전개하면 네 개의 항이 생겨서 $x^2+bx+ax+ab$가 됩니다. 전개하여 구한 새 공연 포스터의 벽면 크기 $x^2+bx+ax+ab$에서 동류항을 계산하면 식을 더 간단하게 나타낼 수 있습니다. 동류항 $bx$과 $ax$를 계산하면 $(b+a)x$이고 $(b+a)$를 알파벳순으로 써서 나타내면 $(a+b)$이므로 새 공연 포스터의 벽면 크기는 $x^2+(a+b)x+ab$입니다. 다항식의 곱 $(x+a)(x+b)$을 전개하면 $x^2+(a+b)x+ab$가 나오죠? 다항식과 다항식의 곱의 특별한 유형을 곱셈공식이라고 합니다.</p>
+
+<p><strong>곱셈공식 1</strong>
+\((x+a)(x+b) = x^2+(a+b)x+ab\)</p>
+
+<p>이 공식을 알면 가로, 세로를 얼마나 늘리는지에 따라 변화되는 양을 구하기가 쉬워집니다. 한 변의 크기가 $x$인 정사각형의 가로의 길이를 1, 세로의 길이를 2만큼 늘렸다면 $a=1$, $b=2$를 곱셈공식에 대입하여 $(x+1)(x+2) = x^2+(1+2)x+1 \times 2$이므로 $x^2+3x+2$가 됩니다.</p>
+
+<p>자, 이제 공연자의 벽면을 꾸며 볼까요? 공연장의 소리가 밖에 들리지 않게 하기 위해서 소리를 흡수하는 성질이 있는 방음재를 붙이려고 합니다. 공연장의 벽이 넓이가 $x$인 정사각형이므로 정사각형의 방음재를 붙이는 것이 편리하다고 생각되었습니다. 그래서 크기가 $a$인 정사각형의 방음재를 붙이려고 해요.</p>
+
+<p>(크기가 a인 정사각형 방음재 이미지)</p>
+
+<p>그럼 이 방음재를 벽면에 몇 개 붙여야 하는지 알아야 방음재 회사에 주문을 할 수 있겠죠? 넓이가 36인 벽에 넓이가 4인 타일을 붙이면 $36 \div 4 = 9$개의 타일이 필요하니까 공연장에 필요한 방음재의 개수는 $x \div a^2$, 즉 $\frac{x}{a^2}$개입니다. 그런데 직접 개수를 구하니까 123.5개가 나왔어요. 123개이면 부족하고 124개면 0.5개가 남으니까 개수를 딱 맞게 하려고 방음재의 넓이를 조금 변형해 보려고 합니다.</p>
+
+<p>자, 이것은 한 변의 크기가 $a$인 정사각형의 가로와 세로의 길이를 $b$만큼 크게 해 봅시다.</p>
+
+<p>(가로, 세로의 길이가 $a$인 정사각형을 가로, 세로 $b$만큼 늘린 이미지)</p>
+
+<p>한 변의 크기가 $a+b$인 이 방음재의 넓이는 $(a+b)^2$입니다.</p>
+
+<p>이 방음재의 넓이는 네 개의 사각형 넓이의 합으로 구할 수 있습니다.</p>
+
+<p>큰 사각형의 넓이 = 네 개의 작은 사각형 넓이의 합</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>사각형</th>
+      <th>가로의 길이</th>
+      <th>세로의 길이</th>
+      <th>넓이</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(큰 정사각형)</td>
+      <td>$a$</td>
+      <td>$a$</td>
+      <td>$a^2$</td>
+    </tr>
+    <tr>
+      <td>(오른쪽 직사각형)</td>
+      <td>$b$</td>
+      <td>$a$</td>
+      <td>$ab$</td>
+    </tr>
+    <tr>
+      <td>(아래쪽 직사각형)</td>
+      <td>$a$</td>
+      <td>$b$</td>
+      <td>$ab$</td>
+    </tr>
+    <tr>
+      <td>(작은 정사각형)</td>
+      <td>$b$</td>
+      <td>$b$</td>
+      <td>$b^2$</td>
+    </tr>
+  </tbody>
+</table>
+
+\[(a+b)^2 = a^2+ab+ab+b^2\]
+
+<p>$ab$ 동류항을 계산하면 $ab+ab=2ab$이므로
+\((a+b)^2 = a^2+2ab+b^2\)입니다.
+$a+b$를 제곱하여 전개한 식은 언제나 $a^2+2ab+b^2$가 됩니다.</p>
+
+<p><strong>곱셈공식 2</strong>
+\((a+b)^2 = a^2+2ab+b^2\)</p>
+
+<p>자, 그럼 한 변의 크기가 $a$인 방음재의 가로와 세로를 3cm씩 늘렸다면 새로운 방음재의 넓이는 $(a+b)^2 = a^2+2ab+b^2$에</p>
+
+<p>$b=3$을 대입하여 구할 수 있겠죠?</p>
+
+\[(a+3)^2 = a^2+2 \times a \times 3+3^2 = a^2+6a+9\]
+
+<p>이번에는 한 변의 크기가 $a$인 방음재의 가로와 세로의 길이를 모두 $b$만큼 줄여볼까요? 그러면 한 변의 길이가 $a-b$인 정사각형 모양의 방음재가 됩니다.</p>
+
+<p>(한 변의 길이가 $a$인 정사각형에서 $b$만큼 줄어든 $(a-b)^2$ 정사각형 그림)</p>
+
+<p>방음재 $(a-b)^2$ 사각형의 넓이는 전체 정사각형에서 나머지 세 사각형의 넓이를 빼서 구할 수 있습니다.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>사각형</th>
+      <th>가로의 길이</th>
+      <th>세로의 길이</th>
+      <th>넓이</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(전체)</td>
+      <td>$a$</td>
+      <td>$a$</td>
+      <td>$a^2$</td>
+    </tr>
+    <tr>
+      <td>(오른쪽 직사각형)</td>
+      <td>$b$</td>
+      <td>$a-b$</td>
+      <td>$b(a-b)=ab-b^2$</td>
+    </tr>
+    <tr>
+      <td>(아래쪽 직사각형)</td>
+      <td>$a-b$</td>
+      <td>$b$</td>
+      <td>$(a-b)b=ab-b^2$</td>
+    </tr>
+    <tr>
+      <td>(작은 귀퉁이 사각형)</td>
+      <td>$b$</td>
+      <td>$b$</td>
+      <td>$b^2$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>$(a-b)^2$ 사각형 넓이 = 전체 사각형 넓이 - (오른쪽 직사각형 넓이) - (아래쪽 직사각형 넓이) - (작은 귀퉁이 사각형 넓이)</p>
+
+<p>\((a-b)^2 = a^2 - (ab-b^2) - (ab-b^2) - b^2\)
+\(= a^2 - ab - (-b^2) - ab - (-b^2) - b^2\)</p>
+
+<p>아이들은 $-(ab-b^2)$의 식에서 $-b^2$을 어떻게 빼야 할지 고개를 갸우뚱거렸습니다.</p>
+
+<p>엘리베이터를 보면 1층을 나타내는 1, 2층을 나타내는 2 그리고 지하 1층을 나타내는 $-1$을 본 적이 있죠? 1층, 2층과 같이 우리가 쓰는 1, 2, 3을 양수라고 하고, 지하 1층의 $-1$, 지하 2층의 $-2$와 같은 것을 음수라고 합니다. 양수는 양의 부호인 ‘$+$’를 사용하여 나타내거나 생략해서 나타내고 음수는 음의 부호인 ‘$-$’를 사용하여 나타냅니다. 이것을 수직선에 나타내면 원점 O을 기준으로 오른쪽을 양수, 왼쪽을 음수라고 해요. 즉 음수는 양수의 반대 방향에 있습니다. 숫자 1, 2, 3, $\cdots$은 원점 O에서 떨어진 칸의 수를 말합니다. 즉 $-4$는 원점 O의 왼쪽이므로 음수이고 네 칸 떨어져 있다는 것입니다.</p>
+
+<p>(원점을 기준으로 왼쪽은 음수, 오른쪽은 양수를 나타내는 수직선 이미지)</p>
+
+<p>식 $a^2 - ab - (-b^2) - ab - (-b^2) - b^2$에서 $-(-b^2)$은 $-b^2$ 앞에 1이 생략되어 $(-1) \times (-b^2)$과 같습니다. 양수와 양수의 곱 $2 \times 2 = 4$ 즉 양의 방향입니다. 음수는 양수의 반대 방향이므로 음수를 두 개 곱한 $(-1) \times (-b^2)$는 양수의 반대의 반대 방향이므로 원래 방향이 됩니다. 즉 음수와 음수의 곱은 양수가 됩니다.</p>
+
+\[(-1) \times (-b^2) = +b^2\]
+
+<p>여러분이 가지고 있는 용돈 1000원을 가지고 떡볶이를 사먹으려고 하는데 가격이 올라 1500원이 되었다면 엄마에게 500원을 더 달라고 해야겠죠? 이럴 때 원래 가지고 있던 돈인 1000원이 자산이고 엄마에게 달라고 해야 하는 돈 500원을 부채로 생각합니다. 이때 자산 1000을 양수, 부채 500을 음수라고 할 수 있습니다. 음수의 개념이 처음으로 인도에서 사용되어 유럽 등에도 점점 퍼지게 됩니다.</p>
+
+<p>음수라는 개념과 음수의 곱을 계산하는 것이 어렵죠? 인도에서</p>
+
+<p>처음 사용하긴 했지만 그 개념이 어려워서 많은 사람들이 음수를 사용하는 것을 꺼려했고 위대한 사상가인 파스칼도 이해하지 못했습니다. 그래서 영하 $5^\circ$를 $-5$처럼 나타내는 온도계에서도 음수의 사용을 피하기 위해 노력하였습니다. 실험실에서 얻을 수 있는 기온 중 가장 낮은 온도를 화씨 $0^\circ$가 되게 하여 영하의 기온으로 읽는 경우가 나오지 않게 했지요. 그러나 우리는 오히려 화씨 온도계보다 섭씨 온도계와 친하고 일상생활에서 더 많이 사용하고 있습니다. 이처럼 여러분도 점차 음수와 친해질 수 있을 거예요.</p>
+
+<p>(만화: 떡볶이를 사 먹으려고 돈을 빌리는 상황을 통해 부채와 음수의 개념을 설명하는 만화)
+“떡볶이를 사먹자.”
+“헉~ 갖고 있는 돈은 1000원뿐인데 떡볶이 1인분이 1500원으로 올랐어.”
+“내가 500원 꿔줄게.” 
+“고마워.”
+“나중에 갚으면 돼. 너는 나한테 500원을 빚진 거야.”
+“영훈이에게 500원을 주어야 하니 -500원을 갖고 있는 셈이네.”</p>
+
+<p>(만화: 온도계, 엘리베이터 등 일상생활에서 음수가 사용되는 예시를 보여주는 만화)
+강아지: “온도계, 엘리베이터 등에서 쉽게 음수를 발견할 수 있지요.”
+소년: “어~ 추워!” (온도계가 영하 10도를 가리킴)
+청년: “이 건물 지하에 마트가 있어.” (엘리베이터의 지하 B1, B2 버튼)</p>
+
+<p>한 변의 길이가 $a-b$인 방음재의 넓이를 다시 구해 볼까요?</p>
+
+<p>\((a-b)^2 = a^2 - ab - (-b^2) - ab - (-b^2) - b^2\)
+\(= a^2 - ab + b^2 - ab + b^2 - b^2\)</p>
+
+<p>동류항 $-ab$와 $-ab$를 계산하면 $-2ab$이고 $b^2$, $b^2$, $-b^2$을 계산하면 $b^2$으로 간단하게 나타낼 수 있습니다.
+즉 $(a-b)^2 = a^2 - 2ab + b^2$이 됩니다.
+$(a-b)^2 = (a-b)(a-b)$는 전개한 $a^2 - ab - ab + b^2 = a^2 - 2ab + b^2$과 같죠? 다항식 $a-b$와 $a-b$의 곱은 언제나 $a^2 - 2ab + b^2$이 됩니다.</p>
+
+<p><strong>곱셈공식 3</strong>
+\((a-b)^2 = a^2 - 2ab + b^2\)</p>
+
+<p>공연장 건물과 벽을 꾸몄으니까 이제 무대를 꾸며 봅시다. 직사각형 모양으로 나무 무늬인 바닥재를 이용하여 꾸미려고 해요. 가로의 길이가 $a+b$, 세로의 길이가 $a-b$인 바닥재를 사용하여 바닥을 꾸민다면 얼마나 필요한지 계산을 해야겠죠? 아, 바닥재의 넓이는 $(a+b)(a-b)$이므로 무대 바닥의 크기를 바닥재의 넓이로 나누면 됩니다.</p>
+
+<p>그러면 바닥재의 넓이 $(a+b)(a-b)$는 전개하면 어떻게 될까요?</p>
+
+<p>바닥재에서 사각형 P의 넓이와 사각형 Q의 넓이가 $ab$로 같으니까 다각형의 넓이는 사각형 P를 Q위치에 놓은 사각형의 넓이를 구하는 것과 같습니다.</p>
+
+<p>(도형 이동 이미지: 가로 $a+b$, 세로 $a-b$인 직사각형 면적에서 오른쪽 끝 사각형 P를 잘라내어 왼쪽 아래 빈 공간 Q로 이동시켜 모양을 맞추는 그림)</p>
+
+<p>자~ 퀴즈!! 이 사각형의 넓이는 어떻게 구할까요?
+“큰 정사각형에서 작은 정사각형을 빼요~”</p>
+
+<p>네, 정말 도형을 잘 보는군요. 여러분이 말한 것과 같이 이 사각형의 넓이는 한 변의 크기가 $a$인 정사각형에서 한 변의 크기가 $b$인 정사각형의 넓이를 빼서 구할 수 있으니까 바닥재의 넓이 $(a+b)(a-b)$는 $a^2 - b^2$과 같습니다.</p>
+
+<p>직접 전개를 해서 확인할 수도 있어요.</p>
+
+<p>(식 $(a+b)(a-b)$를 분배법칙으로 하나씩 전개하는 과정을 보여주는 식)
+\((a+b)(a-b) = a^2 - ab + ab - b^2\)</p>
+
+<p>전개하면 동류항 $ab$를 계산할 수 있으므로 $a^2 - b^2$이 나온답니다.</p>
+
+<p><strong>곱셈공식 4</strong>
+\((a+b)(a-b) = a^2 - b^2\)</p>
+
+<p>두 다항식의 곱 $(a+b)(a-b)$에서 두 다항식이 가운데 덧셈, 뺄셈의 기호만 다르죠? 그래서 이 공식을 합·차 공식이라고도 합니다.</p>
+
+<p>자, 그럼 다른 건축물도 지어볼까요? 리모델링이 무엇인지 알고 있나요?</p>
+
+<p>“건물이 다시 짓는 거요!”
+“방을 다시 꾸미는 거요!”</p>
+
+<p>네, 맞습니다. 기존의 낡고 불편한 건축물을 크게 늘리거나, 다시 짓거나 수리하여 더 편리하고 실내도 아늑하고 편안하게 꾸미는 것입니다. 그럼 이번에는 영화관 리모델링을 맡은 건축가가 되어 볼까요?</p>
+
+<p>오래된 영화관은 좌석이 좁고 줄과 줄 사이가 좁아서 키가 큰 사람이 앉기에는 불편했습니다. 그래서 새로운 분위기로 바꾸면</p>
+
+<p>서 좌석의 크기를 가로, 세로로 늘려 편안한 감상을 할 수 있는 영화관을 만들기 위해 리모델링을 하려고 합니다. 예전의 한 좌석의 크기입니다.</p>
+
+<p>(도형: 가로 $x$, 세로 $x$인 정사각형 이미지, 넓이는 $x^2$)</p>
+
+<p>리모델링을 하면서 좌석의 크기를 현재 가로의 크기 $x$보다 $a$배로, 세로의 크기 $x$보다 $c$배 만큼 늘리고 영화관 의자의 팔걸이에 음료수를 놓는 부분을 만들기 위해 가로의 길이를 $b$만큼 크게 하려고 합니다. 무릎이 앞에 의자와 닿지 않고 편하게 하기 위해서 세로의 길이도 $d$만큼 크게 하고요. 그러면 좌석 한 개의 크기는 어떻게 될까요?</p>
+
+<p>가로의 크기가 $ax+b$, 세로의 크기가 $cx+d$이므로 좌석 한 개의 크기 $(ax+b)(cx+d)$를 전개하여 구하면 네 개의 항이 생기죠?</p>
+
+<p>(도형 및 식 전개 이미지: 가로 $ax+b$, 세로 $cx+d$인 직사각형을 네 부분으로 나눈 그림과 $(ax+b)(cx+d)$를 분배법칙으로 전개하는 과정을 보여주는 식)
+\((ax+b)(cx+d) = acx^2 + adx + bcx + bd\)</p>
+
+<p>전개하여 구한 $acx^2 + adx + bcx + bd$에서 동류항을 계산하여 식을 더 간단하게 나타낼 수 있죠? 동류항 $adx$와 $bcx$에서 $x$의 계수 $ad$와 $bc$를 계산하면 $(ad+bc)x$입니다. 다항식의 곱 $(ax+b)(cx+d)$를 전개한 것을 특별히 곱셈공식이라고 합니다.</p>
+
+<p><strong>곱셈공식 5</strong>
+\((ax+b)(cx+d) = acx^2 + (ad+bc)x + bd\)</p>
+
+<p>여러분이 건축가가 되어 공연장의 크기나 벽면, 좌석의 크기, 방음재와 바닥재의 넓이를 구해 보았습니다. 그리고 다항식과 다항식의 곱으로 구한 넓이를 전개하여 나타내 보기도 했어요. 다항식과 다항식의 곱에서 전개를 하여 동류항을 계산하면 간단한 식으로 나타낼 수 있기 때문에 특별히 5가지 경우를 곱셈공식이</p>
+
+<p>라고 해서 많이 사용합니다. 전개를 하여 구할 수도 있지만 많이 사용하기 때문에 구구단처럼 외워두는 것도 편리하답니다. 자, 이제 문자를 사용하여 식을 나타내고 덧셈, 뺄셈, 곱셈, 나눗셈도 간단하게 나타내는 방법을 다 배웠어요. 다음 시간에는 이런 문자들을 누가 만들었는지, 어떻게 만들어졌는지 알아보도록 합시다. 다음 시간에 봐요~.</p>
+
+<p><strong>여섯 번째 수업 정리</strong></p>
+
+<p>❶ 원점 O를 기준으로 오른쪽에 있는 수를 양수, 왼쪽에 있는 수를 음수라고 합니다.
+(수직선 이미지: 0을 기준으로 오른쪽 화살표 ‘양수’, 왼쪽 화살표 ‘음수’ 표시)</p>
+
+<p>양수와 양수의 곱은 양수이고 음수와 음수의 곱도 양수가 됩니다.</p>
+
+<p>❷ 다항식과 다항식의 곱셈을 분배법칙을 사용하여 단항식들의 합으로 나타내는 것을 전개한다고 합니다. 예를 들어 두 다항식의 곱 $(a+b)(c+d)$를 전개하여 $ac+ad+bc+bd$로 나타내는 것입니다.</p>
+
+<p>❸ 다항식의 곱셈 중 특별한 경우를 곱셈공식이라고 합니다. 다섯 가지 곱셈공식을 외워두면 다항식의 곱셈을 계산할 때 편리합니다.</p>
+
+<p>• $(x+a)(x+b) = x^2 + (a+b)x + ab$
+• $(a+b)^2 = a^2 + 2ab + b^2$
+• $(a-b)^2 = a^2 - 2ab + b^2$
+• $(a+b)(a-b) = a^2 - b^2$
+• $(ax+b)(cx+d) = acx^2 + (ad+bc)x + bd$</p>
+
+
+            <div class="mt-10">
+                <!-- 구글 에스센스 광고 -->
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3321560028329475"
+                    crossorigin="anonymous"></script>
+                <!-- jinydev-java -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3321560028329475"
+                    data-ad-slot="9323221865" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+        </div>
+
+        <div class="bd-toc mt-3 mb-5 my-lg-0 ps-xl-3 mb-lg-5 text-body-secondary">
+
+  <button class="btn btn-link p-md-0 mb-2 mb-md-0 text-decoration-none bd-toc-toggle d-md-none" type="button"
+    data-bs-toggle="collapse" data-bs-target="#tocContents" aria-expanded="false" aria-controls="tocContents">
+    서브목차
+    <svg class="bi d-md-none ms-2" aria-hidden="true">
+      <use xlink:href="#chevron-expand"></use>
+    </svg>
+  </button>
+
+  <strong class="d-none d-md-block h6 my-2">서브목차</strong>
+
+  <div class="collapse bd-toc-collapse" id="tocContents">
+    <nav id="TableOfContents">
+      <!--
+      <ul>
+        <li><a href="#quick-start">Quick start</a></li>
+        <li><a href="#cdn-links">CDN links</a></li>
+        <li><a href="#next-steps">Next steps</a></li>
+        <li><a href="#js-components">JS components</a></li>
+        <li><a href="#important-globals">Important globals</a>
+          <ul>
+            <li><a href="#html5-doctype">HTML5 doctype</a></li>
+            <li><a href="#responsive-meta-tag">Responsive meta tag</a></li>
+            <li><a href="#box-sizing">Box-sizing</a></li>
+            <li><a href="#reboot">Reboot</a></li>
+          </ul>
+        </li>
+        <li><a href="#community">Community</a></li>
+      </ul>
+      -->
+    </nav>
+  </div>
+</div>
+    </main>
+
+
+</div>
+
+  <footer class="container">
+  <hr class="mt-5 mb-3">
+  <div class="row align-items-center pb-3">
+    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+      <p class="mb-0 text-secondary">Copyright 2017~2026 JinyDev. All Rights Reserved.</p>
+    </div>
+    <div class="col-md-6 text-center text-md-end">
+      
+      <a href="https://datas.jiny.dev" class="text-decoration-none text-secondary ms-3">빅데이터</a>
+      
+      <a href="https://mysql.jiny.dev" class="text-decoration-none text-secondary ms-3">MySQL</a>
+      
+      <a href="https://php.jiny.dev" class="text-decoration-none text-secondary ms-3">PHP</a>
+      
+      <a href="https://java.jiny.dev" class="text-decoration-none text-secondary ms-3">자바</a>
+      
+      <a href="https://git.jiny.dev" class="text-decoration-none text-secondary ms-3">깃&깃허브</a>
+      
+      <a href="https://linux.jiny.dev" class="text-decoration-none text-secondary ms-3">리눅스</a>
+      
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+
+    window.addEventListener('load', async function () {
+      mermaid.initialize({ startOnLoad: false });
+
+      const mermaidCodes = document.querySelectorAll('pre code.language-mermaid');
+      const mermaidDivs = [];
+
+      mermaidCodes.forEach(codeBlock => {
+        const mermaidDefinition = codeBlock.textContent.trim();
+        const container = codeBlock.closest('div.highlighter-rouge');
+
+        const mermaidDiv = document.createElement('div');
+        mermaidDiv.className = 'mermaid';
+        mermaidDiv.textContent = mermaidDefinition;
+
+        if (container) {
+          container.replaceWith(mermaidDiv);
+        } else {
+          const pre = codeBlock.parentElement;
+          if (pre) pre.replaceWith(mermaidDiv);
+        }
+        mermaidDivs.push(mermaidDiv);
+      });
+
+      if (mermaidDivs.length > 0) {
+        await mermaid.run({ nodes: mermaidDivs });
+      }
+    });
+  </script>
+  <script src="/assets/js/toc.js"></script>
+  <script src="/assets/js/sidebar.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#e8590c" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세상을 들어 올리는 아르키메데스의 마법: 지레의 법칙 (Law of Lever)</text>
+
+    <g transform="translate(100, 150)">
+        <!-- Ground Line -->
+        <line x1="-50" y1="60" x2="450" y2="60" stroke="#adb5bd" stroke-width="4" />
+
+        <!-- Fulcrum (Pivot) -->
+        <polygon points="120,60 100,10 140,10" fill="#868e96" />
+        <text x="120" y="80" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">받침점 (Fulcrum)</text>
+
+        <!-- Lever -->
+        <rect x="-20" y="0" width="370" height="10" fill="#f59f00" />
+
+        <!-- Heavy Weight (Left) -->
+        <rect x="-10" y="-60" width="60" height="60" fill="#c92a2a" rx="5" />
+        <text x="20" y="-25" fill="#fff" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">100kg</text>
+        <text x="20" y="-70" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">무거운 짐 (W1)</text>
+
+        <!-- Light Weight (Right) -->
+        <rect x="290" y="-30" width="30" height="30" fill="#1864ab" rx="3" />
+        <text x="305" y="-10" fill="#fff" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">10kg</text>
+        <text x="305" y="-40" fill="#1864ab" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">나의 힘 (W2)</text>
+
+        <!-- Distances -->
+        <!-- D1 -->
+        <path d="M 20 -15 L 120 -15" fill="none" stroke="#fa5252" stroke-width="2" marker-start="url(#arrow-red)"
+            marker-end="url(#arrow-red)" />
+        <text x="70" y="-25" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">짧은 거리 (D1 = 1m)</text>
+
+        <!-- D2 -->
+        <path d="M 120 -15 L 305 -15" fill="none" stroke="#228be6" stroke-width="2" marker-start="url(#arrow-blue)"
+            marker-end="url(#arrow-blue)" />
+        <text x="210" y="-25" fill="#1864ab" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">긴 거리 (D2 = 10m)</text>
+
+        <!-- Formula -->
+        <text x="160" y="-100" fill="#d9480f" font-size="18" font-family="monospace" font-weight="bold"
+            text-anchor="middle">100kg × 1m = 10kg × 10m</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fa5252" />
+        </marker>
+        <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#228be6" />
+        </marker>
+    </defs>
+</svg>

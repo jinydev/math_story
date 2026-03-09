@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '8. 숫자에 속지 마라 2 평균의 함정과 사기 그래프 The Trap of Averages'
+---
+
 # 8. 숫자에 속지 마라 2: 평균의 함정과 사기 그래프 (The Trap of Averages)
 
 ## [도입부] 학습 목표 (Learning Objectives)

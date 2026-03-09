@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .bg {
+                fill: #1e1e2e;
+            }
+
+            .text-light {
+                fill: #cdd6f4;
+                font-family: 'Courier New', monospace;
+                font-size: 20px;
+                text-anchor: middle;
+            }
+
+            .text-title {
+                fill: #f9e2af;
+                font-family: 'Courier New', monospace;
+                font-size: 28px;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .text-code {
+                fill: #a6e3a1;
+                font-family: 'monospace';
+                font-size: 24px;
+                text-anchor: middle;
+                font-weight: bold;
+            }
+
+            .box {
+                fill: #313244;
+                stroke: #89b4fa;
+                stroke-width: 2;
+                rx: 10;
+                ry: 10;
+            }
+
+            .box-filter {
+                fill: #f38ba8;
+                stroke: #f38ba8;
+                opacity: 0.2;
+                rx: 10;
+                ry: 10;
+            }
+
+            .arrow {
+                stroke: #cdd6f4;
+                stroke-width: 3;
+                fill: none;
+            }
+
+            .arrow-head {
+                fill: #cdd6f4;
+            }
+
+            .item {
+                fill: #fab387;
+                stroke: #eba0ac;
+                stroke-width: 2;
+            }
+
+            .text-item {
+                fill: #11111b;
+                font-family: sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                text-anchor: middle;
+                dominant-baseline: middle;
+            }
+
+            .deleted {
+                stroke: #f38ba8;
+                stroke-width: 4;
+                stroke-linejoin: round;
+            }
+        </style>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="arrow-head" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="40" class="text-title">집합(Set)의 절대 규칙: 중복 불허 (Deduplication)</text>
+
+    <!-- Raw Data Pool -->
+    <rect x="50" y="100" width="200" height="200" class="box" />
+    <text x="150" y="130" class="text-light">원본 리스트 (List)</text>
+    <text x="150" y="280" class="text-code">["A", "B", "A", "A", "C"]</text>
+
+    <!-- Items in Raw Data -->
+    <circle cx="110" cy="180" r="20" class="item" />
+    <text x="110" cy="180" class="text-item">A</text>
+
+    <circle cx="170" cy="160" r="20" class="item" />
+    <text x="170" cy="160" class="text-item">B</text>
+
+    <circle cx="130" cy="230" r="20" class="item" />
+    <text x="130" cy="230" class="text-item">A</text>
+
+    <circle cx="190" cy="200" r="20" class="item" />
+    <text x="190" cy="200" class="text-item">C</text>
+
+    <circle cx="90" cy="220" r="20" class="item" />
+    <text x="90" cy="220" class="text-item">A</text>
+
+    <!-- Python Set Filter -->
+    <path d="M 280 200 L 350 200" class="arrow" marker-end="url(#arrowhead)" />
+
+    <rect x="360" y="80" width="120" height="240" class="box-filter" />
+    <rect x="370" y="150" width="100" height="100" class="box" fill="#45475a" />
+    <text x="420" y="190" class="text-light">set()</text>
+    <text x="420" y="220" fill="#f38ba8" font-size="14" font-weight="bold" text-anchor="middle">중복 파괴기</text>
+
+    <!-- Filter operation: Deleting duplicates -->
+    <circle cx="420" cy="100" r="15" class="item" opacity="0.5" />
+    <text x="420" cy="100" class="text-item" opacity="0.5">A</text>
+    <path d="M 405 85 L 435 115" class="deleted" />
+    <path d="M 435 85 L 405 115" class="deleted" />
+
+    <circle cx="420" cy="280" r="15" class="item" opacity="0.5" />
+    <text x="420" cy="280" class="text-item" opacity="0.5">A</text>
+    <path d="M 405 265 L 435 295" class="deleted" />
+    <path d="M 435 265 L 405 295" class="deleted" />
+
+    <!-- Processed Set -->
+    <path d="M 500 200 L 580 200" class="arrow" marker-end="url(#arrowhead)" />
+
+    <rect x="600" y="100" width="150" height="200" class="box" />
+    <text x="675" y="130" class="text-light">집합 (Set)</text>
+    <text x="675" y="280" class="text-code">{"A", "B", "C"}</text>
+
+    <circle cx="650" cy="180" r="20" class="item" fill="#a6e3a1" />
+    <text x="650" cy="180" class="text-item">A</text>
+
+    <circle cx="710" cy="180" r="20" class="item" fill="#a6e3a1" />
+    <text x="710" cy="180" class="text-item">B</text>
+
+    <circle cx="680" cy="230" r="20" class="item" fill="#a6e3a1" />
+    <text x="680" cy="230" class="text-item">C</text>
+
+</svg>

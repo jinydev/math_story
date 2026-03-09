@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 자본주의의 심장 이자Interest와 화폐의 시간 가치'
+---
+
 # 1. 자본주의의 심장: 이자(Interest)와 화폐의 시간 가치
 
 ## [도입부] 학습 목표 (Learning Objectives)

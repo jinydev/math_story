@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">불공정 매치 붕괴: 상대도수(Ratio) 와 피라미드 스택(Cumulative)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"단순 머릿수로만 겨루면 대기업
+        학원을 이길 수 없다. 총인원수로 나눠서 0~1 퍼센티지(%) 비율로 평등하게 겨뤄라!"</text>
+
+    <!-- Left: Relative Frequency (Unfair match debunked) -->
+    <g transform="translate(80, 150)">
+        <rect x="-20" y="-30" width="370" height="280" rx="15" fill="#1b1111" stroke="#ff5555" stroke-width="3" />
+        <text x="165" y="0" fill="#ff5555" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">상대도수 (비율 환산)</text>
+
+        <!-- Big Class -->
+        <text x="80" y="40" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">A 학원 (거대
+            공장)</text>
+        <rect x="40" y="60" width="80" height="80" fill="#331111" stroke="#ff5555" />
+        <text x="80" y="90" fill="#ff5555" font-family="monospace" font-size="20" font-weight="bold"
+            text-anchor="middle">100 명</text>
+        <text x="80" y="125" fill="#aaaaaa" font-family="sans-serif" font-size="12" text-anchor="middle">총원
+            10,000명</text>
+
+        <path d="M 80 150 L 80 180" stroke="#ffaa00" stroke-width="3" marker-end="url(#arrow_y)" />
+        <text x="80" y="210" fill="#ffaa00" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">100 / 1만</text>
+        <text x="80" y="235" fill="#ffffff" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">= 0.01 (1%)</text>
+
+        <!-- VS Line -->
+        <line x1="165" y1="40" x2="165" y2="240" stroke="#555" stroke-width="2" stroke-dasharray="5 5" />
+
+        <!-- Small Class -->
+        <text x="250" y="40" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">B 학원 (소수
+            정예)</text>
+        <rect x="210" y="60" width="80" height="80" fill="#003322" stroke="#00ffcc" />
+        <text x="250" y="90" fill="#00ffcc" font-family="monospace" font-size="20" font-weight="bold"
+            text-anchor="middle">10 명 <tspan font-size="12">초라함</tspan></text>
+        <text x="250" y="125" fill="#aaaaaa" font-family="sans-serif" font-size="12" text-anchor="middle">총원 20명</text>
+
+        <path d="M 250 150 L 250 180" stroke="#00ffcc" stroke-width="3" marker-end="url(#arrow_g)" />
+        <text x="250" y="210" fill="#00ffcc" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">10 / 20</text>
+        <text x="250" y="235" fill="#4da6ff" font-family="monospace" font-size="22" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">= 0.5 (50%)</text>
+    </g>
+
+    <!-- Right: Cumulative Frequency (Stacking) -->
+    <g transform="translate(500, 150)">
+        <rect x="-20" y="-30" width="370" height="280" rx="15" fill="#001122" stroke="#4da6ff" stroke-width="3" />
+        <text x="165" y="0" fill="#4da6ff" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">누적 도수 (Stack &amp; Grow)</text>
+
+        <!-- Normal Data List -->
+        <text x="60" y="40" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">일반 도수 구간</text>
+        <rect x="20" y="60" width="80" height="40" fill="#1b1b1b" stroke="#777" />
+        <text x="60" y="85" fill="#fff" font-family="sans-serif" font-size="14" text-anchor="middle">1 구간: 2명</text>
+
+        <rect x="20" y="110" width="80" height="40" fill="#1b1b1b" stroke="#777" />
+        <text x="60" y="135" fill="#fff" font-family="sans-serif" font-size="14" text-anchor="middle">2 구간: 5명</text>
+
+        <rect x="20" y="160" width="80" height="40" fill="#1b1b1b" stroke="#777" />
+        <text x="60" y="185" fill="#fff" font-family="sans-serif" font-size="14" text-anchor="middle">3 구간: 3명</text>
+
+        <path d="M 120 80 Q 150 110 180 130" fill="none" stroke="#ffff00" stroke-width="3" marker-end="url(#arrow_w)" />
+        <path d="M 120 130 Q 150 150 180 180" fill="none" stroke="#ffff00" stroke-width="3"
+            marker-end="url(#arrow_w)" />
+        <path d="M 120 180 Q 150 200 180 230" fill="none" stroke="#ffff00" stroke-width="3"
+            marker-end="url(#arrow_w)" />
+
+        <!-- Cumulative Stacks -->
+        <text x="250" y="40" fill="#ffaa00" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">합체 눈사람 (누적 값)</text>
+
+        <rect x="210" y="60" width="80" height="40" fill="#332200" stroke="#ffaa00" />
+        <text x="250" y="85" fill="#ffaa00" font-family="monospace" font-size="16" font-weight="bold"
+            text-anchor="middle">2</text>
+
+        <rect x="210" y="110" width="80" height="50" fill="#332200" stroke="#ffaa00" opacity="0.9" />
+        <text x="250" y="140" fill="#ffaa00" font-family="monospace" font-size="16" font-weight="bold"
+            text-anchor="middle">2+5 = 7</text>
+
+        <rect x="210" y="170" width="80" height="60" fill="#332200" stroke="#ffaa00" opacity="0.8"
+            filter="url(#glow)" />
+        <text x="250" y="205" fill="#ffff00" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">7+3 = 10</text>
+
+        <!-- Code Snippet -->
+        <text x="165" y="250" fill="#ff00ff" font-family="monospace" font-size="16" font-weight="bold"
+            text-anchor="middle">cumulative_sum += freq</text>
+    </g>
+
+    <defs>
+        <marker id="arrow_y" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ffaa00" />
+        </marker>
+        <marker id="arrow_g" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#00ffcc" />
+        </marker>
+        <marker id="arrow_w" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ffff00" />
+        </marker>
+    </defs>
+
+    <!-- Base Explain -->
+    <rect x="100" y="480" width="700" height="80" rx="10" fill="#111" stroke="#00ffcc" stroke-width="2" />
+    <text x="450" y="510" fill="#ffffff" font-family="sans-serif" font-size="15" text-anchor="middle">
+        총량이 다른 이질적인 집단을 공정하게 비교하려면 모든 구역의 도수를 반드시 <tspan fill="#ff5555" font-weight="bold">전체 마리 수로 나누어 계산</tspan> 해야
+        하며,
+    </text>
+    <text x="450" y="540" fill="#ffffff" font-family="sans-serif" font-size="15" text-anchor="middle">
+        그 결과는 항상 <tspan fill="#4da6ff" font-weight="bold">합계가 1(100%) 로 고정</tspan>되는 완벽한 0~1 사이의 순수 비율(상대도수) 매트릭스가 됩니다.
+    </text>
+</svg>

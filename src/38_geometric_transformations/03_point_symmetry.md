@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '3. 우주의 블랙홀 원점 대칭 Point Symmetry'
+---
+
 # 3. 우주의 블랙홀: '원점 대칭 (Point Symmetry)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

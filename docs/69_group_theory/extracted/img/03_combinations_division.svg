@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .box {
+                fill: #161b22;
+                stroke: #ff00ff;
+                stroke-width: 2;
+                rx: 10;
+                ry: 10;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 24px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .number {
+                fill: #00ffff;
+                font-size: 36px;
+                text-anchor: middle;
+            }
+
+            .operator {
+                fill: #ffffff;
+                font-size: 36px;
+                text-anchor: middle;
+            }
+
+            .label {
+                fill: #aaaaaa;
+                font-size: 14px;
+                text-anchor: middle;
+            }
+
+            .math-formula {
+                fill: #ffff00;
+                font-size: 28px;
+                text-anchor: middle;
+            }
+
+            .fraction-line {
+                stroke: #ffffff;
+                stroke-width: 3;
+            }
+
+            .badge {
+                fill: #ff0000;
+                rx: 5;
+                ry: 5;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="400" y="40" class="title">조합 (Combination) 의 순서 파괴 규칙</text>
+    <text x="400" y="70" class="desc">"순서가 다르더라도, 구성원이 같으면 1개로 친다! 중복 제거(÷)"</text>
+
+    <rect x="50" y="120" width="700" height="200" class="box" />
+
+    <text x="120" y="240" fill="#ffff00" font-size="40" font-weight="bold">_5C_3</text>
+    <text x="210" y="235" class="operator">=</text>
+
+    <!-- Numerator: Permutation -->
+    <g transform="translate(400, 160)">
+        <text x="-90" y="0" class="number">5</text>
+        <text x="-40" y="0" class="operator">×</text>
+        <text x="10" y="0" class="number" fill="#00ff00">4</text>
+        <text x="60" y="0" class="operator">×</text>
+        <text x="110" y="0" class="number" fill="#ffaa00">3</text>
+
+        <text x="220" y="0" fill="#888888" font-size="16" text-anchor="start">← 일단 순서대로 뽑아둔다 (5P3)</text>
+    </g>
+
+    <!-- Fraction Line -->
+    <line x1="300" y1="210" x2="520" y2="210" class="fraction-line" />
+
+    <!-- Denominator: Factorial of chosen r -->
+    <g transform="translate(400, 260)">
+        <text x="-90" y="0" class="number" fill="#ff00ff">3</text>
+        <text x="-40" y="0" class="operator">×</text>
+        <text x="10" y="0" class="number" fill="#ff00ff">2</text>
+        <text x="60" y="0" class="operator">×</text>
+        <text x="110" y="0" class="number" fill="#ff00ff">1</text>
+
+        <text x="220" y="0" fill="#ff6464" font-size="16" text-anchor="start">← 뽑힌 3명끼리 순서 섞이는 거품 제거 (3!)</text>
+    </g>
+
+    <!-- Bubble showing equivalent division -->
+    <g transform="translate(400, 380)">
+        <rect x="-180" y="-30" width="360" height="50" fill="#20252c" rx="10" ry="10" />
+        <text x="0" y="2" class="math-formula">_5C_3 = 60 ÷ 6 = 10 가지</text>
+
+        <rect x="-170" y="-45" width="80" height="25" class="badge" />
+        <text x="-130" y="-28" fill="#ffffff" font-size="12" text-anchor="middle" font-weight="bold">로또 원리</text>
+    </g>
+
+</svg>

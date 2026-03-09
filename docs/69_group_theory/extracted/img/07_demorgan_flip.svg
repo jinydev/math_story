@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .bg {
+                fill: #1e1e2e;
+            }
+
+            .title {
+                fill: #f9e2af;
+                font-family: sans-serif;
+                font-size: 26px;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .formula {
+                fill: #f5c2e7;
+                font-family: monospace;
+                font-size: 32px;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .subtext {
+                fill: #a6e3a1;
+                font-family: sans-serif;
+                font-size: 14px;
+                text-anchor: middle;
+            }
+
+            .box {
+                fill: #313244;
+                stroke: #89b4fa;
+                stroke-width: 2;
+                rx: 10;
+                ry: 10;
+            }
+
+            .highlight {
+                fill: #f38ba8;
+                font-size: 40px;
+            }
+
+            .arrow {
+                stroke: #cdd6f4;
+                stroke-width: 4;
+                fill: none;
+                stroke-dasharray: 6;
+            }
+        </style>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#cdd6f4" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="50" class="title">드모르간의 법칙 (De Morgan's Laws)</text>
+
+    <!-- Law 1 Box -->
+    <rect x="100" y="100" width="600" height="120" class="box" />
+    <text x="400" y="150" class="formula">
+        ( A <tspan fill="#89b4fa">∪</tspan> B )<tspan fill="#f38ba8">c</tspan> = A<tspan fill="#f38ba8">c</tspan>
+        <tspan fill="#a6e3a1">∩</tspan> B<tspan fill="#f38ba8">c</tspan>
+    </text>
+    <text x="400" y="190" class="subtext" fill="#cdd6f4">전체를 부정(c)하면 합집합(∪)은 교집합(∩)으로 뒤집힌다.</text>
+
+    <!-- Magic flip animation lines -->
+    <path d="M 315 120 C 340 80, 480 80, 505 120" class="arrow" marker-end="url(#arrowhead)" />
+    <text x="410" y="85" fill="#f38ba8" font-size="16" font-weight="bold">분배 &amp; 반전 마법</text>
+
+    <!-- Law 2 Box -->
+    <rect x="100" y="240" width="600" height="120" class="box" />
+    <text x="400" y="290" class="formula">
+        ( A <tspan fill="#a6e3a1">∩</tspan> B )<tspan fill="#f38ba8">c</tspan> = A<tspan fill="#f38ba8">c</tspan>
+        <tspan fill="#89b4fa">∪</tspan> B<tspan fill="#f38ba8">c</tspan>
+    </text>
+    <text x="400" y="330" class="subtext" fill="#cdd6f4">전체를 부정(c)하면 교집합(∩)은 합집합(∪)으로 뒤집힌다.</text>
+
+</svg>

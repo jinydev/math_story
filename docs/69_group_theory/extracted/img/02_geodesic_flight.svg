@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .earth {
+                fill: #1f3b5c;
+                stroke: #30363d;
+                stroke-width: 2;
+            }
+
+            .cont {
+                fill: #2d553b;
+            }
+
+            .plane-line {
+                fill: none;
+                stroke: #ff6464;
+                stroke-width: 4;
+                stroke-dasharray: 8, 4;
+            }
+
+            .geo-line {
+                fill: none;
+                stroke: #00ffff;
+                stroke-width: 5;
+            }
+
+            .city-dot {
+                fill: #ffff00;
+            }
+
+            .city-text {
+                fill: #ffffff;
+                font-size: 16px;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 24px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="400" y="40" class="title">비행기의 항로: 일직선 착시와 측지선(Geodesic)</text>
+    <text x="400" y="65" class="desc">평면 지도에서의 '직선'은 실제 구형 지구에서는 더 먼 거리를 돌아가는 길이다</text>
+
+    <!-- Flat Map Compare -->
+    <g transform="translate(100, 100)">
+        <rect x="0" y="0" width="600" height="150" fill="#161b22" stroke="#30363d" stroke-width="2" />
+        <text x="300" y="25" fill="#8b949e" font-size="14" text-anchor="middle">2D 평면 종이 지도 (메르카토르 도법)</text>
+
+        <!-- Cities -->
+        <circle cx="150" cy="90" r="5" class="city-dot" />
+        <text x="150" y="115" class="city-text" text-anchor="middle">뉴욕</text>
+
+        <circle cx="450" cy="80" r="5" class="city-dot" />
+        <text x="450" y="105" class="city-text" text-anchor="middle">파리</text>
+
+        <!-- Straight line on flat map -->
+        <line x1="150" y1="90" x2="450" y2="80" class="plane-line" />
+        <text x="300" y="70" fill="#ff6464" font-size="14" text-anchor="middle">지도상에선 지름길로 보임 (직선)</text>
+    </g>
+
+    <!-- Sphere/Globe Measure -->
+    <g transform="translate(400, 340)">
+        <!-- Globe Half -->
+        <path d="M-250 100 A 250 200 0 0 1 250 100" class="earth" />
+        <path d="M-250 100 L 250 100" stroke="#30363d" stroke-width="2" />
+        <text x="0" y="90" fill="#50667b" font-size="20" text-anchor="middle">3D 구형 지구 (Spherical Earth)</text>
+
+        <!-- Cities on Globe -->
+        <circle cx="-130" cy="-30" r="6" class="city-dot" />
+        <text x="-130" y="-10" class="city-text" text-anchor="middle">뉴욕</text>
+
+        <circle cx="130" cy="-40" r="6" class="city-dot" />
+        <text x="130" y="-20" class="city-text" text-anchor="middle">파리</text>
+
+        <!-- Geodesic Arc (Great Circle Path) -> Taught tight -->
+        <!-- Bents UP towards North Pole -->
+        <path d="M -130 -30 Q 0 -100 130 -40" class="geo-line" />
+
+        <text x="0" y="-75" fill="#00ffff" font-size="16" text-anchor="middle">실제 최단 경로: 측지선 (대원호)</text>
+    </g>
+
+</svg>

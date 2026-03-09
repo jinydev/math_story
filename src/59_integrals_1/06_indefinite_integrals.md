@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '06. 여섯 번째 수업 파괴된 정보의 복구비용  Indefinite Integrals'
+---
+
 # 06. 여섯 번째 수업: 파괴된 정보의 복구비용 $C$ (Indefinite Integrals)
 
 미분의 스킬을 역재생(되감기)해서 적분(면적 함수)을 알아내는 '역도함수' 풀이법엔 심각한 **데이터 손실(Data Loss)** 버그가 존재합니다.

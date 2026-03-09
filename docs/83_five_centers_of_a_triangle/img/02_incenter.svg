@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#fff4e6" rx="10" />
+
+    <text x="300" y="30" fill="#d9480f" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세 변(도로)에 모두 접하는 원: 삼각형의 내심 (Incenter)</text>
+
+    <!-- Incircle -->
+    <g transform="translate(300, 150)">
+
+        <!-- Triangle -->
+        <path d="M 0 -110 L -120 40 L 100 40 Z" fill="#ffe8cc" stroke="#d9480f" stroke-width="3" />
+
+        <!-- Incircle -->
+        <circle cx="-5" cy="0" r="40" fill="#fff" stroke="#f59f00" stroke-width="3" stroke-dasharray="6,6" />
+
+        <!-- Incenter Point -->
+        <circle cx="-5" cy="0" r="6" fill="#e03131" />
+        <text x="-5" y="20" fill="#e03131" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">I (내심)</text>
+
+        <!-- Distances to Edges -->
+        <line x1="-5" y1="0" x2="-5" y2="40" stroke="#f03e3e" stroke-width="2" stroke-dasharray="4,4" />
+        <line x1="-5" y1="0" x2="-55" y2="-41" stroke="#f03e3e" stroke-width="2" stroke-dasharray="4,4" />
+        <line x1="-5" y1="0" x2="38" y2="-55" stroke="#f03e3e" stroke-width="2" stroke-dasharray="4,4" />
+
+        <!-- Right angle markers -->
+        <!-- Bottom edge -->
+        <path d="M -5 32 L 3 32 L 3 40" fill="none" stroke="#f03e3e" stroke-width="1.5" />
+        <!-- Left edge -->
+        <path d="M -48 -35 L -42 -27 L -50 -21" fill="none" stroke="#f03e3e" stroke-width="1.5" />
+        <!-- Right edge -->
+        <path d="M 32 -50 L 27 -43 L 34 -38" fill="none" stroke="#f03e3e" stroke-width="1.5" />
+
+        <text x="5" y="30" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold">r</text>
+        <text x="-40" y="-15" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold">r</text>
+        <text x="25" y="-25" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold">r</text>
+    </g>
+
+</svg>

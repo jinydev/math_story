@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">안과 밖이 사라진 융합 차원: 비가향 곡면 (Non-orientable Surface)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"앞만 보고 무한히 직진했는데,
+        어느새 우주의 껍질을 뚫고 내부 바닥에 도달해버리는 시스템 공간 버그"</text>
+
+    <!-- Mobius Strip Left -->
+    <g transform="translate(250, 300)">
+        <ellipse cx="0" cy="0" rx="120" ry="50" fill="none" stroke="#fff" stroke-width="40"
+            stroke-dasharray="2 10 20 10" opacity="0.2" />
+
+        <!-- The twist in the front: simple visual trick -->
+        <path d="M -120 0 Q -120 -80 0 -80 Q 120 -80 120 0 Q 120 80 0 80 Q -120 80 -120 0" fill="none" stroke="#00ffcc"
+            stroke-width="15" filter="url(#glow)" />
+
+        <!-- The crossover part mimicking a twist -->
+        <path d="M 50 40 L -40 -40 L -60 -30 L 40 50 Z" fill="#000" />
+        <path d="M 50 40 Q 0 0 -50 -40" fill="none" stroke="#0088ff" stroke-width="15" filter="url(#glow)" />
+        <path d="M -50 40 Q 0 0 50 -40" fill="none" stroke="#00ffcc" stroke-width="15" filter="url(#glow)" />
+
+        <!-- Ants / Arrows walking on the surface -->
+        <circle cx="0" cy="-80" r="5" fill="#ff00ff" filter="url(#glow)" />
+        <path d="M 0 -80 L 20 -80" fill="none" stroke="#ff00ff" stroke-width="3" marker-end="url(#arrow_m)"
+            filter="url(#glow)" />
+
+        <circle cx="0" cy="80" r="5" fill="#ff00ff" filter="url(#glow)" />
+        <path d="M 0 80 L -20 80" fill="none" stroke="#ff00ff" stroke-width="3" marker-end="url(#arrow_m)"
+            filter="url(#glow)" />
+
+        <text x="0" y="140" fill="#00ffcc" font-weight="bold" font-size="22" text-anchor="middle"
+            filter="url(#glow)">뫼비우스의 띠 (Möbius Strip)</text>
+        <text x="0" y="165" fill="#fff" font-size="14" text-anchor="middle">직사각형의 띠를 180도 비틀어 붙임</text>
+        <text x="0" y="185" fill="#ff00ff" font-weight="bold" font-size="14" text-anchor="middle">겉과 속 면(Side) 이 1개로
+            통일됨!</text>
+    </g>
+
+    <!-- Klein Bottle Right -->
+    <g transform="translate(650, 270)">
+
+        <!-- Klein bottle abstract outline -->
+        <path d="M -40 -80 L -40 50 Q -40 100 0 100 Q 60 100 60 30 Q 60 -50 20 -80" fill="none" stroke="#ff00ff"
+            stroke-width="8" filter="url(#glow)" />
+        <path d="M -40 -80 Q 0 -100 20 -80" fill="none" stroke="#ff00ff" stroke-width="8" filter="url(#glow)" />
+
+        <!-- The tube entering inside self -->
+        <path d="M 60 20 Q 0 -40 -10 -80" fill="none" stroke="#ff00ff" stroke-width="4" stroke-dasharray="4 4"
+            filter="url(#glow)" />
+
+        <ellipse cx="-10" cy="-80" rx="30" ry="8" fill="none" stroke="#fff" stroke-width="4" />
+
+        <!-- Showing intersection hole -->
+        <ellipse cx="20" cy="-20" rx="6" ry="12" fill="#000" stroke="#00ffcc" stroke-width="3" filter="url(#glow)" />
+
+        <text x="0" y="170" fill="#ff00ff" font-weight="bold" font-size="22" text-anchor="middle"
+            filter="url(#glow)">클라인 병 (Klein Bottle)</text>
+        <text x="0" y="195" fill="#fff" font-size="14" text-anchor="middle">뫼비우스를 3D 공간으로 투사한 입체 플라스크</text>
+        <text x="0" y="215" fill="#00ffcc" font-weight="bold" font-size="14" text-anchor="middle">병의 내부 바닥에서 표면 바깥으로
+            연결됨!</text>
+    </g>
+
+    <defs>
+        <marker id="arrow_m" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#ff00ff" />
+        </marker>
+    </defs>
+
+    <!-- Big Alert Bottom -->
+    <rect x="100" y="500" width="700" height="70" rx="10" fill="#0b0b1a" stroke="#00ffcc" stroke-width="2" />
+    <text x="450" y="525" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        4차원 우주 위상 모델에서는 이러한 모양이 물리적인 교차선(겹침 버그) 없이 온전히 성립한다.
+    </text>
+    <text x="450" y="550" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        플랫포머 게임 코드에서 맵 좌표를 <tspan fill="#ff0055" font-weight="bold">y = y * -1</tspan> 로 리버싱해 화면 반대쪽으로 스폰 시키는 메커니즘과 동일!
+    </text>
+</svg>

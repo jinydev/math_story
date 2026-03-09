@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+
+    <!-- Neon Glow Filters -->
+    <filter id="glowGreen">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowPink">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowBlue">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glowGreen)">무한급수의 마법: 거대 사각형 쪼개기 (Geometric Series)</text>
+  <text x="400" y="80" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">"영원히 쪼개서 더해도, 이 1장짜리 정사각형 영토를 벗어나지 못한다."</text>
+
+  <!-- Large Square Container (Total Area = 1) -->
+  <g transform="translate(200, 120)">
+    <!-- Base Boundary -->
+    <rect x="0" y="0" width="400" height="400" fill="none" stroke="#E2E8F0" stroke-width="4" />
+    
+    <!-- 1/2 Rectangle (Left Half) -->
+    <rect x="0" y="0" width="200" height="400" fill="rgba(246,135,179,0.3)" stroke="#F687B3" stroke-width="2" filter="url(#glowPink)" />
+    <text x="100" y="210" font-family="'Courier New', monospace" font-size="32" font-weight="bold" fill="#F687B3" text-anchor="middle">1 / 2</text>
+    
+    <!-- 1/4 Square (Top Right Quarter) -->
+    <rect x="200" y="0" width="200" height="200" fill="rgba(99,179,237,0.3)" stroke="#63B3ED" stroke-width="2" filter="url(#glowBlue)" />
+    <text x="300" y="110" font-family="'Courier New', monospace" font-size="24" font-weight="bold" fill="#63B3ED" text-anchor="middle">1 / 4</text>
+    
+    <!-- 1/8 Rectangle (Bottom Right, Left Half) -->
+    <rect x="200" y="200" width="100" height="200" fill="rgba(104,211,145,0.3)" stroke="#68D391" stroke-width="2" filter="url(#glowGreen)" />
+    <text x="250" y="310" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#68D391" text-anchor="middle">1/8</text>
+    
+    <!-- 1/16 Square (Bottom Right, Top Right) -->
+    <rect x="300" y="200" width="100" height="100" fill="rgba(246,224,94,0.3)" stroke="#F6E05E" stroke-width="2" />
+    <text x="350" y="255" font-family="'Courier New', monospace" font-size="16" font-weight="bold" fill="#F6E05E" text-anchor="middle">1/16</text>
+    
+    <!-- 1/32 Rectangle -->
+    <rect x="300" y="300" width="50" height="100" fill="rgba(183,148,244,0.3)" stroke="#B794F4" stroke-width="2" />
+    <text x="325" y="355" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#B794F4" text-anchor="middle">1/32</text>
+    
+    <!-- 1/64 Square -->
+    <rect x="350" y="300" width="50" height="50" fill="rgba(252,129,129,0.3)" stroke="#FC8181" stroke-width="2" />
+    <text x="375" y="330" font-family="'Courier New', monospace" font-size="10" font-weight="bold" fill="#FC8181" text-anchor="middle">1/64</text>
+    
+    <!-- Recursive Void (Dot dot dot) -->
+    <rect x="350" y="350" width="50" height="50" fill="#2D3748" />
+    <circle cx="365" cy="375" r="2" fill="#E2E8F0" />
+    <circle cx="375" cy="375" r="2" fill="#E2E8F0" />
+    <circle cx="385" cy="375" r="2" fill="#E2E8F0" />
+  </g>
+
+  <!-- Equation Visualization -->
+  <text x="400" y="555" font-family="'Courier New', monospace" font-size="24" font-weight="bold" fill="#F7FAFC" text-anchor="middle">
+    <tspan fill="#F687B3">1/2</tspan> + 
+    <tspan fill="#63B3ED">1/4</tspan> + 
+    <tspan fill="#68D391">1/8</tspan> + ... = 
+    <tspan fill="#F6E05E">1.0 (절대 불변의 사각형)</tspan>
+  </text>
+</svg>

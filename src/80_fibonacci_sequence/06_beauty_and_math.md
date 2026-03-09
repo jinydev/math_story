@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '06. 황금비가 만드는 수학적 미인'
+---
+
 # 06. 황금비가 만드는 수학적 미인
 
 ## 1. 학습 목표 (Learning Objectives)

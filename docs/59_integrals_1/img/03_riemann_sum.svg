@@ -1,0 +1,33 @@
+<svg width="600" height="250" viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- 왼쪽: 상합 (Upper Sum) -->
+  <!-- 곡선 배경 -->
+  <path d="M 50 150 Q 125 50 200 150 L 200 200 L 50 200 Z" fill="#e0e0e0" opacity="0.5"/>
+  <path d="M 50 150 Q 125 50 200 150" fill="none" stroke="#2a9d8f" stroke-width="3"/>
+  
+  <!-- 삐져나온 사각형 (상합) -->
+  <rect x="50" y="100" width="30" height="100" fill="#f4a261" stroke="#333" fill-opacity="0.8"/>
+  <rect x="80" y="65" width="30" height="135" fill="#f4a261" stroke="#333" fill-opacity="0.8"/>
+  <rect x="110" y="55" width="30" height="145" fill="#f4a261" stroke="#333" fill-opacity="0.8"/>
+  <rect x="140" y="65" width="30" height="135" fill="#f4a261" stroke="#333" fill-opacity="0.8"/>
+  <rect x="170" y="100" width="30" height="100" fill="#f4a261" stroke="#333" fill-opacity="0.8"/>
+  
+  <text x="125" y="230" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">상합 (진짜 넓이보다 크다)</text>
+  
+  <!-- 오른쪽: 하합 (Lower Sum) -->
+  <!-- 곡선 배경 -->
+  <path d="M 350 150 Q 425 50 500 150 L 500 200 L 350 200 Z" fill="#e0e0e0" opacity="0.5"/>
+  <path d="M 350 150 Q 425 50 500 150" fill="none" stroke="#2a9d8f" stroke-width="3"/>
+  
+  <!-- 모자란 사각형 (하합) -->
+  <rect x="350" y="150" width="30" height="50" fill="#2a9d8f" stroke="#333" fill-opacity="0.8"/>
+  <rect x="380" y="100" width="30" height="100" fill="#2a9d8f" stroke="#333" fill-opacity="0.8"/>
+  <rect x="410" y="65" width="30" height="135" fill="#2a9d8f" stroke="#333" fill-opacity="0.8"/>
+  <rect x="440" y="100" width="30" height="100" fill="#2a9d8f" stroke="#333" fill-opacity="0.8"/>
+  <rect x="470" y="150" width="30" height="50" fill="#2a9d8f" stroke="#333" fill-opacity="0.8"/>
+  
+  <text x="425" y="230" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">하합 (진짜 넓이보다 작다)</text>
+  
+  <!-- 비교표시 -->
+  <text x="275" y="125" font-family="sans-serif" font-size="24" font-weight="bold" fill="#e76f51" text-anchor="middle">＞</text>
+  <text x="275" y="155" font-family="sans-serif" font-size="12" font-weight="bold" fill="#e76f51" text-anchor="middle">진짜 넓이</text>
+</svg>

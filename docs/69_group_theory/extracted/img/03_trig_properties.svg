@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">피타고라스의 귀환: 삼각함수 마스터 공식</text>
+
+    <!-- Big Right Triangle in Center -->
+    <g transform="translate(250, 150)">
+
+        <!-- Hypotenuse -->
+        <line x1="0" y1="200" x2="200" y2="0" stroke="#ffffff" stroke-width="6" filter="url(#glow)" />
+        <text x="80" y="90" fill="#ffffff" font-family="monospace" font-size="30" font-weight="bold"
+            filter="url(#glow)">1</text>
+        <text x="50" y="70" fill="#aaaaaa" font-family="sans-serif" font-size="18" font-weight="bold">(빗변)</text>
+
+        <!-- Base (cos) -->
+        <line x1="0" y1="200" x2="200" y2="200" stroke="#00ffcc" stroke-width="8" filter="url(#glow)" />
+        <text x="100" y="240" fill="#00ffcc" font-family="monospace" font-size="30" font-weight="bold"
+            text-anchor="middle">cos(θ)</text>
+        <text x="100" y="270" fill="#00aaaa" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">밑변(가로)</text>
+
+        <!-- Height (sin) -->
+        <line x1="200" y1="200" x2="200" y2="0" stroke="#ff0055" stroke-width="8" filter="url(#glow)" />
+        <text x="260" y="100" fill="#ff0055" font-family="monospace" font-size="30" font-weight="bold"
+            text-anchor="middle">sin(θ)</text>
+        <text x="260" y="130" fill="#aa0033" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">높이(세로)</text>
+
+        <!-- Right Angle Symbol -->
+        <polyline points="180,200 180,180 200,180" fill="none" stroke="#aaaaaa" stroke-width="3" />
+
+        <!-- Angle Theta -->
+        <path d="M 40 200 A 40 40 0 0 0 28 172" fill="none" stroke="#ffaa00" stroke-width="4" />
+        <text x="45" y="190" fill="#ffaa00" font-family="sans-serif" font-size="24" font-weight="bold">θ</text>
+    </g>
+
+    <!-- Main Formula Banner -->
+    <g transform="translate(100, 470)">
+        <rect x="0" y="0" width="700" height="90" rx="15" fill="#2b1133" stroke="#ff00ff" stroke-width="4"
+            filter="url(#glow)" />
+
+        <text x="350" y="35" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">최강의 데이터 렌더링 무결점
+            공식</text>
+
+        <text x="350" y="75" fill="#ffffff" font-family="monospace" font-size="40" font-weight="bold"
+            text-anchor="middle">
+            <tspan fill="#ff0055">sin²θ</tspan> + <tspan fill="#00ffcc">cos²θ</tspan> = <tspan fill="#ff00ff">1</tspan>
+        </text>
+    </g>
+
+    <!-- Tangent Arrow -->
+    <g transform="translate(680, 200)">
+        <rect x="0" y="0" width="180" height="130" fill="#111" stroke="#aaaaaa" stroke-width="2" rx="10" />
+        <text x="90" y="30" fill="#ffaa00" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">기울기 팩트</text>
+
+        <text x="90" y="70" fill="#ffffff" font-family="monospace" font-size="20" font-weight="bold"
+            text-anchor="middle">tanθ = <tspan fill="#ff0055">sin</tspan> / <tspan fill="#00ffcc">cos</tspan></text>
+        <line x1="20" y1="80" x2="160" y2="80" stroke="#777" stroke-width="1" />
+
+        <text x="90" y="110" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">모든 복잡한
+            각도는</text>
+        <text x="90" y="125" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">결국 둘의
+            핏줄이다!</text>
+    </g>
+
+</svg>

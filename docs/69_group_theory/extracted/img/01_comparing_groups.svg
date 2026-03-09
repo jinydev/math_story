@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">진짜 승자는 누구인가?: 두 집단의 비교</text>
+
+    <!-- Subtitle -->
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"동일한 평균 60점, 하지만
+        완벽하게 다른 두 가지 민낯"</text>
+
+    <!-- Left: Class A (Polarized - Flat/Wide) -->
+    <g transform="translate(250, 300)">
+
+        <!-- Base Line -->
+        <line x1="-150" y1="120" x2="150" y2="120" stroke="#777777" stroke-width="3" />
+        <text x="-140" y="145" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">0점</text>
+        <text x="140" y="145" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">100점</text>
+
+        <!-- Mean line -->
+        <line x1="0" y1="120" x2="0" y2="-120" stroke="#00ffcc" stroke-width="2" stroke-dasharray="6 4" />
+        <text x="0" y="145" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">평균 60</text>
+
+        <!-- Distribution Curve (Polarized/Flat) -->
+        <path d="M -140 120 Q -90 120 -90 -20 Q -40 -120 0 100 Q 40 -120 90 -20 Q 90 120 140 120" fill="none"
+            stroke="#ff4d4d" stroke-width="4" filter="url(#glow)" />
+        <path d="M -140 120 Q -90 120 -90 -20 Q -40 -120 0 100 Q 40 -120 90 -20 Q 90 120 140 120 Z" fill="#ff4d4d"
+            opacity="0.2" />
+
+        <text x="0" y="-130" fill="#ff4d4d" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">A반 (극단적 양극화)</text>
+
+        <text x="-90" y="-40" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">수포자</text>
+        <text x="90" y="-40" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">천재들</text>
+
+    </g>
+
+    <!-- VS Text -->
+    <text x="450" y="300" fill="#ffffff" font-family="sans-serif" font-size="30" font-weight="bold"
+        text-anchor="middle">VS.</text>
+
+    <!-- Right: Class B (Clustered - Tall/Narrow) -->
+    <g transform="translate(650, 300)">
+
+        <!-- Base Line -->
+        <line x1="-150" y1="120" x2="150" y2="120" stroke="#777777" stroke-width="3" />
+        <text x="-140" y="145" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">0점</text>
+        <text x="140" y="145" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">100점</text>
+
+        <!-- Mean line -->
+        <line x1="0" y1="120" x2="0" y2="-120" stroke="#00ffcc" stroke-width="2" stroke-dasharray="6 4" />
+        <text x="0" y="145" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">평균 60</text>
+
+        <!-- Distribution Curve (Clustered) -->
+        <path d="M -140 120 Q -40 120 -20 -100 Q 0 -150 20 -100 Q 40 120 140 120" fill="none" stroke="#4da6ff"
+            stroke-width="4" filter="url(#glow)" />
+        <path d="M -140 120 Q -40 120 -20 -100 Q 0 -150 20 -100 Q 40 120 140 120 Z" fill="#4da6ff" opacity="0.2" />
+
+        <text x="0" y="-130" fill="#4da6ff" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">B반 (균등한 중간치)</text>
+
+        <text x="0" y="-70" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">사이좋게 60점</text>
+
+    </g>
+
+    <!-- Mathematical Deduction Panel -->
+    <g transform="translate(150, 480)">
+        <rect x="0" y="0" width="600" height="50" rx="10" fill="#111122" stroke="#ffaa00" stroke-width="2" />
+        <text x="300" y="32" fill="#ffaa00" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">결론: 개별 데이터 값을 암기하지 마라! 거대한 '숲의 종 모양(분포)'을 봐라!</text>
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="540" width="600" height="40" rx="10" fill="#221133" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="565" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">평균이라는 단 하나의 숫자는,
+        집단 내부에 도사리는 극단적 격차(산포도)를 가려버린다.</text>
+
+</svg>

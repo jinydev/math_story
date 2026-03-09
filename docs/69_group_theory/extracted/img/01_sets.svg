@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">집합 (Sets): 수학의 가장 순수한 블록 공장</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"중복 찌꺼기와 순서를 모조리
+        파괴하고 순수 혈통 ID만 남기는 결계 주머니"</text>
+
+    <!-- Left: Set Rules -->
+    <g transform="translate(50, 150)">
+        <rect x="0" y="0" width="350" height="250" rx="10" fill="#1b1122" stroke="#00ffcc" stroke-width="2" />
+        <text x="175" y="40" fill="#00ffcc" font-weight="bold" font-size="20" text-anchor="middle"
+            filter="url(#glow)">집합 절대 헌법</text>
+
+        <!-- Rule 1 -->
+        <text x="20" y="80" fill="#fff" font-weight="bold" font-size="18">1. 중복 용납 불가 (Unique)</text>
+        <text x="40" y="110" fill="#ff0055" font-weight="bold" font-size="16" text-decoration="line-through">{ 사과, 사과
+            }</text>
+        <path d="M 160 105 L 190 105" fill="none" stroke="#fff" stroke-width="2" marker-end="url(#arrow_w)" />
+        <text x="210" y="110" fill="#00ffcc" font-weight="bold" font-size="18">{ 사과 }</text>
+
+        <!-- Rule 2 -->
+        <path d="M 20 140 L 330 140" fill="none" stroke="#444" stroke-width="2" stroke-dasharray="4 4" />
+        <text x="20" y="170" fill="#fff" font-weight="bold" font-size="18">2. 순서 무시 (Unordered)</text>
+        <text x="40" y="200" fill="#ffff00" font-weight="bold" font-size="18">{ 1, 2, 3 }</text>
+        <text x="160" y="200" fill="#fff" font-weight="bold" font-size="18">==</text>
+        <text x="210" y="200" fill="#0088ff" font-weight="bold" font-size="18">{ 3, 1, 2 }</text>
+    </g>
+
+    <!-- Right: Venn Diagrams -->
+    <g transform="translate(450, 120)">
+
+        <!-- Union -->
+        <g transform="translate(0, 0)">
+            <circle cx="80" cy="50" r="40" fill="#0088ff" opacity="0.6" />
+            <circle cx="120" cy="50" r="40" fill="#ff00ff" opacity="0.6" />
+            <!-- Intersection area overwritten to match union color -->
+            <path d="M 100 20 A 40 40 0 0 1 100 80 A 40 40 0 0 1 100 20" fill="#ff00ff" opacity="0.8" />
+
+            <circle cx="80" cy="50" r="40" fill="none" stroke="#0088ff" stroke-width="2" />
+            <circle cx="120" cy="50" r="40" fill="none" stroke="#ff00ff" stroke-width="2" />
+            <text x="200" y="45" fill="#fff" font-weight="bold" font-size="20">A ∪ B (합집합)</text>
+            <text x="200" y="65" fill="#aaa" font-size="14">통합 연산 (비트 OR)</text>
+        </g>
+
+        <!-- Intersection -->
+        <g transform="translate(0, 110)">
+            <circle cx="80" cy="50" r="40" fill="none" stroke="#0088ff" stroke-width="2" />
+            <circle cx="120" cy="50" r="40" fill="none" stroke="#ff00ff" stroke-width="2" />
+            <!-- Fill intersection -->
+            <path d="M 100 15 A 40 40 0 0 1 100 85 A 40 40 0 0 1 100 15" fill="#ffff00" filter="url(#glow)" />
+
+            <text x="200" y="45" fill="#fff" font-weight="bold" font-size="20">A ∩ B (교집합)</text>
+            <text x="200" y="65" fill="#aaa" font-size="14">이중 필터링 (비트 AND)</text>
+        </g>
+
+        <!-- Difference -->
+        <g transform="translate(0, 220)">
+            <!-- Left circle full but subtract right -->
+            <path d="M 80 10 A 40 40 0 1 0 80 90 A 40 40 0 0 1 100 85 A 40 40 0 0 0 100 15 A 40 40 0 0 1 80 10 Z"
+                fill="#00ffcc" filter="url(#glow)" />
+            <circle cx="80" cy="50" r="40" fill="none" stroke="#00ffcc" stroke-width="2" />
+            <circle cx="120" cy="50" r="40" fill="none" stroke="#ff0055" stroke-width="2" />
+
+            <text x="200" y="45" fill="#fff" font-weight="bold" font-size="20">A - B (차집합)</text>
+            <text x="200" y="65" fill="#aaa" font-size="14">순수 혈통 추출</text>
+        </g>
+    </g>
+
+    <defs>
+        <marker id="arrow_w" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#ffffff" />
+        </marker>
+    </defs>
+
+    <!-- Big Alert Bottom -->
+    <rect x="100" y="480" width="700" height="90" rx="10" fill="#0b0b1a" stroke="#ffffff" stroke-width="2" />
+    <text x="450" y="515" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        100만 명의 방문자가 기록된 빅데이터 배열이 있을 때, 파이썬의 중복 폭파기인 <tspan fill="#ffff00" font-weight="bold">set()</tspan> 함수를
+    </text>
+    <text x="450" y="545" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        씌우기만 하면 단숨에 '순수 방문 시민 명단' 만 남는 거대한 거름망 시스템이다.
+    </text>
+</svg>

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '10. 예술과 음악이 택한 미의 열쇠'
+---
+
 # 10. 예술과 음악이 택한 미의 열쇠
 
 ## 1. 학습 목표 (Learning Objectives)

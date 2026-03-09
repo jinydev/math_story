@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 접시 돌리기의 황금점 삼각형의 무게중심 Centroid'
+---
+
 # 2. 접시 돌리기의 황금점: 삼각형의 무게중심 (Centroid)
 
 ## [도입부] 학습 목표 (Learning Objectives)

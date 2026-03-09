@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">두 녀석의 댄스파티: 상관관계 (Correlation)</text>
+
+    <!-- Subtitle -->
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"X원인이 춤을 출 때마다,
+        Y결과도 멱살 잡혀 똑같이 춤을 추는 소름 돋는 연결고리 스킬"</text>
+
+    <!-- The Three Scatter Plots -->
+
+    <!-- 1. Positive Correlation -->
+    <g transform="translate(100, 150)">
+        <!-- Axes -->
+        <line x1="0" y1="200" x2="200" y2="200" stroke="#777777" stroke-width="2" />
+        <line x1="0" y1="0" x2="0" y2="200" stroke="#777777" stroke-width="2" />
+        <text x="100" y="230" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">온도 상승
+            (X)</text>
+        <text x="-30" y="100" transform="rotate(-90, -30, 100)" fill="#ffffff" font-family="sans-serif" font-size="14"
+            text-anchor="middle">아이스크림 (Y)</text>
+
+        <!-- Points (Upwards trend) -->
+        <circle cx="20" cy="180" r="4" fill="#ffaa00" />
+        <circle cx="40" cy="160" r="4" fill="#ffaa00" />
+        <circle cx="50" cy="130" r="4" fill="#ffaa00" />
+        <circle cx="80" cy="140" r="4" fill="#ffaa00" />
+        <circle cx="90" cy="100" r="4" fill="#ffaa00" />
+        <circle cx="120" cy="90" r="4" fill="#ffaa00" />
+        <circle cx="140" cy="60" r="4" fill="#ffaa00" />
+        <circle cx="160" cy="70" r="4" fill="#ffaa00" />
+        <circle cx="180" cy="30" r="4" fill="#ffaa00" />
+        <circle cx="190" cy="50" r="4" fill="#ffaa00" />
+
+        <!-- Trend Line -->
+        <line x1="10" y1="190" x2="190" y2="30" stroke="#ffaa00" stroke-width="3" stroke-dasharray="4 4" />
+
+        <text x="100" y="270" fill="#ffaa00" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">양(+)의 상관관계</text>
+        <text x="100" y="295" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">"네가 가면 나도
+            간다!"</text>
+    </g>
+
+    <!-- 2. Negative Correlation -->
+    <g transform="translate(350, 150)">
+        <!-- Axes -->
+        <line x1="0" y1="200" x2="200" y2="200" stroke="#777777" stroke-width="2" />
+        <line x1="0" y1="0" x2="0" y2="200" stroke="#777777" stroke-width="2" />
+        <text x="100" y="230" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">온도 상승
+            (X)</text>
+        <text x="-30" y="100" transform="rotate(-90, -30, 100)" fill="#ffffff" font-family="sans-serif" font-size="14"
+            text-anchor="middle">전기난로 (Y)</text>
+
+        <!-- Points (Downwards trend) -->
+        <circle cx="20" cy="30" r="4" fill="#00ffcc" />
+        <circle cx="40" cy="50" r="4" fill="#00ffcc" />
+        <circle cx="50" cy="80" r="4" fill="#00ffcc" />
+        <circle cx="80" cy="70" r="4" fill="#00ffcc" />
+        <circle cx="90" cy="110" r="4" fill="#00ffcc" />
+        <circle cx="120" cy="120" r="4" fill="#00ffcc" />
+        <circle cx="140" cy="150" r="4" fill="#00ffcc" />
+        <circle cx="160" cy="140" r="4" fill="#00ffcc" />
+        <circle cx="180" cy="180" r="4" fill="#00ffcc" />
+        <circle cx="190" cy="160" r="4" fill="#00ffcc" />
+
+        <!-- Trend Line -->
+        <line x1="10" y1="30" x2="190" y2="180" stroke="#00ffcc" stroke-width="3" stroke-dasharray="4 4" />
+
+        <text x="100" y="270" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">음(-)의 상관관계</text>
+        <text x="100" y="295" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">"네가 살면 내가
+            죽는다!"</text>
+    </g>
+
+    <!-- 3. No Correlation -->
+    <g transform="translate(600, 150)">
+        <!-- Axes -->
+        <line x1="0" y1="200" x2="200" y2="200" stroke="#777777" stroke-width="2" />
+        <line x1="0" y1="0" x2="0" y2="200" stroke="#777777" stroke-width="2" />
+        <text x="100" y="230" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">머리카락 길이
+            (X)</text>
+        <text x="-30" y="100" transform="rotate(-90, -30, 100)" fill="#ffffff" font-family="sans-serif" font-size="14"
+            text-anchor="middle">수학 점수 (Y)</text>
+
+        <!-- Points (Random scatter) -->
+        <circle cx="30" cy="150" r="4" fill="#ff4d4d" />
+        <circle cx="50" cy="40" r="4" fill="#ff4d4d" />
+        <circle cx="60" cy="180" r="4" fill="#ff4d4d" />
+        <circle cx="80" cy="90" r="4" fill="#ff4d4d" />
+        <circle cx="100" cy="130" r="4" fill="#ff4d4d" />
+        <circle cx="120" cy="20" r="4" fill="#ff4d4d" />
+        <circle cx="140" cy="150" r="4" fill="#ff4d4d" />
+        <circle cx="150" cy="80" r="4" fill="#ff4d4d" />
+        <circle cx="180" cy="160" r="4" fill="#ff4d4d" />
+        <circle cx="190" cy="60" r="4" fill="#ff4d4d" />
+
+        <text x="100" y="100" fill="#ff4d4d" font-family="sans-serif" font-size="40" font-weight="bold"
+            text-anchor="middle" opacity="0.3">?</text>
+
+        <text x="100" y="270" fill="#ff4d4d" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">상관관계 0 (무관계)</text>
+        <text x="100" y="295" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">"모래알처럼 흩뿌려진
+            파편"</text>
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="500" width="600" height="50" rx="10" fill="#112233" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="530" fill="#ffffff" font-family="sans-serif" font-size="18" text-anchor="middle">빅데이터 추천 봇(빅테크
+        쇼핑몰)의 최하단 심장 코어!</text>
+
+</svg>

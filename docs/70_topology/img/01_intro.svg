@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#1864ab" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">첫 번째 공간: '고무판 기하학 (Topology)'</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"구부리고, 늘리고, 줄이는 것은 합법! '찢거나 이어 붙이기' 만 불법인
+        말랑말랑한 우주"</text>
+
+    <!-- Left: Rigid Geometry (Euclid) -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="200" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="100" y="25" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">유클리드 기하학 (딱딱함)</text>
+
+        <polygon points="50,110 90,50 150,110" fill="none" stroke="#fa5252" stroke-width="3" />
+
+        <!-- Measurements to show rigidness -->
+        <path d="M 50 110 L 90 50" stroke="transparent" id="p1" />
+        <text x="55" y="70" fill="#c92a2a" font-size="10" font-weight="bold" transform="rotate(55 60 70)">길이: 5cm</text>
+
+        <path d="M 100 55 C 100 65, 80 65, 80 55" fill="none" stroke="#212529" stroke-width="1" />
+        <text x="90" y="75" fill="#212529" font-size="10">60°</text>
+
+        <rect x="15" y="125" width="170" height="18" fill="#ffe3e3" rx="3" />
+        <text x="100" y="138" fill="#c92a2a" font-size="10" font-weight="bold" text-anchor="middle">길이, 각도, 면적이 절대 변하면 안
+            됨!</text>
+    </g>
+
+    <!-- Divider Arrow -->
+    <path d="M 280 145 C 300 120, 300 170, 320 145" fill="none" stroke="#1864ab" stroke-width="3"
+        marker-end="url(#arrow-blue)" />
+    <text x="300" y="120" fill="#1864ab" font-size="12" font-weight="bold" text-anchor="middle">고무처럼 변환</text>
+
+    <!-- Right: Topology (Flexible) -->
+    <g transform="translate(340, 80)">
+        <rect x="0" y="0" width="200" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="100" y="25" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">위상수학 (말랑말랑)</text>
+
+        <!-- Morphed triangle into an ellipse/circular blob -->
+        <path d="M 50 110 C 20 80, 80 20, 110 50 C 140 80, 180 120, 100 120 C 70 120, 60 130, 50 110" fill="#e7f5ff"
+            stroke="#339af0" stroke-width="3" />
+
+        <text x="100" y="85" fill="#1864ab" font-size="12" font-weight="bold" text-anchor="middle">"어차피</text>
+        <text x="100" y="100" fill="#1864ab" font-size="12" font-weight="bold" text-anchor="middle">구멍 없는 하나의 띠"</text>
+
+        <rect x="15" y="125" width="170" height="18" fill="#e7f5ff" rx="3" />
+        <text x="100" y="138" fill="#1864ab" font-size="10" font-weight="bold" text-anchor="middle">"연결 상태" 와 "구멍의 개수" 만
+            본다</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#1864ab" />
+        </marker>
+    </defs>
+</svg>

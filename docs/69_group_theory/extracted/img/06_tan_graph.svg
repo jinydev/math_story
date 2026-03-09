@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="40" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">점근선의 폭주 기둥: 탄젠트 함수 (Tangent)</text>
+
+    <!-- Axes -->
+    <line x1="50" y1="300" x2="850" y2="300" stroke="#555566" stroke-width="3" />
+    <polygon points="850,295 860,300 850,305" fill="#555566" />
+    <text x="830" y="330" fill="#aaaaaa" font-family="sans-serif" font-size="20">x (rad)</text>
+
+    <line x1="450" y1="550" x2="450" y2="50" stroke="#555566" stroke-width="3" />
+    <polygon points="445,50 450,40 455,50" fill="#555566" />
+    <text x="430" y="70" fill="#aaaaaa" font-family="sans-serif" font-size="20">y</text>
+    <text x="465" y="325" fill="#aaaaaa" font-family="sans-serif" font-size="16">0</text>
+
+    <!-- Asymptote Lines (점근선): x = -π/2, π/2, 3π/2 -->
+    <!-- Let Origin (0,0) be at (450, 300). Scale: 200px = π -->
+    <!-- -π/2 = 350, π/2 = 550, 3π/2 = 750, -3π/2 = 150 -->
+
+    <g stroke="#ff0055" stroke-width="3" stroke-dasharray="10 6" filter="url(#glow)">
+        <line x1="150" y1="50" x2="150" y2="550" />
+        <line x1="350" y1="50" x2="350" y2="550" />
+        <line x1="550" y1="50" x2="550" y2="550" />
+        <line x1="750" y1="50" x2="750" y2="550" />
+    </g>
+
+    <!-- Labels for Asymptotes -->
+    <g fill="#ffaa00" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">
+        <text x="150" y="570">-3π/2</text>
+        <text x="350" y="570">-π/2</text>
+        <text x="550" y="570">π/2 (90°)</text>
+        <text x="750" y="570">3π/2 (270°)</text>
+    </g>
+
+    <!-- Roots (0, π, -π etc) -->
+    <g fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">
+        <circle cx="250" cy="300" r="5" fill="#00ffcc" />
+        <text x="250" y="330">-π</text>
+
+        <circle cx="650" cy="300" r="5" fill="#00ffcc" />
+        <text x="650" y="330">π (180°)</text>
+    </g>
+
+    <!-- TANGENT CURVES -->
+    <!-- Cubic bezier approximations for branches. 
+       Main branch passing through origin (450, 300).
+       Approaching 350 on left (down) and 550 on right (up) 
+  -->
+    <g fill="none" stroke="#00ffcc" stroke-width="5" filter="url(#glow)">
+        <!-- Center Branch -->
+        <path d="M 360 550 C 400 400, 420 300, 450 300 C 480 300, 500 200, 540 50" />
+        <!-- Right Branch -->
+        <path d="M 560 550 C 600 400, 620 300, 650 300 C 680 300, 700 200, 740 50" />
+        <!-- Left Branch -->
+        <path d="M 160 550 C 200 400, 220 300, 250 300 C 280 300, 300 200, 340 50" />
+        <!-- Far Right partial -->
+        <path d="M 760 550 C 780 470, 800 380, 850 330" opacity="0.5" />
+        <path d="M 140 50 C 120 130, 100 220, 50 270" opacity="0.5" />
+    </g>
+
+    <!-- Explanation Tags -->
+    <rect x="560" y="80" width="180" height="70" rx="10" fill="#221122" stroke="#ff0055" stroke-width="2" />
+    <text x="650" y="105" fill="#ffaa00" font-family="sans-serif" font-size="16" font-weight="bold"
+        text-anchor="middle">접근 금지선 (점근선)</text>
+    <text x="650" y="130" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">분모(cos)가 0이
+        되어</text>
+    <text x="650" y="145" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">무한대로 폭주하는
+        구역</text>
+
+    <rect x="230" y="160" width="150" height="40" rx="5" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+    <text x="305" y="185" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+        text-anchor="middle">주기: 딱 π (반토막)</text>
+
+    <path d="M 230 180 L 120 180" stroke="#00ffcc" stroke-width="3" marker-end="url(#arrow)" />
+    <polygon points="125,180 140,170 140,190" fill="#00ffcc" />
+    <path d="M 380 180 L 490 180" stroke="#00ffcc" stroke-width="3" marker-end="url(#arrow)" />
+    <polygon points="485,180 470,170 470,190" fill="#00ffcc" />
+
+    <rect x="90" y="450" width="180" height="50" rx="10" fill="#113333" stroke="#00ffcc" stroke-width="2" />
+    <text x="180" y="482" fill="#00ffcc" font-family="monospace" font-size="26" font-weight="bold"
+        text-anchor="middle">y = tan(x)</text>
+
+</svg>

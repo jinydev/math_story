@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#1864ab" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">연속된 데이터와 점(Point)의 확률 0%</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"키가 정확히 173.000000...cm 일 확률은? 끝없는 소수점 해상도
+        앞에서는 0퍼센트!"</text>
+
+    <!-- Left: Discrete Data (Dots) -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">이산 데이터 (주사위)</text>
+
+        <line x1="20" y1="100" x2="200" y2="100" stroke="#adb5bd" stroke-width="2" />
+
+        <!-- Distinct Points -->
+        <circle cx="50" cy="100" r="5" fill="#e8590c" />
+        <text x="50" y="120" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">1</text>
+        <rect x="40" y="50" width="20" height="50" fill="#ffe3e3" stroke="#fa5252" />
+        <text x="50" y="45" fill="#fa5252" font-size="10" font-weight="bold" text-anchor="middle">16%</text>
+
+        <circle cx="110" cy="100" r="5" fill="#e8590c" />
+        <text x="110" y="120" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">2</text>
+        <rect x="100" y="50" width="20" height="50" fill="#ffe3e3" stroke="#fa5252" />
+        <text x="110" y="45" fill="#fa5252" font-size="10" font-weight="bold" text-anchor="middle">16%</text>
+
+        <circle cx="170" cy="100" r="5" fill="#e8590c" />
+        <text x="170" y="120" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">3</text>
+        <rect x="160" y="50" width="20" height="50" fill="#ffe3e3" stroke="#fa5252" />
+        <text x="170" y="45" fill="#fa5252" font-size="10" font-weight="bold" text-anchor="middle">16%</text>
+
+        <rect x="15" y="125" width="190" height="18" fill="#fff4e6" rx="3" />
+        <text x="110" y="138" fill="#d9480f" font-size="10" font-weight="bold" text-anchor="middle">"점(Point) 한 칸이 명확한
+            덩어리 존재"</text>
+    </g>
+
+    <!-- Divider -->
+    <path d="M 300 100 L 300 230" stroke="#adb5bd" stroke-width="2" stroke-dasharray="4,2" />
+
+    <!-- Right: Continuous Data (Area) -->
+    <g transform="translate(320, 80)">
+        <rect x="0" y="0" width="240" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="120" y="25" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">연속 데이터 (키,
+            몸무게)</text>
+
+        <line x1="20" y1="100" x2="220" y2="100" stroke="#adb5bd" stroke-width="2" />
+
+        <!-- Continuous Curve -->
+        <path d="M 20 100 Q 120 10, 220 100" fill="#e7f5ff" stroke="#339af0" stroke-width="2" />
+
+        <!-- The targeted exact point -> 0 area -->
+        <line x1="120" y1="50" x2="120" y2="100" stroke="#fa5252" stroke-width="3" />
+        <circle cx="120" cy="100" r="4" fill="#fa5252" />
+        <text x="120" y="115" fill="#c92a2a" font-size="10" font-weight="bold" text-anchor="middle">정확히
+            173.00...cm</text>
+
+        <text x="120" y="40" fill="#c92a2a" font-size="12" font-weight="bold" text-anchor="middle">두께가 없는 선 = 체적(넓이)
+            0</text>
+
+        <!-- The Box (Interval) -> Area > 0 -->
+        <path d="M 150 70 L 180 85 L 180 100 L 150 100 Z" fill="#b197fc" fill-opacity="0.6" stroke="#845ef7" />
+        <text x="165" y="115" fill="#6741d9" font-size="10" font-weight="bold" text-anchor="middle">175 ~ 177cm</text>
+        <text x="165" y="60" fill="#6741d9" font-size="10" font-weight="bold" text-anchor="middle">넓이가 생김!</text>
+
+        <rect x="15" y="125" width="210" height="18" fill="#d0ebff" rx="3" />
+        <text x="120" y="138" fill="#0b7285" font-size="10" font-weight="bold" text-anchor="middle">"오직 범위(Interval) 만이
+            면적(확률) 을 가진다"</text>
+    </g>
+
+</svg>

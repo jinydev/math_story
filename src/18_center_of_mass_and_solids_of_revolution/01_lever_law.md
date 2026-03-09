@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 아르키메데스의 마법 지레의 법칙 Law of Lever'
+---
+
 # 1. 아르키메데스의 마법: 지레의 법칙 (Law of Lever)
 
 ## [도입부] 학습 목표 (Learning Objectives)

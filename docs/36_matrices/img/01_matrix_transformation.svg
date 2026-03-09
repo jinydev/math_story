@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glowGreen">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="glowPink">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glowGreen)">행렬: 선형 변환 마법진 (Linear Transformation)</text>
+
+  <!-- Panel 1: Original Spacetime Grid (Left) -->
+  <g transform="translate(200, 300)">
+    <text x="0" y="-180" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#A0AEC0" text-anchor="middle">1. 평범한 데카르트 우주 (Original)</text>
+
+    <!-- Grid lines -->
+    <line x1="-120" y1="-120" x2="-120" y2="120" stroke="#4A5568" stroke-width="1" />
+    <line x1="-60" y1="-120" x2="-60" y2="120" stroke="#4A5568" stroke-width="1" />
+    <line x1="60" y1="-120" x2="60" y2="120" stroke="#4A5568" stroke-width="1" />
+    <line x1="120" y1="-120" x2="120" y2="120" stroke="#4A5568" stroke-width="1" />
+    
+    <line x1="-120" y1="-120" x2="120" y2="-120" stroke="#4A5568" stroke-width="1" />
+    <line x1="-120" y1="-60" x2="120" y2="-60" stroke="#4A5568" stroke-width="1" />
+    <line x1="-120" y1="60" x2="120" y2="60" stroke="#4A5568" stroke-width="1" />
+    <line x1="-120" y1="120" x2="120" y2="120" stroke="#4A5568" stroke-width="1" />
+
+    <!-- Axes -->
+    <line x1="0" y1="-150" x2="0" y2="150" stroke="#E2E8F0" stroke-width="2" />
+    <line x1="-150" y1="0" x2="150" y2="0" stroke="#E2E8F0" stroke-width="2" />
+
+    <!-- X and Y base unit vectors -->
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#68D391" stroke-width="4" filter="url(#glowGreen)" />
+    <circle cx="60" cy="0" r="5" fill="#68D391" filter="url(#glowGreen)" />
+    <text x="70" y="-10" font-family="'Courier New', monospace" font-size="16" font-weight="bold" fill="#68D391">i_hat [1, 0]</text>
+
+    <line x1="0" y1="0" x2="0" y2="-60" stroke="#F687B3" stroke-width="4" filter="url(#glowPink)" />
+    <circle cx="0" cy="-60" r="5" fill="#F687B3" filter="url(#glowPink)" />
+    <text x="-100" y="-60" font-family="'Courier New', monospace" font-size="16" font-weight="bold" fill="#F687B3">j_hat [0, 1]</text>
+  </g>
+
+  <!-- Magic Matrix Multiplier Array (Middle) -->
+  <g transform="translate(400, 300)">
+    <path d="M -20,-30 L 20,-30 L 20,30 L -20,30 Z" fill="#2D3748" stroke="#F6E05E" stroke-width="2" />
+    <path d="M -25,-40 C 0,-60 25,-40 25,-40 L 25,-20" fill="none" stroke="#F6E05E" stroke-width="3" marker-end="url(#arrowPink)" />
+    <text x="0" y="5" font-family="'Courier New', monospace" font-size="18" font-weight="bold" fill="#F6E05E" text-anchor="middle">✖</text>
+    <text x="0" y="55" font-family="'Courier New', monospace" font-size="14" fill="#F6E05E" text-anchor="middle" font-weight="bold">Matrix Transform!</text>
+  </g>
+
+  <!-- Panel 2: Warped Sheared Spacetime (Right) -->
+  <g transform="translate(600, 300)">
+    <text x="0" y="-180" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F6E05E" text-anchor="middle" filter="url(#glowGreen)">2. 행렬 충돌 후 왜곡된 우주 (Warped)</text>
+
+    <!-- Transformed grid (Sheared and stretched) -->
+    <!-- Base vector i_hat goes to [2, 1] -->
+    <!-- Base vector j_hat goes to [-1, 2] -->
+    
+    <line x1="-120" y1="-60" x2="-60" y2="60" stroke="#718096" stroke-width="1" />
+    <line x1="-60" y1="-30" x2="0" y2="90" stroke="#718096" stroke-width="1" />
+    <line x1="0" y1="-90" x2="60" y2="30" stroke="#718096" stroke-width="1" />
+    <line x1="60" y1="-60" x2="120" y2="60" stroke="#718096" stroke-width="1" />
+    
+    <line x1="-120" y1="-60" x2="60" y2="-150" stroke="#718096" stroke-width="1" />
+    <line x1="-60" y1="-30" x2="120" y2="-120" stroke="#718096" stroke-width="1" />
+    <line x1="-90" y1="90" x2="90" y2="0" stroke="#718096" stroke-width="1" />
+    <line x1="-30" y1="120" x2="150" y2="30" stroke="#718096" stroke-width="1" />
+
+    <!-- Axes Original Phantom -->
+    <line x1="0" y1="-150" x2="0" y2="150" stroke="#4A5568" stroke-width="1" stroke-dasharray="4,4" />
+    <line x1="-150" y1="0" x2="150" y2="0" stroke="#4A5568" stroke-width="1" stroke-dasharray="4,4" />
+
+    <!-- Transformed base unit vectors -->
+    <!-- Transformed i_hat: stretching out to right and slightly down -->
+    <line x1="0" y1="0" x2="100" y2="-20" stroke="#68D391" stroke-width="4" filter="url(#glowGreen)" />
+    <circle cx="100" cy="-20" r="5" fill="#68D391" filter="url(#glowGreen)" />
+    <text x="110" y="-30" font-family="'Courier New', monospace" font-size="16" font-weight="bold" fill="#68D391">New i_hat</text>
+
+    <!-- Transformed j_hat: shearing left and stretching up -->
+    <line x1="0" y1="0" x2="-30" y2="-100" stroke="#F687B3" stroke-width="4" filter="url(#glowPink)" />
+    <circle cx="-30" cy="-100" r="5" fill="#F687B3" filter="url(#glowPink)" />
+    <text x="-40" y="-115" font-family="'Courier New', monospace" font-size="16" font-weight="bold" fill="#F687B3" text-anchor="middle">New j_hat</text>
+  </g>
+  
+  <!-- Explanation Bottom Box -->
+  <rect x="100" y="520" width="600" height="40" fill="rgba(0,0,0,0.6)" rx="5" />
+  <text x="400" y="545" font-family="'Inter', sans-serif" font-size="14" fill="#E2E8F0" text-anchor="middle">"모든 격자 좌표계가 '행렬 숫자 매트릭스' 와 충돌하는 순간, 한 방에 찌개지고 비틀리는 역학 엔진!"</text>
+
+</svg>

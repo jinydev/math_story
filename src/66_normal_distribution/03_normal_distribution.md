@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '3. 신의 붓놀림 가장 완벽한 대칭, 정규분포 Normal Distribution'
+---
+
 # 3. 신의 붓놀림: 가장 완벽한 대칭, 정규분포 (Normal Distribution)
 
 ## [도입부] 학습 목표 (Learning Objectives)

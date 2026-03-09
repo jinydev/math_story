@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%">
+    <rect width="800" height="400" fill="#2d3436" />
+    
+    <!-- Title -->
+    <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#dfe6e9" text-anchor="middle">
+        코흐의 곡선(Koch Curve) 생성 애니메이션
+    </text>
+
+    <!-- Subtitle -->
+    <text x="400" y="70" font-family="Arial" font-size="16" fill="#ffeaa7" text-anchor="middle">
+        1단계(선분) → 2단계(텐트) → 3단계(자기유사성 번식)
+    </text>
+
+    <!-- Stage 1: Line -->
+    <g transform="translate(150, 200)">
+        <line x1="-100" y1="0" x2="100" y2="0" stroke="#74b9ff" stroke-width="6" />
+        <text x="0" y="40" font-family="Arial" font-size="20" font-weight="bold" fill="#74b9ff" text-anchor="middle">단계 1</text>
+    </g>
+
+    <!-- Arrow -->
+    <text x="310" y="200" font-family="Arial" font-size="30" font-weight="bold" fill="#b2bec3">→</text>
+
+    <!-- Stage 2: One iteration -->
+    <g transform="translate(450, 200)">
+        <!-- Path: (0,0) -> (66,0) -> (100,-58) -> (133,0) -> (200,0) (Scaled properly) -->
+        <!-- x ranges -100 to 100 -->
+        <!-- Center tent width 66.6, height 57.7 -->
+        <polyline points="-100,0 -33.3,0 0,-57.7 33.3,0 100,0" fill="none" stroke="#55efc4" stroke-width="4" stroke-linejoin="round"/>
+        <text x="0" y="40" font-family="Arial" font-size="20" font-weight="bold" fill="#55efc4" text-anchor="middle">단계 2</text>
+    </g>
+
+    <!-- Arrow -->
+    <text x="610" y="200" font-family="Arial" font-size="30" font-weight="bold" fill="#b2bec3">→</text>
+
+    <!-- Stage 3: Two iterations -->
+    <g transform="translate(700, 200)">
+        <polyline points="-60,0 -40,0 -30,-17.3 -20,0 
+                          -10,-17.3 -30,-52 0,-34.6 
+                          10,-52 20,-34.6 30,-52 10,-17.3 
+                          20,0 30,-17.3 40,0 60,0" 
+                  fill="none" stroke="#ff7675" stroke-width="2" stroke-linejoin="round" />
+        <text x="0" y="40" font-family="Arial" font-size="20" font-weight="bold" fill="#ff7675" text-anchor="middle">단계 3</text>
+
+        <!-- Animate the path drawing for effect -->
+        <animate attributeName="opacity" values="0.2; 1; 1; 0.2" dur="3s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Footnote -->
+    <text x="400" y="350" font-family="Arial" font-size="18" fill="#a29bfe" text-anchor="middle">
+        길이는 1.33배씩 무한정 늘어나지만, 저 투명한 박스를 결코 벗어나지 않습니다.
+    </text>
+
+</svg>

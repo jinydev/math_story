@@ -1,0 +1,13 @@
+- title: 자바기초
+  url: /basic
+- title: 객체지향
+  url: /oop
+- title: 입출력
+  url: /part03
+- title: 데이터베이스
+  url: /database
+
+- title: GUI
+  url: /gui
+- title: 백엔드
+  url: /backend

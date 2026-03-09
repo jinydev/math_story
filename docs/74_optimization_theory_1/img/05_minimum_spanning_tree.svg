@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="500">
+    <defs>
+        <style>
+            .bg {
+                fill: #f1f5f9;
+                rx: 12;
+                stroke: #cbd5e1;
+                stroke-width: 2;
+            }
+
+            /* Network Edges */
+            .edge-ignore {
+                stroke: #cbd5e1;
+                stroke-width: 4;
+                fill: none;
+                stroke-dasharray: 8 4;
+            }
+
+            .edge-selected {
+                stroke: #10b981;
+                stroke-width: 8;
+                fill: none;
+                stroke-linecap: round;
+            }
+
+            .edge-reject {
+                stroke: #ef4444;
+                stroke-width: 4;
+                fill: none;
+                opacity: 0.5;
+            }
+
+            /* Edge Weights */
+            .weight-bg {
+                fill: #ffffff;
+                stroke: #94a3b8;
+                stroke-width: 1;
+                rx: 12;
+            }
+
+            .weight-text {
+                font-family: 'Courier New', monospace;
+                font-size: 14px;
+                font-weight: bold;
+                fill: #475569;
+                text-anchor: middle;
+                dominant-baseline: central;
+            }
+
+            .weight-text-selected {
+                font-family: 'Courier New', monospace;
+                font-size: 14px;
+                font-weight: bold;
+                fill: #10b981;
+                text-anchor: middle;
+                dominant-baseline: central;
+            }
+
+            .weight-text-reject {
+                font-family: 'Courier New', monospace;
+                font-size: 14px;
+                font-weight: bold;
+                fill: #ef4444;
+                text-anchor: middle;
+                dominant-baseline: central;
+                text-decoration: line-through;
+            }
+
+            /* Nodes */
+            .node {
+                fill: #334155;
+                stroke: #94a3b8;
+                stroke-width: 3;
+                r: 24;
+            }
+
+            .node-text {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                fill: #ffffff;
+                text-anchor: middle;
+                dominant-baseline: central;
+            }
+
+            /* Labels */
+            .title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 26px;
+                fill: #0f172a;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .subtitle {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 16px;
+                fill: #64748b;
+                font-weight: normal;
+                text-anchor: middle;
+            }
+
+            .step-info {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 15px;
+                fill: #1d4ed8;
+                font-weight: bold;
+            }
+        </style>
+    </defs>
+
+    <!-- Background -->
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="45" class="title">크루스칼 알고리즘: 최소 비용 신장 트리 (MST)</text>
+    <text x="400" y="70" class="subtitle">탐욕 원칙(Greedy): 무조건 가장 저렴한 선부터 연결하되, '회로(Cycle)'가 형성되면 가차 없이 버린다!</text>
+
+    <g transform="translate(40, 120)">
+
+        <!-- Edges Definition (A-B: 3, A-C: 5, B-C: 4, B-D: 8, C-D: 2, C-E: 7, D-E: 6) -->
+        <!-- Nodes coords: A(100, 150), B(300, 50), C(300, 250), D(500, 150), E(700, 250) -->
+
+        <!-- 1. C-D (Cost 2): SELECTED (Cheapest) -->
+        <line x1="300" y1="250" x2="500" y2="150" class="edge-selected" />
+        <rect x="385" y="185" width="30" height="24" class="weight-bg" stroke="#10b981" />
+        <text x="400" y="197" class="weight-text-selected">2</text>
+
+        <!-- 2. A-B (Cost 3): SELECTED -->
+        <line x1="100" y1="150" x2="300" y2="50" class="edge-selected" />
+        <rect x="185" y="85" width="30" height="24" class="weight-bg" stroke="#10b981" />
+        <text x="200" y="97" class="weight-text-selected">3</text>
+
+        <!-- 3. B-C (Cost 4): SELECTED -->
+        <line x1="300" y1="50" x2="300" y2="250" class="edge-selected" />
+        <rect x="285" y="135" width="30" height="24" class="weight-bg" stroke="#10b981" />
+        <text x="300" y="147" class="weight-text-selected">4</text>
+
+        <!-- 4. A-C (Cost 5): REJECTED (Forms Cycle A-B-C-A) -->
+        <line x1="100" y1="150" x2="300" y2="250" class="edge-reject" />
+        <rect x="185" y="185" width="30" height="24" class="weight-bg" stroke="#ef4444" />
+        <text x="200" y="197" class="weight-text-reject">5</text>
+        <!-- CYCLE MARKER for A-C -->
+        <circle cx="200" cy="197" r="18" stroke="#ef4444" stroke-width="3" fill="none" opacity="0.6" />
+        <line x1="187" y1="184" x2="213" y2="210" stroke="#ef4444" stroke-width="3" opacity="0.6" />
+
+        <!-- 5. D-E (Cost 6): SELECTED -->
+        <line x1="500" y1="150" x2="700" y2="250" class="edge-selected" />
+        <rect x="585" y="185" width="30" height="24" class="weight-bg" stroke="#10b981" />
+        <text x="600" y="197" class="weight-text-selected">6</text>
+
+        <!-- 6. C-E (Cost 7): REJECTED (Forms Cycle C-D-E-C) -->
+        <line x1="300" y1="250" x2="700" y2="250" class="edge-reject" />
+        <rect x="485" y="238" width="30" height="24" class="weight-bg" stroke="#ef4444" />
+        <text x="500" y="250" class="weight-text-reject">7</text>
+
+        <!-- 7. B-D (Cost 8): IGNORED (Tree is already complete: V=5, E=4) -->
+        <line x1="300" y1="50" x2="500" y2="150" class="edge-ignore" />
+        <rect x="385" y="85" width="30" height="24" class="weight-bg" />
+        <text x="400" y="97" class="weight-text">8</text>
+
+        <!-- Nodes -->
+        <circle cx="100" cy="150" class="node" /> <text x="100" y="152" class="node-text">A</text>
+        <circle cx="300" cy="50" class="node" /> <text x="300" y="52" class="node-text">B</text>
+        <circle cx="300" cy="250" class="node" /> <text x="300" y="252" class="node-text">C</text>
+        <circle cx="500" cy="150" class="node" /> <text x="500" y="152" class="node-text">D</text>
+        <circle cx="700" cy="250" class="node" /> <text x="700" y="252" class="node-text">E</text>
+
+    </g>
+
+    <!-- Explanation Panel -->
+    <rect x="50" y="400" width="700" height="80" rx="6" fill="#ffffff" stroke="#94a3b8" />
+    <text x="65" y="425" class="step-info">크루스칼(Kruskal) 배선 순서:</text>
+    <text x="65" y="445" font-family="'Pretendard', sans-serif" font-size="14px" fill="#334155">
+        1. 가격 정렬: [2], [3], [4], <tspan fill="#ef4444" text-decoration="line-through">[5:회로오류]</tspan>, [6], <tspan
+            fill="#ef4444" text-decoration="line-through">[7:회로오류]</tspan>, [8:무시]
+    </text>
+    <text x="65" y="465" font-family="'Pretendard', sans-serif" font-size="14px" fill="#10b981" font-weight="bold">
+        2. 최종 신장 트리 완성: 총 연결 비용 = 2 + 3 + 4 + 6 = 15 억 원. (5개 도시 완벽 연결)
+    </text>
+</svg>

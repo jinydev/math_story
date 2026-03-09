@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        <pattern id="hatch_blue" width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+            <line x1="0" y1="0" x2="0" y2="10" stroke="#4da6ff" stroke-width="2" opacity="0.6" />
+        </pattern>
+    </defs>
+
+    <text x="450" y="40" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">눈으로 푸는 파동 스캐너: 삼각방정식과 삼각부등식</text>
+
+    <!-- Target Info -->
+    <rect x="250" y="70" width="400" height="50" rx="10" fill="#221122" stroke="#ffaa00" stroke-width="2"
+        filter="url(#glow)" />
+    <text x="450" y="103" fill="#ffaa00" font-family="monospace" font-size="24" font-weight="bold"
+        text-anchor="middle">미션: sin(x) &lt; 0.5 타겟 색출</text>
+
+    <!-- Axes -->
+    <line x1="100" y1="350" x2="800" y2="350" stroke="#888899" stroke-width="3" />
+    <polygon points="800,345 810,350 800,355" fill="#888899" />
+
+    <line x1="150" y1="500" x2="150" y2="150" stroke="#888899" stroke-width="3" />
+    <polygon points="145,150 150,140 155,150" fill="#888899" />
+
+    <!-- Y axis markers -->
+    <text x="130" y="155" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+        text-anchor="end">1</text>
+    <line x1="145" y1="150" x2="155" y2="150" stroke="#00ffcc" stroke-width="2" />
+
+    <text x="130" y="505" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+        text-anchor="end">-1</text>
+    <line x1="145" y1="500" x2="155" y2="500" stroke="#00ffcc" stroke-width="2" />
+
+    <!-- X axis markers -->
+    <g fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">
+        <text x="150" y="380">0</text>
+
+        <line x1="300" y1="345" x2="300" y2="355" stroke="#aaaaaa" stroke-width="2" />
+        <text x="300" y="380">π/2</text>
+
+        <line x1="450" y1="345" x2="450" y2="355" stroke="#aaaaaa" stroke-width="2" />
+        <text x="450" y="380">π</text>
+
+        <line x1="600" y1="345" x2="600" y2="355" stroke="#aaaaaa" stroke-width="2" />
+        <text x="600" y="380">3π/2</text>
+
+        <line x1="750" y1="345" x2="750" y2="355" stroke="#aaaaaa" stroke-width="2" />
+        <text x="750" y="380">2π</text>
+    </g>
+
+    <!-- THE SINE WAVE GRAPH (y = sin(x)) -->
+    <path
+        d="M 150 350 C 205 350, 245 150, 300 150 C 355 150, 395 350, 450 350 C 505 350, 545 500, 600 500 C 655 500, 695 350, 750 350"
+        fill="none" stroke="#00ffcc" stroke-width="4" filter="url(#glow)" />
+
+    <text x="300" y="130" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+        text-anchor="middle">y = sin(x) 파동 레이더</text>
+
+    <!-- THE LASER CUT LINE (y = 0.5) -->
+    <line x1="100" y1="250" x2="800" y2="250" stroke="#ff0055" stroke-width="4" stroke-dasharray="10 5"
+        filter="url(#glow)" />
+    <text x="130" y="240" fill="#ff0055" font-family="sans-serif" font-size="20" font-weight="bold"
+        text-anchor="end">0.5</text>
+    <rect x="680" y="220" width="120" height="30" fill="#110510" rx="5" stroke="#ff0055" stroke-width="1" />
+    <text x="740" y="242" fill="#ff0055" font-family="sans-serif" font-size="18" font-weight="bold"
+        text-anchor="middle">y = 0.5 레이저빔</text>
+
+    <!-- INTERSECTION POINTS -->
+    <!-- Roughly at x=200 (30 deg or π/6) and x=400 (150 deg or 5π/6) -->
+    <circle cx="200" cy="250" r="10" fill="#ffff00" stroke="#000" stroke-width="2" filter="url(#glow)" />
+    <path d="M 200 250 L 200 350" stroke="#ffff00" stroke-width="2" stroke-dasharray="4 4" />
+    <text x="200" y="330" fill="#ffff00" font-family="sans-serif" font-size="16" font-weight="bold"
+        text-anchor="middle">π/6 (30°)</text>
+
+    <circle cx="400" cy="250" r="10" fill="#ffff00" stroke="#000" stroke-width="2" filter="url(#glow)" />
+    <path d="M 400 250 L 400 350" stroke="#ffff00" stroke-width="2" stroke-dasharray="4 4" />
+    <text x="400" y="330" fill="#ffff00" font-family="sans-serif" font-size="16" font-weight="bold"
+        text-anchor="middle">5π/6 (150°)</text>
+
+    <!-- Inequality Highlighting: sin(x) < 0.5 -->
+    <!-- Means shading the area where sine curve is BELOW the red laser -->
+
+    <!-- Zone 1: 0 to π/6 (150 to 200) -->
+    <rect x="150" y="350" width="50" height="15" fill="#4da6ff" opacity="0.6" />
+    <text x="175" y="440" fill="#4da6ff" font-family="sans-serif" font-size="16" font-weight="bold"
+        text-anchor="middle">통과 구역 1</text>
+    <path d="M 175 420 L 175 370" stroke="#4da6ff" stroke-width="2" marker-end="url(#arrow)" />
+    <polygon points="175,370 170,380 180,380" fill="#4da6ff" />
+
+    <!-- Zone 2: 5π/6 to 2π (400 to 750) -->
+    <rect x="400" y="350" width="350" height="15" fill="#4da6ff" opacity="0.6" />
+    <text x="575" y="550" fill="#4da6ff" font-family="sans-serif" font-size="20" font-weight="bold"
+        text-anchor="middle">통과 구역 2 (레이저보다 낮은 심해)</text>
+    <path d="M 575 520 L 575 370" stroke="#4da6ff" stroke-width="2" marker-end="url(#arrow)" />
+    <polygon points="575,370 570,380 580,380" fill="#4da6ff" />
+
+    <!-- Danger Zone -->
+    <path d="M 300 240 L 300 170" stroke="#ff0055" stroke-width="3" stroke-dasharray="6 3" />
+    <text x="300" y="150" fill="#ff0055" font-family="sans-serif" font-size="16" font-weight="bold"
+        text-anchor="middle">여긴 0.5보다 높아서 탈락!</text>
+
+    <!-- Result Banner -->
+    <rect x="250" y="480" width="100" height="40" rx="5" fill="#2b1133" stroke="#ff00ff" stroke-width="2" />
+    <text x="300" y="505" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">방정식 정답</text>
+    <rect x="150" y="530" width="300" height="40" rx="5" fill="#112233" stroke="#4da6ff" stroke-width="2" />
+    <text x="300" y="555" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">x = 30° 또는
+        150°</text>
+
+</svg>

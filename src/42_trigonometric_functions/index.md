@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 49. 삼각함수 Trigonometric Functions'
+---
+
 # 수학이야기 49. 삼각함수 (Trigonometric Functions)
 
 ## 📌 학습 개요

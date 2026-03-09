@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="400">
+    <defs>
+        <style>
+            .bg {
+                fill: #0f172a;
+                rx: 10;
+                stroke: #334155;
+                stroke-width: 2;
+            }
+
+            /* Element colors based on alchemy/Plato */
+            .fire {
+                fill: #ef4444;
+                fill-opacity: 0.15;
+                stroke: #dc2626;
+                stroke-width: 2.5;
+                stroke-linejoin: round;
+            }
+
+            .earth {
+                fill: #eab308;
+                fill-opacity: 0.15;
+                stroke: #ca8a04;
+                stroke-width: 2.5;
+                stroke-linejoin: round;
+            }
+
+            .air {
+                fill: #60a5fa;
+                fill-opacity: 0.15;
+                stroke: #3b82f6;
+                stroke-width: 2.5;
+                stroke-linejoin: round;
+            }
+
+            .water {
+                fill: #34d399;
+                fill-opacity: 0.15;
+                stroke: #10b981;
+                stroke-width: 2.5;
+                stroke-linejoin: round;
+            }
+
+            .cosmos {
+                fill: #c084fc;
+                fill-opacity: 0.15;
+                stroke: #a855f7;
+                stroke-width: 2.5;
+                stroke-linejoin: round;
+            }
+
+            .hidden-edge {
+                stroke-dasharray: 4 4;
+                opacity: 0.5;
+            }
+
+            .title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 20px;
+                fill: #f8fafc;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .label {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 15px;
+                fill: #f8fafc;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .sub {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 13px;
+                fill: #94a3b8;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="300" y="40" class="title">신이 세상을 창조한 5개의 완벽한 블록: 플라톤 입체</text>
+
+    <!-- 1. 정사면체 (Tetrahedron) - 불(Fire) -->
+    <g transform="translate(100, 140)">
+        <!-- Back wireframe -->
+        <path d="M 0 -35 L 0 15" class="fire hidden-edge" />
+        <path d="M -35 25 L 0 15" class="fire hidden-edge" />
+        <path d="M 35 25 L 0 15" class="fire hidden-edge" />
+        <!-- Front faces -->
+        <polygon points="0,-35 -35,25 35,25" class="fire" />
+        <text x="0" y="60" class="label">정사면체</text>
+        <text x="0" y="80" class="sub" fill="#ef4444">🔥 불 (Fire)</text>
+        <text x="0" y="100" class="sub">면: 정삼각형 4개</text>
+    </g>
+
+    <!-- 2. 정육면체 (Hexahedron / Cube) - 흙(Earth) -->
+    <g transform="translate(230, 140)">
+        <path d="M -20 -35 L -20 15 L 20 15 L 20 -35 Z" class="earth hidden-edge" />
+        <path d="M -35 -20 L -20 -35" class="earth hidden-edge" />
+        <path d="M -35 30 L -20 15" class="earth hidden-edge" />
+        <polygon points="-35,-20 15,-20 35,-35 -20,-35" class="earth" />
+        <polygon points="15,-20 35,-35 35,15 15,30" class="earth" />
+        <polygon points="-35,-20 15,-20 15,30 -35,30" class="earth" />
+        <text x="0" y="60" class="label">정육면체</text>
+        <text x="0" y="80" class="sub" fill="#eab308">🪨 흙 (Earth)</text>
+        <text x="0" y="100" class="sub">면: 정사각형 6개</text>
+    </g>
+
+    <!-- 3. 정팔면체 (Octahedron) - 공기(Air) -->
+    <g transform="translate(370, 140)">
+        <polygon points="-30,5 30,-5 0,-40" class="air hidden-edge" />
+        <polygon points="-30,5 30,-5 0,30" class="air hidden-edge" />
+        <polygon points="-30,5 0,15 30,-5" class="air" />
+        <polygon points="-30,5 0,-40 0,15" class="air" />
+        <polygon points="30,-5 0,-40 0,15" class="air" />
+        <polygon points="-30,5 0,30 0,15" class="air" />
+        <polygon points="30,-5 0,30 0,15" class="air" />
+        <text x="0" y="60" class="label">정팔면체</text>
+        <text x="0" y="80" class="sub" fill="#60a5fa">💨 공기 (Air)</text>
+        <text x="0" y="100" class="sub">면: 정삼각형 8개</text>
+    </g>
+
+    <!-- 4. 정이십면체 (Icosahedron) - 물(Water) -->
+    <g transform="translate(500, 140)">
+        <!-- Simplified Abstract Shape for SVG size limits -->
+        <polygon points="0,-40 -35,-15 -20,30 20,30 35,-15" class="water" />
+        <polygon points="0,-40 -20,5 20,5" class="water" />
+        <polygon points="-35,-15 -20,5 -20,30" class="water" />
+        <polygon points="35,-15 20,5 20,30" class="water" />
+        <polygon points="-20,30 0,40 20,30" class="water" />
+        <polygon points="-20,5 0,40 20,5" class="water" />
+        <text x="0" y="60" class="label">정이십면체</text>
+        <text x="0" y="80" class="sub" fill="#34d399">💧 물 (Water)</text>
+        <text x="0" y="100" class="sub">면: 정삼각형 20개</text>
+    </g>
+
+    <!-- 5. 정십이면체 (Dodecahedron) - 우주(Quintessence) -->
+    <g transform="translate(300, 310)">
+        <!-- Simplified Abstract Dodecahedron (Pentagons) -->
+        <polygon points="-25,-20 0,-35 25,-20 15,10 -15,10" class="cosmos" />
+        <polygon points="-35,-5 -25,-20 -15,10 -25,25 -40,15" class="cosmos" />
+        <polygon points="35,-5 25,-20 15,10 25,25 40,15" class="cosmos" />
+        <polygon points="-15,10 15,10 25,25 0,40 -25,25" class="cosmos" />
+        <text x="0" y="55" class="label">정십이면체</text>
+        <text x="0" y="75" class="sub" fill="#c084fc">✨ 우주 (Quintessence)</text>
+        <text x="0" y="95" class="sub">면: 정오각형 12개</text>
+    </g>
+
+</svg>

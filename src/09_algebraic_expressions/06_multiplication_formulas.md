@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '06. 여섯 번째 수업 조립식 수학 퍼즐, 곱셈공식 Multiplication Formulas'
+---
+
 # 06. 여섯 번째 수업: 조립식 수학 퍼즐, 곱셈공식 (Multiplication Formulas)
 
 지금까지 배운 분배법칙은 식 앞에 숫자가 곱해졌을 때 식구들에게 골고루 나눠주는 법칙이었습니다. 

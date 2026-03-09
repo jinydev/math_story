@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 세 번째 수업 소수 이야기 Prime Numbers'
+---
+
 # 03. 세 번째 수업: 소수 이야기 (Prime Numbers)
 
 자연수를 블록 장난감인 '레고(Lego)'에 비유해 볼까요?

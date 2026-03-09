@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '02. 공간을 종이로 펼치다 전개도 매핑 Net'
+---
+
 # 02. 공간을 종이로 펼치다: 전개도 매핑 (Net)
 
 ## 1. 학습 목표 (Learning Objectives)

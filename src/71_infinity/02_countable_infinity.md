@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '02. 셀 수 있는 무한 알레프 널'
+---
+
 # 02. 셀 수 있는 무한: 알레프 널($\aleph_0$)
 
 ## 1. 학습 목표 (Learning Objectives)

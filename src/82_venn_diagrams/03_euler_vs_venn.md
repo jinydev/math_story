@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 엄격함 vs 직관 오일러와 벤 다이어그램의 충돌'
+---
+
 # 03. 엄격함 vs 직관: 오일러와 벤 다이어그램의 충돌
 
 ## 1. 학습 목표 (Learning Objectives)

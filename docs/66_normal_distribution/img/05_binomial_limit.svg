@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#862e9c" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">이항분포가 정규분포로 진화하는 마법 (n → ∞)</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"동전을 던지는 횟수(n)가 무한히 늘어나면, 찌그러진 막대기들이 완벽한 종
+        모양(Bell Curve)으로 융합된다!"</text>
+
+    <!-- Stage 1 (n=5) -->
+    <g transform="translate(30, 80)">
+        <rect x="0" y="0" width="160" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="80" y="25" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">n = 5 (횟수 부족)</text>
+
+        <line x1="10" y1="120" x2="150" y2="120" stroke="#adb5bd" stroke-width="2" />
+
+        <!-- Bars -->
+        <rect x="25" y="115" width="20" height="5" fill="#ffc9c9" stroke="#fa5252" />
+        <rect x="55" y="80" width="20" height="40" fill="#ffc9c9" stroke="#fa5252" />
+        <rect x="85" y="50" width="20" height="70" fill="#ffc9c9" stroke="#fa5252" />
+        <rect x="115" y="90" width="20" height="30" fill="#ffc9c9" stroke="#fa5252" />
+
+        <text x="80" y="140" fill="#c92a2a" font-size="10" font-weight="bold" text-anchor="middle">울퉁불퉁한 이산 막대기</text>
+    </g>
+
+    <!-- Arrow -->
+    <path d="M 200 140 L 220 140" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow-purple)" />
+
+    <!-- Stage 2 (n=50) -->
+    <g transform="translate(230, 80)">
+        <rect x="0" y="0" width="160" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="80" y="25" fill="#f59f00" font-size="14" font-weight="bold" text-anchor="middle">n = 50 (융합 시작)</text>
+
+        <line x1="10" y1="120" x2="150" y2="120" stroke="#adb5bd" stroke-width="2" />
+
+        <!-- Many smaller bars showing bell shape -->
+        <rect x="20" y="118" width="6" height="2" fill="#ffe8cc" stroke="#e8590c" />
+        <rect x="28" y="115" width="6" height="5" fill="#ffe8cc" stroke="#e8590c" />
+        <rect x="36" y="105" width="6" height="15" fill="#ffe8cc" stroke="#e8590c" />
+        <rect x="44" y="90" width="6" height="30" fill="#ffe8cc" stroke="#e8590c" />
+        <rect x="52" y="70" width="6" height="50" fill="#ffe8cc" stroke="#e8590c" />
+        <rect x="60" y="50" width="6" height="70" fill="#ffe8cc" stroke="#e8590c" />
+        <rect x="68" y="40" width="6" height="80" fill="#ffe8cc" stroke="#e8590c" />
+        <rect x="76" y="45" width="6" height="75" fill="#ffe8cc" stroke="#e8590c" />
+        <rect x="84" y="55" width="6" height="65" fill="#ffe8cc" stroke="#e8590c" />
+        <rect x="92" y="75" width="6" height="45" fill="#ffe8cc" stroke="#e8590c" />
+        <rect x="100" y="95" width="6" height="25" fill="#ffe8cc" stroke="#e8590c" />
+        <rect x="108" y="110" width="6" height="10" fill="#ffe8cc" stroke="#e8590c" />
+        <rect x="116" y="117" width="6" height="3" fill="#ffe8cc" stroke="#e8590c" />
+
+        <text x="80" y="140" fill="#d9480f" font-size="10" font-weight="bold" text-anchor="middle">점점 부드러운 산이 됨</text>
+    </g>
+
+    <!-- Arrow -->
+    <path d="M 400 140 L 420 140" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow-purple)" />
+
+    <!-- Stage 3 (n=large, Normal dist) -->
+    <g transform="translate(430, 80)">
+        <rect x="0" y="0" width="160" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="80" y="25" fill="#862e9c" font-size="14" font-weight="bold" text-anchor="middle">n 이 무한대 (진화 완료)</text>
+
+        <line x1="10" y1="120" x2="150" y2="120" stroke="#adb5bd" stroke-width="2" />
+
+        <!-- Smooth Curve -->
+        <path d="M 15 120 C 40 120, 60 40, 80 40 C 100 40, 120 120, 145 120" fill="#f3d9fa" fill-opacity="0.8"
+            stroke="#862e9c" stroke-width="3" />
+
+        <text x="80" y="115" fill="#ae3ec9" font-size="14" font-weight="bold" text-anchor="middle">N(np, npq)</text>
+
+        <text x="80" y="140" fill="#ae3ec9" font-size="10" font-weight="bold" text-anchor="middle">완벽한 연속 정규 곡선
+            폭발!</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-purple" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#862e9c" />
+        </marker>
+    </defs>
+</svg>

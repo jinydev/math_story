@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '05. 하늘을 가르는 무지개 포물선 곡선과의 만남 Python'
+---
+
 # 05. 하늘을 가르는 무지개: 포물선 곡선과의 만남 (Python)
 
 ## 1. 학습 목표 (Learning Objectives)

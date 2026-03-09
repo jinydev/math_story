@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '10. 암호 Cryptography 비밀 수학의 세계'
+---
+
 # 10. 암호 (Cryptography: 비밀 수학의 세계)
 
 ## 이 단원의 핵심 (Chapter Focus)

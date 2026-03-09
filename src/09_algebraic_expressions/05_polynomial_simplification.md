@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '05. 다섯 번째 수업 다항식 간단명료하게 정리하기 Polynomial Simplification'
+---
+
 # 05. 다섯 번째 수업: 다항식 간단명료하게 정리하기 (Polynomial Simplification)
 
 지금까지 우리는 $x$ 하나만 덩그러니 있는 식(일차식)을 다루었습니다. 하지만 세상이 그렇게 호락호락하지 않죠?

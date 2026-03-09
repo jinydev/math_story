@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">거리 축소가 만드는 기적: 할선(Secant) → 접선(Tangent)</text>
+
+    <!-- Curve setup -->
+    <g transform="translate(100, 150)">
+        <!-- Axes -->
+        <line x1="0" y1="350" x2="750" y2="350" stroke="#00ffcc" stroke-width="3" />
+        <line x1="50" y1="400" x2="50" y2="0" stroke="#00ffcc" stroke-width="3" />
+
+        <!-- Curve -->
+        <path d="M 50 300 Q 250 250 650 50" fill="none" stroke="#ff0055" stroke-width="6" filter="url(#glow)" />
+
+        <!-- Fixed Point A -->
+        <circle cx="150" cy="285" r="8" fill="#ffff00" stroke="#fff" stroke-width="2" filter="url(#glow)" />
+        <text x="90" y="270" fill="#ffff00" font-family="sans-serif" font-size="20" font-weight="bold">타겟 픽셀 A</text>
+
+        <!-- Point B Sequence (Moving closer to A) -->
+
+        <!-- Phase 1: Far way -->
+        <circle cx="550" cy="110" r="6" fill="#4da6ff" />
+        <text x="560" y="100" fill="#4da6ff" font-family="sans-serif" font-size="16">B (간격 1)</text>
+        <line x1="50" y1="328" x2="650" y2="66" stroke="#4da6ff" stroke-width="2" stroke-dasharray="8 4" />
+
+        <!-- Phase 2: Closer -->
+        <circle cx="400" cy="170" r="6" fill="#ffaa00" />
+        <text x="410" y="160" fill="#ffaa00" font-family="sans-serif" font-size="16">B (간격 0.5)</text>
+        <line x1="50" y1="330" x2="600" y2="78" stroke="#ffaa00" stroke-width="2" stroke-dasharray="8 4" />
+
+        <!-- Phase 3: Even Closer -->
+        <circle cx="280" cy="225" r="6" fill="#00ffcc" />
+        <text x="290" y="215" fill="#00ffcc" font-family="sans-serif" font-size="16">B (간격 0.1)</text>
+        <line x1="50" y1="335" x2="550" y2="90" stroke="#00ffcc" stroke-width="2" stroke-dasharray="8 4" />
+
+        <!-- Phase 4: Limit Reach (Tangent!) -->
+        <!-- Tangent line at A -->
+        <!-- slope of tangent matches curve at A -->
+        <line x1="-50" y1="350" x2="450" y2="187" stroke="#ffffff" stroke-width="6" filter="url(#glow)" />
+        <text x="220" y="260" fill="#ffffff" font-family="sans-serif" font-size="24" font-weight="bold"
+            transform="rotate(-18, 220, 260)">궁극의 접선 (Tangent Line) 탄생!</text>
+
+        <!-- Animation Arrows -->
+        <path d="M 530 115 Q 470 145 420 165" fill="none" stroke="#ffff00" stroke-width="3"
+            marker-end="url(#arrowhead)" />
+        <path d="M 380 175 Q 330 200 300 215" fill="none" stroke="#ffff00" stroke-width="3"
+            marker-end="url(#arrowhead)" />
+        <path d="M 260 230 Q 210 250 170 270" fill="none" stroke="#ffff00" stroke-width="3"
+            marker-end="url(#arrowhead)" />
+
+        <text x="400" y="100" fill="#ffff00" font-family="sans-serif" font-size="20" font-weight="bold">간격 Δx 가 0 에 무한
+            수렴!</text>
+    </g>
+
+    <!-- Arrowhead marker definition -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ffff00" />
+        </marker>
+    </defs>
+
+    <!-- Math Box -->
+    <rect x="150" y="520" width="600" height="60" rx="10" fill="#0f0f15" stroke="#ff0055" stroke-width="2" />
+    <text x="450" y="555" fill="#ffffff" font-family="monospace" font-size="20" font-weight="bold"
+        text-anchor="middle">lim[Δx→0] (할선의 기울기) == (한 점 A에서의 접선의 기울기)</text>
+
+</svg>

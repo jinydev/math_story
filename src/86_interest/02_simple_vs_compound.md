@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 덧셈과 곱셈의 싸움 단리Simple vs 복리Compound'
+---
+
 # 2. 덧셈과 곱셈의 싸움: 단리(Simple) vs 복리(Compound)
 
 ## [도입부] 학습 목표 (Learning Objectives)

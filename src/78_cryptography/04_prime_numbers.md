@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '04. 암호학의 가장 거대한 방패, 소수 Prime Number'
+---
+
 # 04. 암호학의 가장 거대한 방패, 소수 (Prime Number)
 
 ## 1. 학습 목표 (Learning Objectives)

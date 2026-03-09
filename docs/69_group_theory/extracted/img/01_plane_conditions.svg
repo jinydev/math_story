@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">평면의 결정 조건 4가지 퍼즐 (하나의 плоскость)</text>
+
+    <!-- Condition 1: Three Points -->
+    <g transform="translate(100, 100)">
+        <rect x="0" y="0" width="300" height="200" rx="15" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+        <text x="150" y="30" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">1. 서로 다른 세 점</text>
+
+        <!-- Plane base -->
+        <polygon points="50,150 250,150 200,80 100,80" fill="#00ffcc" opacity="0.2" />
+        <polygon points="50,150 250,150 200,80 100,80" fill="none" stroke="#00ffcc" stroke-dasharray="2 2" />
+
+        <!-- Triangle -->
+        <polygon points="120,100 200,120 100,140" fill="none" stroke="#ffaa00" stroke-width="4" filter="url(#glow)" />
+        <circle cx="120" cy="100" r="6" fill="#ffffff" />
+        <circle cx="200" cy="120" r="6" fill="#ffffff" />
+        <circle cx="100" cy="140" r="6" fill="#ffffff" />
+
+        <text x="150" y="180" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">일직선 위에 없는 세 점
+            (삼각대 원리)</text>
+    </g>
+
+    <!-- Condition 2: Line and a Point -->
+    <g transform="translate(450, 100)">
+        <rect x="0" y="0" width="300" height="200" rx="15" fill="#221122" stroke="#ff0055" stroke-width="2" />
+        <text x="150" y="30" fill="#ff0055" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">2. 한 직선과 외부의 점</text>
+
+        <!-- Plane base -->
+        <polygon points="50,150 250,150 200,80 100,80" fill="#ff0055" opacity="0.2" />
+        <polygon points="50,150 250,150 200,80 100,80" fill="none" stroke="#ff0055" stroke-dasharray="2 2" />
+
+        <!-- Line and point -->
+        <line x1="80" y1="130" x2="220" y2="130" stroke="#00ffcc" stroke-width="4" filter="url(#glow)" />
+        <circle cx="150" cy="95" r="6" fill="#ffffff" filter="url(#glow)" />
+
+        <text x="150" y="180" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">막대기와 허공의 한 점
+            조합</text>
+    </g>
+
+    <!-- Condition 3: Intersecting Lines -->
+    <g transform="translate(100, 320)">
+        <rect x="0" y="0" width="300" height="200" rx="15" fill="#332211" stroke="#ffaa00" stroke-width="2" />
+        <text x="150" y="30" fill="#ffaa00" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">3. 교차하는 두 직선</text>
+
+        <!-- Plane base -->
+        <polygon points="50,150 250,150 200,80 100,80" fill="#ffaa00" opacity="0.2" />
+        <polygon points="50,150 250,150 200,80 100,80" fill="none" stroke="#ffaa00" stroke-dasharray="2 2" />
+
+        <!-- Intersecting Lines -->
+        <line x1="80" y1="90" x2="200" y2="150" stroke="#ff0055" stroke-width="4" filter="url(#glow)" />
+        <line x1="80" y1="150" x2="200" y2="90" stroke="#4da6ff" stroke-width="4" filter="url(#glow)" />
+        <circle cx="140" cy="120" r="5" fill="#ffffff" />
+
+        <text x="150" y="180" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">바닥에 X자로 내려놓은 두
+            개의 막대기</text>
+    </g>
+
+    <!-- Condition 4: Parallel Lines -->
+    <g transform="translate(450, 320)">
+        <rect x="0" y="0" width="300" height="200" rx="15" fill="#113322" stroke="#4da6ff" stroke-width="2" />
+        <text x="150" y="30" fill="#4da6ff" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">4. 평행한 두 직선</text>
+
+        <!-- Plane base -->
+        <polygon points="50,150 250,150 200,80 100,80" fill="#4da6ff" opacity="0.2" />
+        <polygon points="50,150 250,150 200,80 100,80" fill="none" stroke="#4da6ff" stroke-dasharray="2 2" />
+
+        <!-- Parallel Lines -->
+        <line x1="90" y1="100" x2="230" y2="100" stroke="#ffaa00" stroke-width="4" filter="url(#glow)" />
+        <line x1="70" y1="130" x2="210" y2="130" stroke="#00ffcc" stroke-width="4" filter="url(#glow)" />
+
+        <text x="150" y="180" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">나란히 달리는 기차
+            철로</text>
+    </g>
+
+    <!-- Banner -->
+    <rect x="200" y="535" width="500" height="50" rx="10" fill="#0f0f15" stroke="#555566" />
+    <text x="450" y="565" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+        text-anchor="middle">🚨 예외: '꼬인 위치'의 두 직선은 절대로 하나의 평면을 만들 수 없습니다.</text>
+
+</svg>

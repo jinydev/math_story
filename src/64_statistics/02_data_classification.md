@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 내 입맛대로 체에 거르기 기준이라는 칼, 자료의 분류 Data Classification'
+---
+
 # 2. 내 입맛대로 체에 거르기: 기준이라는 칼, '자료의 분류 (Data Classification)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

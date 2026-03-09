@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '01. 유한을 넘어, 힐베르트의 무한 호텔 Hilberts Hotel'
+---
+
 # 01. 유한을 넘어, 힐베르트의 무한 호텔 (Hilbert's Hotel)
 
 ## 1. 학습 목표 (Learning Objectives)

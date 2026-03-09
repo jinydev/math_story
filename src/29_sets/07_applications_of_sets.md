@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '07. 일곱 번째 수업 집합의 신출귀몰 Diverse Applications'
+---
+
 # 07. 일곱 번째 수업: 집합의 신출귀몰 (Diverse Applications)
 
 지금까지 우리는 데이터를 담는 바구니(집합)와 그 바구니들을 합치고 빼고 뒤집는 기초 연산들을 배웠습니다.

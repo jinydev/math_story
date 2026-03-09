@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '13. 피보나치수열의 컴퓨터 과학적 응용과 파이썬 Python'
+---
+
 # 13. 피보나치수열의 컴퓨터 과학적 응용과 파이썬 (Python)
 
 ## 1. 학습 목표 (Learning Objectives)

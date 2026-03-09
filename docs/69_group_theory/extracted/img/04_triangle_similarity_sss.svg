@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .panel {
+                fill: #161b22;
+                stroke: #30363d;
+                stroke-width: 2;
+                rx: 10;
+            }
+
+            .tri {
+                fill: rgba(255, 255, 255, 0.05);
+                stroke: #ffffff;
+                stroke-width: 2;
+                stroke-linejoin: round;
+            }
+
+            .s-marker {
+                fill: none;
+                stroke: #ff6464;
+                stroke-width: 3;
+            }
+
+            .a-marker {
+                fill: rgba(0, 255, 255, 0.4);
+                stroke: #00ffff;
+                stroke-width: 2;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 24px;
+                text-anchor: middle;
+            }
+
+            .header {
+                fill: #00ffff;
+                font-size: 20px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 14px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="450" y="40" class="title">삼각형 닮음 판별 조건 삼총사 (SSS, SAS, AA)</text>
+
+    <!-- Box 1: SSS -->
+    <rect x="30" y="80" width="260" height="240" class="panel" />
+    <text x="160" y="110" class="header">1. SSS 닮음</text>
+    <text x="160" y="135" class="desc">세 변의 '비율'이 같음</text>
+
+    <g transform="translate(60, 160)">
+        <!-- Tri 1 -->
+        <polygon points="0,60 40,60 20,0" class="tri" />
+        <path d="M 10 30 L 15 32 M 30 30 L 25 32 M 20 60 L 20 55" class="s-marker" /> <!-- Markides -->
+        <text x="20" y="80" fill="#ff6464" font-size="12" text-anchor="middle">비율 1</text>
+
+        <!-- Tri 2 (scaled 2x) -->
+        <polygon points="60,60 140,60 100,-60" class="tri" />
+        <path d="M 80 0 L 85 2 M 120 0 L 115 2 M 100 60 L 100 55" class="s-marker" stroke-width="5" />
+        <text x="100" y="80" fill="#ff6464" font-size="12" text-anchor="middle">비율 2 (확대)</text>
+    </g>
+
+    <!-- Box 2: SAS -->
+    <rect x="320" y="80" width="260" height="240" class="panel" />
+    <text x="450" y="110" class="header">2. SAS 닮음</text>
+    <text x="450" y="135" class="desc">두 변의 비율 + '끼인 각' 같음</text>
+
+    <g transform="translate(350, 160)">
+        <!-- Tri 1 -->
+        <polygon points="0,60 40,60 20,0" class="tri" />
+        <!-- Angle A -->
+        <path d="M 12 24 A 15 15 0 0 0 28 24 Z" class="a-marker" />
+        <path d="M 10 30 L 15 32 M 30 30 L 25 32" class="s-marker" />
+
+        <!-- Tri 2 (scaled 2x) -->
+        <polygon points="60,60 140,60 100,-60" class="tri" />
+        <!-- Angle A -->
+        <path d="M 88 -24 A 15 15 0 0 0 112 -24 Z" class="a-marker" />
+        <path d="M 80 0 L 85 2 M 120 0 L 115 2" class="s-marker" stroke-width="5" />
+    </g>
+
+    <!-- Box 3: AA -->
+    <rect x="610" y="80" width="260" height="240" class="panel" />
+    <text x="740" y="110" class="header" fill="#ffaa64">3. AA 닮음 (가장 강함)</text>
+    <text x="740" y="135" class="desc" fill="#ffee55">두 각도의 크기가 일치함</text>
+    <text x="740" y="155" class="desc">(변 길이를 몰라도 100% 닮음)</text>
+
+    <g transform="translate(640, 160)">
+        <!-- Tri 1 -->
+        <polygon points="0,60 60,60 20,0" class="tri" />
+        <!-- Angle B, C -->
+        <path d="M 15 60 A 15 15 0 0 1 10 30 Z" class="a-marker" />
+        <path d="M 45 60 A 15 15 0 0 0 40 30 Z" class="a-marker" fill="#ffaa64" stroke="#ffaa64" />
+
+        <!-- Tri 2 (scaled 1.5x) -->
+        <polygon points="90,60 180,60 120,-30" class="tri" />
+        <!-- Angle B, C -->
+        <path d="M 110 60 A 20 20 0 0 1 103 20 Z" class="a-marker" />
+        <path d="M 160 60 A 20 20 0 0 0 150 15 Z" class="a-marker" fill="#ffaa64" stroke="#ffaa64" />
+    </g>
+
+</svg>

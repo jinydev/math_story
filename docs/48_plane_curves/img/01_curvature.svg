@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#343a40" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">도로의 굽은 정도를 수학으로 측정하기: 곡률(Curvature)</text>
+
+    <g transform="translate(50, 80)">
+
+        <!-- Left Curve (Gentle) -->
+        <path d="M 0 120 Q 100 -20 200 120" fill="none" stroke="#adb5bd" stroke-width="8" stroke-linecap="round" />
+        <path d="M 0 120 Q 100 -20 200 120" fill="none" stroke="#f1f3f5" stroke-dasharray="10, 10" stroke-width="4"
+            stroke-linecap="round" />
+
+        <circle cx="100" cy="180" r="130" fill="none" stroke="#4dabf7" stroke-width="2" stroke-dasharray="5,5" />
+        <circle cx="100" cy="180" r="4" fill="#228be6" />
+        <line x1="100" y1="180" x2="100" y2="50" stroke="#228be6" stroke-width="2" />
+        <text x="110" y="120" fill="#228be6" font-size="16" font-family="sans-serif" font-weight="bold">큰 곡률반경
+            (R)</text>
+
+        <text x="100" y="160" fill="#495057" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">커브가 완만하다!</text>
+        <text x="100" y="210" fill="#e03131" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">곡률(K) = 작다</text>
+
+        <!-- Right Curve (Sharp) -->
+        <g transform="translate(300, 0)">
+            <path d="M 0 120 Q 100 -80 200 120" fill="none" stroke="#adb5bd" stroke-width="8" stroke-linecap="round" />
+            <path d="M 0 120 Q 100 -80 200 120" fill="none" stroke="#f1f3f5" stroke-dasharray="10, 10" stroke-width="4"
+                stroke-linecap="round" />
+
+            <circle cx="100" cy="80" r="60" fill="none" stroke="#ff922b" stroke-width="2" stroke-dasharray="5,5" />
+            <circle cx="100" cy="80" r="4" fill="#e8590c" />
+            <line x1="100" y1="80" x2="100" y2="20" stroke="#e8590c" stroke-width="2" />
+            <text x="110" y="55" fill="#e8590c" font-size="16" font-family="sans-serif" font-weight="bold">작은 R</text>
+
+            <text x="100" y="160" fill="#495057" font-size="16" font-family="sans-serif" font-weight="bold"
+                text-anchor="middle">커브가 급격하다!</text>
+            <text x="100" y="210" fill="#e03131" font-size="16" font-family="sans-serif" font-weight="bold"
+                text-anchor="middle">곡률(K) = 크다</text>
+        </g>
+
+    </g>
+
+</svg>

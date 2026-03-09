@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '04. 네 번째 수업 미적분학의 제1 기본 정리 Fundamental Theorem'
+---
+
 # 04. 네 번째 수업: 미적분학의 제1 기본 정리 (Fundamental Theorem)
 
 적분(공간 넓이 구하기)은 옛날 2천 년 전 고대 이집트와 아르키메데스 시절부터 있었다고 배웠습니다. 그런데 뉴턴(Isaac Newton)과 라이프니츠(Gottfried Leibniz)가 왜 "미적분학의 공동 창시자"로 수학 역사책의 최정상 신전에 모셔져 있을까요? 

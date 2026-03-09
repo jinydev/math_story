@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 350">
+  <rect width="750" height="350" fill="#f8f9fa" rx="15" />
+
+  <text x="375" y="40" fill="#495057" font-size="22" font-family="sans-serif" font-weight="bold"
+    text-anchor="middle">벡터의 덧셈: 꼬리물기(Head-to-Tail) 방식</text>
+
+  <!-- Grid base -->
+  <line x1="50" y1="280" x2="700" y2="280" stroke="#dee2e6" stroke-width="2" />
+
+  <!-- Scenario 1: Isolated Vectors -->
+  <rect x="50" y="70" width="200" height="230" fill="#fff" stroke="#ced4da" stroke-width="2" rx="10" />
+  <text x="150" y="100" fill="#868e96" font-size="16" font-weight="bold" text-anchor="middle">1. 흩어진 두 힘</text>
+
+  <!-- Vector a (Jump up) -->
+  <line x1="120" y1="240" x2="120" y2="150" stroke="#fa5252" stroke-width="5" marker-end="url(#arrow-red)" />
+  <text x="90" y="200" fill="#e03131" font-size="20" font-family="monospace" font-weight="bold">a</text>
+
+  <!-- Vector b (Wind right) -->
+  <line x1="160" y1="220" x2="220" y2="220" stroke="#339af0" stroke-width="5" marker-end="url(#arrow-blue)" />
+  <text x="180" y="205" fill="#1c7ed6" font-size="20" font-family="monospace" font-weight="bold">b</text>
+
+  <!-- Arrow -->
+  <text x="270" y="195" fill="#adb5bd" font-size="30" font-weight="bold">→</text>
+
+  <!-- Scenario 2: Connecting Head to Tail -->
+  <rect x="290" y="70" width="410" height="230" fill="#fff" stroke="#fcc419" stroke-width="3" rx="10" />
+  <text x="495" y="100" fill="#f08c00" font-size="18" font-weight="bold" text-anchor="middle">2. a의 끝(머리)에 b의 시작점(꼬리)을
+    붙인다!</text>
+
+  <!-- Vector a again, start at 350, 250 -->
+  <line x1="350" y1="250" x2="350" y2="130" stroke="#fa5252" stroke-width="5" stroke-dasharray="6,4"
+    marker-end="url(#arrow-red)" />
+  <circle cx="350" cy="250" r="5" fill="#fa5252" /> <!-- Start point -->
+  <text x="320" y="190" fill="#e03131" font-size="20" font-family="monospace" font-weight="bold">a</text>
+
+  <!-- Vector b appended to 'a's head (350, 130) -->
+  <!-- Original b length was 60. Let's make it 100 for better proportion -->
+  <line x1="350" y1="130" x2="480" y2="130" stroke="#339af0" stroke-width="5" stroke-dasharray="6,4"
+    marker-end="url(#arrow-blue)" />
+  <text x="410" y="115" fill="#1c7ed6" font-size="20" font-family="monospace" font-weight="bold">b</text>
+
+  <!-- Resultant Vector a+b -->
+  <!-- Direct line from start of 'a' to end of 'b' (350, 250) to (480, 130) -->
+  <line x1="350" y1="250" x2="480" y2="130" stroke="#fcc419" stroke-width="8" marker-end="url(#arrow-yellow)" />
+  <!-- End point highlight -->
+  <circle cx="480" cy="130" r="5" fill="#fcc419" />
+
+  <rect x="410" y="200" width="80" height="35" fill="#fff9db" stroke="#fcc419" stroke-width="2" rx="5" />
+  <text x="450" y="225" fill="#e67700" font-size="22" font-family="monospace" font-weight="bold" text-anchor="middle">a
+    + b</text>
+
+  <rect x="520" y="140" width="160" height="80" fill="#e7f5ff" rx="8" />
+  <text x="600" y="165" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">시작지점 배꼽에서부터</text>
+  <text x="600" y="185" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">릴레이의 종착지까지</text>
+  <text x="600" y="205" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">관통하는 하나의 다이렉트 궤적</text>
+
+  <defs>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+      orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#fa5252" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+      orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#339af0" />
+    </marker>
+    <marker id="arrow-yellow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+      orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#fcc419" />
+    </marker>
+  </defs>
+</svg>

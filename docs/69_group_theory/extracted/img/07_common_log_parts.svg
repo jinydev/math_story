@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">숫자의 신분증: 지표(Characteristic)와 가수(Mantissa)</text>
+
+    <!-- Top: The Log Equation -->
+    <g transform="translate(450, 160)">
+        <rect x="-300" y="-60" width="600" height="120" rx="20" fill="#112233" stroke="#4da6ff" stroke-width="4"
+            opacity="0.8" />
+
+        <text x="-120" y="20" fill="#ffffff" font-family="monospace" font-size="60" font-weight="bold"
+            text-anchor="middle">log 345</text>
+        <text x="30" y="20" fill="#ffffff" font-family="monospace" font-size="60" font-weight="bold"
+            text-anchor="middle">=</text>
+
+        <!-- Split Number -->
+        <text x="110" y="20" fill="#ff4d4d" font-family="monospace" font-size="60" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">2</text>
+        <text x="150" y="20" fill="#ffffff" font-family="monospace" font-size="60" font-weight="bold"
+            text-anchor="middle">.</text>
+        <text x="210" y="20" fill="#00ffcc" font-family="monospace" font-size="60" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">5378</text>
+    </g>
+
+    <!-- Lines branching out -->
+    <path d="M 560 220 L 560 260 L 350 320" fill="none" stroke="#ff4d4d" stroke-width="4" stroke-dasharray="10 5" />
+    <path d="M 660 220 L 660 260 L 750 320" fill="none" stroke="#00ffcc" stroke-width="4" stroke-dasharray="10 5" />
+
+    <!-- Left Bottom: Characteristic -->
+    <g transform="translate(250, 420)">
+        <rect x="-150" y="-100" width="300" height="200" rx="15" fill="#331111" stroke="#ff4d4d" stroke-width="3" />
+        <text x="0" y="-50" fill="#ff4d4d" font-family="sans-serif" font-size="28" font-weight="bold"
+            text-anchor="middle">지표 (정수 부분)</text>
+
+        <text x="0" y="10" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">숫자의 <tspan fill="#ffaa00">크기(크기 스케일)</tspan></text>
+
+        <text x="0" y="50" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"정수가 2니까, 원래 숫자는
+            3자리"</text>
+        <text x="0" y="75" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">(100 단위의
+            거인이다!)</text>
+    </g>
+
+    <!-- Right Bottom: Mantissa -->
+    <g transform="translate(650, 420)">
+        <rect x="-150" y="-100" width="300" height="200" rx="15" fill="#113322" stroke="#00ffcc" stroke-width="3" />
+        <text x="0" y="-50" fill="#00ffcc" font-family="sans-serif" font-size="28" font-weight="bold"
+            text-anchor="middle">가수 (소수 부분)</text>
+
+        <text x="0" y="10" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">숫자의 <tspan fill="#4da6ff">고유 DNA(배열)</tspan></text>
+
+        <text x="0" y="50" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"0.5378 이니까 무조건
+            3-4-5 로 이어짐"</text>
+        <text x="0" y="75" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">(345, 3450,
+            0.00345 모두 동일!)</text>
+    </g>
+
+    <!-- Bottom Data Mining Note -->
+    <rect x="150" y="530" width="600" height="50" rx="10" fill="#2b1133" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="560" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">머신러닝(빅데이터 분석)에서
+        숫자의 앞대가리 패턴(Benford's Law)을 검수하는 핵심 알고리즘!</text>
+
+</svg>

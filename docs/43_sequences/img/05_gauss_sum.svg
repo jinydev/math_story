@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#fff5f5" rx="10" />
+
+    <text x="300" y="40" fill="#c92a2a" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">가우스의 어린 시절 대발견: 1부터 100까지의 합</text>
+
+    <g transform="translate(60, 80)">
+
+        <text x="0" y="30" fill="#e03131" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="start">S = 1 + 2 + 3 + ... + 99 + 100</text>
+
+        <text x="0" y="70" fill="#e03131" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="start">S = 100 + 99 + 98 + ... + 2 + 1</text>
+
+        <!-- Underline -->
+        <path d="M 0 85 L 300 85" stroke="#f03e3e" stroke-width="2" />
+        <text x="-25" y="85" fill="#f03e3e" font-size="24" font-family="sans-serif" font-weight="bold">+</text>
+
+        <!-- Result -->
+        <text x="0" y="115" fill="#c92a2a" font-size="18" font-family="sans-serif" font-weight="bold"
+            text-anchor="start">2S = 101 + 101 + 101 + ... + 101 + 101</text>
+
+        <!-- Box around 101 -->
+        <rect x="0" y="135" width="300" height="40" fill="#ffc9c9" rx="5" />
+        <text x="150" y="160" fill="#c92a2a" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">101 이 정획히 100 묶음 존재!</text>
+    </g>
+
+    <!-- Formula box -->
+    <g transform="translate(420, 110)">
+        <rect x="-30" y="-30" width="180" height="120" fill="#e03131" rx="8" />
+        <text x="60" y="0" fill="white" font-size="18" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">2S = 101 x 100</text>
+        <text x="60" y="40" fill="white" font-size="18" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">S = 10100 / 2</text>
+        <text x="60" y="80" fill="#ffe3e3" font-size="22" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">S = 5050</text>
+    </g>
+
+</svg>

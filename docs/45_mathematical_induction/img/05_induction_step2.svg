@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="500">
+    <defs>
+        <style>
+            .bg {
+                fill: #0f172a;
+                rx: 12;
+                stroke: #1e293b;
+                stroke-width: 2;
+            }
+
+            /* Grid and base line */
+            .grid-line {
+                stroke: #1e293b;
+                stroke-width: 1;
+                opacity: 0.5;
+            }
+
+            .base-line {
+                stroke: #3b82f6;
+                stroke-width: 4;
+            }
+
+            /* Domino standard */
+            .domino {
+                fill: #10b981;
+                stroke: #047857;
+                stroke-width: 3;
+                rx: 4;
+            }
+
+            .domino-text {
+                font-family: 'Courier New', monospace;
+                font-size: 24px;
+                font-weight: bold;
+                fill: #ffffff;
+                text-anchor: middle;
+                dominant-baseline: central;
+            }
+
+            /* Domino falling (k) */
+            .domino-falling {
+                fill: #ef4444;
+                stroke: #b91c1c;
+                stroke-width: 3;
+                rx: 4;
+            }
+
+            .domino-falling-hit {
+                fill: #f59e0b;
+                stroke: #b45309;
+                stroke-width: 3;
+                rx: 4;
+            }
+
+            /* Vectors and Lines */
+            .vector {
+                stroke: #fcd34d;
+                stroke-width: 3;
+                fill: none;
+                stroke-dasharray: 6 4;
+            }
+
+            .vector-arrow {
+                fill: #fcd34d;
+            }
+
+            .measure-line {
+                stroke: #94a3b8;
+                stroke-width: 2;
+                opacity: 0.8;
+                stroke-dasharray: 4 4;
+            }
+
+            /* Text */
+            .title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 26px;
+                fill: #ffffff;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .subtitle {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 16px;
+                fill: #94a3b8;
+                font-weight: normal;
+                text-anchor: middle;
+            }
+
+            .info-text {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 15px;
+                fill: #e2e8f0;
+            }
+
+            .highlight {
+                fill: #f59e0b;
+                font-weight: bold;
+            }
+        </style>
+        <!-- Arrowhead marker -->
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" class="vector-arrow" />
+        </marker>
+    </defs>
+
+    <!-- Background -->
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="45" class="title">수학적 귀납법 2단계: K와 K+1의 기하학적 연쇄 폭발</text>
+    <text x="400" y="70" class="subtitle">만약 앞의 K번째가 쓰러진다고 가정했을 때, 치밀한 간격 로직에 의해 K+1번째도 "반드시" 타격당함을 수학적으로 보여라!</text>
+
+    <g transform="translate(0, 50)">
+        <!-- Base Floor -->
+        <line x1="100" y1="350" x2="700" y2="350" class="base-line" />
+
+        <!-- 1. Past Dominos (Already fallen, blurry/transparent) -->
+        <g opacity="0.4">
+            <rect x="120" y="320" width="100" height="24" class="domino" transform="rotate(75, 120, 350)" />
+            <rect x="170" y="320" width="100" height="24" class="domino" transform="rotate(70, 170, 350)" />
+            <rect x="220" y="320" width="100" height="24" class="domino" transform="rotate(65, 220, 350)" />
+            <text x="170" y="270" font-family="'Pretendard', sans-serif" font-size="14px" fill="#94a3b8"
+                text-anchor="middle">...이미 쏟아진 무한의 과거 n=1~K-1</text>
+        </g>
+
+        <!-- 2. The 'K' domino (Currently falling from the assumption) -->
+        <!-- Pivot at x=320, y=350. Angled falling -->
+        <g transform="rotate(45, 320, 350)">
+            <rect x="296" y="210" width="30" height="140" class="domino-falling" />
+            <text x="311" y="280" class="domino-text" transform="rotate(-90, 311, 280)">n=k (Assumed)</text>
+        </g>
+        <!-- Trajectory arc for K -->
+        <path d="M 320,210 A 140 140 0 0 1 405,250" stroke="#ef4444" stroke-width="3" fill="none" opacity="0.6"
+            marker-end="url(#arrow)" />
+        <text x="350" y="190" font-family="'Pretendard', sans-serif" font-size="14px" fill="#ef4444"
+            font-weight="bold">"내가 참이라면 (무너진다면)"</text>
+
+        <!-- 3. The 'K+1' domino (Being hit exactly at the critical point) -->
+        <!-- Upright, about to be pushed. x=430 -->
+        <g>
+            <rect x="420" y="210" width="30" height="140" class="domino-falling-hit" />
+            <circle cx="420" cy="250" r="10" fill="#fcd34d" opacity="0.8" /> <!-- Impact point glow -->
+            <path d="M 405,250 L 415,250" stroke="#ffffff" stroke-width="4" /> <!-- Impact spark -->
+
+            <!-- Text inside K+1 -->
+            <text x="435" y="280" class="domino-text" fill="#334155" transform="rotate(-90, 435, 280)">n=k+1
+                (Proved!)</text>
+        </g>
+        <path d="M 435,200 L 480,200" class="vector" marker-end="url(#arrow)" />
+        <text x="510" y="195" font-family="'Pretendard', sans-serif" font-size="14px" fill="#f59e0b"
+            font-weight="bold">"너의 로직(무게)에 의해 나도 무조건 참이 될 수밖에 없다!"</text>
+
+
+        <!-- 4. Future dominos (Standing still, waiting their turn) -->
+        <g opacity="0.8">
+            <rect x="520" y="210" width="30" height="140" class="domino" />
+            <text x="535" y="280" class="domino-text" font-size="18px" transform="rotate(-90, 535, 280)">n=k+2</text>
+
+            <rect x="620" y="210" width="30" height="140" class="domino" />
+            <text x="635" y="280" class="domino-text" font-size="18px" transform="rotate(-90, 635, 280)">n=k+3</text>
+        </g>
+
+        <!-- Measurement / Logic Gap -->
+        <line x1="320" y1="370" x2="420" y2="370" class="measure-line" />
+        <line x1="320" y1="360" x2="320" y2="380" class="measure-line" />
+        <line x1="420" y1="360" x2="420" y2="380" class="measure-line" />
+        <text x="370" y="395" font-family="'Pretendard', sans-serif" font-size="14px" fill="#cbd5e1"
+            text-anchor="middle">완벽한 타격 간격 = `P(k) -> P(k+1)` 논리적 연결 고리</text>
+
+    </g>
+
+    <!-- Explanation Panel -->
+    <rect x="50" y="440" width="700" height="50" rx="6" fill="#1e293b" />
+    <text x="400" y="470" font-family="'Pretendard', sans-serif" font-size="16px" fill="#93c5fd" font-weight="bold"
+        text-anchor="middle">
+        증명의 마스터키: "k일 때 맞다고 <tspan class="highlight">가정</tspan>해라. 그리고 그 식을 뜯어고쳐서, 자동적으로 k+1일 때도 모양이 나오는지 <tspan
+            class="highlight">입증</tspan>해라!"
+    </text>
+</svg>

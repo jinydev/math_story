@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '00. 도입부 입체 도형의 뼈대, 다면체 Polyhedron'
+---
+
 # 00. 도입부: 입체 도형의 뼈대, 다면체 (Polyhedron)
 
 ## 1. 학습 목표 (Learning Objectives)

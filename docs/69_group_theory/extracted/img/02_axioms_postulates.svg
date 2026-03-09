@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">기하학 매트릭스 초기 설정: 5개 공리와 5개 공준</text>
+
+    <!-- Center Core Engine -->
+    <circle cx="450" cy="320" r="80" fill="#111" stroke="#00ffcc" stroke-width="4" filter="url(#glow)" />
+    <text x="450" y="310" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+        text-anchor="middle">원론 OS</text>
+    <text x="450" y="340" fill="#ffffff" font-family="monospace" font-size="16" text-anchor="middle">Version 1.0</text>
+
+    <!-- LEFT: 5 Axioms (Common Notions) -->
+    <g transform="translate(40, 150)">
+        <rect x="0" y="0" width="300" height="320" rx="15" fill="#221122" stroke="#ff0055" stroke-width="2" />
+        <text x="150" y="40" fill="#ff0055" font-family="sans-serif" font-size="22" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">5개의 공리 (상식)</text>
+
+        <rect x="20" y="60" width="260" height="40" rx="5" fill="#1a1a24" stroke="#555" />
+        <text x="30" y="85" fill="#ffffff" font-family="sans-serif" font-size="14">1. 같은 것끼리는 서로 같다.</text>
+
+        <rect x="20" y="110" width="260" height="40" rx="5" fill="#1a1a24" stroke="#555" />
+        <text x="30" y="135" fill="#ffffff" font-family="sans-serif" font-size="14">2. 같은 것을 더하면, 결과도 같다.</text>
+
+        <rect x="20" y="160" width="260" height="40" rx="5" fill="#1a1a24" stroke="#555" />
+        <text x="30" y="185" fill="#ffffff" font-family="sans-serif" font-size="14">3. 같은 것을 빼면, 결과도 같다.</text>
+
+        <rect x="20" y="210" width="260" height="40" rx="5" fill="#1a1a24" stroke="#555" />
+        <text x="30" y="235" fill="#ffffff" font-family="sans-serif" font-size="14">4. 포개어 일치하는 것은 같다.</text>
+
+        <rect x="20" y="260" width="260" height="40" rx="5" fill="#440022" stroke="#ff0055" filter="url(#glow)" />
+        <text x="30" y="285" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">5. 전체는 무조건 부분보다
+            크다.</text>
+    </g>
+    <line x1="340" y1="320" x2="370" y2="320" stroke="#ff0055" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- RIGHT: 5 Postulates -->
+    <g transform="translate(560, 150)">
+        <rect x="0" y="0" width="300" height="340" rx="15" fill="#112233" stroke="#4da6ff" stroke-width="2" />
+        <text x="150" y="40" fill="#4da6ff" font-family="sans-serif" font-size="22" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">5개의 공준 (도형 룰)</text>
+
+        <rect x="20" y="60" width="260" height="40" rx="5" fill="#1a1a24" stroke="#555" />
+        <text x="30" y="85" fill="#ffffff" font-family="sans-serif" font-size="14">1. 두 점이 있으면 선을 그을 수 있다.</text>
+
+        <rect x="20" y="110" width="260" height="40" rx="5" fill="#1a1a24" stroke="#555" />
+        <text x="30" y="135" fill="#ffffff" font-family="sans-serif" font-size="14">2. 직선은 끝없이 연장할 수 있다.</text>
+
+        <rect x="20" y="160" width="260" height="40" rx="5" fill="#1a1a24" stroke="#555" />
+        <text x="30" y="185" fill="#ffffff" font-family="sans-serif" font-size="14">3. 어디서든 원을 그릴 수 있다.</text>
+
+        <rect x="20" y="210" width="260" height="40" rx="5" fill="#1a1a24" stroke="#555" />
+        <text x="30" y="235" fill="#ffffff" font-family="sans-serif" font-size="14">4. 모든 90도는 서로 같다.</text>
+
+        <rect x="20" y="260" width="260" height="60" rx="5" fill="#003344" stroke="#00ffcc" filter="url(#glow)" />
+        <text x="30" y="280" fill="#00ffcc" font-family="sans-serif" font-size="12" font-weight="bold">5. [위험] 엇각 합이
+            180보다 작으면</text>
+        <text x="30" y="295" fill="#00ffcc" font-family="sans-serif" font-size="12" font-weight="bold">두 선은 무조건 뻗어가다
+            만난다.</text>
+        <text x="30" y="310" fill="#aaaaaa" font-family="sans-serif" font-size="12">(평행선 공준 코어)</text>
+    </g>
+    <line x1="530" y1="320" x2="560" y2="320" stroke="#4da6ff" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- Info text at bottom -->
+    <rect x="150" y="520" width="600" height="50" rx="10" fill="#1a1a24" stroke="#ffaa00" stroke-width="2"
+        filter="url(#glow)" />
+    <text x="450" y="550" fill="#ffaa00" font-family="sans-serif" font-size="18" font-weight="bold"
+        text-anchor="middle">"이 10개의 씨앗 코드가 기하학 우주 전체 465개를 렌더링한다!"</text>
+
+</svg>

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">우주의 팽창: 도형의 스케일 조절 (Dilation)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"우주가 k배로 팽창하면, 함수의
+        틀은 역수(1/k) 로 쪼그라들어야 크기 균형이 맞는다."</text>
+
+    <!-- Top Section: Point Scaling (Direct Multiply) -->
+    <g transform="translate(150, 130)">
+        <rect x="-50" y="0" width="800" height="150" rx="15" fill="#1b1122" stroke="#ff00ff" stroke-width="2" />
+        <text x="350" y="30" fill="#ff00ff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">1. 점(Point) 의 2배 팽창 (정직한 곱셈)</text>
+
+        <!-- Origin -->
+        <circle cx="50" cy="120" r="5" fill="#fff" />
+        <text x="50" y="140" fill="#fff" font-size="12" text-anchor="middle">(0,0)</text>
+
+        <!-- Original Point -->
+        <circle cx="200" cy="80" r="8" fill="#fff" />
+        <text x="200" y="65" fill="#fff" font-weight="bold" text-anchor="middle">P (1, 3)</text>
+
+        <!-- Arrow -->
+        <path d="M 50 120 L 400 40" fill="none" stroke="#00ffcc" stroke-width="4" stroke-dasharray="8 4"
+            marker-end="url(#arrow_c)" filter="url(#glow)" />
+        <text x="300" y="90" fill="#00ffcc" font-weight="bold" text-anchor="middle">× 2 확대</text>
+
+        <!-- Dilated Point -->
+        <circle cx="400" cy="40" r="10" fill="#00ffcc" filter="url(#glow)" />
+        <text x="400" y="20" fill="#00ffcc" font-weight="bold" font-size="18" text-anchor="middle"
+            filter="url(#glow)">P' (2, 6)</text>
+
+        <text x="600" y="80" fill="#ffffff" font-size="16">x -> <tspan fill="#ff00ff" font-weight="bold">2x</tspan>
+            </text>
+        <text x="600" y="110" fill="#ffffff" font-size="16">y -> <tspan fill="#ff00ff" font-weight="bold">2y</tspan>
+            </text>
+    </g>
+
+    <!-- Bottom Section: Equation Scaling (Inverse Substitute) -->
+    <g transform="translate(150, 310)">
+        <rect x="-50" y="0" width="800" height="150" rx="15" fill="#001a11" stroke="#00ffcc" stroke-width="2" />
+        <text x="350" y="30" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">2. 원의 방정식 2배 팽창 (청개구리 역수 대입)</text>
+
+        <!-- Origin -->
+        <circle cx="100" cy="100" r="3" fill="#fff" />
+        <!-- Small Circle x^2+y^2=1 -->
+        <circle cx="100" cy="100" r="25" fill="none" stroke="#fff" stroke-width="2" />
+        <text x="100" y="140" fill="#fff" font-family="monospace" text-anchor="middle">x² + y² = 1</text>
+
+        <!-- Arrow -->
+        <path d="M 160 100 L 260 100" fill="none" stroke="#ffff00" stroke-width="4" marker-end="url(#arrow_y)"
+            filter="url(#glow)" />
+        <text x="210" y="90" fill="#ffff00" font-weight="bold" text-anchor="middle">도형 2배 확대</text>
+
+        <!-- Large Circle (x/2)^2+(y/2)^2=1 -> x^2+y^2=4 -->
+        <circle cx="380" cy="100" r="50" fill="none" stroke="#ffff00" stroke-width="4" filter="url(#glow)" />
+        <circle cx="380" cy="100" r="3" fill="#ffff00" />
+        <text x="380" y="170" fill="#ffff00" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">(x/2)² + (y/2)² = 1</text>
+
+        <text x="550" y="70" fill="#ffffff" font-size="16">방정식의 변수를 파내고 역수를 삽입하라!</text>
+        <text x="550" y="100" fill="#ffffff" font-size="16">x -> <tspan fill="#ff5555" font-weight="bold">x / 2</tspan>
+            </text>
+        <text x="550" y="130" fill="#ffffff" font-size="16">y -> <tspan fill="#ff5555" font-weight="bold">y / 2</tspan>
+            </text>
+    </g>
+
+    <defs>
+        <marker id="arrow_c" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#00ffcc" />
+        </marker>
+        <marker id="arrow_y" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#ffff00" />
+        </marker>
+    </defs>
+
+    <!-- Big Alert Bottom -->
+    <rect x="100" y="490" width="700" height="80" rx="10" fill="#0d1b2a" stroke="#4da6ff" stroke-width="2" />
+    <text x="450" y="525" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        평행이동의 뺄셈 반전법칙과 똑같이, 스케일링에서도 <tspan fill="#4da6ff" font-weight="bold">"역수 곱하기(나눗셈)"</tspan> 가 바로
+    </text>
+    <text x="450" y="550" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        도형의 크기를 부풀리는 방정식계의 청개구리 룰이다.
+    </text>
+</svg>

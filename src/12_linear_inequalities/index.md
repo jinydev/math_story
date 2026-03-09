@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 48. 일차부등식 Linear Inequalities'
+---
+
 # 수학이야기 48. 일차부등식 (Linear Inequalities)
 
 ## 📌 학습 개요

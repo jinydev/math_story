@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '04. 자본주의 타임머신 복리의 마법 Compound Interest'
+---
+
 # 04. 자본주의 타임머신: 복리의 마법 (Compound Interest)
 
 ## 1. 학습 목표 (Learning Objectives)

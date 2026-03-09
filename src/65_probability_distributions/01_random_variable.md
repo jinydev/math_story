@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 운명을 계산하는 숫자 확률변수와 확률분포 Random Variable'
+---
+
 # 1. 운명을 계산하는 숫자: 확률변수와 확률분포 (Random Variable)
 
 ## [도입부] 학습 목표 (Learning Objectives)

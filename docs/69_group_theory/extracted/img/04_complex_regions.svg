@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 24px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .circle {
+                fill: none;
+                stroke-width: 4;
+            }
+
+            .c-a {
+                stroke: #0088ff;
+            }
+
+            .c-b {
+                stroke: #ff6464;
+            }
+
+            .c-c {
+                stroke: #00ff00;
+            }
+
+            .st-ring {
+                fill: #ffffff;
+                opacity: 0.3;
+            }
+
+            .math {
+                font-size: 26px;
+                fill: #ffff00;
+                text-anchor: middle;
+            }
+
+            .math-formula {
+                font-size: 30px;
+                fill: #00ffff;
+                text-anchor: middle;
+                font-weight: bold;
+            }
+
+            .rule-box {
+                fill: #161b22;
+                stroke: #ff00ff;
+                stroke-width: 2;
+                rx: 10;
+                ry: 10;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="400" y="40" class="title">복잡한 다이어그램 영역과 드 모르간의 법칙</text>
+    <text x="400" y="65" class="desc">(A ∪ B ∪ C) - (A ∩ B ∩ C) 의 기하학적 링 구조</text>
+
+    <!-- Venn Diagram 3 Circles -->
+    <g transform="translate(250, 250)">
+        <!-- Mask for the hole in the middle -->
+        <mask id="hole-mask">
+            <rect x="-200" y="-200" width="400" height="400" fill="white" />
+
+            <!-- Center intersection hole (A ∩ B ∩ C) -->
+            <!-- We need the intersection of all 3. A path approximation -->
+            <path d="M 0 -22 A 65 65 0 0 1 20 12 A 65 65 0 0 1 -20 12 A 65 65 0 0 1 0 -22 Z" fill="black" />
+        </mask>
+
+        <!-- Union filled area (A U B U C) with the center punched out -->
+        <g mask="url(#hole-mask)">
+            <circle cx="-40" cy="-25" r="90" class="st-ring" fill="#0088ff" />
+            <circle cx="40" cy="-25" r="90" class="st-ring" fill="#ff6464" />
+            <circle cx="0" cy="45" r="90" class="st-ring" fill="#00ff00" />
+        </g>
+
+        <!-- Outlines -->
+        <circle cx="-40" cy="-25" r="90" class="circle c-a" />
+        <circle cx="40" cy="-25" r="90" class="circle c-b" />
+        <circle cx="0" cy="45" r="90" class="circle c-c" />
+
+        <text x="-90" y="-80" fill="#0088ff" font-size="24">A</text>
+        <text x="90" y="-80" fill="#ff6464" font-size="24">B</text>
+        <text x="70" y="100" fill="#00ff00" font-size="24">C</text>
+
+        <!-- The empty core symbol -->
+        <text x="0" y="5" fill="#0d1117" font-size="22" font-weight="bold" text-anchor="middle">∅</text>
+    </g>
+
+    <!-- Magic Rule Panel (De Morgan) -->
+    <g transform="translate(450, 150)">
+        <rect x="0" y="0" width="320" height="220" class="rule-box" />
+        <text x="160" y="35" fill="#ff00ff" font-size="20" font-weight="bold" text-anchor="middle">🎩 드 모르간의 폭발 규칙
+            🎩</text>
+        <text x="160" y="65" fill="#aaaaaa" font-size="14" text-anchor="middle">괄호 밖의 여집합(^c) 폭탄이 침투하면!</text>
+
+        <!-- Rule 1 -->
+        <text x="160" y="110" class="math" fill="#ffffff">
+            ( A <tspan fill="#ff0000">∪</tspan> B )<tspan fill="#ffff00" font-size="30">^c</tspan>
+        </text>
+        <text x="160" y="145" class="math" fill="#ffffff">
+            =&gt; A<tspan fill="#ffff00" font-size="20">^c</tspan>
+            <tspan fill="#00ff00">∩</tspan> B<tspan fill="#ffff00" font-size="20">^c</tspan>
+        </text>
+
+        <!-- Rule 2 -->
+        <text x="160" y="185" class="math" fill="#ffffff">
+            ( A <tspan fill="#00ff00">∩</tspan> B )<tspan fill="#ffff00" font-size="30">^c</tspan>
+        </text>
+        <text x="160" y="220" class="math" fill="#ffffff">
+            =&gt; A<tspan fill="#ffff00" font-size="20">^c</tspan>
+            <tspan fill="#ff0000">∪</tspan> B<tspan fill="#ffff00" font-size="20">^c</tspan>
+        </text>
+    </g>
+
+    <text x="400" y="470" class="math-formula">색칠 타겟 = (A ∪ B ∪ C) − (A ∩ B ∩ C)</text>
+
+</svg>

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 입체 기하의 저주 꼬인 위치Skew Lines'
+---
+
 # 2. 입체 기하의 저주: 꼬인 위치(Skew Lines)
 
 ## [도입부] 학습 목표 (Learning Objectives)

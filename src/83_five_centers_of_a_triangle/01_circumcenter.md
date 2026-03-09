@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 세 마을의 중심을 찾아라 외심 Circumcenter'
+---
+
 # 1. 세 마을의 중심을 찾아라: 외심 (Circumcenter)
 
 ## [도입부] 학습 목표 (Learning Objectives)

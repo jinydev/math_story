@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '05. 배수진의 극의 귀류법 Proof by Contradiction'
+---
+
 # 05. 배수진의 극의: 귀류법 (Proof by Contradiction)
 
 ## 1. 학습 목표 (Learning Objectives)

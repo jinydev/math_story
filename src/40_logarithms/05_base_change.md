@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 컴퓨터 세계로의 다리 밑 변환 공식 Base Change'
+---
+
 # 5. 컴퓨터 세계로의 다리: 밑 변환 공식 (Base Change)
 
 ## [도입부] 학습 목표 (Learning Objectives)

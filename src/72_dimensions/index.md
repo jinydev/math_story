@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 81. 차원 Dimensions'
+---
+
 # 수학이야기 81. 차원 (Dimensions)
 
 ## 📌 학습 개요

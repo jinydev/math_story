@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="600">
+    <rect width="600" height="600" fill="#2d3436" />
+    <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#dfe6e9" text-anchor="middle">
+        유클리드의 풍차 증명 (Euclid's Windmill)
+    </text>
+
+    <!-- Base Right Triangle a=120, b=160, c=200 -->
+    <!-- Vertices: C(240, 260), A(240, 100), B(360, 260) -->
+    <!-- Re-orient to fit standard windmill: Right angle at top C(300, 200) A(200, 300), B(400, 300) -->
+    <g transform="translate(100, 100)">
+        
+        <!-- The Right Triangle (a=3, b=4, c=5 scaled) -->
+        <!-- Right angle vertex C(150, 150), A(150, 300), B(350, 150) -->
+        <!-- Standard Euclid: C is right angle at Top. -->
+        <polygon points="200,100 80,190 360,190" fill="none" stroke="#dfe6e9" stroke-width="4" />
+        
+        <!-- Square on side A (Left leg) -->
+        <polygon points="200,100 80,190 0,60 120,-30" fill="#ff7675" fill-opacity="0.6" stroke="#d63031" stroke-width="2">
+            <!-- Animation: Shearing into rectangle -->
+            <animate attributeName="fill-opacity" values="0.6; 0.9; 0.6" dur="3s" repeatCount="indefinite" />
+        </polygon>
+        
+        <!-- Square on side B (Right leg) -->
+        <polygon points="200,100 360,190 450,70 290,-20" fill="#74b9ff" fill-opacity="0.6" stroke="#0984e3" stroke-width="2">
+            <!-- Animation: Shearing into rectangle -->
+            <animate attributeName="fill-opacity" values="0.6; 0.9; 0.6" dur="3s" repeatCount="indefinite" />
+        </polygon>
+        
+        <!-- Square on side C (Hypotenuse Bottom) -->
+        <polygon points="80,190 360,190 360,470 80,470" fill="none" stroke="#55efc4" stroke-width="3" />
+        
+        <!-- Left Rectangle inside C^2 -->
+        <rect x="80" y="190" width="100" height="280" fill="#ff7675" fill-opacity="0.6">
+            <animate attributeName="opacity" values="0.2; 1; 0.2" dur="3s" repeatCount="indefinite" />
+        </rect>
+        
+        <!-- Right Rectangle inside C^2 -->
+        <rect x="180" y="190" width="180" height="280" fill="#74b9ff" fill-opacity="0.6">
+            <animate attributeName="opacity" values="0.2; 1; 0.2" dur="3s" repeatCount="indefinite" />
+        </rect>
+        
+        <!-- Labels -->
+        <text x="50" y="30" font-family="Arial" font-size="20" font-weight="bold" fill="#ff7675">a^2</text>
+        <text x="350" y="30" font-family="Arial" font-size="20" font-weight="bold" fill="#74b9ff">b^2</text>
+        <text x="210" y="350" font-family="Arial" font-size="24" font-weight="bold" fill="#55efc4">c^2 = a^2 + b^2</text>
+        
+        <!-- Altitude Line dropping from C -->
+        <line x1="200" y1="100" x2="180" y2="470" stroke="#fbc531" stroke-width="2" stroke-dasharray="5,5" />
+    </g>
+    
+    <text x="300" y="550" font-family="Arial" font-size="16" fill="#b2bec3" text-anchor="middle">
+        삼각형의 등적변형(합동)을 이용해 위의 두 사각형(a^2, b^2) 넓이가 아래(c^2)로 그대로 내려옵니다.
+    </text>
+</svg>

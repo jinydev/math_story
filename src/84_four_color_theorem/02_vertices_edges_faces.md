@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 지도의 뼈대 해체 꼭짓점, 모서리, 면의 관계 Eulers Formula'
+---
+
 # 2. 지도의 뼈대 해체: 꼭짓점, 모서리, 면의 관계 (Euler's Formula)
 
 ## [도입부] 학습 목표 (Learning Objectives)

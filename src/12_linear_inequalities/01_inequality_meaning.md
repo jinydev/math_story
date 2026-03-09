@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 세상을 두 동강 내는 기호 부등호와 부등식 Inequalities'
+---
+
 # 1. 세상을 두 동강 내는 기호: 부등호와 부등식 (Inequalities)
 
 ## [도입부] 학습 목표 (Learning Objectives)

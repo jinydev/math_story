@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '02. 두 번째 수업 무한을 쓰러뜨리는 도미노 Mathematical Induction'
+---
+
 # 02. 두 번째 수업: 무한을 쓰러뜨리는 도미노 (Mathematical Induction)
 
 페아노의 5공리 중 마지막, 가장 압도적인 스케일을 자랑하는 5번째 공리가 바로 **'수학적 귀납법의 원리(Mathematical Induction)'**입니다. 이는 단 두 번의 손짓만으로 우주 끝에 있는 무한대의 도미노를 한 방에 쓰러뜨리는 궁극의 마법입니다.

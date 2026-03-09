@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 완전체 궁극의 진화 다이아몬드 수저, 정사각형Square'
+---
+
 # 5. 완전체 궁극의 진화: 다이아몬드 수저, 정사각형(Square)
 
 ## [도입부] 학습 목표 (Learning Objectives)

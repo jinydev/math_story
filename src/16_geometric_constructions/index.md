@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '29. 작도 Construction 신의 기하학과 대수학의 충돌'
+---
+
 # 29. 작도 (Construction: 신의 기하학과 대수학의 충돌)
 
 ## 이 단원의 핵심 (Chapter Focus)

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 세계 2차 대전이 낳은 기적 단치히의 심플렉스 Simplex 알고리즘'
+---
+
 # 5. 세계 2차 대전이 낳은 기적: 단치히의 심플렉스 (Simplex) 알고리즘
 
 ## [도입부] 학습 목표 (Learning Objectives)

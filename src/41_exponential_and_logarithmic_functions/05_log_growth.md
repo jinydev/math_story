@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 한계 효용 체감의 법칙 로그적 증가 Logarithmic Growth'
+---
+
 # 5. 한계 효용 체감의 법칙: 로그적 증가 (Logarithmic Growth)
 
 ## [도입부] 학습 목표 (Learning Objectives)

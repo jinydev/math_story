@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '14. 이차방정식 Quadratic Equation 포물선의 궤적과 거대한 무기'
+---
+
 # 14. 이차방정식 (Quadratic Equation: 포물선의 궤적과 거대한 무기)
 
 ## 이 단원의 핵심 (Chapter Focus)

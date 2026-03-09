@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '02. 수열의 귀납적 정의 점화식 Recurrence Relation'
+---
+
 # 02. 수열의 귀납적 정의: 점화식 (Recurrence Relation)
 
 ## 1. 학습 목표 (Learning Objectives)

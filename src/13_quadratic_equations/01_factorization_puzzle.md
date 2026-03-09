@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '01. 해체 쇼의 시작 X자 인수분해'
+---
+
 # 01. 해체 쇼의 시작: X자 인수분해 
 
 ## 1. 학습 목표 (Learning Objectives)

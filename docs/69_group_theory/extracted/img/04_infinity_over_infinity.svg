@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="40" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">우주 스케일 무한대 분의 무한대 배틀 (∞ / ∞): "대빵 깡패만 살아남는다!"</text>
+
+    <!-- The Equation Box -->
+    <g transform="translate(100, 80)">
+        <rect x="0" y="0" width="700" height="150" rx="15" fill="#1b1122" stroke="#ff00ff" stroke-width="4"
+            filter="url(#glow)" />
+
+        <text x="100" y="90" fill="#ff00ff" font-family="serif" font-size="46" font-weight="bold"
+            filter="url(#glow)">lim</text>
+        <text x="100" y="125" fill="#ff55aa" font-family="sans-serif" font-size="18">n → ∞</text>
+
+        <!-- Fraction line -->
+        <line x1="220" y1="75" x2="600" y2="75" stroke="#ffffff" stroke-width="3" />
+
+        <!-- Numerator -->
+        <text x="240" y="55" fill="#ffaa00" font-family="monospace" font-size="36" font-weight="bold">3n²</text>
+        <text x="325" y="55" fill="#aaaaaa" font-family="monospace" font-size="34" font-weight="bold">+ 5n</text>
+        <path d="M 330 40 L 420 40" stroke="#ff0000" stroke-width="4" marker-end="url(#x_mark)" />
+
+        <!-- Denominator -->
+        <text x="240" y="120" fill="#00ffcc" font-family="monospace" font-size="36" font-weight="bold">2n²</text>
+        <text x="325" y="120" fill="#aaaaaa" font-family="monospace" font-size="34" font-weight="bold">- 1</text>
+        <path d="M 330 105 L 420 105" stroke="#ff0000" stroke-width="4" />
+
+        <text x="450" y="50" fill="#ff5555" font-family="sans-serif" font-size="16" font-weight="bold">찌끄레기 꼬봉들은
+            짤라!</text>
+        <text x="450" y="115" fill="#ff5555" font-family="sans-serif" font-size="16" font-weight="bold">∞ 앞에서는 티끌일
+            뿐!</text>
+    </g>
+
+    <!-- Extracted Boss Fight -->
+    <path d="M 450 250 L 450 290" stroke="#ffff00" stroke-width="6" marker-end="url(#arrow_d)" filter="url(#glow)" />
+
+    <g transform="translate(150, 320)">
+        <rect x="0" y="0" width="600" height="180" rx="15" fill="#110d1a" stroke="#ffff00" stroke-width="3" />
+        <text x="300" y="40" fill="#ffff00" font-family="sans-serif" font-size="22" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">스캔 완료: "위아래 깡패(최고 차항) 보스 몹 체급 스탯 맞다이!"</text>
+
+        <text x="100" y="100" fill="#aaaaaa" font-family="serif" font-size="36" font-weight="bold">lim</text>
+        <line x1="200" y1="100" x2="330" y2="100" stroke="#ffffff" stroke-width="3" />
+
+        <!-- Surviving Numerator -->
+        <text x="220" y="80" fill="#ffaa00" font-family="monospace" font-size="44" font-weight="bold"
+            filter="url(#glow)">3</text>
+        <text x="260" y="80" fill="#ffffff" font-family="monospace" font-size="44" font-weight="bold">n²</text>
+
+        <!-- Surviving Denominator -->
+        <text x="220" y="150" fill="#00ffcc" font-family="monospace" font-size="44" font-weight="bold"
+            filter="url(#glow)">2</text>
+        <text x="260" y="150" fill="#ffffff" font-family="monospace" font-size="44" font-weight="bold">n²</text>
+
+        <!-- Result -->
+        <text x="380" y="115" fill="#ffffff" font-family="monospace" font-size="40" font-weight="bold">=</text>
+        <text x="430" y="115" fill="#ff00ff" font-family="monospace" font-size="60" font-weight="bold"
+            filter="url(#glow)">3 / 2</text>
+    </g>
+
+    <defs>
+        <marker id="arrow_d" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ffff00" />
+        </marker>
+        <marker id="x_mark" markerWidth="10" markerHeight="10" refX="5" refY="5">
+            <path d="M 0 0 L 10 10 M 0 10 L 10 0" stroke="#ff0000" stroke-width="2" />
+        </marker>
+    </defs>
+
+    <rect x="150" y="530" width="600" height="40" rx="10" fill="#0f0f15" stroke="#ffffff" stroke-width="2" />
+    <text x="450" y="555" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        분모 분자의 "가장 큰 덩치 (n²)" 끼리만 남기고, 앞 대가리 계수 마크만 뜯어오면 정답 스킵!
+    </text>
+</svg>

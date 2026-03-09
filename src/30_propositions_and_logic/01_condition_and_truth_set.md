@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '01. 카멜레온 문장 조건과 진리집합'
+---
+
 # 01. 카멜레온 문장: 조건과 진리집합
 
 ## 1. 학습 목표 (Learning Objectives)

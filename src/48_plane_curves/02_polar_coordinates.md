@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 극좌표Polar Coordinates 회전과 거리의 세계'
+---
+
 # 2. 극좌표(Polar Coordinates): 회전과 거리의 세계
 
 ## [도입부] 학습 목표 (Learning Objectives)

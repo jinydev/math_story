@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "수학이야기 69.행렬"
+title: '수학이야기 69.행렬'
 parent: 수학이야기
 nav_order: 69
 has_children: true

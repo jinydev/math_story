@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">쪼개고 합치면 마법이 풀린다: 다각형의 가중 평균 코어</text>
+
+    <!-- Title / Legend for Two Approaches -->
+    <text x="250" y="120" fill="#ff4d4d" font-family="sans-serif" font-size="24" font-weight="bold"
+        text-anchor="middle">절망편: 단순 산술 평균</text>
+    <text x="650" y="120" fill="#00ffcc" font-family="sans-serif" font-size="24" font-weight="bold"
+        text-anchor="middle">희망편: 가중 평균 전략 (분할 정복)</text>
+
+    <!-- Left Polygon (Wrong approach) -->
+    <g transform="translate(100, 160)">
+        <!-- A big irregular Polygon (L-shape-ish) -->
+        <polygon points="0,0 300,0 300,100 100,100 100,250 0,250" fill="#331111" stroke="#ff4d4d" stroke-width="3"
+            opacity="0.6" />
+
+        <!-- Vertices -->
+        <circle cx="0" cy="0" r="5" fill="#ffffff" />
+        <circle cx="300" cy="0" r="5" fill="#ffffff" />
+        <circle cx="300" cy="100" r="5" fill="#ffffff" />
+        <circle cx="100" cy="100" r="5" fill="#ffffff" />
+        <circle cx="100" cy="250" r="5" fill="#ffffff" />
+        <circle cx="0" cy="250" r="5" fill="#ffffff" />
+
+        <!-- Error Center (Simple Average of 6 points) -->
+        <!-- (0+300+300+100+100+0)/6 = 800/6 = 133 -->
+        <!-- (0+0+100+100+250+250)/6 = 700/6 = 116 -->
+        <circle cx="133" cy="116" r="10" fill="#ff4d4d" filter="url(#glow)" />
+        <text x="133" y="145" fill="#ff4d4d" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">"가짜" 코어</text>
+        <text x="133" y="165" fill="#aaaaaa" font-family="sans-serif" font-size="12" text-anchor="middle">(면적을 무시하고 허공에
+            찍힘!)</text>
+
+        <path d="M 133 116 L 150 200" fill="none" stroke="#ff4d4d" stroke-width="2" stroke-dasharray="4 4" />
+        <text x="160" y="210" fill="#ff4d4d" font-family="sans-serif" font-size="14" text-anchor="start">추락! (균형
+            붕괴)</text>
+    </g>
+
+    <!-- Right Polygon (Correct approach: Weighted Average) -->
+    <g transform="translate(500, 160)">
+        <!-- The exact same Polygon, but split into two rectangles (which we treat as known units, or triangles depending on theory, here rectangles for simplicity as per AI standard) -->
+        <!-- T1/R1: Top part (0,0 to 300,100) -> Area 30k, Center (150,50) -->
+        <rect x="0" y="0" width="300" height="100" fill="#113322" stroke="#00ffcc" stroke-width="2"
+            stroke-dasharray="8 4" opacity="0.8" />
+        <circle cx="150" cy="50" r="6" fill="#00ffcc" />
+        <text x="150" y="45" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">T1 코어 (면적 큰 놈)</text>
+
+        <!-- T2/R2: Bottom part (0,100 to 100,250) -> Area 15k, Center (50, 175) -->
+        <rect x="0" y="100" width="100" height="150" fill="#112233" stroke="#4da6ff" stroke-width="2"
+            stroke-dasharray="8 4" opacity="0.8" />
+        <circle cx="50" cy="175" r="6" fill="#4da6ff" />
+        <text x="50" y="200" fill="#4da6ff" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">T2 코어</text>
+        <text x="50" y="215" fill="#aaaaaa" font-family="sans-serif" font-size="12" text-anchor="middle">(면적 작음)</text>
+
+        <!-- Connect the two centers to form a theoretical lever -->
+        <line x1="150" y1="50" x2="50" y2="175" stroke="#ffaa00" stroke-width="3" filter="url(#glow)" />
+
+        <!-- The True Center (Weighted Average) -->
+        <!-- Area T1=3, T2=1.5 (Ratio 2:1) -->
+        <!-- True center will be closer to T1 by 1:2 ratio on the line. -->
+        <circle cx="116.6" cy="91.6" r="12" fill="#ffaa00" filter="url(#glow)" />
+        <text x="116" y="80" fill="#ffaa00" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="end">진짜 마스터 코어 G 👉</text>
+
+        <text x="250" y="160" fill="#ffaa00" font-family="sans-serif" font-size="16" text-anchor="middle">"거대한 면적(T1)
+            쪽으로</text>
+        <text x="250" y="180" fill="#ffaa00" font-family="sans-serif" font-size="16" text-anchor="middle">무대(G)가 멱살 쥐어
+            이끌려감!"</text>
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="500" width="600" height="70" rx="10" fill="#221133" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="530" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="bold"
+        text-anchor="middle">수천만 개의 폴리곤을 물리 엔진이 박살낼 때 사용하는 '가중 평균' 로직</text>
+    <text x="450" y="555" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">각 폴리곤 조각의 <tspan
+            fill="#00ffcc" font-weight="bold">면적(넓이)을 가중치 파워</tspan>로 삼아 거대한 지레 방정식에 올려놓기!</text>
+
+</svg>

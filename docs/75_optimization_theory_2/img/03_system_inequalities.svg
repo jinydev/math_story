@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#1864ab" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">다중 교집합: 실현 가능 영역(Feasible Region) 의 탄생</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"여러 개의 부등식(제약조건)을 동시에 만족(AND)하는 유일한 교집합 영토를
+        찾아라!"</text>
+
+    <!-- Left: Separate Constraints -->
+    <g transform="translate(40, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">3개의 제약조건 (필터)</text>
+
+        <!-- Condition 1 -->
+        <rect x="20" y="40" width="180" height="25" fill="#ffe3e3" rx="3" />
+        <line x1="25" y1="52" x2="55" y2="52" stroke="#fa5252" stroke-width="2" />
+        <text x="110" y="57" fill="#c92a2a" font-size="12" font-weight="bold" font-family="monospace"
+            text-anchor="middle">L1: x + y ≤ 10</text>
+
+        <!-- Condition 2 -->
+        <rect x="20" y="75" width="180" height="25" fill="#d0ebff" rx="3" />
+        <line x1="25" y1="87" x2="55" y2="87" stroke="#228be6" stroke-width="2" />
+        <text x="110" y="92" fill="#1864ab" font-size="12" font-weight="bold" font-family="monospace"
+            text-anchor="middle">L2: x ≥ 2</text>
+
+        <!-- Condition 3 -->
+        <rect x="20" y="110" width="180" height="25" fill="#ebfbee" rx="3" />
+        <line x1="25" y1="122" x2="55" y2="122" stroke="#40c057" stroke-width="2" />
+        <text x="110" y="127" fill="#2b8a3e" font-size="12" font-weight="bold" font-family="monospace"
+            text-anchor="middle">L3: y ≥ 3</text>
+    </g>
+
+    <!-- AND Combine Arrow -->
+    <path d="M 270 155 C 285 120, 285 120, 300 155" fill="none" stroke="#862e9c" stroke-width="3"
+        marker-end="url(#arrow-purple)" />
+    <rect x="265" y="125" width="40" height="20" fill="#f3d9fa" rx="3" />
+    <text x="285" y="140" fill="#862e9c" font-size="12" font-weight="bold" text-anchor="middle">AND</text>
+
+    <!-- Right: The Intersection Polygon -->
+    <g transform="translate(340, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+
+        <!-- Axes -->
+        <line x1="30" y1="20" x2="30" y2="130" stroke="#adb5bd" stroke-width="2" />
+        <line x1="20" y1="120" x2="200" y2="120" stroke="#adb5bd" stroke-width="2" />
+        <text x="200" y="135" fill="#adb5bd" font-size="10">X</text>
+        <text x="15" y="25" fill="#adb5bd" font-size="10">Y</text>
+
+        <!-- L2: x=2 -->
+        <line x1="60" y1="20" x2="60" y2="130" stroke="#228be6" stroke-width="2" />
+
+        <!-- L3: y=3 -->
+        <line x1="20" y1="90" x2="200" y2="90" stroke="#40c057" stroke-width="2" />
+
+        <!-- L1: x+y=10 -->
+        <line x1="50" y1="30" x2="160" y2="140" stroke="#fa5252" stroke-width="2" />
+
+        <!-- Polygon Intersect Area (Feasible Region) -->
+        <!-- Vertices: (60,90) [x=2, y=3], (60, 40) [x=2, x+y=10], (120, 90) [y=3, x+y=10] -->
+        <path d="M 60 90 L 60 40 L 110 90 Z" fill="#b197fc" fill-opacity="0.7" stroke="#845ef7" stroke-width="2" />
+
+        <text x="80" y="80" fill="#6741d9" font-size="10" font-weight="bold" text-anchor="middle">안전지대</text>
+        <text x="80" y="93" fill="#6741d9" font-size="8" font-weight="bold" text-anchor="middle">(교집합 구역)</text>
+
+        <circle cx="60" cy="90" r="3" fill="#1864ab" />
+        <circle cx="60" cy="40" r="3" fill="#1864ab" />
+        <circle cx="110" cy="90" r="3" fill="#1864ab" />
+    </g>
+
+    <defs>
+        <marker id="arrow-purple" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#862e9c" />
+        </marker>
+    </defs>
+</svg>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <!-- Arrowhead markers -->
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#00ffcc" />
+        </marker>
+        <!-- Glow filter -->
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="400" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">칸토어의 1:1 매핑 (자연수 vs 정수)</text>
+    <text x="400" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">Countable Infinity:
+        N &lt;-&gt; Z</text>
+
+    <!-- Natural Numbers (Top) -->
+    <rect x="50" y="120" width="700" height="60" rx="10" fill="#2d2d44" stroke="#4da6ff" stroke-width="2" />
+    <text x="80" y="157" fill="#4da6ff" font-family="sans-serif" font-size="20" font-weight="bold">자연수 (N)</text>
+
+    <!-- N Boxes -->
+    <g transform="translate(200, 130)" font-family="monospace" font-size="22" font-weight="bold" fill="#ffffff">
+        <rect x="0" y="0" width="50" height="40" rx="5" fill="#3a3a55" /> <text x="25" y="27"
+            text-anchor="middle">1</text>
+        <rect x="70" y="0" width="50" height="40" rx="5" fill="#3a3a55" /> <text x="95" y="27"
+            text-anchor="middle">2</text>
+        <rect x="140" y="0" width="50" height="40" rx="5" fill="#3a3a55" /> <text x="165" y="27"
+            text-anchor="middle">3</text>
+        <rect x="210" y="0" width="50" height="40" rx="5" fill="#3a3a55" /> <text x="235" y="27"
+            text-anchor="middle">4</text>
+        <rect x="280" y="0" width="50" height="40" rx="5" fill="#3a3a55" /> <text x="305" y="27"
+            text-anchor="middle">5</text>
+        <rect x="350" y="0" width="50" height="40" rx="5" fill="#3a3a55" /> <text x="375" y="27"
+            text-anchor="middle">6</text>
+        <rect x="420" y="0" width="50" height="40" rx="5" fill="#3a3a55" /> <text x="445" y="27"
+            text-anchor="middle">7</text>
+        <text x="510" y="27" fill="#4da6ff" font-size="28">...</text>
+    </g>
+
+    <!-- Integers (Bottom) -->
+    <rect x="50" y="320" width="700" height="60" rx="10" fill="#2d2d44" stroke="#ff4d94" stroke-width="2" />
+    <text x="80" y="357" fill="#ff4d94" font-family="sans-serif" font-size="20" font-weight="bold">정수 (Z)</text>
+
+    <!-- Z Boxes -->
+    <g transform="translate(200, 330)" font-family="monospace" font-size="22" font-weight="bold" fill="#ffffff">
+        <rect x="0" y="0" width="50" height="40" rx="5" fill="#553a44" /> <text x="25" y="27"
+            text-anchor="middle">0</text>
+        <rect x="70" y="0" width="50" height="40" rx="5" fill="#553a44" /> <text x="95" y="27"
+            text-anchor="middle">1</text>
+        <rect x="140" y="0" width="50" height="40" rx="5" fill="#553a44" /> <text x="165" y="27"
+            text-anchor="middle">-1</text>
+        <rect x="210" y="0" width="50" height="40" rx="5" fill="#553a44" /> <text x="235" y="27"
+            text-anchor="middle">2</text>
+        <rect x="280" y="0" width="50" height="40" rx="5" fill="#553a44" /> <text x="305" y="27"
+            text-anchor="middle">-2</text>
+        <rect x="350" y="0" width="50" height="40" rx="5" fill="#553a44" /> <text x="375" y="27"
+            text-anchor="middle">3</text>
+        <rect x="420" y="0" width="50" height="40" rx="5" fill="#553a44" /> <text x="445" y="27"
+            text-anchor="middle">-3</text>
+        <text x="510" y="27" fill="#ff4d94" font-size="28">...</text>
+    </g>
+
+    <!-- Mapping Arrows -->
+    <g stroke="#00ffcc" stroke-width="3" stroke-dasharray="6,4" fill="none" class="arrows" marker-end="url(#arrow)"
+        filter="url(#glow)">
+        <path d="M 225 180 V 315" />
+        <path d="M 295 180 V 315" />
+        <path d="M 365 180 V 315" />
+        <path d="M 435 180 V 315" />
+        <path d="M 505 180 V 315" />
+        <path d="M 575 180 V 315" />
+        <path d="M 645 180 V 315" />
+    </g>
+
+    <!-- Mapping Mechanism Text -->
+    <g font-family="sans-serif" font-size="14" fill="#00ffcc" font-weight="bold" text-anchor="middle">
+        <text x="225" y="255" fill="#ffffff">n=1</text>
+        <text x="295" y="255" fill="#00ffcc">짝수(n/2)</text>
+        <text x="365" y="255" fill="#ff66b2">홀수(-)</text>
+        <text x="435" y="255" fill="#00ffcc">짝수(n/2)</text>
+        <text x="505" y="255" fill="#ff66b2">홀수(-)</text>
+        <text x="575" y="255" fill="#00ffcc">짝수(n/2)</text>
+        <text x="645" y="255" fill="#ff66b2">홀수(-)</text>
+    </g>
+
+    <rect x="250" y="420" width="300" height="40" rx="8" fill="#1a1a24" stroke="#00ffcc" stroke-width="2" />
+    <text x="400" y="446" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+        text-anchor="middle">결론: 두 집합은 크기가 같다 (알레프-널)</text>
+
+</svg>

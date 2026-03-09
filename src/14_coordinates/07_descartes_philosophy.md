@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '07. 일곱 번째 수업 해석기하학과 데카르트 Descartes Philosophy'
+---
+
 # 07. 일곱 번째 수업: 해석기하학과 데카르트 (Descartes' Philosophy)
 
 "나는 생각한다, 고로 나는 존재한다. (Cogito, ergo sum)"

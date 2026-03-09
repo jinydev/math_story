@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '31. 지수 Exponent 기하급수 폭발과 차원의 확장'
+---
+
 # 31. 지수 (Exponent: 기하급수 폭발과 차원의 확장)
 
 ## 이 단원의 핵심 (Chapter Focus)

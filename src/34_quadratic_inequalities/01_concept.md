@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 점Point 에서 구역Area 으로 이차부등식의 탄생'
+---
+
 # 1. 점(Point) 에서 구역(Area) 으로: '이차부등식의 탄생'
 
 ## [도입부] 학습 목표 (Learning Objectives)

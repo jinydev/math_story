@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 37. 평면곡선 Plane Curves'
+---
+
 # 수학이야기 37. 평면곡선 (Plane Curves)
 
 ## 📌 학습 개요

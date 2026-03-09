@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '04. 같이 커지는 마법 정비례 엔진'
+---
+
 # 04. 같이 커지는 마법: 정비례 엔진 ($y = ax$)
 
 ## 1. 학습 목표 (Learning Objectives)

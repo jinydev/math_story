@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="500">
+    <defs>
+        <style>
+            .bg {
+                fill: #1e1e1e;
+                rx: 12;
+                stroke: #333333;
+                stroke-width: 2;
+            }
+
+            /* Base Lines */
+            .construction-line {
+                stroke: #64748b;
+                stroke-width: 1.5;
+                stroke-dasharray: 6 4;
+            }
+
+            .axis-line {
+                stroke: #475569;
+                stroke-width: 1;
+            }
+
+            /* Square */
+            .square {
+                fill: none;
+                stroke: #3b82f6;
+                stroke-width: 3;
+            }
+
+            /* Final Rectangle */
+            .golden-rect {
+                fill: #fef08a;
+                fill-opacity: 0.1;
+                stroke: #eab308;
+                stroke-width: 4;
+                stroke-linejoin: round;
+            }
+
+            /* Compass Arcs */
+            .compass-arc {
+                fill: none;
+                stroke: #ec4899;
+                stroke-width: 2;
+                stroke-dasharray: 4 2;
+            }
+
+            .compass-radius {
+                fill: none;
+                stroke: #ec4899;
+                stroke-width: 2;
+                opacity: 0.7;
+            }
+
+            /* Nodes */
+            .node {
+                fill: #ffffff;
+                stroke: #0f172a;
+                stroke-width: 2;
+                r: 5;
+            }
+
+            .node-text {
+                font-family: 'Courier New', monospace;
+                font-size: 16px;
+                font-weight: bold;
+                fill: #e2e8f0;
+            }
+
+            .step-text {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+                fill: #fbbf24;
+            }
+
+            /* Info Board */
+            .title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 24px;
+                fill: #ffffff;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .ratio-text {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                fill: #eab308;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <!-- Background -->
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="45" class="title">신이 내린 황금 비율 (1 : 1.618) - 직사각형 작도</text>
+
+    <g transform="translate(150, 120)">
+
+        <!-- Step 1: Base Square (200x200) ABCD -->
+        <!-- A(0,0), B(200,0), C(200,200), D(0,200) -->
+        <rect x="0" y="0" width="200" height="200" class="square" />
+        <circle cx="0" cy="0" class="node" /><text x="-25" y="-10" class="node-text">D</text>
+        <circle cx="200" cy="0" class="node" /><text x="210" y="-10" class="node-text">C</text>
+        <circle cx="200" cy="200" class="node" /><text x="210" y="220" class="node-text">B</text>
+        <circle cx="0" cy="200" class="node" /><text x="-25" y="220" class="node-text">A</text>
+
+        <text x="-60" y="100" class="step-text">Step 1</text>
+        <text x="-120" y="120" font-family="'Pretendard', sans-serif" font-size="13px" fill="#cbd5e1">가로 세로 1:1<tspan
+                x="-120" dy="16">정사각형 작도</tspan></text>
+
+        <!-- Base Line extension -->
+        <line x1="0" y1="200" x2="400" y2="200" class="axis-line" />
+        <line x1="0" y1="0" x2="400" y2="0" class="axis-line" />
+
+        <!-- Step 2: Midpoint M of AB -->
+        <!-- Midpoint M(100, 200) -->
+        <circle cx="100" cy="200" r="4" fill="#ef4444" />
+        <text x="95" y="225" class="node-text" fill="#ef4444">M</text>
+        <line x1="100" y1="190" x2="100" y2="210" stroke="#ef4444" stroke-width="2" />
+
+        <text x="70" y="300" class="step-text">Step 2</text>
+        <text x="40" y="320" font-family="'Pretendard', sans-serif" font-size="13px" fill="#cbd5e1">밑변 AB의 중점<tspan
+                x="40" dy="16">M(1/2) 찍기</tspan></text>
+
+        <!-- Step 3: Draw Arc from M to C, intersecting extended AB at E -->
+        <!-- M(100, 200), C(200, 0). Length MC = sqrt(100^2 + 200^2) = sqrt(50000) = 223.6 -->
+        <line x1="100" y1="200" x2="200" y2="0" class="compass-radius" />
+
+        <!-- Arc from C(200,0) down to E on the axis y=200. M is center -->
+        <!-- Radius is 223.6 so circle goes from (100,200) down to (100+223.6=323.6, 200) -->
+        <path d="M 200,0 A 223.6 223.6 0 0 1 323.6,200" class="compass-arc" />
+
+        <!-- Point E(323.6, 200) -->
+        <circle cx="323.6" cy="200" class="node" /><text x="325" y="225" class="node-text">E</text>
+        <text x="310" y="300" class="step-text">Step 3</text>
+        <text x="250" y="320" font-family="'Pretendard', sans-serif" font-size="13px" fill="#cbd5e1">M에 침을 박고 C길이 원호를 내려
+            <tspan x="250" dy="16">연장선 E 교점 타격 (√5 추출)</tspan></text>
+
+        <!-- Step 4: Golden Rectangle AEFD -->
+        <!-- Drop perpendicular from E to intersect extended DC at F -->
+        <!-- F(323.6, 0) -->
+        <line x1="323.6" y1="200" x2="323.6" y2="0" class="construction-line" />
+        <circle cx="323.6" cy="0" class="node" /><text x="325" y="-10" class="node-text">F</text>
+
+        <!-- Final Golden Rectangle Outline Overlay -->
+        <!-- Rect A(0,200) to F(323.6,0) width=323.6 height=200 -->
+        <rect x="0" y="0" width="323.6" height="200" class="golden-rect" />
+
+    </g>
+
+    <!-- Golden Ratio Formula display -->
+    <g transform="translate(620, 150)">
+        <text x="0" y="0" font-family="'Pretendard', sans-serif" font-size="16px" fill="#93c5fd" font-weight="bold">황금비
+            증명 수식</text>
+        <text x="0" y="30" font-family="'Courier New', monospace" font-size="14px" fill="#e2e8f0">AM = 1</text>
+        <text x="0" y="55" font-family="'Courier New', monospace" font-size="14px" fill="#e2e8f0">BC = 2 (정사각형 변)</text>
+        <text x="0" y="80" font-family="'Courier New', monospace" font-size="14px" fill="#e2e8f0">MC = √(1² + 2²) =
+            √5</text>
+        <line x1="0" y1="95" x2="150" y2="95" class="axis-line" stroke-dasharray="2 2" />
+        <text x="0" y="115" font-family="'Pretendard', sans-serif" font-size="14px" fill="#fbbf24">새 가로 길이 (AE) = AM +
+            ME</text>
+        <text x="0" y="135" font-family="'Courier New', monospace" font-size="15px" fill="#fbbf24" font-weight="bold">=
+            1 + √5</text>
+    </g>
+
+    <!-- Bottom Info Panel -->
+    <rect x="50" y="440" width="700" height="40" rx="4" fill="#334155" />
+    <text x="400" y="465" class="ratio-text">전체 길이 (A~E) : 짧은 길이 (A~B) = 1.618 : 1</text>
+</svg>

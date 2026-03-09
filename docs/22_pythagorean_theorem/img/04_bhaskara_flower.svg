@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="600">
+    <rect width="600" height="600" fill="#2d3436" />
+    <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#dfe6e9" text-anchor="middle">
+        바스카라의 꽃 (Bhaskara's Flower Proof)
+    </text>
+
+    <!-- The large outer square c^2 -->
+    <g transform="translate(150, 150)">
+        
+        <!-- Big outer square formed by hypotenuses (c) -->
+        <!-- a = 120, b = 160, c = 200 => Total area = 40,000 -->
+        <!-- To make it fit perfectly: we use a square of 300x300. c=300 -->
+        <!-- The 4 right triangles are placed inside so their hypotenuses form the outer edge (c) -->
+        <rect x="0" y="0" width="300" height="300" fill="none" stroke="#55efc4" stroke-width="4" stroke-dasharray="10,5" />
+        
+        <!-- Center hole square (b - a)^2 -->
+        <!-- Let's say a=90, b=210 => c (hypotenuse) does not cleanly make 300, but for visual SVG we just need pieces that fit. -->
+        <!-- Let's say Triangle sides: a=120, b=160, c=200. Outer square c=200. Inner square = (b-a) = 40. -->
+        <g transform="translate(50, 50)">
+            <rect x="0" y="0" width="200" height="200" fill="none" stroke="#55efc4" stroke-width="3" />
+            
+            <!-- Triangle 1 (Top) -->
+            <polygon points="0,0 160,0 160,120" fill="#ff7675" fill-opacity="0.8" stroke="#d63031" stroke-width="2">
+                <animateTransform attributeName="transform" type="translate" values="0,0; -10,-10; 0,0" dur="4s" repeatCount="indefinite" />
+            </polygon>
+            
+            <!-- Triangle 2 (Right) -->
+            <polygon points="200,0 200,160 80,160" fill="#74b9ff" fill-opacity="0.8" stroke="#0984e3" stroke-width="2">
+                <animateTransform attributeName="transform" type="translate" values="0,0; 10,-10; 0,0" dur="4s" repeatCount="indefinite" />
+            </polygon>
+            
+            <!-- Triangle 3 (Bottom) -->
+            <polygon points="200,200 40,200 40,80" fill="#ffeaa7" fill-opacity="0.8" stroke="#fdcb6e" stroke-width="2">
+                <animateTransform attributeName="transform" type="translate" values="0,0; 10,10; 0,0" dur="4s" repeatCount="indefinite" />
+            </polygon>
+            
+            <!-- Triangle 4 (Left) -->
+            <polygon points="0,200 0,40 120,40" fill="#a29bfe" fill-opacity="0.8" stroke="#6c5ce7" stroke-width="2">
+                <animateTransform attributeName="transform" type="translate" values="0,0; -10,10; 0,0" dur="4s" repeatCount="indefinite" />
+            </polygon>
+            
+            <!-- Inner Square Hole -->
+            <!-- Vertices: (160,40), (160,160), (40,160), (40,40) => Wait, the triangles form a 120x120 hole or similar. -->
+            <rect x="40" y="40" width="120" height="120" fill="#636e72" fill-opacity="0.5" stroke="#b2bec3" stroke-width="2">
+                <animate attributeName="fill-opacity" values="0.5; 1; 0.5" dur="2s" repeatCount="indefinite" />
+            </rect>
+            
+            <text x="100" y="105" font-family="Arial" font-size="20" font-weight="bold" fill="#dfe6e9" text-anchor="middle">(b-a)^2</text>
+        </g>
+    </g>
+    
+    <text x="300" y="520" font-family="Arial" font-size="24" font-weight="bold" fill="#55efc4" text-anchor="middle">
+        c^2 = 4(ab/2) + (b-a)^2
+    </text>
+    
+    <text x="300" y="560" font-family="Arial" font-size="16" fill="#b2bec3" text-anchor="middle">
+        4개의 똑같은 직각삼각형이 모여 큰 정사각형(c^2)을 이루고, 가운데 작은 구멍은 (b-a)^2가 됩니다.
+    </text>
+</svg>

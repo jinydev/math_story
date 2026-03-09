@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 표로 정리하는 확률 확률분포표 Probability Distribution Table'
+---
+
 # 2. 표로 정리하는 확률: 확률분포표 (Probability Distribution Table)
 
 ## [도입부] 학습 목표 (Learning Objectives)

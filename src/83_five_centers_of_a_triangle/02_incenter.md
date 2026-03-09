@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 세 도로망의 교차점 내심 Incenter'
+---
+
 # 2. 세 도로망의 교차점: 내심 (Incenter)
 
 ## [도입부] 학습 목표 (Learning Objectives)

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 부분은 전체와 같다 갈릴레오의 역설Galileos Paradox'
+---
+
 # 03. 부분은 전체와 같다: 갈릴레오의 역설(Galileo's Paradox)
 
 ## 1. 학습 목표 (Learning Objectives)

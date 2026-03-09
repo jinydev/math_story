@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "수학이야기 71.수열의 극한"
+title: '수학이야기 71.수열의 극한'
 parent: 수학이야기
 nav_order: 71
 has_children: true

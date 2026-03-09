@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '04. 네 번째 수업 1초당 떨어지는 HP 배터리 게이지, 변화율 Related Rates'
+---
+
 # 04. 네 번째 수업: 1초당 떨어지는 HP 배터리 게이지, 변화율 (Related Rates)
 
 게임에서 당신의 캐릭터가 독 구름(Poison Cloud) 안에 잘못 발을 디뎠습니다.

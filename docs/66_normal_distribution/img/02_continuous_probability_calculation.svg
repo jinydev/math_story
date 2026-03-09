@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">면적이 곧 확률이다! 확률밀도함수(PDF)와 적분</text>
+
+    <!-- Probability Density Function Curve -->
+    <g transform="translate(300, 180)">
+        <!-- Axes -->
+        <line x1="-250" y1="0" x2="250" y2="0" stroke="#868e96" stroke-width="2" /> <!-- X -->
+        <line x1="-200" y1="10" x2="-200" y2="-120" stroke="#868e96" stroke-width="2" /> <!-- Y -->
+
+        <text x="-210" y="-130" fill="#868e96" font-size="12" font-family="sans-serif">f(x)</text>
+        <text x="260" y="5" fill="#868e96" font-size="12" font-family="sans-serif">X</text>
+
+        <!-- The Curve (Normal-ish) -->
+        <!-- Using a cubic bezier for a bell curve -->
+        <path d="M -200 0 C -100 0, -80 -100, 0 -100 C 80 -100, 100 0, 200 0" fill="none" stroke="#2b8a3e"
+            stroke-width="4" />
+
+        <!-- Shaded Area (Integration) between X=a and X=b -->
+        <!-- Let's say a = 20, b = 100 -->
+        <!-- To make the shade follow the curve, we rebuild that chunk of the path -->
+        <path d="M 20 -95 C 50 -95, 80 -40, 100 -20 L 100 0 L 20 0 Z" fill="#b2f2bb" opacity="0.6" stroke="#40c057"
+            stroke-width="1" />
+
+        <!-- Boundary Lines -->
+        <line x1="20" y1="0" x2="20" y2="-95" stroke="#099268" stroke-width="2" stroke-dasharray="4,4" />
+        <line x1="100" y1="0" x2="100" y2="-20" stroke="#099268" stroke-width="2" stroke-dasharray="4,4" />
+
+        <!-- Labels for boundaries -->
+        <text x="20" y="20" fill="#2b8a3e" font-size="14" font-family="monospace" font-weight="bold"
+            text-anchor="middle">a</text>
+        <text x="100" y="20" fill="#2b8a3e" font-size="14" font-family="monospace" font-weight="bold"
+            text-anchor="middle">b</text>
+
+        <!-- The formula/concept -->
+        <text x="60" y="-40" fill="#087f5b" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">면적 = P(a ≤ X ≤ b)</text>
+
+        <!-- Overall Rule -->
+        <rect x="-180" y="-120" width="160" height="30" fill="#e6fcf5" stroke="#20c997" rx="5" />
+        <text x="-100" y="-100" fill="#099268" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">"등성이 전체 면적의 합 = 1"</text>
+    </g>
+
+</svg>

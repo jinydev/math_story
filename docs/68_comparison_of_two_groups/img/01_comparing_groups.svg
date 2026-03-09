@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">진짜 승자는 누구인가?: 두 집단의 비교 (Comparison of Groups)</text>
+
+    <!-- Distribution A (Math class) -->
+    <g transform="translate(100, 150)">
+        <line x1="-30" y1="50" x2="160" y2="50" stroke="#868e96" stroke-width="2" />
+        <text x="65" y="70" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">A반 (수학 점수)</text>
+
+        <!-- Wide Bell Curve -->
+        <path d="M 0 50 Q 65 -100 130 50" fill="#ebfbee" stroke="#40c057" stroke-width="3" />
+        <line x1="65" y1="50" x2="65" y2="-20" stroke="#2b8a3e" stroke-dasharray="3,3" stroke-width="2" />
+        <text x="65" y="-30" fill="#2b8a3e" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">평균 60점</text>
+
+        <!-- Features -->
+        <text x="65" y="0" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">편차가 큼 (널찍함)</text>
+    </g>
+
+    <!-- Distribution B (English class) -->
+    <g transform="translate(350, 150)">
+        <line x1="-30" y1="50" x2="160" y2="50" stroke="#868e96" stroke-width="2" />
+        <text x="65" y="70" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">B반 (수학 점수)</text>
+
+        <!-- Narrow, high Bell Curve -->
+        <path d="M 20 50 Q 65 -150 110 50" fill="#fff4e6" stroke="#f59f00" stroke-width="3" />
+        <line x1="65" y1="50" x2="65" y2="-75" stroke="#d9480f" stroke-dasharray="3,3" stroke-width="2" />
+        <text x="65" y="-85" fill="#d9480f" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">평균 60점</text>
+
+        <!-- Features -->
+        <text x="65" y="-45" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">편차가 작음</text>
+        <text x="65" y="-30" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">(오밀조밀 모임)</text>
+    </g>
+
+    <!-- Versus / Comparison -->
+    <circle cx="300" cy="110" r="20" fill="#fa5252" />
+    <text x="300" y="115" fill="#fff" font-size="16" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">VS</text>
+
+    <rect x="180" y="50" width="240" height="25" fill="#e7f5ff" rx="5" />
+    <text x="300" y="68" fill="#1864ab" font-size="14" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">평균은 같아도 완전히 다른 집단이다!</text>
+</svg>

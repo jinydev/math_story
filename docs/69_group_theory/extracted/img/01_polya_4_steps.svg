@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">폴리아의 4단계 알고리즘: 해킹 프레임워크</text>
+
+    <!-- Algorithm Flow Cycle -->
+    <!-- Step 1: Understand -->
+    <g transform="translate(150, 150)">
+        <rect x="-80" y="-50" width="160" height="100" rx="15" fill="#1b0022" stroke="#ff00ff" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="0" y="-15" fill="#ff00ff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">1. 이해</text>
+        <text x="0" y="10" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">Input 데이터
+            파악</text>
+        <text x="0" y="30" fill="#aaaaaa" font-family="sans-serif" font-size="12" text-anchor="middle">타겟 변수 식별</text>
+        <circle cx="0" cy="-50" r="10" fill="#ff00ff" />
+    </g>
+
+    <!-- Arrow 1 to 2 -->
+    <path d="M 230 150 L 370 150" fill="none" stroke="#4da6ff" stroke-width="4" marker-end="url(#arrow_b)" />
+
+    <!-- Step 2: Plan -->
+    <g transform="translate(450, 150)">
+        <rect x="-80" y="-50" width="160" height="100" rx="15" fill="#001133" stroke="#4da6ff" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="0" y="-15" fill="#4da6ff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">2. 계획 수립</text>
+        <text x="0" y="10" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">Algorithm
+            설계</text>
+        <text x="0" y="30" fill="#aaaaaa" font-family="sans-serif" font-size="12" text-anchor="middle">전략 (표, 그림) 무기
+            선택</text>
+        <circle cx="0" cy="-50" r="10" fill="#4da6ff" />
+    </g>
+
+    <!-- Arrow 2 to 3 -->
+    <path d="M 530 150 L 670 150" fill="none" stroke="#ffaa00" stroke-width="4" marker-end="url(#arrow_y)" />
+
+    <!-- Step 3: Execute -->
+    <g transform="translate(750, 150)">
+        <rect x="-80" y="-50" width="160" height="100" rx="15" fill="#332200" stroke="#ffaa00" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="0" y="-15" fill="#ffaa00" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">3. 실행</text>
+        <text x="0" y="10" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">Code
+            Execution</text>
+        <text x="0" y="30" fill="#aaaaaa" font-family="sans-serif" font-size="12" text-anchor="middle">연산 렌더링 가동</text>
+        <circle cx="0" cy="-50" r="10" fill="#ffaa00" />
+    </g>
+
+    <!-- Arrow 3 to 4 (Down and Left) -->
+    <path d="M 750 200 L 750 350 L 530 350" fill="none" stroke="#00ffcc" stroke-width="4" marker-end="url(#arrow_g)" />
+
+    <!-- Step 4: Look Back -->
+    <g transform="translate(450, 350)">
+        <rect x="-80" y="-50" width="160" height="100" rx="15" fill="#003322" stroke="#00ffcc" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="0" y="-15" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">4. 반성</text>
+        <text x="0" y="10" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">Debugging &
+            Check</text>
+        <text x="0" y="30" fill="#aaaaaa" font-family="sans-serif" font-size="12" text-anchor="middle">상식 검증</text>
+        <circle cx="0" cy="50" r="10" fill="#00ffcc" />
+    </g>
+
+    <!-- Feedback Loops (Debugging Failures) -->
+    <!-- 4 back to 1 (Major Fail) -->
+    <path d="M 370 350 L 150 350 L 150 200" fill="none" stroke="#ff5555" stroke-width="4" stroke-dasharray="10 5"
+        marker-end="url(#arrow_r)" />
+    <text x="260" y="335" fill="#ff5555" font-family="sans-serif" font-size="14" font-weight="bold">Fatal Error: 재이해
+        요망</text>
+
+    <!-- 4 back to 2 (Strategy Fail) -->
+    <path d="M 450 300 L 450 200" fill="none" stroke="#ff5555" stroke-width="4" stroke-dasharray="10 5"
+        marker-end="url(#arrow_r)" />
+    <text x="460" y="260" fill="#ff5555" font-family="sans-serif" font-size="14" font-weight="bold">Logic Error: 다른 전략
+        채택</text>
+
+    <defs>
+        <marker id="arrow_b" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4da6ff" />
+        </marker>
+        <marker id="arrow_y" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ffaa00" />
+        </marker>
+        <marker id="arrow_g" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#00ffcc" />
+        </marker>
+        <marker id="arrow_r" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ff5555" />
+        </marker>
+    </defs>
+
+    <!-- Explanation Text -->
+    <rect x="150" y="470" width="600" height="80" rx="10" fill="#1b1122" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="500" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        단순한 선형 진행이 아니라, <tspan fill="#ff5555" font-weight="bold">조건이나 상식에 어긋났을 때 가차 없이 앞 단계로 되돌아가는</tspan>
+    </text>
+    <text x="450" y="525" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        무한 피드백 루프(While) 와 디버깅 논리 구조가 바로 폴리아 수학 프레임워크의 본질입니다.
+    </text>
+</svg>

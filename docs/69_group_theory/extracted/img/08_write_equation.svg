@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">식 뼈대 컴파일러: 한국어를 머신코드(Equation) 로 번역!</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"x는 미지의 세계가 아니다.
+        컴퓨터와 연산 권한을 주고받기 위한 명명(Naming) 된 메모리 예약석이다."</text>
+
+    <!-- Human Text Area -->
+    <g transform="translate(100, 140)">
+        <rect x="0" y="0" width="280" height="300" rx="15" fill="#1b1111" stroke="#ff5555" stroke-width="3" />
+        <text x="140" y="40" fill="#ff5555" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">Input: 휴먼 텍스트 언어</text>
+
+        <text x="20" y="100" fill="#ffffff" font-family="sans-serif" font-size="16" font-style="italic">"내 <tspan
+                fill="#ffff00" font-weight="bold">모르는 돈</tspan>에"</text>
+        <text x="20" y="140" fill="#ffffff" font-family="sans-serif" font-size="16" font-style="italic">"<tspan
+                fill="#00ffcc" font-weight="bold">세 배</tspan>로 곱하고"</text>
+        <text x="20" y="180" fill="#ffffff" font-family="sans-serif" font-size="16" font-style="italic">"거기서 <tspan
+                fill="#ff00ff" font-weight="bold">5를 뺐어</tspan>."</text>
+        <text x="20" y="240" fill="#ffffff" font-family="sans-serif" font-size="16" font-style="italic">"그 결과값이 <tspan
+                fill="#4da6ff" font-weight="bold">딱 10</tspan> 이야."</text>
+
+        <text x="140" y="280" fill="#777777" font-family="sans-serif" font-size="13" text-anchor="middle">(용량: 수십 바이트
+            낭비, 비효율적)</text>
+    </g>
+
+    <!-- Compiler / NLP Engine -->
+    <g transform="translate(415, 230)">
+        <rect x="0" y="0" width="70" height="80" rx="10" fill="#332200" stroke="#ffaa00" stroke-width="3"
+            filter="url(#glow)" />
+        <path d="M 15 25 L 35 15 L 55 25 M 35 15 L 35 60" stroke="#ffaa00" stroke-width="4" fill="none" />
+        <text x="35" y="72" fill="#ffaa00" font-family="sans-serif" font-size="12" font-weight="bold"
+            text-anchor="middle">Compile</text>
+
+        <!-- Arrows -->
+        <path d="M -35 40 L -5 40" fill="none" stroke="#ff5555" stroke-width="4" marker-end="url(#arrow_c)" />
+        <path d="M 75 40 L 105 40" fill="none" stroke="#00ffcc" stroke-width="4" marker-end="url(#arrow_c)" />
+    </g>
+
+    <!-- Equation Code Area -->
+    <g transform="translate(520, 140)">
+        <rect x="0" y="0" width="280" height="300" rx="15" fill="#001a11" stroke="#00ffcc" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="140" y="40" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">Output: 기계 방정식 코드</text>
+
+        <!-- Code Translation -->
+        <text x="40" y="100" fill="#ffff00" font-family="monospace" font-size="24" font-weight="bold">x</text>
+        <text x="40" y="140" fill="#00ffcc" font-family="monospace" font-size="24" font-weight="bold">3x</text>
+        <text x="40" y="180" fill="#ff00ff" font-family="monospace" font-size="24" font-weight="bold">3x - 5</text>
+        <text x="40" y="240" fill="#4da6ff" font-family="monospace" font-size="28" font-weight="bold"
+            filter="url(#glow)">3x - 5 = 10</text>
+
+        <text x="140" y="280" fill="#777777" font-family="sans-serif" font-size="13" text-anchor="middle">(용량: 8문자 극압축,
+            완벽 효율)</text>
+    </g>
+
+    <defs>
+        <marker id="arrow_c" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff" />
+        </marker>
+    </defs>
+
+    <!-- Python SymPy Box -->
+    <g transform="translate(100, 470)">
+        <rect x="0" y="0" width="700" height="100" rx="10" fill="#0d1b1a" stroke="#ffffff" stroke-width="2" />
+        <text x="50" y="30" fill="#ffffff" font-family="sans-serif" font-size="16">이제 길고 장황한 텍스트 덩어리를 더 이상 쳐다볼 필요가
+            없습니다.</text>
+        <text x="50" y="55" fill="#4da6ff" font-family="sans-serif" font-size="16">방정식 뼈대 코드를 컴퓨터 AI 엔진 <tspan
+                fill="#ffff00" font-family="monospace" font-weight="bold">sympy.solve(3*x - 5, 10)</tspan> 에 던져주기만 하면,
+        </text>
+        <text x="50" y="80" fill="#ff5555" font-family="sans-serif" font-size="16">나머지 지루한 계산은 컴퓨터가 0.1초 만에 <tspan
+                fill="#ffffff" font-weight="bold">정답 x = 5</tspan> 로 도출하여 모니터에 뱉어냅니다!</text>
+    </g>
+
+</svg>

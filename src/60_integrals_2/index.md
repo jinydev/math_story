@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "수학이야기 83.적분2"
+title: '수학이야기 83.적분2'
 parent: 수학이야기
 nav_order: 83
 has_children: true

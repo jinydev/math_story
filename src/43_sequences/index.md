@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 34. 수열 Sequences'
+---
+
 # 수학이야기 34. 수열 (Sequences)
 
 ## 📌 학습 개요

@@ -1,0 +1,74 @@
+main:
+- title: 26. Oracle
+  url: /database/oracle
+  subitems:
+  - title: 학습목표
+    url: /database/oracle
+- title: 27. MySQL
+  url: /database/mysql
+  subitems:
+  - title: 학습목표
+    url: /database/mysql
+  - title: 27.1 MySQL 개요
+    url: /database/mysql/intro
+  - title: 27.2 MySQL 설치
+    url: /database/mysql/install
+  - title: 27.3 Client Tool 설치
+    url: /database/mysql/client-tool
+  - title: 27.4 DB 구성
+    url: /database/mysql/config
+  - title: 27.5 DB 연결
+    url: /database/mysql/connect
+  - title: 27.6 데이터 저장
+    url: /database/mysql/insert
+  - title: 27.7 데이터 수정
+    url: /database/mysql/update
+  - title: 27.8 데이터 삭제
+    url: /database/mysql/delete
+  - title: 27.9 데이터 읽기
+    url: /database/mysql/select
+  - title: 27.10 트랜잭션 처리
+    url: /database/mysql/transaction
+  - title: 27.11 게시판 구현
+    url: /database/mysql/board
+- title: 28. Client
+  url: /database/client
+  subitems:
+  - title: 학습목표
+    url: /database/client
+- title: 29. JDBC
+  url: /database/jdbc
+  subitems:
+  - title: 학습목표
+    url: /database/jdbc
+  - title: 29.1 JDBC 개요
+    url: /database/jdbc/intro
+  - title: 29.2 DBMS 설치
+    url: /database/jdbc/install-dbms
+  - title: 29.3 Client Tool 설치
+    url: /database/jdbc/install-tool
+  - title: 29.4 DB 구성
+    url: /database/jdbc/config-db
+  - title: 29.5 DB 연결
+    url: /database/jdbc/connect-db
+  - title: 29.6 데이터 저장
+    url: /database/jdbc/insert
+  - title: 29.7 데이터 수정
+    url: /database/jdbc/update
+  - title: 29.8 데이터 삭제
+    url: /database/jdbc/delete
+  - title: 29.9 데이터 읽기
+    url: /database/jdbc/select
+  - title: 29.10 프로시저와 함수 호출
+    url: /database/jdbc/procedure
+  - title: 29.11 트랜잭션 처리
+    url: /database/jdbc/transaction
+  - title: 29.12 게시판 구현
+    url: /database/jdbc/board
+  - title: 확인문제
+    url: /database/jdbc/quiz
+- title: 30. Project
+  url: /database/project
+  subitems:
+  - title: 학습목표
+    url: /database/project

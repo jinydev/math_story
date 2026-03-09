@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#e8590c" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세 번째 배열: '포함배제의 원리 (Inclusion-Exclusion)'</text>
+
+    <!-- Title / Setup -->
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"더하고, 빼고, 다시 더하라! 집합의 중복 카운팅 해결사"</text>
+
+    <!-- Venn Diagram Example -->
+    <g transform="translate(100, 80)">
+        <!-- Set A (Pizza) -->
+        <circle cx="80" cy="80" r="70" fill="#ffc9c9" fill-opacity="0.6" stroke="#fa5252" stroke-width="2" />
+        <text x="50" y="50" fill="#c92a2a" font-size="14" font-weight="bold" text-anchor="middle">A (10명)</text>
+        <text x="50" y="70" fill="#c92a2a" font-size="12" text-anchor="middle">수학 선행</text>
+
+        <!-- Set B (Burger) -->
+        <circle cx="150" cy="80" r="70" fill="#b2f2bb" fill-opacity="0.6" stroke="#2b8a3e" stroke-width="2" />
+        <text x="180" y="50" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">B (8명)</text>
+        <text x="180" y="70" fill="#2b8a3e" font-size="12" text-anchor="middle">영어 선행</text>
+
+        <!-- Intersection Area -->
+        <path d="M 115 25 A 70 70 0 0 0 115 135 A 70 70 0 0 0 115 25 Z" fill="#ffe066" stroke="#f59f00" stroke-width="2"
+            fill-opacity="0.8" />
+        <text x="115" y="85" fill="#d9480f" font-size="14" font-weight="bold" text-anchor="middle">A ∩ B</text>
+        <text x="115" y="105" fill="#d9480f" font-size="12" text-anchor="middle">(3명)</text>
+    </g>
+
+    <!-- Formula Breakdown -->
+    <g transform="translate(340, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">오류 없는 학생 수 합산법</text>
+
+        <!-- Mistake -->
+        <text x="15" y="55" fill="#495057" font-size="12">❌</text>
+        <text x="40" y="55" fill="#fa5252" font-size="12" font-weight="bold">수학 10 + 영어 8 = 18명?</text>
+        <text x="40" y="70" fill="#fa5252" font-size="10">➡ 교집합 3명이 '두 번' 카운트됨!</text>
+
+        <!-- Solution -->
+        <text x="15" y="100" fill="#495057" font-size="12">✅</text>
+        <text x="40" y="100" fill="#2b8a3e" font-size="12" font-weight="bold">수학 10 + 영어 8 - 중복 3 = 15명</text>
+
+        <!-- General Formula -->
+        <path d="M 10 115 L 210 115" stroke="#adb5bd" stroke-width="1" stroke-dasharray="2,2" />
+        <text x="110" y="135" fill="#e8590c" font-size="12" font-family="monospace" font-weight="bold"
+            text-anchor="middle">|A ∪ B| = |A| + |B| - |A ∩ B|</text>
+    </g>
+
+</svg>

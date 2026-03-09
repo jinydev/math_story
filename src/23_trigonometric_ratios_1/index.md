@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "수학이야기 44.삼각비1"
+title: '수학이야기 44.삼각비1'
 parent: 수학이야기
 nav_order: 44
 has_children: true

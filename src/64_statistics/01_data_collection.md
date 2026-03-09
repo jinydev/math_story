@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 흩어진 조각 모으기 광산에서 원석 깨기, 자료의 수집 Data Collection'
+---
+
 # 1. 흩어진 조각 모으기: 광산에서 원석 깨기, '자료의 수집 (Data Collection)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

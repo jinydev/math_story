@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .room {
+                fill: rgba(255, 255, 255, 0.05);
+                stroke: #30363d;
+                stroke-width: 2;
+                rx: 8;
+            }
+
+            .room-active {
+                fill: rgba(0, 255, 255, 0.05);
+                stroke: #00ffff;
+                stroke-width: 3;
+                filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.5));
+            }
+
+            .num {
+                fill: #ffffff;
+                font-size: 60px;
+                text-anchor: middle;
+            }
+
+            .power {
+                fill: #ff6464;
+                font-size: 20px;
+                text-anchor: middle;
+            }
+
+            .rocket {
+                fill: #ffaa64;
+            }
+
+            .flame {
+                fill: #ff6464;
+                animation: flicker 0.5s infinite alternate;
+            }
+
+            @keyframes flicker {
+                0% {
+                    opacity: 0.8;
+                    transform: scaleY(0.9);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: scaleY(1.1);
+                }
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 15px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="40" class="title">모양이 아니라 '방 번호(Position)'가 권력을 결정한다</text>
+    <text x="400" y="70" class="desc">똑같은 생긴 숫자 '3'이라도 기수(Base)의 거듭제곱 가중치에 따라 파워가 달라지는 마법</text>
+
+    <!-- Array visual to link with Python intuition -->
+    <text x="400" y="110" fill="#888" font-size="24" text-anchor="middle">숫자 333의 위치적 파워업</text>
+
+    <!-- Right most: 1s place (Index 0 in reverse) -->
+    <g transform="translate(550, 150)">
+        <rect width="150" height="200" class="room" />
+        <text x="75" y="40" fill="#888" font-size="16" text-anchor="middle">방 0 (1의 자리)</text>
+        <text x="75" y="110" class="num">3</text>
+        <text x="75" y="150" class="power">x 10^0</text>
+        <text x="75" y="180" fill="#ffffff" font-size="18" text-anchor="middle">= 3 파워</text>
+
+        <text x="75" y="240" fill="#888" font-size="14" text-anchor="middle">로켓 없음</text>
+    </g>
+
+    <!-- Middle: 10s place (Index 1) -->
+    <g transform="translate(325, 150)">
+        <rect width="150" height="200" class="room-active" stroke="#ffaa64" />
+        <text x="75" y="40" fill="#ffaa64" font-size="16" text-anchor="middle">방 1 (10의 자리)</text>
+        <text x="75" y="110" class="num">3</text>
+        <text x="75" y="150" class="power">x 10^1</text>
+        <text x="75" y="180" fill="#ffffff" font-size="18" text-anchor="middle">= 30 파워</text>
+
+        <!-- 1 Rocket -->
+        <path d="M 65 220 L 75 200 L 85 220 Z" class="rocket" />
+        <path d="M 70 220 L 75 240 L 80 220 Z" class="flame" />
+    </g>
+
+    <!-- Left most: 100s place (Index 2) -->
+    <g transform="translate(100, 150)">
+        <rect width="150" height="200" class="room-active" />
+        <text x="75" y="40" fill="#00ffff" font-size="16" text-anchor="middle">방 2 (100의 자리)</text>
+        <text x="75" y="110" class="num">3</text>
+        <text x="75" y="150" class="power">x 10^2</text>
+        <text x="75" y="180" fill="#ffffff" font-size="18" text-anchor="middle">= 300 파워</text>
+
+        <!-- 2 Rockets -->
+        <path d="M 45 220 L 55 200 L 65 220 Z" class="rocket" />
+        <path d="M 50 220 L 55 240 L 60 220 Z" class="flame" />
+
+        <path d="M 85 220 L 95 200 L 105 220 Z" class="rocket" />
+        <path d="M 90 220 L 95 240 L 100 220 Z" class="flame" />
+    </g>
+
+</svg>

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "수학이야기 25.확률1"
+title: '수학이야기 25.확률1'
 parent: 수학이야기
 nav_order: 25
 has_children: true

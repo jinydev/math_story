@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 86. 수열의 합 Sum of Sequences'
+---
+
 # 수학이야기 86. 수열의 합 (Sum of Sequences)
 
 <div align="center">

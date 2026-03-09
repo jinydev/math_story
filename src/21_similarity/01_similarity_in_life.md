@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '01. 생활 속의 닮음 Scaling and Resizing'
+---
+
 # 01. 생활 속의 닮음 (Scaling and Resizing)
 
 ## 1. 학습 목표 (Learning Objectives)

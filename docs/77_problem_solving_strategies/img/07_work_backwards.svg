@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2f9e44" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">일곱 번째 전략: 결론부터 역추적하는 '거꾸로 풀기(Work Backwards)'</text>
+
+    <!-- Problem Forward (The Maze) -->
+    <g transform="translate(50, 60)">
+        <rect x="0" y="0" width="80" height="40" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="40" y="24" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">시작돈 ?</text>
+
+        <path d="M 80 20 L 140 20" fill="none" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow)" />
+        <text x="110" y="10" fill="#e03131" font-size="10" font-weight="bold" text-anchor="middle">절반 씀</text>
+        <text x="110" y="32" fill="#e03131" font-size="10" font-weight="bold" text-anchor="middle">÷ 2</text>
+
+        <rect x="150" y="0" width="60" height="40" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="180" y="24" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">?</text>
+
+        <path d="M 210 20 L 270 20" fill="none" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow)" />
+        <text x="240" y="10" fill="#e03131" font-size="10" font-weight="bold" text-anchor="middle">100원 받음</text>
+        <text x="240" y="32" fill="#e03131" font-size="10" font-weight="bold" text-anchor="middle">+ 100</text>
+
+        <rect x="280" y="0" width="60" height="40" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="310" y="24" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">?</text>
+
+        <path d="M 340 20 L 400 20" fill="none" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow)" />
+        <text x="370" y="10" fill="#e03131" font-size="10" font-weight="bold" text-anchor="middle">3배 뻥튀기</text>
+        <text x="370" y="32" fill="#e03131" font-size="10" font-weight="bold" text-anchor="middle">x 3</text>
+
+        <rect x="410" y="0" width="90" height="40" fill="#ebfbee" stroke="#2b8a3e" stroke-width="2" rx="5" />
+        <text x="455" y="24" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">최종 900원</text>
+    </g>
+
+    <line x1="100" y1="115" x2="500" y2="115" stroke="#adb5bd" stroke-dasharray="4,4" />
+    <text x="300" y="130" fill="#099268" font-size="12" font-weight="bold" text-anchor="middle">미지수 x부터 가면 지옥, 최종 결과
+        900원부터 연산을 뒤집어라! (Reverse Engineering)</text>
+
+    <!-- Problem Backward (Reverse Engineering) -->
+    <g transform="translate(50, 150)">
+        <rect x="410" y="0" width="90" height="40" fill="#ebfbee" stroke="#2b8a3e" stroke-width="2" rx="5" />
+        <text x="455" y="24" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">결과 900원</text>
+
+        <path d="M 400 20 L 350 20" fill="none" stroke="#2b8a3e" stroke-width="3" marker-end="url(#arrow-green-rev)" />
+        <text x="375" y="10" fill="#2b8a3e" font-size="10" font-weight="bold" text-anchor="middle">거꾸로 나누기</text>
+        <text x="375" y="32" fill="#099268" font-size="12" font-weight="bold" text-anchor="middle">÷ 3</text>
+
+        <rect x="280" y="0" width="60" height="40" fill="#e3fafc" stroke="#0b7285" rx="5" />
+        <text x="310" y="24" fill="#0b7285" font-size="14" font-weight="bold" text-anchor="middle">300원</text>
+
+        <path d="M 270 20 L 220 20" fill="none" stroke="#2b8a3e" stroke-width="3" marker-end="url(#arrow-green-rev)" />
+        <text x="245" y="10" fill="#2b8a3e" font-size="10" font-weight="bold" text-anchor="middle">거꾸로 빼기</text>
+        <text x="245" y="32" fill="#099268" font-size="12" font-weight="bold" text-anchor="middle">- 100</text>
+
+        <rect x="150" y="0" width="60" height="40" fill="#e3fafc" stroke="#0b7285" rx="5" />
+        <text x="180" y="24" fill="#0b7285" font-size="14" font-weight="bold" text-anchor="middle">200원</text>
+
+        <path d="M 140 20 L 90 20" fill="none" stroke="#2b8a3e" stroke-width="3" marker-end="url(#arrow-green-rev)" />
+        <text x="115" y="10" fill="#2b8a3e" font-size="10" font-weight="bold" text-anchor="middle">거꾸로 곱하기</text>
+        <text x="115" y="32" fill="#099268" font-size="12" font-weight="bold" text-anchor="middle">x 2</text>
+
+        <rect x="0" y="0" width="80" height="40" fill="#fff9db" stroke="#f59f00" stroke-width="3" rx="5" />
+        <text x="40" y="24" fill="#d9480f" font-size="16" font-weight="bold" text-anchor="middle">최초 400원</text>
+    </g>
+
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+        <marker id="arrow-green-rev" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" transform="rotate(180 5 5)" />
+        </marker>
+    </defs>
+</svg>

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '01. 대수학의 혁명 미지의 문자 x의 등장'
+---
+
 # 01. 대수학의 혁명: 미지의 문자 'x'의 등장
 
 ## 1. 학습 목표 (Learning Objectives)

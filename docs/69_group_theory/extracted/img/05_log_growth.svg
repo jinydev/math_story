@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">한계 효용 체감의 법칙: 로그적 증가 (Logarithmic Growth)</text>
+
+    <!-- Chart Area -->
+    <g transform="translate(150, 150)">
+
+        <!-- Axes -->
+        <line x1="0" y1="300" x2="650" y2="300" stroke="#888888" stroke-width="3" />
+        <line x1="0" y1="300" x2="0" y2="-20" stroke="#888888" stroke-width="3" />
+
+        <text x="325" y="340" fill="#aaaaaa" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">투입한 노력 / 비용 (사냥 몬스터 수 x)</text>
+        <text x="-40" y="140" fill="#aaaaaa" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" transform="rotate(-90, -40, 140)">성과 / 만족 (레벨업 y)</text>
+
+        <!-- Logarithmic Growth Curve -->
+        <path d="M 20 280 Q 150 50 600 20" fill="none" stroke="#00ffcc" stroke-width="6" filter="url(#glow)" />
+        <text x="450" y="15" fill="#00ffcc" font-family="monospace" font-size="24" font-weight="bold">y = log_2
+            (x)</text>
+
+        <!-- Zone 1: Newbie Buff -->
+        <rect x="20" y="-30" width="100" height="330" fill="#4da6ff" opacity="0.1" />
+        <line x1="120" y1="300" x2="120" y2="-30" stroke="#4da6ff" stroke-width="2" stroke-dasharray="6 4" />
+        <text x="70" y="-10" fill="#4da6ff" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">뉴비 버프</text>
+        <text x="70" y="10" fill="#ffffff" font-family="sans-serif" font-size="12" text-anchor="middle">초반 수직 상승</text>
+        <circle cx="50" cy="180" r="6" fill="#4da6ff" />
+        <circle cx="100" cy="110" r="6" fill="#4da6ff" />
+
+        <!-- Zone 2: Progress -->
+        <rect x="120" y="-30" width="230" height="330" fill="#ffaa00" opacity="0.1" />
+        <line x1="350" y1="300" x2="350" y2="-30" stroke="#ffaa00" stroke-width="2" stroke-dasharray="6 4" />
+        <text x="235" y="-10" fill="#ffaa00" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">중수 구간</text>
+        <text x="235" y="10" fill="#ffffff" font-family="sans-serif" font-size="12" text-anchor="middle">노력 대비
+            완만함</text>
+        <circle cx="200" cy="70" r="6" fill="#ffaa00" />
+        <circle cx="300" cy="50" r="6" fill="#ffaa00" />
+
+        <!-- Zone 3: Plateau -->
+        <rect x="350" y="-30" width="280" height="330" fill="#ff4d4d" opacity="0.1" />
+        <text x="490" y="-10" fill="#ff4d4d" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">플래토 (정체기)</text>
+        <text x="490" y="10" fill="#ffffff" font-family="sans-serif" font-size="12" text-anchor="middle">천문학적인 노력
+            필요</text>
+        <circle cx="450" cy="32" r="6" fill="#ff4d4d" />
+        <circle cx="580" cy="22" r="6" fill="#ff4d4d" />
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="520" width="600" height="60" rx="10" fill="#112233" stroke="#4da6ff" stroke-width="2" />
+    <text x="450" y="545" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">"만렙을 찍으려면 남은 인생을
+        갈아 넣어야 한다!"</text>
+    <text x="450" y="570" fill="#00ffcc" font-family="monospace" font-size="18" font-weight="bold"
+        text-anchor="middle">게임 기획자들이 유저의 장기 접속을 유도하는 '로그 시스템' 밸런싱</text>
+
+</svg>

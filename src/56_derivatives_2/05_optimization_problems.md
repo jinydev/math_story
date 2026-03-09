@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '05. 다섯 번째 수업 가성비 극한의 아이템 셋업 최적화 문제 퀘스트 Optimization Problems'
+---
+
 # 05. 다섯 번째 수업: 가성비 극한의 아이템 셋업! 최적화 문제 퀘스트 (Optimization Problems)
 
 알파고나 챗GPT 모델을 훈련할 때 딥러닝 해커들의 유일한 목표는 단 하나입니다. 

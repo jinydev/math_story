@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#1864ab" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">별자리를 그려라: 서로 맞물린 집단의 좌표 산점도 (Scatter Plot)</text>
+
+    <!-- Coordinate System -->
+    <g transform="translate(200, 180)">
+        <!-- Axes -->
+        <line x1="0" y1="0" x2="250" y2="0" stroke="#868e96" stroke-width="2" />
+        <line x1="0" y1="0" x2="0" y2="-120" stroke="#868e96" stroke-width="2" />
+
+        <text x="250" y="15" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold">수학 성적 (X)</text>
+        <text x="-45" y="-120" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold">과학 성적
+            (Y)</text>
+
+        <!-- Grid Lines -->
+        <line x1="0" y1="-30" x2="250" y2="-30" stroke="#e9ecef" stroke-width="1" />
+        <line x1="0" y1="-60" x2="250" y2="-60" stroke="#e9ecef" stroke-width="1" />
+        <line x1="0" y1="-90" x2="250" y2="-90" stroke="#e9ecef" stroke-width="1" />
+
+        <line x1="50" y1="0" x2="50" y2="-120" stroke="#e9ecef" stroke-width="1" />
+        <line x1="100" y1="0" x2="100" y2="-120" stroke="#e9ecef" stroke-width="1" />
+        <line x1="150" y1="0" x2="150" y2="-120" stroke="#e9ecef" stroke-width="1" />
+        <line x1="200" y1="0" x2="200" y2="-120" stroke="#e9ecef" stroke-width="1" />
+
+        <!-- Scatter Data Points (Strong Positive Correlation) -->
+        <!-- Low -->
+        <circle cx="30" cy="-20" r="5" fill="#339af0" />
+        <circle cx="50" cy="-40" r="5" fill="#339af0" />
+        <circle cx="60" cy="-30" r="5" fill="#339af0" />
+
+        <!-- Mid -->
+        <circle cx="100" cy="-55" r="5" fill="#1864ab" />
+        <circle cx="120" cy="-50" r="5" fill="#1864ab" />
+        <circle cx="130" cy="-70" r="5" fill="#1864ab" />
+
+        <!-- High -->
+        <circle cx="180" cy="-90" r="5" fill="#0b7285" />
+        <circle cx="210" cy="-100" r="5" fill="#0b7285" />
+        <circle cx="190" cy="-110" r="5" fill="#0b7285" />
+        <circle cx="220" cy="-90" r="5" fill="#0b7285" />
+
+        <!-- Trend Line -->
+        <path d="M 20 -15 L 230 -115" fill="none" stroke="#fa5252" stroke-width="3" stroke-dasharray="6,4" />
+        <text x="240" y="-120" fill="#fa5252" font-size="14" font-family="sans-serif" font-weight="bold">우상향 띠
+            (Trend)</text>
+    </g>
+
+    <!-- Explain Box -->
+    <g transform="translate(20, 100)">
+        <rect x="0" y="0" width="130" height="80" fill="#fff4e6" stroke="#f59f00" stroke-width="2" rx="5" />
+        <text x="65" y="25" fill="#d9480f" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">"수학을 잘하면,</text>
+        <text x="65" y="45" fill="#d9480f" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">과학도 잘할까?"</text>
+        <text x="65" y="65" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">별자리를 보고 판단!</text>
+    </g>
+
+</svg>

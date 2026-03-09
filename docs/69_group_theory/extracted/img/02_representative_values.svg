@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">집단의 멱살을 잡는 대장: 대푯값 3총사</text>
+
+    <!-- Core Scene: A village of commoners and one billionaire -->
+    <g transform="translate(100, 200)">
+
+        <!-- Base Number Line -->
+        <line x1="0" y1="150" x2="700" y2="150" stroke="#777777" stroke-width="4" />
+
+        <!-- 9 Commoners around 300 Million Won -->
+        <g transform="translate(150, 150)">
+            <circle cx="-15" cy="-20" r="10" fill="#00ffcc" opacity="0.8" />
+            <circle cx="-5" cy="-15" r="10" fill="#00ffcc" opacity="0.8" />
+            <circle cx="5" cy="-25" r="10" fill="#00ffcc" opacity="0.8" />
+            <circle cx="15" cy="-10" r="10" fill="#00ffcc" opacity="0.8" />
+            <circle cx="-10" cy="-35" r="10" fill="#00ffcc" opacity="0.8" />
+            <circle cx="10" cy="-40" r="10" fill="#00ffcc" opacity="0.8" />
+            <circle cx="0" cy="-55" r="10" fill="#00ffcc" opacity="0.8" />
+            <circle cx="-20" cy="-50" r="10" fill="#00ffcc" opacity="0.8" />
+            <circle cx="20" cy="-50" r="10" fill="#00ffcc" opacity="0.8" />
+
+            <line x1="0" y1="0" x2="0" y2="20" stroke="#00ffcc" stroke-width="2" />
+            <text x="0" y="40" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+                text-anchor="middle">서민 9명</text>
+            <text x="0" y="65" fill="#ffffff" font-family="monospace" font-size="16" text-anchor="middle">월 300만원</text>
+        </g>
+
+        <!-- 1 Billionaire (Outlier) -->
+        <g transform="translate(680, 150)">
+            <circle cx="0" cy="-50" r="30" fill="#ffaa00" filter="url(#glow)" />
+            <text x="0" y="-42" fill="#111122" font-family="sans-serif" font-size="24" font-weight="bold"
+                text-anchor="middle">$</text>
+
+            <line x1="0" y1="0" x2="0" y2="20" stroke="#ffaa00" stroke-width="2" />
+            <text x="-15" y="40" fill="#ffaa00" font-family="sans-serif" font-size="18" font-weight="bold"
+                text-anchor="end">거부 1명</text>
+            <text x="-15" y="65" fill="#ffffff" font-family="monospace" font-size="16" text-anchor="end">월 100억원</text>
+            <text x="0" y="90" fill="#ffaa00" font-family="sans-serif" font-size="14" font-weight="bold"
+                text-anchor="middle">(천문학적 이상치 Outlier)</text>
+        </g>
+
+        <!-- Indicators for the 3 Representative Values -->
+
+        <!-- 1. Mean (Pulled by outlier) -->
+        <g transform="translate(450, 150)">
+            <path d="M 0 -60 L 0 0" fill="none" stroke="#ff4d4d" stroke-width="4" stroke-dasharray="6 4"
+                marker-end="url(#arrow)" />
+            <rect x="-60" y="-95" width="120" height="35" rx="5" fill="#331111" stroke="#ff4d4d" stroke-width="2" />
+            <text x="0" y="-70" fill="#ff4d4d" font-family="sans-serif" font-size="18" font-weight="bold"
+                text-anchor="middle">1. 산술 평균</text>
+            <text x="0" y="-45" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">월 10억원
+                (왜곡!)</text>
+        </g>
+
+        <!-- 2. Median (Stands ground) -->
+        <g transform="translate(150, 150)">
+            <path d="M -80 -90 L -25 -20" fill="none" stroke="#00ffcc" stroke-width="3" marker-end="url(#arrowCyan)" />
+            <rect x="-140" y="-130" width="120" height="40" rx="5" fill="#113322" stroke="#00ffcc" stroke-width="2" />
+            <text x="-80" y="-105" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+                text-anchor="middle">2. 중앙값</text>
+            <text x="-80" y="-85" fill="#ffffff" font-family="sans-serif" font-size="12" text-anchor="middle">(서열 정중앙
+                방어)</text>
+        </g>
+
+        <!-- 3. Mode (Stands ground) -->
+        <g transform="translate(150, 150)">
+            <path d="M 70 -90 L 25 -20" fill="none" stroke="#4da6ff" stroke-width="3" marker-end="url(#arrowBlue)" />
+            <rect x="10" y="-130" width="120" height="40" rx="5" fill="#112233" stroke="#4da6ff" stroke-width="2" />
+            <text x="70" y="-105" fill="#4da6ff" font-family="sans-serif" font-size="18" font-weight="bold"
+                text-anchor="middle">3. 최빈값</text>
+            <text x="70" y="-85" fill="#ffffff" font-family="sans-serif" font-size="12" text-anchor="middle">(가장 흔한
+                다수결)</text>
+        </g>
+
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="520" width="600" height="50" rx="10" fill="#2b1133" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="545" fill="#ffffff" font-family="sans-serif" font-size="15" text-anchor="middle">평균은 이상치(빌게이츠) 출현 시
+        시스템이 붕괴되지만,</text>
+    <text x="450" y="565" fill="#00ffcc" font-family="sans-serif" font-size="15" font-weight="bold"
+        text-anchor="middle">중앙값(Median)은 1등부터 꼴찌를 정렬하여 가운데 놈을 채택해 통계를 완벽 방어시킨다.</text>
+
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff4d4d" />
+        </marker>
+        <marker id="arrowCyan" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#00ffcc" />
+        </marker>
+        <marker id="arrowBlue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4da6ff" />
+        </marker>
+    </defs>
+</svg>

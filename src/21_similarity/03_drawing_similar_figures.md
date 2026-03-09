@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 닮은 도형 작도와 비례식 중심 연산'
+---
+
 # 03. 닮은 도형 작도와 비례식 중심 연산
 
 ## 1. 학습 목표 (Learning Objectives)

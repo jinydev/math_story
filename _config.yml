@@ -1,0 +1,49 @@
+title: "수학이야기 (Math Story V3)"
+description: "AI 시대의 데이터 사이언스와 함께하는 새로운 수학 학습 연대기"
+author: "Hojin"
+email: infohojin@naver.com
+baseurl: ""
+url: "https://math.jiny.dev"
+twitter_username: infohojin
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-gist
+
+# Navigation
+nav_sort: 'priorities'
+
+# Build Settings
+destination: docs
+source: src
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "docs"
+
+# Sass 설정
+sass:
+  load_paths:
+    - _sass
+    - ../node_modules/bootstrap/scss
+
+# GitHub Pages 호환성을 위한 설정
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .github/
+  - .git/
+  - README.md
+  - package.json
+  - package-lock.json
+  - AI_GUIDE.md
+  - "**/*_src.md"

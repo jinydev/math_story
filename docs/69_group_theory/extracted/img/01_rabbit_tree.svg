@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .line {
+                fill: none;
+                stroke: #30363d;
+                stroke-width: 3;
+                stroke-linecap: round;
+            }
+
+            .line-new {
+                stroke: #ffaa64;
+                stroke-dasharray: 5, 5;
+            }
+
+            .box {
+                fill: #161b22;
+                stroke: #8b949e;
+                stroke-width: 2;
+                rx: 5;
+            }
+
+            .box-baby {
+                stroke: #ffaa64;
+                fill: rgba(255, 170, 100, 0.1);
+            }
+
+            .box-adult {
+                stroke: #00ffff;
+                fill: rgba(0, 255, 255, 0.1);
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 15px;
+                text-anchor: middle;
+            }
+
+            .month {
+                fill: #ff6464;
+                font-size: 18px;
+                text-anchor: end;
+            }
+
+            .total {
+                fill: #64ff64;
+                font-size: 18px;
+                text-anchor: start;
+            }
+
+            .rabbit {
+                font-size: 20px;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="40" class="title">피보나치의 토끼 번식 모델 (Fibonacci Rabbit Tree)</text>
+    <text x="400" y="70" class="desc">새끼는 1달 후 어른이 되며, 어른은 매달 새로운 새끼 1쌍을 낳는다</text>
+
+    <!-- Grid Headers -->
+    <text x="120" y="110" fill="#ffffff" font-size="20" text-anchor="middle">진행 달(Month)</text>
+    <text x="680" y="110" fill="#ffffff" font-size="20" text-anchor="middle">토끼의 쌍(Pairs)</text>
+    <path d="M 50 120 L 750 120" class="line" />
+
+    <!-- Month 1 -->
+    <text x="120" y="160" class="month">1개월 차</text>
+    <rect x="375" y="140" width="50" height="30" class="box box-baby" />
+    <text x="400" y="162" class="rabbit" text-anchor="middle">🐰</text>
+    <text x="680" y="160" class="total">1 쌍 (새끼)</text>
+
+    <path d="M 400 170 L 400 200" class="line" />
+
+    <!-- Month 2 -->
+    <text x="120" y="220" class="month">2개월 차</text>
+    <rect x="375" y="200" width="50" height="30" class="box box-adult" />
+    <text x="400" y="222" class="rabbit" text-anchor="middle">🐇</text>
+    <text x="680" y="220" class="total">1 쌍 (어른성장)</text>
+
+    <path d="M 400 230 L 400 260" class="line" />
+    <path d="M 400 230 L 480 260" class="line line-new" />
+
+    <!-- Month 3 -->
+    <text x="120" y="280" class="month">3개월 차</text>
+    <!-- Original Adult -->
+    <rect x="375" y="260" width="50" height="30" class="box box-adult" />
+    <text x="400" y="282" class="rabbit" text-anchor="middle">🐇</text>
+    <!-- New Baby -->
+    <rect x="455" y="260" width="50" height="30" class="box box-baby" />
+    <text x="480" y="282" class="rabbit" text-anchor="middle">🐰</text>
+    <text x="680" y="280" class="total">2 쌍</text>
+
+    <path d="M 400 290 L 400 320" class="line" />
+    <path d="M 400 290 L 320 320" class="line line-new" />
+    <path d="M 480 290 L 480 320" class="line" />
+
+    <!-- Month 4 -->
+    <text x="120" y="340" class="month">4개월 차</text>
+    <!-- Original Adult continues -->
+    <rect x="375" y="320" width="50" height="30" class="box box-adult" />
+    <text x="400" y="342" class="rabbit" text-anchor="middle">🐇</text>
+    <!-- Original Adult's new baby -->
+    <rect x="295" y="320" width="50" height="30" class="box box-baby" />
+    <text x="320" y="342" class="rabbit" text-anchor="middle">🐰</text>
+    <!-- Month 3 Baby grows up -->
+    <rect x="455" y="320" width="50" height="30" class="box box-adult" />
+    <text x="480" y="342" class="rabbit" text-anchor="middle">🐇</text>
+    <text x="680" y="340" class="total">3 쌍</text>
+
+    <path d="M 400 350 L 400 380" class="line" />
+    <path d="M 400 350 L 375 380" class="line line-new" /> <!-- New baby #3 -->
+    <path d="M 320 350 L 320 380" class="line" /> <!-- Grew up -->
+    <path d="M 480 350 L 480 380" class="line" /> <!-- Grew up -->
+    <path d="M 480 350 L 530 380" class="line line-new" /> <!-- New baby #4 -->
+
+    <!-- Month 5 -->
+    <text x="120" y="400" class="month">5개월 차</text>
+    <rect x="375" y="380" width="50" height="30" class="box box-adult" /> <text x="400" y="402" class="rabbit"
+        text-anchor="middle">🐇</text>
+    <rect x="350" y="380" width="50" height="30" class="box box-baby" /> <text x="375" y="402" class="rabbit"
+        text-anchor="middle">🐰</text>
+    <rect x="295" y="380" width="50" height="30" class="box box-adult" /> <text x="320" y="402" class="rabbit"
+        text-anchor="middle">🐇</text>
+    <rect x="455" y="380" width="50" height="30" class="box box-adult" /> <text x="480" y="402" class="rabbit"
+        text-anchor="middle">🐇</text>
+    <rect x="505" y="380" width="50" height="30" class="box box-baby" /> <text x="530" y="402" class="rabbit"
+        text-anchor="middle">🐰</text>
+    <text x="680" y="400" class="total">5 쌍</text>
+
+    <rect x="50" y="440" width="700" height="40" fill="#161b22" rx="5" />
+    <text x="400" y="465" fill="#00ffff" font-size="20" text-anchor="middle">총 토끼 쌍 = (이전 달 토끼 수) + (지지난 달 토끼 수)</text>
+</svg>

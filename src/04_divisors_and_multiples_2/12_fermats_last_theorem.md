@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '12. 열두 번째 수업 페르마의 마지막 정리 Fermats Last Theorem'
+---
+
 # 12. 열두 번째 수업: 페르마의 마지막 정리 (Fermat's Last Theorem)
 
 가장 위대한 아마추어 수학자 페르마가 책의 여백에 남겼던 단 한 줄의 메모.

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 눈을 의심하게 만드는 마법 지수적 증가 Exponential Growth'
+---
+
 # 1. 눈을 의심하게 만드는 마법: 지수적 증가 (Exponential Growth)
 
 ## [도입부] 학습 목표 (Learning Objectives)

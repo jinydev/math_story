@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#f08c00" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">아무리 노력해도 오르지 않는 성적: 로그적 증가 (Logarithmic Growth)</text>
+
+    <g transform="translate(100, 200)">
+        <!-- Axes -->
+        <line x1="0" y1="0" x2="440" y2="0" stroke="#868e96" stroke-width="2" />
+        <line x1="0" y1="0" x2="0" y2="-140" stroke="#868e96" stroke-width="2" />
+
+        <text x="440" y="15" fill="#868e96" font-size="12" font-family="sans-serif">노력 (X)</text>
+        <text x="-35" y="-140" fill="#868e96" font-size="12" font-family="sans-serif">성취 (Y)</text>
+
+        <!-- First Phase: Rapid Growth -->
+        <path d="M 10 0 Q 30 -50 60 -80" fill="none" stroke="#e03131" stroke-width="4" />
+        <circle cx="60" cy="-80" r="5" fill="#c92a2a" />
+        <text x="60" y="-95" fill="#e03131" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">초보자 (경험치 폭발)</text>
+
+        <!-- Second Phase: Plateaus -->
+        <path d="M 60 -80 Q 200 -120 400 -130" fill="none" stroke="#2b8a3e" stroke-width="4" />
+        <circle cx="400" cy="-130" r="5" fill="#2b8a3e" />
+
+        <text x="250" y="-140" fill="#2b8a3e" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">전문가 (정체기, 플래토)</text>
+        <path d="M 250 -135 L 250 -115" fill="none" stroke="#2b8a3e" stroke-width="2" marker-end="url(#arrow-green)" />
+
+        <!-- Explain X-Axis (Effort) -->
+        <path d="M 60 15 L 400 15" fill="none" stroke="#adb5bd" stroke-width="2" marker-start="url(#arrow-grey)"
+            marker-end="url(#arrow-grey)" />
+        <text x="230" y="30" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">어마어마한 노력 투입</text>
+
+        <!-- Explain Y-Axis (Result) -->
+        <path d="M -15 -80 L -15 -130" fill="none" stroke="#adb5bd" stroke-width="2" marker-start="url(#arrow-grey)"
+            marker-end="url(#arrow-grey)" />
+        <text x="-50" y="-100" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">쥐꼬리</text>
+        <text x="-50" y="-85" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">성장</text>
+
+    </g>
+
+    <defs>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+        <marker id="arrow-grey" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

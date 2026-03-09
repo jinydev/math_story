@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="400" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">곡률(κ)과 곡률반경(R)의 반비례 딜레마</text>
+
+    <!-- Gentle Curve -->
+    <g transform="translate(150, 200)">
+
+        <!-- The Road Curve -->
+        <path d="M -100 100 Q 0 -50 100 100" fill="none" stroke="#4da6ff" stroke-width="8" stroke-linecap="round" />
+
+        <!-- The Fitting Circle (Huge) -->
+        <circle cx="0" cy="150" r="170" fill="none" stroke="#00ffcc" stroke-width="2" stroke-dasharray="10 10"
+            opacity="0.7" />
+
+        <!-- Radius R -->
+        <line x1="0" y1="150" x2="0" y2="-20" stroke="#00ffcc" stroke-width="3" />
+        <circle cx="0" cy="150" r="6" fill="#00ffcc" />
+
+        <text x="15" y="80" fill="#00ffcc" font-family="monospace" font-size="24" font-weight="bold">R (대)</text>
+
+        <!-- Info Box -->
+        <rect x="-120" y="-120" width="240" height="70" rx="10" fill="#112233" stroke="#4da6ff" stroke-width="2" />
+        <text x="0" y="-95" fill="#4da6ff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">완만한 커브 (고속도로)</text>
+        <text x="0" y="-65" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">접촉원의 반지름(R)이 매우
+            크다</text>
+
+        <text x="0" y="180" fill="#00ffcc" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">곡률(κ) = 1/R = 작다!</text>
+    </g>
+
+    <!-- Sharp Curve -->
+    <g transform="translate(550, 200)">
+
+        <!-- The Road Curve -->
+        <path d="M -100 50 Q 0 -150 100 50" fill="none" stroke="#ff4d4d" stroke-width="8" stroke-linecap="round" />
+
+        <!-- The Fitting Circle (Tiny) -->
+        <circle cx="0" cy="-30" r="45" fill="none" stroke="#ffaa00" stroke-width="2" stroke-dasharray="8 6" />
+
+        <!-- Radius R -->
+        <line x1="0" y1="-30" x2="0" y2="-75" stroke="#ffaa00" stroke-width="3" />
+        <circle cx="0" cy="-30" r="6" fill="#ffaa00" />
+
+        <text x="25" y="-45" fill="#ffaa00" font-family="monospace" font-size="24" font-weight="bold">R (소)</text>
+
+        <!-- Info Box -->
+        <rect x="-120" y="80" width="240" height="70" rx="10" fill="#2b1111" stroke="#ff4d4d" stroke-width="2" />
+        <text x="0" y="105" fill="#ff4d4d" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">급격한 커브 (헤어핀)</text>
+        <text x="0" y="135" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">접촉원의 반지름(R)이 매우
+            작다</text>
+
+        <text x="0" y="180" fill="#ffaa00" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">곡률(κ) = 1/R = 크다!</text>
+    </g>
+
+</svg>

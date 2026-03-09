@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 82. 이차부등식 Quadratic Inequalities'
+---
+
 # 수학이야기 82. 이차부등식 (Quadratic Inequalities)
 
 ## 📌 학습 개요

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">첫 번째 선택: '조합 (Combination, nCr)'</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"순서는 멍멍이나 줘버려라! 주머니 속에서 동시에 꽉 움켜쥐는 직관의
+        세계"</text>
+
+    <!-- The Setup -->
+    <g transform="translate(80, 80)">
+        <rect x="0" y="0" width="150" height="130" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="75" y="25" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">아이스크림 5종류</text>
+
+        <!-- Flavors -->
+        <text x="25" y="55" font-size="24">🍓</text>
+        <text x="75" y="55" font-size="24">🍫</text>
+        <text x="125" y="55" font-size="24">🍦</text>
+        <text x="50" y="95" font-size="24">🍇</text>
+        <text x="100" y="95" font-size="24">🍵</text>
+        <text x="75" y="115" fill="#495057" font-size="11" font-weight="bold" text-anchor="middle">총 5개 (n=5)</text>
+    </g>
+
+    <!-- The Action -->
+    <path d="M 240 135 L 310 135" fill="none" stroke="#2b8a3e" stroke-width="4" marker-end="url(#arrow-green)" />
+    <text x="275" y="125" fill="#2b8a3e" font-size="12" font-weight="bold" text-anchor="middle">2개 픽!(r=2)</text>
+
+    <!-- The Result (A Bowl) -->
+    <g transform="translate(330, 80)">
+        <path d="M 0 30 Q 0 130 90 130 Q 180 130 180 30" fill="#eebefa" stroke="#862e9c" stroke-width="4" />
+        <ellipse cx="90" cy="30" rx="90" ry="20" fill="#f3d9fa" stroke="#862e9c" stroke-width="2" />
+
+        <!-- Inside the bowl -->
+        <text x="60" y="70" font-size="36">🍓</text>
+        <text x="120" y="70" font-size="36">🍫</text>
+
+        <text x="90" y="110" fill="#862e9c" font-size="14" font-weight="bold" text-anchor="middle">"동시에 한 그릇에
+            담는다!"</text>
+
+        <!-- Explanation text -->
+        <rect x="15" y="145" width="150" height="25" fill="#f1f3f5" rx="5" />
+        <text x="90" y="162" fill="#c92a2a" font-size="12" font-weight="bold" text-anchor="middle">(딸기+초코 =
+            초코+딸기)</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+    </defs>
+</svg>

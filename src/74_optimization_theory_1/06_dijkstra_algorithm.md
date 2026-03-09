@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '06. 내비게이션의 심장 다익스트라 Dijkstra'
+---
+
 # 06. 내비게이션의 심장: 다익스트라 (Dijkstra)
 
 ## 1. 학습 목표 (Learning Objectives)

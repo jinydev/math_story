@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '06. 여섯 번째 수업 배수 이야기 Divisibility Tricks'
+---
+
 # 06. 여섯 번째 수업: 배수 이야기 (Divisibility Tricks)
 
 어떤 거대한 숫자가 주어졌을 때, 여러분이 파이썬(Python) 컴퓨터가 아니라면 그 숫자가 $3$의 배수인지, $4$의 배수인지 어떻게 1초 만에 눈치챌 수 있을까요? 

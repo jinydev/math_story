@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '02. 논리의 화살 조건문과 반례의 백조'
+---
+
 # 02. 논리의 화살: 조건문과 반례의 백조
 
 ## 1. 학습 목표 (Learning Objectives)

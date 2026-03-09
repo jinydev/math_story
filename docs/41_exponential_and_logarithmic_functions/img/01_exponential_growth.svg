@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#d9480f" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">종이 50번 접기: 눈을 의심하게 만드는 지수적 증가 (Exponential Growth)</text>
+
+    <g transform="translate(80, 180)">
+        <!-- Axes -->
+        <line x1="0" y1="0" x2="440" y2="0" stroke="#868e96" stroke-width="2" />
+        <line x1="0" y1="0" x2="0" y2="-120" stroke="#868e96" stroke-width="2" />
+
+        <!-- Linear line -->
+        <path d="M 0 0 L 400 -60" fill="none" stroke="#adb5bd" stroke-width="3" stroke-dasharray="8,8" />
+        <text x="400" y="-45" fill="#868e96" font-size="14" font-family="sans-serif" font-weight="bold">덧셈의 세계 (y =
+            2x)</text>
+
+        <!-- Exponential line -->
+        <path d="M 0 -2 Q 250 -5 320 -120" fill="none" stroke="#e03131" stroke-width="4" />
+        <circle cx="320" cy="-120" r="5" fill="#c92a2a" />
+        <text x="250" y="-120" fill="#e03131" font-size="16" font-family="sans-serif" font-weight="bold">곱셈의 세계 (y =
+            2^x)</text>
+
+        <!-- Data points -->
+        <circle cx="100" cy="-4" r="4" fill="#f03e3e" />
+        <text x="100" y="20" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">10번 접음</text>
+
+        <circle cx="200" cy="-10" r="4" fill="#f03e3e" />
+        <text x="200" y="20" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">20번 접음</text>
+
+        <circle cx="280" cy="-40" r="4" fill="#f03e3e" />
+        <text x="280" y="20" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">40번 접음</text>
+    </g>
+
+    <!-- Explanatory Box -->
+    <rect x="380" y="70" width="200" height="70" fill="#ffe3e3" stroke="#ff8787" stroke-width="2" rx="5" />
+    <text x="480" y="95" fill="#c92a2a" font-size="18" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">종이 50번 접기</text>
+    <text x="480" y="120" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">두께: 112,589,990 km</text>
+    <text x="480" y="140" fill="#e03131" font-size="12" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">(지구에서 태양까지의 거리!)</text>
+</svg>

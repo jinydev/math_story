@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#c92a2a" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">다섯 번째 의사결정: '죄수의 딜레마' (게임 이론)</text>
+
+    <!-- Title / Setup -->
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">개인의 완벽한 합리적 선택이 조직 전체를 파멸로 이끄는 역설</text>
+
+    <!-- Police / Context Matrix -->
+    <g transform="translate(100, 70)">
+
+        <!-- Header Right (B's Choice) -->
+        <rect x="120" y="0" width="200" height="30" fill="#f1f3f5" stroke="#adb5bd" />
+        <text x="220" y="20" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">죄수 B의 선택</text>
+
+        <!-- SubHeader Right -->
+        <rect x="120" y="30" width="100" height="25" fill="#e7f5ff" stroke="#adb5bd" />
+        <text x="170" y="47" fill="#1864ab" font-size="12" text-anchor="middle">침묵 (협력)</text>
+
+        <rect x="220" y="30" width="100" height="25" fill="#e7f5ff" stroke="#adb5bd" />
+        <text x="270" y="47" fill="#1864ab" font-size="12" font-weight="bold" text-anchor="middle">자백 (배신)</text>
+
+
+        <!-- Header Left (A's Choice) -->
+        <rect x="0" y="55" width="25" height="120" fill="#f1f3f5" stroke="#adb5bd" />
+        <text x="0" y="0" transform="translate(18, 115) rotate(-90)" fill="#e8590c" font-size="14" font-weight="bold"
+            text-anchor="middle">죄수 A의 선택</text>
+
+        <!-- SubHeader Left -->
+        <rect x="25" y="55" width="95" height="60" fill="#fff4e6" stroke="#adb5bd" />
+        <text x="72" y="89" fill="#e8590c" font-size="12" text-anchor="middle">침묵 (협력)</text>
+
+        <rect x="25" y="115" width="95" height="60" fill="#fff4e6" stroke="#adb5bd" />
+        <text x="72" y="149" fill="#e8590c" font-size="12" font-weight="bold" text-anchor="middle">자백 (배신)</text>
+
+
+        <!-- Quad 1: Both Silent (Top Left) -->
+        <rect x="120" y="55" width="100" height="60" fill="#fff" stroke="#adb5bd" />
+        <text x="170" y="80" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">최고의 해피엔딩</text>
+        <text x="170" y="100" fill="#495057" font-size="11" text-anchor="middle">A:1년 / B:1년</text>
+
+        <!-- Quad 2: A Silent, B Confess (Top Right) -->
+        <rect x="220" y="55" width="100" height="60" fill="#fff" stroke="#adb5bd" />
+        <text x="270" y="80" fill="#c92a2a" font-size="12" font-weight="bold" text-anchor="middle">A 독박, B 석방</text>
+        <text x="270" y="100" fill="#495057" font-size="11" text-anchor="middle">A:10년 / B:무죄</text>
+
+        <!-- Quad 3: A Confess, B Silent (Bottom Left) -->
+        <rect x="120" y="115" width="100" height="60" fill="#fff" stroke="#adb5bd" />
+        <text x="170" y="140" fill="#c92a2a" font-size="12" font-weight="bold" text-anchor="middle">A 석방, B 독박</text>
+        <text x="170" y="160" fill="#495057" font-size="11" text-anchor="middle">A:무죄 / B:10년</text>
+
+        <!-- Quad 4: Both Confess (Bottom Right) -->
+        <rect x="220" y="115" width="100" height="60" fill="#ffc9c9" stroke="#fa5252" stroke-width="2" />
+        <text x="270" y="140" fill="#c92a2a" font-size="12" font-weight="bold" text-anchor="middle">둘 다 파멸 (내쉬
+            균형)</text>
+        <text x="270" y="160" fill="#495057" font-size="11" text-anchor="middle">A:5년 / B:5년</text>
+
+        <!-- Arrows indicating logic flow to Nash Equilibrium -->
+        <path d="M 170 185 L 220 185" fill="none" stroke="#fa5252" stroke-width="2" marker-end="url(#arrow-red)" />
+        <path d="M 330 85 L 330 115" fill="none" stroke="#fa5252" stroke-width="2" marker-end="url(#arrow-red)" />
+        <text x="260" y="195" fill="#c92a2a" font-size="10" font-weight="bold" text-anchor="middle">A,B 각자의 배신이 무조건
+            유리</text>
+
+    </g>
+
+    <defs>
+        <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fa5252" />
+        </marker>
+    </defs>
+</svg>

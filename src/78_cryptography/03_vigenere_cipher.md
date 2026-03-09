@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 빈도 분석법을 찢어발긴 다중 치환 Vigenre'
+---
+
 # 03. 빈도 분석법을 찢어발긴 다중 치환 (Vigenère)
 
 ## 1. 학습 목표 (Learning Objectives)

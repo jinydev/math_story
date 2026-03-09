@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 53. 추정 Estimation'
+---
+
 # 수학이야기 53. 추정 (Estimation)
 
 ## 📌 학습 개요

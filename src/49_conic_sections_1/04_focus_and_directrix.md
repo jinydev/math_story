@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '04. 네 번째 수업 초점Focus 과 준선Directrix 의 비밀'
+---
+
 # 04. 네 번째 수업: 초점(Focus) 과 준선(Directrix) 의 비밀
 
 모든 코딩의 시나리오는 데이터 추적(Tracking) 에서 시작됩니다. 

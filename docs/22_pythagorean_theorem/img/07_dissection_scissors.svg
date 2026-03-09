@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%">
+    <rect width="800" height="400" fill="#2d3436" />
+    <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#dfe6e9" text-anchor="middle">
+        종이 오려붙이기 증명 (Dissection Proof)
+    </text>
+
+    <!-- Base Right Triangle a=120, b=160, c=200 -->
+    <!-- Triangle in the middle -->
+    <polygon points="340,300 340,140 460,300" fill="none" stroke="#dfe6e9" stroke-width="4" />
+    
+    <!-- Squares on the legs to be dissected -->
+    <!-- Left Square (b^2 = 160x160) -->
+    <g transform="translate(180, 140)">
+        <rect x="0" y="0" width="160" height="160" fill="none" stroke="#74b9ff" stroke-width="2" stroke-dasharray="5,5" />
+        
+        <!-- Dissected pieces from b^2 -->
+        <!-- Piece 1 -->
+        <polygon points="0,0 80,0 80,160 0,160" fill="#74b9ff" fill-opacity="0.8" stroke="#0984e3">
+            <animateTransform attributeName="transform" type="translate" values="0,0; 400, -80; 0,0" dur="4s" repeatCount="indefinite" />
+        </polygon>
+        <!-- Piece 2 -->
+        <polygon points="80,0 160,0 160,160 80,160" fill="#0984e3" fill-opacity="0.8" stroke="#74b9ff">
+            <animateTransform attributeName="transform" type="translate" values="0,0; 360, 40; 0,0" dur="4s" repeatCount="indefinite" />
+        </polygon>
+    </g>
+
+    <!-- Bottom Square (a^2 = 120x120) -->
+    <g transform="translate(340, 300)">
+        <rect x="0" y="0" width="120" height="120" fill="none" stroke="#ff7675" stroke-width="2" stroke-dasharray="5,5" />
+        
+        <!-- Dissected pieces from a^2 -->
+        <polygon points="0,0 120,0 120,120 0,120" fill="#ff7675" fill-opacity="0.8" stroke="#d63031">
+            <animateTransform attributeName="transform" type="translate" values="0,0; 240, -160; 0,0" dur="4s" repeatCount="indefinite" />
+        </polygon>
+    </g>
+
+    <!-- Hypotenuse Square C^2 target area (200x200) rotated slightly -->
+    <!-- To make the animation visually representative, we show the pieces flying toward a c^2 target -->
+    <g transform="translate(500, 100)">
+        <!-- Target bounding box for c^2 -->
+        <polygon points="80,0 280,150 130,350 -70,200" fill="none" stroke="#55efc4" stroke-width="3" stroke-dasharray="10,5" />
+        <text x="100" y="180" font-family="Arial" font-size="20" font-weight="bold" fill="#55efc4">c^2 (Target)</text>
+    </g>
+    
+    <text x="400" y="380" font-family="Arial" font-size="16" fill="#b2bec3" text-anchor="middle">
+        작은 정사각형 2개를 가위로 오려 조각낸 뒤, 마법처럼 가장 큰 빗변의 정사각형 퍼즐을 완벽하게 맞춥니다.
+    </text>
+</svg>

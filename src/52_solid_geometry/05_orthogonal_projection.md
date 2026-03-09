@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 차원 압축 솔루션 정사영 Orthogonal Projection'
+---
+
 # 5. 차원 압축 솔루션: 정사영 (Orthogonal Projection)
 
 ## [도입부] 학습 목표 (Learning Objectives)

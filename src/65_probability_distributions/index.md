@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 47. 확률분포 Probability Distribution'
+---
+
 # 수학이야기 47. 확률분포 (Probability Distribution)
 
 ## 📌 학습 개요

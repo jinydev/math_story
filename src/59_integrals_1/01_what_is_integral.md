@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '01. 우리는 적분을 왜 배울까? What is Integral?'
+---
+
 # 01. 우리는 적분을 왜 배울까? (What is Integral?)
 
 안녕하세요! 오늘부터 우리는 가장 위대한 수학적 발견 중 하나인 **적분(Integral)**에 대해 배울 것입니다. 

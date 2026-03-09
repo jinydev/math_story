@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">수학자의 유머: "도넛과 머그컵은 완벽히 같은 것이다."</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"합법적 찰흙 변환을 통해 서로의
+        형태로 100% 진화할 수 있는 쌍둥이: 위상동형 (Homeomorphism)"</text>
+
+    <!-- Transformation Sequence: Donut -> Mug -->
+    <g transform="translate(100, 250)">
+
+        <!-- Stage 1: Absolute Donut -->
+        <g transform="translate(0, 0)">
+            <ellipse cx="0" cy="0" rx="60" ry="30" fill="none" stroke="#00ffcc" stroke-width="8" filter="url(#glow)" />
+            <ellipse cx="0" cy="0" rx="30" ry="10" fill="none" stroke="#113333" stroke-width="4" />
+            <path d="M -20 0 Q 0 -10 20 0 Q 0 10 -20 0" fill="#00ffcc" opacity="0.3" />
+
+            <text x="0" y="80" fill="#00ffcc" font-weight="bold" font-size="18" text-anchor="middle"
+                filter="url(#glow)">구멍(Genus) 1개: 도넛</text>
+        </g>
+
+        <!-- Arrow 1: Pinch -->
+        <path d="M 80 0 L 150 0" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="4 4" />
+        <polygon points="150,0 140,-5 140,5" fill="#fff" />
+        <text x="115" y="-15" fill="#aaa" font-size="12" text-anchor="middle">한쪽을 엄지로</text>
+        <text x="115" y="-3" fill="#aaa" font-size="12" text-anchor="middle">꾹 눌러 팜</text>
+
+        <!-- Stage 2: Transforming (Indent) -->
+        <g transform="translate(260, 0)">
+            <path d="M -50 -10 Q -30 -30 10 -30 Q 50 -30 50 10 Q 50 40 10 40 Q -30 40 -50 10 Z" fill="none"
+                stroke="#0088ff" stroke-width="6" filter="url(#glow)" />
+            <!-- The indented hole area -->
+            <ellipse cx="10" cy="-5" rx="15" ry="5" fill="none" stroke="#004488" stroke-width="2" />
+            <!-- The original donut hole shifting to the left (becoming the handle) -->
+            <ellipse cx="-40" cy="0" rx="10" ry="15" fill="none" stroke="#113333" stroke-width="3" />
+
+            <text x="0" y="80" fill="#0088ff" font-weight="bold" font-size="18" text-anchor="middle">잔 몸통 파내기</text>
+        </g>
+
+        <!-- Arrow 2: Stretch -->
+        <path d="M 350 0 L 420 0" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="4 4" />
+        <polygon points="420,0 410,-5 410,5" fill="#fff" />
+        <text x="385" y="-15" fill="#aaa" font-size="12" text-anchor="middle">위로 기둥을</text>
+        <text x="385" y="-3" fill="#aaa" font-size="12" text-anchor="middle">쭉 늘림</text>
+
+        <!-- Stage 3: Coffee Mug -->
+        <g transform="translate(560, 0)">
+            <!-- Mug Body -->
+            <path d="M -30 -50 L -30 40 Q 0 55 30 40 L 30 -50" fill="none" stroke="#ff00ff" stroke-width="6"
+                filter="url(#glow)" />
+            <!-- Mug Top -->
+            <ellipse cx="0" cy="-50" rx="30" ry="10" fill="none" stroke="#ff00ff" stroke-width="4"
+                filter="url(#glow)" />
+            <ellipse cx="0" cy="-50" rx="20" ry="5" fill="#1b1122" opacity="0.8" />
+            <!-- The Handle (The original hole!!!) -->
+            <path d="M -30 -20 Q -60 -20 -60 10 Q -60 30 -30 30" fill="none" stroke="#ff00ff" stroke-width="6"
+                filter="url(#glow)" />
+
+            <text x="0" y="80" fill="#ff00ff" font-weight="bold" font-size="18" text-anchor="middle"
+                filter="url(#glow)">완벽한 머그컵</text>
+            <path d="M -60 10 L -90 10" fill="none" stroke="#ffff00" stroke-width="2" marker-end="url(#arrow_y)" />
+            <text x="-140" y="15" fill="#ffff00" font-weight="bold" font-size="12">도넛의 원래 구멍</text>
+        </g>
+    </g>
+
+    <defs>
+        <marker id="arrow_y" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#ffff00" />
+        </marker>
+    </defs>
+
+    <!-- Big Alert Bottom -->
+    <rect x="100" y="470" width="700" height="90" rx="10" fill="#1b001b" stroke="#00ffcc" stroke-width="2" />
+    <text x="450" y="500" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        찢거나 파괴하지 않고 "찰흙 주무르기(연속 변환)" 만으로 변신이 가능하면 <tspan fill="#ff00ff" font-weight="bold">동일 객체</tspan>다.
+    </text>
+    <text x="450" y="525" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        도넛의 유일한 구멍 1개가 컵의 '손잡이(Handle)' 로 계승되었기 때문에
+    </text>
+    <text x="450" y="550" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">
+        두 물체의 구멍 개수(Genus) 는 1 로 완전히 일치하는 위상동형(Homeomorphic) 관계성 확립!
+    </text>
+</svg>

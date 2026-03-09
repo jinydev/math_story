@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- Dark Tech Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow_blue">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glow_pink">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow_blue)">루트 속의 어둠: 허수 단위 i 의 탄생</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">음수의 제곱근은 존재하지 않지만, 우리는 그것에 이름을 붙였다.</text>
+
+  <!-- Left Side: The Math Problem -->
+  <g transform="translate(100, 150)">
+    
+    <rect x="-30" y="-30" width="220" height="180" fill="#2D3748" stroke="#4A5568" stroke-width="2" rx="10"/>
+    <text x="80" y="0" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#F6AD55" text-anchor="middle">실수의 한계</text>
+    
+    <text x="80" y="40" font-family="'Inter', sans-serif" font-size="32" font-weight="bold" fill="#F7FAFC" text-anchor="middle">$x^2 = -1$</text>
+
+    <!-- Branch points -->
+    <path d="M 80 50 L 50 80" fill="none" stroke="#FC8181" stroke-width="2" stroke-dasharray="4,4"/>
+    <path d="M 80 50 L 110 80" fill="none" stroke="#FC8181" stroke-width="2" stroke-dasharray="4,4"/>
+    
+    <text x="50" y="100" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#FC8181" text-anchor="middle">$(+) \times (+) = +$</text>
+    <text x="110" y="100" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#FC8181" text-anchor="middle">$(-) \times (-) = +$</text>
+
+    <text x="80" y="130" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#FC8181" text-anchor="middle">제곱해서 음수가 되는</text>
+    <text x="80" y="150" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#FC8181" text-anchor="middle">실수는 우주에 없다!</text>
+  </g>
+
+  <!-- Arrow passing through dimension -->
+  <path d="M 310 210 Q 360 150 410 210" fill="none" stroke="#9F7AEA" stroke-width="4" marker-end="url(#arrow_right)"/>
+  <text x="360" y="180" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#9F7AEA" text-anchor="middle">상상의 힘 발동</text>
+
+  <!-- Right Side: The Imaginary Solution -->
+  <g transform="translate(460, 150)">
+    
+    <rect x="-30" y="-30" width="300" height="180" fill="rgba(159, 122, 234, 0.1)" stroke="#9F7AEA" stroke-width="3" rx="10"/>
+    <text x="120" y="0" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#9F7AEA" text-anchor="middle" filter="url(#glow_pink)">허수 단위 i</text>
+    
+    <!-- Central definition -->
+    <text x="120" y="60" font-family="'Inter', sans-serif" font-size="45" font-weight="bold" fill="#E2E8F0" text-anchor="middle">$i = \sqrt{-1}$</text>
+    
+    <!-- Implication -->
+    <text x="120" y="110" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#F6AD55" text-anchor="middle">이를 제곱하면?</text>
+    <text x="120" y="145" font-family="'Inter', sans-serif" font-size="30" font-weight="bold" fill="#FC8181" text-anchor="middle" filter="url(#glow_pink)">$i^2 = -1$</text>
+
+  </g>
+
+  <!-- Connection to reality -->
+  <g transform="translate(150, 360)">
+    <text x="250" y="0" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">이 가짜 문자 "i" 하나를 도입함으로써, 모든 방정식의 숨겨진 근(해답)들을 끝까지 추적할 수 있게 되었다.</text>
+  </g>
+</svg>

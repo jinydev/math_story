@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .box {
+                fill: #161b22;
+                stroke: #0088ff;
+                stroke-width: 2;
+                rx: 10;
+                ry: 10;
+            }
+
+            .slot {
+                fill: #0d1117;
+                stroke: #ff00ff;
+                stroke-width: 2;
+                stroke-dasharray: 4, 4;
+                rx: 5;
+                ry: 5;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 24px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .number {
+                fill: #00ffff;
+                font-size: 36px;
+                text-anchor: middle;
+            }
+
+            .operator {
+                fill: #ffffff;
+                font-size: 36px;
+                text-anchor: middle;
+            }
+
+            .label {
+                fill: #aaaaaa;
+                font-size: 14px;
+                text-anchor: middle;
+            }
+
+            .math-formula {
+                fill: #ffff00;
+                font-size: 32px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="40" class="title">순열 (Permutation) 슬롯 머신</text>
+    <text x="400" y="70" class="desc">5명 중 3명을 뽑아 "순서대로" 자리에 앉히는 5P3 로직</text>
+
+    <rect x="100" y="100" width="600" height="150" class="box" />
+
+    <!-- Slot 1 -->
+    <g transform="translate(200, 160)">
+        <rect x="-60" y="-40" width="120" height="80" class="slot" />
+        <text x="0" y="5" class="number">5</text>
+        <text x="0" y="-50" class="label">1번 회장 자리</text>
+        <text x="0" y="60" class="label">(남은 후보 전원)</text>
+    </g>
+
+    <!-- Multiply Sign -->
+    <text x="300" y="170" class="operator">×</text>
+
+    <!-- Slot 2 -->
+    <g transform="translate(400, 160)">
+        <rect x="-60" y="-40" width="120" height="80" class="slot" stroke="#00ff00" />
+        <text x="0" y="5" class="number" fill="#00ff00">4</text>
+        <text x="0" y="-50" class="label">2번 부회장 자리</text>
+        <text x="0" y="60" class="label">(1명 빼고 남은 후보)</text>
+    </g>
+
+    <!-- Multiply Sign -->
+    <text x="500" y="170" class="operator">×</text>
+
+    <!-- Slot 3 -->
+    <g transform="translate(600, 160)">
+        <rect x="-60" y="-40" width="120" height="80" class="slot" stroke="#ffaa00" />
+        <text x="0" y="5" class="number" fill="#ffaa00">3</text>
+        <text x="0" y="-50" class="label">3번 총무 자리</text>
+        <text x="0" y="60" class="label">(2명 빼고 남은 후보)</text>
+    </g>
+
+    <rect x="150" y="300" width="500" height="60" fill="#161b22" stroke="#30363d" stroke-width="2" rx="10" />
+    <text x="400" y="340" class="math-formula">_5P_3 = 5 × 4 × 3 = 60 가지</text>
+
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#d9480f" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">켐프(Kempe)의 색상 체인 반전 (Color Flip)</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"사면초가에 빠진 중앙 영토를 구하기 위해, 주변국의 색깔 스위치를 통째로 켜고
+        끈다!"</text>
+
+    <!-- Left: The Blocked Situation -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">1. 사면초가 상태 (5색
+            필요)</text>
+
+        <!-- Central Node (Empty/Blocked) -->
+        <circle cx="110" cy="90" r="15" fill="#fff" stroke="#495057" stroke-width="2" stroke-dasharray="3,3" />
+        <text x="110" y="93" fill="#495057" font-size="10" font-weight="bold" text-anchor="middle">?</text>
+
+        <!-- Neighbor Nodes -->
+        <circle cx="110" cy="50" r="15" fill="#fa5252" /> <!-- R -->
+        <text x="110" y="54" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">R</text>
+        <line x1="110" y1="65" x2="110" y2="75" stroke="#adb5bd" stroke-width="2" />
+
+        <circle cx="150" cy="90" r="15" fill="#228be6" /> <!-- B -->
+        <text x="150" y="94" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">B</text>
+        <line x1="125" y1="90" x2="135" y2="90" stroke="#adb5bd" stroke-width="2" />
+
+        <circle cx="110" cy="130" r="15" fill="#40c057" /> <!-- G -->
+        <text x="110" y="134" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">G</text>
+        <line x1="110" y1="105" x2="110" y2="115" stroke="#adb5bd" stroke-width="2" />
+
+        <circle cx="70" cy="90" r="15" fill="#fab005" /> <!-- Y -->
+        <text x="70" y="94" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">Y</text>
+        <line x1="85" y1="90" x2="95" y2="90" stroke="#adb5bd" stroke-width="2" />
+
+        <!-- Next Node (Red-Green Chain block) -->
+        <!-- Simulated Chain -->
+        <circle cx="150" cy="130" r="10" fill="#fa5252" />
+        <line x1="125" y1="130" x2="140" y2="130" stroke="#adb5bd" stroke-width="1" />
+    </g>
+
+    <!-- Transform Arrow -->
+    <path d="M 290 145 C 300 110, 300 110, 310 145" fill="none" stroke="#fd7e14" stroke-width="3" stroke-dasharray="4,4"
+        marker-end="url(#arrow-orange)" />
+    <rect x="250" y="110" width="100" height="20" fill="#fff4e6" rx="3" />
+    <text x="300" y="124" fill="#d9480f" font-size="10" font-weight="bold" text-anchor="middle">R-G 체인 반전 (Flip)</text>
+
+    <!-- Right: The Flipped Solution -->
+    <g transform="translate(320, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">2. 색상 여분 확보 (4색
+            성공)</text>
+
+        <!-- Central Node (Filled with Red) -->
+        <circle cx="110" cy="90" r="15" fill="#fa5252" />
+        <text x="110" y="93" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">R!</text>
+
+        <!-- Neighbor Nodes (Flipped) -->
+        <!-- Top R becomes G -->
+        <circle cx="110" cy="50" r="15" fill="#40c057" stroke="#2b8a3e" stroke-width="2" />
+        <text x="110" y="54" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">G</text>
+        <line x1="110" y1="65" x2="110" y2="75" stroke="#adb5bd" stroke-width="2" />
+
+        <circle cx="150" cy="90" r="15" fill="#228be6" /> <!-- B -->
+        <text x="150" y="94" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">B</text>
+        <line x1="125" y1="90" x2="135" y2="90" stroke="#adb5bd" stroke-width="2" />
+
+        <circle cx="110" cy="130" r="15" fill="#40c057" /> <!-- G -->
+        <text x="110" y="134" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">G</text>
+        <line x1="110" y1="105" x2="110" y2="115" stroke="#adb5bd" stroke-width="2" />
+
+        <circle cx="70" cy="90" r="15" fill="#fab005" /> <!-- Y -->
+        <text x="70" y="94" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">Y</text>
+        <line x1="85" y1="90" x2="95" y2="90" stroke="#adb5bd" stroke-width="2" />
+
+        <text x="110" y="145" fill="#2b8a3e" font-size="10" font-weight="bold" text-anchor="middle">"위쪽의 빨강을 초록으로 Flip
+            하여 분리!"</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-orange" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fd7e14" />
+        </marker>
+    </defs>
+</svg>

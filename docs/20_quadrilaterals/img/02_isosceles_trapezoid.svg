@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#d81b60" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">등변사다리꼴 (Isosceles Trapezoid): 완벽한 좌우 대칭의 돌연변이</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"일반 사다리꼴에 '데칼코마니(좌우 대칭)' 능력이 추가되면 발생하는 강력한
+        마법들"</text>
+
+    <!-- Left: Normal Trapezoid -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="200" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="100" y="25" fill="#495057" font-size="14" font-weight="bold" text-anchor="middle">일반 사다리꼴</text>
+
+        <path d="M 60 50 L 140 50 L 180 130 L 20 130 Z" fill="#f1f3f5" stroke="#adb5bd" stroke-width="2" />
+        <line x1="60" y1="50" x2="140" y2="50" stroke="#fa5252" stroke-width="3" />
+        <line x1="20" y1="130" x2="180" y2="130" stroke="#fa5252" stroke-width="3" />
+
+        <path d="M 120 40 L 130 50 L 120 60" fill="none" stroke="#fa5252" stroke-width="2" />
+        <path d="M 160 120 L 170 130 L 160 140" fill="none" stroke="#fa5252" stroke-width="2" />
+
+        <text x="100" y="90" fill="#868e96" font-size="10" font-weight="bold" text-anchor="middle">그냥 평행하기만 함</text>
+    </g>
+
+    <!-- VS Arrow -->
+    <path d="M 280 145 C 295 110, 295 110, 310 145" fill="none" stroke="#d81b60" stroke-width="3" stroke-dasharray="4,2"
+        marker-end="url(#arrow-pink)" />
+    <rect x="260" y="110" width="70" height="20" fill="#fff0f6" rx="3" />
+    <text x="295" y="124" fill="#a61e4d" font-size="10" font-weight="bold" text-anchor="middle">돌연변이 진화</text>
+
+    <!-- Right: Isosceles Trapezoid -->
+    <g transform="translate(340, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#d81b60" stroke-width="2" rx="5" />
+        <text x="110" y="25" fill="#d81b60" font-size="14" font-weight="bold" text-anchor="middle">등변사다리꼴</text>
+
+        <!-- Shape -->
+        <path d="M 70 50 L 150 50 L 190 130 L 30 130 Z" fill="#fff0f6" stroke="#c2255c" stroke-width="2" />
+
+        <!-- Parallel markings -->
+        <path d="M 100 45 L 110 50 L 100 55" fill="none" stroke="#fa5252" stroke-width="2" />
+        <path d="M 100 125 L 110 130 L 100 135" fill="none" stroke="#fa5252" stroke-width="2" />
+
+        <!-- Mirror symmetry line -->
+        <line x1="110" y1="35" x2="110" y2="145" stroke="#a61e4d" stroke-width="2" stroke-dasharray="5,5" />
+        <text x="110" y="45" fill="#a61e4d" font-size="10" font-weight="bold" text-anchor="end">거울(대칭축)</text>
+
+        <!-- Side marks -->
+        <line x1="45" y1="85" x2="55" y2="95" stroke="#1864ab" stroke-width="3" />
+        <line x1="165" y1="85" x2="175" y2="95" stroke="#1864ab" stroke-width="3" />
+
+        <!-- Angle arcs -->
+        <!-- Bottom Left -->
+        <path d="M 50 130 A 20 20 0 0 1 45 100" fill="none" stroke="#0ca678" stroke-width="2" />
+        <!-- Bottom Right -->
+        <path d="M 170 130 A 20 20 0 0 0 175 100" fill="none" stroke="#0ca678" stroke-width="2" />
+        <text x="110" y="115" fill="#0ca678" font-size="10" font-weight="bold" text-anchor="middle">밑각 2개가 같음!</text>
+
+        <!-- Diagonals -->
+        <line x1="70" y1="50" x2="190" y2="130" stroke="#f59f00" stroke-width="1.5" stroke-dasharray="2,2" />
+        <line x1="150" y1="50" x2="30" y2="130" stroke="#f59f00" stroke-width="1.5" stroke-dasharray="2,2" />
+        <text x="110" y="80" fill="#d9480f" font-size="9" font-weight="bold" text-anchor="middle">대각선 길이 일치</text>
+
+    </g>
+
+    <defs>
+        <marker id="arrow-pink" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#d81b60" />
+        </marker>
+    </defs>
+</svg>

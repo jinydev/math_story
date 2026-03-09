@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">시공간의 붕괴점: 원순열 (Circular Permutation)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"동그란 테이블 위에서는 누가
+        시작이고 끝인지 기준점(Index 0) 이 증발해버린다."</text>
+
+    <!-- Left Side: The Problem (Rotated Duplicates) -->
+    <g transform="translate(100, 150)">
+        <rect x="-20" y="0" width="370" height="300" rx="15" fill="#1b1111" stroke="#ff5555" stroke-width="3" />
+        <text x="165" y="30" fill="#ff5555" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">거짓 우주의 탄생 (4배 복제 현상)</text>
+
+        <!-- Table 1 -->
+        <g transform="translate(60, 100)">
+            <circle cx="0" cy="0" r="30" fill="#002233" stroke="#4da6ff" stroke-width="2" />
+            <text x="0" y="-15" fill="#fff" font-weight="bold" text-anchor="middle">A</text>
+            <text x="20" y="5" fill="#fff" font-weight="bold" text-anchor="middle">B</text>
+            <text x="0" y="25" fill="#fff" font-weight="bold" text-anchor="middle">C</text>
+            <text x="-20" y="5" fill="#fff" font-weight="bold" text-anchor="middle">D</text>
+        </g>
+
+        <path d="M 120 100 L 140 100" fill="none" stroke="#fff" marker-end="url(#arrow_w)" />
+
+        <!-- Table 2 (Rotated 90 deg) -->
+        <g transform="translate(190, 100)">
+            <circle cx="0" cy="0" r="30" fill="#221100" stroke="#ffaa00" stroke-width="2" />
+            <text x="0" y="-15" fill="#fff" font-weight="bold" text-anchor="middle">D</text>
+            <text x="20" y="5" fill="#fff" font-weight="bold" text-anchor="middle">A</text>
+            <text x="0" y="25" fill="#fff" font-weight="bold" text-anchor="middle">B</text>
+            <text x="-20" y="5" fill="#fff" font-weight="bold" text-anchor="middle">C</text>
+        </g>
+
+        <path d="M 230 100 L 250 100" fill="none" stroke="#fff" marker-end="url(#arrow_w)" />
+        <text x="270" y="105" fill="#fff" font-weight="bold">...</text>
+
+        <text x="165" y="170" fill="#ffffff" font-family="monospace" font-size="14" text-anchor="middle">일렬로 세우면 ABCD 와
+            DABC 는 완전 다른 녀석이지만,</text>
+        <text x="165" y="190" fill="#ffaa00" font-family="monospace" font-size="14" font-weight="bold"
+            text-anchor="middle">둥근 탁자에서는 A의 오른쪽이 B라는 점에서 100% 동일함.</text>
+        <text x="165" y="220" fill="#ff5555" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">결론: 4명이면 똑같은 맵이 무조건 4장씩 존재!</text>
+
+        <!-- Calculation -->
+        <rect x="20" y="240" width="290" height="40" rx="5" fill="#000" stroke="#ff5555" />
+        <text x="165" y="265" fill="#ff5555" font-family="monospace" font-size="16" font-weight="bold"
+            text-anchor="middle">수식: 4! / 4 = 3! = 6 가지</text>
+    </g>
+
+    <!-- Right Side: The Hacker's Solution (Anchor) -->
+    <g transform="translate(500, 150)">
+        <rect x="-20" y="0" width="370" height="300" rx="15" fill="#001a11" stroke="#00ffcc" stroke-width="3" />
+        <text x="165" y="30" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">시점 고정 해킹 (Anchor Algorithm)</text>
+
+        <!-- Table 3 (Anchored) -->
+        <g transform="translate(165, 120)">
+            <circle cx="0" cy="0" r="50" fill="#111" stroke="#00ffcc" stroke-width="2" />
+
+            <!-- Anchor A -->
+            <path d="M -15 -60 L 15 -60 L 0 -80 Z" fill="#ff5555" filter="url(#glow)" />
+            <circle cx="0" cy="-45" r="15" fill="#ff5555" />
+            <text x="0" y="-40" fill="#fff" font-weight="bold" font-size="16" text-anchor="middle">A</text>
+
+            <!-- B, C, D spots -->
+            <circle cx="45" cy="0" r="15" fill="#555" stroke="#ffff00" stroke-width="2" stroke-dasharray="4 2" />
+            <text x="45" y="5" fill="#fff" font-weight="bold" font-size="14" text-anchor="middle">?</text>
+
+            <circle cx="0" cy="45" r="15" fill="#555" stroke="#ffff00" stroke-width="2" stroke-dasharray="4 2" />
+            <text x="0" y="50" fill="#fff" font-weight="bold" font-size="14" text-anchor="middle">?</text>
+
+            <circle cx="-45" cy="0" r="15" fill="#555" stroke="#ffff00" stroke-width="2" stroke-dasharray="4 2" />
+            <text x="-45" y="5" fill="#fff" font-weight="bold" font-size="14" text-anchor="middle">?</text>
+        </g>
+
+        <text x="165" y="220" fill="#ffffff" font-family="monospace" font-size="14" text-anchor="middle">A를 강제로 한 자리에
+            묶어버립니다. (닻을 내림, 기준 생성)</text>
+        <text x="165" y="240" fill="#ffff00" font-family="monospace" font-size="14" font-weight="bold"
+            text-anchor="middle">이제 원탁이 돌아가는 꼼수를 쓸 수 없습니다!</text>
+
+        <!-- Calculation -->
+        <rect x="20" y="250" width="290" height="40" rx="5" fill="#000" stroke="#00ffcc" />
+        <text x="165" y="275" fill="#00ffcc" font-family="monospace" font-size="16" font-weight="bold"
+            text-anchor="middle">해결: 남은 3명만 줄 세우기 -> 3! = 6 가지</text>
+    </g>
+
+    <defs>
+        <marker id="arrow_w" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#ffffff" />
+        </marker>
+    </defs>
+
+    <!-- Big Alert Bottom -->
+    <rect x="250" y="480" width="400" height="70" rx="10" fill="#220033" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="510" fill="#ff00ff" font-family="monospace" font-size="24" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">궁극의 원순열 공식: (n-1)!</text>
+    <text x="450" y="535" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">"1명 희생시켜 기준을 박고,
+        나머지를 배열한다."</text>
+
+</svg>

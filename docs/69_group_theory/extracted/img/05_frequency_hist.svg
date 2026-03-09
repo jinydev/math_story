@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">계급(Bin) 압축 센서와 틈새 없는 빌딩숲(Histogram)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"일반 표로는 묶을 수 없는
+        유니크한 성적들. 1의 자리를 잘라내고 범위 그물망으로 거시적 덩치를 파악하라!"</text>
+
+    <!-- Left: Raw Data falling into Bins (Frequency Distribution Table logic) -->
+    <g transform="translate(100, 150)">
+        <rect x="-20" y="-30" width="300" height="280" rx="15" fill="#1b1111" stroke="#ff5555" stroke-width="3" />
+        <text x="130" y="0" fill="#ff5555" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">계급(Range/Bin) 분류기</text>
+
+        <!-- Falling raw numbers -->
+        <text x="70" y="40" fill="#aaaaaa" font-family="monospace" font-size="14">73, 85, 92, 60, 88, 75, 81 ...</text>
+        <path d="M 130 50 L 130 90" stroke="#ffaa00" stroke-width="3" stroke-dasharray="5 5" fill="none"
+            marker-end="url(#arrow_y)" />
+
+        <!-- Silo / Bins -->
+        <g transform="translate(40, 110)">
+            <!-- Bin 60-70 -->
+            <rect x="0" y="0" width="40" height="100" fill="#001a11" stroke="#00ffcc" stroke-width="2" />
+            <text x="20" y="120" fill="#00ffcc" font-family="monospace" font-size="12" text-anchor="middle">60~70</text>
+            <!-- Inside Data (60) -->
+            <rect x="5" y="70" width="30" height="20" fill="#ffaa00" />
+            <text x="20" y="85" fill="#111" font-family="monospace" font-size="10" font-weight="bold"
+                text-anchor="middle">60</text>
+
+            <!-- Bin 70-80 -->
+            <rect x="50" y="0" width="40" height="100" fill="#001a11" stroke="#00ffcc" stroke-width="2" />
+            <text x="70" y="120" fill="#00ffcc" font-family="monospace" font-size="12" text-anchor="middle">70~80</text>
+            <!-- Inside Data (73, 75) -->
+            <rect x="55" y="70" width="30" height="20" fill="#ffaa00" />
+            <rect x="55" y="45" width="30" height="20" fill="#ffaa00" />
+            <text x="70" y="85" fill="#111" font-family="monospace" font-size="10" font-weight="bold"
+                text-anchor="middle">73</text>
+            <text x="70" y="60" fill="#111" font-family="monospace" font-size="10" font-weight="bold"
+                text-anchor="middle">75</text>
+
+            <!-- Bin 80-90 (Thick stack) -->
+            <rect x="100" y="0" width="40" height="100" fill="#003322" stroke="#00ffcc" stroke-width="3"
+                filter="url(#glow)" />
+            <text x="120" y="120" fill="#00ffcc" font-family="monospace" font-size="12" font-weight="bold"
+                text-anchor="middle">80~90</text>
+            <!-- Inside Data -->
+            <rect x="105" y="70" width="30" height="20" fill="#ff5555" />
+            <rect x="105" y="45" width="30" height="20" fill="#ff5555" />
+            <rect x="105" y="20" width="30" height="20" fill="#ff5555" />
+            <text x="120" y="85" fill="#fff" font-family="monospace" font-size="10" font-weight="bold"
+                text-anchor="middle">85</text>
+            <text x="120" y="60" fill="#fff" font-family="monospace" font-size="10" font-weight="bold"
+                text-anchor="middle">88</text>
+            <text x="120" y="35" fill="#fff" font-family="monospace" font-size="10" font-weight="bold"
+                text-anchor="middle">81</text>
+
+            <!-- Bin 90-100 -->
+            <rect x="150" y="0" width="40" height="100" fill="#001a11" stroke="#00ffcc" stroke-width="2" />
+            <text x="170" y="120" fill="#00ffcc" font-family="monospace" font-size="12"
+                text-anchor="middle">90~100</text>
+            <!-- Inside Data (92) -->
+            <rect x="155" y="70" width="30" height="20" fill="#ffaa00" />
+            <text x="170" y="85" fill="#111" font-family="monospace" font-size="10" font-weight="bold"
+                text-anchor="middle">92</text>
+        </g>
+    </g>
+
+    <!-- Right: Histogram (Continuous Building Blocks) -->
+    <g transform="translate(480, 150)">
+        <rect x="-20" y="-30" width="350" height="280" rx="15" fill="#050a11" stroke="#4da6ff" stroke-width="3" />
+        <text x="155" y="0" fill="#4da6ff" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">연속형 통찰 무기: 히스토그램</text>
+
+        <!-- Area / Ruler -->
+        <line x1="30" y1="200" x2="280" y2="200" stroke="#ffffff" stroke-width="3" />
+        <text x="50" y="220" fill="#aaaaaa" font-family="monospace" font-size="12" text-anchor="middle">60</text>
+        <text x="90" y="220" fill="#aaaaaa" font-family="monospace" font-size="12" text-anchor="middle">70</text>
+        <text x="130" y="220" fill="#aaaaaa" font-family="monospace" font-size="12" text-anchor="middle">80</text>
+        <text x="170" y="220" fill="#aaaaaa" font-family="monospace" font-size="12" text-anchor="middle">90</text>
+        <text x="210" y="220" fill="#aaaaaa" font-family="monospace" font-size="12" text-anchor="middle">100</text>
+
+        <!-- Bars (Glued together) -->
+        <rect x="50" y="160" width="40" height="40" fill="#4da6ff" stroke="#111" stroke-width="2" />
+        <text x="70" y="150" fill="#ffffff" font-family="monospace" font-size="12" text-anchor="middle">1</text>
+
+        <rect x="90" y="120" width="40" height="80" fill="#4da6ff" stroke="#111" stroke-width="2" />
+        <text x="110" y="110" fill="#ffffff" font-family="monospace" font-size="12" text-anchor="middle">3</text>
+
+        <!-- Peak Tower -->
+        <rect x="130" y="40" width="40" height="160" fill="#ff00ff" stroke="#111" stroke-width="2"
+            filter="url(#glow)" />
+        <text x="150" y="30" fill="#ff00ff" font-family="monospace" font-size="14" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">6</text>
+
+        <rect x="170" y="120" width="40" height="80" fill="#4da6ff" stroke="#111" stroke-width="2" />
+        <text x="190" y="110" fill="#ffffff" font-family="monospace" font-size="12" text-anchor="middle">2</text>
+
+        <!-- The normal distribution wave overlay -->
+        <path d="M 50 160 Q 90 90 150 40 T 250 200" fill="none" stroke="#ffff00" stroke-width="3" stroke-dasharray="8 5"
+            opacity="0.8" />
+
+        <text x="155" y="240" fill="#ffff00" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">빈틈 제로! 연속된 거대한 파도(분포) 완성</text>
+    </g>
+
+    <!-- Connector -->
+    <path d="M 400 280 L 440 280" fill="none" stroke="#ffffff" stroke-width="4" marker-end="url(#arrow_w)" />
+
+    <defs>
+        <marker id="arrow_y" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ffaa00" />
+        </marker>
+        <marker id="arrow_w" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff" />
+        </marker>
+    </defs>
+
+    <!-- Base Explain -->
+    <rect x="100" y="480" width="700" height="80" rx="10" fill="#111" stroke="#00ffcc" stroke-width="2" />
+    <text x="450" y="510" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        83점이라는 디테일을 버리고 <tspan fill="#00ffcc" font-weight="bold">'80~90 구간(계급)'</tspan> 의 도수(머릿수) 로 압축 세탁함으로써,
+    </text>
+    <text x="450" y="540" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        우리 반이 천재와 바보로 찢어졌는지, 평범한 아이들이 메인 볼륨을 형성하는지 <tspan fill="#ff00ff" font-weight="bold">빌딩 실루엣(히스토그램)</tspan> 으로 즉시
+        노출됩니다.
+    </text>
+</svg>

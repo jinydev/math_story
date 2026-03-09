@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '09. 닮음 Similarity  Fractals'
+---
+
 # 09. 닮음 (Similarity & Fractals)
 
 ## 이 단원의 핵심 (Chapter Focus)

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">부등식(Inequality)의 4형제: 벌어진 입과 = 의 유무</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"등호(=) 가 있으면 선(Boundary) 을 밟아도 살지만, 없으면 밟는
+        순간 아웃(점선) 이다!"</text>
+
+    <!-- Section 1: Strict Inequality (Exclusive) -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">초과 / 미만 형제 (>, <)<
+                /text>
+
+                <!-- Y axis -->
+                <line x1="110" y1="40" x2="110" y2="120" stroke="#adb5bd" stroke-width="1" />
+                <!-- X axis -->
+                <line x1="20" y1="80" x2="200" y2="80" stroke="#adb5bd" stroke-width="1" />
+
+                <!-- Boundary line (Dashed = Exclusive) -->
+                <line x1="50" y1="110" x2="170" y2="50" stroke="#fa5252" stroke-width="3" stroke-dasharray="8,4" />
+                <text x="180" y="45" fill="#fa5252" font-size="12" font-weight="bold">선 밟으면 탈락!</text>
+
+                <!-- Fill areas -->
+                <path d="M 50 110 L 170 50 L 50 50 Z" fill="#ffe3e3" fill-opacity="0.5" />
+                <text x="90" y="70" fill="#c92a2a" font-size="14" font-weight="bold">y > x</text>
+
+                <path d="M 50 110 L 170 50 L 170 110 Z" fill="#e7f5ff" fill-opacity="0.5" />
+                <text x="130" y="95" fill="#1864ab" font-size="14" font-weight="bold">y < x</text>
+    </g>
+
+    <!-- VS Arrow -->
+    <path d="M 290 145 C 300 110, 300 110, 310 145" fill="none" stroke="#adb5bd" stroke-width="2" />
+    <text x="300" y="130" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">VS (= 등호의 힘)</text>
+
+    <!-- Section 2: Inclusive Inequality -->
+    <g transform="translate(320, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">이상 / 이하 형제 (≥,
+            ≤)</text>
+
+        <!-- Y axis -->
+        <line x1="110" y1="40" x2="110" y2="120" stroke="#adb5bd" stroke-width="1" />
+        <!-- X axis -->
+        <line x1="20" y1="80" x2="200" y2="80" stroke="#adb5bd" stroke-width="1" />
+
+        <!-- Boundary line (Solid = Inclusive) -->
+        <line x1="50" y1="110" x2="170" y2="50" stroke="#2b8a3e" stroke-width="3" />
+        <text x="180" y="45" fill="#2b8a3e" font-size="12" font-weight="bold">국경선 포함!</text>
+
+        <!-- Fill areas -->
+        <path d="M 50 110 L 170 50 L 50 50 Z" fill="#ebfbee" fill-opacity="0.5" />
+        <text x="90" y="70" fill="#0ca678" font-size="14" font-weight="bold">y ≥ x</text>
+
+        <path d="M 50 110 L 170 50 L 170 110 Z" fill="#f3d9fa" fill-opacity="0.5" />
+        <text x="130" y="95" fill="#ae3ec9" font-size="14" font-weight="bold">y ≤ x</text>
+    </g>
+
+</svg>

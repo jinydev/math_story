@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "수학이야기 36.복소수"
+title: '수학이야기 36.복소수'
 parent: 수학이야기
 nav_order: 36
 has_children: true

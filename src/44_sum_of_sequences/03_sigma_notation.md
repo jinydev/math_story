@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '3. 우주 최고의 For 루프 압축기 시그마 와 거듭제곱'
+---
+
 # 3. 우주 최고의 For 루프 압축기: '시그마(Σ) 와 거듭제곱'
 
 ## [도입부] 학습 목표 (Learning Objectives)

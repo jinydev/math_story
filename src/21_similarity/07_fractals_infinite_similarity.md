@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '07. 프랙탈Fractal, 무한한 자기 닮음의 우주'
+---
+
 # 07. 프랙탈(Fractal), 무한한 자기 닮음의 우주
 
 ## 1. 학습 목표 (Learning Objectives)

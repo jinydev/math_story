@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '05. 비용을 깎아라 최소 비용 신장 트리 MST'
+---
+
 # 05. 비용을 깎아라: 최소 비용 신장 트리 (MST)
 
 ## 1. 학습 목표 (Learning Objectives)

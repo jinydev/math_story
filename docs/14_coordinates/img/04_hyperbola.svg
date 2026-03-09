@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+    <rect width="500" height="500" fill="#111"/>
+    
+    <text x="250" y="30" font-family="Arial" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle">반비례 쌍곡선: y = a/x</text>
+
+    <line x1="0" y1="250" x2="500" y2="250" stroke="#7f8c8d" stroke-width="2"/>
+    <line x1="250" y1="50" x2="250" y2="500" stroke="#7f8c8d" stroke-width="2"/>
+
+    <!-- Hyperbola Curve - Quadrant 1 -->
+    <path d="M260 50 Q280 200 450 240" stroke="#e74c3c" stroke-width="3" fill="none" stroke-dasharray="300" stroke-dashoffset="300">
+        <animate attributeName="stroke-dashoffset" values="300;0;0" keyTimes="0;0.5;1" dur="3s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Hyperbola Curve - Quadrant 3 -->
+    <path d="M240 450 Q220 300 50 260" stroke="#e74c3c" stroke-width="3" fill="none" stroke-dasharray="300" stroke-dashoffset="300">
+        <animate attributeName="stroke-dashoffset" values="300;0;0" keyTimes="0;0.5;1" dur="3s" repeatCount="indefinite"/>
+    </path>
+    
+    <circle r="6" fill="#f1c40f">
+        <animate MotionPath="..." />
+        <animate attributeName="cx" values="270; 290; 330; 450" keyTimes="0; 0.3; 0.6; 1" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="50; 150; 210; 240" keyTimes="0; 0.3; 0.6; 1" dur="3s" repeatCount="indefinite"/>
+    </circle>
+</svg>

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 직관의 폭발 뇌를 해킹하는 그림 그리기 Draw a Picture'
+---
+
 # 2. 직관의 폭발: 뇌를 해킹하는 '그림 그리기 (Draw a Picture)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

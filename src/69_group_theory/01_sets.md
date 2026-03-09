@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 모든 수학의 재료 집합과 연산'
+---
+
 # 1. 모든 수학의 재료: '집합과 연산'
 
 ## [도입부] 학습 목표 (Learning Objectives)

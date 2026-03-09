@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 73. 문제해결 전략 Problem Solving Strategies'
+---
+
 # 수학이야기 73. 문제해결 전략 (Problem Solving Strategies)
 
 ## 📌 학습 개요

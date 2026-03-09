@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '23. 최적화이론 Optimization Theory 내비게이션 알고리즘의 심장'
+---
+
 # 23. 최적화이론 (Optimization Theory: 내비게이션 알고리즘의 심장)
 
 ## 이 단원의 핵심 (Chapter Focus)

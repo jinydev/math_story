@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '6. O X 게임의 절대 법칙 이항분포와 독립시행 Binomial Distribution'
+---
+
 # 6. O X 게임의 절대 법칙: 이항분포와 독립시행 (Binomial Distribution)
 
 ## [도입부] 학습 목표 (Learning Objectives)

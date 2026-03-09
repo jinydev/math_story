@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">말려진 차원의 발견: 초끈이론 11차원 (M-Theory)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"거시적인 1차원의 선분도, 미시
+        단위로 줌인(Zoom-in) 하면 보이지 않던 둘레 방향의 새로운 자유도가 스캐닝된다."</text>
+
+    <!-- Left Side: Macro View (1D) -->
+    <g transform="translate(100, 180)">
+        <rect x="-20" y="-30" width="300" height="220" rx="10" fill="#1b1122" stroke="#ff00ff" stroke-width="2" />
+        <text x="130" y="0" fill="#ff00ff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">헬기에서의 매크로(Macro) 관점</text>
+
+        <!-- Wire as a thin line -->
+        <path d="M 20 100 L 240 100" fill="none" stroke="#fff" stroke-width="4" filter="url(#glow)" />
+
+        <!-- Ant/Flea as a dot -->
+        <circle cx="100" cy="100" r="4" fill="#ffff00" filter="url(#glow)" />
+
+        <path d="M 120 100 L 160 100" fill="none" stroke="#ffff00" stroke-width="3" marker-end="url(#arrow_y)"
+            marker-start="url(#arrow_y)" />
+
+        <text x="130" y="150" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">앞뒤 직진만 가능 (자유도
+            축 1개)</text>
+        <text x="130" y="170" fill="#ff00ff" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">"이것은 1차원의 우주다 (1D)"</text>
+    </g>
+
+    <!-- Right Side: Micro View (Curled Dimension) -->
+    <g transform="translate(480, 180)">
+        <rect x="-20" y="-30" width="350" height="220" rx="10" fill="#001a11" stroke="#00ffcc" stroke-width="2" />
+        <text x="155" y="0" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">미생물의 극미세(Micro) 관점 (Zoom-in!)</text>
+
+        <!-- Wire as a cylinder -->
+        <path d="M 20 60 L 290 60 M 20 140 L 290 140" fill="none" stroke="#555" stroke-width="2" />
+        <path d="M 20 60 A 20 40 0 1 0 20 140 A 20 40 0 1 0 20 60" fill="none" stroke="#555" stroke-width="2" />
+        <path d="M 290 60 A 20 40 0 1 0 290 140 A 20 40 0 1 0 290 60" fill="none" stroke="#555" stroke-width="2"
+            stroke-dasharray="4 2" />
+
+        <path d="M 20 100 L 290 100" fill="none" stroke="#333" stroke-width="1" stroke-dasharray="4 4" />
+
+        <!-- Ant moving -->
+        <!-- Axis 1: Straight -->
+        <path d="M 100 100 L 200 100" fill="none" stroke="#ffff00" stroke-width="3" marker-end="url(#arrow_y)"
+            marker-start="url(#arrow_y)" />
+        <text x="150" y="90" fill="#ffff00" font-weight="bold" text-anchor="middle">1축 (직진)</text>
+
+        <!-- Axis 2: Curled around the cylinder -->
+        <path d="M 120 100 A 30 50 0 1 1 120 70" fill="none" stroke="#00ffcc" stroke-width="3" stroke-dasharray="6 3"
+            marker-end="url(#arrow_c)" filter="url(#glow)" />
+        <text x="140" y="60" fill="#00ffcc" font-weight="bold" text-anchor="middle" filter="url(#glow)">2축 (회전 - 말려진
+            차원)</text>
+
+        <text x="155" y="155" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">표면을 타고 뱅뱅 돌 수
+            있음! (자유도 축 2개)</text>
+        <text x="155" y="175" fill="#00ffcc" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">"이것은 2차원의 우주다 (2D)"</text>
+    </g>
+
+    <!-- Transitions Arrow -->
+    <text x="430" y="270" fill="#ffffff" font-size="32" font-weight="bold" filter="url(#glow)">→</text>
+
+    <defs>
+        <marker id="arrow_y" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#ffff00" />
+        </marker>
+        <marker id="arrow_c" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#00ffcc" />
+        </marker>
+    </defs>
+
+    <!-- Big Alert Bottom -->
+    <rect x="100" y="450" width="700" height="110" rx="10" fill="#0d1b2a" stroke="#4da6ff" stroke-width="2" />
+    <text x="450" y="480" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        초끈이론과 M-이론은 바로 이 눈속임을 역이용했다.
+    </text>
+    <text x="450" y="510" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        "우리가 살고 있는 우주는 거시적으로 관찰 가능한 가로,세로,높이,시간의 <tspan fill="#ffff00" font-weight="bold">거대 4차원 베이스</tspan>에,"
+    </text>
+    <text x="450" y="540" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        극한으로 작게 파고들면 나타나는 <tspan fill="#00ffcc" font-weight="bold">"7개의 미세하게 돌돌 말려진 여분의 공간축"</tspan> 들을 합산한 11차원 매트릭스다.
+    </text>
+</svg>

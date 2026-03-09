@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#e8590c" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">가격 흥정과 생존의 법칙: 일차부등식의 실전 활용 (Applications)</text>
+
+    <!-- Real World Story (Pricing) -->
+    <g transform="translate(100, 150)">
+        <rect x="-80" y="-80" width="160" height="120" fill="#fff4e6" stroke="#f59f00" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#d9480f" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">현실의 상황 (택시 요금)</text>
+
+        <text x="0" y="-30" fill="#e8590c" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">"가진 돈은 10,000원!"</text>
+        <text x="0" y="-10" fill="#495057" font-size="12" font-family="sans-serif" text-anchor="middle">기본료 4000원 + 키로당
+            1000원</text>
+
+        <!-- Distance representation -->
+        <path d="M -40 20 L 40 20" fill="none" stroke="#f59f00" stroke-width="4" stroke-dasharray="4,4" />
+        <text x="0" y="40" fill="#d9480f" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">몇 km(x) 까지 갈 수 있나?</text>
+    </g>
+
+    <!-- Model Translation -->
+    <path d="M 190 110 L 260 110" fill="none" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow-grey)" />
+    <text x="225" y="90" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">수학 번역</text>
+    <text x="225" y="130" fill="#e03131" font-size="12" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">(기계식 세우기)</text>
+
+    <!-- Mathematical Inequality Model -->
+    <g transform="translate(400, 150)">
+        <rect x="-110" y="-80" width="220" height="120" fill="#e7f5ff" stroke="#339af0" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#1864ab" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">부등식 모델 구축</text>
+
+        <text x="0" y="-20" fill="#1864ab" font-size="18" font-family="monospace" font-weight="bold"
+            text-anchor="middle">요금 &le; 가진 돈</text>
+
+        <!-- Formal Equation -->
+        <text x="0" y="10" fill="#1864ab" font-size="20" font-family="monospace" font-weight="bold"
+            text-anchor="middle">4000 + 1000<tspan fill="#e03131">x</tspan> &le; 10000</text>
+
+        <!-- Solution -->
+        <rect x="-40" y="25" width="80" height="20" fill="#a5d8ff" rx="5" />
+        <text x="0" y="40" fill="#1864ab" font-size="14" font-family="monospace" font-weight="bold"
+            text-anchor="middle">
+            <tspan fill="#e03131">x</tspan> &le; 6
+        </text>
+    </g>
+
+    <defs>
+        <marker id="arrow-grey" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

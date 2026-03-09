@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 지도를 칠하는 가장 완벽한 방법 4색 문제의 시작 Origin'
+---
+
 # 1. 지도를 칠하는 가장 완벽한 방법: 4색 문제의 시작 (Origin)
 
 ## [도입부] 학습 목표 (Learning Objectives)

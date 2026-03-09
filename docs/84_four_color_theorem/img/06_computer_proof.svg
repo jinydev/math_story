@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#d9480f" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">수학사 최초의 컴퓨터(AI) 증명 반란: 크라켄 1200시간의 포효</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"인간의 펜을 집어던지고, 슈퍼컴퓨터의 Brute Force 가 1,936개의
+        레고 블록을 모조리 4색 칠해버리다!"</text>
+
+    <!-- Left: The 1936 Sets Input -->
+    <g transform="translate(30, 80)">
+        <rect x="0" y="0" width="160" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="80" y="25" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">1,936개의 하켄/아펠</text>
+        <text x="80" y="45" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">절대 패턴 리스트</text>
+
+        <rect x="20" y="60" width="120" height="10" fill="#d0ebff" rx="2" />
+        <rect x="20" y="80" width="120" height="10" fill="#d0ebff" rx="2" />
+        <rect x="20" y="100" width="120" height="10" fill="#d0ebff" rx="2" />
+        <text x="80" y="130" fill="#0b7285" font-size="10" font-weight="bold" text-anchor="middle">(방대한 노가다 데이터)</text>
+    </g>
+
+    <!-- Injection Data Flow -->
+    <path d="M 200 155 L 240 155" fill="none" stroke="#adb5bd" stroke-width="4" stroke-dasharray="6,4" />
+    <text x="220" y="145" fill="#adb5bd" font-size="12" font-weight="bold" text-anchor="middle">입력</text>
+
+    <!-- Center: IBM Supercomputer -->
+    <g transform="translate(250, 80)">
+        <rect x="0" y="0" width="180" height="150" fill="#212529" stroke="#fa5252" stroke-width="3" rx="10" />
+        <rect x="10" y="10" width="160" height="80" fill="#000" rx="5" />
+
+        <!-- Terminal Text -->
+        <text x="20" y="30" fill="#38d9a9" font-size="10" font-family="monospace">>> LOADING Pattern #1...</text>
+        <text x="20" y="45" fill="#38d9a9" font-size="10" font-family="monospace">>> COLORING V1... [RED]</text>
+        <text x="20" y="60" fill="#38d9a9" font-size="10" font-family="monospace">>> ...SUCCESS (4 COLORS)</text>
+        <text x="20" y="75" fill="#38d9a9" font-size="10" font-family="monospace">>> LOADING Pattern #142...</text>
+
+        <text x="90" y="115" fill="#fff" font-size="14" font-weight="bold" text-anchor="middle">IBM 360 슈퍼컴퓨터</text>
+        <text x="90" y="135" fill="#ff8787" font-size="12" font-weight="bold" text-anchor="middle">"1,200시간 Brute Force
+            가동"</text>
+    </g>
+
+    <!-- Output Arrow -->
+    <path d="M 440 155 L 480 155" fill="none" stroke="#2b8a3e" stroke-width="4" marker-end="url(#arrow-green)" />
+    <text x="460" y="145" fill="#2b8a3e" font-size="12" font-weight="bold" text-anchor="middle">출력</text>
+
+    <!-- Right: The Disputed Truth -->
+    <g transform="translate(490, 80)">
+        <rect x="0" y="0" width="100" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+
+        <circle cx="50" cy="50" r="30" fill="#e6fcf5" stroke="#2b8a3e" stroke-width="3" />
+        <text x="50" y="55" fill="#2b8a3e" font-size="20" font-weight="bold" text-anchor="middle">Q.E.D</text>
+
+        <text x="50" y="110" fill="#2b8a3e" font-size="12" font-weight="bold" text-anchor="middle">4색 정리</text>
+        <text x="50" y="125" fill="#2b8a3e" font-size="12" font-weight="bold" text-anchor="middle">증명 완료!</text>
+
+        <text x="50" y="145" fill="#c92a2a" font-size="9" font-weight="bold" text-anchor="middle">(수학자 99% 분노)</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+    </defs>
+</svg>

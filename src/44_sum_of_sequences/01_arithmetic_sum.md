@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 10살 수학 천재의 치트키 등차수열의 합 Gauss'
+---
+
 # 1. 10살 수학 천재의 치트키: '등차수열의 합 (Gauss)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

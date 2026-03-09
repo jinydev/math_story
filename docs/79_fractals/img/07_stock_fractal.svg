@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="300">
+    <rect width="800" height="300" fill="#2d3436" />
+    <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#dfe6e9" text-anchor="middle">
+        경제학의 프랙탈: 주식 시장 차트의 자기 유사성
+    </text>
+
+    <!-- 10 Years Chart -->
+    <text x="200" y="80" font-family="Arial" font-size="16" fill="#0984e3" text-anchor="middle">[10년 장기 일봉 차트]</text>
+    <polyline points="50,250 80,210 110,230 140,150 170,180 200,100 230,120 260,90 290,140 320,110 350,200" 
+              fill="none" stroke="#0984e3" stroke-width="3" stroke-linejoin="round"/>
+              
+    <!-- Divider -->
+    <line x1="400" y1="60" x2="400" y2="280" stroke="#b2bec3" stroke-width="2" stroke-dasharray="10" />
+
+    <!-- 5 Minutes Chart -->
+    <text x="600" y="80" font-family="Arial" font-size="16" fill="#00b894" text-anchor="middle">[오늘 5분 단타 틱 차트]</text>
+    <polyline points="450,250 480,210 510,230 540,150 570,180 600,100 630,120 660,90 690,140 720,110 750,200" 
+              fill="none" stroke="#00b894" stroke-width="3" stroke-linejoin="round"/>
+
+    <!-- Labels linking the visual identicalness -->
+    <text x="400" y="280" font-family="Arial" font-size="14" fill="#fdcb6e" text-anchor="middle">X축(시간) 스케일을 가려버리면 둘은 시각적으로 완전히 동일함 (프랙탈 차원 공유)</text>
+</svg>

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 80. 도형의 이동 Transformation of Figures'
+---
+
 # 수학이야기 80. 도형의 이동 (Transformation of Figures)
 
 ## 📌 학습 개요

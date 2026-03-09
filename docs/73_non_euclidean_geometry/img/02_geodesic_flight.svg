@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="400">
+    <defs>
+        <style>
+            .bg {
+                fill: #f0f4f8;
+                rx: 10;
+                stroke: #cbd5e1;
+                stroke-width: 2;
+            }
+
+            .earth {
+                fill: #3b82f6;
+                fill-opacity: 0.15;
+                stroke: #2563eb;
+                stroke-width: 2;
+            }
+
+            .latitude {
+                fill: none;
+                stroke: #94a3b8;
+                stroke-width: 1;
+                stroke-dasharray: 4;
+            }
+
+            .horizon-line {
+                stroke: #475569;
+                stroke-width: 1.5;
+            }
+
+            /* Flat Straight Line (Euclidean) - Yellow/Orange */
+            .fake-straight {
+                fill: none;
+                stroke: #f59e0b;
+                stroke-width: 3;
+                stroke-dasharray: 6;
+            }
+
+            /* Geodesic Curve (Non-Euclidean) - Red */
+            .true-geodesic {
+                fill: none;
+                stroke: #ef4444;
+                stroke-width: 4;
+            }
+
+            .city-point {
+                fill: #1e293b;
+            }
+
+            .text-label {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 14px;
+                fill: #1e293b;
+                font-weight: bold;
+            }
+
+            .text-title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 18px;
+                fill: #b91c1c;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .text-note {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 13px;
+                fill: #475569;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <!-- 3D Globe representation -->
+    <circle cx="300" cy="220" r="140" class="earth" />
+
+    <!-- Latitudes & Longitudes (Wireframe illusion) -->
+    <ellipse cx="300" cy="220" rx="140" ry="35" class="latitude" />
+    <ellipse cx="300" cy="220" rx="140" ry="80" class="latitude" />
+    <path d="M 300 80 Q 230 220 300 360" class="latitude" />
+    <path d="M 300 80 Q 370 220 300 360" class="latitude" />
+
+    <!-- Map Center Axis -->
+    <line x1="140" y1="220" x2="460" y2="220" class="horizon-line" />
+    <line x1="300" y1="60" x2="300" y2="380" class="horizon-line" />
+
+    <!-- City A (New York) -->
+    <circle cx="210" cy="190" r="5" class="city-point" />
+    <text x="180" y="180" class="text-label">뉴욕(A)</text>
+
+    <!-- City B (Paris) -->
+    <circle cx="410" cy="180" r="5" class="city-point" />
+    <text x="415" y="170" class="text-label">파리(B)</text>
+
+    <!-- 1. Flat Map Straight Line (Fake Shortest Path) -->
+    <line x1="210" y1="190" x2="410" y2="180" class="fake-straight" />
+
+    <!-- 2. Curved Geodesic (True Shortest Path in 3D sphere) -->
+    <!-- A curve that bows UPWARD towards the pole, reflecting the Great Circle -->
+    <path d="M 210 190 Q 310 110 410 180" class="true-geodesic" />
+
+    <!-- Annotations -->
+    <text x="300" y="40" class="text-title">측지선 (Geodesic): 곡면 위의 최단 거리</text>
+
+    <text x="320" y="210" class="text-label" fill="#f59e0b" font-size="12px">2D 평면 지도의 착시선</text>
+    <text x="300" y="130" class="text-label" fill="#ef4444" font-size="13px" text-anchor="middle">★ 실제 최단 비행 항로 (대원
+        코스)</text>
+
+    <!-- Bottom explanation -->
+    <text x="300" y="380" class="text-note">
+        지구(구면)에서는 편평한 종이 지도에 자를 대고 그은 직선 선분(점선)을 따라가면 엄청난 연료 낭비가 일어납니다.
+    </text>
+    <text x="300" y="400" class="text-note">
+        비행기는 지구본을 감싸는 가장 거대한 훌라후프 궤적, 즉 북극 쪽으로 둥글게 휘어진 '대원(Great Circle)'을 따라 날아갑니다.
+    </text>
+
+</svg>

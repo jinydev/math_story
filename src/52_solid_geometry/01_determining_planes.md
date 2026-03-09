@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 3D 매트릭스 설계 평면의 결정 조건'
+---
+
 # 1. 3D 매트릭스 설계: 평면의 결정 조건
 
 ## [도입부] 학습 목표 (Learning Objectives)

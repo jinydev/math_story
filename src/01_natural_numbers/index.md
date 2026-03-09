@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 62.자연수
+title: '62.자연수'
 theme:
   name: math
 ---

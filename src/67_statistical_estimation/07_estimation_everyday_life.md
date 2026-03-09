@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '7. 세상을 덮어버린 통계 일상생활, 그리고 미래의 추정 Estimation 해킹'
+---
+
 # 7. 세상을 덮어버린 통계: 일상생활, 그리고 미래의 추정 (Estimation) 해킹
 
 ## [도입부] 학습 목표 (Learning Objectives)

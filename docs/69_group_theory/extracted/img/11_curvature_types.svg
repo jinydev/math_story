@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .grid {
+                fill: none;
+                stroke: #00ffff;
+                stroke-width: 1.5;
+                opacity: 0.8;
+            }
+
+            .label {
+                fill: #ffffff;
+                font-size: 20px;
+                text-anchor: middle;
+            }
+
+            .formula {
+                fill: #ffaa64;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="450" y="40" class="title">가우스 곡률 (Gaussian Curvature, K)</text>
+    <text x="450" y="65" class="desc">공간의 팽창과 수축 형태에 따른 기하학적 세계관의 분류</text>
+
+    <!-- Left: Flat K=0 -->
+    <g transform="translate(150, 220)">
+        <!-- Polygon to look isometric flat -->
+        <path d="M-80 -40 L80 -80 L80 40 L-80 80 Z" fill="#161b22" stroke="#fff" stroke-width="2" />
+
+        <!-- Grid -->
+        <path d="M-40 -50 L40 70 M0 -60 L0 60 M40 -70 L-40 50" class="grid" />
+        <path d="M-80 -10 L80 -50 M-80 20 L80 -20 M-80 50 L80 10" class="grid" />
+
+        <text x="0" y="110" class="label">유클리드 평면</text>
+        <text x="0" y="140" class="formula">K = 0 (곡률 제로)</text>
+        <text x="0" y="160" fill="#a0a0a0" font-size="14" text-anchor="middle">삼각형 내각합 = 180°</text>
+    </g>
+
+    <!-- Center: Sphere K>0 -->
+    <g transform="translate(450, 220)">
+        <!-- Sphere -->
+        <circle cx="0" cy="0" r="70" fill="#161b22" stroke="#fff" stroke-width="2" />
+
+        <!-- Grid Curves -->
+        <path d="M-70 0 A 70 30 0 0 0 70 0" class="grid" />
+        <path d="M-70 0 A 70 30 0 0 1 70 0" class="grid" opacity="0.4" />
+
+        <path d="M0 -70 A 30 70 0 0 0 0 70" class="grid" />
+        <path d="M0 -70 A 30 70 0 0 1 0 70" class="grid" />
+
+        <text x="0" y="110" class="label">구면 (볼록)</text>
+        <text x="0" y="140" class="formula">K > 0 (양의 곡률)</text>
+        <text x="0" y="160" fill="#a0a0a0" font-size="14" text-anchor="middle">삼각형 내각합 > 180°</text>
+    </g>
+
+    <!-- Right: Saddle K<0 -->
+    <g transform="translate(750, 220)">
+        <!-- Saddle Shape -->
+        <!-- Up curve front/back, Down curve left/right -->
+        <path d="M-80 -40 Q0 20 80 -40 L80 40 Q0 100 -80 40 Z" fill="#161b22" stroke="#fff" stroke-width="2" />
+
+        <!-- Grid Curves -->
+        <path d="M-60 -25 Q0 30 60 -25" class="grid" />
+        <path d="M-40 -10 Q0 40 40 -10" class="grid" />
+
+        <path d="M-20 80 Q-20 20 -60 10" class="grid" />
+        <path d="M 20 80 Q 20 20  60 10" class="grid" />
+        <path d="M 0 90 L 0 20" class="grid" />
+
+        <text x="0" y="110" class="label">쌍곡면 (말 안장)</text>
+        <text x="0" y="140" class="formula">K &lt; 0 (음의 곡률)</text>
+        <text x="0" y="160" fill="#a0a0a0" font-size="14" text-anchor="middle">삼각형 내각합 &lt; 180°</text>
+    </g>
+
+</svg>

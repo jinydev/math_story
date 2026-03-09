@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="400" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">내심 (Incenter): 세 도로에 접하는 아늑한 돔</text>
+
+    <!-- Ground context for roads -->
+    <g transform="translate(250, 280)">
+
+        <!-- Triangle Roads ABC -->
+        <!-- Incenter I is Origin. Let radius r = 90 -->
+        <!-- We need a triangle that fits a circle of r=90 perfectly at origin -->
+        <path d="M 0 -220 L -165 90 L 165 90 Z" fill="#223344" stroke="#aaaaaa" stroke-width="4" />
+
+        <!-- Incircle -->
+        <circle cx="0" cy="0" r="90" fill="#112233" stroke="#00ffcc" stroke-width="4" filter="url(#glow)" />
+        <text x="0" y="10" fill="#00ffcc" font-family="sans-serif" font-size="24" font-weight="bold" opacity="0.4"
+            text-anchor="middle">원형 돔</text>
+
+        <!-- Angle Bisectors -->
+        <!-- Vertex B (-165, 90) to I (0, 0) -->
+        <line x1="-165" y1="90" x2="0" y2="0" stroke="#ffaa00" stroke-width="2" stroke-dasharray="8 6" />
+        <!-- Vertex C (165, 90) to I (0, 0) -->
+        <line x1="165" y1="90" x2="0" y2="0" stroke="#ffaa00" stroke-width="2" stroke-dasharray="8 6" />
+        <!-- Vertex A (0, -220) to I (0, 0) -->
+        <line x1="0" y1="-220" x2="0" y2="0" stroke="#ffaa00" stroke-width="2" stroke-dasharray="8 6" />
+
+        <!-- Incenter Point I -->
+        <circle cx="0" cy="0" r="6" fill="#ffaa00" filter="url(#glow)" />
+        <text x="-25" y="-10" fill="#ffaa00" font-family="monospace" font-size="24" font-weight="bold"
+            filter="url(#glow)">I</text>
+
+        <!-- Radius Lines to Sides (Perpendicular) -->
+        <!-- To bottom side (y=90) -->
+        <line x1="0" y1="0" x2="0" y2="90" stroke="#ff4d4d" stroke-width="4" />
+        <polyline points="-10,90 -10,80 0,80" fill="none" stroke="#ff4d4d" stroke-width="2" />
+
+        <!-- To left side. Line from (-165,90) to (0,-220). dx=165, dy=-310. Slope=-1.87 -->
+        <line x1="0" y1="0" x2="-80" y2="-43" stroke="#ff4d4d" stroke-width="4" />
+        <polyline points="-80,-43 -75,-33 -65,-38" fill="none" stroke="#ff4d4d" stroke-width="2" />
+
+        <!-- To right side. Line from (165,90) to (0,-220). dx=-165, dy=-310. Slope=1.87 -->
+        <line x1="0" y1="0" x2="80" y2="-43" stroke="#ff4d4d" stroke-width="4" />
+        <polyline points="80,-43 75,-33 65,-38" fill="none" stroke="#ff4d4d" stroke-width="2" />
+
+        <!-- Labels for Roads -->
+        <text x="0" y="-235" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">A 교차로</text>
+        <text x="-190" y="110" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">B 교차로</text>
+        <text x="190" y="110" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">C 교차로</text>
+
+        <!-- Distance Labels (r) -->
+        <text x="10" y="50" fill="#ff4d4d" font-family="monospace" font-size="22" font-weight="bold">r</text>
+        <text x="-40" y="-30" fill="#ff4d4d" font-family="monospace" font-size="22" font-weight="bold">r</text>
+        <text x="30" y="-30" fill="#ff4d4d" font-family="monospace" font-size="22" font-weight="bold">r</text>
+    </g>
+
+    <!-- Explanation Texts -->
+    <rect x="550" y="160" width="230" height="200" rx="15" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+    <text x="570" y="195" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold">핵심 법칙</text>
+
+    <rect x="570" y="210" width="10" height="10" fill="#ffaa00" />
+    <text x="590" y="220" fill="#ffffff" font-family="sans-serif" font-size="16">각도의 절반을 쪼갠</text>
+    <text x="590" y="245" fill="#ffffff" font-family="sans-serif" font-size="16">선분들이 만난다.</text>
+
+    <rect x="570" y="280" width="10" height="10" fill="#ff4d4d" />
+    <text x="590" y="290" fill="#ffffff" font-family="sans-serif" font-size="16">각 교차로(도로변)</text>
+    <text x="590" y="315" fill="#ffffff" font-family="sans-serif" font-size="16">까지의 수직 거리가</text>
+    <text x="590" y="340" fill="#ff4d4d" font-family="sans-serif" font-size="16" font-weight="bold">모두 반경 r로 같다!</text>
+
+    <!-- Bottom Subtitle -->
+    <rect x="150" y="440" width="500" height="40" rx="10" fill="#2b1111" stroke="#ffaa00" stroke-width="2" />
+    <text x="400" y="465" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">세 개의 도로망 안쪽에
+        <tspan fill="#ffaa00" font-weight="bold">최대한 거대하게 건설할 수 있는 돔의 크기(r)</tspan></text>
+
+</svg>

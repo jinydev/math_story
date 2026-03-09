@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '00. 식의 계산 우리는 왜 문자를 사용할까? Introduction'
+---
+
 # 00. 식의 계산: 우리는 왜 문자를 사용할까? (Introduction)
 
 안녕하세요! 이번 시리즈에서는 수학에서 가장 중요하고 혁명적인 발명 중 하나인 **'문자와 식(Algebraic Expressions)'**에 대해 알아봅니다.

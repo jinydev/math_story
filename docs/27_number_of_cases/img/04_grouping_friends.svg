@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="350">
+    <defs>
+        <style>
+            .bg {
+                fill: #f8fafc;
+                rx: 10;
+                stroke: #cbd5e1;
+                stroke-width: 2;
+            }
+
+            /* Block / People boxes */
+            .box-person {
+                fill: #e2e8f0;
+                stroke: #94a3b8;
+                stroke-width: 2;
+                rx: 8;
+            }
+
+            .box-target {
+                fill: #fef08a;
+                stroke: #ca8a04;
+                stroke-width: 3;
+                rx: 8;
+            }
+
+            /* The VIPs */
+
+            /* The grouping rope / boundary */
+            .group-rope {
+                fill: none;
+                stroke: #ef4444;
+                stroke-width: 4;
+                stroke-dasharray: 6 4;
+                rx: 15;
+            }
+
+            /* Arrows */
+            .arrow {
+                stroke: #334155;
+                stroke-width: 4;
+                stroke-linecap: round;
+                marker-end: url(#arrowhead);
+            }
+
+            /* Text */
+            .title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 20px;
+                fill: #0f172a;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .person-label {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 24px;
+                font-weight: 800;
+                text-anchor: middle;
+                dominant-baseline: middle;
+            }
+
+            .formula-text {
+                font-family: 'Courier New', monospace;
+                font-size: 18px;
+                font-weight: bold;
+                fill: #dc2626;
+                text-anchor: middle;
+            }
+
+            .desc-text {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 14px;
+                fill: #475569;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+        </style>
+
+        <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#334155" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="300" y="40" class="title">"이웃하여 줄서기" - 덩어리 묶음(Grouping) 팩토리얼</text>
+
+    <!-- Total 5 people (A, B, C, D, E). A, B, C must stand next to each other -->
+
+    <g transform="translate(140, 100)">
+        <!-- Persons D and E (Free atoms) -->
+        <rect x="-100" y="0" width="50" height="50" class="box-person" />
+        <text x="-75" y="25" class="person-label" fill="#475569">D</text>
+
+        <!-- The VIP Group (A, B, C) -->
+        <rect x="-30" y="-10" width="170" height="70" class="group-rope" />
+
+        <rect x="-20" y="0" width="40" height="50" class="box-target" />
+        <text x="0" y="25" class="person-label" fill="#b45309">A</text>
+
+        <rect x="35" y="0" width="40" height="50" class="box-target" />
+        <text x="55" y="25" class="person-label" fill="#b45309">B</text>
+
+        <rect x="90" y="0" width="40" height="50" class="box-target" />
+        <text x="110" y="25" class="person-label" fill="#b45309">C</text>
+
+        <!-- Person E (Free atom) -->
+        <rect x="160" y="0" width="50" height="50" class="box-person" />
+        <text x="185" y="25" class="person-label" fill="#475569">E</text>
+
+        <!-- Pointers and explanations -->
+        <!-- Pointer to the whole group -->
+        <text x="55" y="-20" class="desc-text" fill="#ef4444">1. 세 명을 거대한 한(1) 덩어리로 무조건 묶는다!</text>
+    </g>
+
+    <!-- Middle calculations -->
+    <text x="300" y="230" class="desc-text" fill="#0f172a" font-size="16px">👉 전체 큰 덩어리의 배열: (D) + (A,B,C 덩어리) + (E) = 총
+        '3명'으로 취급하여 줄세우기</text>
+    <text x="300" y="255" class="formula-text">3! (3 x 2 x 1)</text>
+
+    <text x="300" y="285" class="desc-text" fill="#0f172a" font-size="16px">👉 그 후, 거대한 밧줄 안에서 A,B,C 지들끼리 자리 바꾸는 경우
+        곱하기!</text>
+    <text x="300" y="310" class="formula-text">x 3! (3 x 2 x 1)</text>
+
+    <text x="300" y="335" class="formula-text" fill="#0f172a">정답: 3! x 3! = 36 가지</text>
+
+</svg>

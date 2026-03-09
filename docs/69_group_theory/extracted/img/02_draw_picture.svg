@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="40" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">시각화 무기: 개구리 우물 탈출 상태 추적 (Y축)</text>
+
+    <!-- Text Only Trap (Left) -->
+    <g transform="translate(100, 100)">
+        <rect x="0" y="0" width="280" height="360" rx="10" fill="#1b1111" stroke="#ff5555" stroke-width="3" />
+        <text x="140" y="30" fill="#ff5555" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">수식 맹신자의 함정</text>
+
+        <text x="20" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="14">"하루 낮 +3m, 밤 -2m"</text>
+        <text x="20" y="110" fill="#aaaaaa" font-family="sans-serif" font-size="14">=> "하루 총 전진 : 1m"</text>
+        <text x="20" y="160" fill="#ffffff" font-family="monospace" font-size="18" font-weight="bold">Eq: 1m * x일 =
+            10m</text>
+        <text x="20" y="210" fill="#ff5555" font-family="monospace" font-size="24" font-weight="bold">정답: 10일
+            (Error!)</text>
+
+        <circle cx="140" cy="280" r="40" fill="none" stroke="#ff0055" stroke-width="4" stroke-dasharray="5 5" />
+        <path d="M 120 260 L 160 300 M 160 260 L 120 300" stroke="#ff0055" stroke-width="4" />
+        <text x="140" y="340" fill="#ff5555" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">현실의 예외 상황 무시됨!</text>
+    </g>
+
+    <!-- Visual State Logger (Right) -->
+    <g transform="translate(450, 80)">
+        <rect x="0" y="0" width="400" height="400" rx="10" fill="#0d1b1a" stroke="#00ffcc" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="200" y="30" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">상태 추적 (State Logger) 시각화</text>
+
+        <!-- Y axis (Well depth) -->
+        <line x1="50" y1="360" x2="50" y2="60" stroke="#ffffff" stroke-width="3" />
+        <text x="40" y="55" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="end">10m (탈출선!)</text>
+        <line x1="40" y1="60" x2="60" y2="60" stroke="#00ffcc" stroke-width="3" />
+        <line x1="50" y1="60" x2="380" y2="60" stroke="#00ffcc" stroke-width="2" stroke-dasharray="10 5" />
+
+        <text x="40" y="360" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="end">0m</text>
+
+        <!-- Frog Path -->
+        <!-- Start at 0(360), jump to 3(270), slide to 1(330)... -->
+        <!-- Scale: 30px per meter -->
+
+        <!-- 1st Day -->
+        <circle cx="80" cy="270" r="4" fill="#ffff00" />
+        <line x1="50" y1="360" x2="80" y2="270" stroke="#ffff00" stroke-width="2" /> <!-- +3 -->
+        <circle cx="100" cy="330" r="4" fill="#ff5555" />
+        <line x1="80" y1="270" x2="100" y2="330" stroke="#ff5555" stroke-width="2" /> <!-- -2 -->
+
+        <!-- 2nd Day -->
+        <circle cx="120" cy="240" r="4" fill="#ffff00" />
+        <line x1="100" y1="330" x2="120" y2="240" stroke="#ffff00" stroke-width="2" />
+        <circle cx="140" cy="300" r="4" fill="#ff5555" />
+        <line x1="120" y1="240" x2="140" y2="300" stroke="#ff5555" stroke-width="2" />
+
+        <!-- Skip to 7th Day -->
+        <text x="180" y="270" fill="#aaaaaa" font-family="monospace" font-size="20">......</text>
+
+        <!-- 7th Day Night = 7m (360 - 210 = 150) -->
+        <circle cx="240" cy="150" r="5" fill="#4da6ff" />
+        <text x="250" y="160" fill="#4da6ff" font-family="sans-serif" font-size="14">7일째 밤: 7m</text>
+
+        <!-- 8th Day Day Jump! 7m + 3m = 10m -->
+        <circle cx="300" cy="60" r="8" fill="#ffff00" filter="url(#glow)" />
+        <line x1="240" y1="150" x2="300" y2="60" stroke="#ffff00" stroke-width="4" />
+        <text x="315" y="55" fill="#ffff00" font-family="sans-serif" font-size="16" font-weight="bold"
+            filter="url(#glow)">8일차 낮!</text>
+
+        <!-- Fall prevented -->
+        <line x1="300" y1="60" x2="330" y2="120" stroke="#ff5555" stroke-width="3" stroke-dasharray="5 5"
+            opacity="0.5" />
+        <path d="M 315 105 L 345 135 M 345 105 L 315 135" stroke="#ff5555" stroke-width="3" />
+        <text x="340" y="80" fill="#ff5555" font-family="sans-serif" font-size="14">이미 탈출.</text>
+        <text x="340" y="100" fill="#ff5555" font-family="sans-serif" font-size="14">미끄러짐 발생 불가!</text>
+    </g>
+
+    <!-- Footer -->
+    <rect x="100" y="520" width="700" height="50" rx="10" fill="#111" stroke="#00ffcc" stroke-width="2" />
+    <text x="450" y="550" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        단순한 Y 좌표 변화 시각화로, 11자 텍스트 수식으로는 보이지 않던 <tspan fill="#ffff00" font-weight="bold">"Edge Case(버그 이스케이프 존)"</tspan>
+        가 한눈에 드러납니다.
+    </text>
+</svg>

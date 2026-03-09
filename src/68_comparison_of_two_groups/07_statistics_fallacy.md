@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '7. 숫자에 속지 마라 1 통계의 허와 실 Fallacies in Statistics'
+---
+
 # 7. 숫자에 속지 마라 1: 통계의 허와 실 (Fallacies in Statistics)
 
 ## [도입부] 학습 목표 (Learning Objectives)

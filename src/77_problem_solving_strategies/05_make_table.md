@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 혼돈을 제어하는 매트릭스 흩어진 정보 조립 설명서, 표 만들기Make a Table'
+---
+
 # 5. 혼돈을 제어하는 매트릭스: 흩어진 정보 조립 설명서, '표 만들기(Make a Table)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

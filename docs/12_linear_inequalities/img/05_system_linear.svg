@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#ae3ec9" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">두 조건의 완벽한 합의점 찾기: 연립일차부등식 (Systems of Inequalities)</text>
+
+    <!-- Condition A -->
+    <g transform="translate(100, 150)">
+        <rect x="-80" y="-80" width="160" height="70" fill="#e7f5ff" stroke="#339af0" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#1864ab" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">조건 A (아빠)</text>
+        <text x="0" y="-30" fill="#1864ab" font-size="16" font-family="monospace" font-weight="bold"
+            text-anchor="middle">x &gt; 2</text>
+
+        <!-- Number line for A -->
+        <line x1="-50" y1="0" x2="60" y2="0" stroke="#868e96" stroke-width="2" />
+        <circle cx="-30" cy="0" r="4" fill="#fff" stroke="#339af0" stroke-width="2" />
+        <text x="-30" y="15" fill="#339af0" font-size="10">2</text>
+
+        <path d="M -25 0 L 50 0 L 50 -5" fill="none" stroke="#339af0" stroke-width="3" marker-end="url(#arrow-blue)" />
+        <rect x="-25" y="-5" width="75" height="10" fill="#d0ebff" opacity="0.6" />
+    </g>
+
+    <!-- Condition B -->
+    <g transform="translate(300, 150)">
+        <rect x="-80" y="-80" width="160" height="70" fill="#ebfbee" stroke="#40c057" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#2b8a3e" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">조건 B (엄마)</text>
+        <text x="0" y="-30" fill="#2b8a3e" font-size="16" font-family="monospace" font-weight="bold"
+            text-anchor="middle">x ≤ 6</text>
+
+        <!-- Number line for B -->
+        <line x1="-60" y1="0" x2="50" y2="0" stroke="#868e96" stroke-width="2" />
+        <circle cx="30" cy="0" r="4" fill="#40c057" />
+        <text x="30" y="15" fill="#40c057" font-size="10">6</text>
+
+        <path d="M 30 0 L -50 0 L -50 -5" fill="none" stroke="#40c057" stroke-width="3"
+            marker-end="url(#arrow-green)" />
+        <rect x="-50" y="-5" width="80" height="10" fill="#d3f9d8" opacity="0.6" />
+    </g>
+
+    <!-- AND Connection -->
+    <path d="M 180 110 L 220 110" fill="none" stroke="#adb5bd" stroke-width="2" stroke-dasharray="3,3" />
+    <path d="M 380 110 L 420 110" fill="none" stroke="#adb5bd" stroke-width="2" stroke-dasharray="3,3" />
+
+    <!-- The Intersection (System result) -->
+    <g transform="translate(500, 150)">
+        <rect x="-80" y="-80" width="160" height="90" fill="#f3d9fa" stroke="#ae3ec9" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#862e9c" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">공통 교집합 (정답)</text>
+        <text x="0" y="-30" fill="#862e9c" font-size="16" font-family="monospace" font-weight="bold"
+            text-anchor="middle">2 &lt; x ≤ 6</text>
+
+        <!-- Number line for Intersection -->
+        <line x1="-60" y1="0" x2="60" y2="0" stroke="#868e96" stroke-width="2" />
+
+        <!-- 2 (Open) -->
+        <circle cx="-30" cy="0" r="4" fill="#fff" stroke="#ae3ec9" stroke-width="2" />
+        <text x="-30" y="15" fill="#ae3ec9" font-size="10">2</text>
+
+        <!-- 6 (Closed) -->
+        <circle cx="30" cy="0" r="4" fill="#ae3ec9" />
+        <text x="30" y="15" fill="#ae3ec9" font-size="10">6</text>
+
+        <!-- Connection Bar -->
+        <line x1="-26" y1="0" x2="30" y2="0" stroke="#ae3ec9" stroke-width="4" />
+        <rect x="-26" y="-5" width="56" height="10" fill="#eebefa" opacity="0.6" />
+    </g>
+
+    <defs>
+        <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#339af0" />
+        </marker>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#40c057" />
+        </marker>
+    </defs>
+</svg>

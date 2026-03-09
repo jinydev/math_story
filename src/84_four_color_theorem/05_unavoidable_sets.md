@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 무한을 유한으로 깎다 피할 수 없는 국면 구조 Unavoidable Set'
+---
+
 # 5. 무한을 유한으로 깎다: 피할 수 없는 국면 구조 (Unavoidable Set)
 
 ## [도입부] 학습 목표 (Learning Objectives)

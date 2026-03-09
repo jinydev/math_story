@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 하늘에 찍어보는 관계의 별자리 상관도 Scatter Plot'
+---
+
 # 5. 하늘에 찍어보는 관계의 별자리: 상관도 (Scatter Plot)
 
 ## [도입부] 학습 목표 (Learning Objectives)

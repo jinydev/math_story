@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .euclid-line {
+                fill: none;
+                stroke: #00ffff;
+                stroke-width: 4;
+                stroke-linecap: round;
+            }
+
+            .fractal-line {
+                fill: none;
+                stroke: #ff6464;
+                stroke-width: 3;
+                stroke-linejoin: bevel;
+                filter: drop-shadow(0 0 5px #ff6464);
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 24px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 14px;
+                text-anchor: middle;
+            }
+
+            .point {
+                fill: #ffffff;
+            }
+
+            /* Animation simulation using dashes */
+            .draw-anim {
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 1000;
+                animation: draw 4s linear infinite alternate;
+            }
+
+            @keyframes draw {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#0d1117" />
+
+    <text x="400" y="40" class="title">유클리드 선분 vs 프랙탈 곡선</text>
+    <text x="400" y="70" class="desc">매끄러운 직선과 끝없이 파편화(Fractus)되는 거친 프랙탈의 대비</text>
+
+    <!-- Euclidean Line Section -->
+    <g transform="translate(0, 150)">
+        <text x="150" y="-30" fill="#00ffff" font-size="20" text-anchor="middle">유클리드 (1차원)</text>
+        <polyline points="50,0 250,0" class="euclid-line" />
+        <circle cx="50" cy="0" r="5" class="point" />
+        <circle cx="250" cy="0" r="5" class="point" />
+        <text x="150" y="30" class="desc">단순하고 평평함</text>
+    </g>
+
+    <!-- Fractal Line Section (Koch curve style complexity) -->
+    <g transform="translate(450, 150)">
+        <text x="150" y="-30" fill="#ff6464" font-size="20" text-anchor="middle">프랙탈 (1.26차원)</text>
+
+        <!-- Rough fractal 3 iteration representation -->
+        <polyline points="
+      0,0 11.1,0 16.6,-9.6 22.2,0 33.3,0 
+      38.8,-9.6 33.3,-19.2 44.4,-19.2 50,-28.8 55.5,-19.2 66.6,-19.2 61.1,-9.6 
+      66.6,0 72.2,-9.6 83.3,-9.6 88.8,-19.2 94.4,-9.6 100,-19.2 105.5,-9.6 111.1,-19.2 
+      116.6,-9.6 127.7,-9.6 133.3,0 138.8,-9.6 144.4,-19.2 150,-28.8 155.5,-19.2 
+      166.6,-19.2 161.1,-9.6 166.6,0 172.2,-9.6 183.3,-9.6 188.8,-19.2 194.4,-9.6 
+      200,0 205.5,-9.6 211.1,-19.2 216.6,-9.6 222.2,0 233.3,0 238.8,-9.6 244.4,0 250,0 
+      261.1,0 266.6,-9.6 272.2,0 283.3,0 288.8,-9.6 283.3,-19.2 294.4,-19.2 300,-28.8
+    " class="fractal-line draw-anim" />
+
+        <circle cx="0" cy="0" r="5" class="point" />
+        <circle cx="300" cy="-28.8" r="5" class="point" />
+        <text x="150" y="30" class="desc">확대할수록 거칠고 끝없음</text>
+    </g>
+
+    <text x="400" y="320" fill="#888" font-size="16" text-anchor="middle">"구름은 구가 아니고, 산은 원뿔이 아니며,"</text>
+    <text x="400" y="350" fill="#888" font-size="16" text-anchor="middle">"번개는 직선으로 치지 않는다." - 만델브로트</text>
+
+</svg>

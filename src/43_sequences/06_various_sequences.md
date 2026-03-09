@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '6. 여러가지 수열과 시그마'
+---
+
 # 6. 여러가지 수열과 시그마($\Sigma$)
 
 ## [도입부] 학습 목표 (Learning Objectives)

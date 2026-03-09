@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '8. 최종 진화형 번역기 일상어를 컴퓨터 모국어로, 식 세우기Write Equation'
+---
+
 # 8. 최종 진화형 번역기: 일상어를 컴퓨터 모국어로, '식 세우기(Write Equation)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

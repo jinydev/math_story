@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350">
+    <rect width="700" height="350" fill="#f8f9fa" rx="15" />
+
+    <text x="350" y="40" fill="#1864ab" font-size="22" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">"수(Number)"를 바라보는 두 가지 관점</text>
+
+    <!-- Left Panel: Intuition (Apples) -->
+    <rect x="50" y="70" width="280" height="230" fill="#fff" stroke="#ff8787" stroke-width="3" rx="10" />
+    <text x="190" y="105" fill="#e03131" font-size="18" font-weight="bold" text-anchor="middle">일반인의 '직관'</text>
+    <text x="190" y="130" fill="#868e96" font-size="14" font-weight="bold" text-anchor="middle">"수(Number)란 대상의
+        개수"</text>
+
+    <!-- Apples -->
+    <circle cx="130" cy="190" r="25" fill="#ffa8a8" />
+    <circle cx="190" cy="190" r="25" fill="#ffa8a8" />
+    <circle cx="250" cy="190" r="25" fill="#ffa8a8" />
+    <path d="M 130 160 Q 135 150 140 160" stroke="#2b8a3e" stroke-width="3" fill="none" />
+    <path d="M 190 160 Q 195 150 200 160" stroke="#2b8a3e" stroke-width="3" fill="none" />
+    <path d="M 250 160 Q 255 150 260 160" stroke="#2b8a3e" stroke-width="3" fill="none" />
+
+    <text x="190" y="260" fill="#c92a2a" font-size="24" font-family="monospace" font-weight="bold"
+        text-anchor="middle">사과 3개 = 3</text>
+
+    <!-- Right Panel: Mathematician (Logical Blocks) -->
+    <rect x="370" y="70" width="280" height="230" fill="#fff" stroke="#3bc9db" stroke-width="3" rx="10" />
+    <text x="510" y="105" fill="#0b7285" font-size="18" font-weight="bold" text-anchor="middle">수학자의 '정의'</text>
+    <text x="510" y="130" fill="#868e96" font-size="14" font-weight="bold" text-anchor="middle">"수란 연결된 논리 구조의
+        조립"</text>
+
+    <!-- Blocks -->
+    <rect x="420" y="220" width="60" height="40" fill="#22b8cf" rx="4" />
+    <text x="450" y="245" fill="#fff" font-size="16" font-family="monospace" font-weight="bold"
+        text-anchor="middle">1(Base)</text>
+
+    <rect x="420" y="170" width="60" height="40" fill="#15aabf" rx="4" />
+    <text x="450" y="195" fill="#fff" font-size="16" font-family="monospace" font-weight="bold"
+        text-anchor="middle">S(1)</text>
+
+    <rect x="420" y="120" width="60" height="40" fill="#1098ad" rx="4" />
+    <text x="450" y="145" fill="#fff" font-size="14" font-family="monospace" font-weight="bold"
+        text-anchor="middle">S(S(1))</text>
+
+    <text x="580" y="190" fill="#0c8599" font-size="24" font-family="monospace" font-weight="bold"
+        text-anchor="middle">= 3</text>
+    <line x1="500" y1="180" x2="550" y2="180" stroke="#0c8599" stroke-width="2" stroke-dasharray="4,2"
+        marker-end="url(#arrow-cyan)" />
+
+    <defs>
+        <marker id="arrow-cyan" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0c8599" />
+        </marker>
+    </defs>
+</svg>

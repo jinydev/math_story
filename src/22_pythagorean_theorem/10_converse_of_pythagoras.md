@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '10. 열 번째 수업 피타고라스 정리 역증명 Converse of Pythagoras'
+---
+
 # 10. 열 번째 수업: 피타고라스 정리 역증명 (Converse of Pythagoras)
 
 **"직각삼각형이면 무조건 $a^2 + b^2 = c^2$ 이 성립한다."** 

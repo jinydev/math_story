@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">두 번째 나열: '순열 (Permutation, nPr)'</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"4명의 사람을 3개의 좁은 의자에 일렬로 앉히는 줄 세우기
+        알고리즘"</text>
+
+    <!-- People -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="120" height="130" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="60" y="25" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">대기자 (n=4)</text>
+
+        <text x="30" y="60" font-size="30">🧍</text>
+        <text x="80" y="60" font-size="30">🧍</text>
+        <text x="30" y="100" font-size="30">🧍</text>
+        <text x="80" y="100" font-size="30">🧍</text>
+
+        <text x="60" y="120" fill="#495057" font-size="10" font-weight="bold" text-anchor="middle">A, B, C, D</text>
+    </g>
+
+    <!-- Mathematical Factory -->
+    <path d="M 190 145 L 260 145" fill="none" stroke="#2b8a3e" stroke-width="4" marker-end="url(#arrow-green)" />
+    <text x="225" y="135" fill="#2b8a3e" font-size="12" font-weight="bold" text-anchor="middle">줄 세우기</text>
+
+    <!-- Seats & Permutation Logic -->
+    <g transform="translate(280, 80)">
+        <rect x="0" y="0" width="280" height="130" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="140" y="25" fill="#e67700" font-size="14" font-weight="bold" text-anchor="middle">일렬 의자 (r=3)</text>
+
+        <!-- Slot 1 -->
+        <rect x="20" y="45" width="60" height="40" fill="#fff4e6" stroke="#f59f00" stroke-width="2" />
+        <text x="50" y="60" fill="#d9480f" font-size="10" font-weight="bold" text-anchor="middle">첫 번째</text>
+        <text x="50" y="80" fill="#c92a2a" font-size="18" font-weight="bold" text-anchor="middle">4명</text>
+        <path d="M 85 65 L 105 65" stroke="#adb5bd" stroke-width="2" />
+        <text x="95" y="60" fill="#495057" font-size="18" font-weight="bold" text-anchor="middle">×</text>
+
+        <!-- Slot 2 -->
+        <rect x="110" y="45" width="60" height="40" fill="#ffe3e3" stroke="#fa5252" stroke-width="2" />
+        <text x="140" y="60" fill="#c92a2a" font-size="10" font-weight="bold" text-anchor="middle">두 번째</text>
+        <text x="140" y="80" fill="#c92a2a" font-size="18" font-weight="bold" text-anchor="middle">3명</text>
+        <path d="M 175 65 L 195 65" stroke="#adb5bd" stroke-width="2" />
+        <text x="185" y="60" fill="#495057" font-size="18" font-weight="bold" text-anchor="middle">×</text>
+
+        <!-- Slot 3 -->
+        <rect x="200" y="45" width="60" height="40" fill="#e7f5ff" stroke="#339af0" stroke-width="2" />
+        <text x="230" y="60" fill="#1864ab" font-size="10" font-weight="bold" text-anchor="middle">세 번째</text>
+        <text x="230" y="80" fill="#c92a2a" font-size="18" font-weight="bold" text-anchor="middle">2명</text>
+
+        <!-- Formula -->
+        <rect x="20" y="100" width="240" height="20" fill="#f8f9fa" />
+        <text x="140" y="114" fill="#2b8a3e" font-size="12" font-weight="bold" font-family="monospace"
+            text-anchor="middle">4 P 3 = 4 × 3 × 2 = 24가지</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+    </defs>
+</svg>

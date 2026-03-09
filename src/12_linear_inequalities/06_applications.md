@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '6. 가격 흥정과 생존의 법칙 일차부등식의 실전 활용 Applications'
+---
+
 # 6. 가격 흥정과 생존의 법칙: 일차부등식의 실전 활용 (Applications)
 
 ## [도입부] 학습 목표 (Learning Objectives)

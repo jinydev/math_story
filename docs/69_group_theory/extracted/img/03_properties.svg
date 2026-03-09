@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">우주의 대칭성: 거울 로직 (Mirror Logistics)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"합격자를 잡을 것인가, 탈락자를
+        잡을 것인가? 두 우주의 무게는 완벽히 동일하다."</text>
+
+    <!-- 100 People Pool Area -->
+    <g transform="translate(150, 160)">
+        <!-- Base platform -->
+        <path d="M 0 300 Q 300 350 600 300 L 500 100 Q 300 50 100 100 Z" fill="#0d1b2a" stroke="#4da6ff"
+            stroke-width="2" opacity="0.5" />
+        <text x="300" y="80" fill="#4da6ff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">오디션 대기자: 압도적인 100명 (n=100)</text>
+
+        <!-- The 98 Chosen Group (Left Side) -->
+        <path d="M 50 250 Q 150 280 250 250 L 220 120 Q 150 100 80 120 Z" fill="#003322" stroke="#00ffcc"
+            stroke-width="2" />
+        <!-- Random dots representing 98 people -->
+        <circle cx="100" cy="150" r="3" fill="#00ffcc" />
+        <circle cx="120" cy="160" r="3" fill="#00ffcc" />
+        <circle cx="140" cy="140" r="3" fill="#00ffcc" />
+        <circle cx="90" cy="180" r="3" fill="#00ffcc" />
+        <circle cx="180" cy="200" r="3" fill="#00ffcc" />
+        <circle cx="150" cy="230" r="3" fill="#00ffcc" />
+        <circle cx="210" cy="170" r="3" fill="#00ffcc" />
+        <text x="150" y="190" fill="#00ffcc" font-family="monospace" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">합격조 98명</text>
+
+        <text x="150" y="320" fill="#00ffcc" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">₁₀₀C₉₈</text>
+        <text x="150" y="340" fill="#aaaaaa" font-family="sans-serif" font-size="12" text-anchor="middle">연산 부하: 98번의
+            팩토리얼 지옥</text>
+
+        <!-- The Mirror Interface -->
+        <rect x="295" y="110" width="10" height="180" fill="#ffffff" filter="url(#glow)" />
+        <path d="M 280 110 L 320 110" fill="none" stroke="#fff" stroke-width="2" filter="url(#glow)" />
+        <path d="M 280 290 L 320 290" fill="none" stroke="#fff" stroke-width="2" filter="url(#glow)" />
+        <text x="300" y="350" fill="#ffff00" font-family="monospace" font-size="32" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">=</text>
+
+        <!-- The 2 Outcasts Group (Right Side) -->
+        <path d="M 350 250 Q 450 280 550 250 L 520 120 Q 450 100 380 120 Z" fill="#331111" stroke="#ff5555"
+            stroke-width="2" />
+        <!-- Just 2 distinct dots representing Outcasts -->
+        <circle cx="430" cy="190" r="8" fill="#ff5555" filter="url(#glow)" />
+        <circle cx="470" cy="190" r="8" fill="#ff5555" filter="url(#glow)" />
+        <text x="450" y="195" fill="#ffffff" font-family="monospace" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">탈락 2명</text>
+
+        <text x="450" y="320" fill="#ff5555" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">₁₀₀C₂</text>
+        <text x="450" y="340" fill="#aaaaaa" font-family="sans-serif" font-size="12" text-anchor="middle">연산 부하: 1초만에
+            끝나는 계산</text>
+
+    </g>
+
+    <!-- Final Conclusion Box -->
+    <g transform="translate(100, 520)">
+        <rect x="0" y="0" width="700" height="60" rx="10" fill="#220033" stroke="#ff00ff" stroke-width="2" />
+        <text x="350" y="35" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+            <tspan fill="#ff00ff" font-weight="bold" font-family="monospace">nCr = nC(n-r)</tspan> : 타겟의 크기가 절반을 넘기면,
+            <tspan fill="#ffff00" font-weight="bold">나머지(리버스 로직)</tspan> 를 뽑는 것이 연산 최적화의 진수!
+        </text>
+    </g>
+
+</svg>

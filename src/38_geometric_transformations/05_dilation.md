@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 우주의 팽창과 수축 도형의 확대와 축소 Scaling'
+---
+
 # 5. 우주의 팽창과 수축: '도형의 확대와 축소 (Scaling)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 세 번째 수업 빛보다 빠른 폭주 기관차, 지수 함수 Exponential Functions'
+---
+
 # 03. 세 번째 수업: 빛보다 빠른 폭주 기관차, 지수 함수 (Exponential Functions)
 
 2차 함수는 변수 $x$ 가 바닥에 있고 어깨 부가 계급장에 숫자 $2$를 달고 있는($x^2$) 형태였습니다. 

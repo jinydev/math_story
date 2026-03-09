@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '8. 세상의 모든 거대한 것을 지배하다 로그의 활용 Applications'
+---
+
 # 8. 세상의 모든 거대한 것을 지배하다: 로그의 활용 (Applications)
 
 ## [도입부] 학습 목표 (Learning Objectives)

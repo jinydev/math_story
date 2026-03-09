@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 굽은 정도를 측정하는 마법 곡률Curvature'
+---
+
 # 1. 굽은 정도를 측정하는 마법: 곡률(Curvature)
 
 ## [도입부] 학습 목표 (Learning Objectives)

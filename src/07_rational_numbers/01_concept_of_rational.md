@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '01. 첫 번째 수업 유리수의 개념 Concept of Rationals'
+---
+
 # 01. 첫 번째 수업: 유리수의 개념 (Concept of Rationals)
 
 사과나 양의 개수를 셀 때 쓰던 $1, 2, 3\dots$을 우리는 자연수라고 부릅니다. 이 자연수에 $0$과 음의 정수($-1, -2\dots$)를 합치면 **정수(Integer)**가 됩니다.

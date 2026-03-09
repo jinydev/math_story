@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 서열 파괴, 평등의 우주 조합 Combination'
+---
+
 # 1. 서열 파괴, 평등의 우주: '조합 (Combination)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .poly {
+                fill: rgba(0, 255, 255, 0.05);
+                stroke: #00ffff;
+                stroke-width: 4;
+            }
+
+            .median {
+                stroke: #64ff64;
+                stroke-width: 2;
+                stroke-dasharray: 5, 5;
+            }
+
+            .centroid-dot {
+                fill: #ff6464;
+                filter: drop-shadow(0 0 10px #ff6464);
+            }
+
+            .ratio-2 {
+                stroke: #ff6464;
+                stroke-width: 5;
+            }
+
+            .ratio-1 {
+                stroke: #ffff00;
+                stroke-width: 5;
+            }
+
+            .vertex-dot {
+                fill: #00ffff;
+            }
+
+            .mid-dot {
+                fill: #64ff64;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#0d1117" />
+
+    <text x="300" y="50" fill="#00ffff" font-size="28" text-anchor="middle">무게중심 (Centroid 2:1 우주 좌표)</text>
+
+    <!-- The Triangle vertices: A(300, 100), B(100, 400), C(500, 400) -->
+    <g transform="translate(0, 50)">
+        <polygon points="300,50 100,350 500,350" class="poly" />
+
+        <!-- Midpoints: AB=(200, 200), BC=(300, 350), CA=(400, 200) -->
+        <!-- Medians -->
+        <line x1="300" y1="50" x2="300" y2="350" class="median" />
+        <line x1="100" y1="350" x2="400" y2="200" class="median" />
+        <line x1="500" y1="350" x2="200" y2="200" class="median" />
+
+        <!-- The Centroid (300+100+500)/3 = 300, (50+350+350)/3 = 250 -->
+        <!-- So G = 300, 250 -->
+
+        <!-- Highlighting the 2:1 ratio on the main median (A to BC midpoint) -->
+        <!-- Path from 300,50 to 300,250 is length 200 -->
+        <!-- Path from 300,250 to 300,350 is length 100 -->
+        <line x1="300" y1="50" x2="300" y2="250" class="ratio-2" />
+        <line x1="300" y1="250" x2="300" y2="350" class="ratio-1" />
+
+        <!-- Highlighting the 2:1 ratio on another median (B to CA midpoint) -->
+        <!-- Path from 100,350 to 300,250 is vector (200, -100) -->
+        <!-- Path from 300,250 to 400,200 is vector (100, -50) -->
+        <line x1="100" y1="350" x2="300" y2="250" class="ratio-2" />
+        <line x1="300" y1="250" x2="400" y2="200" class="ratio-1" />
+
+        <text x="315" y="150" fill="#ff6464" font-size="24">2</text>
+        <text x="315" y="310" fill="#ffff00" font-size="24">1</text>
+
+        <text x="210" y="325" fill="#ff6464" font-size="24">2</text>
+        <text x="360" y="250" fill="#ffff00" font-size="24">1</text>
+
+        <!-- Points -->
+        <circle cx="300" cy="50" r="6" class="vertex-dot" />
+        <circle cx="100" cy="350" r="6" class="vertex-dot" />
+        <circle cx="500" cy="350" r="6" class="vertex-dot" />
+
+        <circle cx="300" cy="350" r="6" class="mid-dot" />
+        <circle cx="200" cy="200" r="6" class="mid-dot" />
+        <circle cx="400" cy="200" r="6" class="mid-dot" />
+
+        <circle cx="300" cy="250" r="10" class="centroid-dot" />
+        <text x="320" y="270" fill="#ff6464" font-size="28">G (Centroid)</text>
+
+        <text x="50" y="350" fill="#00ffff" font-size="20">B</text>
+        <text x="520" y="350" fill="#00ffff" font-size="20">C</text>
+        <text x="300" y="30" fill="#00ffff" font-size="20">A</text>
+    </g>
+
+    <text x="300" y="460" fill="#a0a0a0" font-size="16" text-anchor="middle">모든 중선은 무게중심 G에서 2:1의 황금 비율로 나뉜다.</text>
+</svg>

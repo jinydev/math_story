@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 어떻게 문제를 풀어야 할까? How to Solve It'
+---
+
 # 1. 어떻게 문제를 풀어야 할까? (How to Solve It)
 
 ## [도입부] 학습 목표 (Learning Objectives)

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">모(Population) 와 표본(Sample) 의 기호 분리</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"신(God)의 설계도인 모수(Parameter)와, 인간이 뜰채로 퍼낸
+        통계치(Statistic)의 엄격한 기호 분리"</text>
+
+    <!-- Left: Population Universe (God's view) -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#ebfbee" stroke="#2b8a3e" stroke-width="2" rx="15" />
+        <text x="110" y="25" fill="#2b8a3e" font-size="16" font-weight="bold" text-anchor="middle">모집단
+            (Population)</text>
+        <text x="110" y="45" fill="#0ca678" font-size="10" font-weight="bold" text-anchor="middle">전지적 뷰 (Real
+            Truth)</text>
+
+        <line x1="20" y1="60" x2="200" y2="60" stroke="#8ce99a" stroke-width="1" />
+
+        <!-- Parameter Symbols -->
+        <text x="50" y="90" fill="#087f5b" font-size="20" font-family="serif" font-weight="bold">m</text>
+        <text x="50" y="115" fill="#2b8a3e" font-size="12" font-weight="bold">모평균</text>
+        <text x="50" y="130" fill="#40c057" font-size="10" font-weight="bold">(Mean)</text>
+
+        <text x="110" y="90" fill="#087f5b" font-size="20" font-family="serif" font-weight="bold">σ²</text>
+        <text x="110" y="115" fill="#2b8a3e" font-size="12" font-weight="bold" text-anchor="middle">모분산</text>
+        <text x="110" y="130" fill="#40c057" font-size="10" font-weight="bold" text-anchor="middle">(Variance)</text>
+
+        <text x="170" y="90" fill="#087f5b" font-size="20" font-family="serif" font-weight="bold"
+            text-anchor="middle">p</text>
+        <text x="170" y="115" fill="#2b8a3e" font-size="12" font-weight="bold" text-anchor="middle">모비율</text>
+        <text x="170" y="130" fill="#40c057" font-size="10" font-weight="bold" text-anchor="middle">(Proportion)</text>
+    </g>
+
+    <!-- Sampling Arrow -->
+    <path d="M 280 145 C 300 110, 300 110, 320 145" fill="none" stroke="#fd7e14" stroke-width="3" stroke-dasharray="4,2"
+        marker-end="url(#arrow-orange)" />
+    <rect x="260" y="110" width="80" height="20" fill="#fff4e6" stroke="#fd7e14" rx="3" />
+    <text x="300" y="124" fill="#d9480f" font-size="10" font-weight="bold" text-anchor="middle">추출(Sample)</text>
+    <text x="300" y="165" fill="#e8590c" font-size="10" font-weight="bold" text-anchor="middle">추정(Estimate)</text>
+    <path d="M 320 160 C 300 190, 300 190, 280 160" fill="none" stroke="#2b8a3e" stroke-width="3"
+        marker-end="url(#arrow-green)" />
+
+    <!-- Right: Sample Universe (Human's view) -->
+    <g transform="translate(340, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff4e6" stroke="#e8590c" stroke-width="2" rx="15" />
+        <text x="110" y="25" fill="#d9480f" font-size="16" font-weight="bold" text-anchor="middle">표본 집단 (Sample)</text>
+        <text x="110" y="45" fill="#fd7e14" font-size="10" font-weight="bold" text-anchor="middle">N개 추출 (Human
+            View)</text>
+
+        <line x1="20" y1="60" x2="200" y2="60" stroke="#ffd8a8" stroke-width="1" />
+
+        <!-- Statistic Symbols -->
+        <text x="50" y="90" fill="#c92a2a" font-size="20" font-family="serif" font-weight="bold"
+            text-decoration="overline">X</text>
+        <text x="50" y="115" fill="#e8590c" font-size="12" font-weight="bold">표본평균</text>
+        <text x="50" y="130" fill="#fd7e14" font-size="10" font-weight="bold">(X-bar)</text>
+
+        <text x="110" y="90" fill="#c92a2a" font-size="20" font-family="serif" font-weight="bold">S²</text>
+        <text x="110" y="115" fill="#e8590c" font-size="12" font-weight="bold" text-anchor="middle">표본분산</text>
+        <text x="110" y="130" fill="#fd7e14" font-size="10" font-weight="bold" text-anchor="middle">(S squared)</text>
+
+        <text x="170" y="90" fill="#c92a2a" font-size="20" font-family="serif" font-weight="bold"
+            text-anchor="middle">p̂</text>
+        <text x="170" y="115" fill="#e8590c" font-size="12" font-weight="bold" text-anchor="middle">표본비율</text>
+        <text x="170" y="130" fill="#fd7e14" font-size="10" font-weight="bold" text-anchor="middle">(p-hat)</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+        <marker id="arrow-orange" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fd7e14" />
+        </marker>
+    </defs>
+</svg>

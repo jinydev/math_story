@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">절대 사거리 센서망과 우주 분할(Absolute Value)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"단순한 마이너스 떼기가 아니다.
+        기준 위치로부터의 '순수한 도보 반경(Distance)' 측정이다."</text>
+
+    <!-- Top Part: |x| < 3 Concept Radar -->
+    <g transform="translate(150, 130)">
+        <rect x="-50" y="0" width="800" height="150" rx="15" fill="#1b1122" stroke="#ff00ff" stroke-width="2" />
+        <text x="350" y="30" fill="#ff00ff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">1. | x | < 3 방어막 레이더</text>
+
+                <path d="M 50 100 L 650 100" fill="none" stroke="#555" stroke-width="3" />
+
+                <!-- Origin Radar -->
+                <circle cx="350" cy="100" r="100" fill="#ff00ff" opacity="0.2" />
+                <circle cx="350" cy="100" r="100" fill="none" stroke="#ff00ff" stroke-width="2" stroke-dasharray="4 4"
+                    filter="url(#glow)" />
+                <circle cx="350" cy="100" r="6" fill="#fff" />
+                <text x="350" y="125" fill="#fff" font-weight="bold" text-anchor="middle">원점 (0)</text>
+
+                <!-- Range Arrows -->
+                <path d="M 350 100 L 250 100" fill="none" stroke="#ff00ff" stroke-width="4" marker-end="url(#arrow_m)"
+                    filter="url(#glow)" />
+                <path d="M 350 100 L 450 100" fill="none" stroke="#ff00ff" stroke-width="4" marker-end="url(#arrow_m)"
+                    filter="url(#glow)" />
+                <text x="300" y="90" fill="#ff00ff" font-weight="bold" text-anchor="middle">3보 이동</text>
+                <text x="400" y="90" fill="#ff00ff" font-weight="bold" text-anchor="middle">3보 이동</text>
+
+                <circle cx="250" cy="100" r="6" fill="#ff00ff" />
+                <circle cx="450" cy="100" r="6" fill="#ff00ff" />
+                <text x="250" y="125" fill="#ff00ff" font-weight="bold" text-anchor="middle">-3</text>
+                <text x="450" y="125" fill="#ff00ff" font-weight="bold" text-anchor="middle">3</text>
+
+                <text x="140" y="105" fill="#ffff00" font-weight="bold" text-anchor="middle">안전 (Safe)</text>
+                <text x="560" y="105" fill="#ffff00" font-weight="bold" text-anchor="middle">안전 (Safe)</text>
+
+                <text x="350" y="75" fill="#fff" font-size="14" font-weight="bold" text-anchor="middle">"포위망 안쪽에 갇힌
+                    구역"</text>
+    </g>
+
+    <!-- Bottom Part: Splitting the Universe |x-2| + ... -->
+    <g transform="translate(150, 310)">
+        <rect x="-50" y="0" width="800" height="150" rx="15" fill="#001a11" stroke="#00ffcc" stroke-width="2" />
+        <text x="350" y="30" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">2. 복잡한 절댓값 해체: 평행우주 분할 ( x - 2 기준 )</text>
+
+        <!-- Split universe line -->
+        <path d="M 350 50 L 350 140" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="10 5"
+            filter="url(#glow)" />
+        <circle cx="350" cy="95" r="8" fill="#fff" filter="url(#glow)" />
+        <text x="350" y="80" fill="#fff" font-weight="bold" font-size="14" text-anchor="middle">알맹이가 0이 되는 X=2 수직
+            벽</text>
+
+        <!-- Universe 1 (Right): x >= 2 -->
+        <text x="500" y="70" fill="#00ffcc" font-weight="bold" font-size="18" text-anchor="middle"
+            filter="url(#glow)">우주 1 (x &ge; 2)</text>
+        <text x="500" y="95" fill="#fff" font-size="14" text-anchor="middle">알맹이(x-2) 는 무조건 양수(+)</text>
+        <rect x="420" y="110" width="160" height="25" rx="4" fill="#000" stroke="#00ffcc" />
+        <text x="500" y="128" fill="#00ffcc" font-family="monospace" font-weight="bold" font-size="14"
+            text-anchor="middle">+(x-2) 로 껍질 오픈</text>
+
+        <!-- Universe 2 (Left): x < 2 -->
+        <text x="200" y="70" fill="#ffff00" font-weight="bold" font-size="18" text-anchor="middle"
+            filter="url(#glow)">우주 2 (x &lt; 2)</text>
+        <text x="200" y="95" fill="#fff" font-size="14" text-anchor="middle">알맹이(x-2) 는 무조건 음수(-)</text>
+        <rect x="120" y="110" width="160" height="25" rx="4" fill="#000" stroke="#ffff00" />
+        <text x="200" y="128" fill="#ffff00" font-family="monospace" font-weight="bold" font-size="14"
+            text-anchor="middle">빚쟁이 -(x-2) 로 강제 양수화</text>
+    </g>
+
+    <defs>
+        <marker id="arrow_m" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+            <polygon points="0 0, 6 2, 0 4" fill="#ff00ff" />
+        </marker>
+    </defs>
+
+    <!-- Big Alert Bottom -->
+    <rect x="100" y="490" width="700" height="80" rx="10" fill="#110022" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="525" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        절댓값이 아무거 거대한 수식을 감싸고 있더라도 당황하지 마라.
+    </text>
+    <text x="450" y="550" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        <tspan fill="#ff00ff" font-weight="bold">그 속의 덩어리가 0이 되는 순간의 기점</tspan> 을 찾아, 세계관을 <tspan fill="#00ffcc"
+            font-weight="bold">If(양수)</tspan> 와 <tspan fill="#ffff00" font-weight="bold">Else(음수)</tspan> 로 쪼개어 박살낸다!
+    </text>
+</svg>

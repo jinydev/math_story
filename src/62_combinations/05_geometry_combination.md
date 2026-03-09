@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 공간을 교직Weaving 하는 함수 도형과 조합'
+---
+
 # 5. 공간을 교직(Weaving) 하는 함수: '도형과 조합'
 
 ## [도입부] 학습 목표 (Learning Objectives)

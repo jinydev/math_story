@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">덧셈의 저주(단리) vs 지수의 폭발(복리)</text>
+
+    <!-- Graph Axis -->
+    <line x1="100" y1="500" x2="800" y2="500" stroke="#ffffff" stroke-width="3" />
+    <line x1="100" y1="500" x2="100" y2="100" stroke="#ffffff" stroke-width="3" />
+    <text x="820" y="505" fill="#ffffff" font-family="sans-serif" font-size="16">시간 (n 년)</text>
+    <text x="100" y="80" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">자산 (₩)</text>
+
+    <!-- Starting Point (Principal P) -->
+    <circle cx="100" cy="450" r="5" fill="#ffffff" />
+    <text x="70" y="455" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">P</text>
+
+    <!-- Simple Interest (Linear: +) -->
+    <path d="M 100 450 L 750 350" fill="none" stroke="#4da6ff" stroke-width="4" filter="url(#glow)" />
+    <text x="780" y="355" fill="#4da6ff" font-family="sans-serif" font-size="20" font-weight="bold">단리 (Simple)</text>
+
+    <rect x="550" y="360" width="180" height="40" rx="5" fill="#112233" stroke="#4da6ff" />
+    <text x="640" y="385" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">S = P(1 +
+        r×n)</text>
+    <text x="640" y="350" fill="#4da6ff" font-family="sans-serif" font-size="12" font-weight="bold"
+        text-anchor="middle">오직 '원금'에만 이자 덧셈</text>
+
+    <!-- Compound Interest (Exponential: x) -->
+    <path d="M 100 450 Q 500 450 750 150" fill="none" stroke="#ff0055" stroke-width="5" filter="url(#glow)" />
+    <text x="780" y="155" fill="#ff0055" font-family="sans-serif" font-size="20" font-weight="bold">복리 (Compound)</text>
+
+    <rect x="450" y="120" width="200" height="40" rx="5" fill="#331111" stroke="#ff0055" filter="url(#glow)" />
+    <text x="550" y="145" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold"
+        text-anchor="middle">S = P( 1 + r ) ^ n</text>
+    <text x="550" y="110" fill="#ffaa00" font-family="sans-serif" font-size="12" font-weight="bold"
+        text-anchor="middle">이자에도 이자가! (스노우볼 지수팽창)</text>
+
+    <!-- Visualizing the Gap (Difference) -->
+    <line x1="650" y1="365" x2="650" y2="245" stroke="#ffff00" stroke-width="2" stroke-dasharray="5 5" />
+    <polygon points="650,230 645,245 655,245" fill="#ffff00" />
+    <polygon points="650,380 645,365 655,365" fill="#ffff00" />
+
+    <text x="650" y="310" fill="#ffff00" font-family="sans-serif" font-size="16" font-weight="bold"
+        text-anchor="middle">시간이 낳은 거대한 자산 격차</text>
+
+    <!-- Code Hint at Bottom -->
+    <rect x="250" y="530" width="400" height="50" rx="10" fill="#0f0f15" stroke="#555566" stroke-width="2" />
+    <text x="450" y="560" fill="#00ffcc" font-family="monospace" font-size="14" text-anchor="middle">파이썬 연산자 격차: 단리( * n
+        ) vs 복리( ** n )</text>
+
+</svg>

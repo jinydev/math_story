@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '00. 수학자 탈레스와 닮은 도형'
+---
+
 # 00. 수학자 탈레스와 닮은 도형
 
 ## 1. 학습 목표 (Learning Objectives)

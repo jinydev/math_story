@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '02. 두 번째 수업 크기가 같은 분수 Equivalent Fractions'
+---
+
 # 02. 두 번째 수업: 크기가 같은 분수 (Equivalent Fractions)
 
 유리수의 가장 신기한 성질은 **"모양과 화장이 달라도 본질은 같을 수 있다"**는 점입니다. 

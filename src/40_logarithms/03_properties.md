@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '3. 마법의 공식 로그의 기본 성질 Properties'
+---
+
 # 3. 마법의 공식: 로그의 기본 성질 (Properties)
 
 ## [도입부] 학습 목표 (Learning Objectives)

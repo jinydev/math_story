@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Texts -->
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">절대 방어벽을 뚫지 못하는 쌍곡선 (유리함수 점근선)</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">y = 1/x 그래프. "Zero Division (0으로 나누기) 폭파 스크립트를 피하기 위한 회피 곡선 조향 기동"</text>
+
+  <!-- Cartesian Coordinate Plane Group -->
+  <g transform="translate(250, 250)">
+    
+    <!-- Y-axis (Vertical Asymptote Error Wall: x=0) -->
+    <!-- Colored distinctively to show it's a barrier -->
+    <line x1="0" y1="-180" x2="0" y2="180" stroke="#FC8181" stroke-width="4" stroke-dasharray="8,4" filter="url(#glow)"/>
+    <text x="15" y="-160" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#FC8181" filter="url(#glow)">금기의 장벽: x = 0 (세로 점근선)</text>
+
+    <!-- X-axis (Horizontal Asymptote Wall: y=0) -->
+    <!-- Colored differently to show another barrier -->
+    <line x1="-200" y1="0" x2="200" y2="0" stroke="#4FD1C5" stroke-width="4" stroke-dasharray="8,4" filter="url(#glow)"/>
+    <text x="-190" y="-15" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#4FD1C5" filter="url(#glow)">접근 불가 바닥: y = 0 (가로 점근선)</text>
+
+    <!-- Rational Function Curve 1: Quadrant I (+x, +y) -->
+    <!-- Formula approximation for rendering: xy = const. We use control points to fake hyperbola visually. -->
+    <path d="M 5 -170 Q 15 -15 170 -5" fill="none" stroke="#F6E05E" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+    
+    <!-- Rational Function Curve 2: Quadrant III (-x, -y) -->
+    <path d="M -5 170 Q -15 15 -170 5" fill="none" stroke="#F6E05E" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+
+    <!-- Arrows indicating "never reaches" -->
+    <g fill="none" stroke="#F6AD55" stroke-width="2" marker-end="url(#arrow)">
+      <line x1="25" y1="-25" x2="10" y2="-100" />
+      <line x1="25" y1="-25" x2="100" y2="-10" />
+      <line x1="-25" y1="25" x2="-10" y2="100" />
+      <line x1="-25" y1="25" x2="-100" y2="10" />
+    </g>
+
+    <text x="70" y="-70" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#F6E05E" filter="url(#glow)">y = 1 / x</text>
+
+  </g>
+
+  <!-- Right side explanation panel -->
+  <g transform="translate(500, 150)">
+    <rect x="0" y="0" width="280" height="200" fill="rgba(45, 55, 72, 0.8)" rx="10" stroke="#E2E8F0" stroke-width="2"/>
+    
+    <text x="15" y="30" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC">점근선 (Asymptotes) 이란?</text>
+    <text x="15" y="55" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0">곡선이 계속 뻗어나가며 한없이 아주 조금씩</text>
+    <text x="15" y="75" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0">벽(직선)에 밀착 접근하지만, 우주가 멸망해도</text>
+    <text x="15" y="95" font-family="'Inter', sans-serif" font-size="14" font-weight="bold" fill="#FC8181">결코! 터치하거나 관통하지 못하는 절대선!</text>
+
+    <line x1="15" y1="110" x2="265" y2="110" stroke="#718096" stroke-width="1"/>
+
+    <text x="15" y="135" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#F7FAFC">왜 에러를 피해야 하는가?</text>
+    <text x="15" y="160" font-family="'Inter', sans-serif" font-size="13" fill="#E2E8F0">x축의 정 중앙인 0을 대입해 x=0 을 밟는 순간,</text>
+    <text x="15" y="180" font-family="'Inter', sans-serif" font-size="13" fill="#E2E8F0">서버는 ZeroDivisionError 폭파를 일으키기</text>
+    <text x="15" y="200" font-family="'Inter', sans-serif" font-size="13" fill="#E2E8F0">때문에 곡선이 소스라치게 놀라 회피하는 것임!</text>
+  </g>
+
+</svg>

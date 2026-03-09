@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "수학이야기 04. 삼각형 (Triangle)"
+title: '수학이야기 04. 삼각형 Triangle'
 ---
 
 # 04. 삼각형 (Triangle)

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">왕따 작전: 일차부등식의 풀이 전략 (Solving Inequalities)</text>
+
+    <!-- Step 1: Original Inequality -->
+    <g transform="translate(50, 80)">
+        <rect x="-30" y="-30" width="160" height="60" fill="#e7f5ff" stroke="#339af0" stroke-width="2" rx="5" />
+        <text x="50" y="-40" fill="#1864ab" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">Step 1. 원본 미션</text>
+        <text x="50" y="5" fill="#1864ab" font-size="20" font-family="monospace" font-weight="bold"
+            text-anchor="middle">-2x + 4 &lt; 10</text>
+    </g>
+
+    <!-- Arrow -->
+    <path d="M 210 80 L 260 80" fill="none" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow-grey)" />
+    <text x="235" y="70" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">이항 (+4 넘기기)</text>
+
+    <!-- Step 2: Transposition -->
+    <g transform="translate(300, 80)">
+        <rect x="-30" y="-30" width="130" height="60" fill="#ebfbee" stroke="#2b8a3e" stroke-width="2" rx="5" />
+        <text x="35" y="-40" fill="#2b8a3e" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">Step 2. 숫자 정리</text>
+        <text x="35" y="0" fill="#2b8a3e" font-size="20" font-family="monospace" font-weight="bold"
+            text-anchor="middle">-2x &lt; 10 <tspan fill="#e03131">- 4</tspan></text>
+        <text x="35" y="22" fill="#2b8a3e" font-size="20" font-family="monospace" font-weight="bold"
+            text-anchor="middle">-2x &lt; 6</text>
+    </g>
+
+    <!-- Arrow Down-Right -->
+    <path d="M 430 80 L 480 80 L 480 120" fill="none" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow-grey)" />
+    <text x="495" y="95" fill="#e03131" font-size="12" font-family="sans-serif" font-weight="bold">-2 로 나누기</text>
+    <text x="505" y="110" fill="#e03131" font-size="14" font-family="sans-serif" font-weight="bold">🚨 뒤집어라!</text>
+
+    <!-- Step 3: Division & FLIP -->
+    <g transform="translate(480, 180)">
+        <rect x="-80" y="-40" width="160" height="60" fill="#fff5f5" stroke="#fa5252" stroke-width="2" rx="5" />
+        <text x="0" y="-50" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">Step 3. 최후의 왕따, x</text>
+        <!-- Flip effect focus -->
+        <text x="-40" y="0" fill="#c92a2a" font-size="30" font-family="monospace" font-weight="bold"
+            text-anchor="middle">x</text>
+        <text x="-5" y="0" fill="#fa5252" font-size="30" font-family="monospace" font-weight="bold"
+            text-anchor="middle">&gt;</text>
+        <text x="25" y="0" fill="#c92a2a" font-size="30" font-family="monospace" font-weight="bold"
+            text-anchor="middle">-3</text>
+    </g>
+
+    <!-- Number Line Final Answer -->
+    <g transform="translate(150, 200)">
+        <text x="0" y="-20" fill="#495057" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">[수직선 정답 구역]</text>
+        <line x1="-100" y1="10" x2="150" y2="10" stroke="#868e96" stroke-width="2" />
+
+        <circle cx="-50" cy="10" r="5" fill="#fff" stroke="#e03131" stroke-width="2" />
+        <text x="-50" y="30" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">-3</text>
+
+        <path d="M -45 10 L 130 10 L 130 -5" fill="none" stroke="#fa5252" stroke-width="4"
+            marker-end="url(#arrow-red)" />
+        <rect x="-45" y="-10" width="165" height="20" fill="#ffe3e3" opacity="0.5" />
+        <text x="30" y="25" fill="#f03e3e" font-size="10" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">정답의 무한 영토</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-grey" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+        <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fa5252" />
+        </marker>
+    </defs>
+</svg>

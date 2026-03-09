@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#c92a2a" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">최대최소 정리: 왕관은 모서리(Vertex) 에 씌워진다</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"안전지대 내부를 멍청하게 뒤지지 마라! 최댓값과 최솟값은 무조건 다각형의
+        꼭짓점에 숨어있다!"</text>
+
+    <!-- Left: The Foolish Search -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#862e9c" font-size="14" font-weight="bold" text-anchor="middle">하수(Noob) 의 탐색
+            범위</text>
+
+        <!-- Feasible Region Shape -->
+        <path d="M 50 120 L 50 50 L 120 50 L 170 90 L 150 120 Z" fill="#f3d9fa" fill-opacity="0.6" stroke="#ae3ec9"
+            stroke-width="2" />
+
+        <!-- Random dots inside -->
+        <circle cx="80" cy="80" r="3" fill="#862e9c" />
+        <circle cx="100" cy="100" r="3" fill="#862e9c" />
+        <circle cx="130" cy="70" r="3" fill="#862e9c" />
+        <circle cx="90" cy="60" r="3" fill="#862e9c" />
+        <circle cx="60" cy="110" r="3" fill="#862e9c" />
+        <circle cx="140" cy="100" r="3" fill="#862e9c" />
+        <circle cx="110" cy="110" r="3" fill="#862e9c" />
+
+        <text x="110" y="90" fill="#862e9c" font-size="10" font-weight="bold" text-anchor="middle">무한개의 픽셀 뒤지기
+            (O(∞))</text>
+
+        <rect x="15" y="125" width="190" height="18" fill="#fff0f6" rx="3" />
+        <text x="110" y="138" fill="#c92a2a" font-size="10" font-weight="bold" text-anchor="middle">"내부 면적을 전부 스캔하는 멍청한
+            짓"</text>
+    </g>
+
+    <!-- Simplex Arrow -->
+    <path d="M 290 145 C 300 110, 300 110, 310 145" fill="none" stroke="#2b8a3e" stroke-width="3"
+        marker-end="url(#arrow-green)" />
+    <rect x="260" y="110" width="80" height="20" fill="#ebfbee" rx="3" />
+    <text x="300" y="125" fill="#0ca678" font-size="10" font-weight="bold" text-anchor="middle">단형법(Simplex)</text>
+
+    <!-- Right: The Expert Search (Vertex Only) -->
+    <g transform="translate(320, 80)">
+        <rect x="0" y="0" width="240" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="120" y="25" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">고수(Pro) 의 탐색
+            범위</text>
+
+        <!-- Feasible Region Shape -->
+        <path d="M 60 120 L 60 50 L 130 50 L 180 90 L 160 120 Z" fill="#ffe8cc" fill-opacity="0.6" stroke="#fd7e14"
+            stroke-width="2" />
+
+        <!-- Highlighted Vertices -->
+        <circle cx="60" cy="120" r="5" fill="#c92a2a" />
+        <text x="45" y="130" fill="#c92a2a" font-size="10" font-weight="bold">v1</text>
+
+        <circle cx="60" cy="50" r="5" fill="#c92a2a" />
+        <text x="45" y="45" fill="#c92a2a" font-size="10" font-weight="bold">v2</text>
+
+        <circle cx="130" cy="50" r="8" fill="#ffd43b" stroke="#f08c00" stroke-width="2" />
+        <text x="130" y="40" fill="#e8590c" font-size="12" font-weight="bold" text-anchor="middle">Max!</text>
+
+        <circle cx="180" cy="90" r="5" fill="#c92a2a" />
+        <text x="195" y="95" fill="#c92a2a" font-size="10" font-weight="bold">v4</text>
+
+        <circle cx="160" cy="120" r="5" fill="#c92a2a" />
+        <text x="175" y="130" fill="#c92a2a" font-size="10" font-weight="bold">v5</text>
+
+        <!-- Path connecting vertices -->
+        <path d="M 60 120 L 60 50 L 130 50" fill="none" stroke="#2b8a3e" stroke-width="3" stroke-dasharray="2,2"
+            marker-end="url(#arrow-green)" />
+
+        <rect x="15" y="125" width="210" height="18" fill="#e6fcf5" rx="3" />
+        <text x="120" y="138" fill="#087f5b" font-size="9" font-weight="bold" text-anchor="middle">"단 5개의 모서리(꼭짓점) 만
+            검사하면 종료! O(V)"</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+    </defs>
+</svg>

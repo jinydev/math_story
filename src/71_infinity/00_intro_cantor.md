@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '00. 무한 정복자 게오르크 칸토어Georg Cantor'
+---
+
 # 00. 무한 정복자 게오르크 칸토어(Georg Cantor)
 
 ## 1. 학습 목표 (Learning Objectives)

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '3. 교집합의 마법 연립부등식의 공통 영역 Feasible Region'
+---
+
 # 3. 교집합의 마법: 연립부등식의 공통 영역 (Feasible Region)
 
 ## [도입부] 학습 목표 (Learning Objectives)

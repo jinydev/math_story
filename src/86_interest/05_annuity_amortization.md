@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 빚의 굴레와 연금의 축복 할부와 연금Annuity'
+---
+
 # 5. 빚의 굴레와 연금의 축복: 할부와 연금(Annuity)
 
 ## [도입부] 학습 목표 (Learning Objectives)

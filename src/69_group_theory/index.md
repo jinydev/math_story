@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 88. 군 Group Theory Abstract Algebra'
+---
+
 # 수학이야기 88. 군 (Group Theory: Abstract Algebra)
 
 <div align="center">

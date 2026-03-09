@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 천문학자의 수명을 늘려준 기적 네이피어Napier와 로그'
+---
+
 # 1. 천문학자의 수명을 늘려준 기적: 네이피어(Napier)와 로그
 
 ## [도입부] 학습 목표 (Learning Objectives)

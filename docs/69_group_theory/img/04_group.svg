@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#f03e3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">네 번째 구조: '절대 지존의 타이틀, 군 (Group)'</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"단순한 우주가 4가지의 무자비한 자격 시험을 통과하면 얻게 되는
+        왕관!"</text>
+
+    <!-- The 4 Pillars of a Group -->
+    <g transform="translate(20, 80)">
+
+        <!-- Pillar 1: Closure (닫힘) -->
+        <rect x="0" y="0" width="130" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="65" y="25" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">1. 닫힘 (Closure)</text>
+
+        <circle cx="65" cy="70" r="30" fill="#e7f5ff" stroke="#1864ab" stroke-width="2" />
+        <text x="65" y="65" fill="#1864ab" font-size="10" font-weight="bold" text-anchor="middle">a * b = C</text>
+        <text x="65" y="80" fill="#0b7285" font-size="10" font-weight="bold" text-anchor="middle">여전히 집합 안!</text>
+
+        <rect x="10" y="115" width="110" height="25" fill="#d0ebff" rx="3" />
+        <text x="65" y="128" fill="#0b7285" font-size="10" font-weight="bold" text-anchor="middle">"울타리 밖으로</text>
+        <text x="65" y="138" fill="#0b7285" font-size="10" font-weight="bold" text-anchor="middle">탈출 불가"</text>
+
+        <!-- Pillar 2: Associativity (결합법칙) -->
+        <rect x="140" y="0" width="130" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="205" y="25" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">2. 결합 법칙</text>
+
+        <text x="205" y="60" fill="#2b8a3e" font-size="12" font-weight="bold" text-anchor="middle">(a * b) * c</text>
+        <text x="205" y="75" fill="#212529" font-size="12" font-weight="bold" text-anchor="middle">=</text>
+        <text x="205" y="90" fill="#2b8a3e" font-size="12" font-weight="bold" text-anchor="middle">a * (b * c)</text>
+
+        <rect x="150" y="115" width="110" height="25" fill="#ebfbee" rx="3" />
+        <text x="205" y="128" fill="#0ca678" font-size="10" font-weight="bold" text-anchor="middle">"누구 먼저 괄호 치든</text>
+        <text x="205" y="138" fill="#0ca678" font-size="10" font-weight="bold" text-anchor="middle">결과가 똑같다"</text>
+
+        <!-- Pillar 3: Identity (항등원) -->
+        <rect x="280" y="0" width="130" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="345" y="25" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">3. 항등원 (e)</text>
+
+        <circle cx="345" cy="70" r="30" fill="#fff4e6" stroke="#e8590c" stroke-width="2" />
+        <text x="345" y="65" fill="#e8590c" font-size="12" font-weight="bold" text-anchor="middle">a * e = a</text>
+        <text x="345" y="80" fill="#d9480f" font-size="10" font-weight="bold" text-anchor="middle">e = 0(+), 1(×)</text>
+
+        <rect x="290" y="115" width="110" height="25" fill="#ffe8cc" rx="3" />
+        <text x="345" y="128" fill="#d9480f" font-size="10" font-weight="bold" text-anchor="middle">"나를 그대로 내뱉는</text>
+        <text x="345" y="138" fill="#d9480f" font-size="10" font-weight="bold" text-anchor="middle">투명인간(거울) 존재"</text>
+
+        <!-- Pillar 4: Inverse (역원) -->
+        <rect x="420" y="0" width="130" height="150" fill="#fff" stroke="#fa5252" stroke-width="3" rx="5" />
+        <text x="485" y="25" fill="#c92a2a" font-size="14" font-weight="bold" text-anchor="middle">4. 역원
+            (Inverse)</text>
+
+        <!-- Nuclear cancel symbol -->
+        <path d="M 460 70 L 510 70" fill="none" stroke="#fa5252" stroke-width="3" />
+        <path d="M 485 45 L 485 95" fill="none" stroke="#fa5252" stroke-width="3" />
+        <text x="460" y="55" fill="#e8590c" font-size="12" font-weight="bold">a</text>
+        <text x="510" y="85" fill="#1864ab" font-size="12" font-weight="bold">a⁻¹</text>
+
+        <text x="485" y="105" fill="#c92a2a" font-size="14" font-weight="bold" text-anchor="middle">= e (폭파!)</text>
+
+        <rect x="430" y="115" width="110" height="25" fill="#ffe3e3" rx="3" />
+        <text x="485" y="128" fill="#c92a2a" font-size="9" font-weight="bold" text-anchor="middle">"어떤 입자를 만나면</text>
+        <text x="485" y="138" fill="#c92a2a" font-size="9" font-weight="bold" text-anchor="middle">먼지(e)로 터져버리는
+            짝꿍"</text>
+
+    </g>
+
+</svg>

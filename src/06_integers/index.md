@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 41.정수 (Integers)
+title: '41.정수 Integers'
 theme:
   name: math
 ---

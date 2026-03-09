@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="400">
+    <defs>
+        <style>
+            .bg {
+                fill: #f8fafc;
+                rx: 10;
+                stroke: #cbd5e1;
+                stroke-width: 2;
+            }
+
+            /* Venn Diagram Sets */
+            .set-u {
+                fill: none;
+                stroke: #0f172a;
+                stroke-width: 2.5;
+                stroke-dasharray: 6 4;
+            }
+
+            /* 전체집합 U */
+
+            .set-p {
+                fill: #ef4444;
+                fill-opacity: 0.15;
+                stroke: #dc2626;
+                stroke-width: 3;
+            }
+
+            /* 진리집합 P */
+            .set-q {
+                fill: #3b82f6;
+                fill-opacity: 0.15;
+                stroke: #2563eb;
+                stroke-width: 3;
+            }
+
+            /* 진리집합 Q */
+
+            /* Elements */
+            .dot {
+                fill: #1e293b;
+            }
+
+            /* Text */
+            .title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 22px;
+                fill: #0f172a;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .formula {
+                font-family: 'Courier New', monospace;
+                font-size: 20px;
+                fill: #0f172a;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .set-label {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .elem-label {
+                font-family: 'Courier New', monospace;
+                font-size: 18px;
+                fill: #1e293b;
+                font-weight: bold;
+            }
+
+            .desc {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 15px;
+                fill: #64748b;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="300" y="40" class="title">조건 p와 q의 진리집합 벤 다이어그램 (Venn Diagram)</text>
+    <text x="300" y="70" class="formula">U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} </text>
+
+    <!-- Universe U Box -->
+    <rect x="50" y="100" width="500" height="230" class="set-u" />
+    <text x="65" y="130" class="set-label" fill="#0f172a">U</text>
+
+    <!-- U Elements (not in P or Q) -->
+    <circle cx="90" cy="290" r="4" class="dot" /> <text x="100" y="295" class="elem-label">1</text>
+    <circle cx="150" cy="140" r="4" class="dot" /> <text x="160" y="145" class="elem-label">5</text>
+    <circle cx="480" cy="300" r="4" class="dot" /> <text x="490" y="305" class="elem-label">7</text>
+
+    <!-- Set P (Condition: x is an even number <= 10) -->
+    <!-- Set Q (Condition: x is a multiple of 4 <= 10) -->
+
+    <!-- Outer Set P Circle -->
+    <circle cx="280" cy="215" r="95" class="set-p" />
+    <text x="190" y="145" class="set-label" fill="#dc2626">P (짝수)</text>
+
+    <!-- P Elements Only -->
+    <circle cx="240" cy="180" r="4" class="dot" /> <text x="250" y="185" class="elem-label">2</text>
+    <circle cx="250" cy="250" r="4" class="dot" /> <text x="260" y="255" class="elem-label">6</text>
+    <circle cx="210" cy="215" r="4" class="dot" /> <text x="220" y="220" class="elem-label">10</text>
+
+    <!-- Inner Set Q Circle (Q is a subset of P) -->
+    <circle cx="320" cy="215" r="45" class="set-q" />
+    <text x="315" y="195" class="set-label" fill="#2563eb" font-size="20px">Q(4배수)</text>
+
+    <!-- Q Elements -->
+    <circle cx="310" cy="225" r="4" class="dot" /> <text x="320" y="230" class="elem-label">4</text>
+    <circle cx="340" cy="245" r="4" class="dot" /> <text x="350" y="250" class="elem-label">8</text>
+
+    <!-- Explanation Texts -->
+    <text x="300" y="360" class="desc" fill="#dc2626" font-weight="bold">조건 p: x는 짝수이다 -> 진리집합 P = {2, 4, 6, 8, 10}
+    </text>
+    <text x="300" y="380" class="desc" fill="#2563eb" font-weight="bold">조건 q: x는 4의 배수이다 -> 진리집합 Q = {4, 8} </text>
+    <text x="420" y="220" class="desc" fill="#0f172a" font-weight="bold" font-size="18px">Q ⊂ P 성립!</text>
+
+</svg>

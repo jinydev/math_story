@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "수학이야기 06. 프랙탈 (Fractals)"
+title: '수학이야기 06. 프랙탈 Fractals'
 ---
 
 # 06. 프랙탈 (Fractals: 자연을 그려내는 해상도 무한의 기하학)

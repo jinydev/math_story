@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .triangle {
+                fill: rgba(0, 255, 255, 0.3);
+                stroke: #00ffff;
+                stroke-width: 2;
+            }
+
+            .hole {
+                fill: #0d1117;
+                stroke: #ff6464;
+                stroke-width: 2;
+            }
+
+            .outline {
+                fill: none;
+                stroke: #64ff64;
+                stroke-width: 4;
+                stroke-dasharray: 5, 5;
+            }
+
+            .spin {
+                animation: spin 10s infinite linear;
+                transform-origin: center;
+            }
+
+            @keyframes spin {
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .pulse {
+                animation: pulse 2s infinite alternate;
+            }
+
+            @keyframes pulse {
+                0% {
+                    opacity: 0.5;
+                    stroke-width: 2;
+                }
+
+                100% {
+                    opacity: 1;
+                    stroke-width: 5;
+                    stroke: #ff0000;
+                }
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#0d1117" />
+
+    <!-- Center of the large square at (300, 300) -->
+    <!-- Triangle dimensions: logic is a=80, b=140. c = sqrt(a^2+b^2) = 161.2 -->
+    <!-- Actually it's easier to create the b-a square (60x60) and 4 triangles around it -->
+    <!-- Let's position the 4 right triangles. -->
+    <g transform="translate(300, 300) rotate(0)">
+        <!-- Base large square outline (C^2) -->
+        <!-- Not exact c^2 width, let's just draw the 4 triangles correctly -->
+        <!-- T1 (top): a goes right, b goes down? Wait. -->
+        <!-- Let's define the points so that the hypotenuses form a square -->
+        <!-- Square has side c. Inner square has side b-a. -->
+        <!-- If we put the inner square at center: from -30 to 30 => width 60 -->
+        <!-- T1: top. Base b on top of hole. Wait, standard Bhaskara:
+         Inner square: (-30, -30) to (30, 30).
+         Triangles: T1 is above inner. 
+         Legs a=80, b=140. So b-a = 60.
+         Inner square is 60x60.
+         Top triangle: hypotenuse on the outside.
+         Points: (-30,-30), (-30+140,-30) = (110,-30), (-30,-30-80) = (-30,-110) => hypotenuse (-30,-110) to (110,-30).
+         Let's rotate this 4 times: 0, 90, 180, 270.
+    -->
+        <g class="spin">
+            <!-- Triangle 1 -->
+            <polygon points="-30,-30 110,-30 -30,-110" class="triangle" />
+            <text x="20" y="-70" fill="#00ffff" font-size="20">c</text>
+            <text x="40" y="-15" fill="#00ffff" font-size="16">b</text>
+            <text x="-45" y="-60" fill="#00ffff" font-size="16">a</text>
+
+            <!-- Triangle 2 -->
+            <g transform="rotate(90)">
+                <polygon points="-30,-30 110,-30 -30,-110" class="triangle" />
+            </g>
+
+            <!-- Triangle 3 -->
+            <g transform="rotate(180)">
+                <polygon points="-30,-30 110,-30 -30,-110" class="triangle" />
+            </g>
+
+            <!-- Triangle 4 -->
+            <g transform="rotate(270)">
+                <polygon points="-30,-30 110,-30 -30,-110" class="triangle" />
+            </g>
+
+            <!-- Inner Hole -->
+            <rect x="-30" y="-30" width="60" height="60" class="hole pulse" />
+            <text x="-25" y="5" fill="#ff6464" font-size="16" class="pulse">(b-a)²</text>
+
+            <!-- Outer outline -->
+            <polygon points="-30,-110 110,-30 30,110 -110,30" class="outline" />
+        </g>
+    </g>
+
+    <!-- Title -->
+    <text x="300" y="50" fill="#00ffff" font-size="28" text-anchor="middle">바스카라의 꽃 (Bhaskara's Proof)</text>
+    <text x="300" y="80" fill="#a0a0a0" font-size="16" text-anchor="middle">4개의 직각삼각형 넓이와 가운데 빈 틈(b-a)²의 합 = 거대한 사각형
+        c²</text>
+</svg>

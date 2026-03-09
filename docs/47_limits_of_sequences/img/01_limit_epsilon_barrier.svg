@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glowPink">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="glowBlue">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#F6E05E" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glowBlue)">수열의 무한 스킵과 극한 장벽 (Limits of Sequences)</text>
+
+  <!-- X & Y Axes -->
+  <!-- X-axis: n (Turns to infinity) -->
+  <line x1="50" y1="400" x2="750" y2="400" stroke="#718096" stroke-width="2" />
+  <text x="730" y="420" font-family="'Courier New', monospace" font-size="16" fill="#A0AEC0">n (턴 횟수) → ∞</text>
+  
+  <!-- Y-axis: a_n (Resulting Y Value) -->
+  <line x1="100" y1="50" x2="100" y2="450" stroke="#718096" stroke-width="2" />
+  <text x="80" y="40" font-family="'Courier New', monospace" font-size="16" fill="#A0AEC0">a_n (결괏값)</text>
+
+  <!-- The Iron Wall: Limit Line L = 3.0 -->
+  <!-- Let's say L corresponds to y=150 in SVG coords -->
+  <line x1="50" y1="150" x2="750" y2="150" stroke="#F687B3" stroke-width="3" stroke-dasharray="8,4" filter="url(#glowPink)" />
+  <text x="50" y="145" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#F687B3" filter="url(#glowPink)">L (극한의 수렴 벽: y=3.0)</text>
+
+  <!-- Bouncing Dots Converging to Limit (Ex: a_n = 3 - 2/n) -->
+  <!-- Points mapping:
+       n=1  (y=350, x=150)
+       n=2  (y=250, x=250)
+       n=3  (y=216, x=350)
+       n=4  (y=200, x=450)
+       n=5  (y=190, x=550)
+       n=10 (y=170, x=650)
+       n=inf (y=150.0001, x=750) 
+  -->
+  
+  <!-- Connection curve for aesthetics -->
+  <path d="M 150,350 Q 250,250 350,216 T 550,190 T 700,165" fill="none" stroke="#63B3ED" stroke-width="2" opacity="0.6" />
+
+  <!-- Dots Plotting -->
+  <circle cx="150" cy="350" r="6" fill="#63B3ED" filter="url(#glowBlue)" />
+  <text x="150" y="375" font-family="'Inter', sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">n=1 (y=1.0)</text>
+
+  <circle cx="250" cy="250" r="6" fill="#63B3ED" filter="url(#glowBlue)" />
+  <text x="250" y="275" font-family="'Inter', sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">n=2 (y=2.0)</text>
+
+  <circle cx="350" cy="216" r="6" fill="#63B3ED" filter="url(#glowBlue)" />
+  <text x="350" y="200" font-family="'Inter', sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">n=3 (y=2.33)</text>
+
+  <circle cx="450" cy="200" r="6" fill="#63B3ED" filter="url(#glowBlue)" />
+  
+  <circle cx="550" cy="190" r="6" fill="#63B3ED" filter="url(#glowBlue)" />
+  <text x="550" y="170" font-family="'Inter', sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">n=5 (y=2.6)</text>
+
+  <!-- Approaching Infinity cluster -->
+  <circle cx="620" cy="180" r="4" fill="#63B3ED" />
+  <circle cx="650" cy="170" r="4" fill="#63B3ED" />
+  <circle cx="680" cy="165" r="4" fill="#63B3ED" />
+  <circle cx="710" cy="160" r="3" fill="#63B3ED" />
+  <circle cx="730" cy="155" r="3" fill="#63B3ED" />
+  <circle cx="750" cy="153" r="3" fill="#63B3ED" />
+
+  <!-- Directional arrow -->
+  <line x1="380" y1="210" x2="680" y2="175" stroke="#F6E05E" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrowHead)" opacity="0.8" />
+  
+  <!-- UI Callout -->
+  <rect x="580" y="60" width="180" height="60" fill="rgba(246,135,179,0.15)" stroke="#F687B3" stroke-width="1" rx="5" />
+  <text x="670" y="85" font-family="'Courier New', monospace" font-size="16" font-weight="bold" fill="#F687B3" text-anchor="middle">lim (n→∞) a_n = 3</text>
+  <text x="670" y="105" font-family="'Inter', sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">"더 이상 못 뚫어!"</text>
+
+  <!-- Explanation Bottom Box -->
+  <rect x="100" y="440" width="600" height="40" fill="rgba(0,0,0,0.6)" rx="5" />
+  <text x="400" y="465" font-family="'Inter', sans-serif" font-size="14" fill="#E2E8F0" text-anchor="middle">"n 타임라인을 무한대(∞) 로 폭주 돌렸을 때, 위로 솟구치던 결괏값 점들이 하나의 고도(3.0) 에 처박힌다!"</text>
+
+</svg>

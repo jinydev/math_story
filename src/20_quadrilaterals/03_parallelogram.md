@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '3. 도형계의 귀족 평행사변형Parallelogram의 5대 마법'
+---
+
 # 3. 도형계의 귀족: 평행사변형(Parallelogram)의 5대 마법
 
 ## [도입부] 학습 목표 (Learning Objectives)

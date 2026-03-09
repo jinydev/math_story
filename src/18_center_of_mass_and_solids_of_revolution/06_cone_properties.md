@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '6. 파티 모자의 비밀 원뿔의 겉넓이와 부피 Cone'
+---
+
 # 6. 파티 모자의 비밀: 원뿔의 겉넓이와 부피 (Cone)
 
 ## [도입부] 학습 목표 (Learning Objectives)

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '8. 이단아들Outsiders의 역습 마법에 구속받지 않는 일반 사각형의 넓이 파괴 공식'
+---
+
 # 8. 이단아들(Outsiders)의 역습: 마법에 구속받지 않는 일반 사각형의 넓이 파괴 공식
 
 ## [도입부] 학습 목표 (Learning Objectives)

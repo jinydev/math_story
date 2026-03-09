@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '6. 도박장이 절대 망하지 않는 수학적 이유 기댓값Expected Value'
+---
+
 # 6. 도박장이 절대 망하지 않는 수학적 이유: '기댓값(Expected Value)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

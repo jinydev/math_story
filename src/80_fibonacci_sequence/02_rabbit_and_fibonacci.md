@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '02. 토끼와 피보나치수열'
+---
+
 # 02. 토끼와 피보나치수열
 
 ## 1. 학습 목표 (Learning Objectives)

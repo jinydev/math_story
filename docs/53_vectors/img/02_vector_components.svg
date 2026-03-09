@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350">
+    <rect width="700" height="350" fill="#2b2b2b" rx="15" />
+
+    <text x="350" y="40" fill="#3bc9db" font-size="22" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">벡터의 성분 분해 (Vector Components Decomposition)</text>
+
+    <!-- Grid Background -->
+    <line x1="50" y1="280" x2="650" y2="280" stroke="#495057" stroke-width="2" />
+    <line x1="100" y1="320" x2="100" y2="70" stroke="#495057" stroke-width="2" />
+
+    <!-- Main Vector V -->
+    <!-- Start: 100, 280. End: 400, 130  (dx=300, dy=-150) -->
+    <line x1="100" y1="280" x2="400" y2="130" stroke="#fcc419" stroke-width="6" marker-end="url(#arrow-yellow)" />
+    <text x="230" y="190" fill="#ffd43b" font-size="26" font-family="monospace" font-weight="bold">v (힘)</text>
+
+    <!-- X Component -->
+    <line x1="100" y1="280" x2="400" y2="280" stroke="#38d9a9" stroke-width="5" marker-end="url(#arrow-green)" />
+    <text x="240" y="315" fill="#69db7c" font-size="22" font-family="monospace" font-weight="bold">v_x = 3</text>
+    <text x="240" y="340" fill="#2b8a3e" font-size="14" font-weight="bold">(x축 오른쪽 투영)</text>
+
+    <!-- Y Component -->
+    <!-- visually shift it to the right to form a triangle, or on the axis. Let's form the triangle -->
+    <line x1="400" y1="280" x2="400" y2="130" stroke="#4dabf7" stroke-width="5" stroke-dasharray="6,4"
+        marker-end="url(#arrow-blue)" />
+    <text x="420" y="210" fill="#74c0fc" font-size="22" font-family="monospace" font-weight="bold">v_y = 4</text>
+    <text x="420" y="235" fill="#1864ab" font-size="14" font-weight="bold">(y축 위쪽 투영)</text>
+
+    <!-- Math Box -->
+    <rect x="430" y="70" width="240" height="150" fill="#343a40" stroke="#adb5bd" stroke-width="2" rx="10" />
+    <text x="550" y="100" fill="#ced4da" font-size="16" font-weight="bold" text-anchor="middle">배열 코딩 &amp; 크기
+        역추산</text>
+
+    <text x="550" y="130" fill="#fcc419" font-size="18" font-family="monospace" font-weight="bold"
+        text-anchor="middle">v = [3, 4]</text>
+
+    <line x1="450" y1="145" x2="650" y2="145" stroke="#495057" stroke-width="2" />
+
+    <text x="550" y="170" fill="#adb5bd" font-size="16" font-family="monospace" font-weight="bold"
+        text-anchor="middle">|v| = √(3² + 4²)</text>
+    <text x="550" y="200" fill="#f03e3e" font-size="18" font-family="monospace" font-weight="bold"
+        text-anchor="middle">엔진 파워(크기) = 5</text>
+
+    <defs>
+        <marker id="arrow-yellow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fcc419" />
+        </marker>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#38d9a9" />
+        </marker>
+        <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4dabf7" />
+        </marker>
+    </defs>
+</svg>

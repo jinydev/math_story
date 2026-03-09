@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '01. 연역법Deduction과 귀납법Induction의 결투'
+---
+
 # 01. 연역법(Deduction)과 귀납법(Induction)의 결투
 
 ## 1. 학습 목표 (Learning Objectives)

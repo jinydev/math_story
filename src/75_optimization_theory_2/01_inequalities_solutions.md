@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 방정식의 탈출 부등식Inequality과 구역의 탄생'
+---
+
 # 1. 방정식의 탈출: 부등식(Inequality)과 구역의 탄생
 
 ## [도입부] 학습 목표 (Learning Objectives)

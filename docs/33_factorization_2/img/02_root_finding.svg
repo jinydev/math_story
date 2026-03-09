@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748" />
+      <stop offset="100%" stop-color="#1A202C" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Marker Arrow -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#F6E05E" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Title -->
+  <text x="400" y="45" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">근(Root) 탐색과 인수분해 (해킹의 정점)</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">"방정식 f(x) = X³ - 8 이 0 이 되는 치명적인 틈새 발굴"</text>
+
+  <!-- Polynomial Monster Graphic -->
+  <g transform="translate(100, 150)">
+    <!-- Original Box -->
+    <rect x="-20" y="-30" width="180" height="100" fill="rgba(252, 129, 129, 0.2)" stroke="#FC8181" stroke-width="3" rx="10" filter="url(#glow)"/>
+    <text x="70" y="25" font-family="'Inter', sans-serif" font-size="32" font-weight="bold" fill="#FC8181" text-anchor="middle">X³ - 8</text>
+    <text x="70" y="55" font-family="'Inter', sans-serif" font-size="12" fill="#E2E8F0" text-anchor="middle">(통째로 뭉친 3차 괴물)</text>
+    
+    <!-- Hacker Input Probe (Root Finding) -->
+    <path d="M 70 -80 L 70 -45" stroke="#F6E05E" stroke-width="4" marker-end="url(#arrow)" />
+    <text x="70" y="-95" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#F6E05E" text-anchor="middle">해커의 약점 주사기 투입: f(2) = 0!</text>
+  </g>
+
+  <!-- Sword Slash Effect center -->
+  <g transform="translate(320, 170)">
+    <path d="M -30 -100 L 90 120" stroke="#63B3ED" stroke-width="6" stroke-linecap="round" filter="url(#glow)" />
+    <path d="M -30 -100 L 90 120" stroke="#EBF8FF" stroke-width="2" stroke-linecap="round" />
+    
+    <!-- Sparkles -->
+    <circle cx="0" cy="-40" r="4" fill="#EBF8FF" filter="url(#glow)"/>
+    <circle cx="30" cy="10" r="6" fill="#63B3ED" filter="url(#glow)"/>
+    <circle cx="60" cy="70" r="3" fill="#EBF8FF" filter="url(#glow)"/>
+    
+    <!-- Text -->
+    <text x="-15" y="10" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#63B3ED" transform="rotate(-30 -15 10)">조립제법 분쇄!</text>
+  </g>
+
+  <!-- Result Factored Blocks -->
+  <!-- Linear Factor (X-2) -->
+  <g transform="translate(480, 100)">
+    <rect x="0" y="0" width="220" height="60" fill="rgba(104, 211, 145, 0.2)" stroke="#68D391" stroke-width="3" rx="8" filter="url(#glow)"/>
+    <text x="110" y="38" font-family="'Inter', sans-serif" font-size="26" font-weight="bold" fill="#68D391" text-anchor="middle">(X - 2)</text>
+    <text x="110" y="80" font-family="'Inter', sans-serif" font-size="13" fill="#A0AEC0" text-anchor="middle">치명적 약점 블록 (Root: 2)</text>
+  </g>
+  
+  <!-- Multiplication Symbol -->
+  <text x="590" y="220" font-family="'Inter', sans-serif" font-size="30" font-weight="bold" fill="#F7FAFC" text-anchor="middle">×</text>
+
+  <!-- Quadratic Factor (X^2+2X+4) -->
+  <g transform="translate(430, 240)">
+    <rect x="0" y="0" width="320" height="80" fill="rgba(104, 211, 145, 0.2)" stroke="#68D391" stroke-width="3" rx="15" filter="url(#glow)"/>
+    <text x="160" y="50" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#68D391" text-anchor="middle">(X² + 2X + 4)</text>
+    <text x="160" y="100" font-family="'Inter', sans-serif" font-size="13" fill="#A0AEC0" text-anchor="middle">나머지 단단한 잔해 코드 (조립제법 결과물)</text>
+  </g>
+
+  <!-- Connecting arrows from slash to blocks -->
+  <path d="M 370 120 C 420 100 450 130 470 130" stroke="#A0AEC0" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 390 230 C 420 280 430 280 415 280" stroke="#A0AEC0" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Footer concept -->
+  <rect x="150" y="380" width="500" height="40" fill="rgba(0,0,0,0.4)" rx="5"/>
+  <text x="400" y="405" font-family="'Inter', sans-serif" font-size="16" fill="#F6E05E" text-anchor="middle">"방정식에 특정 키값(2)를 넣어 폭파시킨 뒤 파편들을 곱하기 박스로 묶는다."</text>
+
+</svg>

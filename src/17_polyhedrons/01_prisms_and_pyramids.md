@@ -1,3 +1,10 @@
+---
+layout: "docs"
+title: '01. 기둥Prism과 뿔Pyramid 입체의 두 거장'
+---
+{% raw %}
+
+
 # 01. 기둥(Prism)과 뿔(Pyramid): 입체의 두 거장
 
 ## 1. 학습 목표 (Learning Objectives)
@@ -38,3 +45,5 @@
 ## 4. 학습 정리 (Summary)
 1. **각기둥(Prism)**: 두 밑면이 평행/합동이고 옆면이 **직사각형**인 건실한 도형. (부피 = 밑넓이 $\times$ 높이)
 2. **각뿔(Pyramid)**: 하나의 밑면만 있고 옆면이 꼭짓점을 향해 모이는 **삼각형**인 뾰족한 도형. (부피 = 기둥 부피의 정확히 $\mathbf{\frac{1}{3}}$)
+
+{% endraw %}

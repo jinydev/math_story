@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .point {
+                fill: #00ffff;
+                filter: drop-shadow(0 0 10px #00ffff);
+            }
+
+            .line {
+                stroke: #ff6464;
+                stroke-width: 6;
+                filter: drop-shadow(0 0 10px #ff6464);
+            }
+
+            .surface {
+                fill: rgba(100, 255, 100, 0.4);
+                stroke: #64ff64;
+                stroke-width: 4;
+                filter: drop-shadow(0 0 15px #64ff64);
+            }
+
+            .bounce {
+                animation: bounce 2s infinite alternate ease-in-out;
+            }
+
+            @keyframes bounce {
+                0% {
+                    transform: translateY(-5px);
+                }
+
+                100% {
+                    transform: translateY(5px);
+                }
+            }
+
+            .grow-line {
+                animation: grow-line 3s infinite alternate ease-in-out;
+            }
+
+            @keyframes grow-line {
+                0% {
+                    x2: 150;
+                }
+
+                100% {
+                    x2: 350;
+                }
+            }
+
+            .pulse-area {
+                animation: pulse-area 3s infinite alternate;
+            }
+
+            @keyframes pulse-area {
+                0% {
+                    opacity: 0.3;
+                }
+
+                100% {
+                    opacity: 0.8;
+                }
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#0d1117" />
+    <text x="300" y="60" fill="#00ffff" font-size="28" text-anchor="middle">차원의 폭발 (Dimensionality)</text>
+
+    <!-- 0D Point -->
+    <g transform="translate(100, 150)">
+        <circle cx="50" cy="0" r="8" class="point bounce" />
+        <text x="150" y="5" fill="#00ffff" font-size="20">0D: Point (위치만 존재)</text>
+    </g>
+
+    <!-- 1D Line -->
+    <g transform="translate(100, 280)">
+        <circle cx="50" cy="0" r="8" class="point" />
+        <line x1="50" y1="0" y2="0" class="line grow-line" />
+        <circle cx="350" cy="0" r="8" class="point" />
+        <text x="380" y="5" fill="#ff6464" font-size="20">1D: Line (길이 탄생)</text>
+    </g>
+
+    <!-- 2D Surface (Triangle) -->
+    <g transform="translate(100, 410)">
+        <polygon points="50,60 250,60 150,-60" class="surface pulse-area" />
+        <circle cx="50" cy="60" r="8" class="point" />
+        <circle cx="250" cy="60" r="8" class="point" />
+        <circle cx="150" cy="-60" r="8" class="point" />
+        <text x="280" y="20" fill="#64ff64" font-size="20">2D: Surface (넓이 폭발)</text>
+    </g>
+
+</svg>

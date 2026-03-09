@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '18. 경우의 수 Number of Cases 예측과 확률의 코어 엔진'
+---
+
 # 18. 경우의 수 (Number of Cases: 예측과 확률의 코어 엔진)
 
 ## 이 단원의 핵심 (Chapter Focus)

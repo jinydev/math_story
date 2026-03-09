@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">진정한 숫자(실수)가 된 각도: 호도법</text>
+
+    <!-- Left: Degree System (Confined Box) -->
+    <g transform="translate(100, 150)">
+        <rect x="0" y="0" width="300" height="300" rx="15" fill="#332211" stroke="#ffaa00" stroke-width="3"
+            stroke-dasharray="10 5" />
+        <text x="150" y="40" fill="#ffaa00" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle">인간의 원시 단위 (육십분법)</text>
+        <text x="150" y="70" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">바빌로니아인들이 정한 임의의
+            360조각</text>
+
+        <!-- Circle with slices -->
+        <circle cx="150" cy="180" r="80" fill="none" stroke="#ffaa00" stroke-width="4" filter="url(#glow)" />
+        <line x1="150" y1="100" x2="150" y2="260" stroke="#ffcc00" stroke-width="2" opacity="0.5" />
+        <line x1="70" y1="180" x2="230" y2="180" stroke="#ffcc00" stroke-width="2" opacity="0.5" />
+
+        <path d="M 150 180 L 230 180 A 80 80 0 0 0 190 110 Z" fill="#ffaa00" opacity="0.3" />
+
+        <text x="190" y="150" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">60°</text>
+
+        <rect x="30" y="250" width="240" height="30" fill="#1a1a24" rx="5" />
+        <text x="150" y="272" fill="#ff7777" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">"수식 'y = x + 30°' 연산 불가!"</text>
+    </g>
+
+    <!-- VS Text -->
+    <text x="450" y="300" fill="#ffffff" font-family="sans-serif" font-size="30" font-weight="bold"
+        text-anchor="middle">VS</text>
+
+    <!-- Right: Radian System (Infinite Line) -->
+    <g transform="translate(500, 150)">
+        <rect x="0" y="0" width="300" height="300" rx="15" fill="#112233" stroke="#00ffcc" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="150" y="40" fill="#00ffcc" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle">컴퓨터/자연의 각도 (호도법)</text>
+        <text x="150" y="70" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">원의 길이를 실수로
+            치환</text>
+
+        <!-- Coordinate system & Number line -->
+        <!-- Showing that angle translates to a length of arc perfectly matching a radius -->
+        <circle cx="150" cy="180" r="80" fill="none" stroke="#00ffcc" stroke-width="2" />
+        <line x1="150" y1="180" x2="230" y2="180" stroke="#00ffcc" stroke-width="4" /> <!-- Radius -->
+        <text x="190" y="200" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">r=1</text>
+
+        <!-- 1 Radian definition -->
+        <path d="M 150 180 L 230 180 A 80 80 0 0 0 193 112 Z" fill="#00ffcc" opacity="0.3" filter="url(#glow)" />
+        <path d="M 230 180 A 80 80 0 0 0 193 112" fill="none" stroke="#ff00ff" stroke-width="6" />
+        <!-- Arc length = 1 -->
+        <text x="235" y="140" fill="#ff00ff" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="start">호 길이=1</text>
+
+        <text x="190" y="160" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">1 Radian</text>
+
+        <!-- Formula -->
+        <rect x="30" y="250" width="240" height="30" fill="#1a1a24" rx="5" />
+        <text x="150" y="272" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">x축 위에 정식 숫자로 렌더링 가능!</text>
+    </g>
+
+    <!-- Bottom: Equation the links them -->
+    <rect x="250" y="500" width="400" height="60" rx="30" fill="#2b1133" stroke="#ff00ff" stroke-width="4"
+        filter="url(#glow)" />
+    <text x="450" y="538" fill="#ffffff" font-family="monospace" font-size="30" font-weight="bold"
+        text-anchor="middle">180° = π (약 3.14)</text>
+
+</svg>

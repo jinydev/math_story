@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 40. 지수함수와 로그함수 Exponential  Logarithmic Functions'
+---
+
 # 수학이야기 40. 지수함수와 로그함수 (Exponential & Logarithmic Functions)
 
 ## 📌 학습 개요

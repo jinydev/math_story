@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '02. 두 번째 수업 속도가 휘어지는 총알, 무리 함수 Irrational Functions'
+---
+
 # 02. 두 번째 수업: 속도가 휘어지는 총알, 무리 함수 (Irrational Functions)
 
 자판기 중에는 아주 가학적인 엔진, 변수 $x$ 를 그 무시무시한 **루트(Square Root, $\sqrt{\ }$)** 기둥 창살 안에 통째로 구속해버린 감옥형 함수가 존재합니다. 이것을 우리는 **무리 함수(Irrational Functions)** 라고 부릅니다.

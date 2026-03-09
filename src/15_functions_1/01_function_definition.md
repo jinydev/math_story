@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '01. 첫 번째 수업 집합과 대응 관계 Domain and Codomain'
+---
+
 # 01. 첫 번째 수업: 집합과 대응 관계 (Domain and Codomain)
 
 아무 자판기 기계나 만들었다고 무조건 합격 도장을 받고 '완벽한 함수(Function)' 라고 불릴 수 있는 것은 아닙니다. 

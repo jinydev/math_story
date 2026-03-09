@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '3. 도박의 절대 진리 기댓값 Expected Value'
+---
+
 # 3. 도박의 절대 진리: 기댓값 (Expected Value)
 
 ## [도입부] 학습 목표 (Learning Objectives)

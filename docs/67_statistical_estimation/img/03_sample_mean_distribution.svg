@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#228be6" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">표본평균의 분포(Distribution of X̄): 날카로운 창기병</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"데이터를 n개씩 묶어서 그 평균값들만 모으면, 분산이 n배 축소되어 뾰족한
+        송곳 곡선이 된다!"</text>
+
+    <!-- Left: Original Population X (Fat) -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">오리지널 우주 (X)</text>
+
+        <line x1="10" y1="120" x2="210" y2="120" stroke="#adb5bd" stroke-width="2" />
+
+        <!-- Fat Curve -->
+        <path d="M 20 120 C 50 120, 80 50, 110 50 C 140 50, 170 120, 200 120" fill="#ffe3e3" fill-opacity="0.6"
+            stroke="#fa5252" stroke-width="2" />
+
+        <!-- Mean -->
+        <line x1="110" y1="50" x2="110" y2="120" stroke="#fa5252" stroke-dasharray="2,2" />
+        <text x="110" y="135" fill="#c92a2a" font-size="12" font-weight="bold" text-anchor="middle">m</text>
+
+        <text x="60" y="90" fill="#c92a2a" font-size="14" font-weight="bold">σ²</text>
+        <path d="M 110 80 L 160 80" fill="none" stroke="#fa5252" stroke-width="2" marker-end="url(#arrow-red)"
+            marker-start="url(#arrow-red-rev)" />
+
+        <rect x="15" y="15" width="40" height="20" fill="#fff5f5" rx="3" />
+        <text x="35" y="28" fill="#c92a2a" font-size="10" font-weight="bold" text-anchor="middle">N=1</text>
+    </g>
+
+    <!-- Transform Text -->
+    <path d="M 290 145 L 310 145" fill="none" stroke="#1864ab" stroke-width="3" stroke-dasharray="4,2"
+        marker-end="url(#arrow-blue)" />
+    <rect x="250" y="110" width="100" height="22" fill="#d0ebff" stroke="#1864ab" rx="3" />
+    <text x="300" y="125" fill="#0b7285" font-size="10" font-weight="bold" text-anchor="middle">크기 n 짜리 묶음망</text>
+
+    <!-- Right: Sample Mean X-bar (Sharp) -->
+    <g transform="translate(340, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">표본평균들의 우주 (X̄)</text>
+
+        <line x1="10" y1="120" x2="210" y2="120" stroke="#adb5bd" stroke-width="2" />
+
+        <!-- Sharp Curve -->
+        <path d="M 50 120 C 80 120, 100 20, 110 20 C 120 20, 140 120, 170 120" fill="#d0ebff" fill-opacity="0.8"
+            stroke="#1864ab" stroke-width="2" />
+
+        <!-- Mean -->
+        <line x1="110" y1="20" x2="110" y2="120" stroke="#1864ab" stroke-dasharray="2,2" />
+        <text x="110" y="135" fill="#0b7285" font-size="12" font-weight="bold" text-anchor="middle">m (불변)</text>
+
+        <!-- Variance Shrink -->
+        <text x="50" y="70" fill="#0b7285" font-size="14" font-weight="bold">σ² / n</text>
+        <path d="M 110 80 L 130 80" fill="none" stroke="#1864ab" stroke-width="2" marker-end="url(#arrow-blue)"
+            marker-start="url(#arrow-blue-rev)" />
+
+        <rect x="80" y="-15" width="60" height="20" fill="#e7f5ff" rx="3" />
+        <text x="110" y="-2" fill="#0b7285" font-size="10" font-weight="bold" text-anchor="middle">송곳처럼 집중!</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fa5252" />
+        </marker>
+        <marker id="arrow-red-rev" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fa5252" />
+        </marker>
+        <marker id="arrow-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#1864ab" />
+        </marker>
+        <marker id="arrow-blue-rev" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#1864ab" />
+        </marker>
+    </defs>
+</svg>

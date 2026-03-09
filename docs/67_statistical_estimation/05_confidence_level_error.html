@@ -1,0 +1,967 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 기본 메타데이터 --><meta name="description" content="Jiny linux"><meta name="author" content="HojinLee"><!-- 제목 설정 --><title>5. 장사꾼의 딜레마 신뢰도Confidence Level와 오차 한계</title>
+  <meta name="title" content="5. 장사꾼의 딜레마 신뢰도Confidence Level와 오차 한계" /><!-- 키워드 설정 --><!-- Open Graph 메타데이터 --><meta property="og:title" content="5. 장사꾼의 딜레마 신뢰도Confidence Level와 오차 한계"><meta property="og:description" content="Jiny linux"><meta property="og:type" content="website"><meta property="og:locale" content="ko">
+  <meta property="og:site_name" content="linux">
+  <meta property="og:url" content="http://localhost:4000/67_statistical_estimation/05_confidence_level_error.html">
+  <!-- 대표 URL (캐노니컬) -->
+  <link rel="canonical" href="http://localhost:4000/67_statistical_estimation/05_confidence_level_error.html">
+
+  <!-- Twitter 카드 메타데이터 --><meta name="twitter:card" content="summary"><meta property="twitter:title" content="5. 장사꾼의 딜레마 신뢰도Confidence Level와 오차 한계"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="장사꾼의 딜레마 신뢰도Confidence Level와 오차 한계" />
+<meta name="author" content="Hojin" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="AI 시대의 데이터 사이언스와 함께하는 새로운 수학 학습 연대기" />
+<meta property="og:description" content="AI 시대의 데이터 사이언스와 함께하는 새로운 수학 학습 연대기" />
+<link rel="canonical" href="http://localhost:4000/67_statistical_estimation/05_confidence_level_error.html" />
+<meta property="og:url" content="http://localhost:4000/67_statistical_estimation/05_confidence_level_error.html" />
+<meta property="og:site_name" content="수학이야기 (Math Story V3)" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="장사꾼의 딜레마 신뢰도Confidence Level와 오차 한계" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Hojin"},"description":"AI 시대의 데이터 사이언스와 함께하는 새로운 수학 학습 연대기","headline":"장사꾼의 딜레마 신뢰도Confidence Level와 오차 한계","url":"http://localhost:4000/67_statistical_estimation/05_confidence_level_error.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/assets/css/docs.css" rel="stylesheet" />
+  <link href="/assets/css/highlight.css" rel="stylesheet" />
+
+  <style>
+    blockquote {
+      border-left: solid 5px #dee2e6;
+      padding: 5px 10px;
+      background-color: #f8f9fa;
+    }
+  </style>
+
+  <style>
+    h1 a {
+      text-decoration: none;
+    }
+
+    h2 a {
+      text-decoration: none;
+    }
+
+    h3 a {
+      text-decoration: none;
+    }
+
+    h4 a {
+      text-decoration: none;
+    }
+
+    h5 a {
+      text-decoration: none;
+    }
+
+    h6 a {
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: top
+    }
+
+    strong a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* 스크롤바 커스텀 */
+    /* 임의의 영역 생성 */
+    .scrollBar {}
+
+    /* 아래의 모든 코드는 영역::코드로 사용 */
+    .scrollBar::-webkit-scrollbar {
+      width: 7px;
+      /* 스크롤바의 너비 */
+    }
+
+    .scrollBar::-webkit-scrollbar-thumb {
+      height: 30%;
+      /* 스크롤바의 길이 */
+      background: #cccccc;
+      /* 스크롤바의 색상 */
+
+      border-radius: 5px;
+    }
+
+    .scrollBar::-webkit-scrollbar-track {
+      background: rgba(33, 122, 244, .1);
+      /*스크롤바 뒷 배경 색상*/
+    }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4VBPCT3CR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-R4VBPCT3CR');
+  </script>
+
+
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg bd-navbar sticky-top">
+    <nav class="container bd-gutter flex-wrap flex-lg-nowrap position-relative" aria-label="Main navigation">
+
+      <!-- Mobile: Left Toggle (Browse) -->
+      <div class="bd-navbar-toggle d-lg-none">
+        <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
+          aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+            </path>
+          </svg>
+          <span class="d-none fs-6 pe-1">Browse</span>
+        </button>
+      </div>
+
+      <!-- Brand: Desktop (Static), Mobile (Absolute Center) -->
+      <a class="navbar-brand p-0 me-0 me-lg-2 ms-lg-0 d-none d-lg-inline-block" href="/" aria-label="jinydev">
+        <svg width="32" height="26" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M24.2746 5.33377C25.8486 7.33981 25.1183 11.1792 24.3961 13.0177C24.4028 13.0199 24.4094 13.0221 24.4161 13.0243L24.4013 13.0248L22.649 12.9082C22.649 12.9053 22.6488 12.9013 22.649 12.8993C22.9902 8.93373 22.5975 7.34575 22.2147 7.07677C17.6316 10.3896 13.5379 9.33658 12.2725 9.01111C11.928 8.9225 11.7932 8.88781 11.9152 9.00988C12.2872 9.38185 13.1336 9.82821 13.7371 10.1465H13.7372L13.7376 10.1467C13.8743 10.2188 13.9985 10.2843 14.1019 10.3409C9.12673 10.3984 7.12659 8.00279 6.53855 7.29846C6.47859 7.22664 6.4333 7.1724 6.40105 7.14015C6.11408 6.85318 4.49961 5.87252 3.99256 7.74227C3.50142 9.55335 3.81246 11.6775 3.97665 12.7988C3.99089 12.896 3.99257 12.8981 3.99257 12.9298L2.37635 13.0248L2.37213 13.0247C0.223493 8.05534 1.83854 5.26971 3.29536 4.2246C3.29536 1.78444 6.27428 -0.592359 10.0455 0.263262C14.8768 1.64043 16.3468 1.18409 18.0759 0.647278C18.774 0.430562 19.5143 0.200726 20.5351 0.073124C25.2219 -0.512739 26.7993 2.56612 27 4.16122C26.2141 3.70487 24.8556 4.73165 24.2746 5.33377ZM12.3374 1.5872C11.1225 1.16466 7.99257 0.717209 6.3478 2.41116C5.98397 2.78587 5.55554 3.48864 5.55554 3.48864C5.55554 3.48864 4.82665 4.81961 4.25622 4.24919C3.68579 3.67878 5.0168 1.96749 6.06259 1.46044C7.10838 0.953388 9.70703 0.0660505 12.3374 1.5872Z"
+            fill="currentColor" />
+          <path
+            d="M10.078 13.5002H3.10601C2.2309 13.5002 1.52148 14.2097 1.52148 15.0848V18.3172C1.52148 19.1923 2.2309 19.9018 3.10601 19.9018H10.078C10.9531 19.9018 11.6625 19.1923 11.6625 18.3172V15.0848C11.6625 14.2097 10.9531 13.5002 10.078 13.5002Z"
+            stroke="currentColor" stroke-width="1.26763" />
+          <path
+            d="M0.823513 14.6094H0.379847C0.187322 14.6094 0.03125 14.7654 0.03125 14.958V15.9721C0.03125 16.1646 0.187322 16.3207 0.379847 16.3207H0.823513C1.01604 16.3207 1.17211 16.1646 1.17211 15.9721V14.958C1.17211 14.7654 1.01604 14.6094 0.823513 14.6094Z"
+            fill="currentColor" stroke="currentColor" stroke-width="0.0633813" />
+          <path
+            d="M16.7326 13.5002H23.7045C24.5796 13.5002 25.2891 14.2097 25.2891 15.0848V18.3172C25.2891 19.1923 24.5796 19.9018 23.7045 19.9018H16.7326C15.8575 19.9018 15.1481 19.1923 15.1481 18.3172V15.0848C15.1481 14.2097 15.8575 13.5002 16.7326 13.5002Z"
+            stroke="currentColor" stroke-width="1.26763" />
+          <path
+            d="M25.9861 14.6094H26.4297C26.6222 14.6094 26.7783 14.7654 26.7783 14.958V15.9721C26.7783 16.1646 26.6222 16.3207 26.4297 16.3207H25.9861C25.7935 16.3207 25.6375 16.1646 25.6375 15.9721V14.958C25.6375 14.7654 25.7935 14.6094 25.9861 14.6094Z"
+            fill="currentColor" stroke="currentColor" stroke-width="0.0633813" />
+          <path
+            d="M12.2954 15.5601H14.5137C14.7062 15.5601 14.8623 15.7161 14.8623 15.9087V16.9228C14.8623 17.1153 14.7062 17.2713 14.5137 17.2713H12.2954C12.1028 17.2713 11.9468 17.1153 11.9468 16.9228V15.9087C11.9468 15.7161 12.1028 15.5601 12.2954 15.5601Z"
+            fill="currentColor" stroke="currentColor" stroke-width="0.0633813" />
+          <path
+            d="M9.93343 16.3937C9.93343 16.7087 9.76317 16.9641 9.55314 16.9641C9.34311 16.9641 9.17285 16.7087 9.17285 16.3937C9.17285 16.0786 9.34311 15.8232 9.55314 15.8232C9.76317 15.8232 9.93343 16.0786 9.93343 16.3937Z"
+            fill="currentColor" />
+          <path
+            d="M16.9688 16.3937C16.9688 16.7087 17.139 16.9641 17.3491 16.9641C17.5591 16.9641 17.7293 16.7087 17.7293 16.3937C17.7293 16.0786 17.5591 15.8232 17.3491 15.8232C17.139 15.8232 16.9688 16.0786 16.9688 16.3937Z"
+            fill="currentColor" />
+          <path
+            d="M14.2758 20.1016C13.642 20.6086 12.7863 20.3551 12.5645 20.1016C12.6278 20.4185 12.8687 20.8622 13.4518 20.8622C14.0349 20.8622 14.2441 20.3551 14.2758 20.1016Z"
+            fill="currentColor" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12.1312 22.411C12.1575 22.2914 12.2759 22.2157 12.3956 22.2421L14.6347 22.735C14.7544 22.7614 14.83 22.8797 14.8036 22.9994C14.7773 23.119 14.659 23.1947 14.5393 23.1683L12.3002 22.6753C12.1805 22.649 12.1049 22.5307 12.1312 22.411Z"
+            fill="currentColor" />
+          <path
+            d="M13.4203 27.6754C9.00897 27.7261 5.77228 23.6613 4.70536 21.6225C4.54691 21.3197 4.42016 21.2739 4.32509 21.3373C4.17297 21.4387 4.28282 21.6437 4.32507 21.7493C4.85747 22.9916 5.58213 24.0416 5.87791 24.4113C4.83846 26.1353 4.49409 27.855 4.45183 28.4994C6.1758 26.8008 7.91668 26.8832 8.57162 27.1367C13.7055 29.7987 16.5577 27.929 18.1739 27.1367C19.4669 26.5029 21.4803 27.7388 22.3254 28.436C22.224 26.8642 21.3747 25.1402 20.9627 24.4747C21.6282 23.5873 22.1669 22.5099 22.4522 21.9711C22.6803 21.5401 22.6106 21.369 22.5472 21.3373C22.3951 21.2613 22.2092 21.4958 22.1353 21.6225C21.6599 22.4148 18.9345 27.6121 13.4203 27.6754Z"
+            fill="currentColor" />
+        </svg>
+      </a>
+      <a class="navbar-brand p-0 me-0 position-absolute top-50 start-50 translate-middle d-lg-none" href="/"
+        aria-label="jinydev">
+        <svg width="100" height="26" viewBox="0 0 112 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M24.2746 5.33377C25.8486 7.33981 25.1183 11.1792 24.3961 13.0177C24.4028 13.0199 24.4094 13.0221 24.4161 13.0243L24.4013 13.0248L22.649 12.9082C22.649 12.9053 22.6488 12.9013 22.649 12.8993C22.9902 8.93373 22.5975 7.34575 22.2147 7.07677C17.6316 10.3896 13.5379 9.33658 12.2725 9.01111C11.928 8.9225 11.7932 8.88781 11.9152 9.00988C12.2872 9.38185 13.1336 9.82821 13.7371 10.1465H13.7372L13.7376 10.1467C13.8743 10.2188 13.9985 10.2843 14.1019 10.3409C9.12673 10.3984 7.12659 8.00279 6.53855 7.29846C6.47859 7.22664 6.4333 7.1724 6.40105 7.14015C6.11408 6.85318 4.49961 5.87252 3.99256 7.74227C3.50142 9.55335 3.81246 11.6775 3.97665 12.7988C3.99089 12.896 3.99257 12.8981 3.99257 12.9298L2.37635 13.0248L2.37213 13.0247C0.223493 8.05534 1.83854 5.26971 3.29536 4.2246C3.29536 1.78444 6.27428 -0.592359 10.0455 0.263262C14.8768 1.64043 16.3468 1.18409 18.0759 0.647278C18.774 0.430562 19.5143 0.200726 20.5351 0.073124C25.2219 -0.512739 26.7993 2.56612 27 4.16122C26.2141 3.70487 24.8556 4.73165 24.2746 5.33377ZM12.3374 1.5872C11.1225 1.16466 7.99257 0.717209 6.3478 2.41116C5.98397 2.78587 5.55554 3.48864 5.55554 3.48864C5.55554 3.48864 4.82665 4.81961 4.25622 4.24919C3.68579 3.67878 5.0168 1.96749 6.06259 1.46044C7.10838 0.953388 9.70703 0.0660505 12.3374 1.5872Z"
+            fill="currentColor" />
+          <path
+            d="M10.078 13.5002H3.10601C2.2309 13.5002 1.52148 14.2097 1.52148 15.0848V18.3172C1.52148 19.1923 2.2309 19.9018 3.10601 19.9018H10.078C10.9531 19.9018 11.6625 19.1923 11.6625 18.3172V15.0848C11.6625 14.2097 10.9531 13.5002 10.078 13.5002Z"
+            stroke="currentColor" stroke-width="1.26763" />
+          <path
+            d="M0.823513 14.6094H0.379847C0.187322 14.6094 0.03125 14.7654 0.03125 14.958V15.9721C0.03125 16.1646 0.187322 16.3207 0.379847 16.3207H0.823513C1.01604 16.3207 1.17211 16.1646 1.17211 15.9721V14.958C1.17211 14.7654 1.01604 14.6094 0.823513 14.6094Z"
+            fill="currentColor" stroke="currentColor" stroke-width="0.0633813" />
+          <path
+            d="M16.7326 13.5002H23.7045C24.5796 13.5002 25.2891 14.2097 25.2891 15.0848V18.3172C25.2891 19.1923 24.5796 19.9018 23.7045 19.9018H16.7326C15.8575 19.9018 15.1481 19.1923 15.1481 18.3172V15.0848C15.1481 14.2097 15.8575 13.5002 16.7326 13.5002Z"
+            stroke="currentColor" stroke-width="1.26763" />
+          <path
+            d="M25.9861 14.6094H26.4297C26.6222 14.6094 26.7783 14.7654 26.7783 14.958V15.9721C26.7783 16.1646 26.6222 16.3207 26.4297 16.3207H25.9861C25.7935 16.3207 25.6375 16.1646 25.6375 15.9721V14.958C25.6375 14.7654 25.7935 14.6094 25.9861 14.6094Z"
+            fill="currentColor" stroke="currentColor" stroke-width="0.0633813" />
+          <path
+            d="M12.2954 15.5601H14.5137C14.7062 15.5601 14.8623 15.7161 14.8623 15.9087V16.9228C14.8623 17.1153 14.7062 17.2713 14.5137 17.2713H12.2954C12.1028 17.2713 11.9468 17.1153 11.9468 16.9228V15.9087C11.9468 15.7161 12.1028 15.5601 12.2954 15.5601Z"
+            fill="currentColor" stroke="currentColor" stroke-width="0.0633813" />
+          <path
+            d="M9.93343 16.3937C9.93343 16.7087 9.76317 16.9641 9.55314 16.9641C9.34311 16.9641 9.17285 16.7087 9.17285 16.3937C9.17285 16.0786 9.34311 15.8232 9.55314 15.8232C9.76317 15.8232 9.93343 16.0786 9.93343 16.3937Z"
+            fill="currentColor" />
+          <path
+            d="M16.9688 16.3937C16.9688 16.7087 17.139 16.9641 17.3491 16.9641C17.5591 16.9641 17.7293 16.7087 17.7293 16.3937C17.7293 16.0786 17.5591 15.8232 17.3491 15.8232C17.139 15.8232 16.9688 16.0786 16.9688 16.3937Z"
+            fill="currentColor" />
+          <path
+            d="M14.2758 20.1016C13.642 20.6086 12.7863 20.3551 12.5645 20.1016C12.6278 20.4185 12.8687 20.8622 13.4518 20.8622C14.0349 20.8622 14.2441 20.3551 14.2758 20.1016Z"
+            fill="currentColor" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12.1312 22.411C12.1575 22.2914 12.2759 22.2157 12.3956 22.2421L14.6347 22.735C14.7544 22.7614 14.83 22.8797 14.8036 22.9994C14.7773 23.119 14.659 23.1947 14.5393 23.1683L12.3002 22.6753C12.1805 22.649 12.1049 22.5307 12.1312 22.411Z"
+            fill="currentColor" />
+          <path
+            d="M13.4203 27.6754C9.00897 27.7261 5.77228 23.6613 4.70536 21.6225C4.54691 21.3197 4.42016 21.2739 4.32509 21.3373C4.17297 21.4387 4.28282 21.6437 4.32507 21.7493C4.85747 22.9916 5.58213 24.0416 5.87791 24.4113C4.83846 26.1353 4.49409 27.855 4.45183 28.4994C6.1758 26.8008 7.91668 26.8832 8.57162 27.1367C13.7055 29.7987 16.5577 27.929 18.1739 27.1367C19.4669 26.5029 21.4803 27.7388 22.3254 28.436C22.224 26.8642 21.3747 25.1402 20.9627 24.4747C21.6282 23.5873 22.1669 22.5099 22.4522 21.9711C22.6803 21.5401 22.6106 21.369 22.5472 21.3373C22.3951 21.2613 22.2092 21.4958 22.1353 21.6225C21.6599 22.4148 18.9345 27.6121 13.4203 27.6754Z"
+            fill="currentColor" />
+          <text x="32" y="21" font-family="Arial, sans-serif" font-weight="bold" font-size="22"
+            fill="currentColor">Jiny</text>
+        </svg>
+      </a>
+
+      <!-- Mobile: Right Toggle (Menu) -->
+      <div class="d-flex d-lg-none ms-auto">
+        <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar"
+          aria-controls="bdNavbar" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid"
+            viewBox="0 0 16 16">
+            <path
+              d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- OffCanvas -->
+      <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar"
+        aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
+        <!-- OffCanver Header -->
+        <div class="offcanvas-header px-4 pb-0">
+          <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">Jiny</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"
+            data-bs-target="#bdNavbar">
+          </button>
+        </div>
+
+        <!-- OffCanver Body -->
+        <div class="offcanvas-body p-4 pt-0 p-lg-0">
+          <hr class="d-lg-none text-white-50">
+
+          <ul class="navbar-nav flex-column flex-lg-row bd-navbar-nav">
+            
+            <li class="nav-item">
+              <a class="nav-link py-2 px-0 px-lg-2" href="/basic">자바기초</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link py-2 px-0 px-lg-2" href="/oop">객체지향</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link py-2 px-0 px-lg-2" href="/part03">입출력</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link py-2 px-0 px-lg-2" href="/database">데이터베이스</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link py-2 px-0 px-lg-2" href="/gui">GUI</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link py-2 px-0 px-lg-2" href="/backend">백엔드</a>
+            </li>
+            
+          </ul>
+
+          <hr class="d-lg-none text-white-50">
+
+          <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+            <li class="nav-item col-6 col-lg-auto">
+              <a class="nav-link py-2 px-0 px-lg-2" href="https://github.com/jinydev/datas" target="_blank"
+                rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="navbar-nav-svg"
+                  viewBox="0 0 512 499.36" role="img">
+                  <title>GitHub</title>
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z">
+                  </path>
+                </svg>
+                <small class="d-lg-none ms-2">GitHub</small>
+              </a>
+            </li>
+
+            <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+              <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+              <hr class="d-lg-none my-2 text-white-50">
+            </li>
+
+            <li class="nav-item col-6 col-lg-auto">
+              <a class="nav-link py-2 px-0 px-lg-2" href="https://jiny.dev" aria-label="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="navbar-nav-svg"
+                  viewBox="0 0 16 16" role="img">
+                  <title>Home</title>
+                  <path fill="currentColor"
+                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                </svg>
+                <small class="d-lg-none ms-2">Home</small>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container bd-gutter mt-3 my-md-4 bd-layout">
+    <aside class="bd-sidebar scrollBar">
+        <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar"
+            aria-labelledby="bdSidebarOffcanvasLabel">
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">학습목차</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    data-bs-target="#bdSidebar"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <!-- 네비게이션 -->
+                <nav class="bd-links w-100" id="bd-docs-nav" aria-label="Docs navigation">
+  <ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
+    <li class="bd-links-group py-2">
+      <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+        강의 목차
+      </strong>
+      <ul class="list-unstyled fw-normal pb-2 small">
+        
+        
+
+        
+        <li>
+          
+          
+          
+          <button
+            class="bd-links-link bd-links-btn btn d-inline-flex align-items-center rounded border-0 collapsed w-100"
+            data-bs-toggle="collapse" data-bs-target="#collapse-1"
+            aria-expanded="false">
+            Part 01. 자바 기초
+            <svg class="bi ms-auto" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div class="collapse " id="collapse-1">
+            <ul class="list-unstyled fw-normal pb-1 small ms-3">
+              
+              <li>
+                <a href="/basic/java"
+                  class="bd-links-link d-inline-block rounded ">
+                  자바 언어 소개
+                </a>
+              </li>
+              
+              <li>
+                <a href="/basic/setup"
+                  class="bd-links-link d-inline-block rounded ">
+                  개발 환경 구축
+                </a>
+              </li>
+              
+              <li>
+                <a href="/basic/start"
+                  class="bd-links-link d-inline-block rounded ">
+                  01. 자바 시작하기
+                </a>
+              </li>
+              
+              <li>
+                <a href="/basic/variable"
+                  class="bd-links-link d-inline-block rounded ">
+                  02. 변수와 타입
+                </a>
+              </li>
+              
+              <li>
+                <a href="/basic/operator"
+                  class="bd-links-link d-inline-block rounded ">
+                  03. 연산자
+                </a>
+              </li>
+              
+              <li>
+                <a href="/basic/condition"
+                  class="bd-links-link d-inline-block rounded ">
+                  04. 조건문
+                </a>
+              </li>
+              
+              <li>
+                <a href="/basic/loop"
+                  class="bd-links-link d-inline-block rounded ">
+                  05. 반복문
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li>
+          
+          
+          
+          <button
+            class="bd-links-link bd-links-btn btn d-inline-flex align-items-center rounded border-0 collapsed w-100"
+            data-bs-toggle="collapse" data-bs-target="#collapse-2"
+            aria-expanded="false">
+            Part 02. 객체지향
+            <svg class="bi ms-auto" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div class="collapse " id="collapse-2">
+            <ul class="list-unstyled fw-normal pb-1 small ms-3">
+              
+              <li>
+                <a href="/oop/reference"
+                  class="bd-links-link d-inline-block rounded ">
+                  05. 참조 타입
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/oop"
+                  class="bd-links-link d-inline-block rounded ">
+                  06. 클래스
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/extends"
+                  class="bd-links-link d-inline-block rounded ">
+                  07. 상속
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/interface"
+                  class="bd-links-link d-inline-block rounded ">
+                  08. 인터페이스
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/nested"
+                  class="bd-links-link d-inline-block rounded ">
+                  09. 중첩 선언과 익명 객체
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/module"
+                  class="bd-links-link d-inline-block rounded ">
+                  10. 라이브러리와 모듈
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/exception"
+                  class="bd-links-link d-inline-block rounded ">
+                  11. 예외 처리
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/api"
+                  class="bd-links-link d-inline-block rounded ">
+                  12. java.base 모듈
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/generic"
+                  class="bd-links-link d-inline-block rounded ">
+                  13. 제네릭
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/collection"
+                  class="bd-links-link d-inline-block rounded ">
+                  15. 컬렉션 자료구조
+                </a>
+              </li>
+              
+              <li>
+                <a href="/oop/lambda"
+                  class="bd-links-link d-inline-block rounded ">
+                  16. 람다식
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li>
+          
+          
+          
+          <button
+            class="bd-links-link bd-links-btn btn d-inline-flex align-items-center rounded border-0 collapsed w-100"
+            data-bs-toggle="collapse" data-bs-target="#collapse-3"
+            aria-expanded="false">
+            Part 03. 라이브러리 활용
+            <svg class="bi ms-auto" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div class="collapse " id="collapse-3">
+            <ul class="list-unstyled fw-normal pb-1 small ms-3">
+              
+              <li>
+                <a href="/part03/thread"
+                  class="bd-links-link d-inline-block rounded ">
+                  14. 멀티 스레드
+                </a>
+              </li>
+              
+              <li>
+                <a href="/part03/io"
+                  class="bd-links-link d-inline-block rounded ">
+                  17. 데이터 입출력
+                </a>
+              </li>
+              
+              <li>
+                <a href="/part03/stream"
+                  class="bd-links-link d-inline-block rounded ">
+                  18. 데이터 입출력 (심화)
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li>
+          
+          
+          
+          <button
+            class="bd-links-link bd-links-btn btn d-inline-flex align-items-center rounded border-0 collapsed w-100"
+            data-bs-toggle="collapse" data-bs-target="#collapse-4"
+            aria-expanded="false">
+            데이터베이스
+            <svg class="bi ms-auto" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div class="collapse " id="collapse-4">
+            <ul class="list-unstyled fw-normal pb-1 small ms-3">
+              
+              <li>
+                <a href="/database/jdbc"
+                  class="bd-links-link d-inline-block rounded ">
+                  20. JDBC
+                </a>
+              </li>
+              
+              <li>
+                <a href="/database/mysql"
+                  class="bd-links-link d-inline-block rounded ">
+                  22. MySQL
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li>
+          
+          
+          
+          <button
+            class="bd-links-link bd-links-btn btn d-inline-flex align-items-center rounded border-0 collapsed w-100"
+            data-bs-toggle="collapse" data-bs-target="#collapse-5"
+            aria-expanded="false">
+            네트워크 프로그래밍
+            <svg class="bi ms-auto" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div class="collapse " id="collapse-5">
+            <ul class="list-unstyled fw-normal pb-1 small ms-3">
+              
+              <li>
+                <a href="/network/tcp"
+                  class="bd-links-link d-inline-block rounded ">
+                  19. 네트워크 입출력
+                </a>
+              </li>
+              
+              <li>
+                <a href="/network/nio"
+                  class="bd-links-link d-inline-block rounded ">
+                  25. NIO
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li>
+          
+          
+          
+          <button
+            class="bd-links-link bd-links-btn btn d-inline-flex align-items-center rounded border-0 collapsed w-100"
+            data-bs-toggle="collapse" data-bs-target="#collapse-6"
+            aria-expanded="false">
+            GUI 프로그래밍
+            <svg class="bi ms-auto" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div class="collapse " id="collapse-6">
+            <ul class="list-unstyled fw-normal pb-1 small ms-3">
+              
+              <li>
+                <a href="/gui/1.awt"
+                  class="bd-links-link d-inline-block rounded ">
+                  1. AWT
+                </a>
+              </li>
+              
+              <li>
+                <a href="/gui/2.swing"
+                  class="bd-links-link d-inline-block rounded ">
+                  2. Swing
+                </a>
+              </li>
+              
+              <li>
+                <a href="/gui/3.javafx"
+                  class="bd-links-link d-inline-block rounded ">
+                  3. JavaFX
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li>
+          
+          
+          
+          <button
+            class="bd-links-link bd-links-btn btn d-inline-flex align-items-center rounded border-0 collapsed w-100"
+            data-bs-toggle="collapse" data-bs-target="#collapse-7"
+            aria-expanded="false">
+            백엔드 웹서버 개발
+            <svg class="bi ms-auto" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <div class="collapse " id="collapse-7">
+            <ul class="list-unstyled fw-normal pb-1 small ms-3">
+              
+              <li>
+                <a href="/backend/jsp/01_intro"
+                  class="bd-links-link d-inline-block rounded ">
+                  1주차. 웹 서버와 환경 설정
+                </a>
+              </li>
+              
+              <li>
+                <a href="/backend/jsp/05_crud"
+                  class="bd-links-link d-inline-block rounded ">
+                  2주차. JSP 게시판 만들기
+                </a>
+              </li>
+              
+              <li>
+                <a href="/backend/boot/01_intro"
+                  class="bd-links-link d-inline-block rounded ">
+                  3주차. Spring Boot 시작하기
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+        </div>
+    </aside>
+
+    <main class="bd-main order-1">
+        <nav aria-label="breadcrumb" class="mt-3">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="breadcrumb-item"><a href="/67_statistical_estimation/">67 statistical estimation</a></li>
+        
+        
+        
+        
+        
+        
+        <li class="breadcrumb-item active" aria-current="page">5. 장사꾼의 딜레마 신뢰도Confidence Level와 오차 한계</li>
+        
+        
+        
+    </ol>
+</nav>
+        <div class="bd-content ps-lg-2">
+            
+<h1 id="5-장사꾼의-딜레마-신뢰도confidence-level와-오차-한계">5. 장사꾼의 딜레마: 신뢰도(Confidence Level)와 오차 한계</h1>
+
+<h2 id="도입부-학습-목표-learning-objectives">[도입부] 학습 목표 (Learning Objectives)</h2>
+<ul>
+  <li>4수업의 투망 공식에서 말하던 “95% 확률” 이라는 단어의 진짜 수학적 정의를 해부하고, 왜 학자들이 무조건 신뢰도만 100% 로 높이려 하지 않는지 그 <strong>‘신뢰도와 오차 크기 간의 잔혹한 반비례 딜레마’</strong> 를 깨닫습니다.</li>
+  <li>“내가 던진 투망 안에 $m$이 들어올 확률을 99% 로 올려주쇼!” 라고 사장이 채근할 때, 통계학자들은 “그러면 투망(오차) 크기가 쓰레기처럼 너무 넓어져서 정보의 가치가 상실됩니다!” 라고 맞짱 뜨는 원리를 기하학적으로 증명합니다.</li>
+  <li>파이썬(Python)으로 $n$ (자본투입 조사 규모)을 폭발적으로 증가시켰을 때, 어마어마한 99% 의 맹신적 신뢰도를 유지하면서도 오차 밧줄을 텐트 송곳처럼 타이트하게 조여 버리는 돈의 마력을 시뮬레이션 합니다.</li>
+</ul>
+
+<hr />
+
+<h2 id="1-100-신뢰도의-헛소리">1. 100% 신뢰도의 헛소리</h2>
+
+<p>어떤 점쟁이가 말합니다. “이번 고3 모의고사 전국 평균(모평균 $m$)이 말이지… 음… 0점에서 100점 사이에 무조건 있을 것이여!!”
+놀랍게도 이 점쟁이의 예언은 <strong>100% 확률(신뢰도 100%)</strong> 로 무조건 적중합니다. 단 1% 의 거짓도 없는 참입니다. 
+하지만 이 결과는 아무짝에도 쓸모가 없는 쓰레기 정보입니다. 
+오차 간격(투망 크기)을 0점부터 100점으로 무식하게 넓혀버렸기 때문에 맞출 확률(신뢰도) 자체는 신의 경지에 이르렀지만, 정보의 해상도(Tightness) 가 붕괴해 버린 것입니다.</p>
+
+<p>통계학자는 <strong>[신뢰도(Confidence Level)]</strong> 와 <strong>[예리함(오차의 크기 작음)]</strong> 이라는 두 마리 토끼 사이에서 항상 외줄 타기 딜레마에 시달립니다.</p>
+<ol>
+  <li>“신뢰도를 <strong>95%</strong> ($1.96$배) 방어막으로 칠까? 투망이 나름 쫀쫀하게 조여들긴 하겠지만(예: 키 170~174cm), 100번 중 5번은 내가 던진 그물 바깥으로 모평균 $m$이 빠져나가서 내 목이 물리겠지…”</li>
+  <li>“안전방빵 가자! 신뢰도를 아예 무결점급인 <strong>99%</strong> ($2.58$배) 로 늘려 밧줄 길이를 확 벌려버리자! (예: 키 150~195cm) 거의 다 맞추긴 하겠는데, 오차 범위가 초딩도 맞추는 수준으로 너무 벌어져서 사장한테 결재서류 맞고 쫓겨나겠지…”</li>
+</ol>
+
+<p><img src="./img/05_confidence_level_error.svg" alt="신뢰도와 오차의 딜레마 SVG" /></p>
+
+<p><br /></p>
+
+<h2 id="2-딜레마를-박살-내는-유일한-탈출구-샘플-수-n-폭탄">2. 딜레마를 박살 내는 유일한 탈출구: 샘플 수 ($n$) 폭탄!</h2>
+
+<p><img src="./img/05_error_bound_formula.svg" alt="신뢰구간 오차 한계 해결법" /></p>
+
+<p><strong>이 지독한 딜레마를 박살 낼 유일한 치트키는 분모에 있는 $n$(조사 인원수) 하나뿐입니다.</strong></p>
+
+<p>오차의 한계 (에러, 그물의 반지름) 공식: $E = Z \times \frac{\sigma}{\sqrt{n}}$</p>
+
+<p>신뢰도를 99%($Z=2.58$) 로 높여서 그물이 커져버린 상황입니까? 그렇다면 분모에 있는 $n$(조사 대상 인원) 에 돈과 시간을 퍼부어서 늘리면 됩니다!
+분모 $\sqrt{n}$ 이 거대해지면 커졌던 오차 크기 $Z$ 가 상쇄되어 그물이 다시 쪼그라들게 됩니다.
+신뢰도는 99% 로 유지하고 싶고, 밧줄은 팽팽하게 쪼아서 아나운서처럼 간지나게 좁은 오차율을 보고하고 싶다면, 방법은 오직 하나입니다.</p>
+
+<p>저 흉측하게 팽창한 분자 상수 값을 씹어 먹을 정도로 <strong>“분모인 조사 대상 인원 크기 루트 $\mathbf{n}$ ($n$ 표본 뽑기 수) 을 잔인할 정도로 증가시켜 버리는 것(돈을 쏟아붓는 것)”</strong> 입니다. 조사 인원 $n$을 100명에서 10,000명 단위로 무자비하게 폭증시키면, 분모가 너무 비대해져서 신뢰도의 오만함을 압착해 버리고 밧줄구간 간격은 다시 레이저처럼 타이트하게 뾰족해집니다.</p>
+
+<p>결국 통계의 정확도 = 자본력(수백만 명 리서치 패널 돈) 임을 증명하는 자본주의의 정수입니다.</p>
+
+<hr />
+
+<h2 id="3--파이썬python-조사-규모n-팽창에-따른-극악의-오차율-압축-시뮬레이터">3. 💻 파이썬(Python) 조사 규모($n$) 팽창에 따른 극악의 오차율 압축 시뮬레이터</h2>
+
+<p>동일한 $99\%$ 맹신적 신뢰도 하에서, 우리가 통계청에 돈을 부어 설문 인원 $n$을 100 -&gt; 10000 으로 늘림에 따라 뉴스 자막 하단에 나가는 뻥튀기 기하학 오차율이 얼마나 타이트하게 조여지는지 코드로 관찰합니다.</p>
+
+<h3 id="-파이썬-예제-자본력표본크기-n-의-돈찍누-오차-밧줄-압착-효과">🐍 파이썬 예제: 자본력(표본크기 $n$) 의 돈찍누 오차 밧줄 압착 효과</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">--- 💸 자본주의 팩트 체크: 샘플(n) 파워가 딜레마를 부술 때 ---</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># (고정 스펙) 한국인 평균 월급 데이터 (편차 100만 원짜리 개판 집단이라 가정)
+</span><span class="n">sigma</span> <span class="o">=</span> <span class="mf">100.0</span>
+
+<span class="c1"># 1. 거지 회사 (n = 100명 조사에 그침)
+</span><span class="n">n_poor</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="c1"># 99% 신뢰도를 위한 K 방어상수는 2.58 로 획일적 고정!
+</span><span class="n">margin_error_poor</span> <span class="o">=</span> <span class="mf">2.58</span> <span class="o">*</span> <span class="p">(</span><span class="n">sigma</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="nf">sqrt</span><span class="p">(</span><span class="n">n_poor</span><span class="p">))</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">▶ 가난한 조사 (예산 100명, 신뢰도는 99% 보장)</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s"> 💣 오차 길이: 무려 ±</span><span class="si">{</span><span class="n">margin_error_poor</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s"> 만원!</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">    -&gt; 멘트: </span><span class="se">\"</span><span class="s">월급은 평균 300만 원, 오차는 위아래로 무려 ±25만 원!! (범위가 벌어져 신뢰성 체감 쓰레기)</span><span class="se">\"</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">-</span><span class="sh">"</span> <span class="o">*</span> <span class="mi">50</span><span class="p">)</span>
+
+<span class="c1"># 2. 대기업 통계청 (n = 10,000명 무작위 무차별 폭심 조사)
+</span><span class="n">n_rich</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="n">margin_error_rich</span> <span class="o">=</span> <span class="mf">2.58</span> <span class="o">*</span> <span class="p">(</span><span class="n">sigma</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="nf">sqrt</span><span class="p">(</span><span class="n">n_rich</span><span class="p">))</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">▶ 대기업 싹쓸이 조사 (예산 10,000명 패널, 신뢰도는 동일하게 99% 보장)</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s"> ⚡ 밧줄 오차 압착: 겨우 ±</span><span class="si">{</span><span class="n">margin_error_rich</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s"> 만원!</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">    -&gt; 멘트: </span><span class="se">\"</span><span class="s">월급은 평균 300만 원, 오차는 ±2만 5천 원 선(1% 이내)의 거의 오발이 불가능한 수준입니다.</span><span class="se">\"</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># 결과창:
+# --- 💸 자본주의 팩트 체크: 샘플(n) 파워가 딜레마를 부술 때 ---
+# ▶ 가난한 조사 (예산 100명, 신뢰도는 99% 보장)
+#  💣 오차 길이: 무려 ±25.80 만원!
+#     -&gt; 멘트: "월급은 평균 300만 원, 오차는 위아래로 무려 ±25만 원!! (범위가 벌어져 신뢰성 체감 쓰레기)"
+# --------------------------------------------------
+# ▶ 대기업 싹쓸이 조사 (예산 10,000명 패널, 신뢰도는 동일하게 99% 보장)
+#  ⚡ 밧줄 오차 압착: 겨우 ±2.58 만원!
+#     -&gt; 멘트: "월급은 평균 300만 원, 오차는 ±2만 5천 원 선(1% 이내)의 거의 오발이 불가능한 수준입니다."
+</span></code></pre></div></div>
+
+<p>코드에서 보듯 딜레마 게임의 유일한 파훼법은 “조사 대상 규모를 우주급으로 팽창시키는 것” 뿐이며, 분모의 파워($n$) 가 커질수록 뉴스 멘트는 훨씬 쫀쫀한 팩트(“단 1% 미만의 오차범위”) 로 세탁되어 시청자들의 뇌에 박히게 됩니다.</p>
+
+<hr />
+
+<h2 id="결론-학습-정리-summary">[결론] 학습 정리 (Summary)</h2>
+
+<ol>
+  <li><strong>신뢰 구간의 양면성</strong>: 99% 맞췄다고 안심하지 마십시오. 정보를 1~100으로 넓히면 바보도 다 100% 당첨 적중률(신뢰도)을 보장합니다. 진정한 수학 데이터 분석가는 확률 보장성은 95% 만 챙기더라도 구간 오차 간격을 좁히는 현실 타협안을 선택합니다.</li>
+  <li><strong>K 변수의 고정 오만함</strong>: 신뢰도를 넓히고 싶은 인간의 변태적 욕망(오차 K 값이 $1.96 \rightarrow 2.58$ 로 팽창) 은 필연적으로 그물 밧줄 폭투망의 크기를 우주로 팽창시켜 버립니다.</li>
+  <li><strong>자본주의 $n$ 개 파워</strong>: ఈ 반비례 압박의 나사를 다시 제자리로 팽팽히 쪼매주는 궁극의 열쇠는 무식하게 돈(예산)을 쳐발라 분모에 위치한 표본 크기 루트 $n$ 을 1만, 10만 사이즈로 밀어 넣어 거품 값을 폭발 제어하는 통계청의 깡패 짓뿐입니다.</li>
+</ol>
+
+
+
+            <div class="mt-10">
+                <!-- 구글 에스센스 광고 -->
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3321560028329475"
+                    crossorigin="anonymous"></script>
+                <!-- jinydev-java -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3321560028329475"
+                    data-ad-slot="9323221865" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+        </div>
+
+        <div class="bd-toc mt-3 mb-5 my-lg-0 ps-xl-3 mb-lg-5 text-body-secondary">
+
+  <button class="btn btn-link p-md-0 mb-2 mb-md-0 text-decoration-none bd-toc-toggle d-md-none" type="button"
+    data-bs-toggle="collapse" data-bs-target="#tocContents" aria-expanded="false" aria-controls="tocContents">
+    서브목차
+    <svg class="bi d-md-none ms-2" aria-hidden="true">
+      <use xlink:href="#chevron-expand"></use>
+    </svg>
+  </button>
+
+  <strong class="d-none d-md-block h6 my-2">서브목차</strong>
+
+  <div class="collapse bd-toc-collapse" id="tocContents">
+    <nav id="TableOfContents">
+      <!--
+      <ul>
+        <li><a href="#quick-start">Quick start</a></li>
+        <li><a href="#cdn-links">CDN links</a></li>
+        <li><a href="#next-steps">Next steps</a></li>
+        <li><a href="#js-components">JS components</a></li>
+        <li><a href="#important-globals">Important globals</a>
+          <ul>
+            <li><a href="#html5-doctype">HTML5 doctype</a></li>
+            <li><a href="#responsive-meta-tag">Responsive meta tag</a></li>
+            <li><a href="#box-sizing">Box-sizing</a></li>
+            <li><a href="#reboot">Reboot</a></li>
+          </ul>
+        </li>
+        <li><a href="#community">Community</a></li>
+      </ul>
+      -->
+    </nav>
+  </div>
+</div>
+    </main>
+
+
+</div>
+
+  <footer class="container">
+  <hr class="mt-5 mb-3">
+  <div class="row align-items-center pb-3">
+    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+      <p class="mb-0 text-secondary">Copyright 2017~2026 JinyDev. All Rights Reserved.</p>
+    </div>
+    <div class="col-md-6 text-center text-md-end">
+      
+      <a href="https://datas.jiny.dev" class="text-decoration-none text-secondary ms-3">빅데이터</a>
+      
+      <a href="https://mysql.jiny.dev" class="text-decoration-none text-secondary ms-3">MySQL</a>
+      
+      <a href="https://php.jiny.dev" class="text-decoration-none text-secondary ms-3">PHP</a>
+      
+      <a href="https://java.jiny.dev" class="text-decoration-none text-secondary ms-3">자바</a>
+      
+      <a href="https://git.jiny.dev" class="text-decoration-none text-secondary ms-3">깃&깃허브</a>
+      
+      <a href="https://linux.jiny.dev" class="text-decoration-none text-secondary ms-3">리눅스</a>
+      
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+
+    window.addEventListener('load', async function () {
+      mermaid.initialize({ startOnLoad: false });
+
+      const mermaidCodes = document.querySelectorAll('pre code.language-mermaid');
+      const mermaidDivs = [];
+
+      mermaidCodes.forEach(codeBlock => {
+        const mermaidDefinition = codeBlock.textContent.trim();
+        const container = codeBlock.closest('div.highlighter-rouge');
+
+        const mermaidDiv = document.createElement('div');
+        mermaidDiv.className = 'mermaid';
+        mermaidDiv.textContent = mermaidDefinition;
+
+        if (container) {
+          container.replaceWith(mermaidDiv);
+        } else {
+          const pre = codeBlock.parentElement;
+          if (pre) pre.replaceWith(mermaidDiv);
+        }
+        mermaidDivs.push(mermaidDiv);
+      });
+
+      if (mermaidDivs.length > 0) {
+        await mermaid.run({ nodes: mermaidDivs });
+      }
+    });
+  </script>
+  <script src="/assets/js/toc.js"></script>
+  <script src="/assets/js/sidebar.js"></script>
+
+</body>
+
+</html>

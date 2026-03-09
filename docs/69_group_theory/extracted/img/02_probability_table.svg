@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">확률분포표 구조와 100% 무결성 철칙</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"세상의 모든 경우의 수를 가둬놓은
+        엑셀 격자망, 다 더하면 무조건 1"</text>
+
+    <!-- Big Table Container -->
+    <g transform="translate(100, 150)">
+
+        <!-- Table Borders -->
+        <rect x="0" y="0" width="700" height="180" fill="#112233" stroke="#00ffcc" stroke-width="4"
+            filter="url(#glow)" />
+
+        <!-- Vertical Lines -->
+        <line x1="200" y1="0" x2="200" y2="180" stroke="#00ffcc" stroke-width="2" />
+        <line x1="325" y1="0" x2="325" y2="180" stroke="#00ffcc" stroke-width="2" />
+        <line x1="450" y1="0" x2="450" y2="180" stroke="#00ffcc" stroke-width="2" />
+        <line x1="575" y1="0" x2="575" y2="180" stroke="#00ffcc" stroke-width="2" />
+
+        <!-- Horizontal Line -->
+        <line x1="0" y1="90" x2="700" y2="90" stroke="#00ffcc" stroke-width="2" />
+
+        <!-- Labels (First Column) -->
+        <rect x="0" y="0" width="200" height="90" fill="#223344" />
+        <rect x="0" y="90" width="200" height="90" fill="#223344" />
+        <text x="100" y="50" fill="#ffffff" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle">확률변수 X</text>
+        <text x="100" y="145" fill="#4da6ff" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle">확률 P(X)</text>
+
+        <!-- X Values (Top Row) -->
+        <text x="262.5" y="50" fill="#ffffff" font-family="monospace" font-size="28" font-weight="bold"
+            text-anchor="middle">0</text>
+        <text x="387.5" y="50" fill="#ffffff" font-family="monospace" font-size="28" font-weight="bold"
+            text-anchor="middle">100</text>
+        <text x="512.5" y="50" fill="#ffffff" font-family="monospace" font-size="28" font-weight="bold"
+            text-anchor="middle">500</text>
+
+        <!-- P Values (Bottom Row) -->
+        <text x="262.5" y="145" fill="#4da6ff" font-family="monospace" font-size="26" font-weight="bold"
+            text-anchor="middle">0.5</text>
+        <text x="387.5" y="145" fill="#4da6ff" font-family="monospace" font-size="26" font-weight="bold"
+            text-anchor="middle">0.25</text>
+        <text x="512.5" y="145" fill="#4da6ff" font-family="monospace" font-size="26" font-weight="bold"
+            text-anchor="middle">0.25</text>
+
+        <!-- Sum Column -->
+        <rect x="575" y="0" width="125" height="90" fill="#ff4d4d" fill-opacity="0.2" />
+        <rect x="575" y="90" width="125" height="90" fill="#ff4d4d" fill-opacity="0.2" />
+        <text x="637.5" y="50" fill="#ffaa00" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle">합계(Sum)</text>
+        <text x="637.5" y="145" fill="#ff4d4d" font-family="monospace" font-size="32" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">1</text>
+
+    </g>
+
+    <!-- Highlighting Equation -->
+    <g transform="translate(100, 350)">
+        <path d="M 230 0 L 230 20 L 540 20 L 540 0" fill="none" stroke="#ff4d4d" stroke-width="3"
+            stroke-dasharray="8 4" />
+        <text x="385" y="50" fill="#ff4d4d" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle">0.5 + 0.25 + 0.25 = 1</text>
+        <text x="385" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">아랫줄(확률P) 의 데이터
+            총합 검증 체계 (디버깅 안전 퓨즈)</text>
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="480" width="600" height="60" rx="10" fill="#2b1111" stroke="#ffaa00" stroke-width="2" />
+    <text x="450" y="510" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">오차가 단 0.01 이라도 난다면
+        그것은 프로그래머의 실수이거나, 도박꾼의 사기다.</text>
+    <text x="450" y="530" fill="#ffaa00" font-family="sans-serif" font-size="16" font-weight="bold"
+        text-anchor="middle">우주를 구성하는 모든 이벤트 확률 합산은 무조건 1.0 이어야 한다.</text>
+
+</svg>

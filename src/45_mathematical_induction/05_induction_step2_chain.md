@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '05. 수학적 귀납법 2단계 연쇄 폭발 Chain Reaction'
+---
+
 # 05. 수학적 귀납법 2단계: 연쇄 폭발 (Chain Reaction)
 
 ## 1. 학습 목표 (Learning Objectives)

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2f9e44" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">밑을 내 마음대로 튜닝하다: 로그 밑 변환 공식 (Base Change)</text>
+
+    <g transform="translate(150, 150)">
+
+        <!-- Original Log -->
+        <rect x="-80" y="-80" width="100" height="120" fill="#ebfbee" stroke="#40c057" stroke-width="2" rx="8" />
+        <text x="-30" y="-10" fill="#495057" font-size="28" font-family="serif" font-weight="bold">
+            log<tspan baseline-shift="sub" font-size="18" fill="#e03131">a</tspan>
+            <tspan fill="#1864ab">b</tspan>
+        </text>
+
+        <!-- Arrow -->
+        <path d="M 40 -20 Q 90 -50 140 -20" fill="none" stroke="#2b8a3e" stroke-width="4"
+            marker-end="url(#arrow-green)" />
+        <text x="90" y="-40" fill="#2b8a3e" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">밑 변환 폭발!</text>
+
+        <!-- Converted Log Fraction -->
+        <rect x="170" y="-80" width="160" height="120" fill="#e3fafc" stroke="#0c8599" stroke-width="2" rx="8" />
+
+        <!-- Numerator -->
+        <text x="250" y="-35" fill="#495057" font-size="24" font-family="serif" font-weight="bold" text-anchor="middle">
+            log<tspan baseline-shift="sub" font-size="14" fill="#f08c00">c</tspan>
+            <tspan fill="#1864ab">b</tspan>
+        </text>
+
+        <!-- Divider Line -->
+        <line x1="200" y1="-15" x2="300" y2="-15" stroke="#495057" stroke-width="3" />
+
+        <!-- Denominator -->
+        <text x="250" y="20" fill="#495057" font-size="24" font-family="serif" font-weight="bold" text-anchor="middle">
+            log<tspan baseline-shift="sub" font-size="14" fill="#f08c00">c</tspan>
+            <tspan fill="#e03131">a</tspan>
+        </text>
+
+    </g>
+
+    <text x="300" y="220" fill="#868e96" font-size="16" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">밑에 있던 a는 아래층으로, 진수 b는 위층으로! 새로운 밑(c)이 탄생!</text>
+
+    <defs>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+    </defs>
+</svg>

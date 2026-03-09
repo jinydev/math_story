@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 76. 선택과 배열 Selection and Arrangement'
+---
+
 # 수학이야기 76. 선택과 배열 (Selection and Arrangement)
 
 ## 📌 학습 개요

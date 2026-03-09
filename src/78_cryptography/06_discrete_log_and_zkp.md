@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '06. 증명하지 않고 증명하기 영지식 동굴 Zero-Knowledge Proof'
+---
+
 # 06. 증명하지 않고 증명하기: 영지식 동굴 (Zero-Knowledge Proof)
 
 ## 1. 학습 목표 (Learning Objectives)

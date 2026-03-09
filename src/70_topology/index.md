@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 85. 위상수학 Topology'
+---
+
 # 수학이야기 85. 위상수학 (Topology)
 
 ## 📌 학습 개요

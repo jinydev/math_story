@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="400">
+    <defs>
+        <style>
+            .bg {
+                fill: #f8fafc;
+                rx: 10;
+                stroke: #e2e8f0;
+                stroke-width: 2;
+            }
+
+            .sphere {
+                fill: #6ee7b7;
+                fill-opacity: 0.15;
+                stroke: #10b981;
+                stroke-width: 2;
+            }
+
+            /* Equator and Meridian lines to form a grid on the sphere */
+            .grid-line {
+                fill: none;
+                stroke: #94a3b8;
+                stroke-width: 1;
+                stroke-dasharray: 4;
+            }
+
+            /* The Spherical Triangle */
+            .triangle-path {
+                fill: #fca5a5;
+                fill-opacity: 0.6;
+                stroke: #ef4444;
+                stroke-width: 3;
+            }
+
+            .angle-arc {
+                fill: none;
+                stroke: #b91c1c;
+                stroke-width: 2;
+            }
+
+            .point {
+                fill: #1e293b;
+            }
+
+            .text-label {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 15px;
+                fill: #1e293b;
+                font-weight: bold;
+            }
+
+            .text-title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 18px;
+                fill: #ef4444;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .text-math {
+                font-family: 'Courier New', monospace;
+                font-size: 16px;
+                fill: #dc2626;
+                font-weight: bold;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <!-- The Sphere -->
+    <circle cx="250" cy="220" r="140" class="sphere" />
+    <ellipse cx="250" cy="220" rx="140" ry="30" class="grid-line" /> <!-- Equator -->
+    <path d="M 250 80 Q 200 220 250 360" class="grid-line" /> <!-- Inner curving longitude -->
+
+    <!-- Spherical Triangle Vertices -->
+    <!-- A: North Pole -->
+    <circle cx="250" cy="80" r="4" class="point" />
+    <text x="245" y="65" class="text-label">A (북극점)</text>
+
+    <!-- B: Equator Left -->
+    <circle cx="110" cy="220" r="4" class="point" />
+    <text x="50" y="225" class="text-label">B (적도)</text>
+
+    <!-- C: Equator Front -->
+    <circle cx="250" cy="250" r="4" class="point" />
+    <text x="260" y="270" class="text-label">C (적도)</text>
+
+    <!-- Edges of the Triangle (Curved Lines) -->
+    <!-- A to B (Meridian curve) -->
+    <path d="M 250 80 Q 140 140 110 220" class="triangle-path" />
+    <!-- B to C (Equator curve) -->
+    <path d="M 110 220 Q 180 260 250 250" class="triangle-path" />
+    <!-- C to A (Meridian curve) -->
+    <path d="M 250 250 Q 260 160 250 80" class="triangle-path" />
+
+    <!-- 90 Degree Angle Indicators (Rectangular markers on the curved surface) -->
+    <!-- Angle B -->
+    <path d="M 125 210 L 135 220 L 125 230" class="angle-arc" />
+    <text x="90" y="200" class="text-math">90°</text>
+
+    <!-- Angle C -->
+    <path d="M 235 235 L 235 245 L 245 235" class="angle-arc" />
+    <text x="260" y="225" class="text-math">90°</text>
+
+    <!-- Angle A -->
+    <path d="M 235 100 L 250 110 L 260 90" class="angle-arc" />
+    <text x="265" y="110" class="text-math">90°</text>
+
+    <!-- Title and Details -->
+    <text x="250" y="35" class="text-title">구면 기하학 (Spherical Geometry)</text>
+
+    <text x="250" y="380" font-family="'Pretendard', sans-serif" font-size="14px" fill="#475569" text-anchor="middle">
+        곡률이 양수(+)인 구면에서는 공간이 볼록하게 휘어져 있으므로,
+    </text>
+    <text x="250" y="400" font-family="'Pretendard', sans-serif" font-size="14px" fill="#dc2626" font-weight="bold"
+        text-anchor="middle">
+        삼각형의 세 내각의 합이 무조건 180도를 초과합니다! (예: 90° + 90° + 90° = 270°)
+    </text>
+</svg>

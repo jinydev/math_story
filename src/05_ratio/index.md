@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '22. 비 Ratio 뺄셈을 넘어선 나눗셈 스케일의 지배'
+---
+
 # 22. 비 (Ratio: 뺄셈을 넘어선 나눗셈 스케일의 지배)
 
 ## 이 단원의 핵심 (Chapter Focus)

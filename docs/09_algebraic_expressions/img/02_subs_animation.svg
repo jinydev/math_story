@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <style>
+      .move-anim { animation: moveIn 4s infinite ease-in-out; }
+      .fade-out { animation: fadeOut 4s infinite ease-in-out; }
+      .bracket { animation: bracketAppear 4s infinite ease-in-out; }
+      
+      @keyframes moveIn {
+        0%, 20% { opacity: 0; transform: translateY(-30px); }
+        40%, 80% { opacity: 1; transform: translateY(0); }
+        90%, 100% { opacity: 0; transform: translateY(0); }
+      }
+      @keyframes fadeOut {
+        0%, 30% { opacity: 1; }
+        40%, 100% { opacity: 0; }
+      }
+      @keyframes bracketAppear {
+        0%, 40% { opacity: 0; transform: scale(1.5); }
+        50%, 80% { opacity: 1; transform: scale(1); }
+        90%, 100% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <rect width="800" height="300" fill="url(#bg)" rx="10"/>
+
+  <text x="400" y="50" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#f8fafc" text-anchor="middle">음수 대입하기 (Substitution with Negative Numbers)</text>
+  
+  <g transform="translate(150, 150)">
+    <!-- Expression -->
+    <text x="0" y="0" font-family="'Courier New', monospace" font-size="60" font-weight="bold" fill="#f8fafc" text-anchor="middle">-3</text>
+    
+    <!-- Multiplication Sign that appears -->
+    <text x="70" y="-10" font-family="'Courier New', monospace" font-size="40" font-weight="bold" fill="#ef4444" text-anchor="middle" class="bracket">×</text>
+
+    <!-- The original 'x' variable -->
+    <text x="140" y="0" font-family="'Courier New', monospace" font-size="60" font-weight="bold" fill="#facc15" text-anchor="middle" class="fade-out">x</text>
+
+    <!-- The incoming number -2 -->
+    <g class="move-anim">
+      <!-- Shield Brackets -->
+      <text x="80" y="0" font-family="'Courier New', monospace" font-size="60" font-weight="bold" fill="#38bdf8" text-anchor="middle" class="bracket">(</text>
+      <text x="140" y="0" font-family="'Courier New', monospace" font-size="60" font-weight="bold" fill="#facc15" text-anchor="middle">-2</text>
+      <text x="200" y="0" font-family="'Courier New', monospace" font-size="60" font-weight="bold" fill="#38bdf8" text-anchor="middle" class="bracket">)</text>
+    </g>
+
+    <text x="300" y="0" font-family="'Courier New', monospace" font-size="60" font-weight="bold" fill="#f8fafc" text-anchor="middle">+ 4</text>
+  </g>
+
+</svg>

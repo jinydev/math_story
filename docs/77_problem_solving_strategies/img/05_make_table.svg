@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#0b7285" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">다섯 번째 전략: 혼돈을 제어하는 데이터베이스 '표 만들기 (Make a Table)'</text>
+
+    <!-- Chaos Text Blob -->
+    <g transform="translate(40, 60)">
+        <text x="50" y="20" fill="#fa5252" font-size="12" font-weight="bold">어지러운 정보 폭탄 (Chaos)</text>
+        <path d="M 10 40 Q 30 10, 80 50 T 130 30" fill="none" stroke="#adb5bd" stroke-width="2" />
+        <path d="M 20 60 Q 50 100, 100 80 T 140 90" fill="none" stroke="#adb5bd" stroke-width="2" />
+
+        <text x="75" y="45" fill="#495057" font-size="10">철수는 축구 싫어함</text>
+        <text x="30" y="80" fill="#495057" font-size="10">영희는 야구 좋아함</text>
+        <text x="80" y="105" fill="#495057" font-size="10">민수는 농구 안 함</text>
+        <text x="20" y="130" fill="#495057" font-size="10">수진이는 축구 광팬</text>
+    </g>
+
+    <!-- Filter Arrow -->
+    <path d="M 180 120 L 220 120" fill="none" stroke="#0b7285" stroke-width="4" marker-end="url(#arrow-cyan)" />
+    <rect x="180" y="100" width="40" height="15" fill="#e3fafc" rx="2" />
+    <text x="200" y="111" fill="#0b7285" font-size="9" font-weight="bold" text-anchor="middle">정렬!</text>
+
+    <!-- The Magic Table -->
+    <g transform="translate(250, 60)">
+        <!-- Table Borders -->
+        <rect x="0" y="0" width="300" height="150" fill="#fff" stroke="#adb5bd" stroke-width="2" />
+        <!-- Headers -->
+        <rect x="0" y="0" width="60" height="30" fill="#f1f3f5" stroke="#adb5bd" />
+        <rect x="60" y="0" width="80" height="30" fill="#e3fafc" stroke="#0b7285" />
+        <text x="100" y="20" fill="#0b7285" font-size="12" font-weight="bold" text-anchor="middle">축구 (O)</text>
+
+        <rect x="140" y="0" width="80" height="30" fill="#fff4e6" stroke="#f59f00" />
+        <text x="180" y="20" fill="#d9480f" font-size="12" font-weight="bold" text-anchor="middle">야구 (X)</text>
+
+        <rect x="220" y="0" width="80" height="30" fill="#ebfbee" stroke="#2b8a3e" />
+        <text x="260" y="20" fill="#2b8a3e" font-size="12" font-weight="bold" text-anchor="middle">농구 (X)</text>
+
+        <!-- Row 1: 철수 -->
+        <rect x="0" y="30" width="60" height="30" fill="#f8f9fa" stroke="#adb5bd" />
+        <text x="30" y="50" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">철수</text>
+        <line x1="0" y1="60" x2="300" y2="60" stroke="#adb5bd" />
+
+        <text x="100" y="50" fill="#fa5252" font-size="16" font-weight="bold" text-anchor="middle">X</text>
+        <text x="180" y="50" fill="#adb5bd" font-size="16" font-weight="bold" text-anchor="middle">?</text>
+        <text x="260" y="50" fill="#2b8a3e" font-size="16" font-weight="bold" text-anchor="middle">O</text>
+
+        <!-- Row 2: 영희 -->
+        <rect x="0" y="60" width="60" height="30" fill="#f8f9fa" stroke="#adb5bd" />
+        <text x="30" y="80" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">영희</text>
+        <line x1="0" y1="90" x2="300" y2="90" stroke="#adb5bd" />
+
+        <text x="100" y="80" fill="#adb5bd" font-size="16" font-weight="bold" text-anchor="middle">?</text>
+        <text x="180" y="80" fill="#2b8a3e" font-size="16" font-weight="bold" text-anchor="middle">O</text>
+        <text x="260" y="80" fill="#fa5252" font-size="16" font-weight="bold" text-anchor="middle">X</text>
+
+        <!-- Row 3: 수진 -->
+        <rect x="0" y="90" width="60" height="30" fill="#f8f9fa" stroke="#adb5bd" />
+        <text x="30" y="110" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">수진</text>
+        <line x1="0" y1="120" x2="300" y2="120" stroke="#adb5bd" />
+
+        <path d="M 90 100 L 100 110 L 115 95" fill="none" stroke="#2b8a3e" stroke-width="3" />
+        <text x="180" y="110" fill="#fa5252" font-size="16" font-weight="bold" text-anchor="middle">X</text>
+        <text x="260" y="110" fill="#fa5252" font-size="16" font-weight="bold" text-anchor="middle">X</text>
+
+        <!-- Highlight Box -->
+        <rect x="65" y="93" width="70" height="24" fill="none" stroke="#e03131" stroke-width="2"
+            stroke-dasharray="2,2" />
+        <text x="100" y="135" fill="#e03131" font-size="9" font-weight="bold" text-anchor="middle">수진이가 축구면</text>
+        <text x="100" y="145" fill="#e03131" font-size="9" font-weight="bold" text-anchor="middle">나머진 자동 X !</text>
+
+        <!-- Vertical Lines -->
+        <line x1="60" y1="0" x2="60" y2="150" stroke="#adb5bd" />
+        <line x1="140" y1="0" x2="140" y2="150" stroke="#adb5bd" />
+        <line x1="220" y1="0" x2="220" y2="150" stroke="#adb5bd" />
+    </g>
+
+    <defs>
+        <marker id="arrow-cyan" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0b7285" />
+        </marker>
+    </defs>
+</svg>

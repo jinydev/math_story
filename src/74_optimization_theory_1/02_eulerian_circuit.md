@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '02. 모든 길을 한 번씩 오일러 회로Eulerian Circuit'
+---
+
 # 02. 모든 길을 한 번씩: 오일러 회로(Eulerian Circuit)
 
 ## 1. 학습 목표 (Learning Objectives)

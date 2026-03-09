@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="40" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">복소수 평면 (Complex Plane / Argand Diagram)</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">가짜 숫자 i 가 현실의 수직선과 직교하며 거대한 2D 공간을 열어젖히다.</text>
+
+  <!-- Coordinate System Setup -->
+  <g transform="translate(400, 280)">
+    <!-- Grid lines -->
+    <g stroke="#4A5568" stroke-width="1" opacity="0.4">
+      <line x1="-300" y1="-150" x2="300" y2="-150"/>
+      <line x1="-300" y1="-100" x2="300" y2="-100"/>
+      <line x1="-300" y1="-50" x2="300" y2="-50"/>
+      <line x1="-300" y1="50" x2="300" y2="50"/>
+      <line x1="-300" y1="100" x2="300" y2="100"/>
+      
+      <line x1="-250" y1="-200" x2="-250" y2="150"/>
+      <line x1="-200" y1="-200" x2="-200" y2="150"/>
+      <line x1="-150" y1="-200" x2="-150" y2="150"/>
+      <line x1="-100" y1="-200" x2="-100" y2="150"/>
+      <line x1="-50" y1="-200" x2="-50" y2="150"/>
+      <line x1="50" y1="-200" x2="50" y2="150"/>
+      <line x1="100" y1="-200" x2="100" y2="150"/>
+      <line x1="150" y1="-200" x2="150" y2="150"/>
+      <line x1="200" y1="-200" x2="200" y2="150"/>
+      <line x1="250" y1="-200" x2="250" y2="150"/>
+    </g>
+
+    <!-- X Axis (Real Axis) -->
+    <line x1="-320" y1="0" x2="320" y2="0" stroke="#4FD1C5" stroke-width="4" marker-end="url(#arrow_right_real)"/>
+    <text x="330" y="5" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#4FD1C5" text-anchor="start">실수축 (Real Axis)</text>
+    
+    <!-- Real Scale -->
+    <circle cx="50" cy="0" r="3" fill="#4FD1C5"/> <text x="50" y="20" font-family="'Inter', sans-serif" font-size="12" fill="#4FD1C5" text-anchor="middle">1</text>
+    <circle cx="100" cy="0" r="3" fill="#4FD1C5"/> <text x="100" y="20" font-family="'Inter', sans-serif" font-size="12" fill="#4FD1C5" text-anchor="middle">2</text>
+    <circle cx="150" cy="0" r="3" fill="#4FD1C5"/> <text x="150" y="20" font-family="'Inter', sans-serif" font-size="12" fill="#4FD1C5" text-anchor="middle">3 (a)</text>
+    <circle cx="200" cy="0" r="3" fill="#4FD1C5"/> <text x="200" y="20" font-family="'Inter', sans-serif" font-size="12" fill="#4FD1C5" text-anchor="middle">4</text>
+
+    <!-- Y Axis (Imaginary Axis) -->
+    <line x1="0" y1="180" x2="0" y2="-180" stroke="#9F7AEA" stroke-width="4" marker-end="url(#arrow_up_img)"/>
+    <text x="-15" y="-190" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#9F7AEA" text-anchor="end">허수축 (Imaginary Axis)</text>
+    
+    <!-- Imaginary Scale -->
+    <circle cx="0" cy="-50" r="3" fill="#9F7AEA"/> <text x="-25" y="-45" font-family="'Inter', sans-serif" font-size="12" fill="#9F7AEA" text-anchor="middle">1i</text>
+    <circle cx="0" cy="-100" r="3" fill="#9F7AEA"/> <text x="-25" y="-95" font-family="'Inter', sans-serif" font-size="12" fill="#9F7AEA" text-anchor="middle">2i</text>
+    <circle cx="0" cy="-150" r="3" fill="#9F7AEA"/> <text x="-25" y="-145" font-family="'Inter', sans-serif" font-size="12" fill="#9F7AEA" text-anchor="middle">3i</text>
+
+    <!-- Plotting the Complex Number z = 3 + 2i -->
+    <!-- Dotted lines indicating coordinates -->
+    <path d="M 0 -100 L 150 -100" fill="none" stroke="#ECC94B" stroke-width="2" stroke-dasharray="6,4"/>
+    <path d="M 150 0 L 150 -100" fill="none" stroke="#ECC94B" stroke-width="2" stroke-dasharray="6,4"/>
+
+    <!-- The Vector/Point -->
+    <line x1="0" y1="0" x2="150" y2="-100" stroke="#F6AD55" stroke-width="4" filter="url(#glow)"/>
+    <circle cx="150" cy="-100" r="8" fill="#F6AD55" filter="url(#glow)"/>
+
+    <!-- Point Label -->
+    <rect x="165" y="-125" width="180" height="40" fill="#2D3748" rx="5" stroke="#F6AD55" stroke-width="2"/>
+    <text x="175" y="-100" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#F7FAFC">z = 3 + 2i</text>
+    <text x="212" y="-99" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#4FD1C5">3</text>
+    <text x="250" y="-99" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#9F7AEA">2i</text>
+    
+    <!-- Sub-labels -->
+    <text x="218" y="-70" font-family="'Inter', sans-serif" font-size="12" fill="#A0AEC0" text-anchor="middle">실수부 (Real portion)</text>
+  </g>
+
+  <!-- Left Side Helper Box -->
+  <g transform="translate(30, 120)">
+    <rect x="0" y="0" width="220" height="150" fill="#1A202C" rx="10" stroke="#718096" stroke-width="2"/>
+    <text x="110" y="30" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#E2E8F0" text-anchor="middle">복소수(Complex Num)의 구조</text>
+    <text x="110" y="70" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F6AD55" text-anchor="middle">$z = a + bi$</text>
+    <text x="70" y="105" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#4FD1C5" text-anchor="middle">$a$: 실수부</text>
+    <text x="165" y="105" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#9F7AEA" text-anchor="middle">$b$: 허수부</text>
+    <text x="110" y="130" font-family="'Inter', sans-serif" font-size="12" fill="#A0AEC0" text-anchor="middle">(현실 축의 거리) + (상상 축의 거리)</text>
+  </g>
+</svg>

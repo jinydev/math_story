@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '05. 바둑판 미로와 최단 경로 알고리즘'
+---
+
 # 05. 바둑판 미로와 최단 경로 알고리즘
 
 ## 1. 학습 목표 (Learning Objectives)

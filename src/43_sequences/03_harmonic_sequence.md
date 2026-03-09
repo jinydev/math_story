@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '3. 조화수열 Harmonic Sequence'
+---
+
 # 3. 조화수열 (Harmonic Sequence)
 
 ## [도입부] 학습 목표 (Learning Objectives)

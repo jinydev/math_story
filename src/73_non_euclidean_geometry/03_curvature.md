@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 공간의 휘어짐을 재는 잣대, 가우스 곡률 Curvature'
+---
+
 # 03. 공간의 휘어짐을 재는 잣대, 가우스 곡률 (Curvature)
 
 ## 1. 학습 목표 (Learning Objectives)

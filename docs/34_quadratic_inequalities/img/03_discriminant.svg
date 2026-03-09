@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#c92a2a" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">세 번째 부등식: '절대부등식과 판별식(D) 의 공중부양'</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"모든 X에 대해 항상 정답을 보장하려면, 우주선(그래프)은 땅(x축)에 닿으면
+        안 된다!"</text>
+
+    <!-- Left Side: D > 0 (Roots exist) -->
+    <g transform="translate(40, 80)">
+        <rect x="0" y="0" width="160" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="80" y="25" fill="#f03e3e" font-size="14" font-weight="bold" text-anchor="middle">D &gt; 0 (땅
+            파고듦)</text>
+
+        <!-- Axes -->
+        <line x1="10" y1="120" x2="150" y2="120" stroke="#495057" stroke-width="2" /> <!-- x axis -->
+
+        <!-- Parabola -->
+        <path d="M 20 60 Q 80 180 140 60" fill="none" stroke="#fa5252" stroke-width="2" />
+        <circle cx="50" cy="120" r="3" fill="#212529" />
+        <circle cx="110" cy="120" r="3" fill="#212529" />
+
+        <!-- Area logic -->
+        <rect x="10" y="130" width="140" height="15" fill="#ffe3e3" />
+        <text x="80" y="141" fill="#c92a2a" font-size="10" text-anchor="middle">"일부만 땅 위에 있음 (실패)"</text>
+    </g>
+
+    <!-- Middle Side: D = 0 (Tangent) -->
+    <g transform="translate(220, 80)">
+        <rect x="0" y="0" width="160" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="80" y="25" fill="#f59f00" font-size="14" font-weight="bold" text-anchor="middle">D = 0 (땅에 스침)</text>
+
+        <!-- Axes -->
+        <line x1="10" y1="120" x2="150" y2="120" stroke="#495057" stroke-width="2" /> <!-- x axis -->
+
+        <!-- Parabola -->
+        <path d="M 20 40 Q 80 120 140 40" fill="none" stroke="#f59f00" stroke-width="2" />
+        <circle cx="80" cy="120" r="4" fill="#212529" />
+
+        <!-- Area logic -->
+        <rect x="10" y="130" width="140" height="15" fill="#fff9db" />
+        <text x="80" y="141" fill="#d9480f" font-size="10" text-anchor="middle">"딱 한 점이 0 이 됨 (아슬)"</text>
+    </g>
+
+    <!-- Right Side: D < 0 (Floating) -->
+    <g transform="translate(400, 80)">
+        <rect x="0" y="0" width="160" height="150" fill="#fff" stroke="#adb5bd" stroke-width="2" rx="5" />
+        <text x="80" y="25" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">D &lt; 0 (공중부양)</text>
+
+        <!-- Axes -->
+        <line x1="10" y1="120" x2="150" y2="120" stroke="#495057" stroke-width="2" /> <!-- x axis -->
+
+        <!-- Highlights for safe zone above x-axis -->
+        <rect x="10" y="40" width="140" height="80" fill="#ebfbee" opacity="0.5" />
+
+        <!-- Parabola -->
+        <path d="M 20 40 Q 80 90 140 40" fill="none" stroke="#2b8a3e" stroke-width="3" />
+
+        <!-- Area logic -->
+        <rect x="10" y="130" width="140" height="15" fill="#b2f2bb" />
+        <text x="80" y="141" fill="#2b8a3e" font-size="10" font-weight="bold" text-anchor="middle">"모든 x가 0보다 큼!
+            (성공)"</text>
+    </g>
+
+</svg>

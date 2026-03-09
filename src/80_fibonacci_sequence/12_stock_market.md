@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '12. 주식 시장을 예측하는 수열 Fibonacci Retracement'
+---
+
 # 12. 주식 시장을 예측하는 수열 (Fibonacci Retracement)
 
 ## 1. 학습 목표 (Learning Objectives)

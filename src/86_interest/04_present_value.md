@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '4. 타임머신을 탄 화폐 현재가치Present Value와 할인의 마법'
+---
+
 # 4. 타임머신을 탄 화폐: 현재가치(Present Value)와 할인의 마법
 
 ## [도입부] 학습 목표 (Learning Objectives)

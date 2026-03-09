@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%">
+    <rect width="800" height="300" fill="#2d3436" />
+    <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#dfe6e9" text-anchor="middle">
+        집합의 제 1법칙: 중복 불허 (Set Deduplication)
+    </text>
+
+    <!-- Raw Data Area -->
+    <rect x="50" y="100" width="200" height="150" fill="none" stroke="#74b9ff" stroke-width="3" rx="10" />
+    <text x="150" y="90" font-family="Arial" font-size="18" fill="#74b9ff" text-anchor="middle">Input Data (List)</text>
+    
+    <g font-family="Arial" font-size="20" font-weight="bold" fill="#ffeaa7" text-anchor="middle">
+        <text x="150" y="140">Apple</text>
+        <text x="150" y="180">Banana</text>
+        <text x="150" y="220">Apple (중복!)</text>
+    </g>
+
+    <!-- Filter Pipeline -->
+    <text x="320" y="180" font-family="Arial" font-size="40" font-weight="bold" fill="#b2bec3">→</text>
+    <rect x="370" y="130" width="80" height="80" fill="#e17055" rx="40" />
+    <text x="410" y="175" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">set()</text>
+    <text x="490" y="180" font-family="Arial" font-size="40" font-weight="bold" fill="#b2bec3">→</text>
+
+    <!-- Set Output Area -->
+    <rect x="550" y="100" width="200" height="150" fill="none" stroke="#55efc4" stroke-width="3" rx="10" />
+    <text x="650" y="90" font-family="Arial" font-size="18" fill="#55efc4" text-anchor="middle">Output (Set)</text>
+    
+    <g font-family="Arial" font-size="20" font-weight="bold" fill="#55efc4" text-anchor="middle">
+        <text x="650" y="150">Apple</text>
+        <text x="650" y="210">Banana</text>
+    </g>
+
+    <!-- Cross out animation -->
+    <line x1="100" y1="213" x2="200" y2="213" stroke="#d63031" stroke-width="4">
+        <animate attributeName="x2" from="100" to="200" dur="2s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;1;1;0" dur="2s" repeatCount="indefinite" />
+    </line>
+</svg>

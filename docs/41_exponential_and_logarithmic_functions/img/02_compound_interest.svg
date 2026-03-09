@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">아인슈타인이 극찬한 우주의 8번째 불가사의: 복리 (Compound Interest)</text>
+
+    <!-- Simple Interest (단리) -->
+    <g transform="translate(100, 160)">
+        <rect x="-80" y="-80" width="160" height="120" fill="#ffe3e3" stroke="#ff8787" stroke-width="2" rx="8" />
+        <text x="0" y="-50" fill="#c92a2a" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">1. 단리 (Simple)</text>
+
+        <text x="0" y="-15" fill="#e03131" font-size="18" font-family="monospace" font-weight="bold"
+            text-anchor="middle">원금 + (원금 × 이율)</text>
+
+        <text x="0" y="20" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">항상 '최초 원금'에만</text>
+        <text x="0" y="35" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">고정된 이자가 붙음</text>
+    </g>
+
+    <!-- VS -->
+    <text x="300" y="110" fill="#adb5bd" font-size="24" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">VS</text>
+
+    <!-- Compound Interest (복리) -->
+    <g transform="translate(500, 160)">
+        <rect x="-80" y="-80" width="160" height="120" fill="#ebfbee" stroke="#40c057" stroke-width="2" rx="8" />
+        <text x="0" y="-50" fill="#2b8a3e" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">2. 복리 (Compound)</text>
+
+        <text x="0" y="-15" fill="#2f9e44" font-size="18" font-family="monospace" font-weight="bold"
+            text-anchor="middle">원금 × (1 + 이율)^n</text>
+
+        <text x="0" y="20" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">눈덩이처럼 이자 위에</text>
+        <text x="0" y="35" fill="#868e96" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">다시 이자가 증식함!</text>
+    </g>
+
+    <!-- Snowball Effect Arrow -->
+    <path d="M 380 140 Q 420 80 500 80" fill="none" stroke="#2b8a3e" stroke-width="3" stroke-dasharray="5,5"
+        marker-end="url(#arrow-green)" />
+    <text x="440" y="70" fill="#2b8a3e" font-size="14" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">눈덩이 구르기 (지수 폭발)</text>
+
+    <defs>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+    </defs>
+</svg>

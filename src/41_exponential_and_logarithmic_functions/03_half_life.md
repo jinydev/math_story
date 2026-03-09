@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '3. 영원히 죽지 않는 절반의 마법 반감기 Half-Life'
+---
+
 # 3. 영원히 죽지 않는 절반의 마법: 반감기 (Half-Life)
 
 ## [도입부] 학습 목표 (Learning Objectives)

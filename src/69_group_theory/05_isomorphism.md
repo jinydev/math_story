@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 겉모습은 달라도 영혼은 하나 동형사상Isomorphism'
+---
+
 # 5. 겉모습은 달라도 영혼은 하나: '동형사상(Isomorphism)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

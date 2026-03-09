@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "수학이야기 56.이차곡선2"
+title: '수학이야기 56.이차곡선2'
 parent: 수학이야기
 nav_order: 56
 has_children: true

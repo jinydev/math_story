@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .shape-stroke {
+                fill: rgba(0, 255, 255, 0.1);
+                stroke: #00ffff;
+                stroke-width: 3;
+            }
+
+            .cut-line {
+                stroke: #ff6464;
+                stroke-width: 2;
+                stroke-dasharray: 5, 5;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 28px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .math-text {
+                fill: #64ff64;
+                font-size: 20px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#0d1117" />
+
+    <text x="400" y="40" class="title">유클리드 차원의 스케일링 (정수 차원)</text>
+    <text x="400" y="70" class="desc">길이를 절반(1/2)으로 줄였을 때 생성되는 복제본의 수 N = r^D</text>
+
+    <!-- 1D Line -->
+    <g transform="translate(150, 150)">
+        <text x="0" y="-40" fill="#ffffff" font-size="20" text-anchor="middle">1차원 (선)</text>
+        <line x1="-100" y1="0" x2="100" y2="0" class="shape-stroke" />
+        <line x1="0" y1="-20" x2="0" y2="20" class="cut-line" />
+        <text x="-50" y="30" fill="#00ffff" font-size="16" text-anchor="middle">1/2</text>
+        <text x="50" y="30" fill="#00ffff" font-size="16" text-anchor="middle">1/2</text>
+        <text x="0" y="80" class="math-text">N = 2^1 = 2개</text>
+    </g>
+
+    <!-- 2D Square -->
+    <g transform="translate(400, 150)">
+        <text x="0" y="-40" fill="#ffffff" font-size="20" text-anchor="middle">2차원 (정사각형)</text>
+        <rect x="-80" y="-80" width="160" height="160" class="shape-stroke" />
+        <line x1="0" y1="-90" x2="0" y2="90" class="cut-line" />
+        <line x1="-90" y1="0" x2="90" y2="0" class="cut-line" />
+        <text x="-40" y="-20" fill="#00ffff" font-size="16" text-anchor="middle">1/4</text>
+        <text x="40" y="-20" fill="#00ffff" font-size="16" text-anchor="middle">2/4</text>
+        <text x="-40" y="35" fill="#00ffff" font-size="16" text-anchor="middle">3/4</text>
+        <text x="40" y="35" fill="#00ffff" font-size="16" text-anchor="middle">4/4</text>
+        <text x="0" y="120" class="math-text">N = 2^2 = 4개</text>
+    </g>
+
+    <!-- 3D Cube (Axonometric projection simplified) -->
+    <g transform="translate(650, 200)">
+        <text x="0" y="-120" fill="#ffffff" font-size="20" text-anchor="middle">3차원 (정육면체)</text>
+
+        <!-- Deep Cube (Back face) -->
+        <rect x="-40" y="-80" width="80" height="80" fill="rgba(0, 255, 255, 0.05)" stroke="#00ffff" stroke-width="1" />
+        <line x1="0" y1="-80" x2="0" y2="0" stroke="#ff6464" stroke-width="1" stroke-dasharray="3,3" />
+        <line x1="-40" y1="-40" x2="40" y2="-40" stroke="#ff6464" stroke-width="1" stroke-dasharray="3,3" />
+
+        <!-- Connectors -->
+        <line x1="-40" y1="-80" x2="-80" y2="-40" stroke="#00ffff" stroke-width="1" />
+        <line x1="40" y1="-80" x2="0" y2="-40" stroke="#00ffff" stroke-width="1" />
+        <line x1="40" y1="0" x2="0" y2="40" stroke="#00ffff" stroke-width="1" />
+        <line x1="-40" y1="0" x2="-80" y2="40" stroke="#00ffff" stroke-width="1" />
+
+        <!-- Internal Cut lines for connectors -->
+        <line x1="0" y1="-80" x2="-40" y2="-40" stroke="#ff6464" stroke-width="1" stroke-dasharray="3,3" />
+        <line x1="40" y1="-40" x2="0" y2="0" stroke="#ff6464" stroke-width="1" stroke-dasharray="3,3" />
+        <line x1="0" y1="0" x2="-40" y2="40" stroke="#ff6464" stroke-width="1" stroke-dasharray="3,3" />
+
+        <!-- Front Face -->
+        <rect x="-80" y="-40" width="80" height="80" class="shape-stroke" />
+        <line x1="-40" y1="-50" x2="-40" y2="50" class="cut-line" />
+        <line x1="-90" y1="0" x2="-10" y2="0" class="cut-line" />
+
+        <text x="0" y="80" class="math-text">N = 2^3 = 8개</text>
+    </g>
+
+    <!-- Info Bottom -->
+    <g transform="translate(100, 360)">
+        <rect x="0" y="0" width="600" height="100" fill="#161b22" stroke="#30363d" stroke-width="2" rx="5" />
+        <text x="300" y="35" fill="#ffffff" font-size="24" text-anchor="middle">차원 공식: D = log(N) / log(r)</text>
+        <text x="300" y="65" fill="#888" font-size="16" text-anchor="middle">정수 형태의 유클리드와 달리 프랙탈은 이 공식에 의해 소수점 차원이
+            탄생한다.</text>
+    </g>
+</svg>

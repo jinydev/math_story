@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350">
+    <rect width="700" height="350" fill="#f8f9fa" rx="10" />
+
+    <text x="350" y="30" fill="#1864ab" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">치환 (Substitution) 마법: 끔찍한 복잡함을 숨겨라!</text>
+
+    <!-- Step 1: The messy equation -->
+    <rect x="50" y="50" width="600" height="50" fill="#ffe3e3" stroke="#fa5252" stroke-width="2" rx="5" />
+    <text x="350" y="82" fill="#e03131" font-size="20" font-family="monospace" font-weight="bold" text-anchor="middle">
+        (x² + 2x)² - 11(x² + 2x) + 24
+    </text>
+    <!-- Highlight common parts -->
+    <rect x="238" y="58" width="105" height="32" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-dasharray="4,2"
+        rx="3" />
+    <rect x="382" y="58" width="105" height="32" fill="none" stroke="#2b8a3e" stroke-width="2" stroke-dasharray="4,2"
+        rx="3" />
+
+    <!-- Arrow 1 -->
+    <path d="M 350 100 L 350 140" stroke="#868e96" stroke-width="3" marker-end="url(#arrow)" />
+    <rect x="360" y="105" width="120" height="30" fill="#2b8a3e" rx="15" />
+    <text x="420" y="125" fill="#fff" font-size="14" font-weight="bold" text-anchor="middle">"A" 스티커 부착!</text>
+
+    <!-- Step 2: Simplified equation -->
+    <rect x="150" y="150" width="400" height="50" fill="#e2f0cb" stroke="#5c940d" stroke-width="2" rx="5" />
+    <text x="350" y="182" fill="#2b8a3e" font-size="24" font-family="monospace" font-weight="bold" text-anchor="middle">
+        A² - 11A + 24
+    </text>
+
+    <!-- Arrow 2 -->
+    <path d="M 350 200 L 350 230" stroke="#868e96" stroke-width="3" marker-end="url(#arrow)" />
+    <text x="420" y="220" fill="#495057" font-size="12" font-weight="bold" text-anchor="middle">초간단 십자가 분해!</text>
+
+    <!-- Step 3: Factored with A -->
+    <rect x="200" y="240" width="300" height="40" fill="#d0ebff" stroke="#228be6" stroke-width="2" rx="5" />
+    <text x="350" y="267" fill="#1864ab" font-size="20" font-family="monospace" font-weight="bold" text-anchor="middle">
+        (A - 3)(A - 8)
+    </text>
+
+    <!-- Arrow 3 -->
+    <path d="M 350 280 L 350 310" stroke="#868e96" stroke-width="3" marker-end="url(#arrow)" />
+    <rect x="360" y="285" width="160" height="20" fill="#fcc419" rx="10" />
+    <text x="440" y="300" fill="#212529" font-size="12" font-weight="bold" text-anchor="middle">스티커 떼기 (원상 복구)</text>
+
+    <!-- Step 4: Final factored form -->
+    <text x="350" y="335" fill="#d9480f" font-size="18" font-family="monospace" font-weight="bold" text-anchor="middle">
+        (x² + 2x - 3)(x² + 2x - 8)
+    </text>
+
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#868e96" />
+        </marker>
+    </defs>
+</svg>

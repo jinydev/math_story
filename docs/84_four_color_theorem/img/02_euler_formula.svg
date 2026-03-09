@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#1864ab" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">정다면체의 신비와 오일러 공식 (V - E + F = 2)</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"모든 평면 그래프(지도)는 3D 정다면체의 표면을 짓눌러서 평판으로 펴놓은
+        것과 똑같은 법칙을 따른다!"</text>
+
+    <!-- Left: The Rule V - E + F = 2 -->
+    <g transform="translate(40, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">오일러 다면체 정리</text>
+
+        <rect x="25" y="45" width="170" height="40" fill="#e7f5ff" rx="5" />
+        <text x="110" y="72" fill="#0b7285" font-size="20" font-weight="bold" font-family="monospace"
+            text-anchor="middle">V - E + F = 2</text>
+
+        <text x="110" y="105" fill="#c92a2a" font-size="12" font-weight="bold" text-anchor="middle">V (Vertices):
+            꼭짓점</text>
+        <text x="110" y="120" fill="#2b8a3e" font-size="12" font-weight="bold" text-anchor="middle">E (Edges): 모서리
+            (선)</text>
+        <text x="110" y="135" fill="#f59f00" font-size="12" font-weight="bold" text-anchor="middle">F (Faces): 면
+            (영토)</text>
+    </g>
+
+    <!-- Transform Arrow -->
+    <path d="M 280 145 C 300 110, 300 110, 320 145" fill="none" stroke="#adb5bd" stroke-width="3" stroke-dasharray="4,2"
+        marker-end="url(#arrow-gray)" />
+    <rect x="270" y="105" width="60" height="20" fill="#f1f3f5" rx="3" />
+    <text x="300" y="119" fill="#495057" font-size="10" font-weight="bold" text-anchor="middle">평면 압축</text>
+
+    <!-- Right: Flattening to a Map -->
+    <g transform="translate(340, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#d9480f" font-size="14" font-weight="bold" text-anchor="middle">지도(Planar Graph)
+            변환</text>
+
+        <!-- 2D Map Graph (Flattened Tetrahedron / Cube concept) -->
+        <!-- Outer Face boundary -->
+        <rect x="40" y="50" width="140" height="80" fill="#fff3bf" stroke="#2b8a3e" stroke-width="2" />
+
+        <!-- Inner lines (Edges) -->
+        <line x1="40" y1="50" x2="110" y2="90" stroke="#2b8a3e" stroke-width="2" />
+        <line x1="180" y1="50" x2="110" y2="90" stroke="#2b8a3e" stroke-width="2" />
+        <line x1="40" y1="130" x2="110" y2="90" stroke="#2b8a3e" stroke-width="2" />
+        <line x1="180" y1="130" x2="110" y2="90" stroke="#2b8a3e" stroke-width="2" />
+
+        <!-- Vertices -->
+        <circle cx="40" cy="50" r="4" fill="#c92a2a" />
+        <circle cx="180" cy="50" r="4" fill="#c92a2a" />
+        <circle cx="40" cy="130" r="4" fill="#c92a2a" />
+        <circle cx="180" cy="130" r="4" fill="#c92a2a" />
+        <circle cx="110" cy="90" r="5" fill="#c92a2a" />
+
+        <text x="110" y="65" fill="#e67700" font-size="10" font-weight="bold">F1</text>
+        <text x="70" y="90" fill="#e67700" font-size="10" font-weight="bold">F2</text>
+        <text x="150" y="90" fill="#e67700" font-size="10" font-weight="bold">F3</text>
+        <text x="110" y="115" fill="#e67700" font-size="10" font-weight="bold">F4</text>
+
+        <!-- Outer infinite face -->
+        <text x="10" y="140" fill="#e67700" font-size="10" font-weight="bold">F_out</text>
+
+        <!-- Formula Check -->
+        <rect x="130" y="125" width="80" height="20" fill="#ffe3e3" rx="3" />
+        <text x="170" y="139" fill="#c92a2a" font-size="10" font-weight="bold"
+            text-anchor="middle">V(5)-E(8)+F(5)=2</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-gray" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

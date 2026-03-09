@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+    <rect width="600" height="300" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#862e9c" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">다섯 번째 배열: '파스칼의 삼각형과 이항정리'</text>
+    <text x="300" y="50" fill="#495057" font-size="12" text-anchor="middle">"방정식 전개의 노가다를 끝장내는 궁극의 치트키(Cheat
+        Key)"</text>
+
+    <!-- Formula Expansion (Left) -->
+    <g transform="translate(40, 70)">
+        <rect x="0" y="0" width="220" height="180" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="20" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">전개의 악몽 😈</text>
+
+        <!-- (x+y)^1 -->
+        <text x="10" y="50" fill="#495057" font-size="14" font-family="monospace">(a+b)¹ = 1a + 1b</text>
+
+        <!-- (x+y)^2 -->
+        <text x="10" y="80" fill="#495057" font-size="14" font-family="monospace">(a+b)² = 1a² + 2ab + 1b²</text>
+
+        <!-- (x+y)^3 -->
+        <text x="10" y="110" fill="#495057" font-size="14" font-family="monospace">(a+b)³ = 1a³ + 3a²b + 3ab² +
+            1b³</text>
+
+        <!-- (x+y)^4 -->
+        <text x="10" y="140" fill="#495057" font-size="14" font-family="monospace">(a+b)⁴ = 1a⁴ + 4a³b + 6a²b² +
+            ...</text>
+
+        <!-- Red box on Coefficients -->
+        <path d="M 80 40 L 200 40 L 200 150 L 80 150 Z" fill="none" stroke="#fa5252" stroke-width="2"
+            stroke-dasharray="3,3" />
+        <text x="140" y="165" fill="#c92a2a" font-size="11" font-weight="bold" text-anchor="middle">앞에 붙은 숫자들(계수)
+            주목!</text>
+    </g>
+
+    <!-- Pascal's Triangle (Right) -->
+    <g transform="translate(300, 70)">
+        <rect x="0" y="0" width="260" height="180" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="130" y="20" fill="#862e9c" font-size="14" font-weight="bold" text-anchor="middle">파스칼의 삼각형 👑</text>
+
+        <!-- Row 0 -->
+        <text x="130" y="50" font-size="14" font-family="monospace" font-weight="bold" text-anchor="middle">1</text>
+        <text x="210" y="50" fill="#868e96" font-size="10" text-anchor="end">n=0</text>
+
+        <!-- Row 1 -->
+        <text x="120" y="70" font-size="14" font-family="monospace" font-weight="bold" text-anchor="middle">1</text>
+        <text x="140" y="70" font-size="14" font-family="monospace" font-weight="bold" text-anchor="middle">1</text>
+        <text x="210" y="70" fill="#868e96" font-size="10" text-anchor="end">n=1</text>
+
+        <!-- Row 2 -->
+        <text x="110" y="90" font-size="14" font-family="monospace" font-weight="bold" text-anchor="middle">1</text>
+        <rect x="120" y="75" width="20" height="20" fill="#ffe3e3" rx="3" />
+        <text x="130" y="90" fill="#c92a2a" font-size="14" font-family="monospace" font-weight="bold"
+            text-anchor="middle">2</text>
+        <text x="150" y="90" font-size="14" font-family="monospace" font-weight="bold" text-anchor="middle">1</text>
+        <text x="210" y="90" fill="#868e96" font-size="10" text-anchor="end">n=2</text>
+
+        <!-- Row 3 -->
+        <text x="100" y="110" font-size="14" font-family="monospace" font-weight="bold" text-anchor="middle">1</text>
+        <text x="120" y="110" fill="#c92a2a" font-size="14" font-family="monospace" font-weight="bold"
+            text-anchor="middle">3</text>
+        <text x="140" y="110" fill="#c92a2a" font-size="14" font-family="monospace" font-weight="bold"
+            text-anchor="middle">3</text>
+        <text x="160" y="110" font-size="14" font-family="monospace" font-weight="bold" text-anchor="middle">1</text>
+        <text x="210" y="110" fill="#868e96" font-size="10" text-anchor="end">n=3</text>
+
+        <!-- Row 4 -->
+        <text x="90" y="130" font-size="14" font-family="monospace" font-weight="bold" text-anchor="middle">1</text>
+        <text x="110" y="130" font-size="14" font-family="monospace" font-weight="bold" text-anchor="middle">4</text>
+        <rect x="120" y="115" width="20" height="20" fill="#eebefa" rx="3" />
+        <text x="130" y="130" fill="#862e9c" font-size="14" font-family="monospace" font-weight="bold"
+            text-anchor="middle">6</text>
+        <text x="150" y="130" font-size="14" font-family="monospace" font-weight="bold" text-anchor="middle">4</text>
+        <text x="170" y="130" font-size="14" font-family="monospace" font-weight="bold" text-anchor="middle">1</text>
+        <text x="210" y="130" fill="#868e96" font-size="10" text-anchor="end">n=4</text>
+
+        <!-- Rule Arrow -->
+        <path d="M 120 95 L 125 115" stroke="#adb5bd" stroke-width="1" marker-end="url(#arrow)" />
+        <path d="M 140 95 L 135 115" stroke="#adb5bd" stroke-width="1" marker-end="url(#arrow)" />
+        <text x="130" y="155" fill="#495057" font-size="11" font-weight="bold" text-anchor="middle">"위에 있는 두 숫자를 더하면 아래
+            숫자가 된다!"</text>
+        <text x="130" y="170" fill="#495057" font-size="11" font-weight="bold" text-anchor="middle">(조합의 속성: nCr =
+            n-1Cr-1 + n-1Cr)</text>
+    </g>
+
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

@@ -1,0 +1,77 @@
+main:
+  - title: "Part 01. 자바 기초"
+    subitems:
+      - title: "자바 언어 소개"
+        url: /basic/java
+      - title: "개발 환경 구축"
+        url: /basic/setup
+      - title: "01. 자바 시작하기"
+        url: /basic/start
+      - title: "02. 변수와 타입"
+        url: /basic/variable
+      - title: "03. 연산자"
+        url: /basic/operator
+      - title: "04. 조건문"
+        url: /basic/condition
+      - title: "05. 반복문"
+        url: /basic/loop
+  - title: "Part 02. 객체지향"
+    subitems:
+      - title: "05. 참조 타입"
+        url: /oop/reference
+      - title: "06. 클래스"
+        url: /oop/oop
+      - title: "07. 상속"
+        url: /oop/extends
+      - title: "08. 인터페이스"
+        url: /oop/interface
+      - title: "09. 중첩 선언과 익명 객체"
+        url: /oop/nested
+      - title: "10. 라이브러리와 모듈"
+        url: /oop/module
+      - title: "11. 예외 처리"
+        url: /oop/exception
+      - title: "12. java.base 모듈"
+        url: /oop/api
+      - title: "13. 제네릭"
+        url: /oop/generic
+      - title: "15. 컬렉션 자료구조"
+        url: /oop/collection
+      - title: "16. 람다식"
+        url: /oop/lambda
+  - title: "Part 03. 라이브러리 활용"
+    subitems:
+      - title: "14. 멀티 스레드"
+        url: /part03/thread
+      - title: "17. 데이터 입출력"
+        url: /part03/io
+      - title: "18. 데이터 입출력 (심화)"
+        url: /part03/stream
+  - title: "데이터베이스"
+    subitems:
+      - title: "20. JDBC"
+        url: /database/jdbc
+      - title: "22. MySQL"
+        url: /database/mysql
+  - title: "네트워크 프로그래밍"
+    subitems:
+      - title: "19. 네트워크 입출력"
+        url: /network/tcp
+      - title: "25. NIO"
+        url: /network/nio
+  - title: "GUI 프로그래밍"
+    subitems:
+      - title: "1. AWT"
+        url: /gui/1.awt
+      - title: "2. Swing"
+        url: /gui/2.swing
+      - title: "3. JavaFX"
+        url: /gui/3.javafx
+  - title: "백엔드 웹서버 개발"
+    subitems:
+      - title: "1주차. 웹 서버와 환경 설정"
+        url: /backend/jsp/01_intro
+      - title: "2주차. JSP 게시판 만들기"
+        url: /backend/jsp/05_crud
+      - title: "3주차. Spring Boot 시작하기"
+        url: /backend/boot/01_intro

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '08. 피보나치수열 Fibonacci Sequence'
+---
+
 # 08. 피보나치수열 (Fibonacci Sequence)
 
 ## 이 단원의 핵심 (Chapter Focus)

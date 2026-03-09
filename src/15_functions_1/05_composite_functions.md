@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '05. 다섯 번째 수업 상자 속의 상자, 합성함수 Composite Functions'
+---
+
 # 05. 다섯 번째 수업: 상자 속의 상자, 합성함수 (Composite Functions)
 
 현대의 거대한 소프트웨어 코딩이나 공장 시스템은 절대로 자판기 상자 딱 한 개로 돌아가지 않습니다.

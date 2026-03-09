@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">인간의 각도와 수학의 언어: 육십분법 vs 호도법 (Radian)</text>
+
+    <!-- Human World: Degrees -->
+    <g transform="translate(150, 150)">
+        <rect x="-100" y="-80" width="200" height="120" fill="#f1f3f5" stroke="#868e96" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#495057" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">육십분법 (Degree, 도)</text>
+
+        <!-- Circle & Slice -->
+        <circle cx="0" cy="5" r="30" fill="none" stroke="#495057" stroke-width="2" />
+        <path d="M 0 5 L 30 5 A 30 30 0 0 0 15 -21 Z" fill="#ced4da" />
+        <text x="0" y="-25" fill="#495057" font-size="16" font-family="monospace" font-weight="bold"
+            text-anchor="middle">60°</text>
+
+        <text x="0" y="55" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">피자를 360조각 낸 인간의 편의</text>
+    </g>
+
+    <!-- Arrow -->
+    <path d="M 270 110 L 330 110" fill="none" stroke="#2b8a3e" stroke-width="4" stroke-dasharray="4,4"
+        marker-end="url(#arrow-green)" />
+    <text x="300" y="90" fill="#2b8a3e" font-size="14" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">번역기</text>
+
+    <!-- Math World: Radians -->
+    <g transform="translate(450, 150)">
+        <rect x="-100" y="-80" width="200" height="120" fill="#ebfbee" stroke="#2b8a3e" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#2b8a3e" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">호도법 (Radian, 라디안)</text>
+
+        <!-- Circle & Slice -->
+        <circle cx="0" cy="5" r="30" fill="none" stroke="#2b8a3e" stroke-width="2" />
+        <path d="M 0 5 L 30 5 A 30 30 0 0 0 15 -21 Z" fill="#b2f2bb" />
+
+        <text x="0" y="-25" fill="#e03131" font-size="18" font-family="monospace" font-weight="bold"
+            text-anchor="middle">π/3</text>
+
+        <text x="0" y="55" fill="#099268" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">"호의 길이"를 "실수(숫자)" 로 매핑</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b8a3e" />
+        </marker>
+    </defs>
+</svg>

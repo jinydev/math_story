@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 롤러로 벽을 칠하며 깨닫는 적분 Generalization of Area'
+---
+
 # 03. 롤러로 벽을 칠하며 깨닫는 적분 (Generalization of Area)
 
 안녕하세요! 지난 시간에 피자 조각을 무한히 쪼개서 극한(Limit)의 원리를 맛보았죠? 

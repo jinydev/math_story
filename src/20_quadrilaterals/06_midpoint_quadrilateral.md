@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '6. 피투성이의 환생 중점Midpoint을 갈라 꿰맨 사각형의 새로운 뼈대'
+---
+
 # 6. 피투성이의 환생: 중점(Midpoint)을 갈라 꿰맨 사각형의 새로운 뼈대
 
 ## [도입부] 학습 목표 (Learning Objectives)

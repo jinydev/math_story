@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">실전 번역기: 일상어를 수학 기호로 퍼즐링</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">애매한 국어 문장을 냉혹한 수학
+        부등호 4자루로 꺾어버리는 매뉴얼</text>
+
+    <!-- Table Header -->
+    <g transform="translate(100, 120)">
+        <rect x="0" y="0" width="300" height="40" fill="#334455" rx="5" />
+        <text x="150" y="27" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">일상 생활 언어 (문장)</text>
+
+        <text x="350" y="27" fill="#ffffff" font-family="sans-serif" font-size="30" font-weight="bold"
+            text-anchor="middle">→</text>
+
+        <rect x="400" y="0" width="300" height="40" fill="#553344" rx="5" />
+        <text x="550" y="27" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">번역된 강력한 기호 (코드)</text>
+    </g>
+
+    <!-- Row 1: > -->
+    <g transform="translate(100, 180)">
+        <rect x="0" y="0" width="300" height="60" fill="#222233" stroke="#aaaaaa" stroke-width="1" rx="5" />
+        <text x="150" y="37" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">~보다 크다, 초과, 무겁다, 비싸다</text>
+
+        <path d="M 330 30 L 370 30" stroke="#aaaaaa" stroke-width="2" stroke-dasharray="4 4" />
+
+        <rect x="400" y="0" width="300" height="60" fill="#221122" stroke="#00ffcc" stroke-width="2" rx="5"
+            filter="url(#glow)" />
+        <text x="550" y="42" fill="#00ffcc" font-family="monospace" font-size="36" font-weight="bold"
+            text-anchor="middle">&gt;</text>
+    </g>
+
+    <!-- Row 2: < -->
+    <g transform="translate(100, 260)">
+        <rect x="0" y="0" width="300" height="60" fill="#222233" stroke="#aaaaaa" stroke-width="1" rx="5" />
+        <text x="150" y="37" fill="#4da6ff" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">~보다 작다, 미만, 가볍다, 싸다</text>
+
+        <path d="M 330 30 L 370 30" stroke="#aaaaaa" stroke-width="2" stroke-dasharray="4 4" />
+
+        <rect x="400" y="0" width="300" height="60" fill="#112233" stroke="#4da6ff" stroke-width="2" rx="5"
+            filter="url(#glow)" />
+        <text x="550" y="42" fill="#4da6ff" font-family="monospace" font-size="36" font-weight="bold"
+            text-anchor="middle">&lt;</text>
+    </g>
+
+    <!-- Row 3: >= -->
+    <g transform="translate(100, 340)">
+        <rect x="0" y="0" width="300" height="60" fill="#222233" stroke="#aaaaaa" stroke-width="1" rx="5" />
+        <text x="150" y="25" fill="#ffaa00" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">크거나 같다, 이상, 최소한</text>
+        <text x="150" y="48" fill="#ffaa00" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">"적지 않다", "결코 작지 않다"</text>
+
+        <path d="M 330 30 L 370 30" stroke="#aaaaaa" stroke-width="2" stroke-dasharray="4 4" />
+
+        <rect x="400" y="0" width="300" height="60" fill="#332211" stroke="#ffaa00" stroke-width="2" rx="5"
+            filter="url(#glow)" />
+        <text x="550" y="42" fill="#ffaa00" font-family="monospace" font-size="36" font-weight="bold"
+            text-anchor="middle">≥</text>
+    </g>
+
+    <!-- Row 4: <= -->
+    <g transform="translate(100, 420)">
+        <rect x="0" y="0" width="300" height="60" fill="#331111" stroke="#ff0055" stroke-width="3" rx="5"
+            filter="url(#glow)" />
+        <text x="150" y="25" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">작거나 같다, 이하, 최대한</text>
+        <text x="150" y="48" fill="#ff0055" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">"이내로", "넘지 않는다★"</text>
+
+        <path d="M 330 30 L 370 30" stroke="#ff0055" stroke-width="4" marker-end="url(#arrow)" />
+
+        <rect x="400" y="0" width="300" height="60" fill="#331111" stroke="#ff0055" stroke-width="3" rx="5"
+            filter="url(#glow)" />
+        <text x="550" y="45" fill="#ff0055" font-family="monospace" font-size="46" font-weight="bold"
+            text-anchor="middle">≤</text>
+    </g>
+
+    <!-- Example Box -->
+    <rect x="150" y="500" width="600" height="80" rx="10" fill="#2b1133" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="530" fill="#ffffff" font-family="sans-serif" font-size="18" text-anchor="middle">번역 예시: "기본요금과 추가요금
+        합이 내 지갑 속 1만원 <tspan fill="#ff0055" font-weight="bold">이내로</tspan>!"</text>
+    <text x="450" y="560" fill="#00ffcc" font-family="monospace" font-size="24" font-weight="bold"
+        text-anchor="middle">요금(x) <tspan fill="#ff0055" font-size="30">≤</tspan> 10000</text>
+
+</svg>

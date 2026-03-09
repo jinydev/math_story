@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '02. 완벽한 미학 단위, 황금비 Golden Ratio 복습'
+---
+
 # 02. 완벽한 미학 단위, 황금비 (Golden Ratio 복습)
 
 ## 1. 학습 목표 (Learning Objectives)

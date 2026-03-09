@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">명제 1번: 두 원의 교집합이 낳은 완벽한 정삼각형</text>
+
+    <!-- Base Line Segment AB (Length = 200, from X:350 to 550, Y:400) -->
+
+    <g transform="translate(0, 0)">
+        <!-- Circle A (Center 350, 400. Radius=200) -->
+        <circle cx="350" cy="400" r="200" fill="none" stroke="#4da6ff" stroke-width="4" stroke-dasharray="10 6"
+            filter="url(#glow)" />
+        <text x="350" y="440" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">A를 중심, 반경 AB인
+            원</text>
+
+        <!-- Circle B (Center 550, 400. Radius=200) -->
+        <circle cx="550" cy="400" r="200" fill="none" stroke="#ff0055" stroke-width="4" stroke-dasharray="10 6"
+            filter="url(#glow)" />
+        <text x="550" y="440" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">B를 중심, 반경 BA인
+            원</text>
+
+        <!-- Intersection Point C (X:450, Y: 400 - sqrt(3)*100 = 400 - 173.2 = 226.8 ) -->
+        <!-- Draw Equilateral Triangle A B C -->
+
+        <!-- Area highlight -->
+        <polygon points="350,400 550,400 450,226.8" fill="#ffff00" opacity="0.2" filter="url(#glow)" />
+
+        <!-- AC Line (Radius of A) -->
+        <line x1="350" y1="400" x2="450" y2="226.8" stroke="#00ffcc" stroke-width="6" filter="url(#glow)" />
+
+        <!-- BC Line (Radius of B) -->
+        <line x1="550" y1="400" x2="450" y2="226.8" stroke="#00ffcc" stroke-width="6" filter="url(#glow)" />
+
+        <!-- AB Line (Base) -->
+        <line x1="350" y1="400" x2="550" y2="400" stroke="#00ffcc" stroke-width="6" filter="url(#glow)" />
+
+        <!-- Nodes -->
+        <circle cx="350" cy="400" r="10" fill="#ffffff" filter="url(#glow)" />
+        <text x="330" y="415" fill="#ffffff" font-family="monospace" font-size="28" font-weight="bold">A</text>
+
+        <circle cx="550" cy="400" r="10" fill="#ffffff" filter="url(#glow)" />
+        <text x="570" y="415" fill="#ffffff" font-family="monospace" font-size="28" font-weight="bold">B</text>
+
+        <!-- Collision Point C -->
+        <circle cx="450" cy="226.8" r="12" fill="#ffff00" filter="url(#glow)" />
+        <text x="450" y="195" fill="#ffff00" font-family="monospace" font-size="28" font-weight="bold"
+            text-anchor="middle">C (교점 스캔!)</text>
+
+        <!-- Marking lines as equal -->
+        <line x1="440" y1="410" x2="460" y2="390" stroke="#ffffff" stroke-width="3" />
+        <line x1="450" y1="420" x2="470" y2="400" stroke="#ffffff" stroke-width="3" />
+
+        <line x1="380" y1="310" x2="400" y2="290" stroke="#ffffff" stroke-width="3" />
+        <line x1="390" y1="320" x2="410" y2="300" stroke="#ffffff" stroke-width="3" />
+
+        <line x1="500" y1="310" x2="520" y2="290" stroke="#ffffff" stroke-width="3" />
+        <line x1="490" y1="320" x2="510" y2="300" stroke="#ffffff" stroke-width="3" />
+    </g>
+
+    <!-- Equation proof tag -->
+    <rect x="70" y="150" width="220" height="150" rx="10" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+    <text x="180" y="180" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+        text-anchor="middle">논리 증명 회로</text>
+    <text x="180" y="210" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">AC = AB (파란 원
+        반지름)</text>
+    <text x="180" y="240" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">BC = AB (빨간 원
+        반지름)</text>
+    <line x1="90" y1="250" x2="270" y2="250" stroke="#555" />
+    <text x="180" y="275" fill="#ffff00" font-family="sans-serif" font-size="16" font-weight="bold"
+        text-anchor="middle">∴ AC = BC = AB</text>
+
+</svg>

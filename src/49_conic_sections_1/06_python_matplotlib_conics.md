@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '06. 여섯 번째 수업 파이썬 Matplotlib 로 그리는 우주의 궤적 Python Plotting'
+---
+
 # 06. 여섯 번째 수업: 파이썬 Matplotlib 로 그리는 우주의 궤적 (Python Plotting)
 
 수학은 단순히 시험지에서 $X, Y$ 를 까맣게 칠하는 것이 아닙니다. 진짜 코더들은 데카르트 형님이 만들어둔 $XY$ 좌표계 평면 위에 파이썬 `Matplotlib` 이라는 붓을 들어 방금 배운 "이차 곡선 포물선 방정식" 코드를 직접 쏘아 올려 렌더링 시킵니다.

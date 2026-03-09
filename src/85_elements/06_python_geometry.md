@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '6. 파이썬으로 구현하는 원론 기하학 SymPy Geometry'
+---
+
 # 6. 파이썬으로 구현하는 원론 기하학: SymPy Geometry
 
 ## [도입부] 학습 목표 (Learning Objectives)

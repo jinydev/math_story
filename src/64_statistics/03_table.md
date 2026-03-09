@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '3. 흩어진 데이터를 묶는 포장지 표Table를 활용한 자료의 정리'
+---
+
 # 3. 흩어진 데이터를 묶는 포장지: '표(Table)를 활용한 자료의 정리'
 
 ## [도입부] 학습 목표 (Learning Objectives)

@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "수학이야기 07. 기수법 (Numeral Systems)"
+title: '수학이야기 07. 기수법 Numeral Systems'
 ---
 
 # 07. 기수법 (Numeral Systems: 인류의 언어에서 컴퓨터의 언어로)

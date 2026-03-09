@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .rope-main {
+                fill: none;
+                stroke: #cda87c;
+                stroke-width: 12;
+                stroke-linecap: round;
+                filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.5));
+            }
+
+            .rope-sub {
+                fill: none;
+                stroke: #e0cca8;
+                stroke-width: 6;
+                stroke-linecap: round;
+                filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+            }
+
+            .knot-100 {
+                fill: #ff6464;
+                stroke: #30363d;
+                stroke-width: 2;
+            }
+
+            .knot-10 {
+                fill: #00ffff;
+                stroke: #30363d;
+                stroke-width: 2;
+            }
+
+            .knot-1 {
+                fill: #64ff64;
+                stroke: #30363d;
+                stroke-width: 2;
+            }
+
+            .box {
+                fill: #161b22;
+                stroke: #30363d;
+                stroke-width: 2;
+                rx: 8;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 15px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="40" class="title">잉카 결승문자 (Quipu): 고대의 하드웨어 데이터베이스</text>
+    <text x="400" y="70" class="desc">잉카인들은 문자 없이 매듭의 위치(Position)와 개수를 이용해 10진법 서버망을 구축했다</text>
+
+    <!-- Main horizontal rope -->
+    <path d="M 50 150 Q 400 170 750 140" class="rope-main" />
+    <text x="100" y="125" fill="#cda87c" font-size="18">메인 케이블 (주 밧줄)</text>
+
+    <!-- Sub ropes hanging down -->
+    <path d="M 200 155 L 200 450" class="rope-sub" />
+    <path d="M 400 160 L 400 450" class="rope-sub" />
+    <path d="M 600 155 L 600 450" class="rope-sub" />
+
+    <!-- Labels for positions -->
+    <rect x="50" y="200" width="100" height="40" class="box" />
+    <text x="100" y="225" fill="#ff6464" font-size="16" text-anchor="middle">100의 자리</text>
+
+    <rect x="50" y="290" width="100" height="40" class="box" />
+    <text x="100" y="315" fill="#00ffff" font-size="16" text-anchor="middle">10의 자리</text>
+
+    <rect x="50" y="380" width="100" height="40" class="box" />
+    <text x="100" y="405" fill="#64ff64" font-size="16" text-anchor="middle">1의 자리</text>
+
+    <!-- Left Rope: Represents 143 -->
+    <!-- 100s -->
+    <circle cx="200" cy="220" r="10" class="knot-100" />
+    <!-- 10s -->
+    <circle cx="200" cy="280" r="8" class="knot-10" />
+    <circle cx="200" cy="300" r="8" class="knot-10" />
+    <circle cx="200" cy="320" r="8" class="knot-10" />
+    <circle cx="200" cy="340" r="8" class="knot-10" />
+    <!-- 1s -->
+    <circle cx="200" cy="380" r="6" class="knot-1" />
+    <circle cx="200" cy="400" r="6" class="knot-1" />
+    <circle cx="200" cy="420" r="6" class="knot-1" />
+    <text x="200" y="480" fill="#ffffff" font-size="20" text-anchor="middle">값: 143</text>
+
+    <!-- Middle Rope: Represents 50 (Zero represented by empty space) -->
+    <!-- 10s -->
+    <circle cx="400" cy="280" r="8" class="knot-10" />
+    <circle cx="400" cy="300" r="8" class="knot-10" />
+    <circle cx="400" cy="320" r="8" class="knot-10" />
+    <circle cx="400" cy="340" r="8" class="knot-10" />
+    <circle cx="400" cy="360" r="8" class="knot-10" />
+    <!-- 1s (EMPTY space = ZERO) -->
+    <text x="450" y="405" fill="#888" font-size="14" text-anchor="middle">(빈 공간 = 0)</text>
+    <path d="M 380 400 L 420 400" stroke="#888" stroke-dasharray="4,4" stroke-width="2" />
+    <text x="400" y="480" fill="#ffffff" font-size="20" text-anchor="middle">값: 50</text>
+
+    <!-- Right Rope: Represents 204 -->
+    <!-- 100s -->
+    <circle cx="600" cy="210" r="10" class="knot-100" />
+    <circle cx="600" cy="230" r="10" class="knot-100" />
+    <!-- 10s (EMPTY space = ZERO) -->
+    <path d="M 580 310 L 620 310" stroke="#888" stroke-dasharray="4,4" stroke-width="2" />
+    <!-- 1s -->
+    <circle cx="600" cy="370" r="6" class="knot-1" />
+    <circle cx="600" cy="390" r="6" class="knot-1" />
+    <circle cx="600" cy="410" r="6" class="knot-1" />
+    <circle cx="600" cy="430" r="6" class="knot-1" />
+    <text x="600" y="480" fill="#ffffff" font-size="20" text-anchor="middle">값: 204</text>
+
+</svg>

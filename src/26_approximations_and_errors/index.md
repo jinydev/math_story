@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "수학이야기 77.근삿값과 오차"
+title: '수학이야기 77.근삿값과 오차'
 parent: 수학이야기
 nav_order: 77
 has_children: true

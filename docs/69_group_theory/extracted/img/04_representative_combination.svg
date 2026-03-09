@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">조합(C)의 거울 대칭 마법 스킬 (Mirroring)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"100명 중에서 살릴 놈 98명을
+        고르느냐, 죽일 놈 2명 블랙리스트를 고르느냐"</text>
+
+    <!-- Left: 100C98 -->
+    <g transform="translate(100, 150)">
+        <rect x="0" y="0" width="300" height="250" rx="10" fill="#221111" stroke="#ff4d4d" stroke-width="2" />
+        <text x="150" y="40" fill="#ff4d4d" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle">100C98 구하기</text>
+
+        <!-- 98 People Selected -->
+        <rect x="30" y="70" width="240" height="100" rx="5" fill="#331111" stroke="#ffaa00" stroke-dasharray="5 5" />
+        <text x="150" y="105" fill="#ffaa00" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">살릴 사람 98명 묶음 선택</text>
+        <text x="150" y="145" fill="#aaaaaa" font-family="monospace" font-size="14" text-anchor="middle">계산식: (100 * 99
+            * ... 3) / 98!</text>
+
+        <!-- Leftovers -->
+        <rect x="80" y="190" width="140" height="40" fill="#111111" stroke="#555555" stroke-dasharray="2 2" />
+        <text x="150" y="215" fill="#777777" font-family="sans-serif" font-size="14" text-anchor="middle">저동으로 버려진
+            2명</text>
+    </g>
+
+    <!-- Mirror Wall -->
+    <g transform="translate(450, 150)">
+        <line x1="0" y1="0" x2="0" y2="250" stroke="#00ffcc" stroke-width="6" stroke-dasharray="10 5"
+            filter="url(#glow)" />
+        <path d="M -30 120 L 30 120 M 20 110 L 30 120 L 20 130" stroke="#00ffcc" stroke-width="3" fill="none" />
+        <path d="M 30 130 L -30 130 M -20 120 L -30 130 L -20 140" stroke="#00ffcc" stroke-width="3" fill="none" />
+        <text x="0" y="280" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">완벽한 여집합 데칼코마니</text>
+    </g>
+
+    <!-- Right: 100C2 -->
+    <g transform="translate(500, 150)">
+        <rect x="0" y="0" width="300" height="250" rx="10" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+        <text x="150" y="40" fill="#00ffcc" font-family="sans-serif" font-size="24" font-weight="bold"
+            text-anchor="middle">100C2 로 풀기 (우회 해킹)</text>
+
+        <!-- 2 People Selected (Blacklist) -->
+        <rect x="80" y="70" width="140" height="60" rx="5" fill="#223344" stroke="#ff00ff" stroke-dasharray="5 5"
+            filter="url(#glow)" />
+        <text x="150" y="105" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">블랙리스트 2명 선택 탈락</text>
+
+        <!-- Automatic Leftovers -->
+        <rect x="30" y="150" width="240" height="40" fill="#111111" stroke="#555555" stroke-dasharray="2 2" />
+        <text x="150" y="175" fill="#777777" font-family="sans-serif" font-size="14" text-anchor="middle">자동으로 살아남은
+            98명</text>
+
+        <!-- Calculation -->
+        <text x="150" y="225" fill="#00ffcc" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">계산식: (100 * 99) / 2!</text>
+    </g>
+
+    <!-- Big Conclusion -->
+    <rect x="150" y="480" width="600" height="80" rx="15" fill="#221122" stroke="#ffaa00" stroke-width="3" />
+    <text x="450" y="515" fill="#ffaa00" font-family="monospace" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">100C98 == 100C2 = 4,950</text>
+    <text x="450" y="545" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">"nCr = nCn-r" 팩토리얼
+        연산 과부하를 뚫어주는 컴퓨터 최적화 공식</text>
+
+</svg>

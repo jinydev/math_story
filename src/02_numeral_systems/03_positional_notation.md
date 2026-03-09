@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 세 번째 수업 인류 최고의 발명, 위치 기수법 Positional Notation'
+---
+
 # 03. 세 번째 수업: 인류 최고의 발명, 위치 기수법 (Positional Notation)
 
 만약 10,000배가 커진다고 해서 새로운 문자를 새로 발명하지 않아도 된다면 어떨까요?

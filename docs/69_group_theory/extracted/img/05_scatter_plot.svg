@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">하늘에 찍어보는 관계의 별자리: 상관도 (Scatter Plot)</text>
+
+    <!-- Left Chart: Strong Positive (Rugby Ball) -->
+    <g transform="translate(150, 150)">
+
+        <!-- Title -->
+        <text x="150" y="-30" fill="#ffaa00" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">우상향 띠 (양의 상관관계)</text>
+        <text x="150" y="-10" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">"수학 잘하면 과학도
+            잘한다"</text>
+
+        <!-- Axes -->
+        <line x1="0" y1="250" x2="300" y2="250" stroke="#777777" stroke-width="2" />
+        <line x1="0" y1="0" x2="0" y2="250" stroke="#777777" stroke-width="2" />
+        <text x="150" y="280" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">수학 점수
+            (X)</text>
+        <text x="-40" y="125" transform="rotate(-90, -40, 125)" fill="#ffffff" font-family="sans-serif" font-size="14"
+            text-anchor="middle">과학 점수 (Y)</text>
+
+        <!-- Background Ellipse (Rugby Ball) -->
+        <ellipse cx="150" cy="125" rx="140" ry="40" fill="#ffaa00" opacity="0.15" transform="rotate(-40, 150, 125)"
+            stroke="#ffaa00" stroke-width="2" stroke-dasharray="6 4" />
+
+        <!-- Trend Line -->
+        <line x1="20" y1="230" x2="280" y2="20" stroke="#ffaa00" stroke-width="3" filter="url(#glow)" />
+
+        <!-- Points (Scattered around line) -->
+        <circle cx="30" cy="210" r="4" fill="#ffffff" />
+        <circle cx="50" cy="180" r="4" fill="#ffffff" />
+        <circle cx="60" cy="230" r="4" fill="#ffffff" />
+        <circle cx="80" cy="160" r="4" fill="#ffffff" />
+        <circle cx="100" cy="190" r="4" fill="#ffffff" />
+        <circle cx="120" cy="130" r="4" fill="#ffffff" />
+        <circle cx="140" cy="150" r="4" fill="#ffffff" />
+        <circle cx="160" cy="90" r="4" fill="#ffffff" />
+        <circle cx="180" cy="110" r="4" fill="#ffffff" />
+        <circle cx="200" cy="60" r="4" fill="#ffffff" />
+        <circle cx="210" cy="100" r="4" fill="#ffffff" />
+        <circle cx="230" cy="40" r="4" fill="#ffffff" />
+        <circle cx="250" cy="80" r="4" fill="#ffffff" />
+        <circle cx="270" cy="30" r="4" fill="#ffffff" />
+        <circle cx="280" cy="50" r="4" fill="#ffffff" />
+
+        <text x="150" y="310" fill="#ffaa00" font-family="sans-serif" font-size="14" text-anchor="middle">촘촘한 럭비공 형태
+            (Strong)</text>
+
+    </g>
+
+    <!-- Right Chart: Zero Correlation (Scattered Mess) -->
+    <g transform="translate(550, 150)">
+
+        <!-- Title -->
+        <text x="150" y="-30" fill="#ff4d4d" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">모래알 파편 (상관관계 0)</text>
+        <text x="150" y="-10" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">"머리카락 길이와 수학
+            점수"</text>
+
+        <!-- Axes -->
+        <line x1="0" y1="250" x2="300" y2="250" stroke="#777777" stroke-width="2" />
+        <line x1="0" y1="0" x2="0" y2="250" stroke="#777777" stroke-width="2" />
+        <text x="150" y="280" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">머리카락 길이
+            (X)</text>
+        <text x="-40" y="125" transform="rotate(-90, -40, 125)" fill="#ffffff" font-family="sans-serif" font-size="14"
+            text-anchor="middle">수학 점수 (Y)</text>
+
+        <!-- Background Circle (Mess) -->
+        <circle cx="150" cy="125" r="110" fill="#ff4d4d" opacity="0.1" stroke="#ff4d4d" stroke-width="2"
+            stroke-dasharray="6 4" />
+
+        <!-- Points (Randomly placed) -->
+        <circle cx="50" cy="50" r="4" fill="#ffffff" />
+        <circle cx="220" cy="40" r="4" fill="#ffffff" />
+        <circle cx="100" cy="210" r="4" fill="#ffffff" />
+        <circle cx="80" cy="130" r="4" fill="#ffffff" />
+        <circle cx="200" cy="190" r="4" fill="#ffffff" />
+        <circle cx="130" cy="80" r="4" fill="#ffffff" />
+        <circle cx="260" cy="140" r="4" fill="#ffffff" />
+        <circle cx="160" cy="220" r="4" fill="#ffffff" />
+        <circle cx="40" cy="160" r="4" fill="#ffffff" />
+        <circle cx="170" cy="50" r="4" fill="#ffffff" />
+        <circle cx="110" cy="160" r="4" fill="#ffffff" />
+        <circle cx="240" cy="80" r="4" fill="#ffffff" />
+        <circle cx="70" cy="100" r="4" fill="#ffffff" />
+        <circle cx="190" cy="110" r="4" fill="#ffffff" />
+        <circle cx="140" cy="170" r="4" fill="#ffffff" />
+
+        <!-- No Trend Line, just a question mark -->
+        <text x="150" y="150" fill="#ff4d4d" font-family="sans-serif" font-size="60" font-weight="bold"
+            text-anchor="middle" opacity="0.3">?</text>
+
+        <text x="150" y="310" fill="#ff4d4d" font-family="sans-serif" font-size="14" text-anchor="middle">크고 둥근 통계적 무의미의
+            구름</text>
+
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="520" width="600" height="40" rx="10" fill="#113322" stroke="#00ffcc" stroke-width="2" />
+    <text x="450" y="545" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">인공지능 타겟 마케팅의 시작:
+        plt.scatter() 를 허공에 발사하여 방향성 감지하기</text>
+
+</svg>

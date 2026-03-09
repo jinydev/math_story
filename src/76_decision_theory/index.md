@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 75. 의사결정이론 Decision Theory'
+---
+
 # 수학이야기 75. 의사결정이론 (Decision Theory)
 
 ## 📌 학습 개요

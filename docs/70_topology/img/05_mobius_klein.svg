@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#862e9c" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">다섯 번째 공간: '방향성이 파괴된 우주 (비가향 곡면)'</text>
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"우리가 살아가는 세상은 안과 밖이 존재하지만, 이 기하학 괴물들은 경계가
+        없다!"</text>
+
+    <!-- Left Side: Möbius Strip -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="110" y="25" fill="#e8590c" font-size="14" font-weight="bold" text-anchor="middle">뫼비우스의 띠 (Möbius
+            Strip)</text>
+
+        <!-- Abstract Möbius Strip Path -->
+        <path d="M 50 80 C 50 120, 110 140, 140 100 C 170 60, 170 40, 120 40 C 70 40, 50 60, 50 80 Z" fill="none"
+            stroke="#fcc419" stroke-width="20" />
+        <!-- The twist effect (overlay a white gap and redraw to simulate twist) -->
+        <path d="M 110 140 C 140 100, 140 80, 120 40" fill="none" stroke="#fff" stroke-width="22" />
+        <path d="M 110 140 C 140 100, 140 80, 120 40" fill="none" stroke="#e8590c" stroke-width="20" opacity="0.8" />
+
+        <!-- Ant walking path -->
+        <path d="M 50 80 C 50 120, 110 140, 140 100 C 170 60, 170 40, 120 40" fill="none" stroke="#212529"
+            stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow-ant)" />
+
+        <!-- Little ant dot -->
+        <circle cx="50" cy="80" r="3" fill="#d9480f" />
+
+        <rect x="15" y="125" width="190" height="18" fill="#fff4e6" rx="3" />
+        <text x="110" y="138" fill="#e8590c" font-size="10" font-weight="bold" text-anchor="middle">2차원 평면의 꼬임: "안과 밖이
+            하나다!"</text>
+    </g>
+
+    <!-- Right Side: Klein Bottle -->
+    <g transform="translate(320, 80)">
+        <rect x="0" y="0" width="230" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="115" y="25" fill="#862e9c" font-size="14" font-weight="bold" text-anchor="middle">클라인 병 (Klein
+            Bottle)</text>
+
+        <!-- Abstract Klein Bottle (Flask with a neck plunging into itself) -->
+        <path
+            d="M 80 120 C 50 120, 50 70, 80 50 C 110 30, 140 40, 140 70 C 140 100, 130 110, 110 110 C 90 110, 80 90, 80 120"
+            fill="none" stroke="#eebefa" stroke-width="6" />
+
+        <!-- Plunge part (Self-intersection) -->
+        <path d="M 140 70 C 140 40, 120 20, 90 40 C 60 60, 80 120, 80 120" fill="none" stroke="#862e9c"
+            stroke-width="6" />
+
+        <text x="180" y="75" fill="#862e9c" font-size="20">🏺</text>
+
+        <!-- Self-intersect cross mark -->
+        <circle cx="85" cy="80" r="10" fill="none" stroke="#fa5252" stroke-width="2" stroke-dasharray="2,2" />
+        <text x="115" y="85" fill="#fa5252" font-size="8" font-weight="bold">3D에선 벽충돌!</text>
+
+        <rect x="15" y="125" width="200" height="18" fill="#f3d9fa" rx="3" />
+        <text x="115" y="138" fill="#862e9c" font-size="10" font-weight="bold" text-anchor="middle">3D 공간의 한계: "내부와 외부가
+            하나다!"</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-ant" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#212529" />
+        </marker>
+    </defs>
+</svg>

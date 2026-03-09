@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 면적이 곧 확률이다 확률밀도함수PDF와 적분'
+---
+
 # 2. 면적이 곧 확률이다: 확률밀도함수(PDF)와 적분
 
 ## [도입부] 학습 목표 (Learning Objectives)

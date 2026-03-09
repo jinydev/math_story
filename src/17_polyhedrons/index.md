@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '12. 다면체 Polyhedron 우주의 뼈대 설계도'
+---
+
 # 12. 다면체 (Polyhedron: 우주의 뼈대 설계도)
 
 ## 이 단원의 핵심 (Chapter Focus)

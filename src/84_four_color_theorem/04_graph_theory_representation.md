@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '4. 지도를 은하계로 압축하다 그래프 이론 Graph Theory'
+---
+
 # 4. 지도를 은하계로 압축하다: 그래프 이론 (Graph Theory)
 
 ## [도입부] 학습 목표 (Learning Objectives)

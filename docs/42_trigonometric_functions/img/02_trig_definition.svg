@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#e03131" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">그림자를 추적하라: 삼각함수의 정의 (sin, cos, tan)</text>
+
+    <!-- Coordinate System & Circle (Unit Circle) -->
+    <g transform="translate(150, 150)">
+        <!-- Axes -->
+        <line x1="-120" y1="0" x2="120" y2="0" stroke="#868e96" stroke-width="2" />
+        <line x1="0" y1="-120" x2="0" y2="120" stroke="#868e96" stroke-width="2" />
+
+        <!-- Circle (radius = r) -->
+        <circle cx="0" cy="0" r="80" fill="none" stroke="#adb5bd" stroke-width="2" stroke-dasharray="4,4" />
+
+        <!-- Triangle -->
+        <path d="M 0 0 L 60 -53 L 60 0 Z" fill="#ffc9c9" opacity="0.6" />
+        <line x1="0" y1="0" x2="60" y2="-53" stroke="#c92a2a" stroke-width="3" />
+        <line x1="60" y1="-53" x2="60" y2="0" stroke="#339af0" stroke-width="3" />
+        <line x1="0" y1="0" x2="60" y2="0" stroke="#2b8a3e" stroke-width="3" />
+
+        <!-- Point P -->
+        <circle cx="60" cy="-53" r="5" fill="#e03131" />
+        <text x="65" y="-60" fill="#c92a2a" font-size="14" font-family="monospace" font-weight="bold">P(x, y)</text>
+
+        <!-- Angle theta -->
+        <path d="M 25 0 A 25 25 0 0 0 18 -17" fill="none" stroke="#495057" stroke-width="2" />
+        <text x="30" y="-8" fill="#495057" font-size="14" font-family="serif" font-weight="bold">θ</text>
+
+        <!-- Labels r, x, y -->
+        <text x="20" y="-35" fill="#c92a2a" font-size="14" font-family="monospace" font-weight="bold">r</text>
+        <text x="30" y="15" fill="#2b8a3e" font-size="14" font-family="monospace" font-weight="bold">x (가로)</text>
+        <text x="65" y="-20" fill="#339af0" font-size="14" font-family="monospace" font-weight="bold">y (세로)</text>
+    </g>
+
+    <!-- Definitions Box -->
+    <g transform="translate(350, 70)">
+        <rect x="0" y="0" width="220" height="150" fill="#fff5f5" stroke="#fa5252" stroke-width="2" rx="8" />
+        <text x="110" y="25" fill="#c92a2a" font-size="16" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">좌표 평면에서의 정의</text>
+
+        <!-- Sin -->
+        <text x="20" y="60" fill="#339af0" font-size="18" font-family="monospace" font-weight="bold">sin θ = y /
+            r</text>
+        <text x="145" y="58" fill="#495057" font-size="12" font-family="sans-serif">(높이 추적기)</text>
+
+        <!-- Cos -->
+        <text x="20" y="95" fill="#2b8a3e" font-size="18" font-family="monospace" font-weight="bold">cos θ = x /
+            r</text>
+        <text x="145" y="93" fill="#495057" font-size="12" font-family="sans-serif">(그림자 추적기)</text>
+
+        <!-- Tan -->
+        <text x="20" y="130" fill="#f08c00" font-size="18" font-family="monospace" font-weight="bold">tan θ = y /
+            x</text>
+        <text x="145" y="128" fill="#495057" font-size="12" font-family="sans-serif">(기울기 경사도)</text>
+    </g>
+</svg>

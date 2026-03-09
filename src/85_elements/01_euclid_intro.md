@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 기하학의 성서를 열다 유클리드 원론Elements의 탄생'
+---
+
 # 1. 기하학의 성서를 열다: 유클리드 《원론(Elements)》의 탄생
 
 ## [도입부] 학습 목표 (Learning Objectives)

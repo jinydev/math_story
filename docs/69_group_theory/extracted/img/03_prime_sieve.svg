@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .grid-box {
+                fill: #161b22;
+                stroke: #30363d;
+                stroke-width: 2;
+                rx: 5;
+            }
+
+            .text-num {
+                fill: #ffffff;
+                font-size: 20px;
+                text-anchor: middle;
+            }
+
+            /* States */
+            .crossed-box {
+                fill: rgba(255, 100, 100, 0.1);
+                stroke: #ff6464;
+                stroke-width: 2;
+            }
+
+            .crossed-line {
+                stroke: #ff6464;
+                stroke-width: 3;
+            }
+
+            .crossed-text {
+                fill: #ff6464;
+                opacity: 0.5;
+            }
+
+            .prime-box {
+                fill: rgba(100, 255, 100, 0.2);
+                stroke: #64ff64;
+                stroke-width: 3;
+                filter: drop-shadow(0 0 5px #64ff64);
+            }
+
+            .prime-text {
+                fill: #64ff64;
+            }
+
+            /* Animation Sequence Simulation (CSS) */
+            .fade-in {
+                animation: fade-in 3s forwards;
+            }
+
+            @keyframes fade-in {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            .title {
+                fill: #00ffff;
+                font-size: 28px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#0d1117" />
+
+    <text x="400" y="50" class="title">에라토스테네스의 체 (Sieve of Eratosthenes)</text>
+    <text x="400" y="80" class="desc">합성수 배수들을 무자비하게 걸러내고 순수한 소수(Prime)만 남기는 해킹 필터</text>
+
+    <g transform="translate(100, 120)">
+        <!-- Row 1: 1 to 10 -->
+        <!-- 1 (Crossed - neither) -->
+        <rect x="0" y="0" width="50" height="50" class="grid-box crossed-box" />
+        <text x="25" y="32" class="text-num crossed-text">1</text>
+        <line x1="5" y1="5" x2="45" y2="45" class="crossed-line" />
+
+        <!-- 2 (Prime) -->
+        <rect x="60" y="0" width="50" height="50" class="grid-box prime-box" />
+        <text x="85" y="32" class="text-num prime-text">2</text>
+
+        <!-- 3 (Prime) -->
+        <rect x="120" y="0" width="50" height="50" class="grid-box prime-box" />
+        <text x="145" y="32" class="text-num prime-text">3</text>
+
+        <!-- 4 (Crossed by 2) -->
+        <rect x="180" y="0" width="50" height="50" class="grid-box crossed-box" />
+        <text x="205" y="32" class="text-num crossed-text">4</text>
+        <line x1="185" y1="5" x2="225" y2="45" class="crossed-line" />
+
+        <!-- 5 (Prime) -->
+        <rect x="240" y="0" width="50" height="50" class="grid-box prime-box" />
+        <text x="265" y="32" class="text-num prime-text">5</text>
+
+        <!-- 6 (Crossed by 2, 3) -->
+        <rect x="300" y="0" width="50" height="50" class="grid-box crossed-box" />
+        <text x="325" y="32" class="text-num crossed-text">6</text>
+        <line x1="305" y1="5" x2="345" y2="45" class="crossed-line" />
+
+        <!-- 7 (Prime) -->
+        <rect x="360" y="0" width="50" height="50" class="grid-box prime-box" />
+        <text x="385" y="32" class="text-num prime-text">7</text>
+
+        <!-- 8 (Crossed by 2) -->
+        <rect x="420" y="0" width="50" height="50" class="grid-box crossed-box" />
+        <text x="445" y="32" class="text-num crossed-text">8</text>
+        <line x1="425" y1="5" x2="465" y2="45" class="crossed-line" />
+
+        <!-- 9 (Crossed by 3) -->
+        <rect x="480" y="0" width="50" height="50" class="grid-box crossed-box" />
+        <text x="505" y="32" class="text-num crossed-text">9</text>
+        <line x1="485" y1="5" x2="525" y2="45" class="crossed-line" />
+
+        <!-- 10 (Crossed by 2, 5) -->
+        <rect x="540" y="0" width="50" height="50" class="grid-box crossed-box" />
+        <text x="565" y="32" class="text-num crossed-text">10</text>
+        <line x1="545" y1="5" x2="585" y2="45" class="crossed-line" />
+
+        <!-- Row 2: 11 to 20 -->
+        <!-- 11 (Prime) -->
+        <rect x="0" y="60" width="50" height="50" class="grid-box prime-box" />
+        <text x="25" y="92" class="text-num prime-text">11</text>
+
+        <!-- 12 (Crossed) -->
+        <rect x="60" y="60" width="50" height="50" class="grid-box crossed-box" />
+        <text x="85" y="92" class="text-num crossed-text">12</text>
+        <line x1="65" y1="65" x2="105" y2="105" class="crossed-line" />
+
+        <!-- 13 (Prime) -->
+        <rect x="120" y="60" width="50" height="50" class="grid-box prime-box" />
+        <text x="145" y="92" class="text-num prime-text">13</text>
+
+        <!-- 14 (Crossed) -->
+        <rect x="180" y="60" width="50" height="50" class="grid-box crossed-box" />
+        <text x="205" y="92" class="text-num crossed-text">14</text>
+        <line x1="185" y1="65" x2="225" y2="105" class="crossed-line" />
+
+        <!-- 15 (Crossed by 3, 5) -->
+        <rect x="240" y="60" width="50" height="50" class="grid-box crossed-box" />
+        <text x="265" y="92" class="text-num crossed-text">15</text>
+        <line x1="245" y1="65" x2="285" y2="105" class="crossed-line" />
+
+        <!-- 16 (Crossed) -->
+        <rect x="300" y="60" width="50" height="50" class="grid-box crossed-box" />
+        <text x="325" y="92" class="text-num crossed-text">16</text>
+        <line x1="305" y1="65" x2="345" y2="105" class="crossed-line" />
+
+        <!-- 17 (Prime) -->
+        <rect x="360" y="60" width="50" height="50" class="grid-box prime-box" />
+        <text x="385" y="92" class="text-num prime-text">17</text>
+
+        <!-- 18 (Crossed) -->
+        <rect x="420" y="60" width="50" height="50" class="grid-box crossed-box" />
+        <text x="445" y="92" class="text-num crossed-text">18</text>
+        <line x1="425" y1="65" x2="465" y2="105" class="crossed-line" />
+
+        <!-- 19 (Prime) -->
+        <rect x="480" y="60" width="50" height="50" class="grid-box prime-box" />
+        <text x="505" y="92" class="text-num prime-text">19</text>
+
+        <!-- 20 (Crossed) -->
+        <rect x="540" y="60" width="50" height="50" class="grid-box crossed-box" />
+        <text x="565" y="92" class="text-num crossed-text">20</text>
+        <line x1="545" y1="65" x2="585" y2="105" class="crossed-line" />
+
+        <!-- Row 3: 21 to 30 -->
+        <!-- 21 (Crossed) -->
+        <rect x="0" y="120" width="50" height="50" class="grid-box crossed-box" />
+        <text x="25" y="152" class="text-num crossed-text">21</text>
+        <line x1="5" y1="125" x2="45" y2="165" class="crossed-line" />
+
+        <!-- 22 (Crossed) -->
+        <rect x="60" y="120" width="50" height="50" class="grid-box crossed-box" />
+        <text x="85" y="152" class="text-num crossed-text">22</text>
+        <line x1="65" y1="125" x2="105" y2="165" class="crossed-line" />
+
+        <!-- 23 (Prime) -->
+        <rect x="120" y="120" width="50" height="50" class="grid-box prime-box" />
+        <text x="145" y="152" class="text-num prime-text">23</text>
+
+        <!-- 24 (Crossed) -->
+        <rect x="180" y="120" width="50" height="50" class="grid-box crossed-box" />
+        <text x="205" y="152" class="text-num crossed-text">24</text>
+        <line x1="185" y1="125" x2="225" y2="165" class="crossed-line" />
+
+        <!-- 25 (Crossed by 5) -->
+        <rect x="240" y="120" width="50" height="50" class="grid-box crossed-box" />
+        <text x="265" y="152" class="text-num crossed-text">25</text>
+        <line x1="245" y1="125" x2="285" y2="165" class="crossed-line" />
+
+        <!-- 26 (Crossed) -->
+        <rect x="300" y="120" width="50" height="50" class="grid-box crossed-box" />
+        <text x="325" y="152" class="text-num crossed-text">26</text>
+        <line x1="305" y1="125" x2="345" y2="165" class="crossed-line" />
+
+        <!-- 27 (Crossed by 3) -->
+        <rect x="360" y="120" width="50" height="50" class="grid-box crossed-box" />
+        <text x="385" y="152" class="text-num crossed-text">27</text>
+        <line x1="365" y1="125" x2="405" y2="165" class="crossed-line" />
+
+        <!-- 28 (Crossed) -->
+        <rect x="420" y="120" width="50" height="50" class="grid-box crossed-box" />
+        <text x="445" y="152" class="text-num crossed-text">28</text>
+        <line x1="425" y1="125" x2="465" y2="165" class="crossed-line" />
+
+        <!-- 29 (Prime) -->
+        <rect x="480" y="120" width="50" height="50" class="grid-box prime-box" />
+        <text x="505" y="152" class="text-num prime-text">29</text>
+
+        <!-- 30 (Crossed) -->
+        <rect x="540" y="120" width="50" height="50" class="grid-box crossed-box" />
+        <text x="565" y="152" class="text-num crossed-text">30</text>
+        <line x1="545" y1="125" x2="585" y2="165" class="crossed-line" />
+    </g>
+
+    <!-- Info Panel -->
+    <g transform="translate(100, 350)">
+        <rect x="0" y="0" width="600" height="80" class="grid-box" fill="#1e242c" />
+        <circle cx="40" cy="40" r="15" class="prime-box" stroke-width="0" />
+        <text x="70" y="47" fill="#ffffff" font-size="20">진골 소수들 (다이아몬드)</text>
+
+        <line x1="330" y1="30" x2="360" y2="50" class="crossed-line" />
+        <text x="380" y="47" fill="#888" font-size="20">n의 배수 (합성수) 삭제</text>
+    </g>
+
+</svg>

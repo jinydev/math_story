@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .box-blue {
+                fill: rgba(0, 136, 255, 0.1);
+                stroke: #0088ff;
+                stroke-width: 2;
+                rx: 8;
+                ry: 8;
+            }
+
+            .box-red {
+                fill: rgba(255, 100, 100, 0.1);
+                stroke: #ff6464;
+                stroke-width: 2;
+                rx: 8;
+                ry: 8;
+            }
+
+            .box-green {
+                fill: rgba(0, 255, 136, 0.1);
+                stroke: #00ff88;
+                stroke-width: 2;
+                rx: 8;
+                ry: 8;
+            }
+
+            .path-or {
+                stroke: #ff00ff;
+                stroke-width: 3;
+                fill: none;
+                stroke-dasharray: 5, 5;
+            }
+
+            .path-and {
+                stroke: #00ffff;
+                stroke-width: 3;
+                fill: none;
+            }
+
+            .text-large {
+                font-size: 32px;
+                fill: #ffffff;
+                text-anchor: middle;
+            }
+
+            .text-or {
+                font-size: 20px;
+                fill: #ff00ff;
+                text-anchor: middle;
+                font-weight: bold;
+            }
+
+            .text-and {
+                font-size: 20px;
+                fill: #00ffff;
+                text-anchor: middle;
+                font-weight: bold;
+            }
+
+            .icon {
+                font-size: 24px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="400" y="40" class="title">경우의 수 대원칙: 합의 법칙(+) vs 곱의 법칙(×)</text>
+    <text x="400" y="70" class="desc">동시에 일어날 수 없는 사건(OR)과 연속해서 세트로 일어나는 사건(AND)</text>
+
+    <!-- Left Side: Addition Rule (OR) -->
+    <g transform="translate(200, 150)">
+        <rect x="-180" y="0" width="360" height="400" fill="#161b22" rx="15" ry="15" />
+        <text x="0" y="40" class="text-large" fill="#ff00ff">합의 법칙 (+)</text>
+        <text x="0" y="70" class="text-or">"둘 중 하나만 선택! (OR)"</text>
+
+        <text x="0" y="120" fill="#ffffff" font-size="18" text-anchor="middle">메인 메뉴 1개 고르기</text>
+
+        <!-- Paths -->
+        <path d="M 0 140 Q -80 180 -80 220" class="path-or" />
+        <path d="M 0 140 Q 80 180 80 220" class="path-or" />
+
+        <!-- Boxes -->
+        <rect x="-140" y="220" width="120" height="80" class="box-blue" />
+        <text x="-80" y="250" fill="#0088ff" font-size="18" text-anchor="middle">면류 (3개)</text>
+        <text x="-80" y="280" class="icon">🍜🍝🍲</text>
+
+        <rect x="20" y="220" width="120" height="80" class="box-red" />
+        <text x="80" y="250" fill="#ff6464" font-size="18" text-anchor="middle">밥류 (3개)</text>
+        <text x="80" y="280" class="icon">🍚🍛🍱</text>
+
+        <text x="0" y="350" fill="#ffff00" font-size="28" font-weight="bold" text-anchor="middle">3 + 3 = 6 가지</text>
+    </g>
+
+    <!-- Right Side: Multiplication Rule (AND) -->
+    <g transform="translate(600, 150)">
+        <rect x="-180" y="0" width="360" height="400" fill="#161b22" rx="15" ry="15" />
+        <text x="0" y="40" class="text-large" fill="#00ffff">곱의 법칙 (×)</text>
+        <text x="0" y="70" class="text-and">"세트로 동시에 착용! (AND)"</text>
+
+        <text x="0" y="120" fill="#ffffff" font-size="18" text-anchor="middle">외출 코디 맞추기</text>
+
+        <!-- Paths (Tree branch style) -->
+        <path d="M 0 140 L 0 180" class="path-and" />
+        <path d="M 0 180 L -80 220" class="path-and" />
+        <path d="M 0 180 L 80 220" class="path-and" />
+
+        <path d="M -80 300 L -110 330" class="path-and" />
+        <path d="M -80 300 L -50 330" class="path-and" />
+
+        <path d="M 80 300 L 50 330" class="path-and" />
+        <path d="M 80 300 L 110 330" class="path-and" />
+
+        <!-- Boxes -->
+        <rect x="-140" y="220" width="120" height="80" class="box-blue" />
+        <text x="-80" y="250" fill="#0088ff" font-size="18" text-anchor="middle">상의 (3벌)</text>
+        <text x="-80" y="280" class="icon">👕👔🧶</text>
+
+        <g transform="translate(-80, 0)">
+            <rect x="80" y="220" width="120" height="80" class="box-green" />
+            <text x="140" y="250" fill="#00ff88" font-size="18" text-anchor="middle">하의 (2벌)</text>
+            <text x="140" y="280" class="icon">👖🩳</text>
+        </g>
+
+        <text x="0" y="325" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">세트 장착 연속 발생</text>
+        <text x="0" y="360" fill="#ffff00" font-size="28" font-weight="bold" text-anchor="middle">3 × 2 = 6 코디</text>
+    </g>
+
+</svg>

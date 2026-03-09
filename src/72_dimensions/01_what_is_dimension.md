@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 좌표의 개수가 우주를 결정한다 차원Dimension'
+---
+
 # 1. 좌표의 개수가 우주를 결정한다: '차원(Dimension)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '3. 우주의 쌍둥이 식별법 위상동형 Homeomorphism'
+---
+
 # 3. 우주의 쌍둥이 식별법: '위상동형 (Homeomorphism)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

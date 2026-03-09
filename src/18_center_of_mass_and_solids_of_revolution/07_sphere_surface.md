@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '7. 우주가 선택한 완벽한 둥근 껍질 구의 겉넓이 Sphere Surface'
+---
+
 # 7. 우주가 선택한 완벽한 둥근 껍질: 구의 겉넓이 (Sphere Surface)
 
 ## [도입부] 학습 목표 (Learning Objectives)

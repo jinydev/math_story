@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '02. 시저 암호의 붕괴점, 빈도 분석법 Frequency Analysis'
+---
+
 # 02. 시저 암호의 붕괴점, 빈도 분석법 (Frequency Analysis)
 
 ## 1. 학습 목표 (Learning Objectives)

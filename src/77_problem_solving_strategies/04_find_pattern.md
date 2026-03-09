@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '4. 암호 해독가의 시선 숨겨진 뒷골목 룰, 규칙 찾기 Find a Pattern'
+---
+
 # 4. 암호 해독가의 시선: 숨겨진 뒷골목 룰, '규칙 찾기 (Find a Pattern)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

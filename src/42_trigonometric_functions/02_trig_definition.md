@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 그림자를 추적하라 삼각함수의 정의 sin, cos, tan'
+---
+
 # 2. 그림자를 추적하라: 삼각함수의 정의 (sin, cos, tan)
 
 ## [도입부] 학습 목표 (Learning Objectives)

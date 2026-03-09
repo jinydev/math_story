@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 세 번째 수업 복이차식,  을 조종하는 이중 트릭 Biquadratic Equations'
+---
+
 # 03. 세 번째 수업: 복이차식, $x^2$ 을 조종하는 이중 트릭 (Biquadratic Equations)
 
 적의 덩치가 아무리 크고 무서워도, 그 속의 진짜 패턴만 꿰뚫어 볼 수 있다면 1초 만에 약점을 찌를 수 있습니다.

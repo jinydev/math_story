@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "수학이야기 28.원1"
+title: '수학이야기 28.원1'
 parent: 수학이야기
 nav_order: 28
 has_children: true

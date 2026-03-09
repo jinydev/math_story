@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 피보나치의 걸작, 산반서Liber Abaci'
+---
+
 # 03. 피보나치의 걸작, 《산반서(Liber Abaci)》
 
 ## 1. 학습 목표 (Learning Objectives)

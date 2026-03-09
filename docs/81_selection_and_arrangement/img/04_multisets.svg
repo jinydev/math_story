@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">네 번째 배열: '중복조합 (Multisets)'</text>
+
+    <!-- Title / Setup -->
+    <text x="300" y="55" fill="#495057" font-size="12" text-anchor="middle">"동일한 메뉴 중복 선택을 허용하는, 마트료시카 같은 뽑기의 마법"</text>
+
+    <!-- Ice Cream Shop Scenario -->
+    <g transform="translate(60, 80)">
+        <rect x="0" y="0" width="200" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="100" y="25" fill="#e67700" font-size="14" font-weight="bold" text-anchor="middle">아이스크림 3가지 맛
+            (n=3)</text>
+
+        <!-- Flavors -->
+        <rect x="25" y="40" width="40" height="60" fill="#ffc9c9" />
+        <text x="45" y="115" fill="#c92a2a" font-size="11" font-weight="bold" text-anchor="middle">딸기</text>
+
+        <rect x="80" y="40" width="40" height="60" fill="#fff3bf" />
+        <text x="100" y="115" fill="#e67700" font-size="11" font-weight="bold" text-anchor="middle">바닐라</text>
+
+        <rect x="135" y="40" width="40" height="60" fill="#d8f5a2" />
+        <text x="155" y="115" fill="#5c940d" font-size="11" font-weight="bold" text-anchor="middle">메론</text>
+
+        <!-- Selection Mission -->
+        <rect x="10" y="125" width="180" height="20" fill="#f1f3f5" />
+        <text x="100" y="139" fill="#1864ab" font-size="12" font-weight="bold" text-anchor="middle">미션: "중복 허용! 총
+            4개(r=4) 고르기"</text>
+    </g>
+
+    <!-- Transformation Magic: Stars and Bars -->
+    <g transform="translate(300, 80)">
+        <!-- Arrow -->
+        <path d="M -20 75 L 10 75" fill="none" stroke="#adb5bd" stroke-width="3" stroke-dasharray="4,2"
+            marker-end="url(#arrow)" />
+
+        <rect x="30" y="0" width="250" height="150" fill="#fff" stroke="#adb5bd" rx="5" />
+        <text x="155" y="25" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">Stars and Bars (별과
+            막대기 기법)</text>
+
+        <!-- Logic Explanation -->
+        <text x="155" y="50" fill="#495057" font-size="11" text-anchor="middle">공유 칸막이 2개(n-1)로 세 구역을 만든다!</text>
+
+        <!-- Stars and Bars Visualization -->
+        <text x="155" y="80" font-size="24" text-anchor="middle">⭐ | ⭐ ⭐ | ⭐</text>
+
+        <!-- Mapped Meaning -->
+        <path d="M 60 90 L 60 110" stroke="#adb5bd" stroke-width="1" />
+        <text x="60" y="125" fill="#c92a2a" font-size="11" font-weight="bold" text-anchor="middle">딸기 1개</text>
+
+        <path d="M 155 90 L 155 110" stroke="#adb5bd" stroke-width="1" />
+        <text x="155" y="125" fill="#e67700" font-size="11" font-weight="bold" text-anchor="middle">바닐라 2개</text>
+
+        <path d="M 245 90 L 245 110" stroke="#adb5bd" stroke-width="1" />
+        <text x="245" y="125" fill="#5c940d" font-size="11" font-weight="bold" text-anchor="middle">메론 1개</text>
+
+        <!-- Formula Final -->
+        <rect x="50" y="135" width="210" height="15" fill="#f8f9fa" />
+        <text x="155" y="146" fill="#1864ab" font-size="10" font-family="monospace" font-weight="bold"
+            text-anchor="middle">
+            총 자리(4+2=6) 중 막대기(2)를 놓을 자리 고르기 6C2
+        </text>
+
+    </g>
+
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

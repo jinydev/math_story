@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '01. 첫 번째 수업 프랙탈이란? What is a Fractal?'
+---
+
 # 01. 첫 번째 수업: 프랙탈이란? (What is a Fractal?)
 
 여러분은 유클리드 기하학의 도형들을 확대(Zoom-in) 해 본 적이 있나요?

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 오일러 선과 구점원 Euler Line  Nine-Point Circle'
+---
+
 # 5. 오일러 선과 구점원 (Euler Line & Nine-Point Circle)
 
 ## [도입부] 학습 목표 (Learning Objectives)

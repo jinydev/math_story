@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 42. 무게중심과 회전체 Centroid and Solid of Revolution'
+---
+
 # 수학이야기 42. 무게중심과 회전체 (Centroid and Solid of Revolution)
 
 ## 📌 학습 개요

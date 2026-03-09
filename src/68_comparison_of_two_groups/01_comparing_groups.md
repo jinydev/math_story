@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 진짜 승자는 누구인가? 두 집단의 비교 Comparison of Groups'
+---
+
 # 1. 진짜 승자는 누구인가?: 두 집단의 비교 (Comparison of Groups)
 
 ## [도입부] 학습 목표 (Learning Objectives)

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 토끼의 번식 피보나치 수열과 DP 엔진'
+---
+
 # 03. 토끼의 번식: 피보나치 수열과 DP 엔진
 
 ## 1. 학습 목표 (Learning Objectives)

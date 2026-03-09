@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "수학이야기 30.함수1"
+title: '수학이야기 30.함수1'
 parent: 수학이야기
 nav_order: 30
 has_children: true

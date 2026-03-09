@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '04. 회로를 거부하는 생태계 수형도 Tree'
+---
+
 # 04. 회로를 거부하는 생태계: 수형도 (Tree)
 
 ## 1. 학습 목표 (Learning Objectives)

@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .ico-line {
+                fill: none;
+                stroke: #00ffff;
+                stroke-width: 2;
+                stroke-linejoin: round;
+            }
+
+            .ico-fill {
+                fill: rgba(0, 255, 255, 0.15);
+            }
+
+            .cut-line {
+                stroke: #ff0000;
+                stroke-width: 3;
+                stroke-dasharray: 4, 2;
+            }
+
+            .soccer-hex {
+                fill: #ffffff;
+                stroke: #161b22;
+                stroke-width: 2;
+                stroke-linejoin: round;
+            }
+
+            .soccer-pent {
+                fill: #161b22;
+                stroke: #8b949e;
+                stroke-width: 2;
+                stroke-linejoin: round;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .label-head {
+                fill: #ffaa64;
+                font-size: 20px;
+                text-anchor: middle;
+            }
+
+            .arrow {
+                fill: none;
+                stroke: #8b949e;
+                stroke-width: 4;
+                marker-end: url(#arrowhead);
+            }
+        </style>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#8b949e" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="450" y="40" class="title">아르키메데스 다면체 디자인: 정이십면체를 축구공으로 깎아내기</text>
+    <text x="450" y="65" class="desc">뾰족한 꼭짓점을 잘라내면 원래 피부(삼각형)는 육각형 허물이 되고 잘린 상처는 검은 오각형이 된다.</text>
+
+    <!-- Left: Icosahedron (Before Cut) -->
+    <g transform="translate(180, 240)">
+        <polygon points="0,-100 -80,-40 -50,60 50,60 80,-40" class="ico-fill" stroke="#00ffff" stroke-width="2" />
+        <!-- Center pentagon umbrella -->
+        <path d="M0 -100 L-30 -20 L-50 60" class="ico-line" />
+        <path d="M-30 -20 L30 -20 L0 -100" class="ico-line" />
+        <path d="M30 -20 L50 60" class="ico-line" />
+        <path d="M-80 -40 L-30 -20 L0 50 L-50 60" class="ico-line" />
+        <path d="M80 -40 L30 -20 L0 50 L50 60" class="ico-line" />
+
+        <!-- Cut marks overlay -->
+        <circle cx="0" cy="-100" r="10" fill="none" class="cut-line" />
+        <circle cx="-80" cy="-40" r="10" fill="none" class="cut-line" />
+        <circle cx="80" cy="-40" r="10" fill="none" class="cut-line" />
+        <circle cx="-30" cy="-20" r="10" fill="none" class="cut-line" />
+        <circle cx="30" cy="-20" r="10" fill="none" class="cut-line" />
+        <circle cx="-50" cy="60" r="10" fill="none" class="cut-line" />
+        <circle cx="50" cy="60" r="10" fill="none" class="cut-line" />
+        <circle cx="0" cy="50" r="10" fill="none" class="cut-line" />
+
+        <text x="0" y="110" class="label-head">1. 원본 뼈대 (정이십면체)</text>
+        <text x="0" y="135" fill="#fff" font-size="14" text-anchor="middle">정삼각형 면 20개 / 뾰족한 끝(꼭짓점) 12개</text>
+        <text x="0" y="155" fill="#ff6464" font-size="14" text-anchor="middle">-> 12개의 모서리 끝을 동일한 깊이로 칼로 썬다.</text>
+    </g>
+
+    <!-- Middle Arrow -->
+    <path d="M 330 200 Q 450 150 500 200" class="arrow" />
+    <text x="420" y="150" fill="#ffff00" font-size="16" font-weight="bold" text-anchor="middle">꼭짓점 썰기
+        (Truncation)</text>
+
+    <!-- Right: Soccer Ball / Truncated Icosahedron -->
+    <!-- We'll draw a stylized 2D projection of a soccer ball pattern -->
+    <g transform="translate(680, 240)">
+        <circle cx="0" cy="0" r="100" fill="#ffffff" stroke="#30363d" stroke-width="2" />
+
+        <!-- Center Black Pentagon -->
+        <polygon points="0,-30 25,-10 15,20 -15,20 -25,-10" class="soccer-pent" />
+
+        <!-- White Hexagons branching out -->
+        <path d="M 0,-30 L -15,-50 L 15,-50 L 25,-10 Z" class="soccer-hex" />
+        <path d="M 25,-10 L 50,-10 L 40,20 L 15,20 Z" class="soccer-hex" />
+        <path d="M 15,20 L 10,45 L -10,45 L -15,20 Z" class="soccer-hex" />
+        <path d="M -15,20 L -40,20 L -50,-10 L -25,-10 Z" class="soccer-hex" />
+
+        <!-- Peripheral Black Pentagons partially visible -->
+        <path d="M -15,-50 L -40,-60 L -50,-40 L -35,-20 Z" fill="#161b22" stroke="#8b949e" stroke-width="1.5" />
+        <path d="M 15,-50 L 40,-60 L 50,-40 L 35,-20 Z" fill="#161b22" stroke="#8b949e" stroke-width="1.5" />
+        <path d="M 40,20 L 60,30 L 55,50 L 30,40 Z" fill="#161b22" stroke="#8b949e" stroke-width="1.5" />
+        <path d="M -40,20 L -60,30 L -55,50 L -30,40 Z" fill="#161b22" stroke="#8b949e" stroke-width="1.5" />
+
+        <text x="0" y="130" class="label-head">2. 아디다스 텔스타 축구공 구조</text>
+        <text x="0" y="155" fill="#fff" font-size="14" text-anchor="middle">검은색 오각형(새로운 단면 상처) 12개</text>
+        <text x="0" y="175" fill="#fff" font-size="14" text-anchor="middle">하얀색 육각형(모서리가 잘린 예전 삼각형) 20개</text>
+    </g>
+
+</svg>

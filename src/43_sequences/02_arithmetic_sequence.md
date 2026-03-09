@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 등차수열 Arithmetic Sequence'
+---
+
 # 2. 등차수열 (Arithmetic Sequence)
 
 ## [도입부] 학습 목표 (Learning Objectives)

@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="400">
+    <defs>
+        <style>
+            .bg {
+                fill: #f8fafc;
+                rx: 10;
+                stroke: #cbd5e1;
+                stroke-width: 2;
+            }
+
+            /* Sets (A, B, C) */
+            .set-a {
+                fill: none;
+                stroke: #dc2626;
+                stroke-width: 3;
+            }
+
+            .set-b {
+                fill: none;
+                stroke: #2563eb;
+                stroke-width: 3;
+            }
+
+            .set-c {
+                fill: none;
+                stroke: #16a34a;
+                stroke-width: 3;
+            }
+
+            /* Target Highlight Regions (De Morgan & Complex formulas) */
+            /* Region 1: (A U B U C) - (A n B n C) */
+            /* Outer Union colored, inner center core removed (white) */
+
+            .color-zone {
+                fill: #e2e8f0;
+            }
+
+            /* base color for union */
+            .core-zone {
+                fill: #f8fafc;
+                stroke: #0f172a;
+                stroke-width: 2;
+                stroke-dasharray: 4 2;
+            }
+
+            /* punched out center */
+
+            /* Text */
+            .title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 22px;
+                fill: #0f172a;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .formula {
+                font-family: 'Courier New', monospace;
+                font-size: 22px;
+                fill: #0f172a;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .label {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .desc {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 15px;
+                fill: #64748b;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="300" y="40" class="title">3타겟 복잡한 벤 다이어그램의 스위핑 설계도</text>
+    <text x="300" y="70" class="formula">(A ∪ B ∪ C) - (A ∩ B ∩ C)</text>
+
+    <g transform="translate(300, 210)">
+
+        <!-- Step 1: Base Union Color (Everything inside any circle) -->
+        <!-- We simulate the union color area using circles with opacity, but to show exact De morgan logic we will use individual circles but colored -->
+
+        <!-- Paint Outer Areas -->
+        <path d="M 0 -70 A 70 70 0 1 1 -0.01 -70 Z" class="color-zone" />
+        <path d="M -40 20 A 70 70 0 1 1 -40.01 20 Z" class="color-zone" />
+        <path d="M 40 20 A 70 70 0 1 1 39.99 20 Z" class="color-zone" />
+
+        <!-- Step 2: Draw the specific borders of the 3 circles -->
+        <circle cx="0" cy="-35" r="75" class="set-a" />
+        <text x="-90" y="-100" class="label" fill="#dc2626">A</text>
+
+        <circle cx="-45" cy="35" r="75" class="set-b" />
+        <text x="-120" y="100" class="label" fill="#2563eb">B</text>
+
+        <circle cx="45" cy="35" r="75" class="set-c" />
+        <text x="100" y="100" class="label" fill="#16a34a">C</text>
+
+        <!-- Step 3: Punch out the center core (A n B n C) -->
+        <!-- A rough path modeling the center triangle-like intersection of 3 circles -->
+        <path d="M 0 10 
+             A 75 75 0 0 1 25 -10 
+             A 75 75 0 0 1 -25 -10 
+             A 75 75 0 0 1 0 10 Z" class="core-zone" />
+
+        <text x="0" y="0" class="label" font-size="14px" fill="#0f172a" text-anchor="middle"
+            dominant-baseline="middle">∅ (제거)</text>
+
+        <!-- Arrow pointers -->
+        <line x1="20" y1="-80" x2="150" y2="-100" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)" />
+        <text x="210" y="-110" class="desc" fill="#0f172a">A ∪ B ∪ C (전체 합집합 영역)</text>
+
+        <line x1="25" y1="5" x2="160" y2="40" stroke="#0f172a" stroke-width="2" marker-end="url(#arrowhead)" />
+        <text x="250" y="45" class="desc" fill="#0f172a" font-weight="bold">A ∩ B ∩ C (중앙 교집합 영역)</text>
+        <text x="250" y="65" class="desc" fill="#dc2626">이 핵심 코어만 차집합(-)으로 펀칭해 삭제!</text>
+
+    </g>
+
+    <!-- Bottom Description -->
+    <text x="300" y="360" class="desc" font-weight="bold">회색으로 칠해진 도넛/프레첼 모양의 기하학적 링 공간이</text>
+    <text x="300" y="380" class="desc">"세 집합 중 적어도 하나엔 속하지만, 셋 모두를 온전히 충족하지는 못하는 자들" 의 영역입니다.</text>
+
+</svg>

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '06. 앗 적분을 했더니 마이너스 넓이가 나왔다? Integral and Area'
+---
+
 # 06. 앗! 적분을 했더니 마이너스 넓이가 나왔다? (Integral and Area)
 
 안녕하세요! 지난 시간에 $\int_{a}^{b} f(x) dx$ 라는 멋진 기호도 배우고, $dx$의 해상도 철학도 배웠습니다.

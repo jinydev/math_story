@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#f59f00" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">11년 천하의 사기극: 켐프의 교대 사슬 (Kempe Chain)</text>
+
+    <!-- Kempe's Chain Visualization -->
+    <g transform="translate(100, 150)">
+        <rect x="-80" y="-80" width="220" height="130" fill="#fff4e6" stroke="#f59f00" stroke-width="2" rx="8" />
+        <text x="30" y="-55" fill="#d9480f" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">켐프의 빛나는 아이디어: 체인 맞바꾸기</text>
+
+        <!-- Nodes -->
+        <circle cx="-40" cy="-10" r="15" fill="#ffc9c9" stroke="#fa5252" stroke-width="2" />
+        <text x="-40" y="-5" fill="#c92a2a" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">빨</text>
+
+        <circle cx="20" cy="-10" r="15" fill="#a5d8ff" stroke="#339af0" stroke-width="2" />
+        <text x="20" y="-5" fill="#1864ab" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">파</text>
+
+        <circle cx="80" cy="-10" r="15" fill="#ffc9c9" stroke="#fa5252" stroke-width="2" />
+        <text x="80" y="-5" fill="#c92a2a" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">빨</text>
+
+        <!-- Edges -->
+        <line x1="-25" y1="-10" x2="5" y2="-10" stroke="#868e96" stroke-width="3" />
+        <line x1="35" y1="-10" x2="65" y2="-10" stroke="#868e96" stroke-width="3" />
+
+        <!-- Color Flip -->
+        <rect x="-60" y="15" width="180" height="25" fill="#ffe8cc" rx="4" />
+        <text x="30" y="32" fill="#d9480f" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">빨/파 색깔을 한꺼번에 반전시킴!</text>
+    </g>
+
+    <!-- Arrow -->
+    <path d="M 330 110 L 370 110" fill="none" stroke="#adb5bd" stroke-width="4" marker-end="url(#arrow-grey)" />
+
+    <!-- The Flaw (Heawood's counter) -->
+    <g transform="translate(480, 150)">
+        <rect x="-90" y="-80" width="180" height="130" fill="#fff5f5" stroke="#fa5252" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">히우드의 반격 (11년 뒤)</text>
+
+        <text x="0" y="-20" fill="#c92a2a" font-size="40" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">❌</text>
+
+        <text x="0" y="20" fill="#e03131" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">"만약 빨/파 체인과"</text>
+        <text x="0" y="35" fill="#e03131" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">"노/초 체인이"</text>
+        <text x="0" y="50" fill="#c92a2a" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">서로 뒤엉켜(꼬여) 있으면?!</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-grey" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

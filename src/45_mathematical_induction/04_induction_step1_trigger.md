@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '04. 수학적 귀납법 1단계 시작 조건 Base Case'
+---
+
 # 04. 수학적 귀납법 1단계: 시작 조건 (Base Case)
 
 ## 1. 학습 목표 (Learning Objectives)

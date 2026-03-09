@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 뼈대와 규칙의 서바이벌 사각형 세계의 족보 Definition  Types of Quadrilaterals'
+---
+
 # 1. 뼈대와 규칙의 서바이벌: 사각형 세계의 족보 (Definition & Types of Quadrilaterals)
 
 ## [도입부] 학습 목표 (Learning Objectives)

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 첫 번째 진화 구간 높은 곳까지 올라가게 도와주는 사다리꼴Trapezoid'
+---
+
 # 2. 첫 번째 진화 구간: 높은 곳까지 올라가게 도와주는 '사다리꼴(Trapezoid)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

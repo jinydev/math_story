@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">일차부등식 해킹: 왕따 작전 3단계</text>
+
+    <!-- Step 1 Board -->
+    <g transform="translate(50, 100)">
+        <rect x="0" y="0" width="220" height="250" rx="10" fill="#222233" stroke="#aaaaaa" stroke-width="2" />
+        <rect x="0" y="0" width="220" height="40" fill="#aaaaaa" rx="10" />
+        <text x="110" y="27" fill="#000000" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">Step 1. 이항 (철퇴)</text>
+
+        <text x="110" y="80" fill="#ffffff" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle">-2x + 4 &lt; 10</text>
+
+        <!-- Move +4 to right -->
+        <path d="M 110 90 Q 140 120 170 90" fill="none" stroke="#00ffcc" stroke-width="3" marker-end="url(#arrow)" />
+        <text x="140" y="135" fill="#00ffcc" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">+4 제거 (-4)</text>
+
+        <!-- Result -->
+        <text x="110" y="180" fill="#00ffcc" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle">-2x &lt; 10 - 4</text>
+        <text x="110" y="220" fill="#00ffcc" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle">-2x &lt; 6</text>
+    </g>
+
+    <!-- Arrow -->
+    <text x="310" y="230" fill="#ffffff" font-family="sans-serif" font-size="40" font-weight="bold"
+        text-anchor="middle">→</text>
+
+    <!-- Step 2 Board -->
+    <g transform="translate(340, 100)">
+        <rect x="0" y="0" width="220" height="250" rx="10" fill="#222233" stroke="#aaaaaa" stroke-width="2" />
+        <rect x="0" y="0" width="220" height="40" fill="#aaaaaa" rx="10" />
+        <text x="110" y="27" fill="#000000" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">Step 2. 나누기 (고립)</text>
+
+        <text x="110" y="80" fill="#00ffcc" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle">-2x &lt; 6</text>
+
+        <!-- Divide by -2 -->
+        <text x="110" y="120" fill="#ffaa00" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">양변을 x의 계수 -2 로 분리</text>
+
+        <text x="110" y="170" fill="#ffffff" font-family="monospace" font-size="24" font-weight="bold"
+            text-anchor="middle">x 그리고 -3</text>
+
+        <rect x="20" y="190" width="180" height="40" fill="#2b1111" stroke="#ff4d4d" stroke-width="2" />
+        <text x="110" y="215" fill="#ff4d4d" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">삐용삐용! 음수로 나누었다!</text>
+    </g>
+
+    <!-- Arrow -->
+    <text x="600" y="230" fill="#ffffff" font-family="sans-serif" font-size="40" font-weight="bold"
+        text-anchor="middle">→</text>
+
+    <!-- Step 3 Board -->
+    <g transform="translate(630, 100)">
+        <rect x="0" y="0" width="220" height="250" rx="10" fill="#222233" stroke="#ff0055" stroke-width="3"
+            filter="url(#glow)" />
+        <rect x="0" y="0" width="220" height="40" fill="#ff0055" rx="10" />
+        <text x="110" y="27" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">Step 3. 부호 역전!</text>
+
+        <text x="110" y="100" fill="#ffffff" font-family="monospace" font-size="32" font-weight="bold"
+            text-anchor="middle">x <tspan fill="#ff0055" filter="url(#glow)">&gt;</tspan> -3</text>
+
+        <text x="110" y="150" fill="#ff0055" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">부등호(&lt;)가 반대로(&gt;) 플립!</text>
+
+        <!-- Flip Icon -->
+        <path d="M 80 200 Q 110 160 140 200" fill="none" stroke="#ff0055" stroke-width="4" marker-end="url(#arrow)" />
+        <path d="M 80 180 Q 110 220 140 180" fill="none" stroke="#ff0055" stroke-width="4" marker-end="url(#arrow)" />
+
+    </g>
+
+    <!-- Final Number Line Render -->
+    <rect x="150" y="420" width="600" height="150" rx="15" fill="#1c2c3c" stroke="#4da6ff" stroke-width="2" />
+    <text x="450" y="455" fill="#4da6ff" font-family="sans-serif" font-size="20" font-weight="bold"
+        text-anchor="middle">최종 진실의 영토 (수직선 렌더링)</text>
+
+    <!-- Number line -->
+    <line x1="200" y1="510" x2="700" y2="510" stroke="#ffffff" stroke-width="4" />
+    <polygon points="700,505 710,510 700,515" fill="#ffffff" />
+
+    <!-- Ticks -->
+    <line x1="250" y1="500" x2="250" y2="520" stroke="#aaaaaa" stroke-width="2" />
+    <text x="250" y="540" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">-5</text>
+
+    <line x1="350" y1="500" x2="350" y2="520" stroke="#ffffff" stroke-width="2" />
+    <text x="350" y="545" fill="#ff0055" font-family="sans-serif" font-size="24" font-weight="bold"
+        text-anchor="middle">-3</text>
+
+    <line x1="450" y1="500" x2="450" y2="520" stroke="#aaaaaa" stroke-width="2" />
+    <text x="450" y="540" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">-1</text>
+
+    <!-- Range: x > -3 -->
+    <circle cx="350" cy="510" r="10" fill="#1c2c3c" stroke="#ff0055" stroke-width="4" filter="url(#glow)" />
+    <rect x="360" y="490" width="300" height="40" fill="#ff0055" opacity="0.4" filter="url(#glow)" />
+    <line x1="350" y1="490" x2="680" y2="490" stroke="#ff0055" stroke-width="3" />
+    <polygon points="670,480 690,490 670,500" fill="#ff0055" />
+
+    <text x="500" y="480" fill="#ff0055" font-family="sans-serif" font-size="18" font-weight="bold"
+        text-anchor="middle">-3 보다 큰 무한의 영토</text>
+
+</svg>

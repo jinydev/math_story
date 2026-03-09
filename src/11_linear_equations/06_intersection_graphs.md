@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '06. 대수학과 기하학의 크로스오버 교차점 스캐너 Python'
+---
+
 # 06. 대수학과 기하학의 크로스오버: 교차점 스캐너 (Python)
 
 ## 1. 학습 목표 (Learning Objectives)

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .bg {
+                fill: #1e1e2e;
+            }
+
+            .text-title {
+                fill: #f9e2af;
+                font-family: 'Courier New', monospace;
+                font-size: 26px;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .text-var {
+                fill: #f1502f;
+                font-family: serif;
+                font-size: 30px;
+                font-style: italic;
+            }
+
+            .text-desc {
+                fill: #cdd6f4;
+                font-family: sans-serif;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .text-code {
+                fill: #a6e3a1;
+                font-family: monospace;
+                font-size: 20px;
+                text-anchor: middle;
+            }
+
+            .pipe {
+                fill: #89b4fa;
+                font-size: 50px;
+                font-weight: bold;
+            }
+
+            .brace {
+                fill: #f38ba8;
+                font-size: 60px;
+                font-family: monospace;
+            }
+
+            .box {
+                fill: #313244;
+                stroke: #45475a;
+                stroke-width: 2;
+                rx: 5;
+                ry: 5;
+            }
+
+            .highlight {
+                fill: none;
+                stroke: #f9e2af;
+                stroke-width: 2;
+                stroke-dasharray: 4;
+                rx: 5;
+                ry: 5;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="400" y="50" class="text-title">조건제시법 (Set-Builder Notation)</text>
+
+    <!-- Math Notation -->
+    <rect x="150" y="80" width="500" height="100" class="box" stroke="#89b4fa" />
+
+    <text x="180" y="150" class="brace">{</text>
+    <text x="600" y="150" class="brace">}</text>
+
+    <!-- Left Side: Representative Variable -->
+    <rect x="210" y="100" width="100" height="60" class="highlight" />
+    <text x="260" y="140" class="text-var" text-anchor="middle">x</text>
+    <text x="260" y="195" class="text-desc" fill="#f9e2af">대표 원소 (변수)</text>
+
+    <!-- The Pipe -->
+    <text x="330" y="145" class="pipe">|</text>
+    <text x="340" y="195" class="text-desc" fill="#89b4fa" font-weight="bold">Such that (바)</text>
+
+    <!-- Right Side: Condition -->
+    <rect x="370" y="100" width="220" height="60" class="highlight" />
+    <text x="480" y="140" class="text-var" text-anchor="middle">x<tspan class="text-desc" fill="#cdd6f4" font-size="20">
+            는 짝수</tspan></text>
+    <text x="480" y="195" class="text-desc" fill="#f9e2af">자격 조건 (Condition)</text>
+
+    <!-- Python Code Equivalent -->
+    <rect x="150" y="250" width="500" height="100" class="box" stroke="#a6e3a1" />
+    <text x="400" y="280" class="text-desc" fill="#a6e3a1" font-weight="bold">Python List Comprehension 비교</text>
+
+    <text x="400" y="320" class="text-code">[ <tspan fill="#f1502f">x</tspan> for <tspan fill="#f1502f">x</tspan> in
+        range(1, 100) <tspan fill="#f9e2af">if x % 2 == 0</tspan> ]</text>
+
+    <!-- Matching arrows conceptual -->
+    <path d="M 260 210 L 260 240 L 320 240 L 320 300" stroke="#f1502f" stroke-width="2" fill="none" opacity="0.5" />
+    <path d="M 480 210 L 480 240 L 530 240 L 530 300" stroke="#f9e2af" stroke-width="2" fill="none" opacity="0.5" />
+</svg>

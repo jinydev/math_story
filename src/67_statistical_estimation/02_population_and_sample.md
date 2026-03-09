@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 전수조사 불가 모집단Population과 표본Sample'
+---
+
 # 2. 전수조사 불가: 모집단(Population)과 표본(Sample)
 
 ## [도입부] 학습 목표 (Learning Objectives)

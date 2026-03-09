@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .box {
+                fill: #161b22;
+                stroke: #30363d;
+                stroke-width: 2;
+                rx: 10;
+            }
+
+            .tri {
+                fill: rgba(0, 255, 255, 0.1);
+                stroke: #00ffff;
+                stroke-width: 3;
+                filter: drop-shadow(0 0 5px #00ffff);
+            }
+
+            .lock-h {
+                stroke: #ff6464;
+                stroke-width: 6;
+                filter: drop-shadow(0 0 5px #ff6464);
+            }
+
+            .lock-s {
+                stroke: #ffff00;
+                stroke-width: 6;
+                filter: drop-shadow(0 0 5px #ffff00);
+            }
+
+            .lock-a {
+                fill: rgba(100, 255, 100, 0.5);
+                stroke: #64ff64;
+                stroke-width: 3;
+            }
+
+            .right-angle {
+                fill: none;
+                stroke: #ffffff;
+                stroke-width: 2;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 20px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 14px;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#0d1117" />
+
+    <text x="400" y="40" fill="#00ffff" font-size="28" text-anchor="middle">왕족 전용 고속 합동 (RHA &amp; RHS)</text>
+
+    <!-- RHA Left side -->
+    <g transform="translate(100, 80)">
+        <rect width="280" height="250" class="box" />
+        <text x="140" y="30" class="title">RHA 합동 (직각-빗변-각)</text>
+
+        <!-- Triangle 1 -->
+        <g transform="translate(30, 60)">
+            <polygon points="0,110 80,110 0,0" class="tri" />
+            <polyline points="0,95 15,95 15,110" class="right-angle" />
+            <line x1="80" y1="110" x2="0" y2="0" class="lock-h" />
+            <path d="M 65 110 A 15 15 0 0 0 72 98" class="lock-a" />
+        </g>
+
+        <!-- Triangle 2 -->
+        <g transform="translate(150, 60)">
+            <polygon points="0,110 80,110 0,0" class="tri" />
+            <polyline points="0,95 15,95 15,110" class="right-angle" />
+            <line x1="80" y1="110" x2="0" y2="0" class="lock-h" />
+            <path d="M 65 110 A 15 15 0 0 0 72 98" class="lock-a" />
+        </g>
+
+        <text x="140" y="210" class="desc">R(직각 90°)</text>
+        <text x="140" y="230" class="desc">H(빗변 일치)</text>
+        <text x="140" y="250" class="desc">A(아무 예각 일치)</text>
+    </g>
+
+    <!-- RHS Right side -->
+    <g transform="translate(420, 80)">
+        <rect width="280" height="250" class="box" />
+        <text x="140" y="30" class="title">RHS 합동 (직각-빗변-나머지변)</text>
+
+        <!-- Triangle 1 -->
+        <g transform="translate(30, 60)">
+            <polygon points="0,110 80,110 0,0" class="tri" />
+            <polyline points="0,95 15,95 15,110" class="right-angle" />
+            <line x1="80" y1="110" x2="0" y2="0" class="lock-h" />
+            <line x1="0" y1="110" x2="80" y2="110" class="lock-s" />
+        </g>
+
+        <!-- Triangle 2 -->
+        <g transform="translate(150, 60)">
+            <polygon points="0,110 80,110 0,0" class="tri" />
+            <polyline points="0,95 15,95 15,110" class="right-angle" />
+            <line x1="80" y1="110" x2="0" y2="0" class="lock-h" />
+            <line x1="0" y1="110" x2="80" y2="110" class="lock-s" />
+        </g>
+
+        <text x="140" y="210" class="desc">R(직각 90°)</text>
+        <text x="140" y="230" class="desc">H(빗변 일치)</text>
+        <text x="140" y="250" class="desc">S(아무 바닥변 일치)</text>
+    </g>
+
+</svg>

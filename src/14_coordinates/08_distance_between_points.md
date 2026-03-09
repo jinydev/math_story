@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '08. 여덟 번째 수업 두 점 사이의 거리 Distance Between Points'
+---
+
 # 08. 여덟 번째 수업: 두 점 사이의 거리 (Distance Between Points)
 
 텅 빈 공간에서 요원 A의 위치와 요원 B의 위치를 알고 있다면, 두 사람 사이의 '직선거리'는 어떻게 알아낼 수 있을까요? 

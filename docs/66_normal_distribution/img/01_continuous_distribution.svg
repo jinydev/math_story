@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#1c7ed6" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">끊어질 수 없는 선: 이산(Discrete) VS 연속(Continuous)</text>
+
+    <!-- Discrete Concept -->
+    <g transform="translate(150, 150)">
+        <rect x="-100" y="-80" width="200" height="120" fill="#fff5f5" stroke="#fa5252" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#c92a2a" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">이산확률분포 (주사위)</text>
+
+        <!-- Dots / Bar Graph -->
+        <line x1="-70" y1="15" x2="70" y2="15" stroke="#868e96" stroke-width="2" />
+
+        <rect x="-60" y="-30" width="10" height="45" fill="#ffc9c9" stroke="#fa5252" />
+        <rect x="-20" y="-10" width="10" height="25" fill="#ffc9c9" stroke="#fa5252" />
+        <rect x="20" y="-20" width="10" height="35" fill="#ffc9c9" stroke="#fa5252" />
+        <rect x="60" y="-40" width="10" height="55" fill="#ffc9c9" stroke="#fa5252" />
+
+        <text x="-55" y="30" fill="#868e96" font-size="10">1</text>
+        <text x="-15" y="30" fill="#868e96" font-size="10">2</text>
+        <text x="25" y="30" fill="#868e96" font-size="10">3</text>
+        <text x="65" y="30" fill="#868e96" font-size="10">4</text>
+
+        <text x="0" y="50" fill="#495057" font-size="11" font-family="sans-serif" text-anchor="middle">"1.5 라는 눈금은 존재
+            불가"</text>
+    </g>
+
+    <path d="M 270 110 L 330 110" fill="none" stroke="#adb5bd" stroke-width="4" marker-end="url(#arrow-grey)" />
+    <text x="300" y="100" fill="#adb5bd" font-size="16" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">VS</text>
+
+    <!-- Continuous Concept -->
+    <g transform="translate(450, 150)">
+        <rect x="-100" y="-80" width="200" height="120" fill="#e7f5ff" stroke="#339af0" stroke-width="2" rx="8" />
+        <text x="0" y="-55" fill="#1864ab" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">연속확률분포 (키, 시간)</text>
+
+        <!-- Continuous Curve -->
+        <line x1="-70" y1="15" x2="70" y2="15" stroke="#868e96" stroke-width="2" />
+        <path d="M -70 15 Q -40 -30 0 -40 T 70 15" fill="#a5d8ff" opacity="0.5" stroke="#339af0" stroke-width="3" />
+
+        <!-- Exact points focus -->
+        <line x1="-20" y1="15" x2="-20" y2="-32" stroke="#1864ab" stroke-width="1" stroke-dasharray="2,2" />
+        <text x="-20" y="28" fill="#1864ab" font-size="10" font-family="sans-serif" text-anchor="middle">173.12cm</text>
+
+        <text x="0" y="50" fill="#495057" font-size="11" font-family="sans-serif" text-anchor="middle">"점(1개)의 확률은 철학적으로
+            0%!"</text>
+    </g>
+
+    <defs>
+        <marker id="arrow-grey" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+    </defs>
+</svg>

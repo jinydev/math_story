@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#2b8a3e" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">폴리아(Polya)의 문제해결 4단계 알고리즘</text>
+
+    <!-- Step 1: Understand -->
+    <g transform="translate(60, 100)">
+        <circle cx="0" cy="0" r="40" fill="#ebee" stroke="#40c057" stroke-width="4" />
+        <text x="0" y="5" fill="#2b8a3e" font-size="14" font-weight="bold" text-anchor="middle">1. 이해</text>
+        <text x="0" y="20" fill="#495057" font-size="10" text-anchor="middle">(Input 분석)</text>
+        <rect x="-45" y="50" width="90" height="30" fill="#fff" stroke="#adb5bd" rx="4" />
+        <text x="0" y="65" fill="#495057" font-size="10" text-anchor="middle">구하는 것?</text>
+        <text x="0" y="75" fill="#495057" font-size="10" text-anchor="middle">주어진 조건?</text>
+    </g>
+
+    <!-- Arrow 1 to 2 -->
+    <path d="M 115 100 L 165 100" fill="none" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- Step 2: Plan -->
+    <g transform="translate(220, 100)">
+        <circle cx="0" cy="0" r="40" fill="#e7f5ff" stroke="#339af0" stroke-width="4" />
+        <text x="0" y="5" fill="#1864ab" font-size="14" font-weight="bold" text-anchor="middle">2. 계획</text>
+        <text x="0" y="20" fill="#495057" font-size="10" text-anchor="middle">(Algorithm)</text>
+        <rect x="-45" y="50" width="90" height="30" fill="#fff" stroke="#adb5bd" rx="4" />
+        <text x="0" y="65" fill="#495057" font-size="10" text-anchor="middle">어떤 전략?</text>
+        <text x="0" y="75" fill="#495057" font-size="10" text-anchor="middle">과거 경험 탐색</text>
+    </g>
+
+    <!-- Arrow 2 to 3 -->
+    <path d="M 275 100 L 325 100" fill="none" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- Step 3: Execute -->
+    <g transform="translate(380, 100)">
+        <circle cx="0" cy="0" r="40" fill="#fff0f6" stroke="#f06595" stroke-width="4" />
+        <text x="0" y="5" fill="#a61e4d" font-size="14" font-weight="bold" text-anchor="middle">3. 실행</text>
+        <text x="0" y="20" fill="#495057" font-size="10" text-anchor="middle">(Execution)</text>
+        <rect x="-45" y="50" width="90" height="30" fill="#fff" stroke="#adb5bd" rx="4" />
+        <text x="0" y="65" fill="#495057" font-size="10" text-anchor="middle">계획대로 계산</text>
+        <text x="0" y="75" fill="#495057" font-size="10" text-anchor="middle">오류 수정</text>
+    </g>
+
+    <!-- Arrow 3 to 4 -->
+    <path d="M 435 100 L 485 100" fill="none" stroke="#adb5bd" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- Step 4: Review -->
+    <g transform="translate(540, 100)">
+        <circle cx="0" cy="0" r="40" fill="#fdf0d5" stroke="#fcc419" stroke-width="4" />
+        <text x="0" y="5" fill="#e67700" font-size="14" font-weight="bold" text-anchor="middle">4. 반성</text>
+        <text x="0" y="20" fill="#495057" font-size="10" text-anchor="middle">(Debugging)</text>
+        <rect x="-45" y="50" width="90" height="30" fill="#fff" stroke="#adb5bd" rx="4" />
+        <text x="0" y="65" fill="#495057" font-size="10" text-anchor="middle">정답 검증</text>
+        <text x="0" y="75" fill="#495057" font-size="10" text-anchor="middle">다른 해법 찾기</text>
+    </g>
+
+    <!-- Loop back arrow for failure -->
+    <path d="M 540 50 A 240 80 0 0 0 60 50" fill="none" stroke="#fa5252" stroke-width="3" stroke-dasharray="6,4"
+        marker-end="url(#arrow-red)" />
+    <text x="300" y="45" fill="#fa5252" font-size="12" font-weight="bold" text-anchor="middle">틀렸다면 1단계로 회귀 (While
+        Loop)</text>
+
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+        </marker>
+        <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#fa5252" />
+        </marker>
+    </defs>
+</svg>

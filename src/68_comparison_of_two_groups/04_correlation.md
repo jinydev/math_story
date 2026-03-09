@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '4. 여름엔 아이스크림, 겨울엔 붕어빵 두 변수의 관계성 Correlation'
+---
+
 # 4. 여름엔 아이스크림, 겨울엔 붕어빵: 두 변수의 관계성 (Correlation)
 
 ## [도입부] 학습 목표 (Learning Objectives)

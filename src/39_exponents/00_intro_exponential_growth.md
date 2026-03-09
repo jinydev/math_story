@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '00. 밀알의 전설 기하급수의 공포 Exponential Growth'
+---
+
 # 00. 밀알의 전설: 기하급수의 공포 (Exponential Growth)
 
 ## 1. 학습 목표 (Learning Objectives)

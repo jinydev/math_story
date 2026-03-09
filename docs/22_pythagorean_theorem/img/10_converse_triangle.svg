@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="350">
+    <rect width="600" height="350" fill="#2d3436" />
+    <text x="300" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#dfe6e9" text-anchor="middle">
+        피타고라스 정리의 역 (Converse Test)
+    </text>
+
+    <!-- 1. Acute Triangle (a^2+b^2 > c^2) -->
+    <g transform="translate(50, 100)">
+        <!-- a=60, b=80, c~90 (Acute) -->
+        <!-- base = 80, height = 60 but slanted -->
+        <polygon points="0,150 100,60 140,150" fill="none" stroke="#74b9ff" stroke-width="4" />
+        <text x="70" y="180" font-family="Arial" font-size="16" fill="#74b9ff" text-anchor="middle">예각 삼각형</text>
+        <text x="70" y="200" font-family="Arial" font-size="14" fill="#a29bfe" text-anchor="middle">a² + b² > c²</text>
+    </g>
+
+    <!-- 2. Right Triangle (a^2+b^2 == c^2) -->
+    <g transform="translate(250, 90)">
+        <!-- a=90, b=120, c=150 -->
+        <polygon points="0,160 0,40 120,160" fill="none" stroke="#55efc4" stroke-width="5" />
+        <!-- Right angle square indicator -->
+        <rect x="0" y="140" width="20" height="20" fill="none" stroke="#55efc4" stroke-width="2" />
+        
+        <text x="50" y="190" font-family="Arial" font-size="18" font-weight="bold" fill="#55efc4" text-anchor="middle">직각 삼각형!</text>
+        <text x="50" y="215" font-family="Arial" font-size="16" fill="#00b894" text-anchor="middle">a² + b² == c²</text>
+        
+        <!-- Glowing effect animation on True right triangle -->
+        <animate attributeName="opacity" values="0.6; 1; 0.6" dur="2s" repeatCount="indefinite" />
+    </g>
+
+    <!-- 3. Obtuse Triangle (a^2+b^2 < c^2) -->
+    <g transform="translate(450, 120)">
+        <!-- Obtuse angle -->
+        <polygon points="0,130 -30,60 120,130" fill="none" stroke="#ff7675" stroke-width="4" />
+        <text x="40" y="160" font-family="Arial" font-size="16" fill="#ff7675" text-anchor="middle">둔각 삼각형</text>
+        <text x="40" y="180" font-family="Arial" font-size="14" fill="#d63031" text-anchor="middle">a² + b² < c²</text>
+    </g>
+    
+    <text x="300" y="330" font-family="Arial" font-size="16" fill="#b2bec3" text-anchor="middle">
+        거꾸로 세 변의 길이만 알아도 a² + b² == c² 수식을 던져 통과하면 무조건 직각삼각형입니다.
+    </text>
+</svg>

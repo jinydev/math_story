@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="50" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">분모 통분 : 최소공배수의 마법 (LCM)</text>
+  <text x="400" y="80" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">분모가 다르면 크기 기준이 달라서 비교할 수 없습니다.</text>
+
+  <!-- Left Fraction 3/5 -->
+  <g transform="translate(150, 150)">
+    <rect x="-60" y="-40" width="120" height="80" fill="#2D3748" stroke="#4FD1C5" stroke-width="2" rx="10"/>
+    <text x="0" y="-5" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#4FD1C5" text-anchor="middle">3</text>
+    <line x1="-30" y1="5" x2="30" y2="5" stroke="#4FD1C5" stroke-width="3"/>
+    <text x="0" y="30" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#4FD1C5" text-anchor="middle">5</text>
+    
+    <text x="0" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">x 8</text>
+    <!-- Arrow down -->
+    <path d="M 0 50 L 0 90" fill="none" stroke="#4A5568" stroke-width="2" marker-end="url(#arrow_down)"/>
+  </g>
+
+  <!-- Greater Than / Less Than -->
+  <text x="400" y="160" font-family="'Inter', sans-serif" font-size="40" font-weight="bold" fill="#F6AD55" text-anchor="middle">?</text>
+
+  <!-- Right Fraction 5/8 -->
+  <g transform="translate(650, 150)">
+    <rect x="-60" y="-40" width="120" height="80" fill="#2D3748" stroke="#F6AD55" stroke-width="2" rx="10"/>
+    <text x="0" y="-5" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#F6AD55" text-anchor="middle">5</text>
+    <line x1="-30" y1="5" x2="30" y2="5" stroke="#F6AD55" stroke-width="3"/>
+    <text x="0" y="30" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#F6AD55" text-anchor="middle">8</text>
+
+    <text x="0" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">x 5</text>
+    <!-- Arrow down -->
+    <path d="M 0 50 L 0 90" fill="none" stroke="#4A5568" stroke-width="2" marker-end="url(#arrow_down)"/>
+  </g>
+
+  <!-- Converted Left Fraction 24/40 -->
+  <g transform="translate(150, 270)">
+    <rect x="-60" y="-40" width="120" height="80" fill="#2D3748" stroke="#E2E8F0" stroke-width="2" rx="10"/>
+    <text x="0" y="-5" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#E2E8F0" text-anchor="middle">24</text>
+    <line x1="-30" y1="5" x2="30" y2="5" stroke="#E2E8F0" stroke-width="3"/>
+    <text x="0" y="30" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#E2E8F0" text-anchor="middle">40</text>
+  </g>
+
+  <!-- Result Compare Arrow -->
+  <text x="400" y="280" font-family="'Inter', sans-serif" font-size="40" font-weight="bold" fill="#FC8181" text-anchor="middle" filter="url(#glow)">&lt;</text>
+  <text x="400" y="320" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#FC8181" text-anchor="middle">24 &lt; 25</text>
+
+  <!-- Converted Right Fraction 25/40 -->
+  <g transform="translate(650, 270)">
+    <rect x="-60" y="-40" width="120" height="80" fill="#2D3748" stroke="#E2E8F0" stroke-width="2" rx="10"/>
+    <text x="0" y="-5" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#E2E8F0" text-anchor="middle">25</text>
+    <line x1="-30" y1="5" x2="30" y2="5" stroke="#E2E8F0" stroke-width="3"/>
+    <text x="0" y="30" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#E2E8F0" text-anchor="middle">40</text>
+  </g>
+
+  <!-- Cross multiply arc representation -->
+  <path d="M 210 150 Q 400 60 590 150" fill="none" stroke="#718096" stroke-width="2" stroke-dasharray="8,8" opacity="0.5"/>
+</svg>

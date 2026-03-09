@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '00. 그래프 이론의 창시자 오일러Euler'
+---
+
 # 00. 그래프 이론의 창시자 오일러(Euler)
 
 ## 1. 학습 목표 (Learning Objectives)

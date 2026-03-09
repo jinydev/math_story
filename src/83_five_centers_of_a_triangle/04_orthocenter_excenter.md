@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '4. 직각과 바깥의 세계 수심Orthocenter과 방심Excenter'
+---
+
 # 4. 직각과 바깥의 세계: 수심(Orthocenter)과 방심(Excenter)
 
 ## [도입부] 학습 목표 (Learning Objectives)

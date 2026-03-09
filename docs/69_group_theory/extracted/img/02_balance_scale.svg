@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .scale-base {
+                fill: #c08020;
+                stroke: #ffaa44;
+                stroke-width: 3;
+            }
+
+            .scale-beam {
+                fill: none;
+                stroke: #ffaa44;
+                stroke-width: 6;
+                stroke-linecap: round;
+            }
+
+            .scale-plate {
+                fill: rgba(255, 170, 68, 0.2);
+                stroke: #ffaa44;
+                stroke-width: 3;
+            }
+
+            .scale-chain {
+                fill: none;
+                stroke: #a0a0a0;
+                stroke-width: 2;
+                stroke-dasharray: 4, 4;
+            }
+
+            .box-x {
+                fill: rgba(0, 255, 255, 0.2);
+                stroke: #00ffff;
+                stroke-width: 3;
+                rx: 5;
+                ry: 5;
+            }
+
+            .weight-obj {
+                fill: rgba(255, 100, 100, 0.2);
+                stroke: #ff6464;
+                stroke-width: 3;
+                rx: 15;
+                ry: 15;
+            }
+
+            .label {
+                fill: #ffffff;
+                font-size: 20px;
+                text-anchor: middle;
+                alignment-baseline: middle;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .math {
+                fill: #ffff00;
+                font-size: 32px;
+                text-anchor: middle;
+                font-weight: bold;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="400" y="40" class="title">방정식의 영혼: 등호(=)와 황금 양팔 저울</text>
+    <text x="400" y="65" class="desc">등호(=)는 좌변과 우변의 무게가 완벽하게 수평을 이루고 있음을 뜻하는 기하학적 밸런스다.</text>
+
+    <!-- Scale Base -->
+    <path d="M 370 400 L 430 400 L 400 150 Z" class="scale-base" />
+    <circle cx="400" cy="150" r="10" fill="#ffffaa" />
+
+    <!-- Scale Beam (Perfectly horizontal) -->
+    <line x1="200" y1="150" x2="600" y2="150" class="scale-beam" />
+    <circle cx="200" cy="150" r="5" fill="#ffaa44" />
+    <circle cx="600" cy="150" r="5" fill="#ffaa44" />
+
+    <!-- Left Plate (2x + 3) -->
+    <path d="M 120 250 Q 200 270 280 250 L 200 290 Z" class="scale-plate" />
+    <line x1="200" y1="150" x2="120" y2="250" class="scale-chain" />
+    <line x1="200" y1="150" x2="280" y2="250" class="scale-chain" />
+
+    <!-- Left Objects -->
+    <!-- x box 1 -->
+    <rect x="150" y="210" width="40" height="40" class="box-x" />
+    <text x="170" y="232" class="label" fill="#00ffff">x</text>
+    <!-- x box 2 -->
+    <rect x="195" y="210" width="40" height="40" class="box-x" />
+    <text x="215" y="232" class="label" fill="#00ffff">x</text>
+    <!-- weight 3 -->
+    <circle cx="250" cy="230" r="20" class="weight-obj" />
+    <text x="250" y="232" class="label" fill="#ff6464">3</text>
+
+    <!-- Right Plate (11) -->
+    <path d="M 520 250 Q 600 270 680 250 L 600 290 Z" class="scale-plate" />
+    <line x1="600" y1="150" x2="520" y2="250" class="scale-chain" />
+    <line x1="600" y1="150" x2="680" y2="250" class="scale-chain" />
+
+    <!-- Right Object -->
+    <!-- heavy weight 11 -->
+    <circle cx="600" cy="210" r="40" class="weight-obj" stroke-width="5" />
+    <text x="600" y="215" class="label" font-size="28" fill="#ff6464">11</text>
+
+    <!-- Equation Text Below -->
+    <text x="200" y="340" class="math">2x + 3</text>
+    <text x="400" y="340" class="math" fill="#ffffff" font-size="40">=</text>
+    <text x="600" y="340" class="math">11</text>
+
+    <rect x="360" y="310" width="80" height="40" fill="none" stroke="#fff" stroke-dasharray="4,4" rx="5" ry="5" />
+    <text x="400" y="375" fill="#8b949e" font-size="14" text-anchor="middle">완벽한 수평 유지</text>
+</svg>

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '7. 타임머신 역추적 결과로 원인을 파헤치는 거꾸로 풀기 Work Backwards'
+---
+
 # 7. 타임머신 역추적: 결과로 원인을 파헤치는 '거꾸로 풀기 (Work Backwards)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

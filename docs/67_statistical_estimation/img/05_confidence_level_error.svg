@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#d9480f" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">딜레마의 저울: 신뢰도(Confidence) VS 오차 그물(Error Margin) 크기</text>
+
+    <!-- 95% Confidence -->
+    <g transform="translate(150, 160)">
+        <!-- Small Net -> Target Hit but risky -->
+        <text x="0" y="-80" fill="#d9480f" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">95% 신뢰도 (밧줄 길이 짧음)</text>
+
+        <line x1="-100" y1="0" x2="100" y2="0" stroke="#868e96" stroke-width="2" />
+        <path d="M -80 0 C -40 0, -20 -100, 0 -100 C 20 -100, 40 0, 80 0" fill="#ffd8a8" opacity="0.6" stroke="#f08c00"
+            stroke-width="2" />
+
+        <!-- Exact Center: X bar -->
+        <line x1="0" y1="0" x2="0" y2="-100" stroke="#d9480f" stroke-width="2" stroke-dasharray="3,3" />
+        <text x="0" y="15" fill="#d9480f" font-size="12" font-weight="bold" text-anchor="middle">안내멘트: "대충
+            170~174cm"</text>
+
+        <!-- Short Net -->
+        <line x1="-30" y1="-30" x2="30" y2="-30" stroke="#e03131" stroke-width="4" />
+        <line x1="-30" y1="-35" x2="-30" y2="-25" stroke="#e03131" stroke-width="2" />
+        <line x1="30" y1="-35" x2="30" y2="-25" stroke="#e03131" stroke-width="2" />
+        <text x="0" y="-40" fill="#c92a2a" font-size="12" font-weight="bold" text-anchor="middle">오차 작음 (±1.96)</text>
+
+        <text x="0" y="40" fill="#495057" font-size="10" font-weight="bold" text-anchor="middle">정보가 예리하지만, 가끔 정답(m)이
+            빗나감 (5% 실패)</text>
+    </g>
+
+    <!-- Extravaganza 99% Confidence -->
+    <g transform="translate(450, 160)">
+        <text x="0" y="-80" fill="#2b8a3e" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">99% 신뢰도 (밧줄 길이 미친듯이 긺)</text>
+
+        <line x1="-100" y1="0" x2="100" y2="0" stroke="#868e96" stroke-width="2" />
+        <path d="M -80 0 C -40 0, -20 -100, 0 -100 C 20 -100, 40 0, 80 0" fill="#d3f9d8" opacity="0.6" stroke="#40c057"
+            stroke-width="2" />
+
+        <!-- Exact Center: X bar -->
+        <line x1="0" y1="0" x2="0" y2="-100" stroke="#2b8a3e" stroke-width="2" stroke-dasharray="3,3" />
+        <text x="0" y="15" fill="#2b8a3e" font-size="12" font-weight="bold" text-anchor="middle">안내멘트: "대충
+            150~194cm"</text>
+
+        <!-- Huge Net -->
+        <line x1="-80" y1="-30" x2="80" y2="-30" stroke="#099268" stroke-width="4" />
+        <line x1="-80" y1="-35" x2="-80" y2="-25" stroke="#099268" stroke-width="2" />
+        <line x1="80" y1="-35" x2="80" y2="-25" stroke="#099268" stroke-width="2" />
+        <text x="0" y="-40" fill="#087f5b" font-size="12" font-weight="bold" text-anchor="middle">오차 미친듯 큼
+            (±2.58)</text>
+
+        <text x="0" y="40" fill="#495057" font-size="10" font-weight="bold" text-anchor="middle">절대 빗나갈 리 없지만, 정보가 너무
+            쓰레기라 쓸모가 없음</text>
+    </g>
+
+</svg>

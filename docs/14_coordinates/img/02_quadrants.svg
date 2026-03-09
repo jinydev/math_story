@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+    <rect width="400" height="400" fill="#2c3e50"/>
+    
+    <!-- Title -->
+    <text x="200" y="30" font-family="Arial" font-size="20" font-weight="bold" fill="#ecf0f1" text-anchor="middle">4개의 사분면 (Four Quadrants)</text>
+
+    <!-- Axes -->
+    <line x1="0" y1="200" x2="400" y2="200" stroke="#ecf0f1" stroke-width="2"/>
+    <line x1="200" y1="50" x2="200" y2="400" stroke="#ecf0f1" stroke-width="2"/>
+
+    <!-- Labels -->
+    <g font-family="Arial" font-size="16" fill="#ecf0f1" font-weight="bold">
+        <text x="380" y="220">x</text>
+        <text x="210" y="60">y</text>
+        <text x="280" y="100">제1사분면 (+,+)</text>
+        <text x="20" y="100">제2사분면 (-,+)</text>
+        <text x="20" y="300">제3사분면 (-,-)</text>
+        <text x="280" y="300">제4사분면 (+,-)</text>
+    </g>
+
+    <!-- Animated Point -->
+    <circle r="10" fill="#e74c3c">
+        <!-- 1st Q -> 2nd Q -> 3rd Q -> 4th Q -> 1st Q -->
+        <animate attributeName="cx" values="280; 120; 120; 280; 280" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="120; 120; 280; 280; 120" keyTimes="0; 0.25; 0.5; 0.75; 1" dur="4s" repeatCount="indefinite"/>
+    </circle>
+</svg>

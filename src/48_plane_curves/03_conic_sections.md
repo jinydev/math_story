@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '3. 우주를 지배하는 곡선 이차곡선 Conic Sections'
+---
+
 # 3. 우주를 지배하는 곡선: 이차곡선 (Conic Sections)
 
 ## [도입부] 학습 목표 (Learning Objectives)

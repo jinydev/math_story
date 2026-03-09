@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '08. 여덟 번째 수업 컴퓨터와 유리수 Rationals in Computers'
+---
+
 # 08. 여덟 번째 수업: 컴퓨터와 유리수 (Rationals in Computers)
 
 지금까지 우리는 유리수가 분자와 분모의 완벽한 비율($\frac{a}{b}$)로 존재한다는 것을 배웠습니다. 

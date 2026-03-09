@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '06. 이 문장은 거짓이다 논리의 붕괴, 패러독스Paradox'
+---
+
 # 06. 이 문장은 거짓이다: 논리의 붕괴, 패러독스(Paradox)
 
 ## 1. 학습 목표 (Learning Objectives)

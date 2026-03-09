@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 두 조건의 완벽한 합의점 찾기 연립일차부등식 Systems of Inequalities'
+---
+
 # 5. 두 조건의 완벽한 합의점 찾기: 연립일차부등식 (Systems of Inequalities)
 
 ## [도입부] 학습 목표 (Learning Objectives)

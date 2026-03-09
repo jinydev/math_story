@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '84.'
+---
+
 # 수학이야기 84.유리수
 
 <div align="center">

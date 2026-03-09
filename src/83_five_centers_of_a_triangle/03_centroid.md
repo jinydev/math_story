@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '3. 물리와 수학의 아름다운 만남 무게중심 Centroid'
+---
+
 # 3. 물리와 수학의 아름다운 만남: 무게중심 (Centroid)
 
 ## [도입부] 학습 목표 (Learning Objectives)

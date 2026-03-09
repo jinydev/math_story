@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '02. 파이썬 다이어그램 렌더링 엔진 작동법 Python'
+---
+
 # 02. 파이썬 다이어그램 렌더링 엔진 작동법 (Python)
 
 ## 1. 학습 목표 (Learning Objectives)

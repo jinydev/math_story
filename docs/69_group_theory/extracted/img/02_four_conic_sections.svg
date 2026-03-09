@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">원뿔을 자르는 4가지 방법 (Four Slices)</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"칼날의 각도가 우주의 궤적을
+        결정한다"</text>
+
+    <!-- 1. Circle -->
+    <g transform="translate(150, 250)">
+        <!-- Cone -->
+        <path d="M -60 100 L 0 -100 L 60 100 Z" fill="#223344" stroke="#4da6ff" stroke-width="2" opacity="0.6" />
+        <!-- Horizontal Cut Plane -->
+        <polygon points="-80,0 20,0 80,-30 -20,-30" fill="#00ffcc" opacity="0.3" stroke="#00ffcc" stroke-width="2" />
+        <!-- Section: Circle (appears as ellipse due to 3D perspective) -->
+        <ellipse cx="0" cy="-15" rx="30" ry="8" fill="none" stroke="#ffffff" stroke-width="3" filter="url(#glow)" />
+        <text x="0" y="140" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">1. 원 (Circle)</text>
+        <text x="0" y="165" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">수평 (각도
+            0°)</text>
+    </g>
+
+    <!-- 2. Ellipse -->
+    <g transform="translate(350, 250)">
+        <!-- Cone -->
+        <path d="M -60 100 L 0 -100 L 60 100 Z" fill="#223344" stroke="#4da6ff" stroke-width="2" opacity="0.6" />
+        <!-- Diagonal Cut Plane -->
+        <polygon points="-80,0 40,20 80,-30 -40,-50" fill="#ffaa00" opacity="0.3" stroke="#ffaa00" stroke-width="2" />
+        <!-- Section: Ellipse -->
+        <!-- Center roughly at (-5, -15), rotated slightly -->
+        <ellipse cx="-5" cy="-15" rx="35" ry="12" fill="none" stroke="#ffffff" stroke-width="3"
+            transform="rotate(15, -5, -15)" filter="url(#glow)" />
+
+        <text x="0" y="140" fill="#ffaa00" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">2. 타원 (Ellipse)</text>
+        <text x="0" y="165" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">비스듬히 자르기</text>
+    </g>
+
+    <!-- 3. Parabola -->
+    <g transform="translate(550, 250)">
+        <!-- Cone -->
+        <path d="M -60 100 L 0 -100 L 60 100 Z" fill="#223344" stroke="#4da6ff" stroke-width="2" opacity="0.6" />
+        <!-- Parallel Cut Plane (Parallel to right edge) -->
+        <!-- Cone right edge goes from (0,-100) to (60,100). Slope is 200/60 = 10/3. -->
+        <polygon points="-50,30 20,80 80,-80 10,-130" fill="#ff4d4d" opacity="0.3" stroke="#ff4d4d" stroke-width="2" />
+        <!-- Section: Parabola -->
+        <path d="M -20 100 Q 15 0 45 -45" fill="none" stroke="#ffffff" stroke-width="3" filter="url(#glow)" />
+
+        <text x="0" y="140" fill="#ff4d4d" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">3. 포물선 (Parabola)</text>
+        <text x="0" y="165" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">모선과 완벽히
+            평행</text>
+    </g>
+
+    <!-- 4. Hyperbola -->
+    <g transform="translate(750, 250)">
+        <!-- Double Cone -->
+        <path d="M -60 100 L 0 0 L 60 100 Z" fill="#223344" stroke="#4da6ff" stroke-width="2" opacity="0.6" />
+        <path d="M -60 -100 L 0 0 L 60 -100 Z" fill="#223344" stroke="#4da6ff" stroke-width="2" opacity="0.6" />
+
+        <!-- Vertical Cut Plane -->
+        <polygon points="10,-120 70,-90 70,120 10,90" fill="#ff00ff" opacity="0.3" stroke="#ff00ff" stroke-width="2" />
+
+        <!-- Section: Hyperbola (Two curves) -->
+        <path d="M 15 100 Q 40 50 40 30 Q 40 10 15 0" fill="none" stroke="#ffffff" stroke-width="3"
+            filter="url(#glow)" />
+        <path d="M 15 -100 Q 40 -50 40 -30 Q 40 -10 15 0" fill="none" stroke="#ffffff" stroke-width="3"
+            filter="url(#glow)" />
+
+        <text x="0" y="140" fill="#ff00ff" font-family="sans-serif" font-size="20" font-weight="bold"
+            text-anchor="middle">4. 쌍곡선 (Hyperbola)</text>
+        <text x="0" y="165" fill="#aaaaaa" font-family="sans-serif" font-size="14" text-anchor="middle">완전 수직 자르기</text>
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="150" y="520" width="600" height="40" rx="10" fill="#112233" stroke="#00ffcc" stroke-width="2" />
+    <text x="450" y="545" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">우주에 존재하는 모든 궤적은
+        원뿔을 베어낸 칼날의 각도에서 증명된다.</text>
+
+</svg>

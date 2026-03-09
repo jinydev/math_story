@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 수열의 기초 Basics of Sequence'
+---
+
 # 1. 수열의 기초 (Basics of Sequence)
 
 ## [도입부] 학습 목표 (Learning Objectives)

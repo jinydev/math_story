@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
+    <rect width="600" height="250" fill="#f8f9fa" rx="10" />
+
+    <text x="300" y="30" fill="#495057" font-size="20" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">영원히 죽지 않는 좀비 곡선: 탄소 반감기 (Half-Life)</text>
+
+    <g transform="translate(100, 180)">
+        <!-- Axes -->
+        <line x1="0" y1="0" x2="440" y2="0" stroke="#868e96" stroke-width="2" />
+        <line x1="0" y1="-120" x2="0" y2="20" stroke="#868e96" stroke-width="2" />
+
+        <!-- Ideal Zero Line -->
+        <line x1="0" y1="0" x2="440" y2="0" stroke="#fa5252" stroke-width="1" stroke-dasharray="4,4" />
+
+        <!-- Half-Life Curve -->
+        <!-- 0: 100%, 1: 50%, 2: 25%, 3: 12.5%, 4: 6.25% -->
+        <path d="M 0 -120 Q 50 -120 100 -60 T 200 -30 T 300 -15 T 400 -7" fill="none" stroke="#228be6"
+            stroke-width="4" />
+
+        <!-- Data points -->
+        <circle cx="0" cy="-120" r="5" fill="#1864ab" />
+        <text x="-25" y="-115" fill="#1864ab" font-size="14" font-family="sans-serif" font-weight="bold">100%</text>
+
+        <circle cx="100" cy="-60" r="5" fill="#1864ab" />
+        <line x1="100" y1="0" x2="100" y2="-60" stroke="#adb5bd" stroke-dasharray="3,3" />
+        <text x="100" y="20" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">5,730년</text>
+        <text x="100" y="-70" fill="#228be6" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">50%</text>
+
+        <circle cx="200" cy="-30" r="5" fill="#1864ab" />
+        <line x1="200" y1="0" x2="200" y2="-30" stroke="#adb5bd" stroke-dasharray="3,3" />
+        <text x="200" y="20" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">11,460년</text>
+        <text x="200" y="-40" fill="#228be6" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">25%</text>
+
+        <circle cx="300" cy="-15" r="5" fill="#1864ab" />
+        <line x1="300" y1="0" x2="300" y2="-15" stroke="#adb5bd" stroke-dasharray="3,3" />
+        <text x="300" y="20" fill="#495057" font-size="12" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">17,190년</text>
+        <text x="300" y="-25" fill="#228be6" font-size="14" font-family="sans-serif" font-weight="bold"
+            text-anchor="middle">12.5%</text>
+
+    </g>
+
+    <!-- Explanation -->
+    <text x="300" y="235" fill="#868e96" font-size="14" font-family="sans-serif" font-weight="bold"
+        text-anchor="middle">그래프는 영원히 x축에 닿지 않는다. 절대 0%가 될 수 없다 (점근선)</text>
+
+</svg>

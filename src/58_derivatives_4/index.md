@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "수학이야기 68.미분4"
+title: '수학이야기 68.미분4'
 parent: 수학이야기
 nav_order: 68
 has_children: true

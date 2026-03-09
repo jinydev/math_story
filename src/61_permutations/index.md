@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 78. 순열 Permutation'
+---
+
 # 수학이야기 78. 순열 (Permutation)
 
 ## 📌 학습 개요

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '7. 무너진 시소의 중심을 잡아라 대푯값계의 제왕, 평균Average'
+---
+
 # 7. 무너진 시소의 중심을 잡아라: 대푯값계의 제왕, '평균(Average)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

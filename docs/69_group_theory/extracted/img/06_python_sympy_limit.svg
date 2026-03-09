@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="40" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">파이썬 SymPy 마법: 극한(Limit) 폭탄 0.1초 렌더링 엔진</text>
+    <text x="450" y="70" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">켤레를 곱하고 깡패를 찾을 필요가
+        없습니다. 컴퓨터가 다 알아서 계산합니다!</text>
+
+    <!-- Left: Python Code Terminal -->
+    <g transform="translate(50, 100)">
+        <rect x="0" y="0" width="450" height="400" rx="10" fill="#111115" stroke="#4da6ff" stroke-width="2" />
+        <rect x="0" y="0" width="450" height="30" rx="10" fill="#222" />
+        <text x="225" y="20" fill="#aaaaaa" font-family="monospace" font-size="14"
+            text-anchor="middle">solve_limits.py</text>
+
+        <!-- Code Lines -->
+        <text x="20" y="60" fill="#ff7b72" font-family="monospace" font-size="16" font-weight="bold">import</text>
+        <text x="85" y="60" fill="#cc88ff" font-family="monospace" font-size="16">sympy</text>
+        <text x="145" y="60" fill="#ff7b72" font-family="monospace" font-size="16" font-weight="bold">as</text>
+        <text x="175" y="60" fill="#cc88ff" font-family="monospace" font-size="16">sp</text>
+
+        <text x="20" y="100" fill="#7a828e" font-family="monospace" font-size="14"># 심볼릭 우주 n 변수 등록!</text>
+        <text x="20" y="120" fill="#cc88ff" font-family="monospace" font-size="16">n</text>
+        <text x="40" y="120" fill="#ff7b72" font-family="monospace" font-size="16">=</text>
+        <text x="60" y="120" fill="#d2a8ff" font-family="monospace" font-size="16">sp.Symbol</text>
+        <text x="155" y="120" fill="#a5d6ff" font-family="monospace" font-size="16">('n')</text>
+
+        <!-- Eq 1 -->
+        <text x="20" y="160" fill="#7a828e" font-family="monospace" font-size="14"># 분수 극한 (∞ / ∞)</text>
+        <text x="20" y="180" fill="#cc88ff" font-family="monospace" font-size="16">eq1</text>
+        <text x="60" y="180" fill="#ff7b72" font-family="monospace" font-size="16">=</text>
+        <text x="80" y="180" fill="#79c0ff" font-family="monospace" font-size="16">(3*n**2 + 5*n) / (2*n**2 - 1)</text>
+
+        <text x="20" y="210" fill="#cc88ff" font-family="monospace" font-size="16">ans1</text>
+        <text x="70" y="210" fill="#ff7b72" font-family="monospace" font-size="16">=</text>
+        <text x="90" y="210" fill="#d2a8ff" font-family="monospace" font-size="16">sp.limit</text>
+        <text x="170" y="210" fill="#ffffff" font-family="monospace" font-size="16">(eq1, n, </text>
+        <text x="250" y="210" fill="#ffaa00" font-family="monospace" font-size="18" font-weight="bold"
+            filter="url(#glow)">sp.oo</text>
+        <text x="310" y="210" fill="#ffffff" font-family="monospace" font-size="16">)</text>
+        <text x="340" y="210" fill="#7a828e" font-family="monospace" font-size="14">&lt;= ∞ 마크!</text>
+
+        <!-- Eq 2 -->
+        <text x="20" y="270" fill="#7a828e" font-family="monospace" font-size="14"># 켤레 함정 (∞ - ∞)</text>
+        <text x="20" y="290" fill="#cc88ff" font-family="monospace" font-size="16">eq2</text>
+        <text x="60" y="290" fill="#ff7b72" font-family="monospace" font-size="16">=</text>
+        <text x="80" y="290" fill="#d2a8ff" font-family="monospace" font-size="16">sp.sqrt</text>
+        <text x="150" y="290" fill="#79c0ff" font-family="monospace" font-size="16">(n**2 + n) - n</text>
+
+        <text x="20" y="320" fill="#cc88ff" font-family="monospace" font-size="16">ans2</text>
+        <text x="70" y="320" fill="#ff7b72" font-family="monospace" font-size="16">=</text>
+        <text x="90" y="320" fill="#d2a8ff" font-family="monospace" font-size="16">sp.limit</text>
+        <text x="170" y="320" fill="#ffffff" font-family="monospace" font-size="16">(eq2, n, </text>
+        <text x="250" y="320" fill="#ff00ff" font-family="monospace" font-size="18" font-weight="bold"
+            filter="url(#glow)">sp.oo</text>
+        <text x="310" y="320" fill="#ffffff" font-family="monospace" font-size="16">)</text>
+
+        <text x="20" y="370" fill="#ff7b72" font-family="monospace" font-size="16" font-weight="bold">print</text>
+        <text x="75" y="370" fill="#ffffff" font-family="monospace" font-size="16">(f"</text>
+        <text x="100" y="370" fill="#a5d6ff" font-family="monospace" font-size="16">무한돌파= {ans1}, 마이너스트랩= {ans2}</text>
+        <text x="430" y="370" fill="#ffffff" font-family="monospace" font-size="16">")</text>
+    </g>
+
+    <!-- Execution Arrow -->
+    <path d="M 510 300 L 540 300" stroke="#00ffcc" stroke-width="6" marker-end="url(#arrow_r)" filter="url(#glow)" />
+
+    <!-- Right: Console Output Box -->
+    <g transform="translate(560, 200)">
+        <rect x="0" y="0" width="290" height="150" rx="10" fill="#051510" stroke="#00ffcc" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="145" y="30" fill="#00ffcc" font-family="monospace" font-size="14" font-weight="bold"
+            text-anchor="middle">Console Output (Terminal)</text>
+        <line x1="0" y1="40" x2="290" y2="40" stroke="#00ffcc" stroke-width="1" />
+
+        <text x="15" y="70" fill="#00ff00" font-family="monospace" font-size="14">> python solve_limits.py</text>
+
+        <text x="15" y="105" fill="#ffffff" font-family="monospace" font-size="16">무한돌파= </text>
+        <text x="100" y="105" fill="#ffaa00" font-family="monospace" font-size="24" font-weight="bold"
+            filter="url(#glow)">3/2</text>
+
+        <text x="15" y="135" fill="#ffffff" font-family="monospace" font-size="16">마이너스트랩= </text>
+        <text x="135" y="135" fill="#ff00ff" font-family="monospace" font-size="24" font-weight="bold"
+            filter="url(#glow)">1/2</text>
+    </g>
+
+    <defs>
+        <marker id="arrow_r" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#00ffcc" />
+        </marker>
+    </defs>
+
+    <!-- Explanation Footer -->
+    <rect x="150" y="530" width="600" height="40" rx="10" fill="#1b1111" stroke="#ff0055" stroke-width="2" />
+    <text x="450" y="555" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">
+        <tspan fill="#ff0055" font-weight="bold">sp.oo</tspan> (소문자 o 두 개)를 극한 목표(∞)로 던지면, 심파이가 모든 수학 트릭을 해킹해 도출!
+    </text>
+</svg>

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '4. 자전거 바퀴의 궤적 사이클로이드 Cycloid'
+---
+
 # 4. 자전거 바퀴의 궤적: 사이클로이드 (Cycloid)
 
 ## [도입부] 학습 목표 (Learning Objectives)

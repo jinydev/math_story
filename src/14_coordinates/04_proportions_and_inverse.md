@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '04. 네 번째 수업 정비례와 반비례의 궤적 Proportions and Inverse'
+---
+
 # 04. 네 번째 수업: 정비례와 반비례의 궤적 (Proportions and Inverse)
 
 앞선 수업에서 $y = 3x$ 와 같이 $x$가 2배, 3배 커짐에 따라 $y$도 똑같이 2배, 3배 커지는 관계를 보았습니다. 이를 **정비례(Direct Proportion)** 규칙이라고 합니다.

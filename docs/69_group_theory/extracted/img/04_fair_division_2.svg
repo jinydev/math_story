@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#0a0a14" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Title -->
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">독립 채점 시스템 계산기: 이산형 유산의 자본주의적 분배</text>
+    <text x="450" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">"쪼갤 수 없는 물건(강아지,
+        그림) 은 가장 비싸게 부른 자에게 주되, 1/N 몫의 차액은 현금(Cash)으로 보정하라!"</text>
+
+    <!-- Top: Item Valuations -->
+    <g transform="translate(100, 130)">
+        <rect x="-20" y="-30" width="740" height="150" rx="15" fill="#111" stroke="#4da6ff" stroke-width="3" />
+        <text x="350" y="0" fill="#4da6ff" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">1. 독립 가치 평가 (비밀 입찰)</text>
+
+        <!-- Column 1: Dog -->
+        <rect x="50" y="20" width="120" height="80" rx="10" fill="#003322" stroke="#00ffcc" />
+        <text x="110" y="45" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">🐶 유기견</text>
+        <text x="110" y="70" fill="#ffffff" font-family="monospace" font-size="14" text-anchor="middle">A: <tspan
+                fill="#ffff00" font-weight="bold">5,000만</tspan></text>
+        <text x="110" y="90" fill="#aaaaaa" font-family="monospace" font-size="14" text-anchor="middle">B: 1,000만</text>
+
+        <!-- Column 2: Car -->
+        <rect x="250" y="20" width="120" height="80" rx="10" fill="#331111" stroke="#ff5555" />
+        <text x="310" y="45" fill="#ff5555" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">🏎️ 스포츠카</text>
+        <text x="310" y="70" fill="#aaaaaa" font-family="monospace" font-size="14" text-anchor="middle">A: 3,000만</text>
+        <text x="310" y="90" fill="#ffffff" font-family="monospace" font-size="14" text-anchor="middle">B: <tspan
+                fill="#ffff00" font-weight="bold">6,000만</tspan></text>
+
+        <!-- Column 3: Painting -->
+        <rect x="450" y="20" width="120" height="80" rx="10" fill="#331111" stroke="#ff5555" />
+        <text x="510" y="45" fill="#ff5555" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">🖼️ 명화</text>
+        <text x="510" y="70" fill="#aaaaaa" font-family="monospace" font-size="14" text-anchor="middle">A: 1,000만</text>
+        <text x="510" y="90" fill="#ffffff" font-family="monospace" font-size="14" text-anchor="middle">B: <tspan
+                fill="#ffff00" font-weight="bold">2,000만</tspan></text>
+
+        <!-- Victory Checkmarks -->
+        <path d="M 160 55 L 170 65 L 190 45" fill="none" stroke="#ffff00" stroke-width="4" />
+        <path d="M 360 75 L 370 85 L 390 65" fill="none" stroke="#ffff00" stroke-width="4" />
+        <path d="M 560 75 L 570 85 L 590 65" fill="none" stroke="#ffff00" stroke-width="4" />
+    </g>
+
+    <!-- Left: A's Settlement -->
+    <g transform="translate(150, 310)">
+        <rect x="-30" y="-20" width="280" height="150" rx="10" fill="#001a11" stroke="#00ffcc" stroke-width="2" />
+        <text x="110" y="10" fill="#00ffcc" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">2. 상속자 A의 현금 정산</text>
+
+        <text x="-10" y="40" fill="#aaaaaa" font-family="monospace" font-size="14">A의 총 평가액: 9000만 (공평몫: 4500)</text>
+        <text x="-10" y="65" fill="#ffffff" font-family="monospace" font-size="14">받은 현물(강아지): + 5000만</text>
+        <line x1="-15" y1="80" x2="230" y2="80" stroke="#555" stroke-width="1" />
+
+        <text x="-10" y="105" fill="#ff5555" font-family="monospace" font-size="16" font-weight="bold">현상태: 500만 초과
+            획득!</text>
+        <text x="-10" y="125" fill="#ffff00" font-family="monospace" font-size="14" font-weight="bold"
+            filter="url(#glow)">💸 500만 원 반납 (Pay to Box)</text>
+    </g>
+
+    <!-- Right: B's Settlement -->
+    <g transform="translate(470, 310)">
+        <rect x="-30" y="-20" width="280" height="150" rx="10" fill="#1a0005" stroke="#ff5555" stroke-width="2" />
+        <text x="110" y="10" fill="#ff5555" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle" filter="url(#glow)">3. 상속자 B의 현금 정산</text>
+
+        <text x="-10" y="40" fill="#aaaaaa" font-family="monospace" font-size="14">B의 총 평가액: 9000만 (공평몫: 4500)</text>
+        <text x="-10" y="65" fill="#ffffff" font-family="monospace" font-size="14">받은 현물(차+그림): + 8000만</text>
+        <line x1="-15" y1="80" x2="230" y2="80" stroke="#555" stroke-width="1" />
+
+        <text x="-10" y="105" fill="#ff5555" font-family="monospace" font-size="16" font-weight="bold">현상태: 3500만 초과
+            획득!</text>
+        <text x="-10" y="125" fill="#ffff00" font-family="monospace" font-size="14" font-weight="bold"
+            filter="url(#glow)">💸 3500만 원 반납 (Pay to Box)</text>
+    </g>
+
+    <!-- Flow Arrows connecting to central cash box -->
+    <!-- A points to Box (which is 400 total) -->
+    <path d="M 260 490 L 350 490" fill="none" stroke="#ffff00" stroke-width="4" stroke-dasharray="5 5"
+        marker-end="url(#arrow_y)" />
+    <path d="M 600 490 L 510 490" fill="none" stroke="#ffff00" stroke-width="4" stroke-dasharray="5 5"
+        marker-end="url(#arrow_y)" />
+
+    <g transform="translate(430, 470)">
+        <rect x="-40" y="-20" width="80" height="60" rx="5" fill="#332200" stroke="#ffaa00" stroke-width="3"
+            filter="url(#glow)" />
+        <text x="0" y="0" fill="#ffaa00" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">현금 금고</text>
+        <text x="0" y="25" fill="#ffffff" font-family="monospace" font-size="16" font-weight="bold"
+            text-anchor="middle">4천만</text>
+    </g>
+
+    <defs>
+        <marker id="arrow_y" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ffff00" />
+        </marker>
+    </defs>
+
+    <!-- Base Explain -->
+    <rect x="100" y="550" width="700" height="40" rx="10" fill="#1b1122" stroke="#ff00ff" stroke-width="2" />
+    <text x="450" y="575" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">
+        물건은 최고가 입찰자에게 주고, 공평 몫 대비 과도하게 가져간 부분은 <tspan fill="#ffff00" font-weight="bold">현금(+- 계산기)</tspan> 으로 토해내어 균형을
+        맞춘다!
+    </text>
+</svg>

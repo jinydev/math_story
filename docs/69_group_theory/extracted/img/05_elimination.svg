@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;display=swap');
+
+            text {
+                font-family: 'Roboto Mono', monospace;
+                font-weight: bold;
+            }
+
+            .bg {
+                fill: #0d1117;
+            }
+
+            .title {
+                fill: #ffffff;
+                font-size: 26px;
+                text-anchor: middle;
+            }
+
+            .desc {
+                fill: #8b949e;
+                font-size: 16px;
+                text-anchor: middle;
+            }
+
+            .math {
+                font-size: 36px;
+                text-anchor: middle;
+            }
+
+            .var-x {
+                fill: #00ffff;
+            }
+
+            .var-y {
+                fill: #ff6464;
+            }
+
+            .num {
+                fill: #ffffff;
+            }
+
+            .op {
+                fill: #ffaa44;
+                font-size: 36px;
+                text-anchor: middle;
+            }
+
+            .slash {
+                fill: none;
+                stroke: #ff0000;
+                stroke-width: 6;
+                stroke-linecap: round;
+            }
+
+            .box {
+                fill: none;
+                stroke: #ff6464;
+                stroke-width: 3;
+                stroke-dasharray: 4, 4;
+            }
+
+            .result-box {
+                fill: rgba(0, 255, 255, 0.1);
+                stroke: #00ffff;
+                stroke-width: 3;
+                rx: 10;
+                ry: 10;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+    <text x="400" y="40" class="title">필살기 1: 소거의 마술, 가감법 (Elimination Method)</text>
+    <text x="400" y="65" class="desc">두 식을 통째로 더하거나 빼서, 하나의 미지수 스파이를 완벽히 소거(삭제)하는 절대 전술</text>
+
+    <!-- Left: The System Add Operation -->
+    <g transform="translate(200, 160)">
+        <!-- Equation 1 -->
+        <text x="-40" y="0" class="math var-x">2x</text>
+        <text x="10" y="0" class="op">+</text>
+        <text x="60" y="0" class="math var-y">y</text>
+        <text x="120" y="0" class="math">=</text>
+        <text x="170" y="0" class="math num">7</text>
+
+        <!-- Operator (+) -->
+        <circle cx="-110" cy="30" r="20" fill="none" stroke="#ffaa44" stroke-width="3" />
+        <text x="-110" y="42" class="op" font-size="30" fill="#ffff00">+</text>
+
+        <!-- Equation 2 -->
+        <text x="-40" y="60" class="math var-x">x</text>
+        <text x="10" y="60" class="op">-</text>
+        <text x="60" y="60" class="math var-y">y</text>
+        <text x="120" y="60" class="math">=</text>
+        <text x="170" y="60" class="math num">2</text>
+
+        <!-- Horizontal Add Line -->
+        <line x1="-130" y1="80" x2="200" y2="80" stroke="#fff" stroke-width="4" />
+
+        <!-- Y cancellation box -->
+        <rect x="-15" y="-35" width="100" height="110" class="box" />
+        <line x1="-15" y1="-35" x2="85" y2="75" class="slash" />
+        <line x1="85" y1="-35" x2="-15" y2="75" class="slash" />
+        <text x="130" y="20" fill="#ff6464" font-size="16" transform="rotate(-15)">(소거! 날아감)</text>
+
+        <!-- Result -->
+        <text x="-40" y="130" class="math var-x">3x</text>
+
+        <!-- Down Arrow for X Result -->
+        <line x1="-40" y1="140" x2="-40" y2="180" stroke="#00ffff" stroke-width="3" fill="none"
+            marker-end="url(#arrowhead)" />
+
+        <text x="120" y="130" class="math">=</text>
+        <text x="170" y="130" class="math num">9</text>
+
+        <!-- Down Arrow for Num Result -->
+        <line x1="170" y1="140" x2="170" y2="180" stroke="#00ffff" stroke-width="3" fill="none"
+            marker-end="url(#arrowhead)" />
+    </g>
+
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#00ffff" />
+    </marker>
+
+    <!-- Right: Final Answer Box -->
+    <g transform="translate(600, 240)">
+        <rect x="-100" y="-50" width="200" height="100" class="result-box" />
+        <text x="0" y="12" class="math var-x">x = 3</text>
+
+        <text x="0" y="-80" fill="#8b949e" font-size="18" text-anchor="middle">다운그레이드 성공!</text>
+        <text x="0" y="-60" fill="#ffffff" font-size="18" text-anchor="middle">1차 방정식으로 변신</text>
+
+        <path d="M -150 50 Q -250 100 -350 -10" fill="none" stroke="#64ff64" stroke-width="3" stroke-dasharray="4,2"
+            marker-end="url(#arrowhead-green)" />
+        <text x="-250" y="110" fill="#64ff64" font-size="16" text-anchor="middle">y를 다시 구하면 완료</text>
+    </g>
+
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#64ff64" />
+    </marker>
+
+</svg>

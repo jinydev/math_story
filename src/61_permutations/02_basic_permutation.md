@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 자리가 사람을 만든다 순열 Permutation'
+---
+
 # 2. 자리가 사람을 만든다: '순열 (Permutation)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 원을 사각형으로 히포크라테스의 초승달 Lune'
+---
+
 # 03. 원을 사각형으로: 히포크라테스의 초승달 (Lune)
 
 ## 1. 학습 목표 (Learning Objectives)

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 51. 최적화 이론2 Optimization Theory 2'
+---
+
 # 수학이야기 51. 최적화 이론2 (Optimization Theory 2)
 
 ## 📌 학습 개요

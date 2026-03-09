@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '11. 비유클리드 기하학 Non-Euclidean Geometry 휘어진 시공간'
+---
+
 # 11. 비유클리드 기하학 (Non-Euclidean Geometry: 휘어진 시공간)
 
 ## 이 단원의 핵심 (Chapter Focus)

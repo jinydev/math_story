@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '6. 인류가 선택한 비밀번호 10 상용로그 Common Logarithm'
+---
+
 # 6. 인류가 선택한 비밀번호 10: 상용로그 (Common Logarithm)
 
 ## [도입부] 학습 목표 (Learning Objectives)

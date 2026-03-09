@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '00. 논리학의 시작 명제 참과 거짓'
+---
+
 # 00. 논리학의 시작: 명제 (참과 거짓)
 
 ## 1. 학습 목표 (Learning Objectives)

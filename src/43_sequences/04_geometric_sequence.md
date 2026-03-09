@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '4. 등비수열 Geometric Sequence'
+---
+
 # 4. 등비수열 (Geometric Sequence)
 
 ## [도입부] 학습 목표 (Learning Objectives)

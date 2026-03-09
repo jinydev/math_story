@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <!-- Glow filter -->
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="400" y="40" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">피보나치 계산: 순수 재귀(A) vs DP 메모이제이션(B)</text>
+    <text x="400" y="70" fill="#aaaaaa" font-family="sans-serif" font-size="16" text-anchor="middle">Fib(5) 연산 트리
+        비교</text>
+
+    <!-- Title Left -->
+    <text x="200" y="110" fill="#ff4d4d" font-family="sans-serif" font-size="20" font-weight="bold"
+        text-anchor="middle">[엔진 A] - 순수 재귀 (중복 지옥)</text>
+
+    <!-- Tree A -->
+    <g transform="translate(200, 140)" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">
+        <!-- Level 1 -->
+        <rect x="-35" y="0" width="70" height="30" rx="5" fill="#3a3a55" /> <text x="0" y="20" fill="#fff">F(5)</text>
+        <line x1="0" y1="30" x2="-80" y2="70" stroke="#777" stroke-width="2" />
+        <line x1="0" y1="30" x2="80" y2="70" stroke="#777" stroke-width="2" />
+
+        <!-- Level 2 -->
+        <rect x="-115" y="70" width="70" height="30" rx="5" fill="#3a3a55" /> <text x="-80" y="90"
+            fill="#fff">F(4)</text>
+        <rect x="45" y="70" width="70" height="30" rx="5" fill="#3a3a55" /> <text x="80" y="90" fill="#fff">F(3)</text>
+        <line x1="-80" y1="100" x2="-140" y2="140" stroke="#777" stroke-width="2" />
+        <line x1="-80" y1="100" x2="-20" y2="140" stroke="#777" stroke-width="2" />
+        <line x1="80" y1="100" x2="40" y2="140" stroke="#777" stroke-width="2" />
+        <line x1="80" y1="100" x2="120" y2="140" stroke="#777" stroke-width="2" />
+
+        <!-- Level 3 -->
+        <rect x="-175" y="140" width="70" height="30" rx="5" fill="#3a3a55" /> <text x="-140" y="160"
+            fill="#fff">F(3)</text>
+        <text x="-140" y="195" fill="#ff4d4d" font-size="20">❌중복연산</text>
+
+        <rect x="-55" y="140" width="70" height="30" rx="5" fill="#3a3a55" /> <text x="-20" y="160"
+            fill="#fff">F(2)</text>
+
+        <rect x="5" y="140" width="70" height="30" rx="5" fill="#3a3a55" /> <text x="40" y="160" fill="#fff">F(2)</text>
+        <text x="40" y="195" fill="#ff4d4d" font-size="20">❌중복</text>
+
+        <rect x="85" y="140" width="70" height="30" rx="5" fill="#3a3a55" /> <text x="120" y="160"
+            fill="#fff">F(1)</text>
+
+        <!-- Sub-levels implied by ... -->
+        <text x="-140" y="240" fill="#777">/ \</text>
+        <text x="-140" y="260" fill="#777">F(2) F(1)</text>
+    </g>
+
+    <!-- Title Right -->
+    <text x="600" y="110" fill="#00ffcc" font-family="sans-serif" font-size="20" font-weight="bold"
+        text-anchor="middle">[엔진 B] - DP 메모이제이션 (캐싱)</text>
+
+    <!-- Tree B -->
+    <g transform="translate(600, 140)" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">
+        <!-- Level 1 -->
+        <rect x="-35" y="0" width="70" height="30" rx="5" fill="#113322" stroke="#00ffcc" /> <text x="0" y="20"
+            fill="#fff">F(5)</text>
+        <line x1="0" y1="30" x2="-80" y2="70" stroke="#00ffcc" stroke-width="2" />
+        <line x1="0" y1="30" x2="80" y2="70" stroke="#00ffcc" stroke-width="2" />
+
+        <!-- Level 2 -->
+        <rect x="-115" y="70" width="70" height="30" rx="5" fill="#113322" stroke="#00ffcc" /> <text x="-80" y="90"
+            fill="#fff">F(4)</text>
+
+        <!-- F(3) Cache Hit -->
+        <rect x="45" y="70" width="70" height="30" rx="5" fill="#3a3a55" stroke="#ffaa00" stroke-width="2" /> <text
+            x="80" y="90" fill="#ffaa00">F(3)</text>
+        <text x="80" y="120" fill="#00ffcc" font-size="12">캐시 적중! 반환!</text>
+        <text x="80" y="140" fill="#00ffcc" font-size="20">✅0.00초</text>
+
+        <line x1="-80" y1="100" x2="-140" y2="140" stroke="#00ffcc" stroke-width="2" />
+        <line x1="-80" y1="100" x2="-20" y2="140" stroke="#00ffcc" stroke-width="2" />
+
+        <!-- Level 3 -->
+        <!-- F(3) computes once -->
+        <rect x="-175" y="140" width="70" height="30" rx="5" fill="#113322" stroke="#00ffcc" /> <text x="-140" y="160"
+            fill="#fff">F(3)</text>
+        <text x="-140" y="180" fill="#aaaaaa" font-size="12">(창고에 저장)</text>
+
+        <!-- F(2) Cache Hit -->
+        <rect x="-55" y="140" width="70" height="30" rx="5" fill="#3a3a55" stroke="#ffaa00" stroke-width="2" /> <text
+            x="-20" y="160" fill="#ffaa00">F(2)</text>
+        <text x="-20" y="185" fill="#00ffcc" font-size="12">캐시 적중! 반환!</text>
+        <text x="-20" y="205" fill="#00ffcc" font-size="20">✅0.00초</text>
+
+        <line x1="-140" y1="190" x2="-180" y2="230" stroke="#00ffcc" stroke-width="2" />
+        <line x1="-140" y1="190" x2="-100" y2="230" stroke="#00ffcc" stroke-width="2" />
+
+        <!-- Base Case computations -->
+        <!-- F(2) computed once -->
+        <rect x="-215" y="230" width="70" height="30" rx="5" fill="#113322" stroke="#00ffcc" /> <text x="-180" y="250"
+            fill="#fff">F(2)</text>
+        <text x="-180" y="270" fill="#aaaaaa" font-size="12">(창고에 저장)</text>
+
+        <rect x="-135" y="230" width="70" height="30" rx="5" fill="#3a3a55" /> <text x="-100" y="250"
+            fill="#fff">F(1)</text>
+    </g>
+
+    <!-- Explanation Bottom -->
+    <rect x="50" y="480" width="700" height="80" rx="8" fill="#2d2d44" stroke="#ffaa00" stroke-width="2" />
+    <text x="400" y="510" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">엔진 A는 한 번 계산한
+        $F(3)$ 과 $F(2)$ 를 완전히 망각하고 밑바닥까지 미련하게 재연산하지만 (O(2^n)), </text>
+    <text x="400" y="535" fill="#00ffcc" font-family="sans-serif" font-size="16" font-weight="bold"
+        text-anchor="middle">엔진 B (DP)는 딕셔너리 창고에 적힌 값을 바로 가져와서 뿌리 연산을 강제 종결시킵니다. (시간복잡도 O(n))</text>
+
+</svg>

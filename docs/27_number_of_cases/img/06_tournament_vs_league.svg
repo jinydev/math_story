@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="400">
+    <defs>
+        <style>
+            .bg {
+                fill: #f8fafc;
+                rx: 10;
+                stroke: #cbd5e1;
+                stroke-width: 2;
+            }
+
+            /* Circles for Teams */
+            .team-node {
+                fill: #ffffff;
+                stroke: #3b82f6;
+                stroke-width: 3;
+                rx: 20;
+            }
+
+            .team-node-t {
+                fill: #ffffff;
+                stroke: #ef4444;
+                stroke-width: 3;
+                rx: 20;
+            }
+
+            /* Connecting Lines */
+            .line-l {
+                stroke: #93c5fd;
+                stroke-width: 2;
+            }
+
+            .line-t {
+                stroke: #fca5a5;
+                stroke-width: 3;
+                stroke-linecap: round;
+            }
+
+            /* Text */
+            .title {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 22px;
+                fill: #0f172a;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .formula {
+                font-family: 'Courier New', monospace;
+                font-size: 18px;
+                fill: #475569;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+
+            .node-text {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                fill: #1e293b;
+                text-anchor: middle;
+                dominant-baseline: middle;
+            }
+
+            .subtitle {
+                font-family: 'Pretendard', sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                text-anchor: middle;
+            }
+        </style>
+    </defs>
+
+    <rect width="100%" height="100%" class="bg" />
+
+    <text x="300" y="35" class="title">리그전(League) vs 토너먼트(Tournament)</text>
+
+    <!-- Left Side: League (Pentagon / Complete Graph) -->
+    <g transform="translate(150, 180)">
+        <text x="0" y="-120" class="subtitle" fill="#1d4ed8">합리적 평등: 리그전</text>
+        <text x="0" y="-95" class="formula">5C2 = 10경기</text>
+
+        <!-- Lines connecting every team (10 lines total) -->
+        <path d="M 0 -60 L 57 -18 L 35 48 L -35 48 L -57 -18 Z" class="line-l" fill="none" />
+        <path d="M 0 -60 L 35 48 L -57 -18 L 57 -18 L -35 48 Z" class="line-l" fill="none" />
+
+        <!-- 5 Teams -->
+        <g transform="translate(0, -60)">
+            <circle cx="0" cy="0" r="15" class="team-node" /><text x="0" y="2" class="node-text">1</text>
+        </g>
+        <g transform="translate(57, -18)">
+            <circle cx="0" cy="0" r="15" class="team-node" /><text x="0" y="2" class="node-text">2</text>
+        </g>
+        <g transform="translate(35, 48)">
+            <circle cx="0" cy="0" r="15" class="team-node" /><text x="0" y="2" class="node-text">3</text>
+        </g>
+        <g transform="translate(-35, 48)">
+            <circle cx="0" cy="0" r="15" class="team-node" /><text x="0" y="2" class="node-text">4</text>
+        </g>
+        <g transform="translate(-57, -18)">
+            <circle cx="0" cy="0" r="15" class="team-node" /><text x="0" y="2" class="node-text">5</text>
+        </g>
+
+        <text x="0" y="90" class="formula" font-size="14px" fill="#64748b">"모두가 한 번씩 다 싸워본다"</text>
+    </g>
+
+    <!-- Divider Line -->
+    <line x1="300" y1="60" x2="300" y2="340" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8 4" />
+
+    <!-- Right Side: Tournament (Tree structure) -->
+    <g transform="translate(450, 180)">
+        <text x="0" y="-120" class="subtitle" fill="#b91c1c">잔혹한 서바이벌: 토너먼트</text>
+        <text x="0" y="-95" class="formula">(n-1) = 5-1 = 4경기</text>
+
+        <!-- Tournament Bracket Lines -->
+        <!-- Final Match -->
+        <line x1="-30" y1="-50" x2="30" y2="-50" class="line-t" />
+        <line x1="-30" y1="-50" x2="-30" y2="-10" class="line-t" />
+        <line x1="30" y1="-50" x2="30" y2="-10" class="line-t" />
+        <line x1="0" y1="-70" x2="0" y2="-50" class="line-t" />
+
+        <!-- Semi-finals -->
+        <line x1="-60" y1="-10" x2="0" y2="-10" class="line-t" />
+        <line x1="-60" y1="-10" x2="-60" y2="30" class="line-t" />
+        <line x1="0" y1="-10" x2="0" y2="30" class="line-t" />
+
+        <!-- Teams at bottom -->
+        <!-- Winner -->
+        <g transform="translate(0, -70)">
+            <circle cx="0" cy="0" r="15" class="team-node-t" /><text x="0" y="2" class="node-text">W</text>
+        </g>
+
+        <!-- Base level -->
+        <g transform="translate(-60, 30)">
+            <circle cx="0" cy="0" r="15" class="team-node-t" /><text x="0" y="2" class="node-text">1</text>
+        </g>
+        <g transform="translate(0, 30)">
+            <circle cx="0" cy="0" r="15" class="team-node-t" /><text x="0" y="2" class="node-text">2</text>
+        </g>
+        <g transform="translate(30, -10)">
+            <circle cx="0" cy="0" r="15" class="team-node-t" /><text x="0" y="2" class="node-text">3</text>
+        </g>
+
+        <!-- Add two more teams to make it 5 -->
+        <line x1="-90" y1="30" x2="-30" y2="30" class="line-t" />
+        <line x1="-90" y1="30" x2="-90" y2="70" class="line-t" />
+        <line x1="-30" y1="30" x2="-30" y2="70" class="line-t" />
+
+        <line x1="30" y1="-10" x2="30" y2="30" class="line-t" />
+        <line x1="0" y1="30" x2="60" y2="30" class="line-t" />
+        <line x1="60" y1="30" x2="60" y2="70" class="line-t" />
+        <line x1="0" y1="30" x2="0" y2="70" class="line-t" />
+
+        <g transform="translate(-90, 70)">
+            <circle cx="0" cy="0" r="15" class="team-node-t" /><text x="0" y="2" class="node-text">1</text>
+        </g>
+        <g transform="translate(-30, 70)">
+            <circle cx="0" cy="0" r="15" class="team-node-t" /><text x="0" y="2" class="node-text">2</text>
+        </g>
+        <g transform="translate(0, 70)">
+            <circle cx="0" cy="0" r="15" class="team-node-t" /><text x="0" y="2" class="node-text">3</text>
+        </g>
+        <g transform="translate(60, 70)">
+            <circle cx="0" cy="0" r="15" class="team-node-t" /><text x="0" y="2" class="node-text">4</text>
+        </g>
+
+        <!-- This tree is a bit schematic, showing the elimination concept -->
+        <text x="0" y="110" class="formula" font-size="14px" fill="#64748b">"패배하는 즉시 짐싸고 탈락한다"</text>
+    </g>
+
+    <!-- Bottom note -->
+    <text x="300" y="370" class="desc-text" font-family="'Pretendard', sans-serif" font-size="15px" fill="#0f172a"
+        font-weight="bold">
+        리그전은 '모든 2개의 팀 조합(nC2, 악수 횟수)'을 구하는 것이고, 토너먼트는 '최후의 승자 1명만 남기는 서바이벌' 입니다.
+    </text>
+</svg>

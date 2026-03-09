@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '1. 셜록 홈즈의 수학 일부만 보고 전체를 간파하는 추정Estimation'
+---
+
 # 1. 셜록 홈즈의 수학: 일부만 보고 전체를 간파하는 '추정(Estimation)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

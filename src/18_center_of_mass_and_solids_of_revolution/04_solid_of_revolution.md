@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '4. 평면 도화지에서 3D 마법 소환 회전체 Solid of Revolution'
+---
+
 # 4. 평면 도화지에서 3D 마법 소환: 회전체 (Solid of Revolution)
 
 ## [도입부] 학습 목표 (Learning Objectives)

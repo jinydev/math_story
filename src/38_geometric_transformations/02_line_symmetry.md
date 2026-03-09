@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 반사경 앞의 우주 선대칭 Line Symmetry'
+---
+
 # 2. 반사경 앞의 우주: '선대칭 (Line Symmetry)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

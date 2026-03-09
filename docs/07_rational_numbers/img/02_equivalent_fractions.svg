@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A202C" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="15" />
+
+  <text x="400" y="50" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">크기가 같은 분수 (Equivalent Fractions)</text>
+  <text x="400" y="80" font-family="'Inter', sans-serif" font-size="16" fill="#A0AEC0" text-anchor="middle">모양은 달라도, 실제로 나타내는 양(본질)은 완벽히 같습니다.</text>
+
+  <!-- 1/2 Pizza -->
+  <g transform="translate(150, 200)">
+    <circle cx="0" cy="0" r="60" fill="#2D3748" stroke="#4A5568" stroke-width="3"/>
+    <path d="M 0 0 L 0 -60 A 60 60 0 0 1 60 0 A 60 60 0 0 1 0 60 Z" fill="#F6AD55" opacity="0.9"/>
+    
+    <text x="0" y="100" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#F6AD55" text-anchor="middle">1 / 2</text>
+    <text x="0" y="125" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">"절반"</text>
+  </g>
+
+  <!-- Equals Sign -->
+  <text x="275" y="210" font-family="'Inter', sans-serif" font-size="40" font-weight="bold" fill="#E2E8F0" text-anchor="middle" filter="url(#glow)">=</text>
+
+  <!-- 2/4 Pizza -->
+  <g transform="translate(400, 200)">
+    <circle cx="0" cy="0" r="60" fill="#2D3748" stroke="#4A5568" stroke-width="3"/>
+    <path d="M 0 0 L 0 -60 A 60 60 0 0 1 60 0 A 60 60 0 0 1 0 60 Z" fill="#4FD1C5" opacity="0.9"/>
+    <line x1="-60" y1="0" x2="60" y2="0" stroke="#2D3748" stroke-width="3" />
+    <line x1="0" y1="-60" x2="0" y2="60" stroke="#2D3748" stroke-width="3" />
+    
+    <text x="0" y="100" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#4FD1C5" text-anchor="middle">2 / 4</text>
+    <text x="0" y="125" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">"4등분 중 2조각"</text>
+  </g>
+
+  <!-- Equals Sign -->
+  <text x="525" y="210" font-family="'Inter', sans-serif" font-size="40" font-weight="bold" fill="#E2E8F0" text-anchor="middle" filter="url(#glow)">=</text>
+
+  <!-- 4/8 Pizza -->
+  <g transform="translate(650, 200)">
+    <circle cx="0" cy="0" r="60" fill="#2D3748" stroke="#4A5568" stroke-width="3"/>
+    <path d="M 0 0 L 0 -60 A 60 60 0 0 1 60 0 A 60 60 0 0 1 0 60 Z" fill="#9F7AEA" opacity="0.9"/>
+    
+    <!-- 8 cuts -->
+    <line x1="-60" y1="0" x2="60" y2="0" stroke="#2D3748" stroke-width="2" />
+    <line x1="0" y1="-60" x2="0" y2="60" stroke="#2D3748" stroke-width="2" />
+    <line x1="-42.4" y1="-42.4" x2="42.4" y2="42.4" stroke="#2D3748" stroke-width="2" />
+    <line x1="-42.4" y1="42.4" x2="42.4" y2="-42.4" stroke="#2D3748" stroke-width="2" />
+
+    <text x="0" y="100" font-family="'Inter', sans-serif" font-size="24" font-weight="bold" fill="#9F7AEA" text-anchor="middle">4 / 8</text>
+    <text x="0" y="125" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">"8등분 중 4조각"</text>
+  </g>
+
+  <!-- Multiplier Arrow 1 to 2 -->
+  <path d="M 180 270 Q 275 320 370 270" fill="none" stroke="#F6AD55" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <text x="275" y="305" font-family="'Inter', sans-serif" font-size="16" fill="#F6AD55" text-anchor="middle">x 2 / x 2</text>
+
+  <!-- Multiplier Arrow 2 to 3 -->
+  <path d="M 430 270 Q 525 320 620 270" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <text x="525" y="305" font-family="'Inter', sans-serif" font-size="16" fill="#4FD1C5" text-anchor="middle">x 2 / x 2</text>
+</svg>

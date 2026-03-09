@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 39. 로그 Logarithms'
+---
+
 # 수학이야기 39. 로그 (Logarithms)
 
 ## 📌 학습 개요

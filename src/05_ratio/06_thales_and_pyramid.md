@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '06. 탈레스와 피라미드의 비례식'
+---
+
 # 06. 탈레스와 피라미드의 비례식 ($A:B = C:D$)
 
 ## 1. 학습 목표 (Learning Objectives)

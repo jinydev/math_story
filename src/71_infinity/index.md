@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '21. 무한 Infinity 붕괴하는 직관과 칸토어의 집합론'
+---
+
 # 21. 무한 (Infinity: 붕괴하는 직관과 칸토어의 집합론)
 
 ## 이 단원의 핵심 (Chapter Focus)

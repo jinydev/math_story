@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '3. 브루트 포스 공격 일단 던지고 보는 예상과 확인하기 Guess and Check'
+---
+
 # 3. 브루트 포스 공격: 일단 던지고 보는 '예상과 확인하기 (Guess and Check)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 세 번째 수업 복소수의 연산과 켤레 쌍 Operations and Conjugates'
+---
+
 # 03. 세 번째 수업: 복소수의 연산과 켤레 쌍 (Operations and Conjugates)
 
 복소수는 현실 세계의 부품(실수 $a$)과 마법 세계의 부품(허수 $b$)이 결합된 하이브리드 로봇입니다. 

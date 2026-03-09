@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+    <rect width="100%" height="100%" fill="#1a1a24" />
+
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <text x="450" y="50" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle"
+        filter="url(#glow)">최적화 미분 해킹 전략: 가성비 극한 탐색기</text>
+
+    <!-- Left Side: Problem Statement & Box construction -->
+    <g transform="translate(50, 100)">
+        <rect x="0" y="0" width="350" height="400" rx="15" fill="#0d1a26" stroke="#4da6ff" stroke-width="3" />
+        <text x="175" y="40" fill="#4da6ff" font-family="sans-serif" font-size="22" font-weight="bold"
+            text-anchor="middle">상자 부피(Volume) 함수 설계</text>
+
+        <!-- The Box net (전개도) -->
+        <rect x="75" y="80" width="200" height="200" fill="#4da6ff" opacity="0.3" stroke="#4da6ff" stroke-width="2" />
+
+        <!-- Corner cuts (x by x) -->
+        <rect x="75" y="80" width="40" height="40" fill="#1a1a24" stroke="#ff0055" stroke-dasharray="2 2"
+            stroke-width="2" filter="url(#glow)" />
+        <rect x="235" y="80" width="40" height="40" fill="#1a1a24" stroke="#ff0055" stroke-dasharray="2 2"
+            stroke-width="2" filter="url(#glow)" />
+        <rect x="75" y="240" width="40" height="40" fill="#1a1a24" stroke="#ff0055" stroke-dasharray="2 2"
+            stroke-width="2" filter="url(#glow)" />
+        <rect x="235" y="240" width="40" height="40" fill="#1a1a24" stroke="#ff0055" stroke-dasharray="2 2"
+            stroke-width="2" filter="url(#glow)" />
+
+        <text x="95" y="105" fill="#ff0055" font-family="monospace" font-size="14" font-weight="bold"
+            text-anchor="middle">x</text>
+
+        <!-- Inner box (bottom base) -->
+        <rect x="115" y="120" width="120" height="120" fill="none" stroke="#00ffcc" stroke-width="3" />
+
+        <text x="175" y="150" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">가로: 24 -
+            2x</text>
+        <text x="175" y="170" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">세로: 24 -
+            2x</text>
+        <text x="175" y="190" fill="#ffffff" font-family="sans-serif" font-size="14" text-anchor="middle">높이 조각:
+            x</text>
+
+        <!-- Formula derivation -->
+        <rect x="20" y="300" width="310" height="80" rx="10" fill="#002233" stroke="#00ffcc" stroke-width="2" />
+        <text x="175" y="330" fill="#00ffcc" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">V(x) = x(24 - 2x)²</text>
+        <text x="175" y="360" fill="#ffaa00" font-family="sans-serif" font-size="14" font-weight="bold"
+            text-anchor="middle">도메인 한계: 0 &lt; x &lt; 12</text>
+    </g>
+
+    <!-- Giant Transformation Arrow -->
+    <path d="M 420 300 Q 450 300 480 300" fill="none" stroke="#ff0055" stroke-width="6" marker-end="url(#arrow_red)" />
+    <defs>
+        <marker id="arrow_red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ff0055" />
+        </marker>
+    </defs>
+    <text x="450" y="280" fill="#ff0055" font-family="monospace" font-size="20" font-weight="bold"
+        text-anchor="middle">V'(x) = 0</text>
+    <text x="450" y="325" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold"
+        text-anchor="middle">미분 믹서기 발동!</text>
+
+    <!-- Right Side: The Optimization Graphic -->
+    <g transform="translate(520, 100)">
+        <rect x="0" y="0" width="350" height="400" rx="15" fill="#220011" stroke="#ff0055" stroke-width="3" />
+        <text x="175" y="40" fill="#ff0055" font-family="sans-serif" font-size="22" font-weight="bold"
+            text-anchor="middle">가성비 최대 폭발 스팟 (Max)</text>
+
+        <!-- Graph Axes -->
+        <line x1="30" y1="280" x2="330" y2="280" stroke="#553344" stroke-width="2" />
+        <text x="310" y="300" fill="#aaaaaa" font-family="monospace" font-size="16">x cm</text>
+
+        <!-- 3rd degree curve for volume -->
+        <!-- Goes up to a peak, then drops down to 12 -->
+        <path d="M 50 280 C 100 100, 150 50, 200 150 S 280 280, 290 280" fill="none" stroke="#ffff00" stroke-width="6"
+            filter="url(#glow)" />
+
+        <!-- The peak value (Max Volume) -->
+        <circle cx="150" cy="110" r="8" fill="#ffaa00" stroke="#fff" stroke-width="3" filter="url(#glow)" />
+        <line x1="110" y1="110" x2="190" y2="110" stroke="#00ffcc" stroke-width="4" filter="url(#glow)" />
+
+        <path d="M 150 110 L 150 280" stroke="#ff0055" stroke-width="2" stroke-dasharray="5 5" />
+        <text x="150" y="300" fill="#ff0055" font-family="monospace" font-size="18" font-weight="bold"
+            text-anchor="middle">x = 4</text>
+
+        <!-- Result Banner -->
+        <rect x="20" y="320" width="310" height="60" rx="10" fill="#550022" stroke="#ffaa00" stroke-width="2" />
+        <text x="175" y="345" fill="#ffaa00" font-family="sans-serif" font-size="18" font-weight="bold"
+            text-anchor="middle">우주의 진리 도출!</text>
+        <text x="175" y="370" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold"
+            text-anchor="middle">4cm 자를 때 1위 봉우리 (Max 1024)</text>
+    </g>
+
+    <!-- Explanation Footer -->
+    <rect x="100" y="520" width="700" height="50" rx="10" fill="#0f0f15" stroke="#00ffcc" stroke-width="2" />
+    <text x="450" y="550" fill="#ffffff" font-family="sans-serif" font-size="16" text-anchor="middle">현실의 이윤/가성비 부피 최적화
+        퀘스트는 단지 <tspan fill="#00ffcc" font-weight="bold">도함수가 0이 되는</tspan> 미분 스팟 하나를 찾는 해킹입니다.</text>
+
+</svg>

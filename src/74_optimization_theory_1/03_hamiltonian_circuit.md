@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 모든 도시를 한 번씩 해밀턴 회로와 파이썬 외판원TSP'
+---
+
 # 03. 모든 도시를 한 번씩: 해밀턴 회로와 파이썬 외판원(TSP)
 
 ## 1. 학습 목표 (Learning Objectives)

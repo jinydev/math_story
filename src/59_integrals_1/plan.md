@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '적분Integral 모듈 개편 기획서 V3 현대적 파이썬 AI 융합 수학 교재'
+---
+
 # 적분(Integral) 모듈 개편 기획서 (V3: 현대적 파이썬 AI 융합 수학 교재)
 
 ## 1. 개요

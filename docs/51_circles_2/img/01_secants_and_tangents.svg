@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748" />
+      <stop offset="100%" stop-color="#1A202C" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="15" />
+
+  <!-- Title -->
+  <text x="400" y="45" font-family="'Inter', sans-serif" font-size="28" font-weight="bold" fill="#F7FAFC" text-anchor="middle" filter="url(#glow)">행성을 뚫는 레이저: 할선 (Secant) 과 접선 (Tangent)</text>
+  <text x="400" y="70" font-family="'Inter', sans-serif" font-size="14" fill="#A0AEC0" text-anchor="middle">"방어막 내부의 파괴와 십자 관통의 마법 비율 (방멱 정리)"</text>
+
+  <!-- Giant Planet / Circle Shield -->
+  <g transform="translate(300, 250)">
+    <circle cx="0" cy="0" r="150" fill="rgba(66, 153, 225, 0.1)" stroke="#63B3ED" stroke-width="4" filter="url(#glow)" />
+    <!-- Center of circle -->
+    <circle cx="0" cy="0" r="4" fill="#63B3ED" />
+    <text x="-15" y="-10" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#63B3ED">O</text>
+  </g>
+
+  <!-- 1. The Tangent Line (Grazing) -->
+  <!-- Top outer point P -->
+  <g transform="translate(300, 250)">
+    <!-- Point P outside -->
+    <circle cx="-250" cy="-150" r="6" fill="#F6E05E" filter="url(#glow)"/>
+    <text x="-270" y="-160" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F6E05E">P</text>
+
+    <!-- Tangent Top line (grazes at 0, -150) -->
+    <!-- Well, from P(-250, -150) to Touch(0, -150) and beyond! -->
+    <line x1="-250" y1="-150" x2="200" y2="-150" stroke="#F6E05E" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+    
+    <!-- Sparkle / Touch point T -->
+    <circle cx="0" cy="-150" r="8" fill="#FFF" filter="url(#strongGlow)" />
+    <text x="0" y="-170" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#FFF" text-anchor="middle">T (접점)</text>
+
+    <!-- Tangent Radius Line (Perpendicular 90deg!) -->
+    <line x1="0" y1="0" x2="0" y2="-150" stroke="#F6E05E" stroke-width="2" stroke-dasharray="5,5" />
+    <!-- 90 Deg Box -->
+    <path d="M 0,-135 L -15,-135 L -15,-150" fill="none" stroke="#F6E05E" stroke-width="2" />
+    <text x="90" y="-70" font-family="'Inter', sans-serif" font-size="14" fill="#F6E05E">수직 90° 폭발!</text>
+  </g>
+
+  <!-- 2. The Internal Secant Lines (The Cross inside) -->
+  <g transform="translate(300, 250)">
+    <!-- Draw two chords crossing each other inside -->
+    <!-- Chord 1: from (-106, 106) to (141, -50) -->
+    <line x1="-106" y1="106" x2="141" y2="-50" stroke="#FC8181" stroke-width="4" stroke-linecap="round" filter="url(#glow)" />
+    <!-- Chord 2: from (-141, -50) to (106, 106) -->
+    <line x1="-141" y1="-50" x2="106" y2="106" stroke="#4FD1C5" stroke-width="4" stroke-linecap="round" filter="url(#glow)" />
+
+    <!-- Intersection Point P2 -->
+    <!-- Approx center intersection intersection: (0, 0) or close to it. Let's make it hit exactly at (0,0) for symmetry, but I'll offset it a bit to (20, -10) visually if I want. Actually they meet at (0, y). 
+         Let chord 1: y - (-50) = (-50-106)/(141 - (-106)) = -156/247 * (x - 141) ... too complex. 
+         Let point: (-20, 20) be the intersection. -->
+    
+    <!-- Red raw pieces -->
+    <!-- A(red), B(red), intersection M -->
+    <!-- Cyan raw pieces -->
+    <!-- C(Cyan), D(Cyan), intersection M -->
+    
+    <!-- Let's just hardcode 4 points on circle r=150 -->
+    <!-- A: (-120, 90) -->
+    <circle cx="-120" cy="90" r="5" fill="#FC8181" />
+    <text x="-140" y="110" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#FC8181">A</text>
+    
+    <!-- B: (120, -90) -->
+    <circle cx="120" cy="-90" r="5" fill="#FC8181" />
+    <text x="135" y="-100" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#FC8181">B</text>
+
+    <!-- C: (-130, -75) -->
+    <circle cx="-130" cy="-75" r="5" fill="#4FD1C5" />
+    <text x="-150" y="-85" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#4FD1C5">C</text>
+
+    <!-- D: (90, 120) -->
+    <circle cx="90" cy="120" r="5" fill="#4FD1C5" />
+    <text x="105" y="140" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#4FD1C5">D</text>
+
+    <!-- The Cross intersection point is approx (-20, 15) -->
+    <circle cx="-25" cy="18" r="6" fill="#FFF" filter="url(#strongGlow)" />
+    <text x="-40" y="40" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#F7FAFC">교점 P</text>
+  </g>
+
+  <!-- Legend & Formulas Box -->
+  <g transform="translate(560, 200)">
+    <rect x="0" y="0" width="220" height="150" fill="rgba(0,0,0,0.5)" rx="10" stroke="#A0AEC0" stroke-width="1" />
+    
+    <!-- Power of a point theorem -->
+    <text x="110" y="30" font-family="'Inter', sans-serif" font-size="16" font-weight="bold" fill="#F7FAFC" text-anchor="middle">방멱의 정리 (내부 관통)</text>
+    <line x1="20" y1="40" x2="200" y2="40" stroke="#4A5568" stroke-width="1" />
+    
+    <text x="110" y="70" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#FC8181" text-anchor="middle">PA × PB</text>
+    <text x="110" y="95" font-family="'Inter', sans-serif" font-size="18" font-weight="bold" fill="#A0AEC0" text-anchor="middle">=</text>
+    <text x="110" y="125" font-family="'Inter', sans-serif" font-size="20" font-weight="bold" fill="#4FD1C5" text-anchor="middle">PC × PD</text>
+  </g>
+
+  <rect x="150" y="400" width="500" height="40" fill="rgba(0,0,0,0.6)" rx="5" />
+  <text x="400" y="425" font-family="'Inter', sans-serif" font-size="14" fill="#E2E8F0" text-anchor="middle">"방어벽 내부에서 두 개의 광선이 크로스 관통할 때, 잘린 길이는 완벽한 곱셈 비례를 맞춘다!"</text>
+
+</svg>

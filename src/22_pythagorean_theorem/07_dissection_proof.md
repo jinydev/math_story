@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '07. 일곱 번째 수업 오려붙이기에 의한 증명 Dissection Proof'
+---
+
 # 07. 일곱 번째 수업: 오려붙이기에 의한 증명 (Dissection Proof)
 
 유년 시절 색종이와 가위를 들고 놀아본 경험이 있나요? 

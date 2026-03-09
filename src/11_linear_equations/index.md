@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '13. 일차방정식 Linear Equation 미지의 엑스x를 향한 추리'
+---
+
 # 13. 일차방정식 (Linear Equation: 미지의 엑스(x)를 향한 추리)
 
 ## 이 단원의 핵심 (Chapter Focus)

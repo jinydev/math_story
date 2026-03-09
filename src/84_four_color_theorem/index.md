@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '수학이야기 50. 4색 정리 Four Color Theorem'
+---
+
 # 수학이야기 50. 4색 정리 (Four Color Theorem)
 
 ## 📌 학습 개요

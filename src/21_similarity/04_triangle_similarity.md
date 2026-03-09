@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '04. 삼각형 닮음 조건 3가지 삼총사'
+---
+
 # 04. 삼각형 닮음 조건 3가지 삼총사
 
 ## 1. 학습 목표 (Learning Objectives)

@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '02. 닮은 도형의 성질과 닮음비'
+---
+
 # 02. 닮은 도형의 성질과 닮음비
 
 ## 1. 학습 목표 (Learning Objectives)

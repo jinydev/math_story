@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '03. 세 번째 수업 무리수, 규칙 없는 영원함 Irrational Numbers'
+---
+
 # 03. 세 번째 수업: 무리수, 규칙 없는 영원함 (Irrational Numbers)
 
 히파소스를 죽음으로 몰고 갔던 공포의 숫자 $\sqrt{2}$(루트 2)!

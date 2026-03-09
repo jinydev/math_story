@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '6. 보스 몬스터 조각내기 단순화 도끼질, 간단히 하여 풀기 Solve a Simpler Problem'
+---
+
 # 6. 보스 몬스터 조각내기: 단순화 도끼질, '간단히 하여 풀기 (Solve a Simpler Problem)'
 
 ## [도입부] 학습 목표 (Learning Objectives)

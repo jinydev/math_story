@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '5. 자연의 성장 패턴 로그나선 Logarithmic Spiral'
+---
+
 # 5. 자연의 성장 패턴: 로그나선 (Logarithmic Spiral)
 
 ## [도입부] 학습 목표 (Learning Objectives)

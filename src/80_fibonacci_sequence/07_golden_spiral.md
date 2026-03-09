@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '07. 기하학적 모습, 황금 나선 Golden Spiral'
+---
+
 # 07. 기하학적 모습, 황금 나선 (Golden Spiral)
 
 ## 1. 학습 목표 (Learning Objectives)

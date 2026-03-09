@@ -1,3 +1,8 @@
+---
+layout: "docs"
+title: '2. 집단의 멱살을 잡는 세 명의 대장 대푯값 Representative Values'
+---
+
 # 2. 집단의 멱살을 잡는 세 명의 대장: 대푯값 (Representative Values)
 
 ## [도입부] 학습 목표 (Learning Objectives)
