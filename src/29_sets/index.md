@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: "docs"
 title: '수학이야기 02. 집합 Sets'
 tags: [수학, 집합, 칸토어, 벤다이어그램, 파이썬코드, V3]
 ---

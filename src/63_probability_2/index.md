@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: "docs"
 title: '수학이야기 46.확률2'
 parent: 수학이야기
 nav_order: 46

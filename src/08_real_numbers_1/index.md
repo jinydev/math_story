@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: "docs"
 title: '수학이야기 26.실수1'
 parent: 수학이야기
 nav_order: 26

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: "docs"
 title: '41.정수 Integers'
 theme:
   name: math

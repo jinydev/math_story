@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: "docs"
 title: '수학이야기 83.적분2'
 parent: 수학이야기
 nav_order: 83

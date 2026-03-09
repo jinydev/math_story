@@ -1,4 +1,5 @@
 ---
+layout: "docs"
 layout: home
 title: '수학이야기 07. 기수법 Numeral Systems'
 ---

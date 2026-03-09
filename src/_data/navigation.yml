@@ -1,77 +1,191 @@
 main:
-  - title: "Part 01. 자바 기초"
+  - title: "📍 초등 수학 (수 감각과 연산 기초)"
     subitems:
-      - title: "자바 언어 소개"
-        url: /basic/java
-      - title: "개발 환경 구축"
-        url: /basic/setup
-      - title: "01. 자바 시작하기"
-        url: /basic/start
-      - title: "02. 변수와 타입"
-        url: /basic/variable
-      - title: "03. 연산자"
-        url: /basic/operator
-      - title: "04. 조건문"
-        url: /basic/condition
-      - title: "05. 반복문"
-        url: /basic/loop
-  - title: "Part 02. 객체지향"
+      - title: "01. 자연수"
+        url: /01_natural_numbers/
+      - title: "02. 기수법"
+        url: /02_numeral_systems/
+      - title: "03. 약수와배수1"
+        url: /03_divisors_and_multiples_1/
+      - title: "04. 약수와배수2"
+        url: /04_divisors_and_multiples_2/
+      - title: "05. 비"
+        url: /05_ratio/
+  - title: "📍 중등 수학 (식, 방정식, 기하 기초)"
     subitems:
-      - title: "05. 참조 타입"
-        url: /oop/reference
-      - title: "06. 클래스"
-        url: /oop/oop
-      - title: "07. 상속"
-        url: /oop/extends
-      - title: "08. 인터페이스"
-        url: /oop/interface
-      - title: "09. 중첩 선언과 익명 객체"
-        url: /oop/nested
-      - title: "10. 라이브러리와 모듈"
-        url: /oop/module
-      - title: "11. 예외 처리"
-        url: /oop/exception
-      - title: "12. java.base 모듈"
-        url: /oop/api
-      - title: "13. 제네릭"
-        url: /oop/generic
-      - title: "15. 컬렉션 자료구조"
-        url: /oop/collection
-      - title: "16. 람다식"
-        url: /oop/lambda
-  - title: "Part 03. 라이브러리 활용"
+      - title: "06. 정수★"
+        url: /06_integers/
+      - title: "07. 유리수"
+        url: /07_rational_numbers/
+      - title: "08. 실수1"
+        url: /08_real_numbers_1/
+      - title: "09. 식의계산"
+        url: /09_algebraic_expressions/
+      - title: "10. 인수분해1"
+        url: /10_factorization_1/
+      - title: "11. 일차방정식"
+        url: /11_linear_equations/
+      - title: "12. 일차부등식"
+        url: /12_linear_inequalities/
+      - title: "13. 이차방정식"
+        url: /13_quadratic_equations/
+      - title: "14. 좌표"
+        url: /14_coordinates/
+      - title: "15. 함수1"
+        url: /15_functions_1/
+      - title: "16. 작도"
+        url: /16_geometric_constructions/
+      - title: "17. 다면체"
+        url: /17_polyhedrons/
+      - title: "18. 무게중심과 회전체"
+        url: /18_center_of_mass_and_solids_of_revolution/
+      - title: "19. 삼각형"
+        url: /19_triangles/
+      - title: "20. 사각형"
+        url: /20_quadrilaterals/
+      - title: "21. 닮음"
+        url: /21_similarity/
+      - title: "22. 피타고라스정리"
+        url: /22_pythagorean_theorem/
+      - title: "23. 삼각비1"
+        url: /23_trigonometric_ratios_1/
+  - title: "📍 고등 공통 (방정식/부등식, 함수 기초)"
     subitems:
-      - title: "14. 멀티 스레드"
-        url: /part03/thread
-      - title: "17. 데이터 입출력"
-        url: /part03/io
-      - title: "18. 데이터 입출력 (심화)"
-        url: /part03/stream
-  - title: "데이터베이스"
+      - title: "24. 삼각비2"
+        url: /24_trigonometric_ratios_2/
+      - title: "25. 원1"
+        url: /25_circles_1/
+      - title: "26. 근삿값과 오차"
+        url: /26_approximations_and_errors/
+      - title: "27. 경우의수"
+        url: /27_number_of_cases/
+      - title: "28. 확률1"
+        url: /28_probability_1/
+      - title: "29. 집합"
+        url: /29_sets/
+      - title: "30. 명제와 논리"
+        url: /30_propositions_and_logic/
+      - title: "31. 실수2"
+        url: /31_real_numbers_2/
+      - title: "32. 복소수"
+        url: /32_complex_numbers/
+      - title: "33. 인수분해2"
+        url: /33_factorization_2/
+      - title: "34. 이차부등식"
+        url: /34_quadratic_inequalities/
+  - title: "📍 고등 대수 (지수, 로그, 삼각함수, 수열)"
     subitems:
-      - title: "20. JDBC"
-        url: /database/jdbc
-      - title: "22. MySQL"
-        url: /database/mysql
-  - title: "네트워크 프로그래밍"
+      - title: "35. 절대부등식"
+        url: /35_absolute_inequalities/
+      - title: "36. 행렬"
+        url: /36_matrices/
+      - title: "37. 함수2"
+        url: /37_functions_2/
+      - title: "38. 도형의 이동"
+        url: /38_geometric_transformations/
+      - title: "39. 지수"
+        url: /39_exponents/
+      - title: "40. 로그"
+        url: /40_logarithms/
+      - title: "41. 지수함수와 로그함수"
+        url: /41_exponential_and_logarithmic_functions/
+      - title: "42. 삼각함수"
+        url: /42_trigonometric_functions/
+  - title: "📍 고등 미적분 (극한, 미분, 적분)"
     subitems:
-      - title: "19. 네트워크 입출력"
-        url: /network/tcp
-      - title: "25. NIO"
-        url: /network/nio
-  - title: "GUI 프로그래밍"
+      - title: "43. 수열"
+        url: /43_sequences/
+      - title: "44. 수열의합"
+        url: /44_sum_of_sequences/
+      - title: "45. 수학적귀납법"
+        url: /45_mathematical_induction/
+      - title: "46. 무한급수"
+        url: /46_infinite_series/
+      - title: "47. 수열의 극한"
+        url: /47_limits_of_sequences/
+      - title: "48. 평면곡선"
+        url: /48_plane_curves/
+      - title: "49. 이차곡선1"
+        url: /49_conic_sections_1/
+      - title: "50. 이차곡선2"
+        url: /50_conic_sections_2/
+      - title: "51. 원2"
+        url: /51_circles_2/
+      - title: "52. 공간도형"
+        url: /52_solid_geometry/
+  - title: "📍 고등 기하와 벡터"
     subitems:
-      - title: "1. AWT"
-        url: /gui/1.awt
-      - title: "2. Swing"
-        url: /gui/2.swing
-      - title: "3. JavaFX"
-        url: /gui/3.javafx
-  - title: "백엔드 웹서버 개발"
+      - title: "53. 벡터"
+        url: /53_vectors/
+      - title: "54. 연속함수"
+        url: /54_continuous_functions/
+      - title: "55. 미분1"
+        url: /55_derivatives_1/
+      - title: "56. 미분2"
+        url: /56_derivatives_2/
+      - title: "57. 미분3"
+        url: /57_derivatives_3/
+      - title: "58. 미분4"
+        url: /58_derivatives_4/
+  - title: "📍 고등 확률과 통계"
     subitems:
-      - title: "1주차. 웹 서버와 환경 설정"
-        url: /backend/jsp/01_intro
-      - title: "2주차. JSP 게시판 만들기"
-        url: /backend/jsp/05_crud
-      - title: "3주차. Spring Boot 시작하기"
-        url: /backend/boot/01_intro
+      - title: "59. 적분1"
+        url: /59_integrals_1/
+      - title: "60. 적분2"
+        url: /60_integrals_2/
+      - title: "61. 순열"
+        url: /61_permutations/
+      - title: "62. 조합"
+        url: /62_combinations/
+      - title: "63. 확률2"
+        url: /63_probability_2/
+      - title: "64. 통계"
+        url: /64_statistics/
+      - title: "65. 확률분포"
+        url: /65_probability_distributions/
+      - title: "66. 정규분포"
+        url: /66_normal_distribution/
+  - title: "📍 대학 수학 (추상대수, 위상수학, 최적화 이론)"
+    subitems:
+      - title: "67. 추정"
+        url: /67_statistical_estimation/
+      - title: "68. 두 집단의 비교"
+        url: /68_comparison_of_two_groups/
+      - title: "69. 군"
+        url: /69_group_theory/
+      - title: "70. 위상수학"
+        url: /70_topology/
+      - title: "71. 무한"
+        url: /71_infinity/
+      - title: "72. 차원"
+        url: /72_dimensions/
+      - title: "73. 비유클리드 기하학"
+        url: /73_non_euclidean_geometry/
+  - title: "📍 응용 및 교양 수학 (알고리즘, 수학사, 금융)"
+    subitems:
+      - title: "74. 최적화이론"
+        url: /74_optimization_theory_1/
+      - title: "75. 최적화 이론2"
+        url: /75_optimization_theory_2/
+      - title: "76. 의사결정이론"
+        url: /76_decision_theory/
+      - title: "77. 문제해결 전략"
+        url: /77_problem_solving_strategies/
+      - title: "78. 암호"
+        url: /78_cryptography/
+      - title: "79. 프랙탈"
+        url: /79_fractals/
+      - title: "80. 피보나치수열"
+        url: /80_fibonacci_sequence/
+      - title: "81. 선택과 배열"
+        url: /81_selection_and_arrangement/
+      - title: "82. 벤 다이어그램"
+        url: /82_venn_diagrams/
+      - title: "83. 삼각형의 오심"
+        url: /83_five_centers_of_a_triangle/
+      - title: "84. 4색정리"
+        url: /84_four_color_theorem/
+      - title: "85. 원론"
+        url: /85_elements/
+      - title: "86. 이자"
+        url: /86_interest/

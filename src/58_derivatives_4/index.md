@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: "docs"
 title: '수학이야기 68.미분4'
 parent: 수학이야기
 nav_order: 68

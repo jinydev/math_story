@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: "docs"
 title: '수학이야기 77.근삿값과 오차'
 parent: 수학이야기
 nav_order: 77

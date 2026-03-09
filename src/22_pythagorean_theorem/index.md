@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: "docs"
 title: '수학이야기 03. 피타고라스 정리 Pythagorean Theorem'
 tags: [수학, 피타고라스, 기하학, 무리수, 파이썬코드, V3]
 ---

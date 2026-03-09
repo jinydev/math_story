@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: "docs"
 title: '수학이야기 45.이차곡선1'
 parent: 수학이야기
 nav_order: 45

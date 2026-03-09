@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: "docs"
 title: '수학이야기 27.인수분해1'
 parent: 수학이야기
 nav_order: 27

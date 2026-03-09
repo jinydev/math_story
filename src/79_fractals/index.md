@@ -1,4 +1,5 @@
 ---
+layout: "docs"
 layout: home
 title: '수학이야기 06. 프랙탈 Fractals'
 ---

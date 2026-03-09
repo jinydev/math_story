@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: "docs"
 title: '62.자연수'
 theme:
   name: math

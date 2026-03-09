@@ -1,4 +1,5 @@
 ---
+layout: "docs"
 layout: home
 title: '수학이야기 05  33. 약수와 배수 Divisors and Multiples'
 ---
